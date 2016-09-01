@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>效果图首页</title>
+    <link rel="stylesheet" href="../Css/xiaoguotu/xiaoguotu_style.css">
+    <link rel="stylesheet" href="../Css/slick.css">
+    <link rel="stylesheet" href="../Css/slick-theme.css">
+    <link rel="stylesheet" href="../Css/xiaoguotu/xiaoguotu_index.css">
+</head>
+<body>
+<!--2015-10-15更新首页头部-->
+<!--网站顶部 begin-->
+<div class="module_top">
+    <div class="conWidth clearfix">
+        <a class="goback_index fl" href="../zhuchao/index.html"><span class="top_logo"></span>返回筑巢首页</a>
+        <p class="fl welcome">你好，欢迎来凤凰筑巢</p>
+        <ul class="fr module_topright">
+            <li id="username" class="head1">
+                <a href="../register_login/login.html" target="_blank" class="link_user">超级玛丽</a>
+                <a href="../register_login/register.html" class="link_quit">退出</a>
+            </li>
+            <li class="line"></li>
+            <li class="head2 pull_down" id="mt_personal">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="../usercenter/usercenter_index.html">我的凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <div class="user_head_top clearfix">
+                        <a href="../usercenter/usercenter_index.html" class="fl user_head_top_img"><img src="Images/test_user_head.png" alt=""/></a>
+                        <div class="fl">
+                            <h3><a href="../usercenter/usercenter_index.html">超级玛丽</a></h3>
+                            <a href="../usercenter/usercenter_index.html">等级：<i>v3</i></a>
+                            <a href="../usercenter/usercenter_index.html">积分：<i>200</i></a>
+                        </div>
+                    </div>
+                    <div class="user_message">
+                        <h3><a href="../usercenter/usercenter_allmessages.html">消息<i>3</i></a></h3>
+                        <div class="clearfix">
+                            <a href="../usercenter/usercenter_evaluation.html"><span>待评价：</span><i>10</i></a>
+
+                            <a href="../usercenter/usercenter_inforchange.html"><span>正在退货：</span><i>0</i></a>
+
+                            <a href="../usercenter/usercenter_index.html"><span>待收货：</span><i>0</i></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head3">
+                <a href="" class="link_buy">购物车<i>3</i>件</a>
+            </li>
+            <li class="line"></li>
+            <li class="head4 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">收藏夹</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href="../usercenter/usercenter_prostore.html"><span>收藏的商品:</span><i>10</i></a>
+
+                    <a href="../usercenter/usercenter_storecollect.html"><span>收藏的店铺：</span><i>0</i></a>
+
+                    <a href="../usercenter/usercenter_imgstore.html"><span>收藏的图片：</span><i>0</i></a>
+                    <a href="../usercenter/usercenter_articlestore.html"><span>收藏的文章：</span><i>0</i></a>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head5 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">手机凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href=""><img src="../Images/icon_erweima.png" alt=""/><i>扫码下载凤凰筑巢客户端</i></a>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head6 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">关注凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href=""><img src="../Images/icon_erweima.png" alt=""/><i>关注凤凰筑巢</i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--网站顶部 end-->
+<!--网站logo 搜索 begin-->
+<div class="index_header con_width clearfix">
+    <h1 class="index_header_logo fl clearfix">
+        <a href="/" class="fl">
+            <img src="../Images/index_top_logo.png" alt="凤凰筑巢LOGO">
+        </a>
+        <span class="icon_slogan fl"></span>
+    </h1>
+    <div class="index_header_right fr clearfix">
+        <div class="m_searchWrap">
+            <div class="c_searchItem boxSizing" id="searchItem">
+                <div id="searchItems">
+                    <i class="c_searchArrow"></i>
+                    <span id="currentItem">建材</span>
+                    <span class="c_notCurrent">攻略</span>
+                </div>
+            </div>
+            <div class="c_searchInput boxSizin">
+                <input id="search" class="search_input" placeholder="最精确的家装指南">
+            </div>
+
+            <div class="c_search_button" id="searchClick"><span>搜&nbsp;&nbsp;索</span></div>
+            <div id="searchSuggest">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--网站logo 搜索 end-->
+<!--网站导航栏  begin-->
+<div class="module_nav">
+    <ul class="con_width clearfix clear">
+        <li class="current">
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="../mall/mall_index.html" target="_blank">筑巢商城</a>
+        </li>
+        <li >
+            <a href="../jiazhuang/jiazhuang_index.html">互联网家装<i class="icon_arrow"></i></a>
+            <ul class="subnav hide">
+                <li><a href="../jiazhuang/jiazhuang_bigpresent_index.html">大礼包</a></li>
+                <li><a href="../jiazhuang/jiazhuang_roomindex.html">样板间</a></li>
+                <li><a href="../jiazhuang/jiazhuang_loan_index.html">贷款</a></li>
+                <li><a href="../jiazhuang/jiazhuang_insurance.html">保险</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../xiaoguotu/xiaoguotu_index.html" target="_blank">效果图<i class="icon_arrow"></i></a>
+            <ul class="subnav hide">
+                <li><a href="../xiaoguotu/xiaoguotu_jubu.html" target="_blank">局部美图</a></li>
+                <li><a href="../xiaoguotu/xiaoguotu_zhengzhuang.html" target="_blank">整装图册</a></li>
+                <li><a href="../xiaoguotu/xiaoguotu_jingxuan.html" target="_blank">精选专题</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../school/school_index.html" target="_blank">装修学院<i class="icon_arrow"></i></a>
+            <ul class="subnav hide">
+                <li><a href="../school/school_list.html" target="_blank">装修流程</a></li>
+                <li><a href="../school/school_list.html" target="_blank">家装选材</a></li>
+                <li><a href="../school/school_list.html" target="_blank">陷阱曝光</a></li>
+                <li><a href="../school/school_list.html" target="_blank">风水解说</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../foreman/foreman_foremanlist.html">找专家<i class="icon_arrow"></i></a>
+            <ul class="subnav hide">
+                <li><a href="../foreman/foreman_foremanlist.html">找工长</a></li>
+                <li><a href="../designer/designer_list.html">找设计师</a></li>
+                <li><a href="../decoration/decoration_index.html">找装修公司</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="http://www.fhmj.cn/">凤凰美家</a>
+        </li>
+    </ul>
+</div>
+<!--网站导航栏  end-->
+<!--banner-->
+<div class="banner">
+    <div class="slick">
+        <div style="background: #fcf368;">
+            <a href=""><img src="../mall/Images/banner1.jpg"></a>
+        </div>
+        <div style="background: #eb444e">
+            <a href=""><img src="../mall/Images/banner2.jpg"></a>
+        </div>
+    </div>
+    <div class="button conWidth">
+        <div class="left button_com noselect">
+            <div class="left_img"></div>
+        </div>
+        <div class="right button_com noselect">
+            <div class="right_img"></div>
+        </div>
+    </div>
+</div>
+<div class="list conWidth">  <div class="nav_split">
+    <div class="split_model">
+        <h4>空间</h4>
+        <ul class="clearfix">
+            <li><a href="#">客厅</a> </li>
+            <li><a href="#">卧室</a> </li>
+            <li><a href="#">餐厅</a> </li>
+            <li><a href="#">厨房</a> </li>
+            <li><a href="#">阳台</a> </li>
+            <li><a href="#">卫生间</a> </li>
+        </ul>
+    </div>
+    <div class="split_model">
+        <h4>局部</h4>
+        <ul class="clearfix">
+            <li><a href="#">吊顶</a> </li>
+            <li><a href="#">吧台</a> </li>
+            <li><a href="#">窗帘</a> </li>
+            <li><a href="#">飘窗</a> </li>
+            <li><a href="#">背景墙</a> </li>
+            <li><a href="#">照片墙</a> </li>
+        </ul>
+    </div>
+    <div class="split_model">
+        <h4>风格</h4>
+        <ul class="clearfix">
+            <li><a href="#">简约</a> </li>
+            <li><a href="#">现代</a> </li>
+            <li><a href="#">中式</a> </li>
+            <li><a href="#">欧式</a> </li>
+            <li><a href="#">美式</a> </li>
+            <li><a href="#">清新</a> </li>
+        </ul>
+    </div>
+    <div class="split_model del_bottom">
+        <h4>户型</h4>
+        <ul class="clearfix">
+            <li><a href="#">小户型</a> </li>
+            <li><a href="#">一居</a> </li>
+            <li><a href="#">二居</a> </li>
+            <li><a href="#">三居</a> </li>
+            <li><a href="#">四居</a> </li>
+            <li><a href="#">复试</a> </li>
+        </ul>
+    </div>
+</div></div>
+<div class="l_main conWidth">
+    <!--热门效果图-->
+    <div class="m_hot">
+        <div class="m_title clearfix">
+            <h3>本周热门效果图</h3>
+            <a class="#"><span>更多</span></a>
+        </div>
+        <div class="clearfix">
+            <div class="hot_list fl">
+                <h3>本周热图排行榜</h3>
+                <div>
+                    <a href="xiaoguotu_detail.html">
+                         <img class="hot_lis_img img_show" src="../Images/test_hot_list1.jpg">
+                    </a>
+                    <div class="hot_lis_text text_hover clearfix">
+                        <span class="text_id fl">1</span>
+                        <div class="text_title fl">
+                           <a href="#"><p>现代时尚三居欣赏2015大全</p></a>
+                            <p class="img_count">6张</p>
+                        </div>
+                        <div class="hot_visit fr">
+                        <span class="hot_store_img fl"></span>
+                            <span class="visit_count fl">1234</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="xiaoguotu_detail.html">
+                        <img class="hot_lis_img" src="../Images/test_hot_list1.jpg">
+                    </a>
+                    <div class="hot_lis_text  clearfix">
+                        <span class="text_id fl">2</span>
+                        <div class="text_title fl">
+                            <a href="#"><p>现代时尚三居欣赏2015大全</p></a>
+                            <p class="img_count">6张</p>
+                        </div>
+                        <div class="hot_visit fr">
+                            <span class="hot_store_img fl"></span>
+                            <span class="visit_count fl">1234</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="xiaoguotu_detail.html">
+                        <img class="hot_lis_img" src="../Images/test_hot_list1.jpg">
+                    </a>
+                    <div class="hot_lis_text  clearfix">
+                        <span class="text_id fl">3</span>
+                        <div class="text_title fl">
+                            <a href="#"><p>现代时尚三居欣赏2015大全</p></a>
+                            <p class="img_count">6张</p>
+                        </div>
+                        <div class="hot_visit fr">
+                            <span class="hot_store_img fl"></span>
+                            <span class="visit_count fl">1234</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="xiaoguotu_detail.html">
+                        <img class="hot_lis_img " src="../Images/test_hot_list1.jpg">
+                    </a>
+                    <div class="hot_lis_text  clearfix">
+                        <span class="text_id text_id2 fl">4</span>
+                        <div class="text_title fl">
+                            <a href="#"><p>现代时尚三居欣赏2015大全</p></a>
+                            <p class="img_count">6张</p>
+                        </div>
+                        <div class="hot_visit fr">
+                            <span class="hot_store_img fl"></span>
+                            <span class="visit_count fl">1234</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="xiaoguotu_detail.html">
+                        <img class="hot_lis_img " src="../Images/test_hot_list1.jpg">
+                    </a>
+                    <div class="hot_lis_text  clearfix">
+                        <span class="text_id text_id2 fl">5</span>
+                        <div class="text_title fl">
+                            <a href="#"><p>现代时尚三居欣赏2015大全</p></a>
+                            <p class="img_count">6张</p>
+                        </div>
+                        <div class="hot_visit fr">
+                            <span class="hot_store_img fl"></span>
+                            <span class="visit_count fl">1234</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="xiaoguotu_detail.html">
+                        <img class="hot_lis_img " src="../Images/test_hot_list1.jpg">
+                    </a>
+                    <div class="hot_lis_text  clearfix">
+                        <span class="text_id text_id2 fl">6</span>
+                        <div class="text_title fl">
+                            <a href="#"><p>现代时尚三居欣赏2015大全</p></a>
+                            <p class="img_count">6张</p>
+                        </div>
+                        <div class="hot_visit fr">
+                            <span class="hot_store_img fl"></span>
+                            <span class="visit_count fl">1234</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="xiaoguotu_detail.html">
+                        <img class="hot_lis_img " src="../Images/test_hot_list1.jpg">
+                    </a>
+                    <div class="hot_lis_text  clearfix">
+                        <span class="text_id text_id2 fl">7</span>
+                        <div class="text_title fl">
+                            <a href="#"><p>现代时尚三居欣赏2015大全</p></a>
+                            <p class="img_count">6张</p>
+                        </div>
+                        <div class="hot_visit fr">
+                            <span class="hot_store_img fl"></span>
+                            <span class="visit_count fl">1234</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hot_middle fl">
+                <div class="mid_top">
+                    <div class="hot_mid_img">
+                        <a href="xiaoguotu_detail.html">
+                            <img src="../Images/test_xgt_hotmiddle1.jpg">
+                        </a>
+                    </div>
+                        <div class="hot_mid_text">
+                            <span>简约现代风格</span>
+                            <span>三居室客厅</span>
+                        </div>
+                </div>
+                <div class="mid_bot fl">
+                    <div class="hot_mid_img2">
+                        <a href="xiaoguotu_detail.html">
+                            <img src="../Images/test_xgt_hotmiddle2.jpg">
+                        </a>
+                    </div>
+                        <div class="hot_mid_text">
+                            <span>简约现代风格</span>
+                            <span>三居室客厅</span>
+                        </div>
+                </div>
+                <div class="mid_bot fl">
+                    <div class="hot_mid_img2">
+                        <a href="xiaoguotu_detail.html">
+                            <img src="../Images/test_xgt_hotmiddle2.jpg">
+                        </a>
+                    </div>
+                        <div class="hot_mid_text">
+                            <span>简约现代风格</span>
+                            <span>三居室客厅</span>
+                        </div>
+                </div>
+                <div class="mid_bot clear_margin fl">
+                    <div class="hot_mid_img2">
+                        <a href="xiaoguotu_detail.html">
+                            <img src="../Images/test_xgt_hotmiddle2.jpg">
+                        </a>
+                    </div>
+                        <div class="hot_mid_text">
+                            <span>简约现代风格</span>
+                            <span>三居室客厅</span>
+                        </div>
+                </div>
+            </div>
+            <div class="hot_right fl">
+                <div class="hot_right_img">
+                    <a href="xiaoguotu_detail.html"><img src="../Images/test_xgt_hotright.jpg"></a>
+                </div>
+                    <div class="hot_mid_text">
+                        <span>简约现代风格</span>
+                        <span>三居室客厅</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--局部效果图-->
+    <div class="part ">
+        <div class="m_title clearfix">
+            <h3>局部效果图</h3>
+            <a class="#"><span>更多</span></a>
+        </div>
+        <div class="clearfix">
+            <div class="m_part fl">
+                <div class="part_left fl">
+                    <a href="#">
+                        <div class="part_title title_color1  clearfix">
+                            <span class="part_title_ele part_title_left">精装</span>
+                            <span class="point"></span>
+                            <span class="part_title_ele part_title_right">客厅</span>
+                        </div>
+                    </a>
+                    <a href="#"><img src="../Images/test_xgt_hotright.jpg">
+                        <div class="hot_mid_text">
+                            二居室客厅
+                        </div>
+                        <div class="store clearfix">
+                            <span class="store_img"></span>
+                            <span>收藏</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="part_right fl">
+                    <div class="part_right1">
+                        <a href="#">
+                             <img src="../Images/test_xgt_partright1.jpg">
+                            <div class="hot_mid_text">
+                                二居室客厅
+                            </div>
+                            <div class="store clearfix">
+                                <span class="store_img"></span>
+                                <span>收藏</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="part_right2">
+                        <a href="#">
+                            <img src="../Images/test_xgt_partright1.jpg">
+                            <div class="hot_mid_text">
+                                二居室客厅
+                            </div>
+                            <div class="store clearfix">
+                                <span class="store_img"></span>
+                                <span>收藏</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="m_part clear_right fl">
+                <div class="part_left fl">
+                    <a href="#">
+                        <div class="part_title title_color2  clearfix">
+                            <span class="part_title_ele part_title_left">精装</span>
+                            <span class="point"></span>
+                            <span class="part_title_ele part_title_right">客厅</span>
+                        </div>
+                    </a>
+                    <a class="part_left_img" href="#"><img src="../Images/test_xgt_hotright.jpg">
+                        <div class="hot_mid_text">
+                            二居室客厅
+                        </div>
+                        <div class="store clearfix">
+                            <span class="store_img"></span>
+                            <span>收藏</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="part_right fl">
+                    <div class="part_right1">
+                        <a href="#">
+                            <img src="../Images/test_xgt_partright1.jpg">
+                            <div class="hot_mid_text">
+                                二居室客厅
+                            </div>
+                            <div class="store clearfix">
+                                <span class="store_img"></span>
+                                <span>收藏</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="part_right2">
+                        <a href="#">
+                            <img src="../Images/test_xgt_partright1.jpg">
+                            <div class="hot_mid_text">
+                                二居室客厅
+                            </div>
+                            <div class="store clearfix">
+                                <span class="store_img"></span>
+                                <span>收藏</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="m_part clear_bottom fl">
+                <div class="part_left fl">
+                    <a href="#">
+                        <div class="part_title title_color3  clearfix">
+                            <span class="part_title_ele part_title_left">精装</span>
+                            <span class="point"></span>
+                            <span class="part_title_ele part_title_right">客厅</span>
+                        </div>
+                    </a>
+                    <a href="#"><img src="../Images/test_xgt_hotright.jpg">
+                        <div class="hot_mid_text">
+                            二居室客厅
+                        </div>
+                        <div class="store clearfix">
+                            <span class="store_img"></span>
+                            <span>收藏</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="part_right fl">
+                    <div class="part_right1">
+                        <a href="#">
+                            <img src="../Images/test_xgt_partright1.jpg">
+                            <div class="hot_mid_text">
+                                二居室客厅
+                            </div>
+                            <div class="store clearfix">
+                                <span class="store_img"></span>
+                                <span>收藏</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="part_right2">
+                        <a href="#">
+                            <img src="../Images/test_xgt_partright1.jpg">
+                            <div class="hot_mid_text">
+                                二居室客厅
+                            </div>
+                            <div class="store clearfix">
+                                <span class="store_img"></span>
+                                <span>收藏</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="m_part clear_bottom clear_right fl">
+                <div class="part_left fl">
+                    <a href="#">
+                        <div class="part_title title_color4  clearfix">
+                            <span class="part_title_ele part_title_left">精装</span>
+                            <span class="point"></span>
+                            <span class="part_title_ele part_title_right">客厅</span>
+                        </div>
+                    </a>
+                    <a href="#"><img src="../Images/test_xgt_hotright.jpg">
+                        <div class="hot_mid_text">
+                            二居室客厅
+                        </div>
+                        <div class="store clearfix">
+                            <span class="store_img"></span>
+                            <span>收藏</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="part_right fl">
+                    <div class="part_right1">
+                        <a href="#">
+                            <img src="../Images/test_xgt_partright1.jpg">
+                            <div class="hot_mid_text">
+                                二居室客厅
+                            </div>
+                            <div class="store clearfix">
+                                <span class="store_img"></span>
+                                <span>收藏</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="part_right2">
+                        <a href="#">
+                            <img src="../Images/test_xgt_partright1.jpg">
+                            <div class="hot_mid_text">
+                                二居室客厅
+                            </div>
+                            <div class="store clearfix">
+                                <span class="store_img"></span>
+                                <span>收藏</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--整装效果图-->
+    <div class="whole">
+        <div class="m_title clearfix">
+            <h3>整装效果图</h3>
+            <a class="#"><span>更多</span></a>
+        </div>
+        <div class="clearfix">
+            <div class="whole_part fl">
+            <a class="whole_part_left img_com_size" href="#">
+                <img src="../Images/test_xgt_zhengzhuang1.jpg">
+            </a>
+            <div class="whole_part_mid">
+                <a href="#">
+                    <div class="whole_text1 whole_text_com">
+                        <h3>东南亚风格</h3>
+                        <p>中式设计显得自然幽静、雅观，特别耐看，百看不厌。</p>
+                    </div>
+                    <div class="sanjiao1 sanjiao"></div>
+                </a>
+                <a href="#">
+                    <div class="whole_text2 whole_text_com clearfix">
+                        <h3>东南亚风格</h3>
+                        <p>东南亚设计显得自然幽静、雅观，特别耐看，百看不厌。</p>
+                    </div>
+                    <div class="sanjiao2 sanjiao"></div>
+                </a>
+            </div>
+                <a class="whole_part_right img_com_size" href="#">
+                    <img src="../Images/test_xgt_zhengzhuang1.jpg">
+                </a>
+        </div>
+            <div class="whole_part clear_right fl">
+                <a class="whole_part_left img_com_size" href="#">
+                    <img src="../Images/test_xgt_zhengzhuang1.jpg">
+                </a>
+                <div class="whole_part_mid">
+                    <a href="#">
+                        <div class="whole_text1 whole_text_com">
+                            <h3>东南亚风格</h3>
+                            <p>中式设计显得自然幽静、雅观，特别耐看，百看不厌。</p>
+                        </div>
+                        <div class="sanjiao1 sanjiao"></div>
+                    </a>
+                    <a href="#">
+                        <div class="whole_text2 whole_text_com clearfix">
+                            <h3>东南亚风格</h3>
+                            <p>东南亚设计显得自然幽静、雅观，特别耐看，百看不厌。</p>
+                        </div>
+                        <div class="sanjiao2 sanjiao"></div>
+                    </a>
+                </div>
+                <a class="whole_part_right img_com_size" href="#">
+                    <img src="../Images/test_xgt_zhengzhuang1.jpg">
+                </a>
+            </div>
+            <div class="whole_part clear_bottom fl">
+                <a class="whole_part_left img_com_size" href="#">
+                    <img src="../Images/test_xgt_zhengzhuang1.jpg">
+                </a>
+                <div class="whole_part_mid">
+                    <a href="#">
+                        <div class="whole_text1 whole_text_com">
+                            <h3>东南亚风格</h3>
+                            <p>中式设计显得自然幽静、雅观，特别耐看，百看不厌。</p>
+                        </div>
+                        <div class="sanjiao1 sanjiao"></div>
+                    </a>
+                    <a href="#">
+                        <div class="whole_text2 whole_text_com clearfix">
+                            <h3>东南亚风格</h3>
+                            <p>东南亚设计显得自然幽静、雅观，特别耐看，百看不厌。</p>
+                        </div>
+                        <div class="sanjiao2 sanjiao"></div>
+                    </a>
+                </div>
+                <a class="whole_part_right img_com_size" href="#">
+                    <img src="../Images/test_xgt_zhengzhuang1.jpg">
+                </a>
+            </div>
+            <div class="whole_part clear_right clear_bottom fl">
+                <a class="whole_part_left img_com_size" href="#">
+                    <img src="../Images/test_xgt_zhengzhuang1.jpg">
+                </a>
+                <div class="whole_part_mid">
+                    <a href="#">
+                        <div class="whole_text1 whole_text_com">
+                            <h3>东南亚风格</h3>
+                            <p>中式设计显得自然幽静、雅观，特别耐看，百看不厌。</p>
+                        </div>
+                        <div class="sanjiao1 sanjiao"></div>
+                    </a>
+                    <a href="#">
+                        <div class="whole_text2 whole_text_com clearfix">
+                            <h3>东南亚风格</h3>
+                            <p>东南亚设计显得自然幽静、雅观，特别耐看，百看不厌。</p>
+                        </div>
+                        <div class="sanjiao2 sanjiao"></div>
+                    </a>
+                </div>
+                <a class="whole_part_right img_com_size" href="#">
+                    <img src="../Images/test_xgt_zhengzhuang1.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="company">
+        <div class="m_title clearfix">
+            <h3>热门装修公司</h3>
+            <a class="#"><span>更多</span></a>
+        </div>
+        <div class="company_logo ">
+            <ul class="clearfix">
+                <li>
+                    <a href="#"><img src="../Images/test_xgt_hotmiddle2.jpg"> </a>
+                </li>
+                <li>
+                    <a href="#"><img src="../Images/test_xgt_hotmiddle2.jpg"> </a>
+                </li>
+                <li>
+                     <a href="#"><img src="../Images/test_xgt_hotmiddle2.jpg"> </a>
+                </li>
+                <li>
+                    <a href="#"><img src="../Images/test_xgt_hotmiddle2.jpg"> </a>
+                </li>
+                <li>
+                    <a href="#"><img src="../Images/test_xgt_hotmiddle2.jpg"> </a>
+                </li>
+                <li>
+                    <a href="#"><img src="../Images/test_xgt_hotmiddle2.jpg"> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="l_footer">
+    <div class="m_footerInner conWidth">
+        <p class="footer_nav"><a>关于我们</a> ｜ <a>联系我们</a> ｜ <a>商家入驻</a> ｜ <a>诚聘英才</a> ｜<a>免责声明</a> ｜ <a>精选专题 </a></p>
+
+        <p class="c_copy">&copy;2014-2015凤凰筑巢保留所有权利<br/>
+            Copyright &copy; 2014- 2015 Cntysoft.All Rights. 豫ICP备14029737号
+        </p>
+
+        <p class="c_rz"><img src="../Images/rz.png" alt="企业认证"/></p>
+    </div>
+</footer>
+<script data-main="../pc/xiaoguotu_index" src="../pc/lib/require.js"></script>
+</body>
+</html>

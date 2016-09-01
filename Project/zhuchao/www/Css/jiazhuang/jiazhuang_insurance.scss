@@ -1,0 +1,320 @@
+@charset "UTF-8";
+.content{
+  margin-bottom: 160px;
+  width: 100%;
+}
+//baner
+.banner{
+  background: url("../../../Images/pc/jiazhuang/icon_insurance_banner.jpg?_nosprite") no-repeat top center;
+  height: 500px;
+  position: relative;
+  .order{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: 340px;
+    width: 310px;
+    height: 380px;
+    background-color: #fff;
+    padding:20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    h3{
+      font-size: 16px;
+      font-family: "Microsoft YaHei";
+    }
+    form{
+      margin: 20px 0 10px 0;
+      input,.location,.yz_message{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      input{
+        border: 1px solid #e4e4e4;
+        height: 38px;
+        line-height: 38px;
+      }
+      input,select{
+        padding-left:10px;
+      }
+      .location {
+        .province,.city{
+          width: 128px;
+          height: 40px;
+          line-height: 40px;
+          position: relative;
+        }
+
+        select{
+          width: 100%;
+          height: 100%;
+
+        }
+      }
+      .yz_message{
+        input{
+          margin-bottom: 0;
+        }
+        .yzm{
+          width: 155px;
+        }
+        .getyzm{
+          width: 98px;
+          cursor: pointer;
+          padding: 0;
+          background-color: #093;
+          color: #fff;
+          border: 0;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+      .btn{
+        margin-bottom:0px;
+        text-align: center;
+        font-size: 14px;
+        background-color: #009933;
+        color: #fff;
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    p{
+      width: 100%;
+      text-align: center;
+      color: #999999;
+      letter-spacing:1px;
+      span{
+        padding: 0 2px;
+        color: #ff7e59;
+      }
+    }
+  }
+}
+//什么装修保
+.fqa{
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background:url("../../../Images/pc/jiazhuang/icon_insurance_bg.jpg?_nosprite") no-repeat top center ;
+  .question{
+    position: absolute;
+    top: 70px;
+    right: 50%;
+    margin-right: 40px;
+    h1{
+      font-size: 32px;
+    }
+    .answer{
+      font-size: 18px;
+      margin-top: 55px;
+      p{
+        line-height: 36px;
+      }
+    }
+  }
+}
+//专业质检
+.quality_test{
+  height: 850px;
+  .tester{
+    width: 100%;
+    height: 720px;
+    background-color: #3dd394;
+    .hd{
+      text-align: center;
+      padding-top: 60px;
+      h1{
+        font-size: 36px;
+      }
+      p{padding-top: 25px;
+        padding-bottom: 52px;
+      font-size: 18px;}
+    }
+    .bd{
+      width: 1300px;
+      height: 305px;
+      margin:0 auto;
+      .bd_box{
+        width: 1080px;
+        margin: 0 auto;
+        height: 305px;
+        position: relative;
+      }
+      .wrap{
+        margin:0 -10px;
+        width: 1100px;
+        height: 305px;
+        overflow: hidden;
+        .box{
+          width: 200px;
+          margin:0 10px;
+          overflow: hidden;
+          a{
+            display: block;
+          }
+          img{
+            width: 200px;
+            height: 200px;
+          }
+          .tester_info{
+            background-color: #fff;
+            margin-top: 5px;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            h3{
+              font-size: 18px;
+              color: #000;
+            }
+            p{
+              font-size: 14px;
+              color: #888888;
+              padding-top: 20px;
+            }
+          }
+        }
+      }
+      .step{
+        margin-top: 30px;
+        h2{
+          text-align: center;
+          font-size: 25px;
+        }
+        .step_info{
+          width: 1080px;
+          height: 250px;
+          background: url("../../../Images/pc/jiazhuang/icon_step_bg.png?_nosprite") no-repeat;
+         margin: 20px auto 0px;
+          .one,.two,.three{
+            width: 150px;
+            height: 150px;
+            padding: 55px 50px 0px;
+            color: #fff;
+            text-align: center;
+            h3{
+              font-size:18px ;
+              padding-bottom: 47px;
+            }
+            p{font-size: 14px;}
+          }
+          .two,.three{
+            margin-left: 165px;
+          }
+          .two{
+            h3{
+              padding-bottom: 10px;
+            }
+            p{
+              line-height: 30px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//保障范围
+.apply_range{
+  width: 1300px;
+  height: 1230px;
+  margin: 0 auto;
+  margin-top: 90px;
+  h1{
+    text-align: center;
+    font-size: 36px;
+  }
+  p{
+    text-align: center;
+    font-size: 20px;
+    padding: 25px 0 52px 0;
+  }
+
+  thead tr th{
+    font-size: 18px!important;
+    font-weight: normal;
+    text-align: center!important;
+    color: #000!important;
+  }
+
+  table .list_one{
+    width: 250px;
+    height: 100px;
+    border: 0.5px solid #fff;
+    background-color: #e7f4ea;
+    text-align: center;
+    font-size: 14px;
+  }
+table .list_two{
+  width: 250px;
+  height: 100px;
+  border: 0.5px solid #fff;
+  background-color: #e5f5fd;
+  text-align: center;
+  font-size: 14px;
+}
+  table .list_three{
+    width: 799px;
+    height: 100px;
+    border: 0.5px solid #fff;
+    background-color: #fcebec;
+    text-align: left;
+    padding: 0 53px 0 40px;
+      line-height: 30px;
+    color: #666;
+    font-size: 14px;
+  }
+  .declaration{
+    height: 150px;
+    background-color: #f8f8f8;
+    p{
+      font-size: 14px;
+      color: #666;
+      text-align: left;
+      padding-left: 50px;
+
+      line-height: 30px;
+      padding-top: 10px;
+    }
+  }
+}
+//箭头
+.left_btn{
+  display: block;
+  position: absolute;
+  left: -110px;
+  top: 0;
+  i{
+    width: 30px;
+    height: 51px;
+    display:block ;
+    margin: 25px auto;
+    background:url("../../jiazhuang/Images/sprite_jiazhuang_left.png") no-repeat;
+  }
+}
+.right_btn{
+  display: block;
+  position: absolute;
+  right: -110px;
+  top: 0;
+  i{
+    display: block;
+    width: 30px;
+    height: 51px;
+    margin: 25px auto;
+    background:url("../../jiazhuang/Images/sprite_jiazhuang_right.png") no-repeat;
+  }
+}
+.left_btn, .right_btn{
+  background:#31c781;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  border-radius: 50%;
+}

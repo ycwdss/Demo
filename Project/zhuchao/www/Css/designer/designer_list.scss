@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import "../fh/style";
+@import "../fh/moudle/list_sort";
+@import "../fh/moudle/_ele_hover";
+@import "../fh/moudle/_list";
+.l_main{
+  min-height: 600px;
+}
+/*覆盖模型*/
+body{
+  background: #f8f8f8;
+}
+.lis_clicked{
+  background: #FFFFFF;
+}
+.slick-slider{
+  margin-bottom: 0;
+}
+.list{
+  width: 1010px;
+  background: #FFFFFF;
+}
+.lis_choice{
+  width: 760px;
+  li{
+    width: 78px;
+  }
+}
+.lis_long{
+  li{
+    width: 100px;
+  }
+}
+.l_main{
+  margin-bottom: 100px;
+}
+//左侧
+.content_left{
+  width: 1010px;
+}
+.recommend{
+  position: relative;
+  padding-bottom: 35px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  h3{
+    font-size: 18px;
+    color: #333;
+    line-height: 60px;
+    text-indent: 20px;
+    background: #FFFFFF;
+    margin-bottom: 5px;
+  }
+}
+.recommend_content{
+  position: relative;
+  margin: 0 auto;
+  width: 932px;
+  height: 137px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.designer_img{
+  width: 100px;
+  height: 100px;
+  img{
+    width: 100px!important;
+    height: 100px!important;
+    @include border-radius(50px);
+  }
+}
+.recom_ele{
+  .designer_img{
+    margin: 0 44px 20px;
+  }
+  p{
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    overflow: hidden;
+    height: 17px;
+  }
+}
+.recom_arrow{
+  position: absolute;
+  bottom: 80px;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  span{
+    display: block;
+    width: 25px;
+    height: 46px;
+  }
+}
+.recom_arrow1 {
+  left: 20px;
+  span {
+    background: url("../../designer/Images/sprite_designerlist1.png");
+  }
+}
+.recom_arrow2{
+  right: 20px;
+  span{
+    background: url("../../designer/Images/sprite_designerlist2.png");
+  }
+}
+.recom_count{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 12px;
+  color: #888;
+}
+.designer_list{
+  margin-bottom: 100px;
+}
+.m_designer{
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px dashed #e4e4e4;
+}
+.c_designer{
+  float: left;
+  height: 255px;
+  width: 224px;
+  background: #FFFFFF;
+  padding:15px 0;
+  p{
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+  }
+}
+.c_designer .designer_img{
+  margin: 0 auto;
+}
+.c_designer .designer_name{
+  font-size: 14px;
+  color: #333;
+  line-height: 30px;
+  span{
+    color: $normalColor;
+  }
+}
+.yuyue{
+  margin: 10px auto 5px;
+  width: 90px;
+  height: 30px;
+  @include box-sizing();
+  border: 1px solid $normalColor;
+  color: $normalColor;
+  font-size: 14px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  @include transition;
+  &:hover{
+    background: $normalColor;
+    color: #FFFFFF;
+  }
+}
+.designer_case{
+  float: left;
+  width: 217px;
+  height: 255px;
+  padding: 15px;
+  margin-left: 15px;
+  background: #FFFFFF;
+  text-align: center;
+  img{
+    display: block;
+    width: 217px !important;
+    height: 135px !important;
+  }
+  p{
+    overflow: hidden;
+    @include ell();
+  }
+}
+.case_title{
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  a{
+    color: #333;
+    &:hover{
+      color: $activeColor;
+    }
+  }
+}
+.case_price{
+  font-size: 12px;
+  color: $activeColor;
+}
+.case_visit{
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
+}
+//右侧
+.right_content{
+  float: right;
+  @include box-sizing();
+  width: 270px;
+}
+.find_designer{
+  background: #FFFFFF;
+  padding: 10px 21px 10px;
+}
+.find_top{
+  h2{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+  }
+  p{
+    margin:0 auto;
+    width: 180px;
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+  }
+}
+.find_ele{
+  padding: 15px 0 20px 10px;
+  border-bottom: 1px dashed #e4e4e4;
+}
+.budong{
+  width: 25px;
+  height: 25px;
+  background: url("../../designer/Images/sprite_designerlist3.png");
+}
+.worry{
+  @extend .budong;
+  background: url("../../designer/Images/sprite_designerlist4.png");
+}
+.fangxin{
+  @extend .budong;
+  background: url("../../designer/Images/sprite_designerlist5.png");
+}
+.find_text{
+  width: 183px;
+  font-size: 12px;
+  h5{
+    font-size: 12px;
+    color: #888;
+  }
+  p{
+    color: #666;
+  }
+}
+.clear_border{
+  border: 0;
+}

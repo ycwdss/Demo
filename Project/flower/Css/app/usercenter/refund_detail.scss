@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/refund";
+@import "../../module/recommend";
+
+.m_content{
+  border-bottom:1px solid #e4e4e4;
+}
+.refund_top{
+  margin:30px 30px 20px;
+}
+.refund_top_price{
+  font-size: 16px;
+  line-height: 30px;
+  color: #333;
+  span{
+    font-size: 12px;
+  }
+}
+.refund_top_intro{
+  margin:10px 0 30px;
+  text-indent: 40px;
+  font-size:13px;
+}
+.refund_process{
+  margin:0 30px 30px;
+  >div{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 520px;
+  }
+}
+.process_circle{
+  display: block;
+  margin:0 auto;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  background: #e4e4e4;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;;
+}
+.process_left{
+  display: block;
+  position: absolute;
+  top: 20px;
+  left:0;
+  background: #e4e4e4;
+  width: 237px;
+  height: 10px;
+}
+.process_right{
+  @extend .process_left;
+  left:auto;
+  right:0;
+}
+.process_detail{
+  margin: 15px auto 0;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  width: 100px;
+  color: #888;
+}
+.refund_process .process_head{
+   width: 310px;
+   .process_circle{
+     margin:0 0 0 25px;
+   }
+  .process_detail{
+    margin-left: 0px;
+  }
+ }
+.refund_process .process_end{
+  width: 310px;
+  .process_circle{
+    margin:0  0 0 235px;
+  }
+  .process_detail{
+    margin-left: 210px;
+  }
+}
+//申请详情
+.refund_detail{
+  h3{
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom:1px solid #e4e4e4;
+  }
+}
+.detail_type{
+  width: 100px;
+}
+.detail_reason{
+  width: 960px;
+}
+.detail_time{
+  width: 100px;
+}
+.detail_title{
+  li{
+    float: left;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+.detail_ele{
+  li{
+    float: left;
+    display: table;
+    height: 80px;
+    font-size: 14px;
+    text-align: center;
+    >div{
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+.refund_pro{
+  h3{
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom:1px solid #e4e4e4;
+  }
+}

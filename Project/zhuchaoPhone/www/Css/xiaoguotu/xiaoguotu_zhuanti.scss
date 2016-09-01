@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/xiaoguotu_zhuanti_top";
+@import "../mobile_moudle/moudle/moudle_text_box";
+//专题内容
+.zhuanti_items{
+  width: 98%;
+  padding:10px;
+  margin:15px auto;
+  background-color: #fff;
+}
+.zhuanti_img{
+  padding:5px;
+  display: block;
+  width:100%;
+  height: auto;
+  border:1px solid #093;
+  overflow: hidden;
+}
+.zhuanti_img img{
+  display: block;
+  width: 100%;
+  height:auto;
+}
+.moudle_text_box p{
+  width:80%;
+  margin:3px auto 0;
+  font-size: 14px;
+  overflow: hidden;
+  color: #666;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-line-clamp:3;
+  -webkit-box-orient: vertical;
+  @include staticEll($line-height:1.6,$lines:3)
+}

@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+@import "../lib/lib";
+@import "../module/drop";
+
+.addr_ele {
+  position: relative;
+  float: left;
+  width: 330px;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px 25px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888888;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .icon-duihao1 {
+    position: absolute;
+    bottom: -3px;
+    right: -1px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #aaa;
+  }
+}
+
+.addr_ele .addr_title {
+  line-height: 25px;
+}
+
+.addr_ele .default_addr {
+  float: left;
+}
+
+.addr_ele .del_addr {
+  position: relative;
+  float: right;
+  margin-left: 10px;
+  line-height: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.addr_ele .edit_addr {
+  float: right;
+  color: #333;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.addr_ele .addr_container {
+  margin-top: 13px;
+  line-height: 25px;
+  .addr_detail {
+    height: 50px;
+    @include ell(2);
+  }
+}
+
+//新增收货地址
+.new_addr {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.new_addr_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 600px;
+  height: 490px;
+  background: #FFFFFF;
+  > h2 {
+    position: relative;
+    font-size: 18px;
+    color: #666;
+    line-height: 50px;
+    border-bottom: 1px solid transparent;
+    text-align: center;
+    i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+
+.new_addr_container {
+  margin: 40px auto 0;
+  width: 430px;
+}
+
+.new_addr_ele {
+  position: relative;
+  > span {
+    float: left;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+  }
+  .addr_input {
+    float: left;
+    font-size: 0;
+    > input {
+      width: 350px;
+      height: 40px;
+      padding: 4px 10px;
+      line-height: 20px;
+      font-size: 13px;
+      border: 1px solid #e4e4e4;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    p {
+      line-height: 20px;
+      height: 20px;
+      font-size: 12px;
+      color: red;
+      visibility: hidden;
+    }
+  }
+
+}
+
+.addr_tip {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 180px;
+  line-height: 30px;
+}
+
+.set_default {
+  height: 20px;
+  padding-left: 90px;
+  p {
+    float: left;
+    line-height: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: -10px;
+    span {
+      float: left;
+      margin-top: 3px;
+      margin-right: 5px;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #aaa;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+    i {
+      display: none;
+      margin: 3px;
+      width: 6px;;
+      height: 6px;
+      background: #aaa;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  .addr_checked {
+    i {
+      display: block;
+    }
+  }
+}
+
+.submit {
+  margin-left: 80px;
+  span, & input {
+    float: left;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 20px;
+    border: 1px solid #e4e4e4;
+    font-family: '\5fae\8f6f\96c5\9ed1';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+// 重写select_btn
+.select_btn {
+  width: 95px;
+  margin-right: 12px;
+  ul {
+    width: 95px;
+  }
+}
+
+.drop_menu {
+  float: none;
+  display: inline-block;
+  margin-right: 10px;
+  width: 110px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  .drop_list li {
+    height: 40px;
+  }
+}
+
+/*
+<div class="new_addr hide">
+<div class="new_addr_content bounceIn">
+<h2 class="main_border">收货地址<i class="icon-cuohao main_bg addr_cancel"></i></h2>
+<div class="new_addr_container">
+<form>
+<div class="new_addr_ele clearfix">
+<span><i class="main">*</i>收货人：</span>
+<div class="addr_input">
+<input type="text">
+<p class="error_tips">收货人不能为空！</p>
+</div>
+
+</div>
+<div class="new_addr_ele clearfix">
+<span><i class="main">*</i>收货地区：</span>
+<div class="addr_input">
+<div class="drop_menu ">
+<div class="drop_show">省份</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>河南省</li>
+<li>安徽安徽安徽安徽省</li>
+<li>山东省</li>
+<li>江西省</li>
+<li>广西省</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu  ">
+<div class="drop_show">直辖市</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>郑州安徽安徽市</li>
+<li>湘乡市</li>
+<li>新乡市</li>
+<li>新郑市</li>
+<li>商丘市</li>
+<li>南阳市</li>
+<li>信阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+</ul>
+</div>
+<div class="drop_menu no_mr  ">
+<div class="drop_show">区/县</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>金水区</li>
+<li>管城区</li>
+<li>惠济区</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+</ul>
+</div>
+<p class="error_tips">请选择收货地区！</p>
+</div>
+
+</div>
+<div class="new_addr_ele clearfix">
+<span><i class="main">*</i>收货地址：</span>
+<div class="addr_input">
+<input type="text">
+<p class="error_tips">请填写收货地址！</p>
+</div>
+</div>
+<div class="new_addr_ele clearfix">
+<span><i class="main">*</i>手&nbsp;&nbsp;机：</span>
+<div class="addr_input">
+<input type="text">
+<p class="error_tips">请输入手机号码！</p>
+</div>
+</div>
+<div class="new_addr_ele clearfix">
+<span><i class="main"></i>邮&nbsp;&nbsp;编：</span>
+<div class="addr_input">
+<input type="text">
+<p class="error_tips"></p>
+</div>
+</div>
+<div class="new_addr_ele set_default clearfix">
+<p><span class="addr_checked"><i></i></span> 设置为默认</p>
+</div>
+<div class="submit clearfix">
+<input class="main main_border" type="submit" value="保存信息">
+<span class="addr_cancel">取消</span>
+</div>
+</form>
+</div>
+</div>
+</div>*/

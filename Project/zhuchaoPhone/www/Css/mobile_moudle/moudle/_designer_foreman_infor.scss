@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.m_content{
+  margin-top: 10px;
+  background: #FFFFFF;
+}
+.infor_ele{
+  font-size: 0.9rem;
+  padding: 0 3%;
+  line-height: 40px;
+  p{
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+.infor_ele span:nth-child(1){
+  margin-right: 20px;
+  color: #666;
+}
+.intro{
+  font-size: 0.8rem;
+  color: #333;
+  text-indent: 1.6rem;
+  line-height: 30px;
+  padding: 10px 3% 20px;
+}
+.no_borderB{
+  border-bottom: 0 !important;
+}
+.infor_more span:nth-child(1){
+  float: left;
+}
+.infor_more span:nth-child(2){
+  display: block;
+  margin-left: 77px;
+}

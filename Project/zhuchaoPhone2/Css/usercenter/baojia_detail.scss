@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/usercenter/user_style";
+
+.l_baojia{
+  margin-top: 10px;
+  background: #ffffff;
+
+}
+.m_baojia{
+  height: 100px;
+  padding:10px 0;
+  img{
+    float: left;
+    height: 68px;
+    width: 110px;
+    margin:15px 10px 0 15px;
+  }
+  h4{
+    a{
+      margin-top: 11px;
+      color: #333;
+      font-size: 1.3rem;
+      @include ell(2);
+      line-height:24px;
+      height: 48px;
+    }
+  }
+  p{
+    font-size: 2rem;
+    line-height: 30px;
+    margin-right: 10px;
+    color: #3291c8;
+    i{
+      font-size: 1.2rem;
+    }
+  }
+}
+//询价
+.l_xunjia{
+  margin-top: 10px;
+  background: #ffffff;
+  h3{
+    padding: 0 15px;
+    font-size: 1.4rem;
+    line-height: 40px;
+    border-bottom: 1px solid #e4e4e4;
+    i{
+      font-size: 1.3rem;
+      color: #999;
+    }
+  }
+  p{
+    padding:5px 10px 10px;
+    font-size: 1.3rem;
+    line-height: 25px;
+    text-indent: 2rem;
+  }
+}
+//商家回复
+.l_answer{
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  padding:10px 0;
+  background: #ffffff;
+}
+.answer_top{
+  margin:0 10px;
+ img{
+   float: left;
+   height: 60px;
+   margin-right: 10px;
+   max-width: 120px;
+ }
+  h4{
+    font-size: 1.3rem;
+    line-height: 20px;
+    color: #333;
+    @include ell(1);
+  }
+  p{
+    font-size: 1.2rem;
+    line-height: 20px;
+    @include ell(1);
+  }
+}
+.m_answer{
+  margin:0 15px;
+  p{
+    position: relative;
+    margin-top: 5px;
+    padding-left:40px;
+    font-size:1.3rem;
+    line-height: 25px;
+  }
+}
+.answer_intro{
+  position: absolute;
+  top: 0;
+  left:0;
+}
+

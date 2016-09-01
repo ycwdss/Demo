@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.l_right{
+  p{
+    font-size: 13px;
+    line-height: 35px;
+  }
+  >p{
+    text-indent: 25px;
+  }
+  .service_box{
+    img{
+      display: block;
+      margin:50px auto 30px;
+    }
+  }
+  .service_detail{
+    .fl{
+      text-align: left;
+    }
+    .fr{
+      text-align: right;
+    }
+  }
+}

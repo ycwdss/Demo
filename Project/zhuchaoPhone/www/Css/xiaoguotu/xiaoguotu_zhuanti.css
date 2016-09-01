@@ -1,0 +1,113 @@
+.xgt_nav {
+  display: inline-block;
+  margin: 7px auto;
+  height: 27px;
+  line-height: 27px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.xgt_nav li {
+  float: left;
+  position: relative; }
+
+.xgt_nav li a {
+  display: inline-block;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px; }
+
+.xgt_nav li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 98%;
+  z-index: 1;
+  border-bottom: 0 !important;
+  background-color: #fff; }
+
+.xgt_nav li.current a {
+  color: #093;
+  background-color: #fff; }
+
+.xgt_nav li.last_li:before {
+  display: none; }
+
+.moudle_top h1 {
+  font-size: 18px;
+  color: #fff;
+  vertical-align: -19px; }
+
+.moudle_text_box {
+  background-color: #fff; }
+
+.moudle_text_box h2 {
+  width: 96%;
+  margin: 10px auto;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.6;
+  height: 1.6em; }
+
+.moudle_text_box h2 a {
+  color: #666; }
+
+.moudle_text_box > span {
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+  text-align: right; }
+
+.moudle_text_box > span.moudle_text_leftborder {
+  text-align: left; }
+
+.moudle_text_box > span i {
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  background-color: #ccc;
+  vertical-align: middle; }
+
+.moudle_text_box > span em {
+  display: inline-block;
+  width: 4px;
+  height: 3px;
+  background-color: #666;
+  vertical-align: middle; }
+
+.zhuanti_items {
+  width: 98%;
+  padding: 10px;
+  margin: 15px auto;
+  background-color: #fff; }
+
+.zhuanti_img {
+  padding: 5px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #093;
+  overflow: hidden; }
+
+.zhuanti_img img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.moudle_text_box p {
+  width: 80%;
+  margin: 3px auto 0;
+  font-size: 14px;
+  overflow: hidden;
+  color: #666;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.6;
+  height: 4.8em; }

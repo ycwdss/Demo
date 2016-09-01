@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change_pwd</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/slick.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/change_pwd.css">
+</head>
+<body>
+<!--头部-->
+<div class="header main_bg">
+    <a class="icon_logo" href="index.html">
+        <img src="../../Images/test/test_mall_logo.png" alt=""/>
+    </a>
+    <div class="header_nav_box">
+        <ul class="header_nav">
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">鲜花</a></li>
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">永生花</a></li>
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">礼品</a></li>
+            <li><a class="mainbg_opacity" href="../new/new_list.html">花语大全</a></li>
+        </ul>
+    </div>
+    <ul class="header_icon">
+        <li class="mainbg_opacity icon_search"><i class="icon-search"></i></li>
+        <li class="mainbg_opacity"><i class="icon-cart"></i></li>
+        <li class="mainbg_opacity"><i class="icon-phone"></i>
+            <div class="icon_phone_pull main_bg">
+                <a><img src="http://statics-res.fhzc.com/Images/pc/icon_erweima.png"><span>扫码下载客户端</span></a>
+            </div>
+        </li>
+        <li class="mainbg_opacity">
+            <i class="icon-user-white"></i>
+            <span class="h_login">登录</span>
+            <span class="h_register">注册</span>
+        </li>
+    </ul>
+    <div class="search_box  main_bg hide">
+        <div class="search_box_inner">
+            <form action="" class="search_form">
+                <input class="search_input" type="text" required/><input
+                    class="search_btn" type="button" value="搜索"/>
+            </form>
+            <!--热门搜索-->
+            <div class="search_hot">
+                <h4>人气搜索关键词：</h4>
+                <a href="">玫瑰花</a>
+                <a href="">友情花</a>
+                <a href="">探望病人</a>
+                <a href="">永生花</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--用户中心顶部-->
+<div class="usercenter_top ">
+    <div class="top_center">
+        <div class="conwidth">
+            <h2>个人中心</h2>
+            <div class="top_info main_border">
+                <div class="user_img">
+                    <img src="../../Images/test/test_user_img.jpg">
+                    <span>需改头像</span>
+                </div>
+                <h4>hell world</h4>
+                <p class="account_safety">
+                    账户安全：
+                    <span class="main_border"><i class="main_bg"></i></span>
+                    <em class="main">较高</em>
+                </p>
+                <p class="user_grade">会员等级：V3</p>
+                <div class="top_detail">
+                    <ul class="clearfix">
+                        <li>会员积分：20</li>
+                        <li><a href="coupon.html" class="main_hover">优 惠 券：<i class="main">3</i></a></li>
+                        <li><a href="message.html" class="main_hover">我的信息：<i class="main">3</i></a></li>
+                        <li><a href="order_list.html" class="main_hover">待 收 货：<i class="">0</i></a></li>
+                        <li><a href="order_list.html" class="main_hover">待 评 价：<i class="">0</i></a></li>
+                        <li><a href="refund_list.html" class="main_hover">正在退货：<i class="main">3</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="m_top_list conwidth clearfix">
+        <div class="top_list fl">
+            <h3 class="main_border">
+                <span class="top_list_left main_border"><i></i></span>
+                交易管理
+                <span class="top_list_right main_border"><i></i></span>
+            </h3>
+            <ul>
+                <li><a href="order_list.html" class="main_hover">完成订单</a></li>
+                <li><a href="order_list.html" class="main_hover">待付款</a></li>
+                <li><a href="order_list.html" class="main_hover">待收货</a></li>
+            </ul>
+        </div>
+        <div class="top_list fl">
+            <h3 class="main_border">
+                <span class="top_list_left main_border"><i></i></span>
+                售后服务
+                <span class="top_list_right main_border"><i></i></span>
+            </h3>
+            <ul>
+                <li><a href="refund_list.html" class="main_hover">退货单</a></li>
+                <li><a href="refund_list.html" class="main_hover">换货单</a></li>
+            </ul>
+        </div>
+        <div class="top_list fr">
+            <h3 class="main_border">
+                <span class="top_list_left main_border"><i></i></span>
+                个人信息
+                <span class="top_list_right main_border"><i></i></span>
+            </h3>
+            <ul>
+                <li><a href="basic_info.html" class="main_hover ">基本信息</a></li>
+                <li><a href="address.html" class="main_hover">我的地址</a></li>
+                <li><a href="change_pwd.html" class="main_hover  main">修改密码</a></li>
+
+            </ul>
+        </div>
+        <div class="top_list fr">
+            <h3 class="main_border">
+                <span class="top_list_left main_border"><i></i></span>
+                我的账户
+                <span class="top_list_right main_border"><i></i></span>
+            </h3>
+            <ul>
+                <li><a href="coupon.html" class="main_hover">优惠券</a></li>
+                <li><a href="collect.html" class="main_hover">商品收藏</a></li>
+                <li><a href="evaluate.html" class="main_hover">我的评价</a></li>
+                <li><a href="message.html" class="main_hover">我的消息</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!--标题-->
+<div class="usercenter_title conwidth">
+    <h2>基本信息</h2>
+    <p>ESSENTIAL INFORMATION/p>
+</div>
+<div class="m_content conwidth">
+    <div class="pwd_container">
+        <form action="">
+            <div class="pwd_ele old_pwd clearfix">
+                <span class="pwd_intro"><i class="main">*</i>原&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
+                <input type="password">
+                <span class="tip">请输入您的登录密码</span>
+            </div>
+            <div class="pwd_ele new_pwd clearfix">
+                <span class="pwd_intro">
+                    <i class="main">*</i>
+                  新&nbsp;&nbsp;密&nbsp;&nbsp;码：
+                </span>
+                <input type="password">
+                <span class="tip">  6-16个字符，需要使用字母、数字或符号组合</span>
+            </div>
+            <div class="pwd_ele second_pwd  clearfix">
+                <span class="pwd_intro">
+                    <i class="main">*</i>
+                    重复新密码：
+                </span>
+                <input type="password">
+                <span class="tip">请再次输入新密码</span>
+            </div>
+            <div class="pwd_ele  confirm clearfix">
+                <span class="pwd_intro">
+                    <i class="main">*</i>
+                    验&nbsp;&nbsp;证&nbsp;&nbsp;码：
+                </span>
+                <input type="text">
+                <img src="" alt="" class="confirm_img">
+                <span class="confirm_update main_hover">换一张</span>
+                <span class="tip">按右图输入验证码，不区分大小写</span>
+            </div>
+            <div class="pwd_ele submit clearfix">
+                <span class="pwd_intro"></span>
+                <input type="submit"  class="main_bg submit_btn" value="提交">
+            </div>
+        </form>
+    </div>
+</div>
+<!--底部-->
+<div class="service">
+    <ul class="conwidth service_inner">
+        <li>
+            <a href="../help/help.html">
+                <i class="icon-footer1"></i>
+                <h4>定做预约申请</h4>
+
+                <p>我们会做出您最满意的商品</p>
+            </a>
+        </li>
+        <li>
+            <a href="../help/help.html">
+                <i class="icon-footer2"></i>
+                <h4>服务与支持</h4>
+
+                <p>我们将为您提供金牌服务</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="conwidth clearfix">
+        <dl class="footer_nav">
+            <dt>新手指南</dt>
+            <dd>
+                <a class="main_hover" href="">购物流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">会员政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">联系客服</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">积分政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">加入我们</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>配送方式</dt>
+            <dd>
+                <a class="main_hover" href="">全程冷链</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送时间</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送范围</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送收费标准</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">关于我们</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>支付方式</dt>
+            <dd>
+                <a class="main_hover" href="">货到付款</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">在线支付</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">其他支付方式</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">优惠券使用</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">礼金卡使用</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>售后服务</dt>
+            <dd>
+                <a class="main_hover" href="">验货与拒收政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退换货政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退换货流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退款流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">发票制度</a>
+            </dd>
+        </dl>
+        <dl class="erweima fl">
+            <dt>手机筑巢</dt>
+            <dd><img src="../../Images/test/test_erweima.png" alt=""/></dd>
+            <dd>下载移动客户端</dd>
+        </dl>
+    </div>
+    <p class="copy">Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc23</p>
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/change_pwd" id="require" src="../../Js/lib/require.js"></script>
+</body>
+</html>

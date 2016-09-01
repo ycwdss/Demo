@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/company/module_title";
+
+.about_content {
+  position: relative;
+  margin: 0 5px;
+  background: #ffffff;
+  padding: 10px 10px 20px;
+  img {
+    display: block !important;
+    max-width: 100% !important;
+    height: auto!important;
+    margin: 12px auto !important;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 23px;
+    text-indent: 2rem;
+  }
+}
+
+//关于我们
+.about_us {
+  text-align: center;
+  padding-left: 0;
+}
+
+.icon-aboutus {
+  font-size: 1.8rem !important;
+}
+
+//企业文化
+.icon-qiyewenhua {
+  font-size: 1.8rem !important;
+}
+
+//企业资质
+.icon-zizhi {
+  font-size: 2rem !important;
+}
+
+//联系我们
+.icon-lianxiwomen {
+  font-size: 1.8rem !important;
+}

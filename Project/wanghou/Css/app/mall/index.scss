@@ -1,0 +1,380 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+
+//小广告
+.small_banner {
+  width: 100%;
+  height: 50px;
+  background-color: #511b6d;
+  div {
+    width: 980px;
+    height: 50px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.banner_box{
+    width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  div{
+   width: 100%;
+    height: 400px;
+    float: left;
+    a{
+      display: block;
+      width: 1300px;
+      height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .one{
+    background-color: #e0dfdb;
+  }
+  .two{
+    background-color: #CE020E;
+  }
+}
+.btn_dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 9991;
+  li {
+    float: left;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+      color: transparent;
+      outline: 0;
+      background-color: #fff;
+      border-radius: 50%;
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+    }
+    button:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      text-align: center;
+      display: block;
+      background: #e4e4e4;
+      color: #e4e4e4;
+    }
+  }
+  .slick-active{
+    button{
+      background-color: #f90;
+    }
+  }
+}
+
+//内容
+.content{
+  margin-top: 50px;
+  overflow: hidden;
+}
+.p_show{
+  margin: 0 -15px;
+  li{
+    float:left;
+    margin: 0 15px;
+    width: 300px;
+    height: 235px;
+    line-height: 235px;
+    position: relative;
+    &:hover{
+      .cover{
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+      }
+      span{
+        visibility: visible;
+      }
+    }
+    a{
+      display: inline-block;
+      width: 300px;
+      height: 235px;
+      line-height: 235px;
+      img{
+        width: 300px;
+        height: 235px;
+      }
+      span{
+        font-size: 24px;
+        color: #333;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 235px;
+        text-align: center;
+        visibility: hidden;
+        @include transition($time:0.5s);
+      }
+    }
+    .cover{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      @include transition($time:0.5s);
+    }
+
+  }
+}
+
+//标题
+.p_title{
+  padding: 20px 0;
+  height: 36px;
+  line-height: 36px;
+  strong{
+    font-size: 24px;
+    color: #333;
+    font-weight:normal;
+  }
+  em{
+    width: 1px;
+    height: 25px;
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: -4px;
+    background-color: #ccc;
+  }
+  span{
+    font-size: 24px;
+    color: #ccc;
+  }
+  p{
+    float: right;
+    display: inline-block;
+    a{
+      float: left;
+      padding: 0 10px;
+      font-size: 14px;
+    }
+  }
+}
+.p_box{
+  border-top: 2px solid transparent;
+  padding-top: 20px;
+  margin: 0 -5px;
+}
+
+//商品卡片
+.p_card{
+  width: 232px;
+  height: 330px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 5px 10px 5px;
+ @include transition();
+  &:hover{
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0)
+  }
+  .p_img{
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+    overflow: hidden;
+    img{
+      width: 230px;
+      height:230px;
+    }
+  }
+  h3{
+    font-size: 16px;
+    color: #333;
+    padding-top: 10px;
+    a{
+      width: 230px;
+      text-overflow: ellipsis;
+      white-space:nowrap;
+      display:inline-block;
+      overflow: hidden;
+    }
+  }
+  .p_intro{
+    font-size: 12px;
+    color: #999;
+    width: 230px;
+    margin: 0 auto;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .p_money{
+    font-size: 14px;
+    color: #f40;
+  }
+}
+//活动滚动
+.p_activity{
+  width: 514px;
+  height: 350px;
+  overflow: hidden;
+  margin: 0 5px;
+  position: relative;
+  &:hover{
+    .co_style{
+      display: block;
+    }
+  }
+  .p_slider{
+    width: 514px;
+    height: 350px;
+    overflow: hidden;
+  }
+  .co{
+    float: left;
+    a{
+      display: block;
+      width: 514px;
+      height: 350px;
+      overflow: hidden;
+      img{
+        width: 514px;
+        height: 350px;
+        display: inline-block;
+      }
+    }
+  }
+  .co_style{
+    position: absolute;
+    top: 145px;
+    z-index: 3;
+    width: 25px;
+    height: 50px;
+    line-height: 50px;
+    display: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color:rgba(0,0,0,0.3);
+    i{
+      font-size: 25px;
+      color: #fff;
+      position: absolute;
+      top:0;
+      left: 0;
+    }
+  }
+  .left_btn{
+    left:8px;
+  }
+  .right_btn{
+    right: 8px;
+  }
+}
+
+//商品分类
+.p_classify{
+  .p_big{
+    width: 900px;
+    height: 430px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    .co{
+      float: left;
+      width: 900px;
+      height: 430px;
+      a{
+        display: block;
+
+        img{
+          width: 900px;
+          height: 430px;
+        }
+      }
+    }
+  }
+}
+.p_lie{
+  padding: 10px;
+  background-color: #fff;
+  margin-left: 10px;
+  margin-bottom: 10px;
+ @include transition();
+  &:hover{
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0)
+  }
+  .pic{
+    width:190px;
+    height: 190px;
+    overflow: hidden;
+    display: inline-block;
+    img{
+      width: 190px;
+      height: 190px;
+    }
+  }
+  .p_info{
+    width: 160px;
+    padding:35px 10px 0 10px;
+    text-align: center;
+    h3{
+      font-size: 16px;
+      color: #333;
+      padding-top: 10px;
+    }
+    .p_intro{
+      font-size: 12px;
+      color: #999;
+      margin: 10px 0 15px 0;
+    }
+    .p_money{
+      font-size: 14px;
+      color: #f40;
+    }
+  }
+}
+//长条卡片
+.p_high{
+  width: 252px;
+  margin: 0 5px;
+  a{
+    width:252px;
+    height: 710px;
+    overflow: hidden;
+    img{
+      width:252px;
+      height: 710px;
+    }
+  }
+}

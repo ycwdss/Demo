@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+//提示框
+.msg_tip{
+  position: absolute;
+  top: 30px;
+  left: -115px;
+  width: 170px;
+  height: 65px;
+  padding:10px ;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 30px #eee;
+  -moz-box-shadow:0px 0px 30px #eee;
+  box-shadow: 0px 0px 30px #eee;
+  z-index: 9999;
+}
+.msg_tip_detail{
+  text-align: center;
+  line-height: 30px;
+  color: #666!important;
+}
+.del_msg{
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 60px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #e4e4e4;
+}
+.cancel_del{
+  @extend .del_msg;
+  float: right;
+  margin:10px 0 10px 0;
+}
+.msg_tip_arrow{
+  position: absolute;
+  top: -10px;
+  left: 110px;
+  @include arrow(top,10px,#fff);
+  -webkit-box-shadow: 0px -10px 30px #eee;
+  -moz-box-shadow:0px -10px 30px #eee;
+  box-shadow: 0px -10px 30px #eee;
+}
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3)
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3)
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+.bounceIn {
+  -webkit-animation:bounceIn 0.5s;
+  -o-animation:bounceIn 0.5s;
+  animation:bounceIn 0.5s;
+}
+/*
+<div class="msg_tip hide bounceIn">
+<p class="msg_tip_detail">你确定要删除该信息吗？</p>
+<p class="clearfix">
+<span class="del_msg main_bg">确认</span>
+<span class="cancel_del main_hover">取消</span>
+</p>
+<span class="msg_tip_arrow"></span>
+</div>
+*/

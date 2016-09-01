@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+.l_main{
+  padding-bottom: 64px;
+}
+@mixin com_padding{
+  padding: 10px 3%;
+}
+.payway{
+  background: #FFFFFF;
+  @include com_padding();
+  h4{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+.m_pro{
+  padding: 10px 0;
+  width: 100%;
+}
+.pro_ele{
+  float: left;
+  width: 25%;
+  img{
+    display: block;
+    margin: 0 auto;   
+    max-width: 95%;
+  }
+}
+.choice_ele{
+  float: left;
+  position: relative;
+  margin-right: 10px;
+  width: 110px;
+  height: 30px;
+  line-height: 28px;
+  font-size: 0.8rem;
+  color: #888;
+  @include box-sizing();
+  border: 1px solid #e4e4e4;
+  text-align: center;
+}
+.clicked{
+  border: 1px solid $normalcolor;
+  color: $normalcolor;
+  span{
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 18px;
+    height: 14px;
+    background: url("../../../Images/mobile/cart/icon_cart.png")0 -94px ;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.no_click{
+  border: 0!important;
+  line-height: 30px!important;
+  background: #f8f8f8!important;
+  span{
+    background: none!important;
+  }
+}
+.time p:nth-child(1){
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+.time p:nth-child(2){
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: #888;
+}
+.confirm{
+  margin: 20px auto 0;
+  width: 110px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 1rem;
+  text-align: center;
+  color: #FFFFFF;
+  background: $normalcolor;
+}

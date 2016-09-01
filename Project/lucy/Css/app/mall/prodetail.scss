@@ -1,0 +1,464 @@
+@charset "UTF-8";
+@import "../../module/page";
+@import "../../module/routenav";
+@import "../../module/totop";
+.pro_content{
+  padding: 60px 70px;
+  width: 960px;
+}
+//左侧图片放大
+.product-wrapper {
+  cursor: crosshair;
+}
+
+.product-wrapper img {
+  display: inline-block;
+}
+
+.magnifier {
+  left: 470px !important;
+  z-index: 999 !important;
+  background-color: #fff;
+  border: 1px solid #f60 !important;
+  img {
+    margin: 2px!important;
+  }
+}
+.pro_img {
+  width:450px;
+}
+
+.pro_img_big {
+  width: 450px;
+  height: 450px;
+  border: 1px solid #e4e4e4;
+  @include box-sizing();
+  margin: 0 auto;
+  .magnifier_wrapper>img {
+    display: block;
+    width: 100%;
+    height:448px;
+    max-width: 450px;
+    max-height: 450px;
+    overflow: hidden;
+  }
+}
+
+//产品小图片
+.pro_img_small {
+  clear: both;
+  margin: 10px 0;
+  width: 450px;
+  position: relative;
+}
+
+//按钮
+.pro_img_small_btn {
+  position: absolute;
+  top: 0;
+  display: block;
+  text-align: center;
+  width: 30px;
+  height: 80px;
+  line-height: 80px;
+  background: #EBEBEB;
+  cursor: pointer;
+  font-family: "SimSun";
+  font-size: 40px;
+  color: #ccc;
+  &:hover {
+    color:#fff;
+  }
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.pro_img_small_list {
+  margin: 0 20px;
+  height:82px;
+  overflow: hidden;
+  width: 390px;
+}
+#proImgSmallList .slick-track{
+  width: 390px!important;
+}
+.pro_img_tab {
+  margin: 0 20px;
+  width: 374px !important;;
+  .small_tab_list {
+    float: left;
+    margin: 0 6px;
+    cursor: pointer;
+    border: 1px solid #e4e4e4;
+    img {
+      display: block;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .small_tab_list.current{
+      border-color: #ff6700;
+  }
+}
+//产品信息
+.content_text{
+  padding-top: 60px;
+  width: 400px;
+  .pro_text_name {
+    font-size: 24px;
+    line-height: 45px;
+    color: #333;
+  }
+  .pro_text_price {
+    height: 58px;
+    line-height: 58px;
+    border-top: 1px dashed #e4e4e4;
+    font-size: 14px;
+    b {
+      padding-right: 3px;
+      font-size: 30px;
+      position: relative;
+    }
+    .sale{
+      line-height: 1;
+      margin-left: 5px;
+      padding:2px 4px;
+      background-color: #e4e4e4;
+      font-size: 12px;
+      vertical-align: 5px;
+    }
+    .del {
+      color: #b0b0b0;
+      text-decoration: line-through;
+      margin-left: 12px;
+      vertical-align: 2px;
+    }
+  }
+  //优惠
+  .pro_coupon{
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    .pro_coupon_line{
+      width: 290px;
+      position: relative;
+      padding-left: 60px;
+      background-color: #f8f8f8;
+      span{
+        position: absolute;
+        top:0;
+        left: 0;
+        display: inline-block;
+        width: 40px;
+        line-height: 25px;
+        text-align: center;
+      }
+      .get_coupon{
+        position: absolute;
+        top:0;
+        right: 0;
+        padding-right: 27px;
+        .sanjiao{
+          top: 10px;
+          right: 10px;
+        }
+        .sanjiao.current{
+          top:3px;
+        }
+      }
+    }
+  }
+  .coupon_lsit_box{
+    position: absolute;
+    top: 36px;
+    left: 150px;
+    width: 325px;
+    max-height: 170px;
+    padding:20px 16px;
+    background-color: #fff;
+    @include box-sizing();
+    border:1px solid #e4e4e4;
+    -webkit-box-shadow: 0 0 3px #ddd;
+    -moz-box-shadow: 0 0 3px #ddd;
+    box-shadow: 0 0 3px #ddd;
+    .sanjiao{
+      display: inline-block;
+      position: absolute;
+      top: -14px;
+      right: 161px;
+      margin-top: -6px;
+      width: 0;
+      height: 0;
+      border: 10px solid;
+      border-color:transparent transparent  rgba(255,255,255,1) ;
+      z-index: 3;
+    }
+    .sanjiao_down{
+      z-index: 2;
+      top: -15px;
+      border-color: transparent transparent #ddd;
+    }
+  }
+  .coupon_lsit{
+    max-height: 137px;
+    overflow: auto;
+    width: 285px;
+    padding-right: 17px;
+    >div{
+      margin-bottom: 15px;
+      *zoom: 1; /*IE/7/6*/
+      &:before,
+      &:after {
+        content: " ";
+        display: table;
+      }
+      &:after {
+        clear: both;
+      }
+      span.price{
+        display: inline-block;
+        margin-top: 2px;
+        width: 45px;
+        height: 23px;
+        line-height: 23px;
+        text-align: center;
+      }
+      .coupon_text{
+        width: 155px;
+        margin: 0 10px;
+        @include strictEll(1.4,2);
+        text-align:center;
+        p,span{
+          @include line(1);
+        }
+        span{
+          color: #999;
+        }
+      }
+      .small_btn{
+        margin-top: 2px;
+      }
+    }
+    >div.clicked{
+      span.price{
+       background-color: #e4e4e4!important;
+        color: #fff;
+      }
+      .small_btn,.small_btn:hover{
+        border-color: #e4e4e4!important;
+        background-color: #e4e4e4!important;
+        color: #fff!important;
+      }
+    }
+  }
+  //优惠end
+
+  .pro_text_list_box{
+    margin-top: 35px;
+    min-height:200px;
+  }
+  .pro_text_list {
+    margin: 10px 0 0;
+    *zoom: 1; /*IE/7/6*/
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+    dt {
+      width: 70px;
+      line-height: 36px;
+      color: #888;
+      float: left;
+      font-size: 12px;
+    }
+    dd {
+      width:325px;
+      float: left;
+      ul {
+        li {
+          display: inline-block;
+          *float: left;
+          border: 1px solid #e4e4e4;
+          width: 80px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          cursor: pointer;
+          margin:5px;
+          @include transition(border-color, 0.2s, ease);
+          &:hover {
+            border-color: #ff6700;
+            background-color: #ff6700;
+            color: #fff;
+          }
+        }
+        li.current {
+          border-color: #ff6700;
+          background-color: #ff6700;
+          color: #fff;
+        }
+        li.without{
+          border-color: #eee;
+          border-style: dashed;
+          background-color:#e4e4e4;
+          color: #fff;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  .pro_text_list.pro_color {
+    dd {
+      ul li {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        img {
+          display: block;
+          text-align: center;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  //数量
+  .pro_count{
+    width: 108px;
+    height: 35px;
+    line-height: 35px;
+    padding:1px;
+    background: #e4e4e4;
+    text-align: center;
+    font-size:16px;
+    font-family: Microsoft Yahei;
+    @include box-sizing();
+    .t_minus,.t_add{
+      width: 28px;
+      height: 33px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+  .stock{
+    padding-left: 13px;
+    line-height: 35px;
+  }
+}
+.like_share{
+  margin-top:15px;
+  height: 24px;
+  line-height: 24px;
+  >div{
+    cursor: pointer;
+  }
+  .iconfont{
+    padding-right: 4px;
+  }
+  .share{
+    margin-left: 30px;
+    span{
+      padding-right: 5px;
+    }
+  }
+  .bshare-custom{
+    margin-left: 52px;
+    line-height: 24px!important;
+  }
+}
+//导航
+.pro_info_nav{
+  line-height: 40px;
+  background-color: #f8f8f8;
+  li{
+    float: left;
+    width: 130px;
+    margin-right: 1px;
+    text-align: center;
+    border-top: 1px solid #f8f8f8;
+    cursor: pointer;
+    &:hover{
+      background-color: #fff;
+    }
+  }
+}
+//产品介绍
+.pro_info_box{
+  .pro_info_list{
+    >img{
+      display: block;
+      width: 100%;
+    }
+  }
+  .comment_box{
+    padding-bottom: 40px;
+    .page{
+      padding-right: 40px;
+    }
+  }
+  .comment_box_item{
+    padding:0 45px;
+    li{
+      padding:25px 10px;
+      border-bottom: 1px dashed #e4e4e4;
+      .comment_text{
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      p.writer{
+        font-size: 12px;
+        color: #999;
+        @include strictEll(1.4,1);
+      }
+    }
+  }
+}
+
+//购物车
+.buy_bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding:21px 16px 18px;
+  border-top: 1px solid transparent;
+  height: 80px;
+  @include box-sizing();
+  -webkit-box-shadow:  0 -3px 6px #eee;
+  -moz-box-shadow:   0 -3px 6px #eee;
+  box-shadow:   0 -3px 6px #eee;;
+  dl{
+    width: 700px;
+    dt{
+      font-size: 14px;
+      @include strictEll(1.4,1);
+    }
+    dd{
+      span{
+        font-size: 20px;
+        i{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .btn{
+    margin-left: 15px;
+    .iconfont{
+      font-size: 20px;
+      line-height: 1;
+      padding-right: 8px;
+    }
+  }
+
+}

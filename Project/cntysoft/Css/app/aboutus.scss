@@ -1,0 +1,495 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../model/small_sixside";
+@import "../model/totop";
+//头部
+.header,.top_about_content{
+  background-color: rgba(255,255,255,0.3);
+  -pie-background: rgba(255,255,255,0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+}
+.header{
+  position: absolute;
+}
+.header_logo{
+  background: url("../../Images/sprite_header_logo2.png") no-repeat;
+}
+.header_nav > ul > li a{
+  color: #fff;
+}
+.top_arrow{
+  border-color: #fff transparent transparent transparent;
+}
+
+//内容
+.main{
+  background-color: #fff;
+  .slogan{
+    width: 100%;
+    height: 700px;
+    background: url("../../Images/aboutus/icon_sloganbg.jpg?_nosprite") no-repeat;
+    h1{
+      padding-top: 200px;
+      text-align: center;
+      color: #fff;
+      font-size: 70px;
+    }
+    p{
+      padding-top: 60px;
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+      letter-spacing:2px;
+    }
+    .link{
+      width: 250px;
+      height: 210px;
+      margin: 50px auto 0;
+      position: relative;
+      &:hover{
+        .link_contact{
+          bottom: 60px;
+          transition:0.8s ease;
+          -moz-transition: 0.8s ease; /* Firefox 4 */
+          -webkit-transition: 0.8s ease; /* Safari 和 Chrome */
+          -o-transition:  0.8s ease; /* Opera */
+        }
+        .link_join{
+          bottom: 120px;
+          transition:0.8s ease;
+          -moz-transition: 0.8s ease; /* Firefox 4 */
+          -webkit-transition: 0.8s ease; /* Safari 和 Chrome */
+          -o-transition:  0.8s ease; /* Opera */
+        }
+      }
+     img{
+        display: block;
+        position: absolute;
+
+      }
+      .link_news{
+        bottom: 0;
+        z-index: 1;
+      }
+      .link_contact{
+        left: 9px;
+        bottom: 45px;
+        z-index: 2;
+      transition:0.8s ease;
+          -moz-transition: 0.8s ease; /* Firefox 4 */
+          -webkit-transition: 0.8s ease; /* Safari 和 Chrome */
+          -o-transition:  0.8s ease; /* Opera */
+      }
+      .link_join{
+        left: 15px;
+        bottom: 90px;
+        z-index: 3;
+        width: 220px;
+        height: 118px;
+      transition:0.8s ease;
+          -moz-transition: 0.8s ease; /* Firefox 4 */
+          -webkit-transition: 0.8s ease; /* Safari 和 Chrome */
+          -o-transition:  0.8s ease; /* Opera */
+      }
+    }
+  }
+  //公共头部
+  .intro_title,.wedo_title,.culture_title,.team_title{
+    position: relative;
+    width: 151px;
+    height: 151px;
+    margin: 0 auto;
+    h3{
+      font-size: 22px;
+      color: #578df3;
+      padding-top: 60px;
+      text-align: center;
+    }
+    .six{
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 0;
+    }
+
+  }
+  //公司简介
+  .intro{
+    margin-top: 50px;
+    .intro_content{
+      padding-top: 50px;
+      text-align: center;
+      h5{
+        font-size: 24px;
+        color: #000;
+        letter-spacing: 2px;
+      }
+      p{
+
+        margin: 0 auto;
+        font-size: 16px;
+        color: #000;
+        line-height: 28px;
+        padding: 30px 82px 50px;
+        text-align: left;
+        letter-spacing: 2px;
+      }
+      ul{
+        li{
+          float: left;
+          margin: 0 25px;
+        }
+      }
+    }
+  }
+  //我们做什么
+  .wedo{
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: #5257df;
+    .wedo_title{
+      h3{
+        padding-top: 35px;
+        line-height: 40px;
+        color: #fff;
+      }
+    }
+    .wedo_content{
+      p{
+        padding:70px 82px 100px ;
+        font-size: 16px;
+        color: #fff;
+        line-height: 28px;
+        text-align: left;
+        letter-spacing: 2px;
+      }
+    }
+    .wedo_img{
+      width: 100%;
+      height: 250px;
+      background-color: #fff;
+      img{
+        width: 100%;
+        height: 250px;
+      }
+    }
+  }
+  //公司文化
+  .culture{
+    margin-top: 50px;
+    .culture_content{
+      padding: 50px 0;
+      p{
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        line-height: 28px;
+        letter-spacing: 2px;
+        color: #578df3;
+      }
+    }
+    .culture_img{
+      width: 100%;
+      width: 100%;
+      height: 620px;
+      transition:0.5s;
+      -moz-transition: 0.5s; /* Firefox 4 */
+      -webkit-transition: 0.5s; /* Safari 和 Chrome */
+      -o-transition:  0.5s; /* Opera */
+      background: url("../../Images/aboutus/icon_culturebg1.jpg?_nosprite") no-repeat;
+      .culture_show{
+        width: 1050px;
+        height: 412px;
+        margin: 0 auto;
+        padding-top: 100px;
+        position: relative;
+        .line{
+          width: 1050px;
+          height:412px;
+        }
+        //公共样式
+        .culture_con{
+          position: absolute;
+          color: #fff;
+          font-size: 16px;
+          border-radius: 50%;
+          text-align: center;
+          cursor: pointer;
+          background-size: 100% 100%;
+          .circle{
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+          }
+          &:hover{
+            .circle{
+              left: -6px;
+              top: -6px;
+              background-color: transparent;
+              border: 2px solid #fff;
+              transition:0.5s;
+              -moz-transition: 0.5s; /* Firefox 4 */
+              -webkit-transition: 0.5s; /* Safari 和 Chrome */
+              -o-transition:  0.5s; /* Opera */
+            }
+          }
+        }
+        .culture1{
+          left:-75px;
+          bottom:30px;
+          width:150px;
+          height: 150px;
+          background: url("../../Images/aboutus/icon_culture1.png?_nosprite") no-repeat;
+          .circle{
+            width: 150px;
+            height: 150px;
+            background-color:#8990c4;
+          }
+          &:hover{
+            .circle{
+              width: 158px;
+              height: 158px;
+            }
+          }
+          p{
+            left: 0;
+            top: 50px;
+            line-height: 28px;
+            position: absolute;
+            z-index: 10;
+            width: 150px;
+          }
+        }
+        .culture2{
+          left: 15px;
+          top:55px;
+          width:200px;
+          height: 200px;
+          background: url("../../Images/aboutus/icon_culture2.png?_nosprite") no-repeat;
+          .circle{
+            width: 200px;
+            height: 200px;
+            background-color:#7eb3e0;
+          }
+          &:hover{
+            .circle{
+              width: 208px;
+              height: 208px;
+            }
+          }
+          p{
+            left: 0;
+            top: 80px;
+            line-height: 28px;
+            position: absolute;
+            z-index: 10;
+            width: 200px;
+          }
+        }
+        .culture3{
+          left:200px;
+          bottom:30px;
+          width:150px;
+          height:150px;
+          background: url("../../Images/aboutus/icon_culture3.png?_nosprite") no-repeat;
+          .circle{
+            width: 150px;
+            height:150px;
+            background-color:#6b8bc5;
+          }
+          &:hover{
+            .circle{
+              width: 158px;
+              height: 158px;
+            }
+          }
+          p{
+            left: 0;
+            top: 50px;
+            line-height: 28px;
+            position: absolute;
+            z-index: 10;
+            width: 150px;
+          }
+        }
+        .culture4{
+          right: 180px;
+          top: 38px;
+          width:190px;
+          height:190px;
+          background: url("../../Images/aboutus/icon_culture4.png?_nosprite") no-repeat;
+          .circle{
+            width: 190px;
+            height:190px;
+            background-color:#60ab91;
+          }
+          &:hover{
+            .circle{
+              width: 198px;
+              height: 198px;
+            }
+          }
+          p{
+            left: 0;
+            top:75px;
+            line-height: 28px;
+            position: absolute;
+            z-index: 10;
+            width: 190px;
+          }
+        }
+        .culture5{
+          right: -77px;
+          top: 100px;
+          width:154px;
+          height:154px;
+          background: url("../../Images/aboutus/icon_culture5.png?_nosprite") no-repeat;
+            .circle{
+            width: 154px;
+            height:154px;
+            background-color:#dc8595;
+          }
+          &:hover{
+            .circle{
+              width: 162px;
+              height: 162px;
+            }
+          }
+
+        }
+        .culture6{
+          right: 245px;
+          bottom: 14px;
+          z-index:10;
+          width:160px;
+          height:160px;
+          background: url("../../Images/aboutus/icon_culture6.png?_nosprite") no-repeat;
+          .circle{
+            width: 160px;
+            height:160px;
+            background-color:#6bd085;
+          }
+          &:hover{
+            .circle{
+              width: 168px;
+              height: 168px;
+            }
+          }
+          p{
+            left: 0;
+            top:45px;
+            line-height: 28px;
+            position: absolute;
+            z-index: 10;
+            width: 160px;
+          }
+        }
+        .culture7{
+          right: 0px;
+          bottom:-94px;
+          width:188px;
+          height:188px;
+          background: url("../../Images/aboutus/icon_culture7.png?_nosprite") no-repeat;
+          .circle{
+            width: 188px;
+            height:188px;
+            background-color:#c7b45b;
+          }
+          &:hover{
+            .circle{
+              width: 196px;
+              height: 196px;
+            }
+          }
+          p{
+            position: absolute;
+            left: 0;
+            top:35px;
+            line-height: 28px;
+            z-index: 10;
+            width: 188px;
+          }
+        }
+        .culture8 {
+          right: 355px;
+          bottom: 40px;
+          z-index:5;
+          width: 320px;
+          height: 320px;
+          background: url("../../Images/aboutus/icon_culture8.png?_nosprite") no-repeat;
+        }
+      }
+    }
+    .active1{
+      background: url("../../Images/aboutus/icon_culturebg1.jpg?_nosprite") no-repeat;
+    }
+    .active2{
+      background: url("../../Images/aboutus/icon_culturebg2.jpg?_nosprite") no-repeat;
+    }
+    .active3{
+      background: url("../../Images/aboutus/icon_culturebg3.jpg?_nosprite") no-repeat;
+    }
+    .active4{
+      background: url("../../Images/aboutus/icon_culturebg4.jpg?_nosprite") no-repeat;
+    }
+    .active5{
+      background: url("../../Images/aboutus/icon_culturebg5.jpg?_nosprite") no-repeat;
+    }
+    .active6{
+      background: url("../../Images/aboutus/icon_culturebg6.jpg?_nosprite") no-repeat;
+    }
+    .active7{
+      background: url("../../Images/aboutus/icon_culturebg7.jpg?_nosprite") no-repeat;
+    }
+  }
+  //团队介绍
+  .team{
+    margin-top: 50px;
+    padding-bottom: 100px;
+    .team_title{
+      h3{
+        padding-top: 35px;
+        line-height: 40px;
+      }
+    }
+    .team_content{
+     margin-top: 50px;
+      height: 477px;
+      background: url("../../Images/aboutus/icon_teambg.jpg?_nosprite") no-repeat;
+      position: relative;
+      //公共样式
+      .imgcon{
+        position: absolute;
+        top:35px;
+        width: 252px;
+        height: 390px;
+        img{
+          width: 252px;
+          height: 390px;
+          display: none;
+        }
+      }
+      .team_img1{
+        left: 0;
+      }
+      .team_img2{
+        left:252px;
+      }
+      .team_img3{
+      left: 504px;
+     /*   img{
+          display: block;
+        }*/
+      }
+      .team_img4{
+        left: 756px;
+      }
+      .team_img5{
+        left:1008px;
+      }
+    }
+  }
+}

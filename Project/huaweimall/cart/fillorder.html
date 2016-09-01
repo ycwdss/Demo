@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华为商城购物车</title>
+    <link rel="stylesheet" href="../Css/cart/fillorder.css">
+</head>
+<body>
+<!--顶部导航-->
+<div class="top">
+    <div class="top_center">
+        <ul class="fl">
+            <li class="l1"><a href="#">华为官网</a></li>
+            <li><a href="#">华为荣耀</a></li>
+            <li class="l3">
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="#">软件应用</a>
+                        <i></i>
+                    </div>
+                    <div class="bd">
+                        <p><a href="#">EMUI</a></p>
+                        <p><a href="#">应用市场</a></p>
+                        <p><a href="#">云服务</a></p>
+                        <p><a href="#">开发者联盟</a></p>
+                    </div>
+                </div>
+
+            </li>
+            <li><a href="#">花粉俱乐部</a></li>
+            <li><a href="#">Select Region</a></li>
+        </ul>
+        <ul class="fr">
+            <li class="r1">
+                <!--<a href="#">登录</a>-->
+                <!--<a href="#">注册</a>-->
+                <!--登录后信息-->
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="../usercenter/usercenter_index.html">小狗头</a>
+                        <em class="level_1"></em>
+                        <i ></i>
+                    </div>
+                    <div class="bd">
+                        <p>
+                            <a href="#">我的账号</a>
+                            <span>|</span>
+                            <a href="#">退出</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">V码(优购码)</a></li>
+            <li><a href="#">手机版</a></li>
+            <li class="r5">
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="#">网站导航</a>
+                        <i></i>
+                    </div>
+                    <div class="bd">
+                        <p><a href="#">帮助中心</a></p>
+                        <p><a href="#">PC软件</a></p>
+                        <p><a href="#">数字音乐</a></p>
+                        <p><a href="#">爱旅</a></p>
+                        <p><a href="#">华为网盘</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--头部-->
+<div class="head">
+    <div class="head_center clearfix">
+        <!--logo-->
+        <div class="logo fl">
+            <a href="#">
+                <img src="../index/Images/test_logo.png">
+            </a>
+        </div>
+        <!--购物支付流程进度-->
+        <ul class="cart_step fr">
+            <li class="mycart com"><em>1</em>我的购物车</li>
+            <li class="fill_order"><em>2</em>填写核对订单</li>
+            <li class="submit_sucess com"><em>3</em>成功提交订单</li>
+        </ul>
+    </div>
+</div>
+
+
+<!---主要内容区域--->
+<div class="content con_width">
+    <!--收货信息-->
+    <div class="receive_info">
+        <!--收货地址信息-->
+        <div class="set_address">
+            <h3 class="address_title">收货人信息<a class="pop_btn" href="javascript:;">[使用新地址]</a></h3>
+            <!--未添加收收货地址显示提示--->
+            <p class="add_tips pop_btn">您还没有添加收货地址,马上<a class="add_click" href="javacsript:;">添加</a>吧！</p>
+            <!--已经添加的收货地址--->
+            <ul class="address_info">
+                <li class="current list always_show  clearfix">
+                    <div class="address_main fl">
+                        <input class="check_radio" type="radio" name="radio">
+                        <em>王赞</em>
+                        <span>河南省郑州市金水区金水路玉凤路口家乐福6楼89室</span>
+                        <span>收货人：王赞</span>
+                        <span>电话：15461763566</span>
+                    </div>
+                    <div class="address_eidt fr">
+                        <a  href="javascript:;">设为默认地址</a>
+                        <a class="pop_btn" href="javascript:;"><span>修改</span></a>
+                        <a class="delet" href="javacsript:;"><i></i></a>
+                    </div>
+                    <div class="address_mark">
+                        <i></i>
+                        <span>寄送至</span>
+                    </div>
+             </li>
+                <li class="list always_show  clearfix">
+                    <div class="address_main fl">
+                        <input class="check_radio" type="radio" name="radio">
+                        <em>王赞</em>
+                        <span>河南省郑州市金水区金水路玉凤路口家乐福6楼89室</span>
+                        <span>收货人：王赞</span>
+                        <span>电话：15461763566</span>
+                    </div>
+                    <div class="address_eidt fr">
+                        <a  href="javascript:;">设为默认地址</a>
+                        <a class="pop_btn" href="javascript:;"><span>修改</span></a>
+                        <a class="delet" href="javacsript:;"><i></i></a>
+                    </div>
+                    <div class="address_mark">
+                        <i></i>
+                        <span>寄送至</span>
+                    </div>
+                </li>
+                <li class="list clearfix">
+                <div class="address_main fl">
+                    <input class="check_radio" type="radio" name="radio">
+                    <em>王赞</em>
+                    <span>河南省郑州市金水区金水路玉凤路口家乐福6楼89室</span>
+                    <span>收货人：王赞</span>
+                    <span>电话：15461763566</span>
+                </div>
+                <div class="address_eidt fr">
+                    <a  href="javascript:;">设为默认地址</a>
+                    <a class="pop_btn" href="javascript:;"><span>修改</span></a>
+                    <a class="delet" href="javacsript:;"><i></i></a>
+                </div>
+                <div class="address_mark">
+                    <i></i>
+                    <span>寄送至</span>
+                </div>
+            </li>
+                <li class=" list clearfix">
+                    <div class="address_main fl">
+                        <input class="check_radio" type="radio" name="radio">
+                        <em>王赞</em>
+                        <span>河南省郑州市金水区金水路玉凤路口家乐福6楼89室</span>
+                        <span>收货人：王赞</span>
+                        <span>电话：15461763566</span>
+                    </div>
+                    <div class="address_eidt fr">
+                        <a  href="javascript:;">设为默认地址</a>
+                        <a class="pop_btn" href="javascript:;"><span>修改</span></a>
+                        <a class="delet" href="javacsript:;"><i></i></a>
+                    </div>
+                    <div class="address_mark">
+                        <i></i>
+                        <span>寄送至</span>
+                    </div>
+                </li>
+                <li class=" list clearfix">
+                    <div class="address_main fl">
+                        <input class="check_radio" type="radio" name="radio">
+                        <em>王赞</em>
+                        <span>河南省郑州市金水区金水路玉凤路口家乐福6楼89室</span>
+                        <span>收货人：王赞</span>
+                        <span>电话：15461763566</span>
+                    </div>
+                    <div class="address_eidt fr">
+                        <a  href="javascript:;">设为默认地址</a>
+                        <a class="pop_btn" href="javascript:;"><span>修改</span></a>
+                        <a class="delet" href="javacsript:;"><i></i></a>
+                    </div>
+                    <div class="address_mark">
+                        <i></i>
+                        <span>寄送至</span>
+                    </div>
+                </li>
+            </ul>
+            <!--显示更多地址-->
+            <p class="more_show"><em>更多地址<i></i></em></p>
+        </div>
+        <!--修改地址信息弹窗--->
+        <div class="mask">
+            <div class="address_popup">
+                <h2>添加地址信息<i class="close"></i></h2>
+                <form>
+                    <div class="edit_list">
+                        <label><em>*</em>收货人：</label>
+                        <input type="text">
+                    </div>
+                    <div class="edit_list clearfix">
+                        <label class="fl"><em>*</em>收货地址：</label>
+                        <div class="fill_address fl">
+                            <div class="select_address">
+                                <select>
+                                    <option>--省份--</option>
+                                    <option>河南省</option>
+                                    <option>安徽省</option>
+                                    <option>江苏省</option>
+                                </select>
+                                <select>
+                                    <option>--直辖市--</option>
+                                    <option>郑州市</option>
+                                    <option>南京市</option>
+                                    <option>淮北市</option>
+                                </select>
+                                <select>
+                                    <option>--区/县--</option>
+                                    <option>永城市</option>
+                                    <option>金水区</option>
+                                    <option>管城区</option>
+                                </select>
+                            </div>
+                            <div class="fill_detail">
+                                <em>详细地址</em>
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit_list">
+                        <label>邮编：</label>
+                        <input type="text">
+                    </div>
+                    <div class="edit_list">
+                        <label><em>*</em>手机号码：</label>
+                        <input type="text">
+                        <span>或者固定电话</span>
+                        <input type="text">
+                    </div>
+                    <div class="submit_not">
+                        <a href="#">确定</a>
+                        <a class="close" href="#">取消</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!--发票信息-->
+        <div class="set_note">
+            <h3 class="note_title">发票信息<a href="javascript:;">（请谨慎选择发票抬头，订单出库后不能修改）</a></h3>
+            <ul class="note_info">
+                <li class="clearfix">
+                    <div class="note_set fl">
+                        <input class="check" type="radio" name="note_style">
+                        <em>个人</em>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="note_set fl">
+                        <input  class="check" type="radio" name="note_style">
+                        <em>单位</em>
+                        <input  class="fillin" type="text" placeholder="请输入单位名称，勿填无关信息">
+                        <span class="error_show"><i></i>请填写发票抬头</span>
+                    </div>
+                </li>
+            </ul>
+            <p class="note_tips">
+                <em>注意：</em>
+                <span>如果商品由第三方卖家销售，发票内容由其卖家决定，发票由卖家开具并寄出</span>
+            </p>
+        </div>
+    </div>
+    <!--商品信息--->
+    <div class="shopings_info">
+        <div class="shps_title">
+            以下商品由  <em>华为商城</em>  选择合作快递配送
+        </div>
+        <div class="shps_hd ge clearfix">
+            <div class="col pro_title">商品</div>
+            <div class="col pro_unit">单元(元)</div>
+            <div class="col pro_num">数量</div>
+            <div class="col pro_total">小计(元)</div>
+        </div>
+        <div class="shps_bd ge clearfix">
+            <!--结算商品信息-->
+            <div class="shps_wrap">
+                <div class="shps_inner">
+                    <div class="col pro_title">
+                        <ul>
+                            <li><a href="#">荣耀 畅玩4X 双卡双待 移动高配版 4G智能手机 TD-LTE/TD-SCDMA /GSM（前黑后白）</a></li>
+                            <li><em>[配]</em><a href="#">荣耀畅玩4X 智能皮质保护套（香槟金）</a></li>
+                            <li><em>[配]</em><a href="#">荣耀畅玩4X 智能皮质保护套（香槟金）</a></li>
+                            <li><em>[配]</em><a href="#">荣耀畅玩4X 智能皮质保护套（香槟金）</a></li>
+                            <li><em>[配]</em><a href="#">荣耀畅玩4X 智能皮质保护套（香槟金）</a></li>
+                        </ul>
+                    </div>
+                    <div class="col pro_unit">¥999.00</div>
+                    <div class="col pro_num">1</div>
+                    <div class="col pro_total">¥999.00</div>
+                </div>
+            </div>
+            <div class="shps_wrap">
+                <div class="shps_inner">
+                    <div class="col pro_title">
+                        <ul>
+                            <li><a href="#">荣耀 畅玩4X 双卡双待 移动高配版 4G智能手机 TD-LTE/TD-SCDMA /GSM（前黑后白）</a></li>
+                            <li><em>[配]</em><a href="#">荣耀畅玩4X 智能皮质保护套（香槟金）</a></li>
+                            <li><em>[配]</em><a href="#">荣耀畅玩4X 智能皮质保护套（香槟金）</a></li>
+                            <li><em>[配]</em><a href="#">荣耀畅玩4X 智能皮质保护套（香槟金）</a></li>
+                            <li><em>[配]</em><a href="#">荣耀畅玩4X 智能皮质保护套（香槟金）</a></li>
+                        </ul>
+                    </div>
+                    <div class="col pro_unit">¥999.00</div>
+                    <div class="col pro_num">1</div>
+                    <div class="col pro_total">¥999.00</div>
+                </div>
+            </div>
+            <!--结算金额-->
+            <div class="shps_money clearfix">
+                <!--使用优惠券-->
+                <div class="use_ticket fl">
+                    <div class="ticket_title">
+                        <a href="javascript:;">+</a>
+                        <span>使用优惠券</span>
+                    </div>
+                    <div class="ticket_toggle">
+                        <ul class="clearfix">
+                            <li class="current">选择优惠券</li>
+                            <li class="no_borderR">输入优惠券码</li>
+                        </ul>
+                        <div class="ticket_container">
+                            <div class="list">
+                                <p><a href="javascript:;">您暂时没有可用的优惠券！</a></p>
+                                <p><a href="#">5元优惠券，点我赶快用！</a></p>
+                            </div>
+                            <div class="list fill_code">
+                                <input type="text" placeholder="请输入优惠码！">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account_list fr">
+                    <div class="list_wrap">
+                        <div class="list">
+                            <label>商品总金额 ：</label>
+                            <b>¥</b>
+                            <em>2099.00</em>
+                        </div>
+                        <div class="list">
+                            <label>运费 ：</label>
+                            <b>¥</b>
+                            <em>0.00</em>
+                        </div>
+                        <div class="list">
+                            <label>使用优惠券：</label>
+                            <b>- ¥</b>
+                            <em>20.00</em>
+                        </div>
+                        <div class="list">
+                            <label>商家活动：</label>
+                            <b>- ¥</b>
+                            <em>20.00</em>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <label>应付金额：</label>
+                        <em>¥1920.00</em>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--提交订单--->
+    <div class="to_submit">
+       <label>应付总额：</label>
+        <em>¥2099.00</em>
+        <a href="topay.html">提交订单</a>
+    </div>
+</div>
+
+<!--规则强调--->
+<div class="quality">
+    <ul class="clearfix">
+        <li class="q1"><i></i>500强企业 品质保证</li>
+        <li class="q2"><i></i>7天退货 15天换货</li>
+        <li class="q3"><i></i>99元起免运费</li>
+        <li class="q4"><i></i>448家维修网点 全国联保</li>
+    </ul>
+</div>
+<!--服务支持-->
+<div class="service">
+    <dl class="s1">
+        <dt><i></i>帮助中心</dt>
+        <dd><a href="#">配送方式</a></dd>
+        <dd><a href="#">购物指南</a></dd>
+        <dd><a href="#">支付方式</a></dd>
+        <dd><a href="#">常见问题</a></dd>
+    </dl>
+    <dl class="s2">
+        <dt><i></i>售后服务</dt>
+        <dd><a href="#">保修政策</a></dd>
+        <dd><a href="#">退换货政策</a></dd>
+        <dd><a href="#">退换货流程</a></dd>
+        <dd><a href="#">手机寄修服务</a></dd>
+    </dl>
+    <dl class="s3">
+        <dt><i></i>技术支持</dt>
+        <dd><a href="#">售后网点</a></dd>
+        <dd><a href="#">常见问题</a></dd>
+        <dd><a href="#">产品手册</a></dd>
+        <dd><a href="#">软件下载</a></dd>
+    </dl>
+    <dl class="s4">
+        <dt><i></i>关于商城</dt>
+        <dd><a href="#">公司介绍</a></dd>
+        <dd><a href="#">华为商城简介</a></dd>
+        <dd><a href="#">联系客服</a></dd>
+    </dl>
+    <dl class="s5">
+        <dt><i></i>关注我们</dt>
+        <dd><a href="#">新浪微博</a></dd>
+        <dd><a href="#">腾讯微博</a></dd>
+        <dd><a href="#">花粉社区</a></dd>
+        <dd><a href="#">商城手机版</a></dd>
+    </dl>
+</div>
+<!--底部-->
+<div class="foot">
+    <p>Copyright © 2011-2015 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20130048号 | 苏ICP备09062682号-9</p>
+    <p><a href="#">网络文化经营许可证苏网文[2012]0401-019号</a></p>
+    <p class="foot_img">
+        <a href="#"><img src="../index/Images/test_foot1.png"></a>
+        <a href="#"><img src="../index/Images/test_foot2.png"></a>
+        <a href="#"><img src="../index/Images/test_foot3.png"></a>
+    </p>
+</div>
+<!--返回顶部-->
+<div class="totop">
+    <a href="#">
+        <img src="../index/Images/sprite_totop.png">
+    </a>
+</div>
+</body>
+<script data-main="../Js/main" id="require" app="fillorder" src="../Js/lib/require.js"></script>
+</html>

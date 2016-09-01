@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import "../fh/lib";
+$content_color:#666666;
+$content_size:16px;
+$content_lineheight:25px;
+.content_bg{
+  background: #f8f8f8;
+}
+$text_bg:#fafafa;
+//重写类
+.mall_list_nav_box{
+  display: none;
+}
+.allclass:hover .mall_list_nav_box{
+  display: block;
+}
+//重写索引
+.routeInfo {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  border: 0;
+}
+.now_page{
+  color: $activeColor;
+}
+.classlist{
+  display: none;
+}
+//文章
+.content{
+  background: #FFFFFF;
+}
+.article{
+  width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0 100px;
+  font-size:$content_size;
+  color: $content_color;
+  line-height: $content_lineheight;
+}
+.title1{
+  display: block;
+  padding: 20px 0;
+  font-size: 24px;
+  color: #333333;
+}
+.article_visit{
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid #e4e4e4;
+  color: #093;
+  span{
+   float: left;
+  }
+}
+.visit_img{
+  margin:5px 20px 0 0;
+  width: 22px;
+  height: 17px;
+  background: url("../../mall/Images/sprite_jingxuan_detail1.png");
+}
+.yinyan{
+  display: block;
+  margin: 35px 0 20px;
+}
+.recommend{
+  padding: 50px 40px;
+  margin-top: 20px;
+  background: $text_bg;
+  img{
+    display: block;
+    width: 700px;
+    margin: 23px auto;
+  }
+}
+.title2{
+  font-size: 16px;
+  color: #000000;
+  line-height: 30px;
+}
+.title3{
+  font-size: 20px;
+  color: #000000;
+  line-height: 80px;
+}
+.pro_detail{
+  width: 122px;
+  margin: 0 auto;
+}
+.price{
+  display: block;
+  margin: 0  0 0 15px;
+  font-size: 24px;
+  line-height: 55px;
+  color: $activeColor;
+}
+.pro_link{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  width: 120px;
+  color: $activeColor;
+  border: 1px solid $activeColor;
+  @include transition();
+}
+.pro_link:hover{
+  color: #FFFFFF;
+  background: $normalColor;
+  border: 1px solid $normalColor;
+  -webkit-box-shadow: 1px 1px 1px #ccc;
+  -moz-box-shadow: 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+}

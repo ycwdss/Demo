@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/pagelist";
+@import "../../module/usercenter";
+@import "../../module/pro_card";
+@import "../../module/pagelist";
+@import "../../module/empty";
+
+.left_nav{
+  width: 165px;
+}
+.right_content{
+  width: 1015px;
+}
+
+
+.coupons_sort{
+  border-bottom:1px solid #e4e4e4;
+  li{
+    float: left;
+    width: 90px;
+    height: 58px;
+    line-height: 58px;
+    margin-right: 70px;
+    a{
+      display: inline-block;
+      width: 90px;
+      height: 58px;
+      line-height: 58px;
+      text-align: center;
+      border-bottom: 1px solid transparent;
+    }
+  }
+}
+
+.coupons_wrap{
+  margin-top: 45px;
+  min-height: 400px;
+}
+.coupons{
+  height: 100px;
+  position: relative;
+  margin: 0 20px 20px 0;
+}
+.cpn_tips{
+  position: absolute;
+  top:0;
+  left: 0;
+  overflow: hidden;
+  width: 61px;
+  height: 43px;
+  display: inline-block;
+}
+.cpn_info{
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.cpn_money{
+  em{
+  font-size: 40px;
+  }
+}
+.cpn_condition{
+  padding-left: 20px;
+  padding-top: 10px;
+  span{
+    display: block;
+    width: 120px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.cpn_time{
+  text-align: center;
+}
+.cpn_triangle{
+  position: absolute;
+  top:0;
+  right: 0;
+  li{
+    @include arrow(left,5px,#fff);
+  }
+}
+
+.used,.lose_efficacy{
+  display: none;
+}
+.empty{
+  >div{
+    width: 360px;
+    padding-left:70px;
+    i{
+      top:5px;
+      font-size: 50px;
+    }
+  }
+  }

@@ -1,0 +1,441 @@
+@charset "UTF-8";
+.fr {
+  float: right;
+  _display: inline; }
+
+.fl {
+  float: left;
+  _display: inline; }
+
+.main {
+  color: #093 !important; }
+
+.add_color {
+  color: #2e93d7; }
+
+.main_light {
+  color: #63bf82 !important; }
+
+.main_bg {
+  background-color: #093 !important;
+  color: #fff !important; }
+
+.main_bg_light {
+  background-color: #63bf82 !important;
+  color: #fff !important; }
+
+.main_border {
+  border-color: #093 !important; }
+
+.main_border_light {
+  border-color: #63bf82 !important; }
+
+.main_hover:hover {
+  color: #2e93d7 !important; }
+.main_hover a:hover {
+  color: #2e93d7 !important; }
+
+.mainbg_hover:hover {
+  background-color: #093 !important;
+  color: #FFFFFF !important; }
+  .mainbg_hover:hover a {
+    color: #fff !important; }
+
+.mainbg_hover_light:hover {
+  background-color: #63bf82 !important;
+  color: #FFFFFF !important; }
+  .mainbg_hover_light:hover a {
+    color: #fff !important; }
+
+.mainbd_hover:hover {
+  border-color: #093 !important; }
+
+.main_focus:focus {
+  border-color: #093 !important; }
+
+.site {
+  position: relative;
+  height: 52px;
+  line-height: 52px;
+  font-size: 14px; }
+  .site a {
+    color: #333; }
+  .site span {
+    margin: 0 3px; }
+
+/*
+<!--站点指示-->
+<div class="site">
+<a href="#">首页</a>
+<span>&gt;</span>
+<a>个人中心</a>
+</div>
+*/
+.l_section {
+  width: 205px; }
+
+.company_info {
+  border: 1px solid #e4e4e4; }
+
+.company_name {
+  padding: 0 15px 10px;
+  border-bottom: 1px solid #e4e4e4; }
+  .company_name h1 {
+    width: 175px;
+    line-height: 20px;
+    max-height: 40px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; }
+  .company_name p img {
+    margin-right: 3px; }
+
+.l_main {
+  min-height: 400px; }
+
+.company_intro {
+  padding: 0 15px 10px; }
+  .company_intro dl {
+    padding: 5px 0;
+    *zoom: 1;
+    /*IE/7/6*/ }
+    .company_intro dl:before, .company_intro dl:after {
+      content: " ";
+      display: table; }
+    .company_intro dl:after {
+      clear: both; }
+  .company_intro dt {
+    width: 60px;
+    text-align: left;
+    float: left;
+    font-size: 13px;
+    color: #000; }
+  .company_intro dd {
+    padding-left: 65px;
+    font-size: 13px;
+    color: #666; }
+
+.page_list {
+  padding: 20px 0;
+  text-align: center;
+  height: 32px;
+  line-height: 33px;
+  font-size: 14px; }
+  .page_list a {
+    display: inline-block;
+    margin-right: 3px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 11px;
+    background-color: #fff;
+    color: #888;
+    border: 1px solid #e4e4e4; }
+  .page_list span {
+    display: inline-block; }
+  .page_list input {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .page_list b {
+    margin-right: 10px; }
+
+.page_submit {
+  margin-left: 10px;
+  width: 45px;
+  height: 27px;
+  text-align: center;
+  line-height: 25px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.page_list .no_all_b {
+  border: 0 !important;
+  padding: 0 !important;
+  background-color: transparent; }
+
+/*
+<div class="page_list ">
+<p>
+<a class="prev_page" href="#">上一页</a>
+<a class="main_bg_light main_border_light" href="#">1</a>
+<a  href="#">2</a>
+<a  href="#">3</a>
+<a  href="#">4</a>
+<a class="next_page no_marginR" href="#">下一页</a>
+<span>&nbsp;共2页&nbsp;到第</span>
+<input type="text" onkeyup="value=value.replace(/[^\d/g]/,'')">
+<span>页</span>
+<span class="page_submit mainbg_hover">确认</span>
+</p>
+</div>*/
+.content {
+  min-height: 400px; }
+
+.r_section {
+  width: 800px; }
+
+.l_section {
+  width: 280px; }
+
+.pro_info {
+  border: 1px solid #e4e4e4; }
+  .pro_info .pro_title {
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    color: #333;
+    padding-left: 30px;
+    border-bottom: 1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .pro_info .pro_title .title_name {
+      display: inline-block;
+      width: 450px;
+      height: 80px;
+      overflow: hidden; }
+    .pro_info .pro_title .title_code {
+      margin-left: 40px;
+      text-align: right;
+      display: inline-block;
+      width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .pro_info .pro_title .icon-erweima {
+      position: relative;
+      font-size: 26px;
+      margin: 25px 35px 0 0; }
+      .pro_info .pro_title .icon-erweima:hover .erweima_box {
+        display: block; }
+    .pro_info .pro_title .erweima_box {
+      top: 26px;
+      left: 0;
+      height: 225px; }
+      .pro_info .pro_title .erweima_box .main_hover {
+        cursor: pointer; }
+  .pro_info .pro_show {
+    width: 580px;
+    margin: 50px auto 45px;
+    position: relative; }
+    .pro_info .pro_show .show_big {
+      width: 580px;
+      margin-bottom: 20px; }
+      .pro_info .pro_show .show_big a {
+        position: relative;
+        display: block;
+        width: 500px;
+        height: 500px;
+        margin: 0 auto; }
+        .pro_info .pro_show .show_big a img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0%;
+          margin: auto;
+          max-width: 500px;
+          max-height: 500px;
+          /*  width: 100%;
+            height: 100%;*/ }
+    .pro_info .pro_show .show_small {
+      width: 580px;
+      height: 100px;
+      overflow: hidden; }
+      .pro_info .pro_show .show_small .mainbd_hover {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 20px;
+        border: 1px solid transparent;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        .pro_info .pro_show .show_small .mainbd_hover img {
+          width: 100%;
+          height: 100%; }
+    .pro_info .pro_show .switch_btn {
+      position: absolute;
+      top: 200px; }
+      .pro_info .pro_show .switch_btn i {
+        font-size: 32px;
+        color: #e4e4e4; }
+        .pro_info .pro_show .switch_btn i:hover {
+          color: #999; }
+    .pro_info .pro_show .prev_btn {
+      left: -10px; }
+    .pro_info .pro_show .next_btn {
+      right: -10px; }
+
+.pro_describe {
+  margin-top: 20px; }
+  .pro_describe .describe_title {
+    padding: 10px 0 10px 20px;
+    border: 1px solid #e4e4e4; }
+    .pro_describe .describe_title a {
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      border-bottom: 2px solid transparent; }
+  .pro_describe .describle_info .info_one {
+    padding: 10px;
+    text-align: center; }
+    .pro_describe .describle_info .info_one img {
+      display: block !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 10px auto !important; }
+    .pro_describe .describle_info .info_one p {
+      font-size: 14px;
+      color: #333;
+      line-height: 40px;
+      text-align: left; }
+    .pro_describe .describle_info .info_one .info_title {
+      line-height: 32px;
+      padding-bottom: 10px; }
+  .pro_describe .describle_info .info_two {
+    margin-top: 20px; }
+    .pro_describe .describle_info .info_two table {
+      border-collapse: collapse;
+      background-color: #fdfdfd; }
+    .pro_describe .describle_info .info_two td {
+      height: 40px;
+      font-size: 14px;
+      color: #333;
+      border: 1px solid #e4e4e4; }
+    .pro_describe .describle_info .info_two .item {
+      width: 300px;
+      padding-left: 105px; }
+    .pro_describe .describle_info .info_two .item_info {
+      width: 580px;
+      padding-left: 60px; }
+
+.company_name {
+  padding: 0;
+  border-bottom: 0; }
+  .company_name h1 {
+    height: 20px;
+    width: auto;
+    font-size: 18px;
+    overflow: hidden; }
+  .company_name p {
+    font-size: 30px;
+    color: #093; }
+
+.company_intro {
+  padding: 0 0 10px 0; }
+  .company_intro dt {
+    width: 90px;
+    font-size: 18px;
+    color: #333; }
+  .company_intro dd {
+    padding-left: 90px;
+    font-size: 18px;
+    color: #333; }
+
+.company_info {
+  padding: 5px 12px 0;
+  text-align: left; }
+
+.company_erweima {
+  padding: 0 12px;
+  border: 1px solid #E4E4E4;
+  border-top: 0; }
+  .company_erweima p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 0; }
+  .company_erweima .a_link {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e4e4e4;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333; }
+    .company_erweima .a_link:hover {
+      color: #2e93d7 !important; }
+    .company_erweima .a_link i {
+      font-size: 26px;
+      vertical-align: middle;
+      margin-right: 15px; }
+    .company_erweima .a_link .icon-lianxiwomen {
+      color: #63bf82; }
+    .company_erweima .a_link .icon-tubiao {
+      color: #2e9bd7; }
+    .company_erweima .a_link .contact_tel {
+      display: none; }
+  .company_erweima img {
+    display: block;
+    width: 205px;
+    height: 205px;
+    margin: 0 auto 20px; }
+
+.bdshare-button-style0-16 a, .bdshare-button-style0-16 .bds_more {
+  background-image: none !important;
+  padding-left: 0 !important; }
+
+.bds_more {
+  font-size: 16px !important;
+  float: none !important; }
+
+.pro_title {
+  position: relative; }
+
+.bdsharebuttonbox {
+  position: absolute;
+  top: 0px;
+  right: 20px; }
+
+.connect_box {
+  margin-top: 50px;
+  margin-left: 70px; }
+  .connect_box > div {
+    *zoom: 1;
+    /*IE/7/6*/ }
+    .connect_box > div:before, .connect_box > div:after {
+      content: " ";
+      display: table; }
+    .connect_box > div:after {
+      clear: both; }
+
+.connect_ele {
+  float: left;
+  width: 45%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 25px; }
+  .connect_ele > span {
+    float: left;
+    margin-right: 25px;
+    font-size: 30px;
+    line-height: 58px; }
+  .connect_ele p {
+    padding-left: 55px;
+    color: #333;
+    margin-top: 8px; }
+
+/*# sourceMappingURL=commpany_proinfo.css.map */

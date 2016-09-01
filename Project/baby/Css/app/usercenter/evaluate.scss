@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/site";
+@import "../../module/empty_tips";
+@import "../../module/recommend";
+@import "../../module/pagelist";
+@import "../../module/usercenter_style";
+
+//---已评价----
+.evaluated {
+  padding: 0 28px;
+  .pro_info, .pro_article, .pro_star, .pro_operate {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .pro_info {
+    width: 130px;
+  }
+
+  .pro_article {
+    width: 210px;
+  }
+
+  .pro_star {
+    width: 240px;
+  }
+
+  .pro_operate {
+    width: 120px;
+  }
+
+}
+
+//头部
+.evaluated .eval_head {
+  display: table;
+  .pro_info, .pro_article, .pro_star, .pro_operate {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #e4e4e4;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+}
+
+//内容
+.evaluated .eval_list {
+  padding: 16px 0;
+  border-bottom: 1px solid #e4e4e4;
+  @include box-sizing();
+  .pro_info {
+    .img_wrap {
+      display: block;
+      width: 130px;
+      height: 130px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name_title {
+      display: block;
+      width: 130px;
+      padding-top: 8px;
+      font-size: 14px;
+      color: #333;
+      text-align: left;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    p {
+      font-size: 12px;
+      color: #666;
+      text-align: left;
+    }
+  }
+  .pro_article {
+    width: 170px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #888;
+  }
+  .pro_star {
+    text-align: center;
+    i {
+      font-size: 15px;
+      color: #ccc;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  .pro_operate {
+    text-align: center;
+    a {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+}
+
+//----待评价   评价页面----
+.no_evaluate, .evaluate_write {
+  padding: 0 28px;
+}
+
+.no_evaluate .eval_head, .evaluate_write .eval_head {
+  display: table;
+  border-bottom: 2px solid #e4e4e4;
+  .pro_info, .pro_operate {
+    display: table-cell;
+    vertical-align: middle;
+    width: 310px;
+    height: 45px;
+    font-size: 14px;
+    color: #666;
+
+  }
+  .pro_info {
+    padding-left: 40px;
+  }
+  .pro_operate {
+    padding-right: 40px;
+    text-align: right;
+  }
+}
+
+.no_evaluate .eval_list,
+.evaluate_write .eval_list {
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e4;
+  .pro_info {
+    a.img_wrap {
+      display: block;
+      float: left;
+      width: 90px;
+      height: 90px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name_wrap {
+      float: left;
+      width: 120px;
+      padding-left: 10px;
+      padding-top: 20px;
+      p {
+        font-size: 12px !important;
+        color: #666 !important;
+      }
+      .name_title, p {
+        display: inline-block;
+        width: 120px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 14px;
+        color: #333;
+        height: auto;
+        line-height: normal;
+      }
+    }
+  }
+  .pro_info, .pro_operate {
+    display: table-cell;
+    vertical-align: middle;
+    width: 350px;
+    height: 90px;
+    font-size: 14px;
+    color: #888;
+  }
+  .pro_operate {
+    width: 315px;
+    padding-right: 35px;
+    text-align: right;
+    a {
+      display: block;
+      font-size: 14px;
+      color: #888;
+      line-height: 28px;
+    }
+  }
+}
+
+//评价页面
+.evaluate_write .eval_list {
+  .pro_operate {
+    width: 325px;
+    padding-right: 25px;
+    text-align: right;
+  }
+}
+
+//评论详情
+.evaluate_container {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #ffeff5;
+}
+
+.detail_intro {
+  float: left;
+  width: 80px;
+  height: 30px;
+  text-align: right;
+  font-size: 15px;
+
+}
+
+.to_score {
+  padding: 20px 0;
+  line-height: 30px;
+  .score_star {
+    color: #ccc;
+    i {
+      margin-right: 3px;
+      font-size: 16px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .score_result {
+      margin-right: 3px;
+      color: #666;
+      font-size: 14px;
+    }
+  }
+}
+
+.evaluate_detail_info {
+  textarea {
+    width: 600px;
+    height: 200px;
+    resize: none;
+    font-size: 14px;
+    border: 1px solid #e4e4e4;
+    font-size: 13px;
+    padding: 5px 10px;
+    outline-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .evaluate_tips {
+    padding-right: 20px;
+    text-align: right;
+    font-size: 14px;
+   b{
+     display: none;
+    font-weight: 600;
+   }
+  }
+}
+
+.submit_evaluate {
+  margin: 30px 0;
+  span {
+    float: left;
+  }
+  .submit_evaluate_btn {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

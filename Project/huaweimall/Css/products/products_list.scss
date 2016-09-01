@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+@import "../model/site_nav";
+@import "../model/page_list";
+//内容区域---------------
+.content{
+  //商品分类---------------------
+  .p_attrwrap{
+    border: 1px solid #dedede;
+    .p_attr,.p_sort{
+      border-bottom: 1px solid #dedede;
+      .p_title{
+        float: left;
+        text-align: right;
+        width: 86px;
+        padding-top: 17px;
+      }
+      .p_defalut{
+        float: left;
+        padding: 17px 0 0 10px;
+        color: #e01d20;
+      }
+      .p_box{
+        margin-left: 140px;
+        padding: 10px 0;
+        position: relative;
+        .p_show{
+          margin-right: 80px;
+          overflow: hidden;
+          max-height: 60px;
+          li{
+            float: left;
+            margin-right: 20px;
+            height: 30px;
+            line-height: 30px;
+            white-space: nowrap;
+            a{
+              color: #999;
+              &:hover{
+                color:#333;
+              }
+            }
+          }
+        }
+        .more_show{
+          position: absolute;
+          right: 30px;
+          top:10px;
+          height: 30px;
+          line-height: 30px;
+          cursor: pointer;
+          i{
+          display: inline-block;
+            width: 9px;
+            height: 5px;
+
+            vertical-align: middle;
+            background: url("../../products/Images/sprite_list_p_more_down.png") no-repeat;
+          }
+        }
+      }
+    }
+    //排序--------
+    .p_sort{
+      border-bottom: 0;
+     .p_show{
+       li{
+         position: relative;
+         a {
+           display: inline-block;
+           i {
+             display: block;
+             width: 8px;
+             height: 10px;
+             position: absolute;
+             top: 10px;
+             right: -10px;
+             background: url("../../products/Images/sprite_updown.png") no-repeat;
+           }
+         }
+       }
+       .p_evaluate{
+         i{
+           height: 8px;
+           top:12px;
+           background: url("../../products/Images/sprite_evalute_down.png") no-repeat;
+         }
+       }
+     }
+    }
+  }
+}
+
+//产品列表------------------
+.products_wrap{
+  margin-top: 20px;
+  .plist{
+    margin-right: -20px;
+    li{
+      float: left;
+      width: 244px;
+      .pro_wrap{
+        margin: 0 20px 20px 0;
+        border: 1px solid #dedede;
+        height: 362px;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        &:hover{
+          -webkit-transition: 0.2s ;
+          -moz-transition: 0.2s ;
+          -ms-transition: 0.2s ;
+          -o-transition: 0.2s ;
+          transition: 0.2s ;
+          border-color: #e01d20;
+        }
+        .pro_img{
+          padding: 12px 0 10px;
+          text-align: center;
+          a{
+            display: block;
+            img{
+              width: 218px;
+              height: 218px;
+            }
+          }
+        }
+        .pro_name{
+          line-height: 16px;
+          padding: 0 20px;
+          height: 48px;
+          overflow: hidden;
+          a{
+            color: #666;
+            &:hover{
+              color: #e01d20;
+              text-decoration: underline;
+            }
+            span{
+              color: #e01d20;
+            }
+          }
+        }
+        .pro_price{
+          padding-top: 3px;
+          color: #e01d20;
+          line-height: 30px;
+          em{
+            font-size: 20px;
+            font-weight: 400;
+          }
+        }
+        .buy_look{
+          position: absolute;
+          left: 0;
+          width: 224px;
+          bottom: 0;
+          border-top: 1px solid #dedede;
+          .ge{
+            width: 50%;
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            color: #666;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            float: left;
+            }
+          a{
+            border-right: 1px solid #dedede;
+            &:hover{
+              text-decoration: none;
+              background-color: #e01d20;
+              color: #FFF;
+            }
+          }
+        }
+        .tag{
+          position: absolute;
+          top:0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+}

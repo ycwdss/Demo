@@ -1,0 +1,296 @@
+@charset "UTF-8";
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+html, body {
+  height: 100%;
+  position: relative; }
+
+.sort {
+  width: 100%;
+  background: #FFFFFF;
+  border-bottom: 1px solid #e4e4e4; }
+  .sort li {
+    position: relative;
+    float: left;
+    width: 25%;
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+    line-height: 45px; }
+  .sort .current {
+    color: #093; }
+    .sort .current span {
+      width: 0;
+      height: 0;
+      line-height: 0;
+      font-size: 0;
+      overflow: hidden;
+      border-width: 6px;
+      cursor: pointer;
+      border-style: solid dashed dashed dashed;
+      border-color: #093 transparent transparent transparent;
+      border-bottom: none; }
+  .sort .sort_click {
+    color: #093; }
+    .sort .sort_click span {
+      width: 0;
+      height: 0;
+      line-height: 0;
+      font-size: 0;
+      overflow: hidden;
+      border-width: 6px;
+      cursor: pointer;
+      border-style: dashed dashed solid dashed;
+      border-color: transparent transparent #093 transparent;
+      border-top: none; }
+
+.sort_arrow {
+  position: absolute;
+  top: 21px;
+  margin: 0 5px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-width: 6px;
+  cursor: pointer;
+  border-style: solid dashed dashed dashed;
+  border-color: #e4e4e4 transparent transparent transparent;
+  border-bottom: none; }
+
+.sort_detail_bg {
+  display: none;
+  position: absolute;
+  top: 91px;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.3); }
+
+.sort_detail {
+  background: #FFFFFF;
+  padding-bottom: 20px;
+  font-size: 0.7rem;
+  line-height: 24px;
+  text-align: center; }
+  .sort_detail li {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 19%;
+    margin: 20px 3% 0;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 24px;
+    border: 1px solid #e4e4e4; }
+  .sort_detail .sort_detail_click {
+    border: 1px solid #093; }
+
+/*重写*/
+.sort li {
+  font-size: 1rem;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 33.33333%; }
+
+/*列表*/
+.designer_ele {
+  margin-top: 10px;
+  padding: 10px 0;
+  background: #FFFFFF; }
+
+.designer_detail {
+  padding: 0 3%; }
+
+.content_list_img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  overflow: hidden; }
+  .content_list_img img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%; }
+
+.content_text {
+  margin-left: 80px; }
+  .content_text h3 {
+    font-size: 16px;
+    line-height: 1;
+    height: 1em; }
+    .content_text h3 a {
+      color: #000; }
+    .content_text h3 span {
+      margin-left: 5px;
+      color: #888;
+      font-size: 14px; }
+      .content_text h3 span:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        vertical-align: 4px;
+        background-color: #888; }
+  .content_text p {
+    font-size: 12px;
+    color: #888; }
+    .content_text p span > i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin: 0 3px;
+      line-height: 15px;
+      text-align: center;
+      color: #fff; }
+
+.content_text h3 + p {
+  margin: 9px 0;
+  line-height: 1.4;
+  height: 1.4em; }
+  .content_text h3 + p span:after {
+    margin: 0 2px;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    vertical-align: -2px;
+    background-color: #888; }
+  .content_text h3 + p span:last-child:before {
+    display: none; }
+  .content_text h3 + p .case:after {
+    display: none !important; }
+
+.contact {
+  margin: 9px 0 8px;
+  line-height: 1;
+  height: 1em; }
+
+.designer_detail_bottom {
+  padding: 9px 0; }
+  .designer_detail_bottom span {
+    float: left;
+    position: relative;
+    font-size: 12px;
+    color: #888;
+    width: 100px;
+    max-width: 25%;
+    text-align: center; }
+    .designer_detail_bottom span:after {
+      position: absolute;
+      top: 2px;
+      right: 0;
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 12px;
+      background-color: #888; }
+
+.designer_case {
+  width: 100%;
+  text-align: center; }
+  .designer_case img {
+    width: 96%;
+    max-height: 400px; }
+
+.m_sort {
+  background: #FFFFFF;
+  width: 100%; }
+
+.m_sort li {
+  text-indent: 5px;
+  margin: 0 20px 0 20px;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 40px;
+  border-bottom: 1px solid #e4e4e4; }
+
+.arrow_clicked {
+  display: none;
+  float: right;
+  margin: 10px 15px 7px 10px;
+  width: 15px;
+  height: 10px;
+  background: url("../../../Images/mobile/icon_mall.png") -14px 0;
+  -webkit-background-size: 250px;
+  background-size: 250px; }
+
+.m_sort .m_sort_clicked {
+  color: #093; }
+
+.m_sort_clicked .arrow_clicked {
+  display: block; }
+
+.no_bg:after {
+  background: none !important; }
+
+.no_borderB {
+  border-bottom: none !important; }

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息中心</title>
+    <link rel="stylesheet" href="../../Css/usercenter/style.css">
+    <link rel="stylesheet" href="../../Css/usercenter/message.css">
+</head>
+<body>
+<!--头部-->
+<div class="header_top">
+    <div class="conwidth header_top_inner clearfix">
+        <div class="fl">
+            欢迎来到凤凰筑巢！ <a class="login_btn main_hover">请登录</a> <a class="register_btn main_hover">注册</a>
+        </div>
+        <ul class="fr header_top_nav main_hover">
+            <li><a href="">我的询价单</a></li>
+            <li class="line"></li>
+            <li><a href="">会员中心 <i class="icon-xiangxiajiantou"></i></a></li>
+            <li class="line"></li>
+            <li><a href="">我是 <i class="icon-xiangxiajiantou"></i></a></li>
+            <li class="line"></li>
+            <li><a href="">供应商专区</a></li>
+            <li class="line"></li>
+            <li><a href="">运营商专区</a></li>
+            <li class="line"></li>
+            <li><a href="">网站地图 <i class="icon-xiangxiajiantou"></i></a></li>
+            <li class="line"></li>
+            <li><a href="">帮助中心</a></li>
+            <li class="line"></li>
+            <li class="more_btn mainbg_hover"><a>关注我们 <i class="iicon-xiangxiajiantou"></i></a>
+                <div class="pull_more main_bg">
+                    <img class="erweima" src="../../Images/test/test_erweima.jpg">
+                    <span>扫码下载凤凰筑巢客户端</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--个人中心头部-->
+<div class="head_wrap main_bg_light">
+    <div class="head_box conwidth clearfix">
+        <a class="logo_img fl" href="#"><img src="../../Images/usercenter/icon/icon_logo_white.png"> </a>
+        <ul class="fr clearfix">
+            <li><a class="main_bg mainbg_hover" href="#">首页</a></li>
+            <li><a class="mainbg_hover" href="#">产品中心</a></li>
+            <li><a class="mainbg_hover" href="#">询价单</a></li>
+            <li><a class="mainbg_hover" href="#">账号中心</a></li>
+            <li><a class="mainbg_hover" href="#">店铺设置</a></li>
+        </ul>
+    </div>
+</div>
+<!--个人中心-->
+<div class="content conwidth clearfix">
+    <!--左侧列表-->
+    <div class="items_wrap fl">
+        <ul>
+            <li class="active"><a href="#">所有消息<em>&gt;</em></a></li>
+            <li><a href="#">系统消息<em>&gt;</em></a></li>
+            <li><a href="#">服务消息<em>&gt;</em></a></li>
+        </ul>
+    </div>
+    <!--右侧内容  消息列表-->
+    <div class="content_wrap fr ">
+        <h1 class="items_title">系统消息</h1>
+        <!--已读未读-->
+        <ul class="message_read clearfix fl">
+            <li><a class="main_bg" href="#">全部消息</a></li>
+            <li><a href="#">未读消息</a></li>
+            <li><a href="#">已读消息</a></li>
+        </ul>
+        <!--标题-->
+        <table>
+            <tr class="message_items">
+                <th class="message_title">标题</th>
+                <th class="message_time">时间</th>
+            </tr>
+            <tr class="message_list ">
+                <td class="message_title">
+                    <span class="check"><em><i></i></em></span>
+                    <a class="caption" href="#"><i class="icon-xinfeng"></i>昶王科技开通世界工厂网店铺啦</a>
+                </td>
+                <td class="message_time">
+                    2016-03-07 13:12:12
+                </td>
+
+            </tr>
+            <tr class="message_list ">
+                <td class="message_title">
+                    <span class="check"><em><i></i></em></span>
+                    <a class="caption" href="#"><i class="icon-xinfeng"></i>昶王科技开通世界工厂网店铺啦</a>
+                </td>
+                <td class="message_time">
+                    2016-03-07 13:12:12
+                </td>
+
+            </tr>
+            <tr class="message_list ">
+                <td class="message_title">
+                    <span class="check"><em><i></i></em></span>
+                    <a class="caption" href="#"><i class="icon-xinfeng"></i>昶王科技开通世界工厂网店铺啦</a>
+                </td>
+                <td class="message_time">
+                    2016-03-07 13:12:12
+                </td>
+
+            </tr>
+            <!--暂无信息-->
+            <tr class="message_list no_message">
+                <td colspan=2>暂无消息内容~~</td>
+            </tr>
+        </table>
+        <div class="message_delete ">
+            <span class="check"><em><i></i></em>全选</span>
+            <span class="btn btn_del">删除</span>
+        </div>
+        <!--分页-->
+        <div class="page_list">
+            <p>
+                <a class="first_page" href="#">首页</a>
+                <a class="prev_page" href="#">上一页</a>
+                <a class="main_bg main_border" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a class="no_all_b" href="#">......</a>
+                <a href="#">100</a>
+                <a class="next_page no_marginR" href="#">下一页</a>
+                <a class="last_page no_marginR" href="#">尾页</a>
+                <span>&nbsp;共10页&nbsp;到第</span>
+                <input onkeyup="value=value.replace(/[^\d/g]/,'')">
+                <span>页</span>
+                <span class="page_submit mainbg_hover">确认</span>
+            </p>
+        </div>
+    </div>
+
+    <!--消息详情-->
+    <div class="content_wrap message_detail hide fr">
+        <p class="items_title">
+            <a href="#">&lt;&lt;返回</a>
+            <a href="#">删除</a>
+        </p>
+        <div class="message_box">
+            赶快上架产品，开启在世界工厂网的推广之旅吧！赶快上架产品，开启在世界工厂网的推广之旅吧！
+            赶快上架产品，开启在世界工厂网的推广之旅吧！赶快上架产品，开启在世界工厂网的推广之旅吧！
+            赶快上架产品，开启在世界工厂网的推广之旅吧！赶快上架产品，开启在世界工厂网的推广之旅吧！
+            Thank you for downloading WebStorm!
+        </div>
+    </div>
+</div>
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/message" id="require" src="../../Js/lib/require.js"></script>
+</body>
+
+</html>

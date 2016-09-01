@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.site_nav {
+  color: #BBB;
+  line-height: 18px;
+  margin: 10px 0;
+  font-family: \5b8b\4f53;
+  a {
+    color: #666;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  span {
+    color: #333;
+  }
+}

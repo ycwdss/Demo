@@ -1,0 +1,55 @@
+a {
+  color: #666;
+  text-decoration: none; }
+  a:hover {
+    color: #093; }
+
+.pro_name a:hover {
+  color: #f60; }
+
+.btn_dots li.slick-active button {
+  background-color: #093;
+  opacity: 1 !important; }
+
+.banner_box .one {
+  background-color: #F9F4E1; }
+
+.banner_box .two {
+  background-color: #73E9EB; }
+
+.banner_box .three {
+  background-color: #CE020E; }
+
+#search input {
+  border: 2px solid #093; }
+#search .search_button {
+  background: #093; }
+
+#top_cart {
+  background: #093; }
+  #top_cart .cart_jiesuan span {
+    background: #093; }
+
+#l_nav {
+  background: #093; }
+  #l_nav .nav_current {
+    background: #4db871; }
+  #l_nav li:hover {
+    background: #4db871; }
+
+#top_right .welcome > span {
+  color: #093; }
+
+#cart_right {
+  background: #093; }
+
+#cart_right .com_logo {
+  background-color: #093; }
+
+#cart_right .cart_current {
+  background: #4db871; }
+
+.l_head {
+  background: white; }
+
+/*# sourceMappingURL=defaultset.css.map */

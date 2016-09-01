@@ -1,0 +1,262 @@
+.l_content {
+  position: relative;
+  width: 1300px;
+  margin: 0px auto 15px; }
+
+.index {
+  margin-bottom: 22px;
+  border-bottom: 1px solid #eee;
+  color: #093;
+  font-family: "SimSun"; }
+
+.index span {
+  line-height: 45px;
+  height: 45px;
+  font-family: "SimSun";
+  color: #333; }
+
+.index span:hover {
+  color: #f60; }
+
+.contain {
+  margin-bottom: 40px; }
+
+.m_left {
+  float: left;
+  width: 962px;
+  word-break: break-all; }
+
+.strategy_title {
+  /*width: 100%;*/
+  text-align: center;
+  margin: 25px 0;
+  padding: 22px 0 0;
+  font-size: 26px;
+  color: #333333;
+  /*border-bottom: 1px solid #e4e4e4;*/ }
+
+.published_time {
+  position: relative;
+  font-size: 14px;
+  color: #888888;
+  text-align: center;
+  margin-bottom: 22px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee; }
+
+.published_time span {
+  margin: 0 28px; }
+
+.shoucang_btn {
+  cursor: pointer; }
+  .shoucang_btn i {
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    margin: 0 3px;
+    background: url(../../school/Images/sprite_shoucang_093.png) no-repeat; }
+  .shoucang_btn .store_text {
+    margin: 0;
+    width: 59px;
+    display: inline-block; }
+
+.bdsharebuttonbox {
+  right: 50px !important;
+  top: -4px !important; }
+
+.strategy_content {
+  font-size: 16px;
+  color: #333333;
+  min-height: 450px;
+  line-height: 30px;
+  padding: 10px 0 30px 10px;
+  border-bottom: 1px solid #eee; }
+
+.content_lead p img {
+  display: block !important;
+  max-width: 942px !important;
+  margin: 10px auto !important; }
+
+.c_sub_text {
+  font-size: 15px;
+  color: #999; }
+
+.c_sub_text span {
+  color: #093; }
+
+.c_sub_text a {
+  color: #000; }
+
+.c_sub_text a:hover {
+  color: #f60; }
+
+.content_img1 {
+  display: block;
+  width: 494px;
+  height: 310px;
+  margin: 0 auto 30px; }
+
+.content_detail {
+  text-indent: 25px; }
+
+.content_detail p {
+  margin: 15px 15px; }
+
+.m_comment {
+  height: 241px;
+  width: 100%;
+  background: #f8f8f8; }
+
+.my_comment {
+  float: left;
+  margin: 25px 28px 0;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  height: 102px;
+  width: 874px;
+  outline-color: #009933;
+  border: 1px solid #e4e4e4;
+  resize: none; }
+
+.submit_comment {
+  float: right;
+  margin: 15px 25px 0 0;
+  font-size: 13px; }
+
+.comment_waring {
+  float: left;
+  font-size: 14px;
+  color: #666666;
+  margin: 0 20px; }
+
+.submit_button {
+  float: left;
+  width: 130px;
+  height: 50px;
+  background: #009933;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer; }
+
+.other_comment {
+  margin-top: 17px; }
+
+.other_comment_title {
+  font-size: 20px;
+  color: #333333;
+  line-height: 56px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #e4e4e4; }
+
+.user {
+  padding: 17px 0 15px 0;
+  border-bottom: 1px dashed #e4e4e4; }
+
+.user_img {
+  float: left; }
+
+.user_detail_left {
+  float: left;
+  margin-left: 10px;
+  margin-top: 3px;
+  line-height: 25px; }
+
+.user_name {
+  color: #009933;
+  font-size: 12px; }
+
+.user_score {
+  color: #b5b5b5;
+  font-size: 12px; }
+
+.user_score span {
+  margin-right: 10px; }
+
+.user_detail_right {
+  float: right;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #b5b5b5; }
+
+.user_comment_content {
+  width: 900px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #666666;
+  line-height: 25px;
+  text-indent: 25px; }
+
+.user_comment_bottom span {
+  font-size: 12px;
+  color: #b5b5b5;
+  margin-right: 10px; }
+
+.m_strategyDetail_right {
+  margin-top: 135px;
+  float: right;
+  padding: 0 11px;
+  width: 288px;
+  border: 1px solid #e4e4e4;
+  background-color: #fff; }
+
+.m_strategyDetail_right_fixed {
+  margin-top: 40px;
+  float: right;
+  padding: 0 11px;
+  width: 288px;
+  border: 1px solid #e4e4e4;
+  position: fixed;
+  bottom: 296px;
+  right: 50%;
+  margin-right: -650px;
+  background-color: #fff; }
+
+.detail_right_title {
+  font-size: 20px;
+  color: #333;
+  margin-left: 11px;
+  line-height: 50px; }
+
+.recommend {
+  word-break: break-all;
+  padding: 25px 0 25px 3px;
+  border-top: 1px dashed #e4e4e4; }
+
+.recommend:last-child {
+  border-bottom: 0; }
+
+.recommend span:hover {
+  color: #ff6600; }
+
+.recommend i {
+  color: #444;
+  font-size: 15px; }
+
+.recommend i:hover {
+  color: #ff6600; }
+
+.recommend:hover img {
+  opacity: 0.8; }
+
+.article_title {
+  color: black !important;
+  font-size: 15px !important; }
+
+.article_title:hover {
+  color: #f60 !important; }
+
+.recommend img {
+  float: left;
+  width: 112px;
+  height: 70px; }
+
+.recommend a {
+  float: right;
+  width: 163px;
+  overflow: hidden;
+  font-size: 13px;
+  color: #666666;
+  line-height: 23px; }

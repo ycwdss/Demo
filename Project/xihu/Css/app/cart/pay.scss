@@ -1,0 +1,337 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/cart_style";
+.pay_box{
+  h3{
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .good_bar{
+    border-top: 0;
+  }
+}
+.pay_way_box{
+  margin:15px 28px 30px;
+}
+.pay_way_nav{
+  border-left: 1px solid #e4e4e4;
+  a{
+    float: left;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    position: relative;
+  }
+  a:hover{
+    background-color: darken(#f5f5f5,2%);
+  }
+  a.current{
+    background-color: #fff;
+    border-bottom-color: #fff;
+    &:before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+}
+.pay_way_item{
+  ul{
+    padding: 30px 40px 30px;
+    border: 1px solid #e4e4e4;
+  }
+  li{
+    float: left;
+    margin: 0 5px 10px;
+    width: 148px;
+    height: 38px;
+    cursor: pointer;
+    border: 1px solid #f5f5f5;
+    @include transition(border-color,0.2s,ease)
+  }
+  li span{
+    display: block;
+    width: 104px;
+    height:24px;
+    line-height:24px;
+    margin:7px 27px;
+    @include transition();
+    font-size: 0;
+  }
+}
+//支付宝
+.pay_icon1{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zfb.png) no-repeat;
+}
+//微信
+.pay_icon2{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_wx.png) no-repeat;
+}
+//中国银行
+.pay_icon3{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zhongguo.png) no-repeat;
+}
+//中国工商银行
+.pay_icon4{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_gs.png) no-repeat;
+}
+//招商银行
+.pay_icon5{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zs.png) no-repeat;
+}
+//中国农业银行
+.pay_icon6{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_nongye.png) no-repeat;
+}
+//中国建设银行
+.pay_icon7{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_jianshe.png) no-repeat;
+}
+//平安银行
+.pay_icon8{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_pingan.png) no-repeat;
+}
+//中国邮政储蓄银行
+.pay_icon9{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_youzheng.png) no-repeat;
+}
+//浦发银行
+.pay_icon10{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_pufa.png) no-repeat;
+}
+//兴业银行
+.pay_icon11{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_xingye.png) no-repeat;
+}
+//广发银行
+.pay_icon12{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_guangfa.png) no-repeat;
+}
+//富滇银行
+.pay_icon13{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_fudian.png) no-repeat;
+}
+//杭州银行
+.pay_icon14{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_hangzhou.png) no-repeat;
+}
+//上海银行
+.pay_icon15{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_shanghai.png) no-repeat;
+}
+//宁波银行
+.pay_icon16{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_ningbo.png) no-repeat;
+}
+
+//微信支付
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.pay_block{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#93888980,endColorstr=#93888980);
+  h4{
+    padding-left: 30px;
+    color: #333;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    text-align: left;
+    -webkit-box-shadow: 0 2px 0 0 #ddd ;
+    -moz-box-shadow: 0 2px 0 0 #ddd ;
+    box-shadow: 0 2px 0 0 #ddd;
+  }
+  >div{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    -webkit-transition:top 0.2s ease-out;
+    transition:top 0.2s ease-out;
+  }
+  >div.in{
+    top:0;
+  }
+}
+.pay_weixin .pay_erweima{
+  width: 572px;
+  height: 402px;
+}
+.pay_erweima{
+  span{
+    display: block;
+    width: 248px;
+    height: 248px;
+    margin: 25px auto 10px;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  p.tip{
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.pay_block .pay_offbtn{
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 25px;
+  @include transition(background,0.3s,ease);
+  cursor: pointer;
+  i{
+    width: 13px;
+    height: 13px;
+    vertical-align:middle;
+    font-size: 13px;
+  }
+}
+
+//支付完成弹出框
+.pay_finish{
+  width: 572px;
+  height:250px;
+  text-align: center;
+  .order_num{
+    padding-top:40px;
+    font-size: 18px;
+  }
+  p.action{
+    padding-top: 30px;
+    a{
+      display: inline-block;
+      width: 125px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      @include box-sizing();
+    }
+    a.action_btn{
+      margin-right: 60px;
+      border:1px solid #e4e4e4;
+      vertical-align: top;
+      @include transition();
+      &:hover{
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
+.pay_finish .pay_offbtn {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+}
+
+//订单详情
+.order_info{
+  .good_name{
+    width: 650px;
+    .good_img{
+      padding-left: 20px;
+    }
+  }
+
+}
+//结算
+.whole_money{
+  padding: 10px 0;
+  margin: 0 28px;
+  border-top: 1px solid #e4e4e4;
+  ul li{
+    display: block;
+    padding-left: 100px;
+    line-height: 2;
+    position: relative;
+    zoom: 1;
+    font-size: 14px;
+    text-align: right;
+    label{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90px;
+      zoom: 1;
+      span.val{
+        zoom: 1;
+
+      }
+    }
+    em{
+      font-size: 20px;
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+}
+//收货人信息
+.get_box{
+  h3{
+    padding-left: 28px;
+    line-height: 40px;
+    font-size: 14px;
+    border-top:1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #f5f5f5;
+    color: #666;
+  }
+  .get_info{
+    padding:15px 0;
+  }
+  p{
+    margin: 0 28px;
+    font-size: 12px;
+    line-height: 2.4;
+  }
+}
+//提交成功
+.success_submit {
+  height: 150px;
+  border-top: 1px solid #e4e4e4;
+  text-align: center;
+  p {
+    margin-top: 25px;
+    font-size: 26px;
+  }
+  span {
+    display: inline-block;
+    width: 320px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.loan_ask{
+  width: 40px;height: 40px;font-size: 12px;
+  position: fixed;
+  top:38%;
+  right:0%;
+  z-index: 999;
+  span{
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    background-color: #7fcc99;
+    text-align: center;
+    cursor: pointer;
+  }
+}

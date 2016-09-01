@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/site";
+
+.pwd_inner{
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  background: #ffffff;
+  border:1px solid #e4e4e4;
+}
+.pwd_box{
+  margin-top: 50px;
+}
+.pwd_ele{
+  position: relative;
+  margin-bottom: 40px;
+  input{
+    float: left;
+    width: 220px;
+    height: 30px;
+    padding:4px 10px;
+    font-size: 12px;
+    line-height: 22px;
+    background: #F8F8F8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .tips{
+    position: absolute;
+    top: 30px;
+    left: 115px;
+    font-size: 12px;
+    line-height: 25px;
+    color: #999;
+  }
+}
+.pwd_intro{
+  float: left;
+  width: 100px;
+  margin-right: 15px;
+  line-height: 30px;
+  text-align: right;
+}
+.submit_btn{
+  margin-top: 75px;
+}

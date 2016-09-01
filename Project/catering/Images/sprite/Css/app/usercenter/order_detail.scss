@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/usercenter_style";
+
+.order_top {
+  height: 160px;
+  background-color: #fff;
+}
+
+.logo_icon {
+  margin-top: 49px;
+  display: inline-block;
+  width: 177px;
+  height: 62px;
+  overflow: hidden;
+  > img {
+    display: block;
+    width: 177px;
+    height: 62px;
+  }
+}
+
+.order_status {
+  margin:78px 0;
+  li {
+    float: left;
+    color: #666;
+    font-size: 14px;
+    width: 124px;
+    border-top: 3px solid #e4e4e4;
+    position: relative;
+    span {
+      display: block;
+      width: 23px;
+      height: 23px;
+      border-radius: 23px;
+      margin: 0 auto;
+      position: absolute;
+      top: -15px;
+      right:0 ;
+      color: #666;
+      text-align: center;
+      background-color: #e4e4e4;
+    }
+    i {
+      position: absolute;
+      top: 10px;
+      right: -20px;
+      width: 63px;
+      text-align: center;
+    }
+  }
+  li.current{
+    border-top-color: #093;
+    span{
+      background-color: #093;
+      color: #fff;
+    }
+    i{
+      color: #093;
+    }
+  }
+}
+
+.order_status li:first-child {
+  border-top-color: transparent;
+}

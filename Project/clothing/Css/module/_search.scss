@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+//搜索框
+
+.search input {
+  float: left;
+  height: 40px;
+  width: 400px;
+  padding: 9px 10px;
+  font-size: 13px;
+  color: #333;
+  line-height: 20px;
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.search .search_btn {
+  position: relative;
+  float: left;
+  width: 78px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+.search .search_btn i {
+  font-size: 25px;
+  color: #FFFFFF;
+  line-height: 40px;
+}

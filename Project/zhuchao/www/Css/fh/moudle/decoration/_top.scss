@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import "../../style";
+@import "../mall/top";
+.mall_header{
+  position: relative;
+  overflow: visible!important;
+}
+.mall_right{
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+/* 导航栏*/
+.l_nav{
+  margin: 5px 0 0;
+  width: 100%;
+  min-width: 1300px;
+  border-bottom: 1px solid #093;
+}
+.m_nav{
+  li{
+    float: left;
+    padding: 0 35px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    font-size: 18px;
+    border-right: 1px solid #FFFFFF;
+    a{
+      color: #333;
+    }
+  }
+  li:hover{
+    background: #093;
+    a{
+      color: #FFFFFF;
+    }
+  }
+}
+.m_nav .nav_current{
+  background: #093;
+  a{
+    color: #FFFFFF;
+  }
+}
+.routeInfo{
+  border: 0;
+}
+.routeInfo{
+  a{
+    float: left;
+    margin:0 5px;
+    line-height: 20px!important;
+  }
+  span{
+    float: left;
+    margin: 0 2px;
+    line-height: 20px!important;
+  }
+}

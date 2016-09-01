@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/pagelist";
+@import "../../module/empty";
+@import "../../module/pro_card";
+@import "../../module/usercenter";
+@import "../../module/order_ele";
+
+.personal_info {
+  padding: 32px 24px;
+  background-color: #fff;
+  .logo {
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+  }
+}
+
+.account_info {
+  padding-top: 30px;
+  padding-left: 20px;
+  display: inline-block;
+  h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+}
+
+.account_info .grade {
+  height: 28px;
+  line-height: 28px;
+  padding-bottom: 15px;
+  i {
+    height: 28px;
+    width: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.account_info .safe {
+  .safe_bar {
+    display: inline-block;
+    width: 85px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #d6d6d6;
+    position: relative;
+    .safe_rate {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+  }
+  span {
+    color: #094;
+    margin-left: 8px;
+  }
+}
+
+.account_msg {
+  padding-top: 30px;
+  padding-right: 360px;
+  p {
+    padding: 10px 0;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+  }
+  .p_last {
+    padding-bottom: 0;
+  }
+}

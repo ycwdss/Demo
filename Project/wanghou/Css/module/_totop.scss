@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.totop{
+  width: 45px;
+  height:45px;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}

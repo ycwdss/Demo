@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import "../fh/style";
+@import "../fh/moudle/usercenter/rightsort";
+@import "../fh/moudle/usercenter/store_article_ele";
+@import "../fh/moudle/usercenter/img_pro_store";
+.m_content_right{
+  background:none!important;
+}
+
+//商家收藏列表
+.collect_list,.building_materials,.furniture,.lightings,.person_made{
+  margin-right: -20px;
+  .c_pro{
+    img{
+      width: 225px!important;
+      height: 110px!important;
+    }
+    h2{
+      margin-top: 16px;
+      color:#093;
+    }
+    .pro_content{
+      margin:20px 0;
+      color: #9a9a9a;
+      span{
+        color: #333;
+      }
+      .pro_attention{
+        height: 28px;
+        line-height: 28px;
+      }
+    }
+    .off_or_in{
+      margin: 0 auto;
+      a{
+        color: #fff;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        background-color: #093;
+        float: left;
+        text-align:center;
+        @include transition();
+        &:hover{
+          background: #048b31;
+          -webkit-box-shadow: 1px 1px 1px #ccc;
+          -moz-box-shadow: 1px 1px 1px #ccc;
+          box-shadow: 1px 1px 1px #ccc;
+        }
+      }
+      a:first-child{
+        margin-right: 15px;
+      }
+    }
+  }
+}
+.building_materials,.furniture,.lightings,.person_made{
+  display: none;
+}

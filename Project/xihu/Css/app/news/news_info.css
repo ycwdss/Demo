@@ -1,0 +1,157 @@
+.pro_card_ele {
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+  background: #fff; }
+  .pro_card_ele img {
+    display: block;
+    width: 260px !important;
+    height: 260px !important; }
+  .pro_card_ele .pro_card_intro {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px 10px;
+    height: 50px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+    .pro_card_ele .pro_card_intro a {
+      color: #666; }
+  .pro_card_ele .pro_card_price {
+    margin: 0 10px 10px;
+    font-size: 24px;
+    line-height: 35px; }
+    .pro_card_ele .pro_card_price .buy_btn {
+      float: right;
+      font-size: 12px;
+      width: 65px;
+      height: 22px;
+      margin-top: 8px;
+      line-height: 22px;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+
+.recommend {
+  height: 438px;
+  line-height: 50px;
+  margin-top: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px; }
+  .recommend h4 {
+    padding-left: 15px; }
+  .recommend .recommend_slick {
+    height: 386px;
+    width: 1080px;
+    padding: 0 10px; }
+  .recommend .pro_card_ele {
+    float: left;
+    margin: 0 5px 10px !important; }
+    .recommend .pro_card_ele a {
+      display: block; }
+  .recommend .recommend_dots {
+    position: absolute;
+    top: -35px;
+    right: 20px; }
+    .recommend .recommend_dots li {
+      float: left;
+      width: 8px;
+      height: 8px;
+      background: #f1f1f1;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin-right: 7px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      .recommend .recommend_dots li button {
+        display: none; }
+
+.border_bottom {
+  border-bottom: 1px solid #e4e4e4; }
+
+.content {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.hot_products {
+  padding: 0 15px 30px;
+  border: 1px solid #e4e4e4;
+  background-color: #fff; }
+  .hot_products h1 {
+    width: 180px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    text-align: left;
+    color: #333; }
+  .hot_products .pro_card {
+    width: 180px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 15px; }
+    .hot_products .pro_card a {
+      display: block; }
+    .hot_products .pro_card img {
+      display: block;
+      width: 180px;
+      height: 180px; }
+    .hot_products .pro_card .card_intro a {
+      display: block;
+      width: 180px;
+      line-height: 38px;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #333;
+      font-size: 14px; }
+    .hot_products .pro_card .card_price {
+      height: 40px;
+      line-height: 40px;
+      padding-bottom: 10px;
+      font-size: 18px; }
+      .hot_products .pro_card .card_price .buy_btn {
+        padding-right: 10px;
+        font-size: 12px; }
+        .hot_products .pro_card .card_price .buy_btn i {
+          font-size: 16px;
+          margin-right: 5px; }
+
+.news_info {
+  width: 870px;
+  border: 1px solid #e4e4e4;
+  background-color: #fff; }
+  .news_info h1 {
+    font-size: 16px;
+    color: #333;
+    padding-top: 35px;
+    text-align: center; }
+  .news_info p.date {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    padding: 12px; }
+  .news_info .article {
+    min-height: 495px;
+    padding: 25px 25px 0;
+    line-height: 30px;
+    font-size: 12px;
+    color: #333; }
+
+.recommend {
+  margin-bottom: 20px; }

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import "../mobile_moudle/moudle/_strategy_top";
+html{font-size: 62.5%!important;}
+.top_title{font-size: 1.6rem;}
+//头部--------------
+.moudle_top {
+  h1 {
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.icon_more_link {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  padding: 14px;
+  cursor: pointer;
+
+}
+#icon_more_link .icon_more_btn{
+  height: 23px;
+  background: url(../../../Images/mobile/jiazhuang/icon_more_jiazhuang.png) no-repeat;
+  background-size: 25px;
+}
+.hidden{
+  display: none!important;
+}
+.m_topSubnav {
+  position: absolute;
+  display: block;
+  top: 45px;
+  right: 0;
+  z-index: 100;
+  width: 35%;
+  min-height: 160px;
+  background-color: #fff;
+  box-shadow: -3px 0 5px rgba(0,0,0,0.1);
+  a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+  }
+}
+//内容区域-----------------
+.content {margin-bottom: 50px!important;background-color: #f8f8f8;}
+.list{
+  overflow: hidden;
+  width: 98%;
+  margin: 0 auto;
+  .head{padding:8px 10px;
+  dl dt{
+    font-size:1.4rem;font-weight: 600;
+  }
+    dd{font-size: 1rem;color: #888;float: left;padding-top: 10px;
+    span{padding:0 5px;}
+    }
+  }
+  .main_img{
+    width: 100%;height: 225px;
+    margin-bottom: 5px;
+  }
+  .min_img{
+      .swiper-slide{width:142px!important;height:88px;float: left;margin-right: 5px;position: relative;
+      img{width:100%;height: 100%;}
+      }
+    span{position: absolute;bottom:10px;text-align: center;color: #fff;font-size:1.2rem;left:0;z-index: 88;display: inline-block;width: 100%;}
+  }
+}

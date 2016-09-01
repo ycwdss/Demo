@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.moudle_top h1{
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  vertical-align: -19px;
+}
+.xgt_content_box{
+  min-height: 430px;
+  height: auto;
+  background-color: #fff;
+  position: relative;
+}
+.swiper_img{
+  display: block;
+  padding-top: 20px;
+}
+.swiper_img>img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.swiper_text{
+  width:90%;
+  margin:30px auto;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-box-orient: vertical;
+  text-indent: 2em;
+}
+.swiper_text p{
+  padding:10px 0;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-box-orient: vertical;
+}
+
+//分页
+.swiper_page{
+  position: absolute;
+  top:16%;
+  right: 0;
+  z-index: 99;
+  width: 58px;
+  height: 18px;
+  line-height: 100%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}
+.swiper_page i{
+  display: inline-block;
+  vertical-align: -3px;
+}

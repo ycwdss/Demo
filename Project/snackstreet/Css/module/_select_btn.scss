@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+$select-border:#e4e4e4;
+$select-width:100px;
+$height:30px;
+$hover_color:#fff4e5;
+.select_btn{
+  float: left;
+  position: relative;
+  width: $select-width;
+  height: $height;
+  line-height:$height - 2px;
+  padding-right: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  border:1px solid $select-border;
+  z-index:999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  >span{
+    display: block;
+    color: #000;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  ul{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: -1px;
+    width: $select-width;
+    background: #FFFFFF;
+    border:1px solid $select-border;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    li{
+      padding-right: 20px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      &:hover{
+        background: $hover_color;
+      }
+    }
+  }
+  .select_arrow{
+    position:absolute;
+    top: 11px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #888;
+
+  }
+}
+//<div class="select_btn">
+//<span>退货</span>
+//<ul>
+//<li>退货</li>
+//<li>换货</li>
+//</ul>
+//<i class="select_arrow"></i>
+//</div>

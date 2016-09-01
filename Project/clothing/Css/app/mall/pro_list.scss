@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/nav";
+@import "../../module/site";
+@import "../../module/pagelist";
+@import "../../module/pro_card";
+
+.content{
+  margin-top: 2px;
+}
+
+//产品分类
+.product_classify {
+  width: 224px;
+  float: left;
+  background-color: #F8F8F8;
+  h1 {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size: 13px;
+    color: #000;
+  }
+  em {
+    font-size: 13px;
+    color: #999;
+    margin-left: 10px;
+  }
+  h2 {
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome all / Safari all /opera15+*/
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+    i {
+      margin-right: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+  }
+  ul {
+    display: none;
+    li {
+      a {
+        display: inline-block;
+        text-indent: 70px;
+        width: 205px;
+        height: 40px;
+        line-height: 40px;
+        &:hover {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+//产品列表
+.product_list{
+  width: 960px;
+  float: right;
+}
+//筛选条件
+.choose_wrap {
+  dl {
+    border-bottom: 1px solid #e4e4e4;
+    @include box-sizing();
+  }
+  dt {
+    width: 70px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #000;
+    margin: 0 20px;
+    text-align: right;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  dd {
+    padding-left: 80px;
+    position: relative;
+    ul{
+      max-height: 40px;
+      overflow: hidden;
+    }
+    li {
+      width: 85px;
+      height: 40px;
+      line-height: 40px;
+      float: left;
+      a {
+        display: inline-block;
+        width: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 12px;
+        color: #666;
+      }
+    }
+  }
+
+  //隐藏
+  .choose_list{
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+  }
+  //显示更多
+  .show_more{
+    margin: -1px auto 0;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    background: #FFF;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    i{
+      font-size: 14px;
+      color: #666;
+      margin-left: 10px;
+    }
+  }
+}
+//已选条件
+.choosed{
+  background-color: #fcfcfc;
+  dt{
+    height: 60px;
+    line-height:60px;
+  }
+  dd{
+    height: 60px;
+    line-height:60px;
+    span{
+      padding: 5px 10px;
+      border: 1px solid #E4E4E4;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+      cursor: pointer;
+      margin-right: 5px;
+      i{
+        font-size: 12px;
+        color: #666;
+      }
+    }
+  }
+}
+//排序
+.rank_choice {
+  height: 60px;
+  line-height: 60px;
+  margin-top: 30px;
+  border: 1px solid #e4e4e4;
+  @include box-sizing();
+}
+.rank_btn1 {
+  margin-left: 25px;
+  a {
+    float: left;
+    display: inline-block;
+    text-align: left;
+    width: 75px;
+    font-size: 14px;
+    color: #000;
+  }
+}
+.arrow_wrap {
+  display: inline-block;
+  vertical-align: middle;
+  i {
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+
+  }
+  .icon-black-up {
+    margin-bottom: -3px;
+  }
+  .icon-black-down {
+    margin-top: -4px;
+  }
+  .active {
+    color: #999;
+  }
+}
+
+.btn2_total {
+  font-size: 14px;
+  color: #000;
+}
+.btn2_page {
+  padding: 0 10px 0 40px;
+  font-size: 14px;
+  color: #000;
+}
+.btn2_next {
+  margin-right: 10px;
+  a {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif, 'Microsoft YaHei';
+    color: #a5a5a5;
+    border: 1px solid #e4e4e4;
+    @include box-sizing();
+    margin-left: 10px;
+  }
+}
+//产品列表
+.pro_list{
+  margin: 30px -10px 0;
+
+}
+
+//footer
+.footer{
+  margin-top: 30px;
+}

@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+$border1:1px solid #e4e4e4;
+.moudle_top h1{
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  vertical-align: -19px;
+}
+//设计师头像
+.design_userhead{
+  padding:10px 0;
+  text-align: center;
+  background-color: #fff;
+}
+.design_userhead span {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border:$border1;
+}
+
+.design_userhead span img {
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.design_userhead h2 {
+  font-size: 13px;
+  padding-top: 6px;
+  color: #333; }
+
+.design_userhead h2 em {
+  color: #888; }
+
+//设计理念
+.design_title{
+  padding-top:10px;
+}
+.design_title h2{
+  color:#333;
+  margin-bottom:10px;
+  padding: 15px;
+  font-size: 16px;
+  //border-top:$border1;
+  //border-bottom: $border1;
+  background: #fff;
+}
+.design_title p{
+  padding:10px;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-box-orient: vertical;
+  background-color: #fff;
+}
+//个人介绍下图
+.design_fangan{
+  margin-top: 8px;
+}
+.design_fangan>li{
+  padding:10px;
+  margin-bottom:10px;
+  background-color: #fff;
+}
+.design_fangan figure {
+  position: relative;
+}
+.design_fangan a {
+  display: block;
+}
+.design_fangan img {
+  max-width: 100%;
+  min-height: 150px;
+  width: 100%;
+  display: block;
+}
+.design_fangan figcaption {
+  height: 50px;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 12px;
+}
+.design_fangan h4 {
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+}
+.design_fangan ul {
+  overflow: hidden;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #fff;
+}
+.design_fangan ul li {
+  display: inline;
+}

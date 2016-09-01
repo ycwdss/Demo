@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.personal_center{
+ .left_side{
+   width: 210px;
+   min-height: 840px;
+   padding: 30px 10px;
+   background-color: #fff;
+   h1{
+     height: 50px;
+     line-height: 50px;
+     text-align: center;
+     font-size: 18px;
+     color: #333;
+   }
+   ul{
+     padding: 10px 0;
+     li{
+       height: 32px;
+       line-height: 32px;
+       text-align: center;
+       a{
+         font-size: 14px;
+       }
+     }
+   }
+ }
+}
+.right_side{
+  width: 800px;
+  min-height: 870px;
+  padding: 0 30px 30px;
+  background-color: #fff;
+  .item_title{
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #e4e4e4;
+  }
+}

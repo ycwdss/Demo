@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华为商城购物车</title>
+    <link rel="stylesheet" href="../Css/cart/mycart.css">
+</head>
+<body>
+<!--顶部导航-->
+<div class="top">
+    <div class="top_center">
+        <ul class="fl">
+            <li class="l1"><a href="#">华为官网</a></li>
+            <li><a href="#">华为荣耀</a></li>
+            <li class="l3">
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="#">软件应用</a>
+                        <i></i>
+                    </div>
+                    <div class="bd">
+                        <p><a href="#">EMUI</a></p>
+                        <p><a href="#">应用市场</a></p>
+                        <p><a href="#">云服务</a></p>
+                        <p><a href="#">开发者联盟</a></p>
+                    </div>
+                </div>
+
+            </li>
+            <li><a href="#">花粉俱乐部</a></li>
+            <li><a href="#">Select Region</a></li>
+        </ul>
+        <ul class="fr">
+            <li class="r1">
+                <!--<a href="#">登录</a>-->
+                <!--<a href="#">注册</a>-->
+                <!--登录后信息-->
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="../usercenter/usercenter_index.html">小狗头</a>
+                        <em class="level_1"></em>
+                        <i ></i>
+                    </div>
+                    <div class="bd">
+                        <p>
+                            <a href="#">我的账号</a>
+                            <span>|</span>
+                            <a href="#">退出</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">V码(优购码)</a></li>
+            <li><a href="#">手机版</a></li>
+            <li class="r5">
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="#">网站导航</a>
+                        <i></i>
+                    </div>
+                    <div class="bd">
+                        <p><a href="#">帮助中心</a></p>
+                        <p><a href="#">PC软件</a></p>
+                        <p><a href="#">数字音乐</a></p>
+                        <p><a href="#">爱旅</a></p>
+                        <p><a href="#">华为网盘</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--头部-->
+<div class="head">
+    <div class="head_center clearfix">
+        <!--logo-->
+        <div class="logo fl">
+            <a href="#">
+                <img src="../index/Images/test_logo.png">
+            </a>
+        </div>
+        <!--购物支付流程进度-->
+        <ul class="cart_step fr">
+            <li class="mycart"><em>1</em>我的购物车</li>
+            <li class="fill_order com"><em>2</em>填写核对订单</li>
+            <li class="submit_sucess com"><em>3</em>成功提交订单</li>
+        </ul>
+    </div>
+</div>
+
+
+<!---主要内容区域--->
+<div class="content con_width">
+    <div class="cart_hd ge clearfix">
+        <div class="col pro_check"><input class="select_all" type="checkbox">全选</div>
+        <div class="col pro_title">商品</div>
+        <div class="col pro_unit">单价(元)</div>
+        <div class="col pro_num">数量</div>
+        <div class="col pro_total">小计(元)</div>
+        <div class="col pro_opration">操作</div>
+    </div>
+    <div class="cart_bd">
+        <div class="cart_selected">
+            <div class="cart_table">
+                <div class="cart_row ge clearfix">
+                    <div class="col pro_check"><input type="checkbox"></div>
+                    <div class="col pro_info">
+                        <div class="pro_wrap clearfix">
+                            <div class="pro_title fl">
+                                <div class="pro_img fl">
+                                    <a href="#"><img src="../cart/Images/test_cart_list.jpg"> </a>
+                                </div>
+                                <div class="pro_name">
+                                    <a href="#">荣耀6 八核 移动4G版 16GB存储（白色）</a>
+                                    <p>颜色：白色</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--如附赠品 继续添加pro-wrap  要加free-->
+                        <div class="pro_wrap free clearfix">
+                            <div class="pro_title">
+                                <div class="pro_img fl">
+                                    <a href="#"><img src="../cart/Images/test_cart_list.jpg"> </a>
+                                </div>
+                                <div class="pro_name">
+                                    <a href="#">荣耀 honor 荣耀引擎耳机（白色）</a>
+                                    <p>[赠送]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col pro_unit">¥<em>1.00</em></div>
+                    <div class="col pro_num">
+                        <a class="min" href="javascript:;">-</a>
+                        <input class="text" type="text" value="1">
+                        <a class="add" href="javascript:;">+</a>
+                    </div>
+                    <div class="col pro_total">¥<em>1.00</em></div>
+                    <div class="col pro_opration">
+                        <a href="javacsript:;"><i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_table">
+                <div class="cart_row ge clearfix">
+                    <div class="col pro_check"><input type="checkbox"></div>
+                    <div class="col pro_info">
+                        <div class="pro_wrap clearfix">
+                            <div class="pro_title fl">
+                                <div class="pro_img fl">
+                                    <a href="#"><img src="../cart/Images/test_cart_list.jpg"> </a>
+                                </div>
+                                <div class="pro_name">
+                                    <a href="#">荣耀6 八核 移动4G版 16GB存储（白色）</a>
+                                    <p>颜色：白色</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col pro_unit">¥<em>1.00</em></div>
+                    <div class="col pro_num">
+                        <a class="min" href="javascript:;">-</a>
+                        <input class="text" type="text" value="1">
+                        <a class="add" href="javascript:;">+</a>
+                    </div>
+                    <div class="col pro_total">¥<em>1.00</em></div>
+                    <div class="col pro_opration">
+                        <a href="javacsript:;"><i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_table">
+                <div class="cart_row ge clearfix">
+                    <div class="col pro_check"><input type="checkbox"></div>
+                    <div class="col pro_info">
+                        <div class="pro_wrap clearfix">
+                            <div class="pro_title fl">
+                                <div class="pro_img fl">
+                                    <a href="#"><img src="../cart/Images/test_cart_list.jpg"> </a>
+                                </div>
+                                <div class="pro_name">
+                                    <a href="#">荣耀6 八核 移动4G版 16GB存储（白色）</a>
+                                    <p>颜色：白色</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--如附赠品 继续添加pro-wrap-->
+                        <div class="pro_wrap free clearfix">
+                            <div class="pro_title">
+                                <div class="pro_img fl">
+                                    <a href="#"><img src="../cart/Images/test_cart_list.jpg"> </a>
+                                </div>
+                                <div class="pro_name">
+                                    <a href="#">荣耀 honor 荣耀引擎耳机（白色）</a>
+                                    <p>[赠送]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col pro_unit">¥<em>1.00</em></div>
+                    <div class="col pro_num">
+                        <a class="min" href="javascript:;">-</a>
+                        <input class="text" type="text" value="1">
+                        <a class="add" href="javascript:;">+</a>
+                    </div>
+                    <div class="col pro_total">¥<em>1.00</em></div>
+                    <div class="col pro_opration">
+                        <a href="javacsript:;"><i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_table">
+                <div class="cart_row ge clearfix">
+                    <div class="col pro_check"><input type="checkbox"></div>
+                    <div class="col pro_info">
+                        <div class="pro_wrap clearfix">
+                            <div class="pro_title fl">
+                                <div class="pro_img fl">
+                                    <a href="#"><img src="../cart/Images/test_cart_list.jpg"> </a>
+                                </div>
+                                <div class="pro_name">
+                                    <a href="#">荣耀6 八核 移动4G版 16GB存储（白色）</a>
+                                    <p>颜色：白色</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--如附赠品 继续添加pro-wrap-->
+                        <div class="pro_wrap free clearfix">
+                            <div class="pro_title">
+                                <div class="pro_img fl">
+                                    <a href="#"><img src="../cart/Images/test_cart_list.jpg"> </a>
+                                </div>
+                                <div class="pro_name">
+                                    <a href="#">荣耀 honor 荣耀引擎耳机（白色）</a>
+                                    <p>[赠送]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col pro_unit">¥<em>1.00</em></div>
+                    <div class="col pro_num">
+                        <a class="min" href="javascript:;">-</a>
+                        <input class="text" type="text" value="1">
+                        <a class="add" href="javascript:;">+</a>
+                    </div>
+                    <div class="col pro_total">¥<em>1.00</em></div>
+                    <div class="col pro_opration">
+                        <a href="javacsript:;"><i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total_area clearfix">
+            <div class="total_control fl">
+                <input class="select_all" type="checkbox">
+                <label>全选</label>
+                <a class="delete" href="javascript:;">删除选中商品</a>
+            </div>
+            <div class="total_price fr">
+                <div class="every_list">
+                    <label>共计金额：</label>
+                    ¥<em class="sum">00.00</em>
+                </div>
+                <div class="every_list">
+                    <label>共节省：</label>
+                    ¥<em>0.00</em>
+                </div>
+                <div class="every_list no_freight">
+                    <label>合计(不含运费)：</label>
+                    <em>¥<b>00.00</b></em>
+                </div>
+            </div>
+        </div>
+        <!--去结算或者继续购物-->
+        <div class="next_choice">
+        <a class="to_gou" href="../index/index.html">继续购物</a>
+            <a class="to_account" href="fillorder.html">去结算</a>
+        </div>
+    </div>
+</div>
+<!--规则强调--->
+<div class="quality">
+    <ul class="clearfix">
+        <li class="q1"><i></i>500强企业 品质保证</li>
+        <li class="q2"><i></i>7天退货 15天换货</li>
+        <li class="q3"><i></i>99元起免运费</li>
+        <li class="q4"><i></i>448家维修网点 全国联保</li>
+    </ul>
+</div>
+<!--服务支持-->
+<div class="service">
+    <dl class="s1">
+        <dt><i></i>帮助中心</dt>
+        <dd><a href="#">配送方式</a></dd>
+        <dd><a href="#">购物指南</a></dd>
+        <dd><a href="#">支付方式</a></dd>
+        <dd><a href="#">常见问题</a></dd>
+    </dl>
+    <dl class="s2">
+        <dt><i></i>售后服务</dt>
+        <dd><a href="#">保修政策</a></dd>
+        <dd><a href="#">退换货政策</a></dd>
+        <dd><a href="#">退换货流程</a></dd>
+        <dd><a href="#">手机寄修服务</a></dd>
+    </dl>
+    <dl class="s3">
+        <dt><i></i>技术支持</dt>
+        <dd><a href="#">售后网点</a></dd>
+        <dd><a href="#">常见问题</a></dd>
+        <dd><a href="#">产品手册</a></dd>
+        <dd><a href="#">软件下载</a></dd>
+    </dl>
+    <dl class="s4">
+        <dt><i></i>关于商城</dt>
+        <dd><a href="#">公司介绍</a></dd>
+        <dd><a href="#">华为商城简介</a></dd>
+        <dd><a href="#">联系客服</a></dd>
+    </dl>
+    <dl class="s5">
+        <dt><i></i>关注我们</dt>
+        <dd><a href="#">新浪微博</a></dd>
+        <dd><a href="#">腾讯微博</a></dd>
+        <dd><a href="#">花粉社区</a></dd>
+        <dd><a href="#">商城手机版</a></dd>
+    </dl>
+</div>
+<!--底部-->
+<div class="foot">
+    <p>Copyright © 2011-2015 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20130048号 | 苏ICP备09062682号-9</p>
+    <p><a href="#">网络文化经营许可证苏网文[2012]0401-019号</a></p>
+    <p class="foot_img">
+        <a href="#"><img src="../index/Images/test_foot1.png"></a>
+        <a href="#"><img src="../index/Images/test_foot2.png"></a>
+        <a href="#"><img src="../index/Images/test_foot3.png"></a>
+    </p>
+</div>
+<!--返回顶部-->
+<div class="totop">
+    <a href="#">
+        <img src="../index/Images/sprite_totop.png">
+    </a>
+</div>
+</body>
+<script data-main="../Js/main" id="require" app="mycart" src="../Js/lib/require.js"></script>
+</html>

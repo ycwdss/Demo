@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.page_title {
+  position: relative;
+  margin:20px auto;
+  width: 90px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  h3 {
+    width: 90px;
+    font-size: 1.4rem;
+    color: #578df3;
+  }
+  img {
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .six_small1 {
+    -webkit-animation: side1_turn 15s linear infinite;
+    -o-animation: side1_turn 15s linear infinite;
+    animation: side1_turn 15s linear infinite;
+  }
+  .six_small2 {
+    -webkit-animation: side2_turn 15s linear infinite;
+    -o-animation: side2_turn 15s linear infinite;
+    animation: side2_turn 15s linear infinite;
+  }
+}

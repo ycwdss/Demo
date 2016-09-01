@@ -1,0 +1,317 @@
+@charset "UTF-8";
+.cart_status {
+  margin-top: 50px;
+  height: 40px;
+  padding: 43px 22px;
+  width: 1056px; }
+
+.status_list {
+  width: 320px;
+  margin: 0 6px;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px; }
+  .status_list:before, .status_list:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background-color: #e4e4e4; }
+  .status_list:before {
+    bottom: 0;
+    -webkit-transform: skew(-40deg);
+    -moz-transform: skew(-40deg);
+    -o-transform: skew(-40deg);
+    -ms-transform: skew(-40deg);
+        transform: skew(-40deg); }
+  .status_list:after {
+    top: 0;
+    -webkit-transform: skew(40deg);
+    -moz-transform: skew(40deg);
+    -o-transform: skew(40deg);
+    -ms-transform: skew(40deg);
+        transform: skew(40deg); }
+  .status_list span {
+    position: relative;
+    z-index: 3; }
+
+.status1:before, .status1:after {
+  width: 18%;
+  right: -14px; }
+
+.status2 {
+  width: 327px;
+  *margin-left: 30px;
+  background-color: transparent !important;
+  *background-color: #e4e4e4 !important; }
+  .status2:before, .status2:after {
+    width: 100%;
+    right: -27px; }
+  .status2 span {
+    padding-left: 30px; }
+
+.status3:before, .status3:after {
+  width: 18%;
+  left: -14px; }
+
+/*c_gotop*/
+#totop {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000; }
+
+.order_info {
+  margin: 20px auto;
+  padding: 40px 70px;
+  width: 960px; }
+
+.order_left {
+  max-width: 80%; }
+  .order_left h3 {
+    line-height: 26px;
+    height: 26px;
+    overflow: hidden;
+    font-size: 24px; }
+  .order_left p {
+    font-size: 14px;
+    max-width: 780px;
+    line-height: 3;
+    height: 3em;
+    overflow: hidden; }
+
+.order_right {
+  margin-top: 30px;
+  font-size: 14px; }
+  .order_right strong {
+    font-size: 20px; }
+  .order_right .order_btn {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 20px; }
+    .order_right .order_btn .sanjiao {
+      top: 6px;
+      right: 6px; }
+    .order_right .order_btn .sanjiao.current {
+      top: 1px; }
+
+.order_list {
+  margin-top: 30px;
+  padding: 10px 30px 30px;
+  background-color: #f1f1f1;
+  font-size: 14px; }
+  .order_list dt {
+    padding-top: 20px;
+    font-size: 16px; }
+  .order_list dd {
+    padding-top: 10px; }
+
+.pay_way h3 {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 20px;
+  padding-left: 30px; }
+
+.pay_way_box {
+  padding: 30px 70px; }
+
+.pay_way_nav a {
+  position: relative;
+  padding-right: 60px;
+  font-size: 14px; }
+
+.pay_way_nav .before:before {
+  position: absolute;
+  top: -2px;
+  right: 30px;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: #e4e4e4; }
+
+.pay_way_item ul {
+  margin: 30px -5px 0; }
+
+.pay_way_item li {
+  float: left;
+  margin: 0 9px 18px;
+  width: 158px;
+  height: 38px;
+  cursor: pointer;
+  border: 1px solid #e4e4e4;
+  -moz-transition: border-color 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: border-color 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease; }
+
+.pay_way_item li span {
+  display: block;
+  width: 104px;
+  height: 24px;
+  line-height: 24px;
+  margin: 7px 27px;
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 0; }
+
+.pay_icon1 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zfb.png) no-repeat; }
+
+.pay_icon2 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_wx.png) no-repeat; }
+
+.pay_icon3 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zhongguo.png) no-repeat; }
+
+.pay_icon4 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_gs.png) no-repeat; }
+
+.pay_icon5 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zs.png) no-repeat; }
+
+.pay_icon6 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_nongye.png) no-repeat; }
+
+.pay_icon7 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_jianshe.png) no-repeat; }
+
+.pay_icon8 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_pingan.png) no-repeat; }
+
+.pay_icon9 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_youzheng.png) no-repeat; }
+
+.pay_icon10 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_pufa.png) no-repeat; }
+
+.pay_icon11 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_xingye.png) no-repeat; }
+
+.pay_icon12 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_guangfa.png) no-repeat; }
+
+.pay_icon13 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_fudian.png) no-repeat; }
+
+.pay_icon14 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_hangzhou.png) no-repeat; }
+
+.pay_icon15 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_shanghai.png) no-repeat; }
+
+.pay_icon16 {
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_ningbo.png) no-repeat; }
+
+.action {
+  text-align: right; }
+  .action a {
+    display: inline-block; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.pay_block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#93888980,endColorstr=#93888980); }
+  .pay_block > div {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    -webkit-transition: top 0.2s ease-out;
+    -moz-transition: top 0.2s ease-out;
+    -o-transition: top 0.2s ease-out;
+    transition: top 0.2s ease-out; }
+  .pay_block > div.in {
+    top: 0; }
+
+.pay_weixin .pay_erweima {
+  width: 248px;
+  height: 345px;
+  padding: 50px 120px; }
+
+.pay_erweima {
+  text-align: center; }
+  .pay_erweima h4 {
+    line-height: 1;
+    font-size: 18px; }
+  .pay_erweima span {
+    display: block;
+    width: 248px;
+    height: 248px;
+    margin: 8px auto; }
+    .pay_erweima span img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+  .pay_erweima p.tip {
+    font-size: 18px; }
+  .pay_erweima p.main {
+    font-size: 16px; }
+
+.pay_block .pay_offbtn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  -moz-transition: background 0.3s ease;
+  /* Firefox 4 */
+  -webkit-transition: background 0.3s ease;
+  /* Safari 和 Chrome */
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  cursor: pointer; }
+  .pay_block .pay_offbtn i {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle; }
+
+.pay_finish {
+  width: 522px;
+  height: 250px;
+  text-align: center; }
+  .pay_finish h4 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px; }
+  .pay_finish .tip {
+    padding-top: 55px;
+    font-size: 24px; }
+  .pay_finish .order_num {
+    padding-top: 13px;
+    font-size: 14px; }
+
+.pay_finish .pay_offbtn {
+  position: absolute;
+  right: 25px;
+  top: 10px; }

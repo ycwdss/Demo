@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import "../fh/lib";
+@import "moudle/moudle_left_side";
+@import "moudle/moudle_right_list";
+$border1:1px solid #e4e4e4;
+.list_text_infor{
+  margin-top: 15px;
+  color: #999;
+  div{
+    float: left;
+    margin-right: 20px;
+    em:hover{
+      color: #f60;
+    }
+  }
+}
+.case_progress{
+  margin-top: 20px;
+  margin-left: 370px;
+  width:600px;
+}
+.case_progress ul {
+  border-top: 5px solid #e4e4e4;
+}
+.case_progress li {
+  float: left;
+  color: #666;
+  font-size: 14px;
+  width: 150px;
+  text-align: center;
+}
+.case_progress .current {
+  color: #093;
+}
+.progress_dot{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  top: -12px;
+  color: #666;
+  background-color: #e4e4e4;
+}
+.current .progress_dot{
+  color: #fff;
+  background-color: #093;
+}
+.right_list_text{
+  position: relative;
+}
+.case_btn{
+  position: absolute;
+  bottom: 0;
+  left: 370px;
+}
+.case_btn a{
+  float: left;
+  display: block;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color:#093;
+  border:1px solid #093;
+  @include transition();
+  &:hover{
+    background-color: #093;
+    color: #fff;
+    border-left:1px solid #fff;
+  }
+}
+.case_btn a.current{
+  background-color: #093;
+  color: #fff;
+  border-left:0;
+}

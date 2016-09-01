@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/pagelist";
+@import "../../module/recommend";
+@import "../../module/msg_tip";
+@import "../../module/empty";
+
+.order_list{
+  position: relative;
+  text-align: center;
+  color: #666;
+  border-bottom:1px solid #e4e4e4;
+}
+.order_nav{
+  span{
+    float: left;
+    font-size: 15px;
+    line-height: 80px;
+  }
+}
+.order_detail{
+  width: 380px;
+}
+.order_price{
+  width: 200px;
+}
+.order_count{
+  width: 190px;
+}
+.order_status{
+  width: 280px;
+}
+.order_operation{
+  width: 150px;
+}
+.order_ele{
+  margin-bottom: 20px;
+  >div{
+    float: left;
+    display: table;
+    text-align: center;
+    height: 100px;
+    >div{
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 13px;
+    }
+  }
+  .order_detail{
+    text-align: left;
+    color: #888888;
+    line-height: 25px;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .order_status{
+    line-height: 25px;
+    span{
+      font-size: 12px;
+    }
+    a{
+      font-size: 12px;
+    }
+  }
+  .order_operation{
+    position: relative;
+    font-size: 13px;
+    line-height: 25px;
+    a{
+      color: #666;
+    }
+    >div>div{
+      position: relative;
+    }
+  }
+  .order_del{
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+

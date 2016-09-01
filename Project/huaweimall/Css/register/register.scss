@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+
+body{
+  width: 100%;
+  height: 100%;
+  background: url("../../Images/register/icon_register_bg.jpg?_nosprite") no-repeat;
+}
+//头部----------------
+.reg_head{
+  width: 1000px;
+  margin: 30px auto 0;
+  .logo_wrap{
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    color: rgb(119, 119, 119);
+    img{
+      vertical-align: middle;
+      margin-top: -10px;
+    }
+   strong{
+     font-weight: normal;
+   }
+  }
+}
+//登录注册------------------
+.reg_cont{
+  width: 1002px;
+  margin: 0 auto;
+  .tab{
+    height: 31px;
+    line-height: 31px;
+    width: 897px;
+    li{
+      float: right;
+      margin-right: 2px;
+      background-color: #bbbbbb;
+      position: relative;
+      a{
+        display: block;
+        text-align: center;
+        width: 135px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    .current{
+      background-color: #ff8925;
+    }
+    .tab1{
+      i{
+        position: absolute;
+        left: 10px;
+        top: 6px;
+        width: 13px;
+        height: 19px;
+        display: block;
+        background: url("../../register/Images/sprite_phone.png") no-repeat;
+      }
+    }
+    .tab2{
+      i{
+        position: absolute;
+        left: 4px;
+        top: 9px;
+        width: 20px;
+        height: 14px;
+        display: block;
+        background: url("../../register/Images/sprite_email.png") no-repeat;
+      }
+    }
+  }
+  .cont_box{
+    width: 790px;
+    margin: 0 auto;
+    background-color: #fff;
+    .hd{
+      padding: 43px 0px 14px 220px;
+      h1{
+        width: 400px;
+        font-weight: 400;
+        height: 35px;
+        color: #b90006;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+    .bd{
+      padding-top: 9px;
+      height: 427px;
+      background: url("../../Images/register/icon_register_foot_bg.png?_nosprite") no-repeat;
+      background-position: 0 bottom;
+      position: relative;
+      form{
+        ul{
+          width: 790px;
+          li{
+            padding: 10px 0;
+            label{
+              width: 218px;
+              display: inline-block;
+              font-size: 14px;
+              color: #838282;
+              text-align: right;
+              font-weight: 400;
+            }
+            input{
+              border: 1px solid #bcbcbc;
+              color: #8B8B8B;
+              height: 20px;
+              line-height: 20px;
+              padding: 6px;
+              border-radius: 4px;
+              &:focus{
+                background-color: #FFFFE9;
+                border-color: #EE9043;
+              }
+            }
+            .ipt_box{
+              display: inline-block;
+
+            }
+            .ge{
+              width:238px;
+            }
+            .yzm{
+              width: 96px;
+            }
+            .getyzm{
+              width: 110px;
+              height: 32px;
+              background-color: #E0E0E0;
+              color: #000;
+              vertical-align: middle;
+              margin-top: -3px;
+              cursor: pointer;
+              margin-left: 10px;
+            }
+
+
+            .che{
+              input{
+                vertical-align: -6px;
+              }
+              a{
+                color: #004E97;
+                text-decoration: underline;
+            }
+
+            }
+            .sub{
+                border-radius: 3px;
+                padding: 5px 30px;
+                width: auto;
+                height: 36px;
+                font-weight: 500;
+                font-size: 18px;
+                background-color:#FF8924;
+                text-align: center;
+                color: #fff;
+                cursor: pointer;
+                border: 0;
+                &:hover{
+                  background-color: RGB(255,122,49);
+                  text-decoration: none;
+                  color: #fff;
+                  cursor: pointer;
+                }
+              }
+
+            //邮箱验证码--
+            .yzm_img{
+              display: inline-block;
+              display: inline-block;
+              img{
+                vertical-align: middle;
+                margin-top: -5px;
+              }
+            }
+          }
+        }
+      }
+      .colud{
+        position: absolute;
+        width: 226px;
+        height: 135px;
+        bottom: -20px;
+        left: -53px;
+        z-index: 2;
+      }
+
+    }
+
+  }
+  .to_login{
+    width: 790px;
+    margin: 5px auto 0;
+    text-align: right;
+    a{
+      border-radius: 3px;
+      padding: 5px 30px;
+      width: auto;
+      height: 36px;
+      font-weight: 500;
+      font-size: 14px;
+      background-color: #C5C5C5;
+      text-align: center;
+      color: #fff;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//底部---------------------
+.reg_foot{
+  width: 1000px;
+  margin: 50px auto 0;
+  border-top: 1px solid #9d9d9d;
+  .f1{
+    margin-top: 20px;
+    a{
+      color: #999;
+    }
+  }
+  p{
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    color: #999;
+  }
+}

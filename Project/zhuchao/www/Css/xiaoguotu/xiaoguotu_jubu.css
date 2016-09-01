@@ -1,0 +1,238 @@
+/*    列表   */
+.lis_com{
+    height: 20px;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 15px 0;
+}
+.lis_index{
+    line-height: 18px;
+    font-size: 12px;
+}
+.lis_index a{
+    display: block;
+    float: left;
+    color: #666666;
+}
+.lis_index li{
+    float: left;
+}
+.lis_index li span{
+    float: left;
+}
+.lis_index1 a{
+    display: block;
+    line-height: 18px;
+    margin:1px 1px 1px 15px;
+}
+.lis_index2 a{
+    display: block;
+    margin: 1px;
+}
+.lis_index a:hover{
+    color: #ff6600;
+}
+.lis_arrow{
+    margin: 5px 4px 5px 5px;
+    width: 5px;
+    height: 9px;
+    background: url("../../Images/sprite_xgt_zhengzhuang1.png")no-repeat;
+}
+.lis_cancel{
+    margin:5px 2px 4px 4px;
+    width: 9px;
+    height: 9px;
+    background: url("../../Images/sprite_xgt_zhengzhuang2.png");
+}
+.lis_clicked{
+    padding: 0 2px;
+    margin: 0 2px;
+    float: left;
+    border: 1px solid #e4e4e4;
+}
+.lis_clicked:hover{
+    border: 1px solid #093;
+}
+.lis_clicked:hover .lis_cancel{
+    background: url("../../Images/sprite_xgt_zhengzhuang3.png");
+}
+.m_list{
+    line-height: 50px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lis_title{
+    width: 73px;
+    height:100%;
+    font-size: 15px;
+    text-align: center;
+    background: #f8f8f8;
+}
+.lis_title_two{
+    height: 100px;
+}
+.lis_total{
+    font-size: 14px;;
+    width: 80px;
+    text-align: center;
+    color: #093;
+}
+.lis_choice{
+    width: 1147px;
+    color: #333;
+}
+.lis_choice li{
+    float: left;
+    width: 80px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.lis_choice li:hover{
+    color: #ff6600;
+}
+/*排序*/
+.sort{
+    margin:20px 0 20px;
+    padding: 15px 0 15px;
+    color: #666;
+    background: #f8f8f8;
+}
+.sort li{
+    position: relative;
+    float: left;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.sort .have_arrow{
+    width: 110px;
+    padding-right: 10px;
+}
+.sort_border{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #666;
+}
+ .sort_click{
+    color: #093;
+}
+ .sort_arrow{
+     position: absolute;
+     top: 5px;
+     right: 15px;
+     display: block;
+     width: 12px;
+     height: 8px;
+ }
+ .sort_arrow1{
+     background: url("../../Images/sprite_xgt_zhengzhuang5.png");
+ }
+.sort_arrow2{
+    background: url("../../Images/sprite_xgt_zhengzhuang6.png");
+}
+.sort_arrow3{
+    background: url("../../Images/sprite_xgt_zhengzhuang7.png");
+}
+ /*瀑布流边框*/
+.content{
+    position: relative;
+    min-height: 500px;
+}
+.pubuliu_ele{
+    float: left;
+    position: relative;
+    width: 312px;
+}
+.pubuliu_ele img{
+    min-height: 195px;
+    width: 312px;
+    display: block;
+}
+.text{
+    width: 292px;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 30px;
+    background: #f8f8f8;
+    color: #666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.store{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    height: 35px;
+    z-index: 3;
+    line-height: 35px;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.store:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000;
+    opacity: 0.4;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    z-index: -1;
+    -webkit-border-radius:20px 0 0 20px;
+    -moz-border-radius:20px 0 0 20px;
+    border-radius:20px 0 0 20px;
+}
+ .pubuliu_ele:hover .text{
+    background: rgba(66,74,102,0.2);
+    color: #FFFFFF;
+}
+.store span{
+    float: left;
+}
+.store_img{
+    margin: 12px 5px 9px 11px;
+    width: 12px;
+    height: 12px;
+    background: url("../../Images/sprite_xgt_zhengzhuang4.png") no-repeat;
+    z-index: 3;
+}
+.store:hover:before{
+    background: #093;
+    opacity: 0.6;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+}
+.stored:before{
+    background: #093!important;
+}
+/*已选择筛选*/
+.lis_choice li{
+    width : 76px;
+}
+li.selected{
+    color : #093;
+    font-weight: bold;
+}
+.routeInfo a.chose{
+    line-height : 48px;
+    margin-left : 4px;
+    margin-right : 8px;
+    padding : 4px 15px 4px 7px;
+    border: 1px solid #e4e4e4;
+    background: url(/Statics/Skins/Images/pc/xiaoguotu/sprite_xgt_zhengzhuang2.png?_nosprite) no-repeat 94% center;
+}
+.routeInfo a.chose:hover{
+    border: 1px solid #093;
+    background: url(/Statics/Skins/Images/pc/xiaoguotu/sprite_xgt_zhengzhuang3.png?_nosprite) no-repeat 94% center;
+}

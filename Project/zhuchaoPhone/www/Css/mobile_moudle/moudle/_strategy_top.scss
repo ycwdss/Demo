@@ -1,0 +1,62 @@
+@charset "UTF-8";
+//顶部
+.top{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999;
+  span{
+    display: block;
+  }
+}
+.top a:nth-child(1){
+  position: absolute;
+  display:block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%;
+}
+.top a:nth-child(3){
+  position: absolute;
+  display:block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%;
+}
+.top_left{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0 ;
+  -webkit-background-size: 150px;
+  background-size: 150px;
+}
+.top_title{
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  text-align: center;
+}
+.top_search{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  @extend .top_left;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px;
+}

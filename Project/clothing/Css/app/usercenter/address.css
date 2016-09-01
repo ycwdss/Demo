@@ -1,0 +1,465 @@
+@charset "UTF-8";
+html, body {
+  background: #F8F8F8; }
+
+.user_left {
+  width: 224px; }
+
+.user_left_top {
+  position: relative;
+  overflow: hidden;
+  height: 234px;
+  background: #ffffff; }
+  .user_left_top img {
+    position: relative;
+    display: block;
+    margin: 63px auto 0;
+    width: 100px !important;
+    height: 100px !important;
+    z-index: 1; }
+  .user_left_top .change_img {
+    position: relative;
+    display: block;
+    width: 100px;
+    margin: -30px auto 0;
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr='#80000000', endColorstr='#80000000');
+    z-index: 9; }
+  .user_left_top p {
+    width: 100px;
+    margin: 5px auto 0;
+    text-align: center;
+    line-height: 1.5;
+    height: 1.5em;
+    overflow: hidden; }
+
+.user_left_inner {
+  margin-top: 10px;
+  padding-top: 25px;
+  background: #ffffff; }
+
+.user_left_title {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #000;
+  text-indent: 40px; }
+
+.left_list {
+  position: relative;
+  overflow: hidden; }
+  .left_list li {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #333;
+    text-indent: 65px; }
+
+.user_right {
+  width: 956px; }
+
+.user_right_title {
+  height: 60px;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 58px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.right_inner {
+  position: relative;
+  overflow: hidden;
+  min-height: 816px; }
+
+.right_nav {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fcfcfc;
+  border: 1px solid #e4e4e4; }
+  .right_nav span {
+    display: inline-block;
+    padding: 0 15px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 38px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+/*
+个人中心为空页面，在right_inner 上加一个 empty_box 类，
+*/
+.empty_box {
+  min-height: 431px !important; }
+
+.empty {
+  margin-top: 80px;
+  text-align: center; }
+  .empty h2 {
+    font-size: 30px; }
+  .empty p {
+    margin-top: 10px;
+    font-size: 18px; }
+
+.drop_menu {
+  width: 100px !important;
+  height: 30px !important;
+  font-size: 12px !important;
+  line-height: 29px !important; }
+
+.drop_menu .drop_arrow, .drop_menu .drop_arrow:after {
+  margin-top: -3px;
+  border: 7px solid transparent !important;
+  border-top-color: #ccc !important; }
+
+.drop_menu .drop_arrow:after {
+  right: -7px !important;
+  margin-top: -9px !important;
+  border-top-color: #fff !important; }
+
+.check_ele {
+  float: left;
+  margin-right: 25px; }
+  .check_ele input {
+    display: none; }
+  .check_ele input:checked + i:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #63bf82;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .check_ele i {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: -1px;
+    border: 1px solid #63bf82;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .check_ele span {
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.submit_btn {
+  display: block;
+  width: 140px;
+  height: 40px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .submit_btn:hover {
+    filter: alpha(opacity=85);
+    /* IE */
+    -moz-opacity: 0.85;
+    /* 老版Mozilla */
+    -khtml-opacity: 0.85;
+    /* 老版Safari */
+    opacity: 0.85;
+    /* 支持opacity的浏览器*/ }
+
+.recommend_box .pro_card {
+  background-color: #fff !important; }
+
+.drop_menu {
+  float: left;
+  margin-right: 5px;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e4e4e4;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .drop_menu .drop_show {
+    padding-right: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .drop_menu .active {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .drop_menu .drop_arrow, .drop_menu .drop_arrow:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    border: 8px solid transparent;
+    border-top-color: #ccc;
+    webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%; }
+  .drop_menu .drop_arrow:after {
+    margin-top: -10px;
+    right: -8px;
+    border-top-color: #fff; }
+  .drop_menu .drop_list {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    z-index: 9999;
+    width: inherit;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4; }
+    .drop_menu .drop_list li {
+      padding-left: 2px;
+      height: inherit;
+      line-height: inherit;
+      text-align: center;
+      border: 1px solid #e4e4e4;
+      border-bottom: 0;
+      word-break: break-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+
+/*
+<div class="drop_menu ">
+<div class="drop_show">省份</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>河南省</li>
+<li>安徽安徽安徽安徽省</li>
+<li>山东省</li>
+<li>江西省</li>
+<li>广西省</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu ">
+<div class="drop_show">城市</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>郑州市</li>
+<li>开封市</li>
+<li>安阳市</li>
+<li>安阳市</li>
+<li>安阳市</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu">
+<div class="drop_show">地区</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>金水区</li>
+<li>管城区</li>
+<li>二七区</li>
+<li>高新区</li>
+<li>惠济区</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>*/
+.user_right_title span {
+  margin-left: 35px;
+  font-size: 12px;
+  color: #999; }
+
+.addr_box {
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-bottom: none; }
+
+.addr_name {
+  float: left;
+  width: 100px; }
+
+.addr_local, .addr_detail {
+  float: left;
+  width: 240px; }
+
+.addr_phone {
+  float: left;
+  width: 180px; }
+
+.addr_operate {
+  float: left;
+  width: 194px; }
+
+.addr_title {
+  background: #fcfcfc;
+  border-bottom: 1px solid #e4e4e4; }
+  .addr_title > span {
+    font-size: 12px;
+    line-height: 50px;
+    color: #999;
+    text-align: center; }
+
+.addr_ele {
+  font-size: 12px;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #e4e4e4; }
+  .addr_ele .addr_operate span {
+    display: inline-block;
+    margin: 18px 0;
+    line-height: 24px;
+    height: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.set_default.main_bg {
+  padding: 0 3px; }
+
+.new_addr {
+  margin-top: 20px;
+  background: #ffffff; }
+
+.new_inner {
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  border: 1px solid #e4e4e4;
+  border-top: none; }
+
+.new_ele {
+  position: relative;
+  margin-bottom: 40px; }
+
+.new_intro {
+  float: left;
+  width: 100px;
+  margin-right: 15px;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: right; }
+
+.new_detail input {
+  padding: 4px 10px;
+  width: 220px;
+  line-height: 22px;
+  height: 30px;
+  background: #F8F8F8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.drop_menu {
+  margin-right: 20px; }
+
+.new_tip {
+  position: absolute;
+  top: 30px;
+  left: 115px;
+  font-size: 12px;
+  line-height: 25px; }
+
+.new_addr_detail input {
+  width: 340px; }
+
+.addr_window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 20px #e4e4e4;
+  -moz-box-shadow: 0 0 20px #e4e4e4;
+  box-shadow: 0 0 20px #e4e4e4; }
+  .addr_window > h3 {
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center; }
+  .addr_window .new_ele {
+    margin-bottom: 30px; }
+    .addr_window .new_ele input {
+      width: 320px; }
+  .addr_window .new_inner {
+    border: none; }
+  .addr_window .drop_menu {
+    margin-right: 10px; }
+  .addr_window .submit_btn {
+    width: 200px;
+    height: 40px;
+    margin-top: 90px;
+    line-height: 40px; }
+
+.close_addr {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 17px;
+  color: #999;
+  cursor: pointer; }
+
+/*# sourceMappingURL=address.css.map */

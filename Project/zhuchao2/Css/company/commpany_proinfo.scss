@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/site";
+@import "../module/company/_company_info";
+@import "../module/pagelist";
+.content{
+  min-height: 400px;
+}
+
+
+//右侧列表区域
+.r_section {
+  width: 800px;
+}
+.l_section{
+  width: 280px;
+}
+//产品详情
+.pro_info {
+  border: 1px solid #e4e4e4;
+  .pro_title {
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    color: #333;
+    padding-left: 30px;
+    border-bottom: 1px solid #e4e4e4;
+    @include box-sizing();
+    .title_name {
+      display: inline-block;
+      width: 450px;
+      height: 80px;
+      overflow: hidden;
+    }
+    .title_code {
+      margin-left: 40px;
+      text-align: right;
+      display: inline-block;
+      width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .icon-erweima {
+      position: relative;
+      font-size: 26px;
+      margin: 25px 35px 0 0;
+      &:hover {
+        .erweima_box {
+          display: block;
+        }
+      }
+    }
+    .erweima_box {
+      top: 26px;
+      left: 0;
+      height: 225px;
+      .main_hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .pro_show {
+    width: 580px;
+    margin: 50px auto 45px;
+    position: relative;
+    .show_big {
+      width: 580px;
+      margin-bottom: 20px;
+      a {
+        position: relative;
+        display: block;
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0%;
+          margin: auto;
+          max-width: 500px;
+          max-height: 500px;
+          /*  width: 100%;
+            height: 100%;*/
+        }
+      }
+    }
+    .show_small {
+      width: 580px;
+      height: 100px;
+      overflow: hidden;
+      .mainbd_hover {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 20px;
+        border: 1px solid transparent;
+        @include box-sizing();
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .switch_btn {
+      position: absolute;
+      top: 200px;
+      i {
+        font-size: 32px;
+        color: #e4e4e4;
+        &:hover {
+          color: #999;
+        }
+      }
+    }
+    .prev_btn {
+      left: -10px;
+    }
+    .next_btn {
+      right: -10px;
+    }
+  }
+}
+
+//产品信息
+.pro_describe {
+  margin-top: 20px;
+  .describe_title {
+    padding: 10px 0 10px 20px;
+    border: 1px solid #e4e4e4;
+    a {
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      border-bottom: 2px solid transparent;
+    }
+  }
+  .describle_info {
+    .info_one {
+      padding: 10px;
+      text-align: center;
+      img {
+        display: block !important;
+        max-width: 100% !important;
+        height: auto!important;
+        margin: 10px auto !important;
+      }
+      p {
+        font-size: 14px;
+        color: #333;
+        line-height: 40px;
+        text-align: left;
+      }
+      .info_title {
+        line-height: 32px;
+        padding-bottom: 10px;
+      }
+    }
+    .info_two {
+      margin-top: 20px;
+      table {
+        border-collapse: collapse;
+        background-color: #fdfdfd;
+      }
+      td {
+        height: 40px;
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #e4e4e4;
+      }
+      .item {
+        width: 300px;
+        padding-left: 105px;
+      }
+      .item_info {
+        width: 580px;
+        padding-left: 60px;
+      }
+    }
+  }
+}
+
+//右侧信息内容样式重置
+.company_name {
+  padding: 0;
+  border-bottom:0;
+  h1 {
+    height: 20px;
+    width: auto;
+    font-size: 18px;
+    overflow: hidden;
+  }
+  p{
+    font-size: 30px;
+    color: #093;
+  }
+}
+.company_intro{
+  padding:0 0 10px 0;
+
+  dt{
+    width: 90px;
+    font-size: 18px;
+    color: #333;
+  }
+  dd{
+    padding-left: 90px;
+    font-size: 18px;
+    color: #333;
+  }
+}
+.company_info{
+  padding: 5px 12px 0;
+  text-align: left;
+}
+.company_erweima{
+  padding: 0 12px;
+  border: 1px solid #E4E4E4;
+  border-top: 0;
+ p{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 0;
+  }
+  .a_link{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e4e4e4;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    &:hover{
+      color: #2e93d7 !important;
+    }
+    i{
+      font-size: 26px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+    .icon-lianxiwomen{
+      color: #63bf82;
+    }
+    .icon-tubiao{
+      color: #2e9bd7;
+    }
+    .contact_tel{
+      display:none;
+    }
+  }
+
+  img{
+    display: block;
+    width: 205px;
+    height: 205px;
+    margin: 0 auto 20px;
+  }
+}
+
+//分享
+.bdshare-button-style0-16 a, .bdshare-button-style0-16 .bds_more{
+  background-image: none!important;
+  padding-left: 0!important;
+}
+.bds_more{
+  font-size: 16px!important;
+  float: none!important;
+}
+.pro_title{
+  position: relative;
+}
+.bdsharebuttonbox{
+  position: absolute;
+  top:0px;
+  right: 20px;
+}
+//联系方式
+.connect_box{
+  margin-top: 50px;
+  margin-left: 70px;
+  >div{
+    *zoom: 1; /*IE/7/6*/
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+}
+.connect_ele{
+  float: left;
+  width: 45%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 25px;;
+  >span{
+    float: left;
+    margin-right: 25px;
+    font-size: 30px;
+    line-height: 58px;
+  }
+  p{
+    padding-left: 55px;
+    color: #333;
+    margin-top: 8px;
+  }
+}

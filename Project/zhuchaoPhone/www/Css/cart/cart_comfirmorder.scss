@@ -1,0 +1,395 @@
+@charset "UTF-8";
+@import "../../Css/mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+
+.content{
+  margin: 10px auto 0;
+  width: 100%;
+}
+//购买者信息
+.buyer_message{
+  background:#dfeee4;
+  padding: 9px 10px;
+  position: relative;
+  border: 4px solid transparent;
+  -moz-border-image:url("../../../Images/mobile/cart/border.png") 15 15 round;	/* Old Firefox */
+  -webkit-border-image:url("../../../Images/mobile/cart/border.png") 15 15 round;	/* Safari and Chrome */
+  -o-border-image:url("../../../Images/mobile/cart/border.png") 15 15 round;		/* Opera */
+  border-image:url("../../../Images/mobile/cart/border.png") 15 15 round;
+  .name_tel{
+    i{
+      display: inline-block;
+      width: 25px;
+      height:25px;
+      margin-bottom: -5px;
+      background: url("../../../Images/mobile/cart/sprite_comfirm_order.png")  no-repeat;
+      -webkit-background-size: 35px;
+      background-size: 35px;
+    }
+    span{
+      display: inline-block;
+      font-size:18px;
+      color:#333;
+      line-height: 34px;
+      margin-right: 7%;
+    }
+    .name{
+      width: 32%;
+    }
+    .tel{
+      i{
+      background-position: 5px -30px;}
+    }
+  }
+  .addr{
+    font-size:14px;
+    color:#888;
+    line-height: 24px;
+    margin-top: 10px;
+   i{
+      display:block;
+      float: left;
+      width: 25px;
+      height:25px;
+      margin-bottom: -10px;
+      background: url("../../../Images/mobile/cart/sprite_comfirm_order.png")  no-repeat 0 -55px;
+      -webkit-background-size: 35px;
+      background-size: 35px;
+    }
+    span{
+      width: 80%;
+      float: left;
+      overflow: hidden;
+    }
+  }
+}
+
+.next_arrow{
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  display:block;
+  width: 13px;
+  height:25px;
+  background: url("../../../Images/mobile/cart/sprite_comfirm_order.png")  no-repeat -27px 0;
+  -webkit-background-size: 35px;
+  background-size: 35px;
+}
+
+//灰色背景
+.bg_grey{
+  background: #f8f8f8;
+  padding-top: 10px;
+}
+//白色背景
+.bg_white{
+  background: white;
+}
+
+//商品信息
+.goods_infor{
+  padding: 9px 10px;
+  background: white;
+  margin-bottom: 10px;
+  h2{
+    font-size:14px;
+    color:#333;
+    line-height:34px;
+    height:34px;
+    border-bottom: 1px solid #e4e4e4;
+    i{
+     float: left;
+      width: 30px;
+      height:34px;
+      margin-right: 10px;
+      background: url("../../../Images/mobile/cart/sprite_comfirm_order.png")  no-repeat 0 -81px;
+      -webkit-background-size: 35px;
+      background-size: 35px;
+    }
+  }
+  .goods{
+    position: relative;
+    margin-top:15px;
+    img{
+      float: left;
+      width:80px;
+      height:50px;
+      margin-right: 10px;
+    }
+    .goods_txt{
+      float: left;
+      font-size:10px;
+      color:#333;
+      width: 34%;
+      line-height: 18px;
+      .p1{
+        margin-bottom: 5px;
+        @include ell(2);
+        span{
+          margin-right: 5px;
+        }
+      }
+      .p2{
+        color:#aaa;
+        @include ell(1);
+        span{
+          margin-right: 10px;
+        }
+      }
+    }
+    >span{
+      position: absolute;
+      top: 20px;
+      right: 10%;
+      font-size:14px;
+      color:#f60;
+      line-height: 18px;
+    }
+    a{
+      top: 20px;
+      right: 0;
+    }
+  }
+}
+//买到的多个商品
+.more_goods{
+  padding: 9px 10px;
+  background: white;
+  position: relative;
+  margin-bottom: 10px;
+  .goods{
+    float: left;
+    margin-right: 10px;
+    display: block;
+    width: 20%;
+    img{
+      margin-bottom: 5px;
+      width: 100%;
+    }
+    p{
+      text-align: center;
+      color: #f60;
+      font-size: 12px;
+    }
+  }
+  .shengluehao{
+    font-size: 18px;
+    color: #888;
+    float: left;
+    line-height: 18px;
+    position: relative;
+    top: 10px;
+    margin-right: 5px;
+  }
+  .quantity{
+    position: absolute;
+    top: 25px;
+    right: 8%;
+    //width: 10%;
+    text-align: right;
+    font-size: 12px;
+  }
+  .next_arrow{
+    top: 25px;
+  }
+}
+
+//支付配送
+.order_item{
+  padding: 9px 10px;
+  margin-top: 10px;
+  background: white;
+  position: relative;
+  div{
+    width: 94%;
+    padding-right: 5px;
+  }
+  .div3{
+    margin-bottom: 10px;
+  }
+  .div4{
+    height: 30px;
+    padding-right: 8px;
+    background: #f8f8f8;
+  }
+  p{
+    font-size:12px ;
+    color:#333;
+    text-align: right;
+  }
+  h2{
+    font-size: 14px;
+    color:#888;
+  }
+  span{
+    font-size:10px ;
+    color: #888;
+    height:30px ;
+    line-height: 30px;
+    float: right;
+  }
+  a{
+    top: 48px;
+  }
+}
+
+//发票信息
+.item_fapiao{
+  .div2{
+    padding: 5px 0;
+  h2{
+    float: left;
+  }
+  h3{
+    font-size:12px ;
+    color:#333;
+    float: right;
+  }
+  }
+  a{
+    top: 33px;
+  }
+}
+//更新发票
+.order_receipt{
+  margin:10px 0;
+  padding:10px;
+  background-color: #fff;
+}
+.receipt_title{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e4e4e4;
+  h2{
+    font-size: 14px;
+    color: #888;
+    margin-bottom:8px;
+  }
+  .order_receipt_btn{
+    display: inline-block;
+    padding: 0 10px;
+    margin-right: 20px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    border:1px solid #e4e4e4;
+
+    -webkit-transition: ease-in-out 0.2s ;
+    -moz-transition: ease-in-out 0.2s ;
+    -ms-transition: ease-in-out 0.2s ;
+    -o-transition: ease-in-out 0.2s ;
+    transition: ease-in-out 0.2s ;
+    i{
+      display: none;
+      margin-right: 5px;
+      width: 10px;
+      height: 7px;
+    }
+  }
+  .order_receipt_btn.current{
+    border:1px solid #093;
+    color: #093;
+    i{
+      display: inline-block;
+      background: url(../../../Images/mobile/cart/icon_order_receipt_btn.png) no-repeat;
+      background-size: 10px;
+    }
+  }
+
+}
+.receipt_infor{
+  h2{
+    font-size: 14px;
+    color: #888;
+    margin-bottom:8px;
+    span{
+      color: #999;
+      font-size: 12px;
+    }
+  }
+  .receipt_txt{
+    border: 1px solid #e4e4e4;
+    padding: 8px 0 8px 14px;
+    height: 35px;
+    width: 100%;
+    color: #333;
+    font-size: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+//优惠券
+.item_youhuiquan{
+  @extend .item_fapiao;
+  .div2{
+  border-bottom: 1px solid #e4e4e4;
+    a{
+      top: 15px;
+    }
+}
+  .div2_1{
+    border-bottom: none;
+    a{
+      top: 46px;
+    }
+  }
+}
+
+//商品金额
+.item_price{
+  @extend .item_youhuiquan;
+   h4{
+     float: right;
+     color: #f60;
+     font-size: 12px;
+  }
+}
+
+//买家留言
+.item_liuyan{
+  h2{
+    float: left;
+  }
+  textarea{
+    float: left;
+    resize: none;
+    height: 40px;
+    background: #f8f8f8;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #888;
+    line-height:20px;
+    border: none;
+    width: 70%;
+  }
+}
+
+//提交订单
+.submit_order{
+  background: white;
+  padding: 9px 10px;
+  margin-top: 10px;
+  span{
+    font-size: 14px;
+    color: #333;
+    float: left;
+  }
+  em{
+    font-size: 14px;
+    color: #f60;
+    float: left;
+  }
+  a{
+    font-size: 16px;
+    color: white;
+    float: right;
+    background: #093;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    width: 120px;
+  }
+}

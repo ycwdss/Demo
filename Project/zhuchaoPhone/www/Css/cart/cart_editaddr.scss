@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import "../../Css/mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+@import "../modelPage/message_confirm.scss";
+@import "../mobile_moudle/moudle/shaixuan_top";
+//顶部按钮:删除
+.top{
+  em{
+    float: right;
+    color: white;
+    font-size: 13px;
+    line-height: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+//主体内容
+.content{
+  margin: 0 auto 0;
+  width: 100%;
+  background: #f8f8f8;
+}
+.name_tel_pic{
+  .name_tel{
+    width: 77.5%;
+    background: white;
+    p{
+      border-bottom: 1px solid #e4e4e4;
+      text-indent: 1em;
+      height: 40px;
+      span{
+        font-size:14px ;
+        color: #888;
+        line-height:40px;
+        float: left;
+      }
+      input{
+        margin-top: 9px;
+        float: left;
+        border: none;
+        font-size:14px ;
+        color: black;
+        line-height:20px;
+        width: 60%;
+      }
+    }
+  }
+  .head_pic{
+    width: 22.1%;
+    height:81px;
+    background: white;
+    border-bottom: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+    text-align: center;
+    i{
+      display: inline-block;
+      margin-top:18px ;
+      width: 35px;
+      height:35px;
+      margin-bottom: -5px;
+      background: url("../../../Images/mobile/cart/sprite_new_addr.png")  no-repeat;
+      -webkit-background-size: 40px;
+      background-size: 40px;
+    }
+  }
+}
+.area{
+  border-bottom: 1px solid #e4e4e4;
+  text-indent: 1em;
+  height: 39px;
+  background: white;
+  span{
+    font-size:14px ;
+    color: #888;
+    line-height:40px;
+  }
+  input{
+    margin-top: 9px;
+    border: none;
+    font-size:14px ;
+    color: black;
+    line-height:20px;
+  }
+}
+.detail_addr{
+  border-bottom: 1px solid #e4e4e4;
+  text-indent: 1em;
+  background: white;
+  padding: 13px 0;
+  span{
+    float: left;
+    font-size:14px ;
+    color: #888;
+  }
+  textarea{
+    float: left;
+    border: none;
+    resize: none;
+    outline: none;
+    width: 70%;
+    font-size:14px ;
+    color: black;
+    line-height:20px;
+    margin-top: -2px;
+  }
+}
+.default_addr{
+  background: white;
+  padding: 13px 0;
+  .txt{
+    text-indent: 1em;
+    p{
+      font-size:14px ;
+      color: #888;
+      line-height:20px;
+    }
+    span{
+      display: block;
+      font-size:10px ;
+      color: #888;
+      line-height:20px;
+    }
+  }
+  .default_btn{
+    margin-right: 8%;
+    i{
+      display: block;
+      margin-top:5px ;
+      width: 46px;
+      height:35px;
+      margin-bottom: -5px;
+      background: url("../../../Images/mobile/cart/sprite_new_addr.png")  no-repeat 0 -55px;
+      -webkit-background-size: 45px;
+      background-size: 45px;
+    }
+    .active{
+      @extend i;
+      background: url("../../../Images/mobile/cart/sprite_new_addr.png")  no-repeat 0 -100px;
+      -webkit-background-size: 45px;
+      background-size: 45px;
+    }
+  }
+}
+
+.keep_btn{
+  margin: 20px auto;
+  width:200px ;
+  height: 40px;
+  a{
+    display: inline-block;
+    text-align: center;
+    background:#093;
+    color: white;
+    font-size: 16px;
+    line-height:40px;
+    width:200px ;
+    height: 40px;
+  }
+}
+//地址：省市
+.shaixuan_detail{
+  display: none;
+  margin-left: 10%;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+  background: #f8f8f8;
+}
+.m_sort{
+  background: #FFFFFF;
+}
+.m_sort_topleft{
+  width: 20%;
+}
+.detail_hide{
+  margin: 15px 15px 15px 10px;
+  width: 10px;
+  height: 15px;
+  background: url("../../../Images/mobile/icon_mall.png")0 0;
+  -webkit-background-size: 300px;
+  background-size: 300px;
+}
+.m_sort li{
+  text-indent: 5px;
+  margin-left:20px;
+  margin-right: 10px;   
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 35px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.arrow_clicked{
+  display: none;
+  float: right;
+  margin: 10px 15px 7px 10px;
+  width: 15px;
+  height: 10px;
+  background: url("../../../Images/mobile/icon_mall.png")-14px  0;
+  -webkit-background-size: 250px;
+  background-size: 250px;
+}
+.m_sort .m_sort_clicked{
+  color: #093;
+}
+.m_sort_clicked .arrow_clicked{
+  display: block;
+}
+.no_borderB{
+  border-bottom: 0 !important;
+}

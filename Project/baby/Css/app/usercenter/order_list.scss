@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/site";
+@import "../../module/empty_tips";
+@import "../../module/recommend";
+@import "../../module/pagelist";
+@import "../../module/usercenter_style";
+
+
+
+.order_wrap {
+  padding: 0 25px;
+}
+
+.order_head {
+  height: 45px;
+  display: table;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.order_head .pro_info {
+  width: 180px;
+  padding-left: 40px;
+}
+
+.pro_info {
+  width: 220px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.pro_price, .pro_num, .pro_status, .pro_operate {
+  width: 122px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.order_list {
+  padding: 15px 0;
+  border-bottom: 1px solid #e4e4e4;
+  display: table;
+  .pro_info {
+    p {
+      line-height: 24px;
+      text-align: left;
+      font-size: 12px;
+      color: #888;
+    }
+  }
+  .pro_price, .pro_num, .pro_status, .pro_operate {
+    height: 96px;
+  }
+  .pro_num, .pro_status, .pro_operate {
+    a {
+      display: block;
+      line-height: normal;
+      font-size: 12px;
+      color: #666;
+      line-height: 20px;
+    }
+  }
+}

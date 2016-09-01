@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交订单--购买</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/cart/buy.css"/>
+    <link rel="stylesheet" href="../../Css/app/layer.css"/>
+</head>
+<body>
+<!--顶部状态-->
+<div class="top_bar deepbg">
+    <div class="con_width">
+        <a class="t_login">登录</a>
+        <span>|</span>
+        <a class="t_register">注册</a>
+        <a class="icon_cart" href="../cart/cart.html">
+            <i class="iconfont">&#xe614;</i>
+        </a>
+    </div>
+</div>
+<!--导航-->
+<div class="nav bgfff">
+    <div class="con_width nav_inner clearfix">
+        <a class="icon_logo fl" href="../mall/index.html">
+            <img src="../../Images/test/test_pro_img.jpg"/>
+        </a>
+        <ul class="nav_text fl clearfix deep">
+            <li class="current">
+                <a href="../mall/index.html">商城首页</a>
+            </li>
+            <li>
+                <a href="../mall/prolist.html">手机</a>
+            </li>
+            <li>
+                <a href="../mall/prolist.html">耳机</a>
+            </li>
+            <li>
+                <a href="../mall/newlist.html">关于我们</a>
+            </li>
+            <li>
+                <a href="../mall/newlist.html">店铺新闻</a>
+            </li>
+        </ul>
+        <!--搜索-->
+        <div class="search fr">
+            <form action="" class="search_form">
+                <input id="searchInput" class="search_input" type="text" required placeholder="5000000万代金券等您来领！"
+                       autocomplete="off"/><a
+                    class="search_btn"> <i class="iconfont">&#xe607;</i></a>
+            </form>
+            <!--建议搜索-->
+            <div id="searchSuggest" class="search_suggest hide">
+                <a href="">手机</a>
+                <a href="" class="current">电脑</a>
+                <a href="">门</a>
+                <a href="">门司机</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--商品状态-->
+<div class="cart_status bgfff con_width clearfix">
+    <div class="status_list status1 fl main_bg"><span>1.我的购物车</span></div>
+    <div class="status_list status2 fl main_bg"><span>2.填写核对订单信息</span></div>
+    <div class="status_list status3 bge4 fr"><span>3.成功提交订单</span></div>
+</div>
+<!--收货地址-->
+<div class="address_box items con_width bgfff">
+    <h3 class="deep items_title">收货地址
+        <a id="addressBtn" class="btn main_bg"><i class="iconfont">&#xe606;</i>添加新地址</a>
+    </h3>
+    <ul class="address_head clearfix deep">
+        <li class="td_head1">姓名</li>
+        <li class="td_head2">详细地址</li>
+        <li class="td_head3">电话</li>
+        <li class="td_head4">操作</li>
+    </ul>
+    <ul class="address_items clearfix">
+        <li class="td_head1"><i class="icon_checkbox main_bg main_border"></i>王小丫</li>
+        <li class="td_head2">中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路交叉口凤凰城北城五楼</li>
+        <li class="td_head3">13137774629</li>
+        <li class="td_head4">
+            <i class="iconfont main_hover">&#xe605;</i>
+            <i class="iconfont main_hover">&#xe608;</i>
+        </li>
+    </ul>
+    <ul class="address_items clearfix">
+        <li class="td_head1"><i class="icon_checkbox"></i>王小丫</li>
+        <li class="td_head2">中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路交叉口凤凰城北城五楼</li>
+        <li class="td_head3">13137774629</li>
+        <li class="td_head4">
+            <i class="iconfont main_hover">&#xe605;</i>
+            <i class="iconfont main_hover">&#xe608;</i>
+        </li>
+    </ul>
+    <ul class="address_items clearfix">
+        <li class="td_head1"><i class="icon_checkbox"></i>王小丫</li>
+        <li class="td_head2">中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路交叉口凤凰城北城五楼</li>
+        <li class="td_head3">13137774629</li>
+        <li class="td_head4">
+            <i class="iconfont main_hover">&#xe605;</i>
+            <i class="iconfont main_hover">&#xe608;</i>
+        </li>
+    </ul>
+    <ul class="address_items clearfix">
+        <li class="td_head1"><i class="icon_checkbox"></i>王小丫</li>
+        <li class="td_head2">中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路交叉口凤凰城北城五楼</li>
+        <li class="td_head3">13137774629</li>
+        <li class="td_head4">
+            <i class="iconfont main_hover">&#xe605;</i>
+            <i class="iconfont main_hover">&#xe608;</i>
+        </li>
+    </ul>
+    <ul class="address_items clearfix">
+        <li class="td_head1"><i class="icon_checkbox"></i>王小丫</li>
+        <li class="td_head2">中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路交叉口凤凰城北城五楼</li>
+        <li class="td_head3">13137774629</li>
+        <li class="td_head4">
+            <i class="iconfont main_hover">&#xe605;</i>
+            <i class="iconfont main_hover">&#xe608;</i>
+        </li>
+    </ul>
+</div>
+<!--新增收货地址-->
+<div id="addAddress" class="pay_block add_address hide">
+    <ul class="noselect bgfff">
+        <li>
+            <input class="main_focus" id="name" name="name" type="text" tabindex="1" placeholder="收货人姓名" required="required">
+        </li>
+        <li class="tips main">
+            <span>收货人姓名，最少2个最多20个中文字</span>
+        </li>
+        <li>
+            <input class="main_focus" id="phone" name="phone" type="text" tabindex="2" placeholder="收货人手机号" required="required">
+        </li>
+        <li class="tips main">
+            <span>请输入正确的手机号</span>
+        </li>
+        <li>
+            <div class="address_infor">
+                <div class="drop_menu main_border_hover">
+                    <div class="drop_show">省份</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li>河南河南河南河南省</li>
+                        <li>安徽省</li>
+                        <li>山东省</li>
+                        <li>江西省</li>
+                        <li>广西省</li>
+                        <li>广东省</li>
+                        <li>福建省</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                    </ul>
+                </div>
+                <div class="drop_menu main_border_hover ">
+                    <div class="drop_show">直辖市</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li>郑州市</li>
+                        <li>湘乡市</li>
+                        <li>新乡市</li>
+                        <li>新郑市</li>
+                        <li>商丘市</li>
+                        <li>南阳市</li>
+                        <li>信阳市</li>
+                        <li>洛阳市</li>
+                        <li>洛阳市</li>
+                        <li>洛阳市</li>
+                        <li>洛阳市</li>
+                        <li>洛阳市</li>
+                        <li>洛阳市</li>
+                        <li>洛阳市</li>
+                        <li>洛阳市</li>
+                        <li>洛阳市</li>
+                    </ul>
+                </div>
+                <div class="drop_menu main_border_hover  no_mr">
+                    <div class="drop_show">区/县</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li>金水区</li>
+                        <li>管城区</li>
+                        <li>惠济区</li>
+                        <li>新郑市</li>
+                        <li>新郑市</li>
+                        <li>新郑市</li>
+                        <li>新郑市</li>
+                        <li>新郑市</li>
+                        <li>新郑市</li>
+                        <li>新郑市</li>
+                        <li>新郑市</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="address_detail">
+            <input class="main_focus" type="text" placeholder="详情地址有助于快速确定送货地址 " tabindex="6">
+        </li>
+        <li class="last_li">
+            <a href="javascript:void(0);" class="btn main_bg">保存信息</a>
+            <a href="javascript:void(0);" class="btn_gray">取消</a>
+        </li>
+        <a id="OffBtn" class="offbtn mainbg_hover">
+            <i class="iconfont">&#xe612;</i>
+        </a>
+    </ul>
+</div>
+<!--支付-->
+<div class="invoice_box items con_width bgfff">
+    <h3 class="deep items_title">支付方式
+    </h3>
+
+    <div class="invoice_info">
+        <ul class="clearfix noselect pay_way">
+            <li class="main">
+                网银支付
+            </li>
+            <li>公司转账</li>
+        </ul>
+    </div>
+</div>
+<!--发票-->
+<div class="invoice_box items con_width bgfff">
+    <h3 class="deep items_title">我的发票
+    </h3>
+
+    <div class="invoice_info">
+        <ul class="clearfix noselect">
+            <li class="main">
+                普通发票
+            </li>
+            <li>发票抬头</li>
+            <li><i class="icon_checkbox"></i>个人</li>
+            <li><i class="icon_checkbox main_bg main_border"></i>单位</li>
+            <li>
+                <input class="input_text main_focus" type="text" placeholder="请输入单位名称"/>
+
+                <p class="tips main">不填写默认为不需要</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--商品信息-->
+<div class="good_box items con_width bgfff">
+    <h3 class="deep items_title">商品清单
+        <a>返回购物车修改 <span>&gt;</span></a>
+    </h3>
+
+    <div class="cart_head clearfix deep">
+        <div class="fl good_name">商品名称</div>
+        <div class="fl good_price">单价</div>
+        <div class="fl good_num">数量</div>
+        <div class="fl good_total">小计</div>
+    </div>
+    <div class="good_items clearfix">
+        <div class="fl good_name clearfix">
+            <a href="../mall/prodetail.html" class="fl list_good_img">
+                <img src="../../Images/test/test_pro_img.jpg" alt="">
+            </a>
+
+            <div class="fl list_good_text">
+                <h3><a href="../mall/prodetail.html" class="main">小米盒子mini版（小米小盒子） 白色橙底</a></h3>
+
+                <p>大屏旗舰，HiFi 双卡双待 索尼 1300 万像素</p>
+            </div>
+        </div>
+        <div class="fl td good_price">199元</div>
+        <div class="fl td good_num">2</div>
+        <div class="fl td good_total main"><span>398</span>元</div>
+    </div>
+    <div class="good_items clearfix">
+        <div class="fl good_name clearfix">
+            <a href="../mall/prodetail.html" class="fl list_good_img">
+                <img src="../../Images/test/test_pro_img.jpg" alt="">
+            </a>
+
+            <div class="fl list_good_text">
+                <h3><a href="../mall/prodetail.html" class="main">小米盒子mini版（小米小盒子） 白色橙底</a></h3>
+
+                <p>大屏旗舰，HiFi 双卡双待 索尼 1300 万像素</p>
+            </div>
+        </div>
+        <div class="fl td good_price">199元</div>
+        <div class="fl td good_num">2</div>
+        <div class="fl td good_total main"><span>398</span>元</div>
+    </div>
+</div>
+<!--优惠券-->
+<div class="coupon_box con_width bgfff">
+    <a id="coupon_btn" class="coupon deep noselect"><i class="icon_checkbox main_bg main_border"></i>可使用的优惠券</a>
+
+    <div class="coupon_info_box hide">
+        <ul class="coupon_info_tab clearfix">
+            <li class="main">选择优惠券</li>
+            <li>输入优惠券码</li>
+        </ul>
+        <div class="tab_container">
+            <div class="tab_content list_content">
+                <div class="coupon_lsit">
+                    <div class="clicked">
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="coupon_btn fr">已使用</a>
+                    </div>
+                    <div>
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="coupon_btn fr">立即使用</a>
+                    </div>
+                    <div>
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="coupon_btn fr">立即使用</a>
+                    </div>
+                    <div>
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="coupon_btn fr">立即使用</a>
+                    </div>
+                </div>
+            </div>
+            <!--输入优惠券码-->
+            <div class="tab_content code_content hide">
+                <div class="form_section">
+                    <input class="input_text" type="text" name="coupon_code" placeholder="请输入优惠券码">
+                </div>
+                <div class="coupon_action">
+                    <a href="javascript:void(0);" class="btn main_bg">立即使用</a>
+                    <a href="javascript:void(0);" class="btn_gray">取消</a>
+                </div>
+            </div>
+        </div>
+        <a class="offbtn mainbg_hover"><i class=" iconfont">&#xe612;</i></a>
+    </div>
+</div>
+<!--结算-->
+<div class="whole_money con_width bgfff clearfix">
+    <ul class="fr">
+        <li class="clearfix">
+            <label>商品数量：</label>
+            <span class="val main">1件</span>
+        </li>
+        <li class="clearfix">
+            <label>金额合计：</label>
+            <span class="val main">1299元</span>
+        </li>
+        <li class="clearfix">
+            <label>活动优惠：</label>
+            <span class="val main">-0元</span>
+        </li>
+        <li class="clearfix">
+            <label>运费：</label>
+            <span class="val main"><i>0</i>元</span>
+        </li>
+        <li class="clearfix total_price">
+            <label>应付总额：</label>
+            <span class="val main"><em>129900.00</em>元</span>
+        </li>
+    </ul>
+</div>
+<div class="con_width bgfff ">
+    <div class="buy_action clearfix">
+        <div class="fl deep user_info">
+            <p><span>朱秋丽</span>13137774629</p>
+
+            <p> 中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路交叉口凤凰城北城五楼D区<a class="main">修改</a></p>
+        </div>
+        <a href="pay.html" class="fr btn main_bg pay">提交订单</a>
+    </div>
+</div>
+<!--底部-->
+<div class="footer bgfff">
+    <div class="con_width clearfix">
+        <dl class="erweima fl">
+            <dt><img src="../../Images/test/test_erweima.png" alt=""/></dt>
+            <dd>微信扫一扫</dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>帮助中心</dt>
+            <dd>
+                <a href="../help/help.html">支付方式</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">配送方式</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">购物指南</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>服务支持</dt>
+            <dd>
+                <a href="../help/help.html">相关下载</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">售后政策</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">物流查询</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>关于我们</dt>
+            <dd>
+                <a href="../help/help.html">服务网点</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">品牌授权商</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">线下合作零售店</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>关于公司</dt>
+            <dd>
+                <a href="../help/help.html">加入我们</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">联系我们</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">了解神恩信息</a>
+            </dd>
+        </dl>
+        <div class="footer_contact fr">
+            <p>客服电话 <br/>
+                400-111-1111</p>
+            <a href="" class="btn main_bg kefu_btn">
+                <i class="iconfont">&#xe616;</i>
+                在线咨询
+            </a>
+        </div>
+    </div>
+</div>
+<div class="copy bgfff">
+    <div class="con_width">
+        <p>©2014-2015凤凰筑巢保留所有权利</p>
+
+        <p>Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc25</p>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="cart/buy" id="require" src="../../Js/lib/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品列表页</title>
+    <link rel="stylesheet" href="../../Css/usercenter/providerstyle.css">
+    <link rel="stylesheet" href="../../Css/usercenter/prolist.css">
+</head>
+
+<body>
+<!--头部-->
+<div class="header_top">
+    <div class="conwidth header_top_inner clearfix">
+        <div class="fl">
+            欢迎来到凤凰筑巢！ <a class="login_btn main_hover">请登录</a> <a class="register_btn main_hover">注册</a>
+        </div>
+        <ul class="fr header_top_nav main_hover">
+            <li><a href="">我的询价单</a></li>
+            <li class="line"></li>
+            <li><a href="">会员中心 <i class="icon-xiangxiajiantou"></i></a></li>
+            <li class="line"></li>
+            <li><a href="">我是 <i class="icon-xiangxiajiantou"></i></a></li>
+            <li class="line"></li>
+            <li><a href="">供应商专区</a></li>
+            <li class="line"></li>
+            <li><a href="">运营商专区</a></li>
+            <li class="line"></li>
+            <li><a href="">网站地图 <i class="icon-xiangxiajiantou"></i></a></li>
+            <li class="line"></li>
+            <li><a href="">帮助中心</a></li>
+            <li class="line"></li>
+            <li class="more_btn mainbg_hover"><a>关注我们 <i class="iicon-xiangxiajiantou"></i></a>
+                <div class="pull_more main_bg">
+                    <img class="erweima" src="../../Images/test/test_news_img.jpg">
+                    <span>扫码下载凤凰筑巢客户端</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--个人中心头部-->
+<div class="head_wrap main_bg_light">
+    <div class="head_box conwidth clearfix">
+        <a class="logo_img fl" href="#"><img src="../../Images/usercenter/icon/icon_logo_white.png"> </a>
+        <ul class="fr clearfix">
+            <li><a class="main_bg mainbg_hover" href="#">首页</a></li>
+            <li><a class="mainbg_hover" href="#">产品中心</a></li>
+            <li><a class="mainbg_hover" href="#">询价单</a></li>
+            <li><a class="mainbg_hover" href="#">账号中心</a></li>
+            <li><a class="mainbg_hover" href="#">店铺设置</a></li>
+        </ul>
+    </div>
+</div>
+<!--个人中心-->
+<div class="content conwidth clearfix">
+    <!--左侧列表-->
+    <div class="items_wrap fl">
+        <dl>
+            <dt><i class="icon-product main"></i>产品中心</dt>
+            <dd><a class="main_bg_light" href="#">发布产品</a></dd>
+            <dd><a class="mainbg_hover_light" href="#">产品管理</a></dd>
+            <dd><a class="mainbg_hover_light" href="#">产品分组</a></dd>
+        </dl>
+        <dl>
+            <dt><i class="icon-xunjia main"></i>询价单</dt>
+            <dd><a class="mainbg_hover_light" href="#">全部</a></dd>
+            <dd><a class="mainbg_hover_light" href="#">未回复</a></dd>
+            <dd><a class="mainbg_hover_light" href="#">已回复</a></dd>
+        </dl>
+        <dl>
+            <dt><i class="icon-zhanghao main"></i>账户中心</dt>
+            <dd><a class="mainbg_hover_light" href="#">基本信息</a></dd>
+            <dd><a class="mainbg_hover_light" href="#">我的地址</a></dd>
+            <dd><a class="mainbg_hover_light" href="#">修改密码</a></dd>
+        </dl>
+    </div>
+    <!--右侧内容-->
+    <div class="content_wrap fr">
+        <h1 class="items_title">发布产品<a class="main_bg_light fr" href="#"><em>+</em>发布新闻</a></h1>
+        <div class="notice main_bg_light">
+            <a href="#"><i class="main icon-notice"></i> 产品上架权限为3条， 剩余2条！如何提升产品上架权限 ？</a>
+        </div>
+        <!--搜索-->
+        <div class="search_wrap clearfix">
+            <div class="search_input fl">
+                <input type="text" placeholder="请输入关键词"/>
+                <i class="icon-sousuo"></i>
+            </div>
+            <div class="search_select fl">
+                <select>
+                    <option>内资企业</option>
+                    <option>内资企业</option>
+                    <option>内资企业</option>
+                    <option>内资企业</option>
+                    <option>内资企业</option>
+
+                </select>
+            </div>
+            <ul class="clearfix fl">
+                <li><a class="main_bg" href="#">已上架（1）</a></li>
+                <li><a href="#">审核中</a></li>
+                <li><a href="#">已下架</a></li>
+                <li><a href="#">被拒审</a></li>
+            </ul>
+        </div>
+        <!--产品列表-->
+        <div class="prolist_wrap">
+            <div class="prolist_operate">
+                <span class="check"><em><i></i></em>全选</span>
+                <span class="btn btn_del">删除</span>
+                <span class="btn">下架</span>
+                <a class="question main">产品上下架问题解答&gt;</a>
+            </div>
+            <!--标题-->
+            <table>
+                <tr class="prolist_items">
+                    <th class="pro-code">产品编号</th>
+                    <th class="pro_img">图片</th>
+                    <th class="pro_title">标题</th>
+                    <th class="pro_price">价格</th>
+                    <th class="pro_time">上架时间</th>
+                    <th class="pro_star">质量星级</th>
+                    <th class="pro_operate">操作</th>
+                    <th class="pro_code2">二维码</th>
+                </tr>
+                <tr class="prolist_list ">
+                    <td class="pro-code">
+                        <span class="check"><em><i></i></em></span>
+                        <span class="code">CNC1108441859dsNC1108</span>
+                    </td>
+                    <td class="pro_img">
+                        <a href="#"><img src="../../Images/test/test_boos1.png"></a>
+                    </td>
+                    <td class="pro_title">
+                        <a href="#">英国贝儿欣吃饭大汉堡英国好吃看店家能</a>
+                    </td>
+                    <td class="pro_price main">￥<em>1111.00</em></td>
+                    <td class="pro_time">2015-10-12</td>
+                    <td class="pro_star">
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star"></i>
+                    </td>
+                    <td class="pro_operate">
+                        <a class="main_hover" href="">修改</a>
+                        <span>|</span>
+                        <a class="main_hover" href="">删除</a>
+                    </td>
+                    <td class="pro_code2">
+                        <i class="icon-erweima"></i>
+                        <div class="pro_code_box">
+                            <p>点击下载二维码</p>
+                            <div class="code_img">
+                                <img src="../../Images/test/test_erweima.jpg" alt="">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prolist_list ">
+                    <td class="pro-code">
+                        <span class="check"><em><i></i></em></span>
+                        <span class="code">CNC1108441859dsNC1108</span>
+                    </td>
+                    <td class="pro_img">
+                        <a href="#"><img src="../../Images/test/test_boos1.png"></a>
+                    </td>
+                    <td class="pro_title">
+                        <a href="#">英国贝儿欣吃饭大汉堡英国好吃看店家能</a>
+                    </td>
+                    <td class="pro_price main">￥<em>1111.00</em></td>
+                    <td class="pro_time">2015-10-12</td>
+                    <td class="pro_star">
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star"></i>
+                    </td>
+                    <td class="pro_operate">
+                        <a class="main_hover" href="">修改</a>
+                        <span>|</span>
+                        <a class="main_hover" href="">删除</a>
+                    </td>
+                    <td class="pro_code2">
+                        <i class="icon-erweima"></i>
+                        <div class="pro_code_box">
+                            <p>点击下载二维码</p>
+                            <div class="code_img">
+                                <img src="../../Images/test/test_erweima.jpg" alt="">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prolist_list ">
+                    <td class="pro-code">
+                        <span class="check"><em><i></i></em></span>
+                        <span class="code">CNC1108441859dsNC1108</span>
+                    </td>
+                    <td class="pro_img">
+                        <a href="#"><img src="../../Images/test/test_boos1.png"></a>
+                    </td>
+                    <td class="pro_title">
+                        <a href="#">英国贝儿欣吃饭大汉堡英国好吃看店家能</a>
+                    </td>
+                    <td class="pro_price main">￥<em>1111.00</em></td>
+                    <td class="pro_time">2015-10-12</td>
+                    <td class="pro_star">
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star main"></i>
+                        <i class="icon-star"></i>
+                    </td>
+                    <td class="pro_operate">
+                        <a class="main_hover" href="">修改</a>
+                        <span>|</span>
+                        <a class="main_hover" href="">删除</a>
+                    </td>
+                    <td class="pro_code2">
+                        <i class="icon-erweima"></i>
+                        <div class="pro_code_box">
+                            <p>点击下载二维码</p>
+                            <div class="code_img">
+                                <img src="../../Images/test/test_erweima.jpg" alt="">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!--暂无产品上架信息-->
+                <tr class="prolist_list nolist_tips hide">
+                    <td colspan=7>暂无上架产品信息，赶紧<a href="#">上架产品</a>吧~</td>
+                </tr>
+            </table>
+            <div class="prolist_operate prolist_bottom">
+                <span class="check"><em><i></i></em>全选</span>
+                <span class="btn btn_del">删除</span>
+
+            </div>
+            <!--分页-->
+            <div class="page_list">
+                <p>
+                    <a class="first_page" href="#">首页</a>
+                    <a class="prev_page" href="#">上一页</a>
+                    <a class="main_bg main_border" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a class="no_all_b" href="#">......</a>
+                    <a href="#">100</a>
+                    <a class="next_page no_marginR" href="#">下一页</a>
+                    <a class="last_page no_marginR" href="#">尾页</a>
+                    <span>&nbsp;共10页&nbsp;到第</span>
+                    <input onkeyup="value=value.replace(/[^\d/g]/,'')">
+                    <span>页</span>
+                    <span class="page_submit mainbg_hover">确认</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/prolist" id="require" src="../../Js/lib/require.js"></script>
+</body>
+
+</html>

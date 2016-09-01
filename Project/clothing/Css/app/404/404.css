@@ -1,0 +1,53 @@
+.nopage {
+  width: 800px;
+  height: 560px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -280px;
+  text-align: center; }
+  .nopage .nopage_img {
+    background: url(../../../Images/icon/icon_text_404.png?_nosprite) center no-repeat;
+    width: 772px;
+    background-size: cover;
+    height: 164px;
+    margin: 0 auto; }
+  .nopage dl dt {
+    margin: 115px 0 160px;
+    font-size: 24px;
+    color: #333; }
+  .nopage dl dd {
+    margin: 0 auto;
+    width: 772px; }
+    .nopage dl dd a {
+      position: relative;
+      display: inline-block;
+      width: 218px;
+      height: 46px;
+      line-height: 46px;
+      margin: 0 70px;
+      text-align: center;
+      color: #333;
+      font-size: 18px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: 0.2s ease;
+      -moz-transition: 0.2s ease;
+      -ms-transition: 0.2s ease;
+      -o-transition: 0.2s ease;
+      transition: 0.2s ease;
+      overflow: hidden; }
+      .nopage dl dd a:before {
+        font-size: 218px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: "iconfont"; }
+    .nopage dl dd a.index:before {
+      content: '\e61f'; }
+    .nopage dl dd a.goback:before {
+      content: '\e620'; }
+
+/*# sourceMappingURL=404.css.map */

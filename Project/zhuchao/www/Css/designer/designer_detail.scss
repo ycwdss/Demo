@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import "../fh/lib";
+@import "../fh/moudle/_ele_hover";
+@import "../fh/moudle/designer/left_designer_infor";
+.l_main{
+  min-height: 800px;
+  margin-bottom: 100px;
+}
+/*头部设计师信息*/
+.designer{
+  padding: 20px 0 40px;
+  border-bottom: 1px solid #e4e4e4;;
+}
+.designer_img{
+  @include border-radius(100px);
+  img{
+    width: 200px!important;
+    height: 200px!important;
+    @include border-radius(100px);
+  }
+}
+.designer_infor{
+  padding-left: 46px;
+  h2{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+    line-height: 40px;
+    span{
+      font-size: 12px;
+      color: #888888;
+    }
+  }
+}
+.title{
+  font-size: 16px;
+  color: #333;
+  line-height: 40px;
+}
+.designer_detail1{
+  font-size: 13px;
+  color: #666666;
+  line-height: 30px;
+  span{
+    margin-right: 30px;
+  }
+}
+.designer_detail2{
+  font-size: 16px;
+  color: #444444;
+  line-height: 40px;
+  span{
+    font-size: 13px;
+    color: #666666;
+  }
+}
+.blog_statis{
+  width: 200px;
+  span{
+    margin: 10px 0;
+  }
+}
+.choose{
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background: $normalColor;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:hover{
+    @include opacity(85);
+  }
+}
+.attention{
+  @extend .choose;
+  background: $activeColor;
+  span{
+    font-size: 24px;
+  }
+}
+/*作品*/
+.art_container{
+  width: 1030px;
+}
+.m_art{
+  margin-top: 20px;
+  h2{
+    font-size: 24px;
+    line-height: 60px;
+    a{
+      color: #666;
+      &:hover{
+        color: $activeColor;
+      }
+    }
+  }
+}
+.c_art{
+  float: left;
+  position: relative;
+  width: 287px;
+  margin-top: 20px;
+  margin-right: 16px;
+  padding: 20px;
+  background: #FFFFFF;
+  img{
+    display: block;
+    width: 287px!important;
+    height: 179px !important;
+  }
+}
+.art_content{
+ h3 {
+   text-align: center;
+   a {
+     margin-top: 15px;
+     line-height: 50px;
+     font-size: 18px;
+     color: #333333;
+     &:hover{
+       color: $activeColor;;
+     }
+   }
+  }
+  p{
+    padding-left: 100px;
+    font-size: 12px;
+    color: #666;
+    line-height: 25px;
+    span{
+      color: $activeColor;
+    }
+  }
+  >span{
+    display: block;
+    margin-top: 10px;
+    color: #888;
+  }
+}
+.store{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 12px;
+  color: #888;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  span{
+    float: right;
+  }
+}
+.store_img{
+  margin-top: 4px;
+  margin-right: 5px;
+  width: 11px;
+  height: 10px;
+  background: url("../../designer/Images/sprite_designer_store.png");
+}
+/*与他相似*/
+.similar{
+  float: right;
+  width: 230px;
+  padding: 0 20px;
+  background: #FFFFFF;
+  h2{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #666666;
+    line-height: 50px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+.c_similar{
+  padding: 20px 0;
+  border-bottom: 1px dashed #e4e4e4;
+}
+.similar_img{
+  float: left;
+  width: 100px;
+  height: 100px;
+  img{
+    width: 100px;
+    height: 100px;
+    @include border-radius(50px);
+    &:hover{
+      @include opacity(85);
+    }
+  }
+}
+.similar_infor{
+  float: right;  
+  width: 120px;
+  font-size: 13px;
+  color: #666666;
+  line-height: 33px;
+  p{
+    @include ell(1);
+    a{
+      font-size: 16px;
+      color: #333;
+      &:hover{
+        color: $activeColor;
+      }
+    }
+  }
+}
+.more{
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;;
+  a{
+    color: $normalColor;
+    &:hover{
+      color: $activeColor;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/site";
+@import "../../module/pagelist";
+@import "../../module/empty_tips";
+@import "../../module/recommend";
+@import "../../module/usercenter_style";
+
+.refund_wrap {
+  padding: 0 25px;
+}
+
+.refund_head {
+  height: 45px;
+  display: table;
+  height: 45px;
+  border-bottom: 2px solid #e4e4e4;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+.rh_pro {
+  width: 130px;
+}
+
+.rh_date {
+  width: 200px;
+}
+
+.rh_type, .rh_status {
+  width: 144px;
+}
+
+.rh_operate {
+  width: 90px;
+}
+
+.refund_list {
+  padding: 15px 0;
+  display: table;
+  border-bottom: 1px solid #e4e4e4;
+  .rh_pro, .rh_date, .rh_type, .rh_status, .rh_operate {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+  .rh_pro {
+    .pro_img {
+      display: block;
+      width: 130px;
+      height: 130px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .pro_name, p {
+      text-align: left;
+      display: inline-block;
+      font-size: 14px;
+      color: #333;
+      margin-top: 5px;
+      width: 130px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      line-height: 18px;
+    }
+    p {
+      font-size: 12px;
+      color: #666;
+      margin: 0;
+    }
+  }
+  .rh_operate {
+    a {
+      display: block;
+      font-size: 14px;
+      color: #888;
+    }
+  }
+}

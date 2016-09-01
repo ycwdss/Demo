@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import "../mobile_moudle/_lib";
+@import "../mobile_moudle/moudle/xiaoguotu_head_sort";
+@import "../mobile_moudle/moudle/xiaoguotu_zhuanti_top";
+.pubuliu{
+  position: relative;
+}
+.pubuliu > div:nth-child(odd){
+  float: left;
+}
+.pubuliu > div:nth-child(even) {
+  float: right;
+}
+.pubuliu_ele_container{
+  width: 50%;
+}
+.pubuliu_ele{
+  float: left;
+  width: 100%;
+  padding: 15px 0 0;
+  a{
+    width: 96%;
+    margin: 0 auto;
+    display: block;
+    background-color: #fff;
+  }
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  span{
+    display: block;
+    text-align: center;
+    background: #FFFFFF;
+    color: #888;
+    font-size: 0.8rem;
+    line-height: 30px;
+    height: 30px;
+    @include ell();
+    width: 96%;
+    text-indent: 10px;
+  }
+}

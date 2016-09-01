@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "../lib/mixin";
+.procard{
+  margin: 0 -10px;
+}
+.procard_list{
+  background-color: #fff;
+  text-align: center;
+  @include transition();
+  &:hover{
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0)
+  }
+}
+.pro_img{
+  display: block;
+  width: 100%;
+  height: 353px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.pro_name{
+  margin: 50px 10px 4px;
+  @include strictEll(1.4,1);
+  font-size: 14px;
+}
+.pro_price{
+  margin-bottom: 10px;
+  font-size: 20px;
+  i{
+    font-size: 14px;
+  }
+}
+//card1
+.card1{
+  .procard .procard_list{
+    float: left;
+    width: 353px;
+    margin: 0 10px;
+    padding-bottom: 50px;
+  }
+}
+
+
+
+

@@ -1,0 +1,242 @@
+@charset "UTF-8";
+.c_order {
+  margin-top: 20px;
+  padding: 0 20px;
+  background: #FFFFFF; }
+
+.order_head {
+  padding: 16px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333; }
+  .order_head a {
+    color: #666; }
+  .order_head span {
+    float: left;
+    margin-right: 40px; }
+  .order_head img {
+    float: left;
+    margin: 0 5px 0 20px;
+    width: 40px !important;
+    height: 20px; }
+
+.order_detail {
+  padding: 53px 0 45px; }
+  .order_detail > div {
+    float: left;
+    height: 120px; }
+
+.pro {
+  float: left;
+  width: 190px !important;
+  height: 120px !important; }
+
+.order_descri {
+  width: 165px;
+  padding: 0 30px; }
+  .order_descri a {
+    color: #333; }
+  .order_descri h4 {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px; }
+  .order_descri p {
+    color: #666;
+    line-height: 25px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; }
+
+.count {
+  display: table;
+  width: 140px;
+  text-align: center;
+  font-size: 18px;
+  color: #333; }
+  .count span {
+    display: table-cell;
+    vertical-align: middle; }
+
+.price {
+  display: table;
+  width: 140px;
+  text-align: center;
+  color: #f60; }
+  .price > div {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px; }
+    .price > div span {
+      font-size: 18px; }
+
+.order_list {
+  display: table;
+  width: 160px;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4; }
+  .order_list a {
+    color: #333; }
+  .order_list > div {
+    display: table-cell;
+    vertical-align: middle; }
+
+.evaluate {
+  display: table;
+  width: 185px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  color: #666; }
+  .evaluate > div {
+    display: table-cell;
+    vertical-align: middle; }
+
+.evaluate_button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0 auto;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #093;
+  color: #093;
+  cursor: pointer;
+  -moz-transition: 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+  .evaluate_button:hover {
+    background: #093;
+    color: #FFFFFF; }
+
+.c_order {
+  padding: 0;
+  margin: 0; }
+
+.order_detail {
+  padding-top: 30px;
+  padding-bottom: 0; }
+
+.evaluate_ele {
+  margin-top: 40px; }
+
+.evaluate_title {
+  float: left;
+  width: 60px;
+  font-size: 14px;
+  color: #666;
+  text-align: right; }
+
+.evaluate_detail {
+  float: left;
+  margin-left: 20px;
+  width: 920px; }
+
+.wujiaoxing {
+  float: left;
+  margin-right: 5px;
+  width: 28px;
+  height: 30px; }
+
+.wujiaoxing1 {
+  background: url("../../usercenter/Images/sprite_usercenter_wujiaoxing1.png"); }
+
+.wujiaoxing2 {
+  background: url("../../usercenter/Images/sprite_usercenter_wujiaoxing2.png"); }
+
+.pingfen_title {
+  line-height: 30px; }
+
+.select {
+  display: inline-block;
+  width: 140px;
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 20px; }
+  .select input {
+    float: left;
+    width: 15px;
+    margin-top: 4px;
+    margin-right: 3px; }
+  .select span {
+    float: left;
+    width: 110px;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.pingjia_detail textarea {
+  width: 920px;
+  height: 180px;
+  font-size: 13px;
+  color: #666;
+  line-height: 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px;
+  resize: none;
+  border: 1px solid #e4e4e4;
+  background: #f8f8f8;
+  outline: none; }
+  .pingjia_detail textarea:focus {
+    border: 1px solid #093 !important; }
+
+.add_ele {
+  width: 112px; }
+  .add_ele p {
+    text-align: right;
+    font-size: 12px;
+    color: #666; }
+
+.add_img {
+  width: 112px;
+  height: 70px;
+  background: #f8f8f8;
+  line-height: 70px;
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  cursor: pointer; }
+
+.add_tool {
+  display: none; }
+
+.submit input {
+  width: 80px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #093;
+  color: #093;
+  cursor: pointer; }
+  .submit input:hover {
+    -moz-transition: 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    background: #093;
+    color: #FFFFFF; }
+
+.last_word {
+  text-align: right;
+  font-size: 13px; }

@@ -1,0 +1,103 @@
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.main_con {
+  margin-top: 10px; }
+
+.bind_flow {
+  margin-bottom: 10px;
+  background: white;
+  height: 113px;
+  padding-top: 15px;
+  position: relative; }
+  .bind_flow .dashed {
+    height: 2px;
+    background: url("../../../Images/mobile/usercenter/sprite_registerandtel.png") 0 -125px;
+    -webkit-background-size: 35px;
+    background-size: 35px;
+    width: 65%;
+    position: absolute;
+    top: 33px;
+    left: 15%; }
+  .bind_flow ul li {
+    float: left;
+    width: 33%;
+    text-align: center; }
+    .bind_flow ul li i {
+      margin: 0 auto;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: url("../../../Images/mobile/usercenter/sprite_registerandtel.png") 0 -104px;
+      -webkit-background-size: 40px;
+      background-size: 40px;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 3; }
+    .bind_flow ul li p {
+      font-size: 14px;
+      color: black;
+      line-height: 25px; }
+
+.bind_flow .current_flow i, .bind_flow .flow_done i {
+  background: url("../../../Images/mobile/usercenter/sprite_registerandtel.png") 0 -56px;
+  -webkit-background-size: 40px;
+  background-size: 40px; }
+
+.bind_flow .current_flow p, .bind_flow .flow_done p {
+  color: #093; }

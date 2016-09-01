@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../lib/commonclass";
+@import "../lib/reset";
+@import "../lib/font";
+
+@import "../module/header_top";
+@import "../module/header_search";
+@import "../module/footer";
+@import "../module/totop";
+@import "../module/site";
+
+$color:#093;
+.active{
+  color: $color!important;
+  a{
+    color: $color!important;
+  }
+}
+//左侧
+.l_left{
+  float: left;
+  width: 200px;
+  padding-bottom: 10px;
+  text-indent: 30px;
+  background: #ffffff;
+  h3{
+    padding:21px 0;
+    font-size: 18px;
+    line-height: 20px;
+    span{
+      display: block;
+      font-size: 14px;
+      line-height:1em;
+    }
+  }
+}
+.l_left{
+  >ul{
+    margin-top: 5px;
+  }
+  li{
+    font-size: 14px;
+    line-height: 50px;
+    a{
+      display: block;
+      color: #666;
+      &:hover{
+        color: $color;
+        i{
+          color: $color;
+        }
+      }
+    }
+    i{
+      font-size: 16px;
+      line-height: 50px;
+      text-indent:0;
+      margin-right: 10px;
+    }
+  }
+}
+//右侧
+.l_right{
+  position: relative;
+  overflow: hidden;
+  float: right;
+  width: 1080px;
+  padding:0 50px 50px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .right_title{
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 60px;
+    color: #333;
+  }
+}

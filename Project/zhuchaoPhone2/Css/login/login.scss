@@ -1,0 +1,264 @@
+@charset "UTF-8";
+html,body{
+  height: 100%;
+  overflow-y: auto;
+}
+body{
+  background: url("../../Images/icon/icon_login_bg.jpg?_nosprite") no-repeat;
+  background-size: 100% 100%;
+}
+//logo
+.login_icon{
+  margin-top:30px;
+  text-align: center;
+  i.login_icon_bg{
+    display: inline-block;
+    width: 73px;
+    height: 70px;
+    background: url(../../Images/icon/icon_login_logo.png?_nosprite) center no-repeat;
+    background-size: 100%;
+  }
+  h3{
+    margin-top: 10px;
+    font-size:20px;
+    color: #fff;
+  }
+}
+//按钮
+.user_action .submit_btn {
+  margin-bottom: 25px;
+  width: 100%;
+  display:block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 10px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.login_main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 20px;
+  form{
+    padding: 15px 15px 0;
+  }
+  //按钮
+  .user_action .tiled_btn{
+    border-radius: 3px;
+    width: 100%!important;
+  }
+}
+//form_box
+.form_box {
+  input:-ms-input-placeholder {
+    color: #fff;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  li {
+    *zoom: 1; /*IE/7/6*/
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  li {
+    position: relative;
+    label {
+      width: 45px;
+      height:44px;
+      position: absolute;
+      font-size: 14px;
+      line-height:44px;
+      color: #fff;
+      border-right: 1px solid rgba(105,106,176,.3);
+      text-align: center;
+      i{
+        font-size: 30px;
+        vertical-align: -4px;
+      }
+    }
+    label[for="pwd"] i{
+      font-size: 24px;
+    }
+    input {
+      padding-left:15px;
+      width:100%;
+      height: 44px;
+      line-height: normal;
+      border:0;
+      border-radius: 3px;
+      background-color: rgba(255,255,255,.3);
+      font-family: '\5fae\8f6f\96c5\9ed1';
+      font-size: 16px;
+      color: #fff;
+      -webkit-appearance: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+  li.tips {
+    visibility: hidden;
+    margin: 6px 0;
+    font-size: 12px;
+    color: #fff;
+  }
+}
+//登录
+.login_form{
+  li input{
+    padding-left: 56px;
+  }
+}
+//自动登录
+.login_forget{
+  margin: 0 0 25px;
+  font-size: 14px;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+  .login_auto{
+    i{
+      float: left;
+      margin-top:2px;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      font-size: 0;
+      border:1px solid #e4e4e4;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    span{
+      float: left;
+      margin-left: 5px;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  .checked i{
+    font-size: 14px;
+  }
+}
+.login_register{
+  font-size: 14px;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+}
+//注册
+.register_form{
+  li input {
+    padding-left: 15px;
+  }
+}
+//验证码
+.input_code{
+  .icode_image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:30%;
+    height: 44px;
+    line-height: 44px;
+    >img{
+      margin-right: 4px;
+      width: 100%;
+      height:44px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: top;
+    }
+    //i{
+    //  line-height: 44px;
+    //  width:38px;
+    //  height: 44px;
+    //  text-align: center;
+    //  color: #fff;
+    //}
+  }
+}
+.form_box li.agreeme{
+  visibility: visible;
+  span.checked{
+    width: 12px;
+    height: 12px;;
+    display: inline-block;
+    border-width:1px;
+    border-style: solid;
+    background-image: none;
+    position: relative;
+    text-align:center;
+  }
+  i.checked{
+    &:before{
+      opacity: 1;
+      filter: alpha(opacity=100) \9;
+    }
+  }
+  .iconfont{
+    font-size: 10px;
+    vertical-align: 2px;
+  }
+}
+//验证码
+.form_box li .yzm_input{
+  float: left;
+  width:68%;
+}
+.form_box li a.yzm_btn{
+  float: left;
+  width: 30%;
+  margin-left: 2%;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,.3);
+}
+//设置成功
+//成功
+.success{
+  padding:0 15px;
+  margin-top: 20%;
+  i{
+    margin: 40px auto;
+    font-size: 68px;
+    color: #fff;
+  }
+  p{
+    margin: 30px 0;
+    font-size: 15px;
+    color: #fff;
+  }
+  .submit_btn{
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+.login_disable{
+  color: #000!important;
+  background: rgba(0,0,0,0.3)!important;
+  border:rgba(0,0,0,0.3)!important;
+}

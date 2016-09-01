@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/search_head";
+@import "../../module/pagelist";
+
+body {
+  background-color: #f8f8f8;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.page_list {
+  padding: 50px 0;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+//左侧
+.news_wrap {
+  width: 880px;
+  background-color: #fff;
+}
+
+//右侧
+.news_hot {
+  width: 300px;
+  padding-bottom: 45px;
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+  h2 {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .hot_list {
+    width: 260px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .hot_body {
+    padding: 10px 0 2px 0;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .hot_footer {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #999;
+  }
+}
+
+.new_content_title {
+  padding: 35px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+  }
+  .writer_info {
+   text-align: center;
+    font-size: 14px;
+    color: #999;
+    line-height: 28px;
+    .writer {
+      padding: 0 50px;
+    }
+  }
+}
+
+
+
+.module_content {
+  font-size: 14px;
+  line-height: 2;
+  padding: 0 80px;
+  img {
+    display: block !important;
+    width: 60%;
+    max-width: 100% !important;
+    margin: 40px auto !important;
+  }
+  h4 {
+    font-size: 18px;
+    color: #333;
+  }
+}
+
+//上下篇
+.up_down {
+  margin-top: 20px;
+  padding: 15px 80px;
+  height: 80px;
+  border-top: 1px solid #e4e4e4;
+  font-size: 14px;
+  color: #888;
+  > div {
+    position: relative;
+    vertical-align: top;
+    margin: 5px 0;
+    a {
+      display: inline-block;
+      width: 500px;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #666;
+    }
+    span.date {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

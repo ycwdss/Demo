@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "../fh/moudle/usercenter/message_evaluation";
+.show_img{
+  img{
+    float: left;
+    border: 1px solid #FFFFFF;
+    padding: 1px;
+    width: 64px!important;
+    height: 40px!important;
+    margin-right: 15px;
+  }
+}
+.show_img .img_clicked{
+  border: 1px solid #093;
+}
+.show_big_img{
+  margin:10px 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  text-indent: 0;
+  img{
+    width: 360px!important;
+    height: 225px!important;
+  }
+}

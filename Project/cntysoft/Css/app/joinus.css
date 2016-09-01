@@ -1,0 +1,106 @@
+/*c_gotop*/
+#totop {
+  width: 65px;
+  height: 65px;
+  -webkit-border-radius: 65px;
+  border-radius: 65px;
+  background-color: #ddd;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000; }
+  #totop:hover {
+    background-color: #5272e4; }
+  #totop a {
+    display: block;
+    width: 23px;
+    height: 13px;
+    margin: 26px auto 0;
+    background: url(../../Images/sprite_totop.png) no-repeat; }
+
+.header, .top_about_content {
+  background-color: rgba(255, 255, 255, 0.3);
+  -pie-background: rgba(255, 255, 255, 0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); }
+
+.header {
+  position: absolute; }
+
+.header_logo {
+  background: url("../../Images/sprite_header_logo2.png") no-repeat; }
+
+.header_nav > ul > li a {
+  color: #fff; }
+
+.top_arrow {
+  border-color: #fff transparent transparent transparent; }
+
+.main {
+  width: 100%; }
+  .main .hd {
+    width: 100%;
+    height: 700px;
+    background: url("../../Images/joinus/icon_joinus.jpg?_nosprite") no-repeat;
+    position: relative; }
+    .main .hd .hexagon {
+      position: absolute;
+      right: 50%;
+      top: 100px;
+      margin-right: 120px; }
+    .main .hd .slogan {
+      width: 790px;
+      padding-top: 190px;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff; }
+      .main .hd .slogan h1 {
+        font-size: 70px;
+        padding-bottom: 50px; }
+      .main .hd .slogan p {
+        font-size: 20px;
+        line-height: 42px; }
+  .main .bd {
+    width: 1300px;
+    margin: 0 auto; }
+    .main .bd .item {
+      padding: 50px 0;
+      width: 1270px;
+      width: 1270px;
+      margin: 0 auto; }
+      .main .bd .item li {
+        float: left;
+        font-size: 16px;
+        margin: 0 45px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #333;
+        cursor: pointer; }
+      .main .bd .item .current {
+        color: #4074e1;
+        border-bottom: 2px solid #4074e1; }
+    .main .bd .job_detail {
+      padding: 0px 40px 80px; }
+      .main .bd .job_detail .list {
+        display: none; }
+        .main .bd .job_detail .list h2 {
+          text-align: center;
+          font-size: 16px;
+          color: #000;
+          padding: 10px 0 50px 0; }
+        .main .bd .job_detail .list .ge {
+          text-align: center; }
+          .main .bd .job_detail .list .ge h3 {
+            color: #888;
+            font-size: 14px; }
+          .main .bd .job_detail .list .ge ul li {
+            line-height: 36px;
+            font-size: 14px;
+            color: #333; }
+        .main .bd .job_detail .list .job_require {
+          text-align: center;
+          padding-top: 40px; }
+      .main .bd .job_detail .active {
+        display: block; }
+
+/*# sourceMappingURL=joinus.css.map */

@@ -1,0 +1,107 @@
+.xgt_nav {
+  display: inline-block;
+  margin: 7px auto;
+  height: 27px;
+  line-height: 27px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.xgt_nav li {
+  float: left;
+  position: relative; }
+
+.xgt_nav li a {
+  display: inline-block;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px; }
+
+.xgt_nav li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 98%;
+  z-index: 1;
+  border-bottom: 0 !important;
+  background-color: #fff; }
+
+.xgt_nav li.current a {
+  color: #093;
+  background-color: #fff; }
+
+.xgt_nav li.last_li:before {
+  display: none; }
+
+.moudle_top h1 {
+  font-size: 18px;
+  color: #fff;
+  vertical-align: -19px; }
+
+.zhuanti_list_content {
+  color: #666;
+  padding: 10px; }
+
+.zhuanti_list_content h2, .zhuanti_list_content > span {
+  max-width: 98%;
+  margin: auto;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #666;
+  text-align: center; }
+
+.zhuanti_list_content > span {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 12px; }
+
+.zhuanti_list_content_items {
+  background-color: #fff; }
+
+.zhuanti_list_content_items > a {
+  display: block;
+  width: 100%;
+  color: #666; }
+
+.zhuanti_list_content_img, .zhuanti_list_content_img img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.zhuanti_list_content_text {
+  position: relative;
+  padding: 25px; }
+
+.zhuanti_list_content_text > p {
+  text-indent: 2em;
+  font-size: 12px;
+  line-height: 1.8em;
+  max-height: 7.2em;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; }
+
+.zhuanti_list_content_text > span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute; }
+
+.zhuanti_list_content_text .zhuanti_left_sign {
+  top: 15px;
+  left: 15px;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5; }
+
+.zhuanti_list_content_text .zhuanti_right_sign {
+  bottom: 15px;
+  right: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5; }

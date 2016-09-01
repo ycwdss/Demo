@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import "../lib/mixin";
+
+//登陆弹窗
+.login_popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.login_box {
+  width: 650px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  margin-left: -325px;
+  margin-top: -300px;
+  background-color: #fff;
+  .login_title {
+    width: 590px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 30px;
+    background-color: #e4e4e4;
+    font-size: 20px;
+    color: #666;
+    position: relative;
+    .offbtn {
+      position: absolute;
+      right: 32px;
+      top:20px;
+      display: block;
+      width: 25px;
+      height: 25px;
+      line-height: 1;
+      font-size: 24px;
+      text-align: center;
+      border-radius: 25px;
+      @include  transition(background,0.3s,ease);
+      cursor: pointer;
+      .iconfont{
+        vertical-align: 2px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+//登录区域
+.login_area {
+  width: 380px;
+  margin: 60px auto 0;
+  input {
+    width: 368px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #e4e4e4;
+    padding: 3px 5px;
+    font-size: 14px;
+    @include transition(border, 0.2s, ease);
+  }
+  .fill_account {
+    margin-bottom: 30px;
+  }
+  .error_tips {
+    height: 40px;
+    line-height: 40px;
+    i {
+      font-size: 15px;
+      margin: 0 5px 0 15px;
+    }
+  }
+  .define_btn {
+    width:100%;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    padding:0;
+  }
+}
+
+//其他方式都能
+.other_way {
+  margin-top: 60px;
+  width: 380px;
+  height: 1px;
+  background-color: #e4e4e4;
+  position: relative;
+  text-align: center;
+  span {
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -60px;
+    background-color: #fff;
+    display: inline-block;
+  }
+}
+
+.other_way_icon {
+  margin-top: 15px;
+  text-align: center;
+  a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+  .icon1 {
+    background: url("../../Images/sprite/sprite_login_icon1.png") no-repeat;
+  }
+  .icon2 {
+    background: url("../../Images/sprite/sprite_login_icon2.png") no-repeat;
+  }
+  .icon3 {
+    background: url("../../Images/sprite/sprite_login_icon3.png") no-repeat;
+  }
+}
+
+//注册或找密码
+.register {
+  margin-top: 35px;
+  text-align: center;
+  a {
+    font-size: 14px;
+  }
+  em {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #e4e4e4;
+    margin: 0 15px;
+  }
+}
+

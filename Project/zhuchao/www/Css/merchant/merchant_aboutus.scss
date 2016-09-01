@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import "../fh/lib";
+@import "../fh/moudle/zhengshu_fangda";
+.routeInfo{
+  border: 0;
+  margin: 0 auto;
+}
+.l_main{
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+//关于我们
+.title{
+    position: relative;
+    font-size: 18px;
+    line-height: 40px;
+    height: 18px;
+    overflow: visible;
+    padding-left: 10px;
+    border-left: 2px solid $normalColor;
+    span{
+      position: absolute;
+      top: -12px;
+      left: 0;
+      text-indent: 10px;
+      width: 100%;
+      border-bottom: 1px solid #e4e4e4;
+     }
+}
+.about_us_content{
+  padding: 40px;
+  img{
+    float: left;
+    width: 480px!important;
+    height: 300px!important;
+  }
+}
+.about_text{
+  padding: 0 30px;
+  margin: 10px 0;   
+  font-size: 14px;
+  color: #666666;
+  height: 280px;
+  text-indent: 20px;
+  overflow: hidden;
+  line-height: 28px;
+  @include ell(10);
+}
+//证书
+.certificate{
+  width: 1220px;
+  padding: 40px;
+  img{
+    float: left;
+    width: 281px!important;
+    height: 199px !important;
+    margin-top: 20px;
+    margin-right: 31px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+ .clear_rightM{
+  margin-right: 0!important;
+}
+ //联系我们
+.connect_content{
+  padding: 40px;
+}
+.tel{
+  float: left;
+  width: 300px;
+  p{
+    line-height: 30px;
+    font-size: 13px;
+    color: #666666;
+    span{
+      float: left;
+    }
+  }
+}
+.code{
+  margin-top: 40px;
+  width: 150px;
+  height: 150px;
+}
+.connect_com{
+  margin-right: 40px;
+  h4{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+}
+.address{
+  width: 252px;
+}
+.fenghuang{
+  float: left;
+  width: 340px;
+  >div{
+    width: 340px;
+    height: 500px;
+  }
+}
+.position{
+  float: left;
+  width: 500px;
+  img{
+    display: block;
+    width: 500px;
+  }
+}

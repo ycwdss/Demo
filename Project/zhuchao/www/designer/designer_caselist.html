@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>凤凰筑巢_设计师案例列表页</title>
+    <link href="../Css/designer/designer_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/designer/designer_caselist.css"/>
+</head>
+<body>
+<!--2015-10-15更新首页头部-->
+<!--网站顶部 begin-->
+<div class="module_top">
+    <div class="conWidth clearfix">
+        <a class="goback_index fl" href="../zhuchao/index.html"><span class="top_logo"></span>返回筑巢首页</a>
+        <p class="fl welcome">你好，欢迎来凤凰筑巢</p>
+        <ul class="fr module_topright">
+            <li id="username" class="head1">
+                <a href="../register_login/login.html" target="_blank" class="link_user">超级玛丽</a>
+                <a href="../register_login/register.html" class="link_quit">退出</a>
+            </li>
+            <li class="line"></li>
+            <li class="head2 pull_down" id="mt_personal">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="../usercenter/usercenter_index.html">我的凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <div class="user_head_top clearfix">
+                        <a href="../usercenter/usercenter_index.html" class="fl user_head_top_img"><img src="Images/test_user_head.png" alt=""/></a>
+                        <div class="fl">
+                            <h3><a href="../usercenter/usercenter_index.html">超级玛丽</a></h3>
+                            <a href="../usercenter/usercenter_index.html">等级：<i>v3</i></a>
+                            <a href="../usercenter/usercenter_index.html">积分：<i>200</i></a>
+                        </div>
+                    </div>
+                    <div class="user_message">
+                        <h3><a href="../usercenter/usercenter_allmessages.html">消息<i>3</i></a></h3>
+                        <div class="clearfix">
+                            <a href="../usercenter/usercenter_evaluation.html"><span>待评价：</span><i>10</i></a>
+
+                            <a href="../usercenter/usercenter_inforchange.html"><span>正在退货：</span><i>0</i></a>
+
+                            <a href="../usercenter/usercenter_index.html"><span>待收货：</span><i>0</i></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head3">
+                <a href="" class="link_buy">购物车<i>3</i>件</a>
+            </li>
+            <li class="line"></li>
+            <li class="head4 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">收藏夹</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href="../usercenter/usercenter_prostore.html"><span>收藏的商品:</span><i>10</i></a>
+
+                    <a href="../usercenter/usercenter_storecollect.html"><span>收藏的店铺：</span><i>0</i></a>
+
+                    <a href="../usercenter/usercenter_imgstore.html"><span>收藏的图片：</span><i>0</i></a>
+                    <a href="../usercenter/usercenter_articlestore.html"><span>收藏的文章：</span><i>0</i></a>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head5 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">手机凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href=""><img src="../Images/icon_erweima.png" alt=""/><i>扫码下载凤凰筑巢客户端</i></a>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head6 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">关注凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href=""><img src="../Images/icon_erweima.png" alt=""/><i>关注凤凰筑巢</i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--网站顶部 end-->
+<!--网站logo 搜索 begin-->
+<div class="index_header">
+    <div class=" con_width clearfix">
+        <h1 class="index_header_logo fl clearfix">
+            <a href="/" class="fl">
+                <img src="../Images/index_top_logo.png" alt="凤凰筑巢LOGO">
+            </a>
+            <span class="icon_slogan fl"></span>
+        </h1>
+        <div class="index_header_right fr clearfix">
+            <div class="m_searchWrap">
+                <div class="c_searchItem boxSizing" id="searchItem">
+                    <div id="searchItems">
+                        <i class="c_searchArrow"></i>
+                        <span id="currentItem">建材</span>
+                        <span class="c_notCurrent">攻略</span>
+                    </div>
+                </div>
+                <div class="c_searchInput boxSizin">
+                    <input id="search" class="search_input" placeholder="最精确的家装指南">
+                </div>
+
+                <div class="c_search_button" id="searchClick"><span>搜&nbsp;&nbsp;索</span></div>
+                <div id="searchSuggest">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--网站logo 搜索 end-->
+<!--网站导航栏  begin-->
+<div class="module_nav">
+    <ul class="con_width clearfix clear">
+        <li>
+            <a href="../zhuchao/index.html">首页</a>
+        </li>
+        <li>
+            <a href="../mall/mall_index.html">筑巢商城</a>
+        </li>
+        <li>
+            <a href="../xiaoguotu/xiaoguotu_index.html">效果图<i class="icon_arrow"></i></a>
+            <ul class="subnav hide">
+                <li><a href="../xiaoguotu/xiaoguotu_jubu.html">局部美图</a></li>
+                <li><a href="../xiaoguotu/xiaoguotu_zhengzhuang.html">整装图册</a></li>
+                <li><a href="../xiaoguotu/xiaoguotu_jingxuan.html">精选专题</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../school/school_index.html">装修学院<i class="icon_arrow"></i></a>
+            <ul class="subnav hide">
+                <li><a href="../school/school_list.html">装修流程</a></li>
+                <li><a href="../school/school_list.html">家装选材</a></li>
+                <li><a href="../school/school_list.html">陷阱曝光</a></li>
+                <li><a href="../school/school_list.html">风水解说</a></li>
+            </ul>
+        </li>
+        <li  class="current">
+            <a>找专家<i class="icon_arrow"></i></a>
+            <ul class="subnav hide">
+                <li><a href="../foreman/foreman_foremanlist.html">找工长</a></li>
+                <li><a href="../designer/designer_list.html">找设计师</a></li>
+                <li><a href="../decoration/decoration_index.html">找装修公司</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">凤凰美家</a>
+        </li>
+    </ul>
+</div>
+<!--网站导航栏  end-->
+<!-- 网站路径导航开始 -->
+<div class="routeInfo conWidth clearfix">
+    <a href=""><span>首页</span></a> <span>&gt;</span>
+    <a href="" target="_self"><span>找设计师</span></a> <span>&gt;</span>
+    <a class="now_site" href=""><span>设计师案例列表</span><span class="lis_cancel"></span> </a>
+</div>
+<!-- 网站路径导航结束 -->
+<!--网站主题内容 begin-->
+<div class="designer_main con_width clearfix">
+    <!--左侧内容 begin-->
+    <div class="left_side fl">
+        <!--头像-->
+        <div class="module_designer_head">
+            <img src="Images/test_designer_head.png" alt="设计师余庭豪"/>
+        </div>
+        <!--个人详细信息-->
+        <div class="module_designer_infor">
+            <p><a href="">余庭豪</a></p>
+            <p><span class="renzheng">认</span><em>凤凰筑巢认证设计师</em></p>
+            <div class="infor clearfix">
+                <a class="tl">总访问：<em>6666</em></a>
+                <a class="tr">好评率：<em>100%</em></a>
+                <a class="tl">从业年限：<em>20年</em></a>
+                <a class="tr">籍贯：<em>河南</em></a>
+            </div>
+            <div class="blog_statis clearfix">
+                <span>
+                    <b>粉丝</b>
+                    <em>112</em>
+                </span>
+                <span class="borderLR box">
+                    <b>关注</b>
+                    <em>13</em>
+                </span>
+                <span>
+                    <b>作品</b>
+                    <em>20</em>
+                </span>
+            </div>
+        </div>
+        <!--按钮-->
+        <div class="module_designer_btn clearfix">
+            <a href="" class="fl">找TA设计</a>
+            <a href="" class="fr">+关注</a>
+        </div>
+        <!--设计师信息-->
+        <ul class="blog_infor clearfix">
+            <li class="clearfix"><b>服务项目：</b><span>装修设计</span></li>
+            <li class="clearfix"><b>所属公司：</b><span>择木装饰设计工程公司</span></li>
+            <li class="clearfix"><b>公司地址：</b><span>北环大道10076号浩天</span></li>
+            <li class="clearfix"><b>擅长领域：</b><span>其他  住宅公寓  写字楼 <br/>别墅  酒店宾馆</span></li>
+            <li class="clearfix"><b>擅长风格：</b><span>欧式 简欧 美式 混搭 北欧</span></li>
+        </ul>
+    </div>
+    <!--左侧内容 end-->
+    <!--右侧内容 begin-->
+    <div class="moudle_right fr">
+        <h2>余艇豪的设计作品</h2>
+
+        <div class="moudle_right_item clearfix">
+            <a href="designer_casedetail.html" class="fl item_img box"><img src="Images/test_designer_img1.jpg" alt=""/></a>
+
+            <div class="fl right_item_text">
+                <h3><a href="designer_casedetail.html">绿城玫瑰园简欧风格复式案例 </a></h3>
+                <ul class="clearfix">
+                    <li><b>装修类型：</b><span>家装</span></li>
+                    <li><b>装修方式：</b><span>全包</span></li>
+                    <li><b>户型：</b><span>三居</span></li>
+                    <li><b>房屋面积：</b><span>200.0平米</span></li>
+                    <li><b>装修价格：</b><span>45万</span></li>
+                    <li><b>装修风格：</b><span>现代</span></li>
+                </ul>
+            </div>
+            <!--按钮-->
+            <div class="fr moudle_right_btn">
+                <a href="">收藏设计</a>
+                <a href="">预约咨询</a>
+            </div>
+        </div>
+        <div class="moudle_right_item clearfix">
+            <a href="designer_casedetail.html" class="fl item_img box"><img src="Images/test_designer_img1.jpg" alt=""/></a>
+
+            <div class="fl right_item_text">
+                <h3><a href="designer_casedetail.html">绿城玫瑰园简欧风格复式案例 </a></h3>
+                <ul class="clearfix">
+                    <li><b>装修类型：</b><span>家装</span></li>
+                    <li><b>装修方式：</b><span>全包</span></li>
+                    <li><b>户型：</b><span>三居</span></li>
+                    <li><b>房屋面积：</b><span>200.0平米</span></li>
+                    <li><b>装修价格：</b><span>45万</span></li>
+                    <li><b>装修风格：</b><span>现代</span></li>
+                </ul>
+            </div>
+            <!--按钮-->
+            <div class="fr moudle_right_btn">
+                <a href="">收藏设计</a>
+                <a href="">预约咨询</a>
+            </div>
+        </div>
+
+        <!--分页布局-->
+        <div class="page">
+        <a page="1">首页</a>
+        <a href="/category/9/page/1.html">&lt; 上一页</a>
+        <a class="current" href="/category/9/page/1.html">1</a>
+        <a class="" href="/category/9/page/3.html">3</a>
+        <a class="" href="/category/9/page/4.html">4</a>
+        <a class="" href="/category/9/page/5.html">5</a>
+        <a class="" href="/category/9/page/6.html">6</a>
+        <a href="/category/9/page/2.html">下一页 &gt;</a>
+        <a page="1">尾页</a>
+        </div>
+    </div>
+    <!--右侧内容 end-->
+</div>
+<!--网站主题内容 end-->
+<!--网站底部  begin-->
+<div class="l_footer">
+    <div class="m_footerInner conWidth">
+        <p class="footer_nav"><a>关于我们</a> ｜ <a>联系我们</a> ｜ <a>商家入驻</a> ｜ <a>诚聘英才</a> ｜<a>免责声明</a> ｜ <a>精选专题 </a></p>
+
+        <p class="c_copy">&copy;2014-2015凤凰筑巢保留所有权利<br/>
+            Copyright &copy; 2014- 2015 Cntysoft.All Rights. 豫ICP备14029737号
+        </p>
+
+        <div class="icon_erweima">
+            <img src="../Images/icon_erweima.png" alt="二维码"/>
+        </div>
+    </div>
+</div>
+<!--网站底部  end-->
+<script data-main="../pc/requireenter" id="require" app="com" src="../pc/lib/require.js"></script>
+</body>
+</html>

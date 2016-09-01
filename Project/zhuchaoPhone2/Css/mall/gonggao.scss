@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.gonggao_list{
+  margin-top: 10px;
+}
+.gonggao_ele{
+  padding: 0 10px;
+  background: #fff;
+  img{
+    float: left;
+    height: 80px;
+    width:31%;
+    max-width: 122px;
+  }
+}
+.gonggao_left{
+  float: left;
+  margin-right: 10px;
+  width: 1px;
+  height: 100px;
+  span{
+    display: block;
+    margin:36px 0 36px -5px;
+    width: 9px;
+    height: 9px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border:1px solid #e4e4e4;
+    background: #fff;
+    i{
+      display: block;
+      margin: 2px;
+      width: 5px;
+      height: 5px;
+      -webkit-border-radius:50%;
+      -moz-border-radius:50%;
+      border-radius:50%;
+      background: #e4e4e4;
+    }
+  }
+}
+.gonggao_right{
+  padding:10px 0;
+  height: 80px;
+  img{
+    float: left;
+    height: 80px;
+    max-width: 128px;
+    margin-right:10px;
+  }
+  h4{
+    height: 17px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    font-size: 1.3rem;
+    line-height: 17px;
+    color: #333;
+  }
+  p{
+    height:32px;
+    line-height: 16px;
+    color: #666;
+    font-size: 1.2rem;
+  }
+  p:last-child{
+    margin-top: 8px;
+    height: 15px;
+    span{
+      margin-right: 20px;
+      color: #888;
+    }
+  }
+}
+.gray{
+  background: #f8f8f8;
+}

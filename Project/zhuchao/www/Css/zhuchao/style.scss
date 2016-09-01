@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import "../fh/reset";
+@import "../fh/commonclass";
+@import "../fh/moudle/footer";
+@import "../fh/moudle/totop";
+
+//三个顶部栏样式
+@import "../fh/moudle/module_top";
+@import "../fh/moudle/module_nav";
+@import "../fh/moudle/new_top/search";
+sup{
+  font-size: 12px;
+}
+/*erweima_block*/
+.erweima_block{
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top:500px;
+  margin-left:684px;
+  z-index: 999;
+  width: 118px;
+  height: 163px;
+  background-color: #fff;
+  border: 1px solid #093;
+}
+.erweima_block i img{
+  width: 96px;
+  height: 96px;
+}
+.erweima_block p{
+  height: 50px;
+  width: 70px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  color:#666;
+}
+.offbtn{
+  position: absolute;
+  top:4px;
+  right: 5px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-image: url(../../Images/sprite_offbtn.png);
+}
+//erweima_hide
+.erweima_hide{
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  right:-42px;
+  bottom: 295px;
+  z-index: 999;
+  width: 41px;
+  height: 92px;
+}
+.erweima_hide i{
+  display: block;
+  width: 41px;
+  height: 92px;
+  background: url(../../../Images/pc/icon_erweima_open_btn.png) no-repeat;
+}
+@media only screen and (min-width: 1617px) {
+  .erweima_block{
+    display: block;
+  }
+  .erweima_hide{
+    display: block;
+  }
+}
+
+//商家入驻
+.join{
+  position: fixed;
+  left: 20px;
+  top: 300px;
+  z-index: 999;
+  a{
+    display: inline-block;
+    padding:17px 10px;
+    width: 16px;
+    max-height: 110px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #093;
+    position: relative;
+    @include transition(0.2);
+    i{
+      position: absolute;
+      top: -10px;
+      left: 8px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../../Images/icon_join_btn.png) no-repeat;
+    }
+    &:hover{
+      background: #048b31;
+      -webkit-box-shadow: 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px #ccc;
+    }
+  }
+}

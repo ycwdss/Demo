@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pro_list</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/mall/pro_list.css">
+</head>
+<body>
+<!--站点指示-->
+<div class="site conwidth">
+    <a href="#">首页</a>
+    <span>&gt;</span>
+    <a>生鲜肉类</a>
+</div>
+<div class="pro_info clearfix">
+
+</div>
+<!--内容-->
+<div class="l_main conwidth">
+    <!--列表begin-->
+    <div class="list">
+        <div class="m_list clearfix">
+            <div class="list_intro fl">产品类型</div>
+            <div class="list_choice fl">
+                <span class="main_bg">全部</span>
+                <span>牛肉</span><span>猪肉</span><span>羊肉</span>
+                <span>禽肉</span> <span>牛肉</span><span>猪肉</span><span>羊肉</span>
+                <span>禽肉</span>
+                <span>牛肉</span><span>猪肉</span><span>羊肉</span>
+                <span>禽肉</span> <span>禽肉</span> <span>禽肉</span> <span>禽肉</span> <span>禽肉</span> <span>禽肉</span>
+            </div>
+        </div>
+        <div class="m_list clearfix">
+            <div class="list_intro fl">商品品牌</div>
+            <div class="list_choice fl">
+                <span class="main_bg">全部</span><span>众品</span>
+                <span>双汇</span>
+            </div>
+        </div>
+        <div class="m_list m_list_price no_bb clearfix">
+            <div class="list_intro fl">商品价格</div>
+            <div class="list_choice  fl">
+                <span class="main_bg">全部</span><span>0-29</span>
+                <span>30-49</span><span>50-69</span> <span>70以上</span>
+            </div>
+            <div class="list_price fl">
+                <input type="text" onkeyup="value=value.replace(/[^\d]/g,'')">
+                <span>&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+                <input type="text" onkeyup="value=value.replace(/[^\d]/g,'')">
+                <span class="list_price_btn">确认</span>
+            </div>
+        </div>
+    </div>
+    <!--列表end-->
+    <div class="pro_list clearfix">
+        <div class="pro_card">
+        <a href="pro_info.html" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+        <a href="pro_info.html" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+        <p class="main pro_card_price">￥188.00 </p>
+    </div>
+        <div class="pro_card">
+            <a href="pro_info.html" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+            <a href="pro_info.html" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+            <p class="main pro_card_price">￥188.00 </p>
+        </div>
+        <div class="pro_card">
+            <a href="pro_info.html" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+            <a href="pro_info.html" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+            <p class="main pro_card_price">￥188.00 </p>
+        </div>
+        <div class="pro_card no_mr">
+            <a href="pro_info.html" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+            <a href="pro_info.html" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+            <p class="main pro_card_price">￥188.00 </p>
+        </div>
+        <div class="pro_card">
+            <a href="pro_info.html" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+            <a href="pro_info.html" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+            <p class="main pro_card_price">￥188.00 </p>
+        </div>
+        <div class="pro_card">
+            <a href="pro_info.html" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+            <a href="pro_info.html" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+            <p class="main pro_card_price">￥188.00 </p>
+        </div>
+        <div class="pro_card">
+            <a href="pro_info.html" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+            <a href="pro_info.html" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+            <p class="main pro_card_price">￥188.00 </p>
+        </div>
+        <div class="pro_card no_mr">
+        <a href="pro_info.html" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+        <a href="pro_info.html" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+        <p class="main pro_card_price">￥188.00 </p>
+    </div>
+    </div>
+    <!--分页-->
+    <div class="page_list ">
+        <p>
+            <a class="prev_page" href="#">上一页</a>
+            <a class="main_bg" href="#">1</a>
+            <a class="next_page no_marginR" href="#">下一页</a>
+            <span>&nbsp;共2页&nbsp;到第</span>
+            <input type="text" onkeyup="value=value.replace(/[^\d/g]/,'')">
+            <span>页</span>
+            <span class="page_submit mainbg_hover">确认</span>
+        </p>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="mall/pro_list" src="../../Js/lib/require.js"></script>
+</body>
+</html>

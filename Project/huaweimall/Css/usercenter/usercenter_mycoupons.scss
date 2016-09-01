@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+@import "../model/site_nav";
+@import "../model/usercenter";
+@import "../model/recommend_shps";
+//右侧显示区域-
+.mr {
+  width: 940px;
+  overflow: hidden;
+  .title {
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid #dedede;
+    h1{
+      font-size: 24px;
+    }
+    ul{
+      li{
+        float: left;
+        a{
+          display: block;
+          color: #888;
+          font-size: 14px;
+          padding: 0 13px;
+        }
+      }
+      .current{
+        a{
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+  }
+
+  // -我的优惠券=
+  .no_use,.used,.past_due{
+    margin-top: 20px;
+    .co_code,.co_type{
+      width:200px;
+    }
+    .co_reduce{
+      width: 100px;
+    }
+    .co_date{
+      width: 152px;
+    }
+    .co_require{
+    width: 142px;
+    }
+    .co_operate{
+      width: 140px;
+      border-right: none;
+    }
+
+  }
+  .used,.past_due{
+    display: none;
+  }
+  .hd{
+    margin-right: -1px;
+    li{
+      float: left;
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 10px 0;
+      em{
+        font-size: 14px;
+        color: #888;
+        display: inline-block;
+        border-right: 1px solid #dedede;
+      }
+    }
+
+  }
+  .bd{
+    display: table;
+  }
+  .bd_box{
+    display: table-row;
+    margin-right: -1px;
+    li{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #dedede;
+      border-right: 1px solid #dedede;
+      a{
+        color: #36c;
+      }
+    }
+  }
+}

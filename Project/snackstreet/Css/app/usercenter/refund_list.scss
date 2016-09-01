@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/pagelist";
+@import "../../module/empty";
+@import "../../module/usercenter";
+@import "../../module/empty";
+
+.right_content{
+  padding:0 20px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  >h3{
+    font-size:16px;
+    line-height: 50px;
+    color: #333;
+    border-bottom:1px solid #e4e4e4;
+    a{
+      display: inline-block;
+      margin: 0 15px;
+    }
+  }
+}
+.order_num{
+  width: 160px;
+}
+.order_pro{
+  width: 200px;
+}
+.order_time{
+  width: 140px;
+}
+.order_style{
+  width: 140px;
+}
+.order_state{
+  width:140px;
+}
+.order_detail{
+  width: 145px;
+}
+.order_nav{
+  padding-top: 10px;
+  font-size: 14px;
+  text-align:center;
+  line-height:40px;
+  border-bottom:1px dashed #e4e4e4;
+  >span{
+    float: left;
+  }
+}
+.refund_detail{
+  border-bottom:1px dashed #e4e4e4;
+  >span{
+    float: left;
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    color: #333;
+    height:60px;
+    @include ell(1);
+  }
+}
+.empty{
+  >div{
+    padding-left: 70px;
+    i{
+      top: 15px;
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+}

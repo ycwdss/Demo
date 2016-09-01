@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="Css/mobile_moudle/reset.css"/>
+    <link rel="stylesheet" href="Css/zhuchao/index.css"/>
+    <link rel="stylesheet" href="Css/swiper.min.css"/>
+    <style>
+        .container img{
+            width: 500px!important;
+            height: 300px;
+        }
+        .container{
+            position: relative;
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000000;
+            overflow: hidden;
+        }
+        .my-wrapper{
+            /*display: flex;*/
+            /*width: 1600px;*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" style="top:200px;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ><img src="Images/mobile/banner01.png" alt="banner图片"/></div>
+            <div class="swiper-slide" style="width: 200px;"><img src="Images/mobile/test_detail_img1.jpg" alt="banner图片"/></div>
+            <div class="swiper-slide" style="width: 200px;"><img src="Images/mobile/banner01.png" alt="banner图片"/></div>
+            <div class="swiper-slide" style="width: 200px;"><img src="Images/mobile/test_detail_img1.jpg" alt="banner图片"/></div>
+            <div class="swiper-slide" style="width: 200px;"><img src="Images/mobile/banner01.png" alt="banner图片"/></div>
+            <div class="swiper-slide" style="width: 200px;"><img src="Images/mobile/test_detail_img1.jpg" alt="banner图片"/></div>
+            <div class="swiper-slide" style="width: 200px;"><img src="Images/mobile/test_detail_img1.jpg" alt="banner图片"/></div>
+            <div class="swiper-slide" style="width: 200px;"><img src="Images/mobile/test_detail_img1.jpg" alt="banner图片"/></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <!--<div class="swiper-pagination"></div>-->
+    </div>
+<style>
+    .swiper-slide p{
+        position: absolute;top:20px;left:100px;
+    }
+</style>
+<script src="mobile/zepto.min.js"></script>
+<script src="mobile/swiper.min.js"></script>
+<script src="mobile/lib/iscroll.js"></script>
+    <
+<script>
+    var mySwiper = new Swiper ('.container', {
+//        loop: true,
+//        slidesPerView:5,
+        autoplay:1000,
+        effect : 'cube',
+//        wrapperClass:'my-wrapper',
+//        slideClass:'my-slide'
+//        // 如果需要分页器
+//        pagination: '.swiper-pagination',
+//        direction:'horizontal',
+//        parallax : true
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,810 @@
+@charset "UTF-8";
+body {
+  background-color: #F8F8F8; }
+
+.cart_box {
+  margin-top: 20px; }
+  .cart_box h3 {
+    font-size: 18px;
+    padding: 0 25px;
+    line-height: 60px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #e4e4e4; }
+    .cart_box h3 span {
+      font-size: 14px; }
+
+.col {
+  display: table-cell;
+  vertical-align: middle; }
+
+.good_check {
+  width: 60px;
+  padding-left: 20px; }
+  .good_check i {
+    vertical-align: -3px; }
+
+.good_name {
+  width: 510px; }
+
+.good_price {
+  width: 100px;
+  text-align: center; }
+
+.good_num {
+  width: 210px;
+  text-align: center; }
+
+.good_total {
+  width: 100px;
+  text-align: center; }
+
+.good_action {
+  padding-left: 64px;
+  width: 100px;
+  text-align: center; }
+  .good_action a {
+    color: #b8b8b8;
+    display: block;
+    width: 50px;
+    line-height: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto 10px;
+    border: 1px solid #e4e4e4;
+    font-size: 12px; }
+
+.good_title {
+  height: 50px;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 14px; }
+  .good_title > div {
+    height: 50px; }
+  .good_title .good_name {
+    padding-left: 180px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.good_items {
+  padding: 20px 0;
+  margin: 0 20px -1px;
+  border-bottom: 1px dashed #e4e4e4;
+  font-size: 14px; }
+  .good_items .good_name {
+    width: 570px; }
+
+.good_name .good_img {
+  width: 100px;
+  height: 100px; }
+  .good_name .good_img img {
+    display: block;
+    width: 100px;
+    height: 100px; }
+.good_name .good_test {
+  max-width: 350px;
+  padding-left: 12px;
+  color: #666; }
+  .good_name .good_test p:first-child {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 2.8em;
+    overflow: hidden; }
+  .good_name .good_test p {
+    font-size: 12px;
+    color: #888; }
+
+.checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+  border: 1px solid #d6d6d6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+  .checkbox:before {
+    content: "\e624";
+    font-family: "iconfont" !important;
+    position: absolute;
+    top: -4px;
+    left: 1px;
+    display: none; }
+
+.checkbox.checked:before {
+  display: block; }
+
+.good_num_box {
+  height: 30px;
+  width: 105px;
+  margin: 0 auto;
+  border: 1px solid #e4e4e4;
+  position: relative; }
+  .good_num_box a {
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-table;
+    font-size: 15px;
+    vertical-align: 1px;
+    color: #666;
+    background-color: #f5f5f5; }
+  .good_num_box .t_num {
+    width: 39px;
+    height: 30px;
+    line-height: 30px;
+    border-right: 0;
+    border-left: 0;
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    vertical-align: 2px; }
+  .good_num_box .t_minus {
+    left: 0;
+    border-right: 1px solid #e4e4e4; }
+  .good_num_box .t_add {
+    right: 0;
+    border-left: 1px solid #e4e4e4; }
+
+.new_addr {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; }
+
+.new_addr_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 500px;
+  height: 450px;
+  background: #FFFFFF; }
+  .new_addr_content > h2 {
+    position: relative;
+    font-size: 18px;
+    color: #666;
+    line-height: 50px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center; }
+    .new_addr_content > h2 i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+
+.new_addr_container {
+  margin: 40px auto 0;
+  width: 430px; }
+
+.new_addr_ele {
+  position: relative; }
+  .new_addr_ele > span {
+    float: left;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: right; }
+  .new_addr_ele .addr_input {
+    float: left;
+    font-size: 0; }
+    .new_addr_ele .addr_input > input {
+      width: 350px;
+      height: 40px;
+      padding: 4px 10px;
+      line-height: 20px;
+      font-size: 13px;
+      background-color: #f8f8f8;
+      border: 1px solid #f8f8f8;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .new_addr_ele .addr_input p {
+      line-height: 20px;
+      height: 20px;
+      font-size: 12px;
+      color: red;
+      visibility: hidden; }
+
+.addr_tip {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 180px;
+  line-height: 30px; }
+
+.set_default {
+  height: 20px;
+  padding-left: 90px; }
+  .set_default p {
+    float: left;
+    line-height: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: -10px; }
+    .set_default p span {
+      float: left;
+      margin-top: 3px;
+      margin-right: 5px;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #aaa;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+    .set_default p i {
+      display: none;
+      margin: 3px;
+      width: 6px;
+      height: 6px;
+      background: #aaa;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+  .set_default .addr_checked i {
+    display: block; }
+
+.submit {
+  text-align: center; }
+  .submit span, .submit input {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 20px;
+    border: 1px solid transparent;
+    font-family: '\5fae\8f6f\96c5\9ed1';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.select_btn {
+  width: 95px;
+  margin-right: 12px; }
+  .select_btn ul {
+    width: 95px; }
+
+.addr_input .drop_menu {
+  float: none;
+  display: inline-block;
+  margin-right: 10px;
+  width: 110px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  background-color: #f8f8f8;
+  border-color: #f8f8f8; }
+  .addr_input .drop_menu .drop_list li {
+    height: 40px; }
+
+.drop_menu {
+  float: left;
+  margin-right: 5px;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e4e4e4;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .drop_menu .drop_show {
+    padding-right: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .drop_menu .active {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .drop_menu .drop_arrow, .drop_menu .drop_arrow:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    border: 8px solid transparent;
+    border-top-color: #ccc;
+    webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%; }
+  .drop_menu .drop_arrow:after {
+    margin-top: -10px;
+    right: -8px;
+    border-top-color: #fff; }
+  .drop_menu .drop_list {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    z-index: 9999;
+    width: inherit;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4; }
+    .drop_menu .drop_list li {
+      padding-left: 2px;
+      height: inherit;
+      line-height: inherit;
+      text-align: center;
+      border: 1px solid #e4e4e4;
+      border-bottom: 0;
+      word-break: break-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+
+/*
+<div class="drop_menu ">
+<div class="drop_show">省份</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>河南省</li>
+<li>安徽安徽安徽安徽省</li>
+<li>山东省</li>
+<li>江西省</li>
+<li>广西省</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu ">
+<div class="drop_show">城市</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>郑州市</li>
+<li>开封市</li>
+<li>安阳市</li>
+<li>安阳市</li>
+<li>安阳市</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu">
+<div class="drop_show">地区</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>金水区</li>
+<li>管城区</li>
+<li>二七区</li>
+<li>高新区</li>
+<li>惠济区</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>*/
+.buy_content {
+  padding-top: 23px; }
+  .buy_content .list {
+    margin-top: 20px;
+    border: 1px solid #e4e4e4;
+    background-color: #fff; }
+  .buy_content .list:last-child {
+    border-bottom: 0; }
+
+.list_header {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  height: 50px;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #fcfcfc; }
+  .list_header h3 {
+    float: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold; }
+
+.btn {
+  width: 235px;
+  text-align: center;
+  margin-right: 14px;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  cursor: pointer;
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  vertical-align: top; }
+  .btn:hover {
+    color: #3c619e;
+    border-color: #f00; }
+
+.btn.current {
+  color: #3c619e;
+  border-color: #f00; }
+
+input.text {
+  width: 300px;
+  padding: 4px 7px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #e4e4e4;
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  input.text:focus {
+    border-color: #f00; }
+
+.address_infor_box {
+  padding: 0 20px;
+  height: 142px;
+  overflow: hidden; }
+
+.append_address {
+  cursor: pointer; }
+
+.address_infor_box.current {
+  height: auto; }
+
+.address_infor_list {
+  float: left;
+  padding: 10px 20px;
+  width: 227px;
+  margin: 0 10px 20px;
+  border: 1px solid #e4e4e4;
+  -moz-transition: border-color 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: border-color 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
+  color: #666; }
+  .address_infor_list .name_phone {
+    font-size: 16px; }
+    .address_infor_list .name_phone .name {
+      margin-right: 15px;
+      max-width: 103px;
+      overflow: hidden; }
+  .address_infor_list .address_text {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 12px;
+    height: 38px;
+    overflow: hidden; }
+  .address_infor_list .user_action {
+    color: #999; }
+    .address_infor_list .user_action i {
+      font-size: 16px;
+      cursor: pointer; }
+    .address_infor_list .user_action .icon-shanchu {
+      font-size: 17px;
+      margin-left: 5px; }
+    .address_infor_list .user_action .fl {
+      cursor: pointer; }
+
+.address_infor_list.current, .address_infor_list:hover {
+  border-color: #f00; }
+  .address_infor_list.current .name_phone, .address_infor_list:hover .name_phone {
+    color: #3c619e; }
+
+.read_more {
+  width: 105px;
+  height: 18px;
+  line-height: 18px;
+  padding: 5px 30px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #999; }
+  .read_more:hover {
+    color: #f00; }
+
+.read_more.current i {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.list_contnet {
+  padding: 0 20px 20px; }
+
+.invoice_infor span {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px; }
+
+.list_goods .list_header {
+  margin-bottom: 0; }
+
+.goods_infor {
+  padding: 0 20px;
+  width: 800px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .goods_infor .list_items {
+    padding: 20px 0;
+    border-top: 1px dotted #e4e4e4; }
+  .goods_infor .list_items:first-child {
+    border-top: 0; }
+  .goods_infor .list_name {
+    width: 420px; }
+  .goods_infor .list_num {
+    padding-left: 94px;
+    width: 56px;
+    line-height: 100px;
+    font-size: 14px; }
+  .goods_infor .list_total {
+    width: 188px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px; }
+  .goods_infor .list_good_img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px; }
+    .goods_infor .list_good_img img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .goods_infor .list_good_text {
+    width: 280px;
+    text-align: left; }
+    .goods_infor .list_good_text h3 {
+      margin-bottom: 22px;
+      height: 40px;
+      overflow: hidden; }
+    .goods_infor .list_good_text p {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #888; }
+
+.message {
+  padding: 0 20px;
+  width: 398px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-left: 1px solid #e4e4e4; }
+  .message h4 {
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold; }
+  .message input[type="text"] {
+    width: 344px;
+    border-color: #f8f8f8;
+    background-color: #f8f8f8; }
+  .message textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    border: 1px solid #f8f8f8;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 5px 10px;
+    outline-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #f8f8f8; }
+  .message span {
+    color: #666;
+    font-size: 12px; }
+  .message .btn {
+    display: block;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+.coupon {
+  padding: 10px;
+  font-size: 14px;
+  position: relative; }
+  .coupon i {
+    position: absolute;
+    right: -5px;
+    top: -1px;
+    -moz-transition: all 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: all 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+
+.coupon.current i {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.coupon_item {
+  width: 100%;
+  z-index: 10; }
+  .coupon_item li.coupon_list {
+    float: left;
+    padding: 4px 8px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px dotted #ff8686;
+    text-align: center;
+    color: #666;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #fffcfc \0;
+    background-color: rgba(252, 230, 226, 0.1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: border-color 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: border-color 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease; }
+    .coupon_item li.coupon_list .coupon_num {
+      float: left;
+      line-height: 40px;
+      padding-right: 5px;
+      font-size: 18px;
+      color: #f00;
+      font-weight: bold;
+      border-right: 1px dotted #ff8686; }
+    .coupon_item li.coupon_list .coupon_text {
+      float: right;
+      padding-left: 5px;
+      text-align: left; }
+      .coupon_item li.coupon_list .coupon_text p {
+        max-width: 102px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+  .coupon_item li.coupon_list:hover, .coupon_item li.coupon_list.current {
+    border: 1px solid #f00;
+    background-color: #fdf2f0 \0;
+    background-color: rgba(252, 230, 226, 0.5); }
+
+.list_money {
+  padding-top: 20px; }
+
+.list_money .whole > li {
+  display: block;
+  padding-left: 100px;
+  line-height: 2;
+  position: relative;
+  zoom: 1;
+  font-size: 14px;
+  text-align: right; }
+  .list_money .whole > li label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    color: #757575;
+    zoom: 1; }
+    .list_money .whole > li label span.val {
+      zoom: 1; }
+
+.send_address {
+  padding: 23px 20px 23px 675px;
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+  background-color: #fcfcfc;
+  text-align: left; }
+  .send_address p {
+    width: 500px;
+    font-size: 14px;
+    line-height: 2;
+    color: #000; }
+
+.submit_box {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 14px;
+  color: #888; }
+  .submit_box em {
+    font-size: 24px; }
+  .submit_box .submit_btn {
+    margin-left: 20px;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #f55;
+    font-size: 16px;
+    text-align: center; }
+
+.pay_offbtn {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 25px;
+  -moz-transition: background 0.3s ease;
+  /* Firefox 4 */
+  -webkit-transition: background 0.3s ease;
+  /* Safari 和 Chrome */
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  cursor: pointer; }
+  .pay_offbtn i {
+    width: 13px;
+    height: 13px;
+    font-size: 13px; }
+
+/*# sourceMappingURL=submit_order.css.map */

@@ -1,0 +1,52 @@
+.site {
+  height: 40px;
+  line-height: 40px; }
+  .site li {
+    float: left;
+    color: #666; }
+  .site .arrow {
+    font-family: \5b8b\4f53;
+    margin: 0 5px; }
+
+.support_left .cates {
+  width: 210px;
+  border: 1px solid transparent;
+  padding: 20px; }
+  .support_left .cates .cates_item {
+    list-style: none; }
+    .support_left .cates .cates_item h3 {
+      color: #333;
+      font-size: 16px;
+      text-align: center;
+      height: 36px;
+      line-height: 36px; }
+    .support_left .cates .cates_item ol {
+      width: 100%;
+      list-style: none;
+      margin: 10px 0; }
+      .support_left .cates .cates_item ol li a {
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        display: inline-block;
+        text-align: center;
+        font-size: 14px; }
+        .support_left .cates .cates_item ol li a:hover {
+          background-color: #e4e4e4; }
+      .support_left .cates .cates_item ol li:last-child {
+        border-bottom: 0; }
+
+.support_right {
+  width: 1028px;
+  min-height: 586px; }
+  .support_right .right_side {
+    min-height: 586px;
+    margin: 20px 20px 0; }
+    .support_right .right_side h2 {
+      font-size: 16px; }
+    .support_right .right_side h3 {
+      font-size: 14px; }
+    .support_right .right_side p {
+      color: #666; }
+
+/*# sourceMappingURL=support.css.map */

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import "../fh/reset";
+.login_content {
+  position: fixed;
+  padding: 0 50px;
+  width: 370px;
+  height: 400px;
+  background: #FFFFFF;
+  z-index: 9999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.45);
+  border: 2px solid #e4e4e4;
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 94px;
+  }
+  input {
+    font-family: "Microsoft YaHei" !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 13px;  
+    font-weight: 500;
+    padding: 5px 10px;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 30px;
+    border: 1px solid #e4e4e4;
+    &:focus {
+      -webkit-transition: 0.3s time;
+      -moz-transition: 0.3s time;
+      -ms-transition: 0.3s time;
+      -o-transition: 0.3s time;
+      transition: 0.3s time;
+      border: 1px solid #093;
+    }
+  }
+}
+.login_content .forget {
+  position: relative;
+  input {
+    float: left;
+    width: 15px;
+    height: 15px !important;
+    margin-top: 2px;
+  }
+  span {
+    float:left;
+    color: #666;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.login_content .button{
+  height: 40px;
+  background: #093;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-color: #093;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s time;
+  -moz-transition: 0.2s time;  
+  -ms-transition: 0.2s time;
+  -o-transition: 0.2s time;
+  transition: 0.2s time;
+  &:hover{
+    background: #048b31;
+    -webkit-box-shadow: 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+  }
+}
+.error{
+  border:1px solid red !important;
+}
+.tip{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color:red;
+  padding-left:5px;
+}
+.register{
+  font-size: 13px;
+  span{
+    float: right;
+  }
+  a{
+    float: right;
+    right: 0;
+    color: #093;
+  }
+  a:hover{
+    color: #f60;
+  }
+}
+.no_marginB{
+  margin-bottom: 0!important;
+}

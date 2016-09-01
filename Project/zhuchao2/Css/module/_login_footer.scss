@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+//底部
+.login_footer {
+  width: 1300px;
+  margin:50px auto 0;
+}
+//版权声明
+.copy_nav{
+  width: 500px\9;
+  margin:0  auto\9;
+  text-align: center;
+  padding-bottom: 10px;
+  li{
+    width: 71px;
+    height: 14px;
+    display: inline-block;
+    float:left\9;
+    font-size: 0;
+    margin-left: -2px;
+    a{
+      float: left;
+      width: 70px;
+      height: 14px;
+      line-height: 14px;
+      font-size: 12px;
+      color: #666;
+    }
+    span{
+      width: 1px;
+      height: 12px;
+      margin-top: 2px;
+      background: #ddd;
+      float: left;
+      overflow: hidden;
+    }
+  }
+}
+.copyright,.copy_icp{
+  text-align: center;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #999;
+}
+.copy_icp{
+  margin-top: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: #999;
+}

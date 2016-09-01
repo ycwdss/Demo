@@ -1,0 +1,85 @@
+.wrap {
+  height: 100%; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.error {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: url("../../Images/mobile/404.png") no-repeat;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  background-position: center;
+  background-color: #093; }
+
+/*.error img{*/
+/*display: block;*/
+/*/!*width: 85%;*!/*/
+/*height: 100%;*/
+/*margin: 0 auto;*/
+/*}*/
+.error_link {
+  position: absolute;
+  width: 50%;
+  top: 70%; }
+
+.link_left {
+  left: 0; }
+
+.link_right {
+  right: 0; }
+
+.m_left, .m_right {
+  position: relative;
+  margin: 0 auto;
+  width: 110px;
+  height: 40px;
+  /*border: 1px solid #ffffff;*/
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 40px;
+  z-index: 3; }
+
+.m_left span, .m_right span {
+  margin-left: 35px;
+  opacity: 0.8; }
+
+.m_left:before, .m_right:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 1px solid #ffffff;
+  opacity: 0.5;
+  z-index: 1; }
+
+.m_left:after {
+  position: absolute;
+  width: 22px;
+  height: 21px;
+  content: "";
+  left: 9px;
+  top: 10px;
+  background: url("../../Images/mobile/404icon.png") 0 0;
+  -webkit-background-size: 50px;
+  background-size: 50px;
+  /*background: #000;*/
+  z-index: 3; }
+
+.m_right:after {
+  position: absolute;
+  width: 22px;
+  height: 21px;
+  content: "";
+  left: 9px;
+  top: 10px;
+  background: url("../../Images/mobile/404icon.png")-25px 0;
+  -webkit-background-size: 50px;
+  background-size: 50px;
+  /*background: #000;*/
+  z-index: 3; }

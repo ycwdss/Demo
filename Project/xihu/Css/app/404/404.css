@@ -1,0 +1,203 @@
+@charset "UTF-8";
+html {
+  width: 100%;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  min-width: 1100px;
+  height: 100%;
+  margin: 0;
+  background-color: #f8f8f8;
+  color: #666;
+  -webkit-overflow-scrolling: touch;
+  font: 12px/1.5 "Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif; }
+
+* {
+  word-break: break-all; }
+
+pre, html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, textarea, p, span, table, th, td, form, img, div {
+  margin: 0;
+  padding: 0;
+  word-break: break-all; }
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word; }
+
+.fontsong {
+  font-size: 12px;
+  font-family: "SimSun",serif; }
+
+img, a, input, button {
+  border: none;
+  outline: none;
+  background: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, b {
+  font-weight: normal;
+  cursor: hand; }
+
+em, i, b {
+  font-style: normal; }
+
+ul, ol {
+  list-style: none; }
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+/**
+ * 文本对齐方式，左中右两端
+ */
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+.tl {
+  text-align: left !important; }
+
+.tc {
+  text-align: center !important; }
+
+.tr {
+  text-align: right !important; }
+
+/**
+ * 文本强制不换行
+ */
+.text_nowrap {
+  white-space: nowrap;
+  word-wrap: normal; }
+
+/**
+ * 文本强制换行
+ */
+.text_break {
+  white-space: normal;
+  word-wrap: break-word; }
+
+/**
+ * 文字溢出显示省略号
+ * 1. Opera 9-10.6
+ * 2. Chrome 21+ bug https://bugs.webkit.org/show_bug.cgi?id=121902
+ */
+.text_ellipsis {
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  /* 1 */
+  text-overflow: ellipsis;
+  text-align: left;
+  /* 2 */ }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.noselect * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.hide {
+  display: none; }
+
+.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-filter: gray;
+          filter: gray; }
+
+.conwidth {
+  width: 1100px;
+  margin: 0 auto; }
+
+.no_before:before {
+  display: none !important; }
+
+.no_after:after {
+  display: none !important; }
+
+.no_mt {
+  margin-top: 0 !important; }
+
+.no_mr {
+  margin-right: 0 !important; }
+
+.no_mb {
+  margin-bottom: 0 !important; }
+
+.no_ml {
+  margin-left: 0 !important; }
+
+.no_bt {
+  border-top: 0 !important; }
+
+.no_br {
+  border-right: 0 !important; }
+
+.no_bb {
+  border-bottom: 0 !important; }
+
+.no_bl {
+  border-left: 0 !important; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative; }
+
+.no_find {
+  position: absolute;
+  top: 50%;
+  margin-top: -123px;
+  width: 100%;
+  height: 246px;
+  background: url("../../../Images/icon/icon_404.png?_nosprite") center center no-repeat; }
+
+.box {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  margin-top: 208px;
+  margin-left: -20px; }
+  .box a {
+    display: inline-block;
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px; }

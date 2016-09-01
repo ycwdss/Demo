@@ -1,0 +1,78 @@
+/*c_gotop*/
+#totop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 1000; }
+  #totop a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../../Images/icon/icon_totop.png) no-repeat;
+    background-size: cover; }
+
+#totop:hover {
+  background-color: #5272e4; }
+
+.header {
+  position: static; }
+
+a {
+  color: #888; }
+
+.new_content {
+  margin: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #e4e4e4; }
+
+.new_title {
+  padding: 3%;
+  border-bottom: 1px solid #e4e4e4; }
+  .new_title h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.6; }
+  .new_title p {
+    color: #888;
+    text-align: center; }
+    .new_title p .writer {
+      padding: 0 2%; }
+
+.new_center {
+  padding: 3%;
+  background-color: #fff; }
+  .new_center img {
+    display: block !important;
+    max-width: 100% !important;
+    margin: 10px auto !important; }
+  .new_center p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6; }
+
+.up_down {
+  padding: 3% 5%;
+  border-top: 1px solid #e4e4e4;
+  font-size: 10px;
+  color: #888; }
+  .up_down > div {
+    position: relative;
+    vertical-align: top;
+    margin: 5px 0; }
+    .up_down > div a {
+      display: inline-block;
+      width: 57%;
+      vertical-align: 2px;
+      line-height: 1.4;
+      height: 1.4em;
+      overflow: hidden; }
+    .up_down > div span.date {
+      position: absolute;
+      right: 0; }
+
+/*# sourceMappingURL=new_detail.css.map */

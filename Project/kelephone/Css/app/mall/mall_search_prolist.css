@@ -1,0 +1,357 @@
+.fr {
+  float: right;
+  *display: inline; }
+
+.fl {
+  float: left;
+  *display: inline; }
+
+.module_ad {
+  width: 100%;
+  overflow: hidden; }
+  .module_ad .module_ad_list {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .module_ad .module_ad_list a {
+    display: block; }
+
+.module_ad_img {
+  width: 100%;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  overflow: hidden; }
+
+.module_ad1 .module_ad_list {
+  width: 50%;
+  margin: 5px 0px; }
+.module_ad1 .module_ad_list:nth-child(2n+1) {
+  padding-right: 5px; }
+.module_ad1 .module_ad_list:nth-child(2n) {
+  padding-left: 5px; }
+.module_ad1 .module_ad_box {
+  margin-top: 75%; }
+
+.module_ad2 .module_ad_list {
+  width: 31.3%;
+  margin: 5px 1%; }
+.module_ad2 .module_ad_box {
+  margin-top: 75%; }
+
+.module_ad3 .module_ad_list {
+  width: 100%;
+  margin: 5px 0px; }
+.module_ad3 .module_ad_img {
+  background: url(../../../Images/test/test_banner_01.png); }
+.module_ad3 .module_ad_box {
+  margin-top: 50%; }
+
+.fr {
+  float: right;
+  *display: inline; }
+
+.fl {
+  float: left;
+  *display: inline; }
+
+.module_nav {
+  margin-top: 10px;
+  padding: 7px;
+  background: #fff; }
+  .module_nav li {
+    padding: 8px;
+    width: 25%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .module_nav li a {
+      display: block; }
+  .module_nav .margin_top {
+    margin-top: 100%; }
+
+.nav_img {
+  width: 100%;
+  background: url(../../../Images/test/test_pro_img.jpg?_nosprite) no-repeat center center;
+  background-size: cover;
+  overflow: hidden; }
+
+.nav_title {
+  margin: 5px auto 0;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.4;
+  height: 1.4em;
+  overflow: hidden; }
+
+.nav_radius10 .nav_img {
+  border-radius: 10px; }
+
+.nav_radius100 .nav_img {
+  border-radius: 100%; }
+
+.module_text_nav {
+  margin-top: 10px;
+  padding-left: 15px;
+  background: #fff;
+  text-align: left; }
+  .module_text_nav li {
+    line-height: 50px;
+    font-size: 14px;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative; }
+    .module_text_nav li a {
+      padding-left: 7px;
+      display: block;
+      color: #333; }
+      .module_text_nav li a:after {
+        width: 5px;
+        height: 5px;
+        content: "";
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        top: 23px;
+        right: 15px;
+        position: absolute;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+
+.module_text_nav_inline {
+  line-height: 40px;
+  background-color: #fff;
+  padding: 0 3%;
+  text-align: center;
+  font-size: 14px; }
+  .module_text_nav_inline li {
+    float: left;
+    width: 31%; }
+    .module_text_nav_inline li a {
+      display: inline-block;
+      width: 100%;
+      height: 94%;
+      font-size: 14px;
+      color: #333;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #fff; }
+  .module_text_nav_inline li.current a {
+    color: #e60012;
+    border-bottom-color: #e60012; }
+
+.module_text_slide_nav {
+  margin-top: 10px;
+  background: #fff;
+  text-align: center; }
+  .module_text_slide_nav .text_slide_nav_list {
+    width: 25%;
+    float: left;
+    line-height: 40px;
+    font-size: 14px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #fff; }
+    .module_text_slide_nav .text_slide_nav_list a {
+      color: #333; }
+  .module_text_slide_nav .text_slide_nav_list.current {
+    border-bottom-color: #e60012; }
+    .module_text_slide_nav .text_slide_nav_list.current a {
+      color: #e60012; }
+
+.fr {
+  float: right;
+  *display: inline; }
+
+.fl {
+  float: left;
+  *display: inline; }
+
+.pro_text {
+  font-size: 14px;
+  color: #666;
+  margin: 3%;
+  line-height: 1.4;
+  height: 2.8em;
+  overflow: hidden; }
+
+.pro_price {
+  font-size: 16px;
+  margin: 3%; }
+
+.card1 {
+  overflow: hidden;
+  margin: 0 -1.5%; }
+  .card1 li {
+    float: left;
+    background-color: #fff;
+    padding: 3%;
+    width: 41%;
+    margin: 3% 1.5% 0;
+    overflow: hidden; }
+    .card1 li a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .card1 li a img {
+        width: 100%; }
+
+.card2 {
+  overflow: hidden; }
+  .card2 li {
+    width: 94%;
+    padding: 3%;
+    margin: 3% auto 0;
+    overflow: hidden;
+    background-color: #fff; }
+    .card2 li a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .card2 li a img {
+        width: 100%; }
+
+.card3 {
+  overflow: hidden; }
+  .card3 li {
+    width: 94%;
+    padding: 3%;
+    height: 90px;
+    margin: 3% auto 0;
+    overflow: hidden;
+    background-color: #fff; }
+    .card3 li a {
+      position: relative; }
+      .card3 li a img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90px;
+        height: 90px;
+        overflow: hidden; }
+  .card3 .pro_text, .card3 .pro_price {
+    margin: 3% 0;
+    margin-left: 100px; }
+
+.mall_search_nav {
+  line-height: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4; }
+  .mall_search_nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative; }
+    .mall_search_nav li a {
+      font-size: 14px;
+      color: #666; }
+    .mall_search_nav li i {
+      color: #ccc; }
+    .mall_search_nav li .iconfont {
+      vertical-align: -2px; }
+  .mall_search_nav li.current a, .mall_search_nav li.current i {
+    color: #e60012; }
+  .mall_search_nav .sanjiao {
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    left: 70%;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden; }
+  .mall_search_nav .down_sanjiao {
+    border: 6px solid;
+    border-color: #ccc transparent transparent; }
+  .mall_search_nav .up_sanjiao {
+    top: 7px;
+    border: 6px solid;
+    border-color: transparent transparent #ccc; }
+  .mall_search_nav .down_sanjiao.current {
+    border-color: #e60012 transparent transparent; }
+  .mall_search_nav .up_sanjiao.current {
+    border-color: transparent transparent #e60012; }
+
+.shaixuan_box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3); }
+
+.shaixuan_list, .shaixuan_item {
+  position: relative;
+  display: block;
+  margin-left: 10%;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+  background: #fff; }
+
+.shaixuan_head {
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative;
+  overflow: hidden; }
+  .shaixuan_head span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #333; }
+  .shaixuan_head a {
+    padding: 17px;
+    line-height: 1;
+    font-size: 14px;
+    position: relative;
+    z-index: 1; }
+  .shaixuan_head a.goback {
+    padding: 14px 10px; }
+    .shaixuan_head a.goback .iconfont {
+      font-size: 23px; }
+
+.module_text_nav {
+  margin-top: 0; }
+  .module_text_nav li {
+    position: relative; }
+    .module_text_nav li .choose_text {
+      position: absolute;
+      top: 0;
+      right: 9%; }
+    .module_text_nav li .iconfont {
+      position: absolute;
+      right: 4%;
+      top: 17px;
+      color: #ccc;
+      font-size: 14px; }
+
+.shaixuan_item {
+  width: 100%;
+  margin-left: 0; }
+
+.shaixuan_item .module_text_nav li.current a, .shaixuan_item .module_text_nav li.current i {
+  color: #e60012; }
+
+@media screen and (min-width: 640px) {
+  .mall_search_nav .sanjiao {
+    left: 60%; }
+
+  .module_text_nav li .choose_text {
+    position: absolute;
+    top: 0;
+    right: 5%; } }
+
+/*# sourceMappingURL=mall_search_prolist.css.map */

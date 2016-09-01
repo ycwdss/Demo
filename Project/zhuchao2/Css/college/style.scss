@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../lib/commonclass";
+@import "../lib/reset";
+@import "../lib/font";
+@import "../lib/layer";
+@import "../module/header_top";
+@import "../module/footer";
+@import "../module/totop";
+.conwidth1100 {
+  width: 1100px !important;
+  margin: 0 auto;
+}
+.center_main{
+  margin-top: 40px;
+}
+.main_left{
+  width: 780px;
+  overflow: hidden;
+}
+.main_right{
+  width: 300px;
+}
+//电子学院头部
+.head {
+  height: 60px;
+  line-height: 60px;
+}
+
+.head_box .logo_img {
+  display: block;
+  width: 250px;
+  height: 40px;
+  line-height: 60px;
+  margin-top: 10px;
+  img {
+    display: block;
+    max-width: 163px;
+    height: 40px;
+    float: left;
+  }
+  span {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    em {
+      margin:0 10px;
+    }
+  }
+}
+
+.head_box ul li {
+  float: left;
+  margin-right: 1px;
+  a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 35px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+//右侧列表
+.main_right{
+  .right_title{
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color:#fff;
+    a{
+      color: #666;
+    }
+  }
+  .right_item{
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    .right_item_title{
+      font-size: 16px;
+      margin-bottom: 10px;
+      height: 24px;
+      overflow: hidden;
+      a{
+        color: #333;
+      }
+    }
+    .right_img{
+      margin: 0 0 10px;
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+    }
+    .right_text{
+      font-size: 14px;
+      color: #666;
+      @include strictEll(1.5,2);
+    }
+    .right_user{
+      font-size: 12px;
+      line-height: 20px;
+      margin-top: 5px;
+    }
+  }
+}
+  
+
+

@@ -1,0 +1,409 @@
+@charset "UTF-8";
+body {
+  background: #f8f8f8; }
+
+.m_content_left {
+  float: left;
+  padding: 0 10px 20px;
+  width: 200px;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .m_content_left > h2 {
+    position: relative;
+    padding-left: 55px;
+    font-size: 16px;
+    color: #333333;
+    line-height: 48px;
+    border-bottom: 2px solid transparent; }
+    .m_content_left > h2 i {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      font-size: 20px;
+      line-height: 48px; }
+
+.left_title {
+  position: relative;
+  padding: 10px 0 5px 40px;
+  line-height: 30px;
+  color: #333; }
+  .left_title h3 {
+    font-size: 14px; }
+  .left_title span {
+    position: absolute;
+    top: 22px;
+    left: 18px;
+    width: 5px;
+    height: 5px; }
+
+.left_list li {
+  position: relative;
+  line-height: 35px;
+  font-size: 13px; }
+  .left_list li a {
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .left_list li .main_bg:hover {
+    color: #FFFFFF !important; }
+
+.m_content_right {
+  float: right;
+  width: 1080px;
+  min-height: 520px;
+  background: #ffffff; }
+
+.gap {
+  height: 20px;
+  background: #F8F8F8; }
+
+.site {
+  height: 40px;
+  line-height: 40px; }
+  .site li {
+    float: left;
+    color: #666; }
+  .site .arrow {
+    font-family: \5b8b\4f53;
+    margin: 0 5px; }
+
+.hot_pro {
+  margin-top: 20px; }
+  .hot_pro h3 {
+    position: relative;
+    font-size: 20px;
+    color: #333;
+    line-height: 60px;
+    padding: 0 10px 0 40px;
+    background: #FFFFFF; }
+    .hot_pro h3 i {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      font-size: 22px; }
+
+.hot_pro .pro_ele {
+  float: left;
+  width: 255px;
+  margin-right: 20px; }
+  .hot_pro .pro_ele img {
+    display: block;
+    width: 255px;
+    height: 255px;
+    -moz-transition: 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease; }
+    .hot_pro .pro_ele img:hover {
+      filter: alpha(opacity=90);
+      /* IE */
+      -moz-opacity: 0.9;
+      /* 老版Mozilla */
+      -khtml-opacity: 0.9;
+      /* 老版Safari */
+      opacity: 0.9;
+      /* 支持opacity的浏览器*/ }
+
+.hot_pro .pro_title {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  overflow: hidden;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.hot_pro .pro_describe {
+  font-size: 12px;
+  color: #999;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.hot_pro .pro_price {
+  text-align: center;
+  font-size: 23px; }
+  .hot_pro .pro_price i {
+    font-size: 15px; }
+
+.hot_pro .add_cart {
+  margin: 5px auto 0;
+  font-size: 12px;
+  width: 120px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer; }
+
+.m_order_status {
+  font-size: 13px;
+  text-align: center;
+  line-height: 24px; }
+
+.c_order_status {
+  position: relative;
+  float: left;
+  width: 170px;
+  height: 24px;
+  color: #888888;
+  margin-right: 20px;
+  background: #e4e4e4; }
+
+.status_left {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  border-top: 12px solid transparent !important;
+  border-bottom: 12px solid transparent !important;
+  border-left: 12px solid #FFFFFF; }
+
+.status_right {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  border-top: 12px solid transparent !important;
+  border-bottom: 12px solid transparent !important;
+  border-left: 12px solid #e4e4e4; }
+
+.m_order_infor {
+  background: #FFFFFF; }
+  .m_order_infor h2 {
+    margin: 0 20px;
+    font-size: 24px;
+    line-height: 70px;
+    border-bottom: 1px solid #e4e4e4;
+    color: #333; }
+    .m_order_infor h2 a {
+      float: right;
+      font-size: 13px; }
+
+.c_order_infor {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+  .c_order_infor span {
+    font-size: 13px;
+    color: #333;
+    line-height: 25px;
+    margin-right: 20px; }
+    .c_order_infor span i {
+      float: left;
+      width: 70px;
+      text-align: right; }
+
+.m_order_status {
+  margin: 0 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e4e4; }
+
+.m_receiver {
+  padding: 0 20px 0;
+  background: #FFFFFF; }
+  .m_receiver h3 {
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+    padding: 25px 0; }
+
+.recevier_infor, .pay_way {
+  font-size: 13px;
+  color: #333;
+  line-height: 30px; }
+
+.recevier_infor span {
+  float: left;
+  width: 105px;
+  text-align: right; }
+
+.pay_way span {
+  margin-right: 20px; }
+
+.m_logistics {
+  background: #FFFFFF;
+  padding: 0 20px; }
+  .m_logistics h3 {
+    font-size: 18px;
+    color: #333;
+    line-height: 60px;
+    padding-top: 20px;
+    border-bottom: 1px solid #e4e4e4; }
+    .m_logistics h3 span {
+      font-size: 13px;
+      margin-left: 40px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+
+.c_logistics {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  line-height: 35px;
+  color: #888;
+  border-bottom: 1px solid #e4e4e4; }
+  .c_logistics span {
+    float: left;
+    height: 35px; }
+
+.logistics_title {
+  font-size: 15px;
+  text-align: center;
+  color: #666; }
+
+.logistics_title .logistics_record {
+  text-align: left;
+  text-indent: 90px; }
+
+.logistics_time {
+  width: 260px;
+  text-align: center; }
+
+.logistics_record {
+  width: 550px;
+  padding-left: 125px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.logistics_site {
+  width: 230px; }
+
+.m_pro {
+  padding: 0 20px;
+  background: #FFFFFF;
+  border-bottom: 1px dashed #e4e4e4; }
+
+.pro_title {
+  font-size: 16px;
+  padding-top: 20px;
+  text-align: center;
+  color: #888888; }
+  .pro_title span {
+    float: left; }
+
+.c_pro {
+  padding: 20px 0; }
+  .c_pro > div {
+    float: left;
+    display: table;
+    height: 100px; }
+    .c_pro > div > span {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 16px;
+      color: #333; }
+
+.pro_infor {
+  width: 325px; }
+
+.c_pro .pro_price, .pro_title .pro_price {
+  width: 190px; }
+
+.pro_coupon {
+  width: 190px; }
+
+.pro_handle {
+  width: 190px; }
+
+.pro_subtotal {
+  width: 145px;
+  padding-left: 45px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.pro_infor img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  float: left; }
+
+.pro_detail {
+  float: left;
+  width: 205px;
+  padding: 18px 0 18px 20px; }
+  .pro_detail h4 {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    height: 24px;
+    width: 100%;
+    overflow: hidden;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+  .pro_detail p {
+    height: 40px;
+    overflow: hidden;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+    .pro_detail p span {
+      font-size: 12px;
+      line-height: 20px;
+      color: #888; }
+
+.m_total {
+  background: #FFFFFF;
+  font-size: 16px;
+  color: #888888;
+  line-height: 40px; }
+  .m_total > p > span {
+    float: right; }
+
+.c_price {
+  width: 140px; }
+
+.m_total .total_price {
+  line-height: 60px; }
+  .m_total .total_price .c_price {
+    font-size: 24px; }
+
+.total_bottom {
+  padding-bottom: 20px; }
+
+.total_btn {
+  float: right;
+  margin-right: 20px;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #666;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/*# sourceMappingURL=order_detail.css.map */

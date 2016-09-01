@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import "../lib/mixin";
+//分页
+.page{
+  text-align:center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top:30px\9;
+  margin: 30px auto 0;
+}
+.page a,.c_page_text,.c_page_btn{
+  display:inline-block;
+  font-size: 12px;
+  padding:0 12px;
+  line-height: 30px;
+  border:1px solid #e0e0e0;
+  color:#999;
+  margin-right:5px;
+  cursor: pointer;
+  font-family:"SimSun";
+}
+
+.page a.now_page:hover{
+  cursor:default;
+  color:#999;
+}
+
+.page a:hover {
+  color:#ff6700;
+  background-color: #fff;
+  border-color: #ff6700;
+}
+.page a.active {
+  background: #fff;
+  color:#e1e1e1;
+}
+.page a.current{
+  background: #ff6700;
+  color: #fff;
+  border-color: #ff6700;
+  cursor: default;
+}
+.page span{
+  padding-left: 25px;
+}
+.c_page_text{
+  width: 16px;
+  background: #fff;
+}
+
+.c_page_btn{
+  font-family: "Microsoft YaHei", serif;
+}

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import "../fh/base";
+@import "../fh/lib";
+
+input[type="file"] {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+}
+
+input[type="file"] + label {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+}
+
+.m_content_right input, textarea {
+  outline: none;
+  &:focus {
+    border: 1px solid $normalColor;
+  }
+}
+#addCaseForm{
+  margin-left:30px;
+  padding:15px 0;
+}
+.m_addcase input {
+  border: 1px solid #e4e4e4;
+}
+
+.m_content_right {
+  padding-bottom: 50px;
+}
+
+.case_ele {
+  margin-top: 20px;
+}
+
+.title {
+  margin-top: 20px;
+  span {
+    line-height: 30px;
+  }
+}
+
+.case_ele_head {
+  float: left;
+  width: 100px;
+  padding-right: 10px;
+  line-height: 35px;
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+}
+
+.title_content {
+  padding: 0 10px;
+  width: 280px;
+  height:33px;
+}
+
+.select_down {
+  width: 900px;
+}
+
+.upload_ele select, .case_ele select {
+  float: left;
+  padding:7px 0 7px 10px;
+  height: 35px;
+  background: #fff;
+  margin-right: 20px;
+  outline: 0;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  font-family: SimSun, 'Microsoft YaHei', \5FAE\8F6F\96C5\9ED1;
+}
+
+.upload_ele select:focus, .case_ele select:focus {
+  border: 1px solid #093
+}
+
+.content_datetime {
+  height: 33px;
+  width: 200px;
+  padding: 0 10px;
+  line-height: 33px;
+  font-size: 14px;
+}
+
+.upload_button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box
+}
+
+.location_list li, .upload_button {
+  cursor: pointer;
+  text-align: center
+}
+
+.upload_button {
+  float:left;
+  width: 133px;
+  height: 35px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #093;
+  color: #093;
+  line-height: 35px;
+}
+
+.upload_button:hover {
+  background: #093;
+  color: #FFF;
+  -moz-transition: .2s ease;
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease
+}
+
+.upload_descri {
+  float:left;
+  font: 9pt SimSun, serif;
+  line-height: 35px;
+  color: #888;
+  margin-left: 10px;
+}
+//上传图片
+.upload_detail{
+  padding-left: 110px;
+  margin-top: 20px;
+  overflow: hidden;
+  >.upload_ele{
+    width: 400px;
+    padding: 30px 20px 20px;
+    background: #f8f8f8;
+    position: relative;
+  }
+  img{
+    width: 400px;
+    height: 250px;
+    display: block;
+  }
+  .del_case {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 14px;
+    height: 13px;
+    background: url("../../usercenter/Images/sprite_delete.png") no-repeat;
+    cursor: pointer;
+  }
+}
+.intro {
+  margin: 20px 0 0 10px;
+  font-size: 14px;
+  line-height: 35px;
+  span {
+    margin-right: 12px;
+  }
+}
+
+.intro_text {
+  width: 220px;
+  font-size: 14px;
+  line-height: 25px;
+  height: 37px;
+  resize: none;
+  outline-color: #093;
+  padding: 5px 10px;
+  @include box-sizing();
+}
+.upload_ele.upload_xiaoguotu{
+  float: left;
+  width: 280px;
+  margin-right:20px;
+  margin-bottom: 20px;
+  img{
+    width: 280px ;
+    height: 175px;
+  }
+}
+
+//提交按钮
+.submit {
+  width: 80px;
+  margin: 50px auto 0;
+  >input {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    background: #093;
+    color: #FFFFFF;
+    font-family: "Microsoft YaHei " !important;
+    cursor: pointer;
+    border-color: #093;
+    &:hover{
+      background: #048b31;
+      -webkit-box-shadow: 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px #ccc;
+    }
+  }
+}

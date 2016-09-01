@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/recommend";
+@import "../../module/drop";
+
+.m_content{
+  border-bottom:1px solid #e4e4e4;
+}
+.info_container{
+  padding:40px 0;
+  width: 550px;
+  margin:0 auto;
+}
+.info_ele{
+  position: relative;
+  margin-bottom: 15px;
+  .info_intro{
+    float: left;
+    width: 150px;
+    height:30px;
+    line-height: 30px;
+    font-size: 16px;
+  }
+  input{
+    float: left;
+    width: 400px;
+    height: 30px;
+    padding:4px 10px;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+.tip{
+  position: absolute;
+  top:0;
+  left: 570px;
+  width: 200px;
+  display: block;
+  line-height: 30px;
+}
+.address_list{
+  float: left;
+  width: 400px;
+  >div{
+    float: left;
+    width: 120px!important;
+    height: 30px!important;
+    line-height: 28px!important;
+    margin-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .drop_list li{
+      height: 30px;
+    }
+  }
+
+}
+.sex{
+  float: left;
+  margin-left: 10px;
+  input{
+    margin-top:9px;
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+  }
+  label{
+    float: left;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.submit{
+  margin-top: 20px;
+  input{
+    width: 130px;
+    height: 30px;
+    border:none;
+    cursor: pointer;
+  }
+
+}

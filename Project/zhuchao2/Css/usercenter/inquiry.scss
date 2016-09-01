@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import "../lib/mixin";
+@import "../module/pagelist";
+$main: #0a7fd4;
+$main_hover: #2e93d7;
+$main_light: #00aaff;
+.content_wrap{
+  background-color: #fff;
+}
+  //回复
+.reply {
+  padding: 10px 0;
+  li {
+    float: left;
+    margin-right: 3px;
+  }
+  a{
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #333;
+    background-color: #e4e4e4;
+    @include transition(opacity, 0.2s, ease);
+    &:hover{
+      @include opacity(85);
+    }
+  }
+}
+//选择按钮
+.check {
+  display: inline-block;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+  margin-top:25px;
+  em {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    border: 1px solid #b0b0b0;
+    margin-right: 20px;
+    vertical-align: 2px;
+    i {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      font-size: 14px;
+      color: #b0b0b0;
+    }
+  }
+}
+//新闻列表
+.inquiry_title {
+  width: 560px;
+}
+
+.inquiry_state {
+  width: 280px;
+}
+
+.inquiry_operate {
+
+  width: 170px;
+}
+
+table {
+  border-collapse: collapse;
+
+}
+
+//标题
+.inquiry_items {
+  border-bottom: 1px solid #E4E4E4;
+  th {
+    height: 60px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+
+  }
+}
+
+//每列
+.inquiry_list {
+  border-bottom: 1px solid #E4E4E4;
+  td {
+    height: 100px;
+  }
+  .inquiry_title {
+    font-size: 14px;
+    color: #888;
+    line-height: 24px;
+    position: relative;
+    .check {
+      position: absolute;
+      top:50%;
+      margin-top: -9px;
+    }
+    .acticle_box {
+      display: inline-block;
+      width: 500px;
+      .more {
+        color: #888;
+        &:hover {
+          color: #2e9bd7;
+        }
+      }
+    }
+  }
+    .inquiry_state {
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+    }
+    .inquiry_operate{
+      text-align: center;
+      font-size: 14px;
+      a {
+        color: #666;
+        &:hover {
+          color: #2e9bd7;
+        }
+      }
+      span {
+        margin: 0 8px;
+        font-size: 12px;
+        color: #ccc;
+      }
+    }
+  }
+
+
+
+//暂无询盘信息
+.no_inquiry{
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+
+  //删除
+  .inquiry_delete{
+    margin: 20px 0;
+    .btn {
+      display: inline-block;
+      width: 70px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #333;
+      background-color: #e4e4e4;
+      margin-left: 20px;
+      cursor: pointer;
+      @include transition(opacity, 0.2s, ease);
+      &:hover {
+        @include opacity(85);
+      }
+    }
+    .check em {
+      vertical-align: -1px;
+    }
+    .btn_del {
+      color: #999;
+    }
+    a.question {
+      font-size: 12px;
+      color: $main;
+      margin-left: 20px;
+      &:hover {
+        color: #2e9bd7;
+      }
+    }
+  }

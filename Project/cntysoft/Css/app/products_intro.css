@@ -1,0 +1,213 @@
+/*c_gotop*/
+#totop {
+  width: 65px;
+  height: 65px;
+  -webkit-border-radius: 65px;
+  border-radius: 65px;
+  background-color: #ddd;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000; }
+  #totop:hover {
+    background-color: #5272e4; }
+  #totop a {
+    display: block;
+    width: 23px;
+    height: 13px;
+    margin: 26px auto 0;
+    background: url(../../Images/sprite_totop.png) no-repeat; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+.header_logo {
+  background: url("../../Images/sprite_header_logo2.png") no-repeat; }
+
+.header_nav > ul > li a {
+  color: #fff; }
+
+.top_arrow {
+  border-color: #fff transparent transparent transparent; }
+
+.main {
+  width: 100%;
+  height: 720px; }
+
+.ms-left .ms-section {
+  background-color: #3f51b5;
+  position: relative;
+  z-index: 5; }
+  .ms-left .ms-section .mask {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../Images/profucts/icon_maskl.png?_nosprite") no-repeat;
+    background-size: 100% 100%; }
+  .ms-left .ms-section .circle_left {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    margin-top: -75px;
+    z-index: 10; }
+
+.ms-right .ms-section {
+  background-color: #5060bb;
+  /* overflow: hidden;*/
+  position: relative;
+  z-index: 5; }
+  .ms-right .ms-section .mask {
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../Images/profucts/icon_maskr.png?_nosprite") no-repeat;
+    background-size: 100% 100%; }
+  .ms-right .ms-section .circle_right {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    margin-top: -75px;
+    z-index: 7; }
+  .ms-right .ms-section .describe {
+    width: 64.5%;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    color: #fff; }
+    .ms-right .ms-section .describe h1 {
+      font-size: 36px;
+      padding-bottom: 40px;
+      font-weight: 500; }
+    .ms-right .ms-section .describe h3 {
+      font-size: 24px;
+      line-height: 48px;
+      font-weight: normal; }
+    .ms-right .ms-section .describe p {
+      font-size: 18px;
+      line-height: 48px;
+      font-weight: normal; }
+
+#multiscroll-nav span, .multiscroll-slidesNav span {
+  background: #fff;
+  border: none; }
+
+#multiscroll-nav li .active span, .multiscroll-slidesNav .active span {
+  background: #fff; }
+
+#multiscroll-nav {
+  margin-top: -133px; }
+
+#multiscroll-nav li, .multiscroll-slidesNav li {
+  width: 120px; }
+
+#multiscroll-nav li a, .multiscroll-slidesNav li a {
+  margin-left: 110px; }
+
+#multiscroll-nav li a.active span, .multiscroll-slidesNav li a.active span {
+  background: #1c32ad; }
+
+.item1 .special_img {
+  position: absolute;
+  right: 35%;
+  top: 14.5%;
+  width: 41.7%;
+  height: 55.3%; }
+
+.item2 .special_img {
+  position: absolute;
+  right: 23%;
+  top: 16%;
+  width: 54.5%;
+  height: 54.7%; }
+
+.item3 .special_img {
+  position: absolute;
+  right: 21%;
+  top: 15%;
+  width: 60.6%;
+  height: 57.2%; }
+
+.item4 .special_img {
+  position: absolute;
+  right: 18%;
+  top: 18%;
+  width: 70.4%;
+  height: 52.4%; }
+
+.item5 .special_img {
+  position: absolute;
+  right: 20%;
+  top: 18%;
+  width: 58.2%;
+  height: 50.2%; }
+
+.item6 .special_img {
+  position: absolute;
+  right: 18%;
+  top: 18%;
+  width: 64.8%;
+  height: 50.6%; }
+
+.item7 .special_img {
+  position: absolute;
+  right: 23%;
+  top: 18%;
+  width: 54.3%;
+  height: 54.3%; }
+
+.item8 .special_img {
+  position: absolute;
+  right: 20%;
+  top: 17%;
+  width: 62.5%;
+  height: 55.5%; }
+
+.item9 .special_img {
+  position: absolute;
+  right: 14%;
+  top: 20.8%;
+  width: 72.2%;
+  height: 48%; }
+
+.item10 .special_img {
+  position: absolute;
+  right: 26%;
+  top: 18%;
+  width: 52.3%;
+  height: 50.5%; }
+
+.item11 .special_img {
+  position: absolute;
+  right: 28%;
+  top: 20%;
+  top: 17%;
+  width: 48%;
+  height: 51.5%; }
+
+.item12 .special_img {
+  position: absolute;
+  right: 21%;
+  top: 15%;
+  width: 52.4%;
+  height: 55%; }
+
+.item13 .special_img {
+  position: absolute;
+  right: 21%;
+  top: 18%;
+  width: 65.6%;
+  height: 50.6%; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background-color: #0a0849; }
+
+/*# sourceMappingURL=products_intro.css.map */

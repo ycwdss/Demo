@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.no_have{
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  font-size: 14px;
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

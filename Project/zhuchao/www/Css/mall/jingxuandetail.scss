@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "../fh/lib";
+@import "../fh/moudle/routenav";
+.content{
+  @include content;
+  font: $littleFont;
+  color: $normalColor;
+  min-height:600px;
+}
+.article_wrapper{
+  background: red;
+  padding:50px 150px 0 150px;
+  .title{
+    font-size: 24px;
+  }
+  p{
+    font-size: 15px;
+  }
+}

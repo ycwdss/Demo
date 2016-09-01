@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import "../fh/style";
+@import "../fh/moudle/_ele_hover";
+@import "moudle/moudle_left_side";
+/*右侧列表*/
+.right_side{
+  width: 1010px;
+}
+.right_top{
+  background: #f8f8f8;
+  padding: 20px 30px;
+  h2{
+    font-size: 24px;
+    color: #333;
+    @include ell();
+  }
+  p{
+    margin-top: 9px;
+    font-size: 14px;
+    color: #888888;
+    line-height: 20px;
+    width: 100%;
+    overflow: hidden;
+    span{
+      margin-right: 20px;
+    }
+  }
+}
+.m_case_ele{
+  color: #333;
+  h3{
+    display: block;
+    margin-top: 40px;
+    font-size: 22px;
+    span{
+      margin-left: 30px;
+    }
+  }
+}
+.c_case_img{
+  float: left;
+  margin: 20px 20px 0 0;
+  width: 323px;
+  img{
+    display: block;
+    width: 323px!important;
+    height: 201px!important;
+  }
+  p{
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    background: #f8f8f8;
+    text-align: center;
+    @include ell();
+  }
+}
+.clear_rightM{
+  margin-right: 0;
+}
+/*喜欢的用户*/
+.user{
+  height: 80px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.user_img{
+  float: left;
+  width: 80px;
+  height: 80px;
+  @include border-radius(40px);
+  margin-right: 13px;
+  img{
+    width: 80px !important;
+    height: 80px !important;
+    @include border-radius(40px);
+  }
+}
+/*评论*/
+.m_evaluation{
+ h3{
+   padding-bottom: 20px;
+   border-bottom: 1px solid #e4e4e4;
+ }
+}
+.c_evaluation{
+  padding: 20px 20px;
+  border-bottom: 1px solid #e4e4e4;
+  .user_img{
+    margin-right: 20px;
+  }
+}
+.eva_detail{
+  position: relative;
+  float: left;
+  width: 870px;
+}
+.eva_detail p:nth-child(1){
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  line-height: 40px;
+  span{
+    font-size: 14px;
+    color: #888;
+    margin-left: 20px;
+  }
+}
+.eva_detail p:nth-child(2){
+  line-height: 25px;
+}
+.eva_head{
+  float: left;
+  color: #888;
+  font-size: 14px;
+}
+.eva_text{
+  float: left;
+  width: 786px;
+  font-size: 14px;
+  color: #333;
+}
+.eva_detail{
+  input{
+    float: right;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    background: #f8f8f8;
+    cursor: pointer;
+    @include transition;
+    &:hover{
+      background: #093;
+      color: #FFFFFF;
+    }
+  }
+}
+.textarea{
+  float: left;
+  width: 850px;
+  height: 80px;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 25px;
+  color: #666;
+  background: #f8f8f8;
+  resize: none;
+  border: none;
+  outline-color: #FFFFFF;
+}
+.last_word{
+  position: absolute;
+  top: 80px;
+  left: 0;
+  font-size: 12px;
+}
+/*图片展示*/
+.show_img_bg{
+  position: fixed;
+  display: none;
+  min-width: 920px;
+  min-height: 500px;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  z-index: 99999;
+}
+.show_img_bg:before{
+  position: absolute;
+  top: 0;
+  left:0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #000;
+  @include opacity(80);
+  z-index: -1;
+}
+.show_img{
+  width: 100%;
+  height: 100%;
+  h2{
+    height: 17%;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  p{
+    margin: 2% auto 0;
+    width: 50%;
+    font-size: 14px;
+    height: 21%;
+    color: #FFFFFF;
+    white-space: normal;
+    overflow: hidden;
+    //@include strictEll(4);
+    text-indent: 20px;
+  }
+}
+.img_cycle{
+  height: 60%;
+  margin: 0 auto;
+  text-align: center;
+  div{
+    height: 100%;
+  }
+  img{
+    width: auto;;
+    height: 100%;
+  }
+}
+.img_cycle_ele{
+  display:none;
+}
+.arrow_com{
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  span{
+    display: block;
+    width: 22px;
+    height: 44px;
+    margin:3px 4px;
+  }
+}
+.arrow_prev{
+  span{
+    background: url("../../foreman/Images/sprite_foreman_arrowleft.png");
+  }
+}
+.arrow_next{
+  span{
+    background: url("../../foreman/Images/sprite_foreman_arrowright.png");
+  }
+}
+.show_title1{
+  margin-left: 20px;
+}
+.show_img_close{
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  width: 42px;
+  height: 40px;
+  background: url("../../foreman/Images/sprite_foreman_close.png");
+  cursor: pointer;
+}

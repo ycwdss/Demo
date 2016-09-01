@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import "../lib/commonclass";
+@import "../lib/reset";
+@import "../lib/mixin";
+@import "../module/top_bar";
+@import "../module/nav";
+@import "../module/footer";
+@import "../lib/font";
+@import "../module/totop";
+@import "../module/login";
+@import "../module/register";
+@import "../module/find_password";
+$mainColor: #ff6700;
+.deepbg {
+  background-color: #333; /*背景颜色加深*/
+}
+
+.bgfff {
+  background-color: #fff;
+}
+
+.bge4 {
+  background-color: #e4e4e4;
+}
+
+//默认a样式
+a {
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+//链接颜色 hover上去颜色
+.deep {
+  color: #333 !important; /*字体颜色加深*/
+  a {
+    color: #333;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
+
+//字体颜色
+.main {
+  color: $mainColor !important;
+}
+
+//背景颜色
+.main_bg {
+  background-color: $mainColor !important;
+  color: #fff !important;
+  &:before, &:after {
+  background-color: $mainColor !important;
+}
+}
+
+//边框颜色
+.main_border {
+  border-color: $mainColor !important;
+}
+
+//hover字体颜色
+.main_hover {
+  &:hover {
+    color: $mainColor !important;
+  }
+}
+
+//hover背景颜色
+.mainbg_hover {
+  &:hover {
+    background-color: $mainColor !important;
+    color: #FFFFFF !important;
+  }
+}
+
+//hover边框颜色
+.main_border_hover {
+  &:hover {
+    border-color: $mainColor !important;
+  }
+}
+
+//focus颜色
+.main_focus {
+  &:focus {
+    border-color: $mainColor !important;
+  }
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+//按钮
+.btn, .small_btn,.define_btn{
+  display: block;
+  border:1px solid $mainColor;
+  text-align: center;
+  @include box-sizing();
+  @include transition(background-color, 0.3s, ease);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: darken($mainColor, 2%)!important;
+  }
+}
+
+.btn {
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+.small_btn {
+  width: 45px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 12px;
+}
+//三角形
+.sanjiao{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-color: #ff6700 transparent transparent;
+  @include transition();
+}
+.sanjiao.current{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+//分享
+.share{
+  width: 194px;
+  >span{
+    display: inline-block;
+    float: left;
+  }
+}
+
+
+
+
+

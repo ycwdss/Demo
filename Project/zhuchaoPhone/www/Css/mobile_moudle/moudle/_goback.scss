@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.moudle_top{
+  height: 45px;
+  background-color: #093;
+  position: relative;
+  text-align: center;
+  padding: 0 45px;
+  line-height: 45px;
+  h1{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}
+.icon_back_link{
+  position: absolute;
+  left:0px;
+  top: 2px;
+  //padding: 15px;
+}
+.icon_back{
+  display: block;
+  width: 13px;
+  height:23px;
+  margin:9px 14px 0 12px;
+  background:url(../../Images/mobile/moudle/sprite_icon_back.png) no-repeat;
+  background-size: 13px;
+}
+//搜索
+.icon_search_link{
+  position: absolute;
+  right: 0;
+  top: 0;
+  //padding: 9px 21px 0;
+}
+.icon_search_btn{
+  width: 25px;
+  height: 25px;
+  margin: 12px 10px 11px 0;
+  background: url(../../Images/mobile/moudle/sprite_icon_list.png) no-repeat;
+  background-size: 21px;
+}
+//更多
+.icon_more_link{
+  position: absolute;
+  right: 0;
+  top:-4px;
+  padding: 14px;
+}
+.icon_more_btn{
+  width:25px;
+  height:25px;
+  background: url(../../Images/mobile/jiazhuang/icon_more_jiazhuang.png) no-repeat;
+  background-size: 25px;
+  display: block;
+}
+//分享
+.icon_share_link{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding:13px;
+}
+.icon_share_btn{
+  width:25px;
+  height: 18px;
+  background: url(../../Images/mobile/mall/icon_share.png) no-repeat center;
+  display: block;
+}
+//收藏
+.icon_shoucang_link{
+  position: absolute;
+  right: 51px;
+  top: 0;
+  padding:13px;
+}
+.icon_shoucang_btn{
+  width:25px;
+  height: 19px;
+  background: url(../../Images/mobile/company/icon_shoucang.png) no-repeat center;
+  display: block;
+}

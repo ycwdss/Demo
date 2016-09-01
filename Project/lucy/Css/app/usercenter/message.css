@@ -1,0 +1,114 @@
+.personal_center .left_side {
+  width: 210px;
+  min-height: 840px;
+  padding: 30px 10px;
+  background-color: #fff; }
+  .personal_center .left_side h1 {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #333; }
+  .personal_center .left_side ul {
+    padding: 10px 0; }
+    .personal_center .left_side ul li {
+      height: 32px;
+      line-height: 32px;
+      text-align: center; }
+      .personal_center .left_side ul li a {
+        font-size: 14px; }
+
+.right_side {
+  width: 800px;
+  min-height: 870px;
+  padding: 0 30px 30px;
+  background-color: #fff; }
+  .right_side .item_title {
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #e4e4e4; }
+
+.route {
+  line-height: 40px;
+  font-size: 14px; }
+  .route span {
+    margin: 0 0.2em;
+    font-family: sans-serif; }
+
+.msg_tab li {
+  float: left;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: -1px;
+  border-top: 1px solid transparent; }
+  .msg_tab li a {
+    display: inline-block;
+    width: inherit;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    border-right: 1px solid #e4e4e4; }
+
+.msg_wrap {
+  margin-top: 40px; }
+  .msg_wrap .msg_list {
+    margin-bottom: 38px; }
+
+.msg_date {
+  line-height: 24px; }
+  .msg_date span {
+    padding: 0 10px;
+    font-size: 16px; }
+
+.msg_info {
+  padding: 10px 20px;
+  background-color: #F8F8F8; }
+
+.msg_info_title {
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0 10px 15px;
+  border-bottom: 1px dashed #999;
+  position: relative; }
+  .msg_info_title i {
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    cursor: pointer; }
+
+.msg_info_article {
+  padding: 10px 0;
+  width: 730px;
+  margin: 0 auto;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; }
+
+.msg_info_use {
+  font-size: 16px;
+  padding-right: 10px;
+  text-align: right; }
+  .msg_info_use a:hover {
+    text-decoration: underline; }
+
+.msg_no {
+  padding-top: 190px; }
+  .msg_no p {
+    text-align: center; }
+    .msg_no p i {
+      font-size: 55px;
+      color: #e4e4e4; }
+    .msg_no p span {
+      font-size: 16px;
+      display: block;
+      padding-top: 30px; }

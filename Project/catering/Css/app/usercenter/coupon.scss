@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/usercenter_style";
+@import "../../module/pagelist";
+
+.coupon_list_box {
+  min-height: 500px;
+}
+
+.coupon_item {
+  padding: 10px 0;
+  .col {
+    font-size: 14px;
+  }
+  .coupon_li1 {
+    width: 78px;
+  }
+  .coupon_li3 {
+    width: 152px;
+  }
+  .col:nth-child(2n) {
+    padding: 0 40px;
+    width: 160px;
+    text-align: center;
+  }
+  .action_btn {
+    a {
+      display: inline-block;
+      width: 100px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+    }
+    .bg999 {
+      background-color: #999;
+      color: #fff;
+    }
+    .bge4 {
+      background-color: #e4e4e4;
+      color: #999;
+    }
+  }
+}

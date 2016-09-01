@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/site";
+
+.m_content_right{
+  background: #FFFFFF;
+}
+.right_top{
+  margin:0 20px;
+  h2{
+    font-size: 24px;
+    line-height: 70px;
+    border-bottom:1px solid #e4e4e4;
+    color: #333;
+  }
+}
+.confirm_content{
+  padding: 70px 0 100px 200px ;
+  >form>div{
+    position: relative;
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 35px;
+    >input{
+      float: left;
+      width: 340px;
+      height: 40px;
+      padding: 10px;
+      font-size: 13px;
+      line-height: 20px;
+      border:1px solid #e4e4e4;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+}
+.change_intro{
+  float: left;
+  width: 120px;
+  padding-right: 25px;
+  color: #666;
+  text-align: right;
+}
+.tip{
+  position: absolute;
+  bottom: -20px;
+  left: 145px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #888888;
+}
+.confirm_content .identify_code input{
+  width: 160px;
+}
+.identify_img{
+  float: left;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #666;
+  img{
+    display: block;
+    float: left;
+    width: 100px;
+    height: 40px;
+  }
+  span{
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.submit_btn{
+  display: block;
+  margin:0 0 0 145px;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

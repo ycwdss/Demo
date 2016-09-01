@@ -1,0 +1,73 @@
+body .layui-layer-setwin {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  line-height: initial; }
+  body .layui-layer-setwin a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 16px;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    cursor: pointer; }
+    body .layui-layer-setwin a:before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      vertical-align: 2px;
+      background: url("../../Images/icon/icon_off_757575.png?_nosprite") no-repeat; }
+  body .layui-layer-setwin a:hover {
+    background: #f69; }
+    body .layui-layer-setwin a:hover:before {
+      background: url("../../Images/icon/icon_off_white.png?_nosprite") no-repeat; }
+
+body .layui-layer-btn {
+  padding-top: 0 !important;
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #fff; }
+  body .layui-layer-btn a {
+    width: 118px;
+    line-height: 28px;
+    height: 28px;
+    border-radius: 0;
+    display: inline-block;
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+    border: 1px solid #b0b0b0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: background-color 0.4s ease;
+    -webkit-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    body .layui-layer-btn a:hover {
+      color: #fff;
+      background-color: #b3b3b3; }
+  body .layui-layer-btn .layui-layer-btn0 {
+    border-color: #f69;
+    background-color: #f69;
+    color: #fff; }
+    body .layui-layer-btn .layui-layer-btn0:hover {
+      color: #fff;
+      background-color: #ff5c92; }
+  body .layui-layer-btn .layui-layer-btn1 {
+    margin-left: 60px; }
+
+/*# sourceMappingURL=mylayer.css.map */

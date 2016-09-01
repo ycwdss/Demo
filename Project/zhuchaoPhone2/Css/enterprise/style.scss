@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import "../lib/_commonclass";
+@import "../lib/_reset";
+@import "../lib/_lib";
+@import "../lib/_font";
+
+@import "../module/mall/_header";
+@import "../module/_totop";
+@import "../module/showImage";
+
+//-变化颜色-
+
+$main: #093;
+$main_hover: #2e93d7;
+$main_light: #63bf82;
+//字体颜色
+.main {
+  color: $main !important;
+}
+.add_color{
+  color: $main_hover!important;
+}
+.main_light{
+  color: $main_light !important;
+}
+
+//背景颜色
+.main_bg {
+  background-color: $main !important;
+  color: #fff !important;
+  >i{
+    color: #fff !important;
+  }
+}
+
+//背景颜色浅色
+.main_bg_light {
+  background-color: $main_light !important;
+  color: #fff !important;
+}
+
+//边框颜色
+.main_border {
+  border-color: $main !important;
+}
+.main_border_light{
+  border-color: $main_light !important;
+}
+
+//下拉信息
+.top_nav_box{
+  padding: 0 8px;
+  position: absolute;
+  top:48px;
+  right: 0;
+  z-index: 10;
+  width:22%;
+  font-size: 14px;
+  background-color: #fff;
+}
+.top_nav_list{
+  li{
+    line-height: 30px;
+    text-align: center;
+    font-size:13px;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid rgba(255,255,255,1) ;
+    a{
+      color: #666;
+      display: inline-block;
+      width: 100%;
+      i{
+        margin-right: 5px;
+        font-size: 14px;
+        vertical-align: 1px;
+        color: #999;
+      }
+    }
+  }
+  li:last-child{
+    border-bottom: 0;
+  }
+}  

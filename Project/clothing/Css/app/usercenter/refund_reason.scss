@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/refund_pro";
+@import "../../module/recommend";
+@import "../../module/drop";
+
+.reason_box{
+  margin-top: 20px;
+  padding: 20px;
+  height: 588px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.reason_ele{
+  >span{
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+  textarea{
+    float: left;
+    width: 800px;
+    height: 200px;
+    padding:10px 10px;
+    font-size: 12px;
+    line-height: 20px;   
+    resize: none;
+    border:none;
+    color: #666;
+    background: #F8F8F8;
+    outline-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+.reason_detail{
+  position: relative;
+  margin:45px 0 170px;
+  .tips{
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    color: #666;
+  }
+}
+
+

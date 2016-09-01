@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.m_search{
+  position: relative;
+  margin:10px 5px;
+  padding-right: 55px;
+  input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding:5px 10px;
+    color: #666;
+    line-height: 30px;
+    border:none;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+  }
+  span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    color: #888;
+   >i{
+     font-size: 1.8rem;
+     line-height: 40px;
+   }
+  }
+}
+.search_detail{
+  margin:0 5px;
+  padding:0 8px 50px;
+  background: #ffffff;
+  p{
+    font-size: 1.3rem;
+    line-height: 40px;
+    @include ell(1);
+    border-bottom:1px solid #e4e4e4;
+    i{
+      font-size: 1.2rem;
+      line-height: 40px;
+      margin-right: 5px;
+    }
+  }
+  span{
+    display: block;
+    font-size: 1.3rem;
+    line-height: 40px;
+  }
+}

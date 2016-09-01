@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.right_content {
+  padding-bottom: 40px;
+  > h3 {
+    font-size: 24px;
+    line-height: 43px;
+    padding-top: 21px;
+    height: 43px;
+    color: #333;
+  }
+}
+
+.hot_question {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  .hot_item {
+    height: 20px;
+    line-height: 20px;
+    margin: 7px 0 7px 30px;
+    float: left;
+    width: 46%;
+    font-size: 16px;
+    overflow: hidden;
+    a {
+      color: #666;
+      display: inline-block;
+      width: 390px;
+      text-align: left; /* 2 */
+      &:before {
+        content: '*';
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+//问题导航
+.question_nav {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  .question_item {
+    overflow: hidden;
+    .question_li {
+      position: relative;
+      float: left;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      width: 25%;
+      height: 230px;
+      text-align: center;
+      background-color: #fff;
+      overflow: hidden;
+      @include box-sizing();
+      .question_img {
+        padding: 30px 0;
+        i {
+          font-size: 110px;
+          color: #ddd;
+        }
+      }
+      h4 {
+        font-size: 18px;
+        color: #666;
+      }
+    }
+    .question_li:nth-of-type(4){
+      border-right: 0;
+    }
+  }
+  .list_2 .question_li {
+    border-bottom: 0;
+  }
+  .question_li:hover {
+    .question_sub_menu {
+      left: 0;
+    }
+  }
+  //二级
+  .question_sub_menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: -200%;
+    background-color: #ccc;
+    padding-left: 20px;
+    padding-top: 19%;
+    @include transition(left, 0.4s, ease-in-out);
+    @include box-sizing();
+    text-align: left;
+    a {
+      font-size: 16px;
+      color: #666;
+      display: inline-block;
+      width: 48%;
+      text-align: left;
+      padding: 10px 0;
+      &:hover {
+        color: #093;
+      }
+    }
+  }
+}
+//搜索
+.search_li{
+  width: 237px;
+  height: 230px;
+  margin: 0 auto;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  overflow: hidden;
+  .search_box{
+    position: relative;
+    width: 200px;
+    margin-left: 16px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    input{
+      height: 30px;
+      width: 120px;
+      line-height: normal;
+      display: inline-block;
+      padding-left: 15px;
+      color: #666;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: '\5fae\8f6f\96c5\9ed1';
+    }
+    .search_button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width:54px;
+      height:40px;
+      line-height: 40px;
+      background-color: #ddd;
+      text-align:center;
+      i{
+        font-size: 22px;
+      }
+    }
+  }
+}

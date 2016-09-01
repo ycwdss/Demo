@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "../lib/lib";
+.addr_ele{
+  position: relative;
+  float: left;
+  width: 291px;
+  margin-top: 40px;
+  margin-right: 12px;
+  padding:10px 10px ;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888888;
+  border:1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .icon-address-choice{
+    position: absolute;
+    bottom:-3px;
+    right: -1px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #aaa;
+  }
+}
+.addr_ele .addr_title{
+  line-height: 25px;
+}
+.addr_ele .default_addr{
+  float: left;
+}
+.addr_ele .del_addr{
+  float: right;
+  margin-left: 10px;
+  line-height: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.addr_ele .edit_addr{
+  float: right;
+  color: #333;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.addr_ele .addr_container{
+  margin-top: 13px;
+  line-height: 25px;
+  .addr_detail{
+    height: 50px;
+    @include ell(2);
+  }
+}
+
+.addr_ele .addr_delete{
+  width: 170px;
+  height:85px;
+  position: absolute;
+  right: -65px;
+  top: 30px;
+  z-index: 9999;
+  background:url("../../../Images/icon/icon_address_popup.png?_nosprite") no-repeat;
+  display: none;
+  .addr_de{
+    padding-top:20px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .addr_select{
+    margin-top: 5px;
+    text-align: center;
+    a{
+      display: inline-block;
+      width: 60px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
+    .cancel{
+      background-color: #e4e4e4;
+      color: #666;
+    }
+  }
+}

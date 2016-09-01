@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import "../fh/lib";
+@import "../fh/moudle/routenav";
+@import "../fh/moudle/page";
+@import "../fh/moudle/list_sort";
+@import "../fh/moudle/list";
+$currentcolor:#093;
+.lis_bg{
+  padding-top: 30px;
+}
+//重写类
+.mall_list_nav_box{
+  display: none;
+}
+.allclass:hover .mall_list_nav_box{
+  display: block;
+}
+.routeInfo{
+  background: #FFFFFF;
+  margin: 0 auto 0;
+  border: 1px solid #e4e4e4;
+  border-bottom: 0;
+  @include box-sizing();
+}
+.routeInfo{
+  padding: 9px 0 9px 0;
+  a{
+    float: left;
+    margin:0 5px ;
+    line-height: 22px!important;
+  }
+  span{
+    float: left;
+    margin: 0 2px;
+    line-height: 22px!important;
+  }
+}
+//索引
+
+
+
+.m_brand{
+  height: 62px;
+  .lis_title{
+    line-height: 62px;
+  }
+}
+.m_price{
+  .lis_choice{
+    width: 1000px;
+  }
+}
+.lis_choice{
+  width: 1100px;
+  color: #333;
+}
+
+.brand_click{
+  overflow-y: scroll;
+}
+.brand {
+  height: 124px;
+  li{
+    position: relative;
+    width: 90px;
+    height: 50px;
+    border: 1px solid #e4e4e4;
+    margin: 5px 0;
+    margin-right: 3px;
+    img{
+      padding: 5px;
+      display: block;
+      width: 80px;
+      height: 40px;
+      z-index: 3;
+    }
+    span{
+      position: absolute;
+      top: 0;
+      left:0;
+      width: 90px;
+      line-height: 50px;
+      text-align: center;
+      @include ell(1);
+      color: #093;
+      z-index: -1;
+    }
+  }
+  li:hover{
+    border: 1px solid #093;
+    img{
+      display: none;
+    }
+    span{
+      z-index: 1;
+    }
+  }
+}
+
+
+.lis_arrow_com{
+  display: block;
+  margin: 4px 3px;
+  width: 12px;
+  height: 8px;
+}
+.price{
+  span{
+    float: left;
+  }
+  input{
+    float: left;
+    width: 40px;
+    height: 20px;
+    margin: 9px 5px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+    line-height: 20px;
+  }
+  .submit{
+    width: 42px;
+    height: 22px;
+  }
+}
+/*choose_list*/
+
+.sum_pro i{
+  display: inline-block;
+  background-color: #fff;
+  border:1px solid #e4e4e4;
+  width: 33px;
+  height: 18px;
+  color: #666;
+  line-height: 18px;
+  margin:0 6px;
+  text-align: center;
+  font-family: "SimSun", serif;
+  cursor: pointer;
+}
+
+/*产品列表*/
+.mall_module_list{
+  margin-bottom: 80px;
+}
+.mall_module_list li{
+  margin-bottom: 20px;
+}
+.mall_module_list .mall_list_img{
+}

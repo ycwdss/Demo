@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改密码</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/change_pwd.css">
+</head>
+<body>
+<div class="l_main clearfix conwidth">
+    <!--左侧导航-->
+    <div class="left_content fl">
+        <!--头像-->
+        <div class="user_head">
+            <a class="user_head_img">
+                <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+            </a>
+            <p class="user_name">西天大圣</p>
+            <a  class="main" href="basic_info.html">修改个人信息 &gt;</a>
+        </div>
+        <dl class="user_nav">
+            <dt>个人中心</dt>
+            <dd><a class="main_hover mainbd_hover" href="coupon.html">优惠券</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="collect.html">商品收藏</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="evaluate.html">我的评价</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="message.html">我的消息</a></dd>
+        </dl>
+        <dl class="user_nav">
+            <dt>我的订单</dt>
+            <dd><a class="main_hover mainbd_hover" href="order_list.html">我的订单</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="refund_list.html">退换货</a></dd>
+        </dl>
+        <dl class="user_nav">
+            <dt>我的信息</dt>
+            <dd><a class="main_hover mainbd_hover" href="basic_info.html">基本信息</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="address.html">我的地址</a></dd>
+            <dd><a class="main main_border" href="change_pwd.html">修改密码</a></dd>
+        </dl>
+    </div>
+    <!--右侧信息-->
+    <div class="right_content fr">
+        <div class="right_title">
+            <h3>修改密码</h3>
+        </div>
+        <ul class="pwd_box clearfix noselect">
+            <li>请重置您的账户密码</li>
+            <li>
+                <input class="main_focus" id="oldpassword" name="oldpassword" placeholder="请输入当前密码" type="text" tabindex="1" required="required"/>
+            </li>
+            <li class="tips">
+                <i></i>
+                <span class="main">请输入正确的密码</span>
+            </li>
+            <li>
+                <input class="main_focus" id="newspassword" name="newspassword" placeholder="请输入新密码" type="text" tabindex="2" required="required"/>
+            </li>
+            <li class="tips">
+                <i></i>
+                <span class="main">密码长度8~16位，数字、字母、字符至少包含两种</span>
+            </li>
+            <li>
+                <input class="main_focus" id="againpassword" name="againpassword" placeholder="请输入确认新密码" type="text" tabindex="3" required="required"/>
+            </li>
+            <li class="tips">
+                <i></i>
+                <span class="main">请确认输入的两次密码一致</span>
+            </li>
+        </ul>
+        <div class="action_btn">
+            <a class="main_bg">提交</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+@import "../mobile_moudle/moudle/strategy_list_sort";
+@import "../mobile_moudle/moudle/shaixuan_top";
+@import "../mobile_moudle/moudle/_shaixuan_content";
+@import "../mobile_moudle/moudle/dianpuele";
+/*头部分类*/
+.l_nav{
+  div{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 1px solid #e4e4e4;
+    margin-top: 10px;
+    height: 25px;
+    overflow: visible;
+  }
+}
+.l_nav div:nth-child(3){
+  border: 0;
+}
+.l_nav span{
+  display: block!important;
+  position: relative;
+  height: 45px;
+  width: 60px;
+  margin: -10px auto 0;
+  background: #fff;
+  border-bottom: 1px solid #FFFFFF;
+}
+.l_nav .current span{
+  position: relative;
+  background: #FFFFFF;
+  border-bottom: 1px solid #093;
+}

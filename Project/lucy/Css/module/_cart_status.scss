@@ -1,0 +1,69 @@
+@charset "UTF-8";
+//商品状态
+.cart_status{
+  margin-top:50px;
+  height: 40px;
+  padding:43px 22px;
+  width: 1056px;
+}
+.status_list{
+  width: 320px;
+  margin: 0 6px;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  &:before,&:after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background-color: #e4e4e4;
+  }
+  &:before{
+    bottom: 0;
+    -webkit-transform: skew(-40deg);
+    -moz-transform: skew(-40deg);
+    -o-transform: skew(-40deg);
+    transform: skew(-40deg);
+  }
+  &:after{
+    top: 0;
+    -webkit-transform: skew(40deg);
+    -moz-transform: skew(40deg);
+    -o-transform: skew(40deg);
+    transform: skew(40deg);
+  }
+  span{
+    position: relative;
+    z-index: 3;
+  }
+}
+.status1{
+  &:before,&:after{
+    width:18%;
+    right: -14px;
+  }
+}
+.status2{
+  width: 327px;
+  *margin-left:30px;
+  background-color: transparent!important;
+  *background-color: #e4e4e4!important;
+  &:before,&:after{
+    width:100%;
+    right: -27px;
+  }
+  span{
+    padding-left:30px;
+  }
+}
+.status3{
+  &:before,&:after{
+    width:18%;
+    left: -14px;
+  }
+}
+

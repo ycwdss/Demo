@@ -1,0 +1,268 @@
+.fr {
+  float: right;
+  *display: inline; }
+
+.fl {
+  float: left;
+  *display: inline; }
+
+.l_main {
+  position: relative;
+  margin-top: 10px; }
+
+.my_account {
+  margin-bottom: 150px; }
+  .my_account ul li {
+    display: block;
+    background-color: #fff; }
+    .my_account ul li .my_logo {
+      display: block;
+      width: 100%;
+      height: 100px;
+      line-height: 60px;
+      position: relative;
+      padding: 20px 10px; }
+      .my_account ul li .my_logo i {
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        display: block;
+        width: 10px;
+        height: 18px;
+        line-height: 18px; }
+    .my_account ul li label {
+      float: left;
+      font-size: 1.4rem;
+      color: #000; }
+    .my_account ul li .logo_area {
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      margin-right: 20px;
+      width: 60px;
+      height: 60px;
+      overflow: hidden; }
+      .my_account ul li .logo_area img {
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+  .my_account ul .my_name {
+    border-bottom: 1px solid #e4e4e4; }
+  .my_account ul a {
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e4e4e4;
+    display: block; }
+    .my_account ul a span {
+      float: right;
+      color: #888;
+      font-size: 1.3rem;
+      margin-right: 20px; }
+    .my_account ul a i {
+      position: absolute;
+      right: 10px;
+      top: 16px;
+      display: inline-block;
+      width: 10px;
+      height: 17px;
+      line-height: 17px; }
+  .my_account ul li:nth-child(7) a {
+    border-bottom: 0; }
+  .my_account li:nth-child(8) {
+    margin-top: 10px; }
+  .my_account li:last-child a {
+    border-bottom: 0; }
+
+.part {
+  margin-top: 10px; }
+
+.my_account {
+  position: relative; }
+
+.change_photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 250px;
+  height: 120px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 99999;
+  background: #FFFFFF; }
+  .change_photo li {
+    border-bottom: 1px solid #f8f8f8; }
+
+.change_data {
+  display: none; }
+  .change_data .current_tel {
+    position: relative;
+    margin-top: 10px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff; }
+    .change_data .current_tel .tel_info {
+      width: 95%;
+      position: absolute;
+      top: 10px;
+      left: 14px;
+      background-color: #f8f8f8;
+      height: 40px;
+      line-height: 40px; }
+      .change_data .current_tel .tel_info label {
+        float: left;
+        font-size: 14px;
+        color: #000;
+        margin: 0 25px 0 10px; }
+
+.change_nick_name .inpt, .change_email .inpt {
+  height: 40px;
+  line-height: 40px;
+  border: 0;
+  background-color: #f8f8f8;
+  width: 95%;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  text-indent: 10px; }
+
+.change_nick_name p, .change_email p {
+  padding: 0 20px 5px;
+  background: #FFFFFF; }
+
+.change_sex {
+  position: absolute;
+  left: 14%;
+  width: 72%;
+  top: 0;
+  margin: 180px auto 0;
+  display: none;
+  z-index: 10001; }
+  .change_sex ul li {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 14px;
+    background-color: #fff; }
+  .change_sex ul li:first-child {
+    color: #fff;
+    text-align: center;
+    position: relative; }
+    .change_sex ul li:first-child .quit, .change_sex ul li:first-child .make_sure {
+      font-size: 12px;
+      padding: 0 10px; }
+    .change_sex ul li:first-child .quit {
+      float: left; }
+    .change_sex ul li:first-child .make_sure {
+      float: right; }
+  .change_sex ul li:nth-child(3) {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4; }
+  .change_sex ul span {
+    float: left; }
+  .change_sex ul input {
+    float: right;
+    margin-top: 19px;
+    opacity: 0; }
+  .change_sex .my_select {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    float: right;
+    margin-top: 18px;
+    display: block;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-right: 12px; }
+
+.change_pw {
+  display: none; }
+  .change_pw ul {
+    height: 110px;
+    line-height: 110px;
+    background-color: #fff;
+    padding-top: 10px; }
+    .change_pw ul li {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px;
+      font-size: 1.4rem; }
+      .change_pw ul li label {
+        margin-right: 10px; }
+      .change_pw ul li input {
+        height: 32px;
+        line-height: 32px;
+        width: 72%;
+        border: 0;
+        background-color: #f8f8f8;
+        text-indent: 5px; }
+    .change_pw ul li:first-child {
+      margin-bottom: 4px; }
+      .change_pw ul li:first-child label {
+        margin-left: 25px; }
+    .change_pw ul .tips {
+      height: 15px;
+      line-height: 15px;
+      margin: 5px 0 0 80px;
+      color: red;
+      display: none; }
+
+.black_bg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display: none; }
+  .black_bg > div {
+    max-width: 640px;
+    margin: 0 auto;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+
+.change_email {
+  display: none; }
+  .change_email p {
+    color: red; }
+  .change_email .tips {
+    display: none;
+    padding: 0px 20px 5px;
+    background-color: #fff;
+    margin: 0; }
+
+.sure_btn {
+  width: 150px;
+  line-height: 40px;
+  text-align: center;
+  margin: 35px auto 0;
+  padding: 0;
+  border: 0;
+  display: inherit;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer; }
+
+.input {
+  margin-bottom: 300px; }
+
+#appDate {
+  width: 100px;
+  padding-right: 30px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: 0;
+  height: 48px;
+  line-height: 48px;
+  color: #888;
+  text-align: right;
+  background-color: #fff; }

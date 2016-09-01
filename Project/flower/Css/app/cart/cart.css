@@ -1,0 +1,380 @@
+@charset "UTF-8";
+.recommend_title {
+  margin: 40px 0 25px;
+  line-height: 50px;
+  background: #f8f8f8;
+  font-size: 16px;
+  color: #333; }
+  .recommend_title i {
+    font-size: 25px;
+    margin: 0 10px 0 20px; }
+
+.recommend_content {
+  position: relative; }
+
+.recommend_slick {
+  position: relative;
+  width: 1080px;
+  height: 330px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.recommend_pro {
+  width: 250px;
+  margin: 0 auto 10px; }
+  .recommend_pro img {
+    display: block;
+    width: 250px;
+    height: 250px; }
+  .recommend_pro p {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+    .recommend_pro p a {
+      color: #333; }
+  .recommend_pro h4 {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center; }
+
+.recommend_left {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  color: #888;
+  line-height: 280px;
+  height: 310px;
+  width: 60px;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center; }
+
+.recommend_right {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  color: #888;
+  line-height: 280px;
+  height: 310px;
+  width: 60px;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center; }
+
+.site {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px; }
+  .site a {
+    font-size: 14px;
+    color: #666; }
+  .site span {
+    font-family: sans-serif,'Microsoft YaHei';
+    margin: 0 2px; }
+
+/*
+<!--站点指示-->
+<div class="site">
+<a href="#">首页</a>
+<span>&gt;</span>
+<a>个人中心</a>
+</div>
+*/
+.cart_head {
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  font-size: 24px;
+  background-color: #f1f1f1;
+  position: relative; }
+
+.cart_icon {
+  font-size: 16px;
+  color: #333;
+  padding-left: 40px;
+  position: relative; }
+  .cart_icon i {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    font-size: 30px;
+    color: #8f8f8f; }
+
+.cart_step {
+  float: right;
+  margin-top: 20px; }
+  .cart_step li {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    background-color: #e4e4e4; }
+  .cart_step i {
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-top: 15px solid transparent !important;
+    border-bottom: 15px solid transparent !important; }
+  .cart_step .left_arrow {
+    left: 0;
+    border-left: 12px solid #f1f1f1; }
+  .cart_step .right_arrow {
+    right: -12px;
+    border-left: 12px solid #c5c5c5; }
+  .cart_step .step1 {
+    width: 160px; }
+  .cart_step .step2, .cart_step .step3 {
+    width: 150px;
+    background-color: #c5c5c5; }
+
+/*c_gotop*/
+#totop {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000; }
+
+.cart_body {
+  font-size: 14px; }
+
+.cart_body .list_head {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  color: #333; }
+
+.list_check {
+  width: 60px;
+  padding-left: 20px; }
+  .list_check .icon_checkbox {
+    margin-right: 15px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    border: 1px solid #e4e4e4;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .list_check .checked:before {
+    content: "";
+    display: inline-block;
+    border: 1px solid #666;
+    width: 13px;
+    height: 13px;
+    vertical-align: 2px;
+    background: #666 url("../../../Images/sprite/sprite_checked.png?_nosprite") no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.list_name {
+  width: 400px;
+  text-align: center;
+  color: #333; }
+
+.list_sale,
+.list_promotion,
+.list_discount,
+.list_num,
+.list_total,
+.list_action {
+  width: 140px;
+  font-size: 14px;
+  text-align: center; }
+
+.list_items .list_sale,
+.list_items .list_promotion,
+.list_items .list_discount,
+.list_items .list_num,
+.list_items .list_total,
+.list_items .list_action {
+  color: #666;
+  font-size: 18px; }
+
+.list_content .main_bg_opacity {
+  display: none;
+  opacity: 0.1;
+  filter: alpha(opacity=10); }
+
+.list_content .list_items {
+  padding: 15px 0;
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative; }
+  .list_content .list_items .list_name .list_good_img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    _zoom: 1; }
+    .list_content .list_items .list_name .list_good_img img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .list_content .list_items .list_name .list_good_text {
+    width: 240px;
+    padding-left: 10px;
+    line-height: normal;
+    height: 100px;
+    display: table; }
+    .list_content .list_items .list_name .list_good_text > div {
+      display: table-cell;
+      vertical-align: middle; }
+    .list_content .list_items .list_name .list_good_text .title {
+      display: inline-block;
+      width: 240px;
+      font-size: 14px;
+      color: #333;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .list_content .list_items .list_name .list_good_text p {
+      font-size: 12px;
+      color: #888;
+      line-height: 20px;
+      max-height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+  .list_content .list_items .list_num {
+    position: relative;
+    top: 50%;
+    margin-top: -16px; }
+    .list_content .list_items .list_num > div {
+      width: 114px;
+      margin: 0 auto; }
+    .list_content .list_items .list_num a {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      display: block;
+      border: 1px solid #e4e4e4;
+      font-size: 15px;
+      vertical-align: 1px;
+      color: #666; }
+    .list_content .list_items .list_num .text {
+      width: 50px;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #e4e4e4;
+      border-right: 0;
+      border-left: 0;
+      text-align: center;
+      font-size: 15px;
+      color: #666; }
+    .list_content .list_items .list_num p {
+      font-size: 12px;
+      line-height: 25px;
+      text-align: center;
+      color: #666; }
+  .list_content .list_items .list_action a {
+    font-size: 16px;
+    color: #666; }
+  .list_content .list_items .list_action i {
+    color: #666;
+    padding: 0 10px; }
+
+.total_wrap {
+  margin-top: 20px;
+  position: relative; }
+  .total_wrap .main_bg_opacity {
+    opacity: 0.2;
+    filter: alpha(opacity=20); }
+
+.total_inner {
+  padding: 30px 20px;
+  height: 140px;
+  position: relative; }
+  .total_inner .delete {
+    display: inline-block;
+    font-size: 16px;
+    color: #888; }
+    .total_inner .delete i {
+      font-size: 16px;
+      color: #666;
+      padding-right: 10px;
+      display: inline-block; }
+
+.account_list .list {
+  line-height: 32px;
+  color: #888;
+  font-size: 16px; }
+  .account_list .list label {
+    width: 150px;
+    text-align: right;
+    display: inline-block; }
+  .account_list .list .total {
+    font-size: 20px; }
+  .account_list .list a {
+    font-size: 16px;
+    color: #fff;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    background-color: #666; }
+    .account_list .list a i {
+      font-family: \5b8b\4f53;
+      font-weight: 600; }
+  .account_list .list .btn {
+    border: 0; }
+  .account_list .list .go_again:hover {
+    color: #fff;
+    background-color: #616161 !important; }
+
+.cart_empty {
+  color: #888;
+  padding: 200px 0 300px 0;
+  width: 600px;
+  margin: 0 auto; }
+  .cart_empty .icon_empty {
+    font-size: 125px;
+    color: #ccc;
+    margin-top: -40px; }
+  .cart_empty p {
+    font-size: 18px;
+    padding-left: 170px; }
+    .cart_empty p em {
+      color: #333; }
+    .cart_empty p a {
+      padding-left: 5px; }
+      .cart_empty p a:hover {
+        text-decoration: underline; }
+      .cart_empty p a b {
+        font-size: 12px;
+        padding-left: 5px;
+        font-weight: 600;
+        font-family: \5b8b\4f53;
+        vertical-align: middle; }
+
+/*# sourceMappingURL=cart.css.map */

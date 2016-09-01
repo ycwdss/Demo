@@ -1,0 +1,593 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+
+//===================购物车步骤提示-======================
+.cart_step{
+  padding-top: 43px;
+  li{
+    width: 196px;
+    height: 34px;
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    em{
+      color: #e01d20;
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      display: inline-block;
+      text-align: center;
+      font-size: 9px;
+      border-radius:3px;
+    }
+  }
+  .mycart{
+    background: url("../../cart/Images/sprite_mycart2.png") no-repeat;
+  }
+  .fill_order{
+    background: url("../../cart/Images/sprite_stepnow.png") no-repeat;
+    color: #fff;
+    em{
+      background-color: #fff;
+    }
+  }
+  .submit_sucess{
+    background: url("../../cart/Images/sprite_step.png") no-repeat;
+  }
+  .com{
+    color: #333;
+    em{
+      background-color: #666;
+      color: #fff;
+    }
+  }
+}
+
+
+//=================收获信息填写-==================
+
+.receive_info{
+  //===================设置收货地址信息==============
+.set_address{
+  margin-bottom: 35px;
+  .address_title{
+    font-size: 14px;
+    border-left: 4px solid #e5e5e5;
+    padding-left: 6px;
+    margin-bottom: 10px;
+    a{
+      color: #28c0c6;
+      padding-left: 6px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .add_tips,.more_show{
+    padding: 18px 0;
+    position: relative;
+    border: 1px solid #dedede;
+    margin: -1px  0;
+    text-align: center;
+    display: none;
+    &:hover{
+      background-color: #fdfcf4;
+    }
+    .add_click{
+      padding: 0 5px;
+      color: #28c0c6;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .address_info{
+    border: 1px solid #dedede;
+    li{
+      padding: 18px 0;
+      position: relative;
+      border-top: 1px solid #dedede;
+      border-bottom: 1px solid #dedede;
+      margin: -1px  0;
+      text-align: center;
+      display: none;
+      &:hover{
+        background-color: #fdfcf4;
+      }
+
+      .address_main{
+        margin-left: 98px;
+      }
+      .address_main{
+        input{
+          vertical-align: middle;
+        }
+        em{
+          margin-left: 15px;
+        }
+        span{
+          color: #999;
+          margin-left: 24px;
+          display: inline-block;
+          word-break: break-all;
+          word-wrap: break-word;
+        }
+      }
+      .address_eidt{
+        width: 200px;
+        padding-right: 20px;
+        line-height: 18px;
+        a{
+          margin-right:20px;
+          color: #28c0c6;
+          &:hover{
+            text-decoration: underline;
+          }
+          span{
+            color: #999;
+          }
+        }
+        .delet{
+            width: 18px;
+            height: 18px;
+          text-align: center;
+            display: inline-block;
+            i{
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              background: url("../../cart/Images/sprite_cart_del.png") no-repeat;
+            }
+            &:hover{
+              background-color: #e01d20;
+              i{
+                background: url("../../cart/Images/sprite_cart_delH.png") no-repeat;
+              }
+            }
+        }
+      }
+      .address_mark{
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        color: #e01d20;
+        display: none;
+        i{
+         width: 24px;
+          height: 27px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+          background: url("../../cart/Images/sprite_address.png") no-repeat;
+        }
+      }
+    }
+    .always_show{
+      display: block;
+    }
+    .current{
+      border: 1px solid #fadccf;
+      background-color: #fffde6;
+      margin: -1px;
+      z-index: 776;
+      .address_mark{
+        display: block;
+      }
+    }
+  }
+  .more_show{
+    text-align:left;
+    display: block;
+    padding-left: 98px;
+    cursor: pointer;
+    i{
+      display: inline-block;
+      margin-left: 5px;
+      width: 7px;
+      height: 7px;
+      overflow: hidden;
+      background: url("../../cart/Images/sprite_showmore.png") no-repeat;
+    }
+    .arrow{
+      background: url("../../cart/Images/sprite_hidemore.png") no-repeat;
+    }
+  }
+}
+  //==============修改发票信息================
+  .set_note{
+    margin-bottom: 35px;
+    .note_title{
+      font-size: 14px;
+      border-left: 4px solid #e5e5e5;
+      padding-left: 6px;
+      margin-bottom: 10px;
+      a{
+        color: #999;
+        padding-left: 6px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .note_info{
+      li{
+        border-top: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        margin: -1px 0 -1px;
+        .note_set{
+          height: 24px;
+          padding: 10px 0 10px 20px;
+          .check{
+            vertical-align: middle;
+          }
+          em{
+            margin-left: 20px;
+          }
+          .fillin{
+            margin-left: 20px;
+            width:300px;
+            height: 24px;
+            line-height: 24px;
+            border:1px solid #dedede;
+            padding-left: 5px;
+            font-size: 14px;
+            &:focus{
+              background-color: #FFFFE9;
+              border-color: #EE9043;
+            }
+          }
+          .error_show{
+            display: none;
+            color: #ff5f00;
+            i{
+              width: 16px;
+              height: 16px;
+              display: inline-block;
+              vertical-align: -3px;
+              margin-right: 10px;
+              background: url("../../cart/Images/sprite_error.png") no-repeat;
+            }
+          }
+        }
+      }
+    }
+    .note_tips{
+      padding: 10px 0 0 10px;
+      color: #f63;
+      em{
+        color: #888;
+      }
+    }
+  }
+}
+//====================修改收货地址信息 弹窗=========
+.mask{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  .address_popup{
+    width: 700px;
+    border: 1px solid #d2d2d2;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    z-index: 9999;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -350px;
+    margin-top: -350px;
+
+
+    h2{
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      .close{
+        position: absolute;
+        right: 15px;
+        top:15px;
+        display: block;
+        width: 11px;
+        height: 11px;
+        cursor: pointer;
+        background: url("../../cart/Images/sprite_fillorder_close.png") no-repeat;
+      }
+    }
+    form{
+      padding: 0 30px;
+      .edit_list{
+        margin-bottom: 20px;
+        label{
+          width: 100px;
+          display: inline-block;
+          text-align: right;
+          em{
+            margin-right: 5px;
+            color:#ca141c ;
+          }
+        }
+        input{
+          padding: 7px 10px;
+          height: 18px;
+          line-height: 18px;
+          border: 1px solid #dedede;
+          background-color: #fff;
+        }
+        .fill_address{
+          margin-left: 5px;
+          .select_address{
+            margin-bottom: 10px;
+            select{
+              margin-right: 15px;
+              width: 80px;
+              height: 24px;
+            }
+          }
+        }
+        .fill_detail{
+          position: relative;
+          em{
+            position: absolute;
+            top:7px;
+            left:7px;
+            color: #999;
+          }
+          textarea{
+            width: 380px;
+            height: 60px;
+            resize: none;
+            padding: 7px 10px;
+            border: 1px solid #dedede;
+            background-color: #fff;
+          }
+        }
+      }
+      .submit_not{
+        padding: 5px 0 30px;
+        text-align: center;
+        a{
+          display: inline-block;
+          min-width: 78px;
+          height: 35px;
+          line-height: 35px;
+          border: 1px solid #d1d1d1;
+          text-align: center;
+          padding: 0 20px;
+          white-space: nowrap;
+          margin-right: 10px;
+          &:hover{
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+}
+//==================商品信息==================
+.shps_title{
+  text-align: center;
+  background-color: #f7f7f7;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #dedede;
+  border-bottom: 0;
+  em{
+    font-weight: 400;
+    color: #e01d20;
+    margin: 0 4px;
+  }
+}
+.ge{
+  border: 1px solid #dedede;
+  border-bottom: 0 none;
+  background-color: #f7f7f7;
+  .col{
+    padding: 8px 0;
+    float: left;
+    text-align: center;
+  }
+  .pro_check{
+    width: 45px;
+    input{
+      vertical-align: middle;
+    }
+  }
+  .pro_title{
+    width: 640px;
+  }
+  .pro_unit{
+    width: 158px;
+  }
+  .pro_num{
+    width: 230px;
+  }
+  .pro_total{
+    width: 150px;
+  }
+}
+.shps_wrap{
+  display: table;
+  border-bottom: 1px solid #ededed;
+  background-color: #fff;
+  .shps_inner{
+    display: table-row;
+    margin-bottom: 20px;
+    .col{
+      display: table-cell;
+      float: none;
+      padding: 10px 0;
+      vertical-align: middle;
+    }
+  }
+  .pro_title{
+   ul{
+     li{
+       width: 630px;
+       text-align: left;
+       margin-left: 50px;
+       line-height: 20px;
+       height: 20px;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+       overflow: hidden;
+       a{
+         color: #333;
+         &:hover{
+          text-decoration: underline;
+         }
+       }
+       em{
+         color: #e01d20;
+       }
+
+     }
+   }
+  }
+}
+
+//=====================金额列表-=============
+.shps_money{
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  padding:20px;
+  //优惠券----------
+  .use_ticket{
+    .ticket_title{
+      margin-bottom: 20px;
+      a{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #999999;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 18px;
+        margin-right: 5px;
+      }
+    }
+    .ticket_toggle{
+      display: none;
+      border: 1px solid #ededed;
+      ul{
+        padding: 10px;
+        border-bottom: 1px solid #ededed;
+        li{
+          float:left;
+          min-width: 200px;
+          height: 20px;
+          height: 20px;
+          line-height: 24px;
+          border-right: 1px solid #ededed;
+          text-align: center;
+          cursor: pointer;
+
+        }
+        .current{
+          color: #e01d20;
+        }
+      }
+      .ticket_container{
+        padding: 10px;
+        p{
+          max-width: 400px;
+          height: 24px;
+          line-height: 24px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        .fill_code{
+
+          display: none;
+         input{
+           width: 400px;
+           border: 1px solid #ededed;
+           padding: 5px;
+           height: 28px;
+           line-height: 28px;
+           &:focus{
+             background-color: #FFFFE9;
+             border-color: #EE9043;
+           }
+         }
+        }
+      }
+    }
+  }
+  //金额-----------
+  .account_list{
+    background-color:#f7f7f7;
+
+    .list_wrap{
+      padding: 20px;
+    }
+    .list{
+      height: 28px;
+      line-height: 28px;
+      label{
+        width: 100px;
+        text-align: right;
+        display: inline-block;
+      }
+      em{
+        color: #e01d20;
+      }
+    }
+    .total{
+      padding:10px 20px;
+      border-top: 1px solid #ededed;
+      label{
+        font-size: 14px;
+      }
+      em{
+        color: #e01d20;
+        font-weight: 400;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+//==================提交订单============
+.to_submit{
+  margin: 50px 0;
+  font-size: 14px;
+  text-align: right;
+  label{
+    vertical-align: -4px;
+  }
+  em{
+    color: #e01d20;
+    font-size: 30px;
+    vertical-align: -8px;
+    margin: 0 8px;
+  }
+  a{
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    display:inline-block;
+    color: #fff;
+    background-color:#e01d20;
+    text-align: center;
+    vertical-align: middle;
+    &:hover{
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+    }
+  }
+}

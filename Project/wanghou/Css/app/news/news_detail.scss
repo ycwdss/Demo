@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import "../../module/site";
+
+.left_side{
+  padding: 30px 20px 15px;
+  width: 890px;
+  background-color: #fff;
+  .title{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  .title_info{
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    position: relative;
+    span{
+      margin: 0 28px;
+    }
+    .bdsharebuttonbox{
+      position: absolute;
+      right: 0;
+      top:2px;
+    }
+  }
+  .news_inner{
+    padding: 20px;
+    p{
+      font-size: 16px;
+      color: #666;
+      line-height: 30px;
+    }
+  }
+}
+.right_side{
+  width: 310px;
+  background-color: #fff;
+  padding: 20px;
+  h1{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  ul{
+    padding-top: 30px;
+    li{
+    padding-bottom: 15px; 
+      span{
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+        vertical-align: 5px;
+      }
+      a{
+        font-size: 14px;
+        width:290px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+.has_img{
+  width: 310px;
+  height: 90px;
+  margin-bottom: 15px;
+  img{
+    width: 90px;
+    height: 90px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+  }
+  a{
+    float: left;
+    width: 200px;
+    line-height: 36px;
+    height: 72px;
+    overflow: hidden;
+    display: inline-block;
+  }
+}

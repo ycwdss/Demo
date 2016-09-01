@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/pagelist";
+
+.baojia_ele {
+  position: relative;
+  overflow: hidden;
+  padding:0 50px;
+  &:hover{
+    -webkit-box-shadow: 0 0 10px #e4e4e4 ;
+    -moz-box-shadow: 0 0 10px #e4e4e4 ;
+    box-shadow: 0 0 10px #e4e4e4 ;
+    .baojia_grid{
+      border-bottom-color: #ffffff;;
+    }
+  }
+  > h3 {
+    font-size: 18px;
+    line-height: 75px;
+    color: #333;
+    i {
+      position: relative;
+      color: #888888;
+      font-size: 14px;
+      padding-left: 24px;
+      &:before {
+        position: absolute;
+        top: 15%;
+        left: 12px;
+        content: '';
+        height: 70%;
+        border-left: 1px solid #999;
+      }
+    }
+  }
+}
+
+.baojia_pro, .baojia_source {
+  width: 250px;
+}
+.baojia_count,.baojia_operation{
+  width: 205px;
+}
+
+.baojia_grid {
+  display: table;
+  height: 100px;
+  width: 910px;
+  color: #666;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e4e4;
+  > div {
+    float: left;
+    display: table;
+    height:100%;
+    border:1px solid #e4e4e4;
+    border-right:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    >div{
+      display: table-cell;
+      vertical-align: middle;
+      padding:0 10px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+}
+.baojia_pro{
+  h4{
+    font-size: 15px;
+    color: #333;
+  }
+  p{
+    font-size: 14px;
+    max-height: 42px;
+    @include ell(2);
+  }
+}
+.baojia_source p{
+  text-align: center;
+  font-size: 14px;
+  max-height: 42px;
+  @include ell(2);
+}
+.baojia_count p{
+  text-align: center;
+  font-size: 14px;
+  max-height: 42px;
+  @include ell(2);
+}
+.baojia_operation{
+  border-right: 1px solid #e4e4e4!important;
+  span{
+    display: block;
+    margin:0 auto;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    @include transition();
+    &:hover{
+      @include opacity(85);
+    }
+  }
+}
+.page_list{
+  margin-top: 40px;
+}
+.page_list input{
+  line-height: 23px;
+  padding:0;
+}

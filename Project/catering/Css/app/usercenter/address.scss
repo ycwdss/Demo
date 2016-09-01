@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+
+.address_box{
+  padding:20px 70px;
+  background-color: #fff;
+}
+.address_items{
+  padding:30px;
+  margin-top: 20px;
+  border:1px solid #e4e4e4;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.address_li1{
+  font-size: 16px;
+  color: #333;
+}
+.address_li2{
+  display: none;
+  width: 70px;
+  line-height: 22px;
+  text-align: center;
+  margin-left: 38px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.address_li3{
+  display: none;
+  line-height: 22px;
+  padding:0 5px;
+  cursor: pointer;
+}
+.address_phone{
+  margin:0 25px;
+}
+.address_items:hover{
+  .address_li2,.address_li3{
+    display: inline-block;
+  }
+}
+//使用新地址
+.check {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999;
+  vertical-align: -3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.address_new{
+  margin-top:35px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+//编辑地址
+.address_edit{
+  padding-left:25px;
+  padding-top: 30px;
+  label{
+    float: left;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+  }
+}
+.edit_list{
+  margin-bottom: 15px;
+}
+.edit_input{
+  float: left;
+  width: 600px;
+  input{
+    width: 590px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    padding-left: 10px;
+    border: 1px solid #e4e4e4;
+    font-family: '\5fae\8f6f\96c5\9ed1';
+    @include transition(border-color,0.2s,ease);
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #999;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #999;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #999;
+  }
+  /*错误提示信息*/
+  p{
+    font-size: 12px;
+    line-height: 24px;
+    padding-left: 12px;
+    visibility: hidden;
+  }
+}
+.drop_menu{
+  width: 190px;
+  margin-right: 15px;
+  color: #666;
+}
+.address_mark{
+  float: none;
+}
+.address_save{
+  margin: 10px 0;
+  input{
+    width: 180px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+

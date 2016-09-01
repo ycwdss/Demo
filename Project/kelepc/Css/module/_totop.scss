@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*c_gotop*/
+#totop {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000;
+  background-color: #0285da;
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import "../lib/lib";
+.main_content{
+  margin-top: 10px;
+  padding: 15px 15px 0;
+  background-color: #fff;
+  .content_title{
+    h3 {
+      margin: 5px 0;
+      font-size: 18px;
+      text-align: center;
+      color: #333;
+    }
+    .writer_info {
+      padding:6px 0 15px;
+      font-size:12px;
+      color: #888;
+      border-bottom: 1px solid #e4e4e4;
+      text-align: center;
+      .date {
+        margin-right: 20%;
+      }
+    }
+  }
+  .module_content {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 2;
+    color: #666;
+    h4 {
+      font-size: 16px;
+      color: #333;
+    }
+    img {
+      display: block !important;
+      width: 90% !important;
+      height: auto!important;
+      margin:12px auto !important;
+    }
+  }
+}
+//上下篇
+.up_down {
+  margin-top: 35px;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #888;
+  > div {
+    position: relative;
+    vertical-align: top;
+    a {
+      display: inline-block;
+      width: 55%;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #666;
+    }
+    span.date {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

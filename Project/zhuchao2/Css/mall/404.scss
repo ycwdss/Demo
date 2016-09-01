@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+  background-color: #fff;
+}
+.content{
+  background-color: #F8F8F8;
+}
+.content_inner{
+  position: relative;
+  height: 670px;
+}
+.content_text{
+  position: absolute;
+  left: 50%;
+  top:215px;
+  margin-left: 80px;
+  font-size: 14px;
+  color: #666;
+  strong{
+    font-weight: normal;
+    font-size: 54px;
+  }
+  p:first-child{
+    font-size:22px;
+    color: #333;
+  }
+  p:last-child{
+  padding-top: 20px;
+    a{
+      font-size: 14px;
+      color: #093;
+      &:hover{
+        color: #2e93d7;
+      }
+    }
+    a:last-child{
+      margin-left: 130px;
+    }
+  }
+}

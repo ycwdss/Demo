@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/site";
+@import "../module/company/_company_pro_card";
+@import "../module/company/_company_info";
+@import "../module/pagelist";
+
+.content{
+  min-height: 400px;
+}
+
+//产品分类
+.product_classify {
+  margin-top: 20px;
+  width: 205px;
+  border: 1px solid #e4e4e4;
+  h1 {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size: 13px;
+    color: #000;
+  }
+  em {
+    font-size: 13px;
+    color: #999;
+    margin-left: 10px;
+  }
+  h2 {
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome all / Safari all /opera15+*/
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+    i {
+      margin-right: 15px;
+    }
+  }
+  ul {
+    display: none;
+    li {
+      a {
+        display: inline-block;
+        text-indent: 70px;
+        width: 205px;
+        height: 40px;
+        line-height: 40px;
+        &:hover {
+          background-color: #e4e4e4;
+        }
+      }
+    }
+  }
+}
+
+//右侧列表区域
+.r_section {
+  width: 875px;
+  overflow: hidden;
+  .rank_choice {
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #e4e4e4;
+  }
+  .rank_btn1 {
+    margin-left: 25px;
+    a {
+      float: left;
+      display: inline-block;
+      text-align: left;
+      width: 75px;
+      font-size: 14px;
+      color: #000;
+    }
+  }
+  .arrow_wrap {
+    display: inline-block;
+    vertical-align: middle;
+    i {
+      display: block;
+      font-size: 12px;
+      line-height: 12px;
+
+    }
+    .icon-black-up {
+      margin-bottom: -3px;
+    }
+    .icon-black-down {
+      margin-top: -4px;
+    }
+    .active {
+      color: #999;
+    }
+  }
+
+  .btn2_total {
+    font-size: 14px;
+    color: #000;
+  }
+  .btn2_page {
+    padding: 0 10px 0 40px;
+    font-size: 14px;
+    color: #000;
+  }
+  .btn2_next {
+    margin-right: 10px;
+    a {
+      display: inline-block;
+      width: 60px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      font-size: 12px;
+      font-family: sans-serif, 'Microsoft YaHei';
+      color: #a5a5a5;
+      border: 1px solid #e4e4e4;
+      @include box-sizing();
+      margin-left: 10px;
+      &:hover{
+        background: #F8F8F8;
+      }
+    }
+  }
+}
+
+//产品列表
+.pro_list_wrap {
+  min-height: 560px;
+  margin: 30px -9px;
+  .pro_card {
+    width: 205px;
+    padding: 0;
+    margin: 0 9px 20px;
+  }
+  .pro_card > div > a {
+    display: block;
+    position: relative;
+    width: 190px !important;
+    height: 118px !important;
+  }
+  .pro_card > div img {
+    display: block;
+    width: 190px !important;
+    height: 118px !important;
+  }
+  .pro_card > div p {
+    margin:15px 20px 20px;
+    line-height: 20px;
+    max-height: 40px;
+    @include ell(2);
+  }
+  .pro_card > div span {
+    margin-bottom: 15px;
+  }
+}
+

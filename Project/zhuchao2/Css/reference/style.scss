@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../lib/commonclass";
+@import "../lib/reset";
+@import "../lib/font";
+@import "../lib/layer";
+@import "../module/header_top";
+@import "../module/totop";
+@import "../module/footer";
+.conwidth1100 {
+  width: 1100px !important;
+  margin: 0 auto;
+}
+//个人中心
+.head {
+  height: 60px;
+  line-height: 60px;
+}
+
+.head_box .logo_img {
+  display: block;
+  width: 260px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
+  img {
+    display: inline-block;
+    max-width: 163px;
+    height: 40px;
+    float: left;
+  }
+  span {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    em {
+      margin:0 10px;
+    }
+  }
+}
+
+.head_box ul li {
+  float: left;
+  margin-right: 1px;
+  a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 35px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+  
+  
+
+

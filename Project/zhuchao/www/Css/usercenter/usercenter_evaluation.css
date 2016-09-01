@@ -1,0 +1,66 @@
+.m_message {
+  margin-bottom: 50px; }
+
+.c_message {
+  display: table;
+  padding: 45px 0;
+  border-bottom: 1px dashed #e4e4e4; }
+
+.message_detail {
+  display: table-cell;
+  vertical-align: middle;
+  color: #666;
+  font-size: 14px;
+  width: 360px;
+  line-height: 25px;
+  text-indent: 20px; }
+  .message_detail p {
+    text-indent: 0;
+    color: #888;
+    font-size: 13px; }
+
+.store_name {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 330px;
+  font-size: 14px; }
+  .store_name span {
+    color: #093; }
+    .store_name span:hover {
+      color: #f60; }
+
+.store_infor {
+  display: table-cell;
+  vertical-align: middle;
+  width: 350px;
+  color: #666;
+  font-size: 14px;
+  line-height: 25px; }
+  .store_infor span {
+    color: #093; }
+
+.pro_price {
+  color: #f60;
+  font-size: 14px; }
+
+.show_img img {
+  float: left;
+  border: 1px solid #FFFFFF;
+  padding: 1px;
+  width: 64px !important;
+  height: 40px !important;
+  margin-right: 15px; }
+
+.show_img .img_clicked {
+  border: 1px solid #093; }
+
+.show_big_img {
+  margin: 10px 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  text-indent: 0; }
+  .show_big_img img {
+    width: 360px !important;
+    height: 225px !important; }

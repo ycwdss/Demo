@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/slick.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/usercenter.css">
+</head>
+<body>
+<!--头部-->
+<div class="header main_bg">
+    <a class="icon_logo" href="index.html">
+        <img src="../../Images/test/test_mall_logo.png" alt=""/>
+    </a>
+    <div class="header_nav_box">
+        <ul class="header_nav">
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">鲜花</a></li>
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">永生花</a></li>
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">礼品</a></li>
+            <li><a class="mainbg_opacity" href="../new/new_list.html">花语大全</a></li>
+        </ul>
+    </div>
+    <ul class="header_icon">
+        <li class="mainbg_opacity icon_search"><i class="icon-search"></i></li>
+        <li class="mainbg_opacity"><i class="icon-cart"></i></li>
+        <li class="mainbg_opacity"><i class="icon-phone"></i>
+            <div class="icon_phone_pull main_bg">
+                <a><img src="http://statics-res.fhzc.com/Images/pc/icon_erweima.png"><span>扫码下载客户端</span></a>
+            </div>
+        </li>
+        <li class="mainbg_opacity">
+            <i class="icon-user-white"></i>
+            <span class="h_login">登录</span>
+            <span class="h_register">注册</span>
+        </li>
+    </ul>
+    <div class="search_box  main_bg hide">
+        <div class="search_box_inner">
+            <form action="" class="search_form">
+                <input class="search_input" type="text" required/><input
+                    class="search_btn" type="button" value="搜索"/>
+            </form>
+            <!--热门搜索-->
+            <div class="search_hot">
+                <h4>人气搜索关键词：</h4>
+                <a href="">玫瑰花</a>
+                <a href="">友情花</a>
+                <a href="">探望病人</a>
+                <a href="">永生花</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--用户中心顶部-->
+<div class="usercenter_top ">
+    <div class="top_center">
+        <div class="conwidth">
+            <h2>个人中心</h2>
+            <div class="top_info main_border">
+                <div class="user_img">
+                    <img src="../../Images/test/test_user_img.jpg">
+                    <span>需改头像</span>
+                </div>
+                <h4>hell world</h4>
+                <p class="account_safety">
+                    账户安全：
+                    <span class="main_border"><i class="main_bg"></i></span>
+                    <em class="main">较高</em>
+                </p>
+                <p class="user_grade">会员等级：V3</p>
+                <div class="top_detail">
+                    <ul class="clearfix">
+                        <li>会员积分：20</li>
+                        <li><a href="coupon.html" class="main_hover">优 惠 券：<i class="main">3</i></a></li>
+                        <li><a href="message.html" class="main_hover">我的信息：<i class="main">3</i></a></li>
+                        <li><a href="order_list.html" class="main_hover">待 收 货：<i class="">0</i></a></li>
+                        <li><a href="order_list.html" class="main_hover">待 评 价：<i class="">0</i></a></li>
+                        <li><a href="refund_list.html" class="main_hover">正在退货：<i class="main">3</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="m_top_list conwidth clearfix">
+        <div class="top_list fl">
+            <h3 class="main_border">
+                <span class="top_list_left main_border"><i></i></span>
+                交易管理
+                <span class="top_list_right main_border"><i></i></span>
+            </h3>
+            <ul>
+                <li><a href="order_list.html" class="main_hover ">完成订单</a></li>
+                <li><a href="order_list.html" class="main_hover">待付款</a></li>
+                <li><a href="order_list.html" class="main_hover">待收货</a></li>
+            </ul>
+        </div>
+        <div class="top_list fl">
+            <h3 class="main_border">
+                <span class="top_list_left main_border"><i></i></span>
+                售后服务
+                <span class="top_list_right main_border"><i></i></span>
+            </h3>
+            <ul>
+                <li><a href="refund_list.html" class="main_hover">退货单</a></li>
+                <li><a href="refund_list.html" class="main_hover">换货单</a></li>
+            </ul>
+        </div>
+        <div class="top_list fr">
+            <h3 class="main_border">
+                <span class="top_list_left main_border"><i></i></span>
+                个人信息
+                <span class="top_list_right main_border"><i></i></span>
+            </h3>
+            <ul>
+                <li><a href="basic_info.html" class="main_hover ">基本信息</a></li>
+                <li><a href="address.html" class="main_hover">我的地址</a></li>
+                <li><a href="change_pwd.html" class="main_hover ">修改密码</a></li>
+
+            </ul>
+        </div>
+        <div class="top_list fr">
+            <h3 class="main_border">
+                <span class="top_list_left main_border"><i></i></span>
+                我的账户
+                <span class="top_list_right main_border"><i></i></span>
+            </h3>
+            <ul>
+                <li><a href="coupon.html" class="main_hover ">优惠券</a></li>
+                <li><a href="collect.html" class="main_hover ">商品收藏</a></li>
+                <li><a href="evaluate.html" class="main_hover ">我的评价</a></li>
+                <li><a href="message.html" class="main_hover">我的消息</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="m_content conwidth">
+    <div class="usercenter_title">
+        <h2>完成订单</h2>
+        <p>COMPLETE ORDER</p>
+    </div>
+    <div class="order_list">
+        <div class="order_nav clearfix">
+            <span class="order_detail">订单详情</span>
+            <span class="order_price">总价（元）</span>
+            <span class="order_count">商品数量</span>
+            <span class="order_status">订单状态</span>
+            <span class="order_operation">操作</span>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>已收货</p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="evaluate_detail.html" class="main">去评价</a> <br>
+                    <a href="refund_reason.html" class="main_hover">退货/换货</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>已收货</p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="evaluate_detail.html" class="main">去评价</a> <br>
+                    <a href="refund_reason.html" class="main_hover">退货/换货</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>已收货</p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="evaluate_detail.html" class="main">去评价</a> <br>
+                    <a href="refund_reason.html" class="main_hover">退货/换货</a> <br>
+                    <span class="order_del main_hover">删除订单</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--分页-->
+    <div class="page_list ">
+        <p>
+            <a class="prev_page" href="#">上一页</a>
+            <a class="main_bg" href="#">1</a>
+            <a class="next_page no_marginR" href="#">下一页</a>
+            <span>&nbsp;共2页&nbsp;到第</span>
+            <input type="text" onkeyup="value=value.replace(/[^\d/g]/,'')">
+            <span>页</span>
+            <span class="page_submit">确认</span>
+        </p>
+    </div>
+</div>
+<div class="m_content conwidth">
+    <div class="usercenter_title">
+        <h2>待付款</h2>
+        <p>WAITING FOR PAYMENT</p>
+    </div>
+    <div class="order_list">
+        <div class="order_nav clearfix">
+            <span class="order_detail">订单详情</span>
+            <span class="order_price">总价（元）</span>
+            <span class="order_count">商品数量</span>
+            <span class="order_status">订单状态</span>
+            <span class="order_operation">操作</span>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>待付款</p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="../cart/pay.html" class="main">立即支付</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>待付款</p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="../cart/pay.html" class="main">立即支付</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>待付款</p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="../cart/pay.html" class="main">立即支付</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>待付款</p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="../cart/pay.html" class="main">立即支付</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--分页-->
+    <div class="page_list ">
+        <p>
+            <a class="prev_page" href="#">上一页</a>
+            <a class="main_bg" href="#">1</a>
+            <a class="next_page no_marginR" href="#">下一页</a>
+            <span>&nbsp;共2页&nbsp;到第</span>
+            <input type="text" onkeyup="value=value.replace(/[^\d/g]/,'')">
+            <span>页</span>
+            <span class="page_submit">确认</span>
+        </p>
+    </div>
+</div>
+<div class="m_content conwidth">
+    <div class="usercenter_title">
+        <h2>待收货确认</h2>
+        <p>CONFIRMATION RECEIPT</p>
+    </div>
+    <div class="order_list">
+        <div class="order_nav clearfix">
+            <span class="order_detail">订单详情</span>
+            <span class="order_price">总价（元）</span>
+            <span class="order_count">商品数量</span>
+            <span class="order_status">订单状态</span>
+            <span class="order_operation">操作</span>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>已付款<span>[已发货]</span></p>
+                    <p><a href="order_detail.html" class="main"> 查看物流详情</a></p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="" class="main">确认收货</a> <br>
+                    <a href="order_detail.html" class="">查看详情</a> <br>
+                    <a href="refund_reason.html" class="main_hover">退货/换货</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>已付款<span>[正在备货..]</span></p>
+                    <p><a href="" class="main"> 查看物流详情</a></p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="order_detail.html" class="main">查看详情</a> <br>
+                    <a href="refund_reason.html" class="main_hover">退货/换货</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order_ele clearfix">
+            <div class="order_detail">
+                <div class="">
+                    <p>订单号：1493435231</p>
+                    <p>交易时间：2015-10-254 09:28</p>
+                    <p>商品金额：￥134.00（运费5.00元）</p>
+                    <p>由&nbsp;聚美优品&nbsp;发货</p>
+                </div>
+            </div>
+            <div class="order_price">
+                <div class="">￥2999.000</div>
+            </div>
+            <div class="order_count">
+                <div>23</div>
+            </div>
+            <div class="order_status">
+                <div>
+                    <p>已付款<span>[正在备货..]</span></p>
+                    <p><a href="order_detail.html" class="main"> 查看物流详情</a></p>
+                </div>
+            </div>
+            <div class="order_operation">
+                <div>
+                    <a href="order_detail.html" class="main">查看详情</a> <br>
+                    <a href="refund_reason.html" class="main_hover">退货/换货</a> <br>
+                    <div class="">
+                        <p class=" order_del main_hover">删除订单</p>
+                        <div class="msg_tip hide  bounceIn">
+                            <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                            <p class="clearfix">
+                                <span class="del_msg main_bg">确认</span>
+                                <span class="cancel_del main_hover">取消</span>
+                            </p>
+                            <span class="msg_tip_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--分页-->
+    <div class="page_list ">
+        <p>
+            <a class="prev_page" href="#">上一页</a>
+            <a class="main_bg" href="#">1</a>
+            <a class="next_page no_marginR" href="#">下一页</a>
+            <span>&nbsp;共2页&nbsp;到第</span>
+            <input type="text" onkeyup="value=value.replace(/[^\d/g]/,'')">
+            <span>页</span>
+            <span class="page_submit">确认</span>
+        </p>
+    </div>
+</div>
+<!--为空-->
+<div class="empty">
+    <div class="">
+        <i class="icon-bag"></i>
+        <p>您还没有订单，快去看看商品吧</p>
+        <P><a href="" class="main">go...</a> </P>
+    </div>
+</div>
+<!--精品推荐-->
+<div class="recommend conwidth">
+    <div class="recommend_title">
+        <i class="icon-recommend"></i>为您推荐
+    </div>
+    <div class="recommend_content">
+        <div class="recommend_slick">
+            <div>
+                <div class="recommend_pro">
+                    <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                    <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                    <h4 class="main">￥198</h4>
+                </div>
+            </div>
+            <div>
+                <div class="recommend_pro">
+                    <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                    <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                    <h4 class="main">￥198</h4>
+                </div>
+            </div>
+            <div>
+                <div class="recommend_pro">
+                    <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                    <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                    <h4 class="main">￥198</h4>
+                </div>
+            </div>
+            <div>
+                <div class="recommend_pro">
+                    <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                    <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                    <h4 class="main">￥198</h4>
+                </div>
+            </div>
+            <div>
+                <div class="recommend_pro">
+                    <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                    <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                    <h4 class="main">￥198</h4>
+                </div>
+            </div>
+        </div>
+        <div class="recommend_left icon-jiantou-left"></div>
+        <div class="recommend_right icon-jiantou-right"></div>
+    </div>
+</div>
+<!--自定义头像-->
+<div class="change_img hide">
+    <div class="change_img_content">
+        <h2 class="main_bg">自定义头像<i class="icon-cancel close_window"></i></h2>
+        <div class="change_detail clearfix">
+            <div class="change_detail_left">
+                <p class="upload_img">上传头像</p>
+                <p class="upload_info">仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于2M</p>
+                <div class="big_img">
+                    <img src="../../Images/sprite/sprite_user_img.png">
+                </div>
+            </div>
+            <div class="change_detail_right">
+                <h4>预览效果</h4>
+                <p>您上传的图片会自动生成2种尺寸，请注意小尺寸的头像是否清晰</p>
+                <div class="middle_container clearfix">
+                    <div class="middle_img">
+                        <img src="../../Images/sprite/sprite_user_img.png">
+                    </div>
+                    <p class="">150*150像素</p>
+                </div>
+                <div class="small_container clearfix">
+                    <div class="small_img">
+                        <img src="../../Images/sprite/sprite_user_img.png">
+                    </div>
+                    <p class="">150*150像素</p>
+                </div>
+            </div>
+        </div>
+        <div class="change_btn">
+            <span class="save_img main_bg main_border">保存</span>
+            <span class="del_img no_mr">取消</span>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="service">
+    <ul class="conwidth service_inner">
+        <li>
+            <a href="../help/help.html">
+                <i class="icon-footer1"></i>
+                <h4>定做预约申请</h4>
+
+                <p>我们会做出您最满意的商品</p>
+            </a>
+        </li>
+        <li>
+            <a href="../help/help.html">
+                <i class="icon-footer2"></i>
+                <h4>服务与支持</h4>
+
+                <p>我们将为您提供金牌服务</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="conwidth clearfix">
+        <dl class="footer_nav">
+            <dt>新手指南</dt>
+            <dd>
+                <a class="main_hover" href="">购物流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">会员政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">联系客服</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">积分政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">加入我们</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>配送方式</dt>
+            <dd>
+                <a class="main_hover" href="">全程冷链</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送时间</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送范围</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送收费标准</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">关于我们</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>支付方式</dt>
+            <dd>
+                <a class="main_hover" href="">货到付款</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">在线支付</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">其他支付方式</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">优惠券使用</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">礼金卡使用</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>售后服务</dt>
+            <dd>
+                <a class="main_hover" href="">验货与拒收政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退换货政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退换货流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退款流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">发票制度</a>
+            </dd>
+        </dl>
+        <dl class="erweima fl">
+            <dt>手机筑巢</dt>
+            <dd><img src="../../Images/test/test_erweima.png" alt=""/></dd>
+            <dd>下载移动客户端</dd>
+        </dl>
+    </div>
+    <p class="copy">Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc23</p>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="usercenter/usercenter"
+        src="../../Js/lib/require.js"></script>
+</body>
+</html>

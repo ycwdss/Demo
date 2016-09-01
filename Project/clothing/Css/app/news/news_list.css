@@ -1,0 +1,193 @@
+@charset "UTF-8";
+.head {
+  height: auto;
+  line-height: normal;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4; }
+
+.head_logo {
+  display: block;
+  width: 400px;
+  height: 70px;
+  line-height: 70px;
+  padding: 15px 20px;
+  float: left; }
+  .head_logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left; }
+  .head_logo span {
+    margin-left: 30px;
+    font-size: 24px;
+    color: #333; }
+
+.nav_search {
+  margin-top: 8px;
+  padding: 10px 0; }
+  .nav_search input {
+    width: 0;
+    height: 40px; }
+  .nav_search .input_unfold {
+    padding: 5px;
+    border: 1px solid #E4E4E4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .nav_search span {
+    display: block;
+    float: right;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #efefef;
+    cursor: pointer; }
+    .nav_search span i {
+      font-size: 20px;
+      color: #000;
+      vertical-align: middle; }
+
+/*
+
+<div class="head">
+<div class="head_inner conwidth clearfix">
+<a class="head_logo " href="#">
+<img src="../../Images/test/test_img.png">
+<span>欢迎来到木木果果</span>
+</a>
+<div class="nav_search fr">
+<input type="text" placeholder="请输入内容">
+<span><i class="icon-sousuo"></i></span>
+</div>
+</div>
+</div>  */
+.page_list {
+  padding: 20px 0;
+  margin-right: -10px;
+  text-align: center;
+  height: 32px;
+  line-height: 33px;
+  font-size: 14px; }
+  .page_list a {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 11px;
+    background-color: #fff;
+    color: #888;
+    border: 1px solid #e4e4e4; }
+  .page_list span {
+    display: inline-block; }
+  .page_list input {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .page_list b {
+    margin-right: 10px; }
+
+.page_submit {
+  margin-left: 10px;
+  width: 45px;
+  height: 27px;
+  line-height: 25px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.page_list .no_all_b {
+  border: 0 !important;
+  padding: 0 !important;
+  background-color: transparent; }
+
+/*
+<!--分页-->
+<div class="page_list">
+<p>
+<a class="prev_page" href="#">上一页</a>
+<a class="main_bg main_border" href="#">1</a>
+<a href="#">2</a>
+<a href="#">3</a>
+<a href="#">4</a>
+<a href="#">5</a>
+<a class="no_all_b" href="#">......</a>
+<a href="#">100</a>
+<a class="next_page no_marginR" href="#">下一页</a>
+</p>
+</div>*/
+body {
+  background-color: #f8f8f8; }
+
+.content {
+  margin-top: 40px; }
+
+.page_list {
+  padding: 50px 0; }
+
+.footer {
+  margin-top: 100px; }
+
+.news_wrap {
+  width: 880px; }
+  .news_wrap .news_list {
+    padding: 0 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4; }
+    .news_wrap .news_list .list_head {
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      border-bottom: 1px solid #e4e4e4; }
+    .news_wrap .news_list .list_body {
+      line-height: 22px;
+      padding: 10px 0 50px 0;
+      font-size: 13px;
+      color: #333; }
+    .news_wrap .news_list .list_footer {
+      padding: 10px 0;
+      font-size: 12px;
+      color: #999; }
+
+.news_hot {
+  width: 300px;
+  padding-bottom: 45px;
+  border: 1px solid #e4e4e4;
+  background-color: #fff; }
+  .news_hot h2 {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #e4e4e4; }
+  .news_hot .hot_list {
+    width: 260px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e4e4e4; }
+  .news_hot .hot_body {
+    padding: 10px 0 2px 0;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .news_hot .hot_footer {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #999; }
+
+/*# sourceMappingURL=news_list.css.map */

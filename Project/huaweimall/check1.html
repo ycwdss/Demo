@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>请输入关键词</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+
+<script>
+    //第一种使用new操作符跟构造函数
+    var person= new Object();
+    person.name="小王";
+    person.age=29;
+    //第二种使用对象字面量
+    var person={
+        name:"小王",
+        age:29
+    };
+
+    //第一种使用array构造函数(可以省略new)
+    var colors=new Array();
+    var colors=new Array(20);//数组长度为20
+    var colors=new Array("red","yellow","green");
+
+    //第二种使用数组字面量
+    var colors=["red","yellow","green"];//创建一个包含3个字符串的数组
+    var names=[];//创建个空数组
+    var values=[1,2,]//这样会创建一个包含2个或3个的数组
+
+</script>
+</body>
+</html>

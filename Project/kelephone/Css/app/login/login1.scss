@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import "../../lib/mixin";
+
+html,body{
+  height: 100%;
+}
+.login_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 640px;
+  min-width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+.main {
+  padding: 15px 15px 0;
+  .item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    .txt_input {
+      width: 100%;
+      height: 44px;
+      line-height: normal;
+      padding: 0;
+      border: 1px solid #d7d7d7;
+      border-radius: 3px;
+      background: #fcfcfd;
+      font-family: '\5fae\8f6f\96c5\9ed1';
+      font-size: 16px;
+      color: #252525;
+      -webkit-appearance: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .err_msg {
+      font-size: 13px;
+      color: #e60012
+    }
+  }
+}
+
+.main .item .txt_captcha,.main .item .txt_password,.main .item .txt_username {
+  padding-left: 15px;
+}
+.item_password {
+  .tp_btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 51px;
+    height: 35px
+  }
+}
+.main .item_captcha .input_info {
+  margin-bottom: 10px;
+}
+.item_captcha {
+  #captcha_img {
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 79px;
+    height: 25px;
+    padding-left: 7px;
+    border-left: 1px solid #d7d7d7
+  }
+  .login_free {
+    position: relative;
+    height: 18px;
+    padding-left: 26px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #848689;
+    b {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      font-size: 0;
+      text-align: center;
+      border-radius: 18px;
+      color: #fff;
+      border: 1px solid #e4e4e4;
+    }
+  }
+  .login_free_selected b {
+    border-color: #e60012;
+    background-color: #e60012;
+    font-size: 12px;
+  }
+}
+.item_btns .btn_login,.item_btns .btn_next {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  line-height: 39px;
+  text-align: center;
+  font-size: 17px;
+}
+.main .item_btns{
+  margin-top:35px;
+}
+.item_btns .btn_disabled {
+  background: #fcfcfd;
+  cursor: default;
+  color: #bdbdbd!important;
+}
+.main .item_login_option {
+  padding-top: 20px;
+  margin-bottom: 34px;
+  font-size: 14px;
+  .register_free {
+    float: left;
+    width: 50%
+  }
+  .retrieve_password {
+    float: right;
+    width: 50%;
+    text-align: right
+  }
+  a {
+    color: #686868;
+    font-size: 15px;
+    border-bottom: 1px solid #686868;
+    height: 14px;
+    line-height: 13px;
+    display: inline-block
+  }
+}
+.item_login_other{
+  h3 {
+    margin-bottom: 13px;
+    font-size: 14px;
+    color: #666;
+    overflow: inherit;
+  }
+  p a {
+    float: left;
+    span {
+      display: inline-block;
+      overflow: hidden;
+      width: 70px;
+      height: 30px;
+      background-size: 285px 24px;
+      line-height: 100px;
+      text-indent: -9999px
+    }
+  }
+  .qq {
+    width: 25.17%;
+    span {
+      width: 25px;
+      margin-left: 5px
+    }
+  }
+}
+//注册
+.main .item{
+  .txt_phone {
+    padding-left: 15px;
+    width: 53.31034482758621%;
+  }
+  .txt_sms_captcha {
+    padding-left: 15px;
+  }
+}
+.item_phone{
+  .btn_retransmit {
+    float: right;
+    overflow: hidden;
+    width: 44.13793103448276%;
+    height: 42px;
+    border: 1px solid #f15353;
+    border-radius: 3px;
+    background: #fff;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .btn_retransmit_disabled {
+    box-shadow: none;
+    border: 1px solid #e2e2e2;
+    background: #e2e2e2;
+    cursor: default;
+    color: #bdbdbd;
+  }
+}
+.main .item_password .err_tips {
+  margin: 13px 0 24px;
+  font-size: 13px;
+  color: #848689;
+}

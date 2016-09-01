@@ -1,0 +1,33 @@
+@charset "UTF-8";
+//返回顶部
+#totop{
+  position: fixed;
+  height: 0px;
+  width: 100%;
+  right: 5%;
+  bottom: 100px;
+  margin: 0 auto;
+  z-index: 80;
+  span{
+    position: relative;
+    display: block;
+    margin:0 auto;
+    max-width: 640px;
+    min-width: 320px;
+  }
+  a{
+    right: 20px;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../../Images/icon/icon_totop.png?_nosprite") rgba(0,153,51,.4) no-repeat;
+    -webkit-background-size: 50px 50px;
+    -o-background-size: 50px 50px;
+    background-size: 50px 50px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+}

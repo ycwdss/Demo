@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.message_right_bg{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  z-index: 9999;
+}
+.message_right{
+  width: 200px;
+  height: 100px;
+  padding-top: 10px;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  margin: 48% auto 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.message_img{
+  margin: 0 auto 10px;
+  width: 54px;
+  height: 55px;
+  background: url("../../../Images/mobile/mall/icon_joincart_right.png");
+}

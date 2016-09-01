@@ -1,0 +1,212 @@
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.m_site_infor {
+  margin-top: 10px;
+  padding: 0 3% 10px;
+  background: #FFFFFF; }
+  .m_site_infor h4 {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 40px;
+    border-bottom: 1px solid #e4e4e4; }
+
+.site_infor span {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 30px; }
+
+.m_site_img {
+  margin-top: 10px; }
+
+.site_img_title {
+  height: 40px;
+  color: #333;
+  background: #FFFFFF;
+  border-bottom: 1px solid #e4e4e4; }
+  .site_img_title p {
+    width: 158px;
+    margin: 0 auto; }
+  .site_img_title span {
+    width: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 40px;
+    display: inline-block; }
+
+.current {
+  color: #009933;
+  border-bottom: 1px solid #009933; }
+
+.c_site_img {
+  overflow: hidden; }
+
+.site_img_ele {
+  width: 100%; }
+
+.site_img {
+  padding: 10px 3% 0;
+  margin-bottom: 10px;
+  background: #FFFFFF; }
+  .site_img img {
+    display: block;
+    width: 100%; }
+  .site_img p {
+    font-size: 0.9rem;
+    line-height: 35px; }
+
+.m_pinglun {
+  padding: 0 3%;
+  font-size: 0.9rem;
+  line-height: 40px;
+  background: #FFFFFF;
+  margin-bottom: 10px; }
+  .m_pinglun p {
+    position: relative;
+    padding-left: 25px; }
+    .m_pinglun p:before {
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '';
+      background: url("../../../Images/mobile/foreman/icon_pinglun.png");
+      -webkit-background-size: 20px;
+      background-size: 20px; }
+    .m_pinglun p span {
+      color: #009933;
+      margin: 0 5px; }
+
+.pinglun_detail {
+  padding: 10px  3%;
+  background: #FFFFFF;
+  border-bottom: 1px dashed #e4e4e4; }
+
+.textarea {
+  width: 100%;
+  height: 60px;
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 30px;
+  padding: 0 10px;
+  resize: none;
+  border: none;
+  background: #f8f8f8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline-color: #FFFFFF; }
+
+.detail_bottom {
+  margin-top: 5px; }
+  .detail_bottom input {
+    float: right;
+    font-size: 0.8rem;
+    line-height: 25px;
+    width: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #009933;
+    border: none; }
+  .detail_bottom span {
+    float: right;
+    margin-right: 10px;
+    line-height: 25px; }
+    .detail_bottom span i {
+      color: #ff6600; }
+
+.m_other_pinglun {
+  padding-bottom: 10px; }
+
+.c_other_pinglun {
+  padding: 10px 3%;
+  background: #FFFFFF;
+  border-bottom: 1px dashed #e4e4e4; }
+  .c_other_pinglun p {
+    font-size: 0.8rem;
+    line-height: 25px; }
+
+.other_title h4 {
+  float: left;
+  font-size: 0.9rem;
+  line-height: 30px;
+  color: #009933;
+  max-width: 60%;
+  height: 30px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.other_title span {
+  float: left;
+  margin-left: 10px;
+  font-size: 0.7rem;
+  color: #666;
+  line-height: 30px; }

@@ -1,0 +1,242 @@
+@charset "UTF-8";
+.fr {
+  float: right;
+  _display: inline; }
+
+.fl {
+  float: left;
+  _display: inline; }
+
+.page_list {
+  padding: 20px 0;
+  text-align: center;
+  height: 32px;
+  line-height: 33px;
+  font-size: 14px; }
+  .page_list a {
+    display: inline-block;
+    margin-right: 3px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 11px;
+    background-color: #fff;
+    color: #888;
+    border: 1px solid #e4e4e4; }
+  .page_list span {
+    display: inline-block; }
+  .page_list input {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .page_list b {
+    margin-right: 10px; }
+
+.page_submit {
+  margin-left: 10px;
+  width: 45px;
+  height: 27px;
+  text-align: center;
+  line-height: 25px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.page_list .no_all_b {
+  border: 0 !important;
+  padding: 0 !important;
+  background-color: transparent; }
+
+/*
+<div class="page_list ">
+<p>
+<a class="prev_page" href="#">上一页</a>
+<a class="main_bg_light main_border_light" href="#">1</a>
+<a  href="#">2</a>
+<a  href="#">3</a>
+<a  href="#">4</a>
+<a class="next_page no_marginR" href="#">下一页</a>
+<span>&nbsp;共2页&nbsp;到第</span>
+<input type="text" onkeyup="value=value.replace(/[^\d/g]/,'')">
+<span>页</span>
+<span class="page_submit mainbg_hover">确认</span>
+</p>
+</div>*/
+.reply {
+  padding: 10px 0; }
+  .reply li {
+    float: left;
+    margin-right: 3px; }
+  .reply a {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #333;
+    background-color: #e4e4e4;
+    -moz-transition: opacity 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: opacity 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
+    .reply a:hover {
+      filter: alpha(opacity=85);
+      /* IE */
+      -moz-opacity: 0.85;
+      /* 老版Mozilla */
+      -khtml-opacity: 0.85;
+      /* 老版Safari */
+      opacity: 0.85;
+      /* 支持opacity的浏览器*/ }
+
+.group_list {
+  min-height: 430px;
+  margin: 20px 0;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 2; }
+  .group_list .group_parent {
+    font-weight: bold;
+    height: 40px;
+    border-bottom: 1px solid #e4e4e4; }
+  .group_list .li_name {
+    float: left;
+    width: 190px;
+    overflow: hidden;
+    margin: 7px 0 0 15px;
+    cursor: pointer; }
+    .group_list .li_name:hover {
+      color: #2e9bd7; }
+  .group_list .li_add_child {
+    float: left;
+    margin-top: 7px; }
+    .group_list .li_add_child a:hover {
+      color: #2e9bd7; }
+  .group_list .user_action {
+    float: right;
+    padding-right: 50px;
+    margin-top: 7px; }
+    .group_list .user_action a:hover {
+      color: #2e9bd7; }
+    .group_list .user_action > span {
+      margin: 0 10px;
+      color: #e4e4e4;
+      font-family: sans-serif; }
+
+.group_li:first-child .group_parent {
+  border-top: 1px solid #e4e4e4; }
+
+.group_child {
+  font-size: 12px;
+  display: none;
+  border-top: 1px dotted #e4e4e4;
+  margin-top: -1px; }
+  .group_child .li_name {
+    margin-left: 40px; }
+
+.group_child:last-child {
+  border-bottom: 1px solid #e4e4e4; }
+
+.search_select {
+  margin: 15px; }
+
+select {
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #333;
+  outline: none; }
+  select option {
+    outline: none; }
+
+.prolist_edit {
+  padding: 20px 0; }
+  .prolist_edit .check {
+    margin-right: 20px; }
+
+.check {
+  display: inline-block;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer; }
+  .check em {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #b0b0b0;
+    margin-right: 12px;
+    vertical-align: -2px; }
+    .check em i {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      font-size: 14px;
+      color: #b0b0b0; }
+
+.list_title {
+  height: 40px;
+  line-height: 40px;
+  background-color: #e7e7e7; }
+
+.list_name {
+  float: left;
+  width: 440px;
+  text-indent: 70px; }
+
+.list_group {
+  float: left;
+  width: 250px;
+  text-align: center; }
+
+.list_action {
+  float: right;
+  width: 200px;
+  text-align: center; }
+
+.list_items {
+  padding: 20px 0;
+  line-height: 66px;
+  height: 66px;
+  border-bottom: 1px solid #e4e4e4; }
+  .list_items > div {
+    float: left; }
+  .list_items .check {
+    display: block;
+    float: left;
+    text-indent: 0; }
+  .list_items .list_img {
+    float: left;
+    display: block;
+    width: 66px;
+    height: 66px; }
+    .list_items .list_img > img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .list_items .list_name h3 {
+    width: 280px;
+    text-indent: 10px;
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 10px;
+    overflow: hidden; }
+    .list_items .list_name h3 a:hover {
+      color: #2e9bd7; }
+  .list_items .list_action {
+    float: right; }

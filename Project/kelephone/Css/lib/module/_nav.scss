@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import "../../lib/mixin";
+
+//导航样式
+.module_nav {
+  margin-top:10px;
+  padding: 7px;
+  background: #fff;
+  li {
+    padding: 8px;
+    width: 25%;
+    float: left;
+    @include box-sizing();
+    a {
+      display: block;
+    }
+  }
+  .margin_top {
+    margin-top: 100%;
+  }
+}
+
+.nav_img {
+  width: 100%;
+  background: url(../../../Images/test/test_pro_img.jpg?_nosprite) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.nav_title {
+  margin: 5px auto 0;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  font-weight: normal;
+  @include strictEll(1.4, 1);
+}
+
+//圆角
+.nav_radius10 {
+  .nav_img {
+    border-radius: 10px;
+  }
+}
+
+//圆形
+.nav_radius100 {
+  .nav_img {
+    border-radius: 100%;
+  }
+}
+
+//文字列表导航竖排
+.module_text_nav {
+  //margin-top: 10px;
+  margin-top:10px;
+  padding-left: 15px;
+  background: #fff;
+  text-align: left;
+  li {
+    line-height: 50px;
+    font-size: 14px;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+    a {
+      padding-left: 7px;
+      display: block;
+      color: #333;
+      &:after {
+        width: 5px;
+        height: 5px;
+        content: "";
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        top: 23px;
+        right: 15px;
+        position: absolute;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+//导航横排
+.module_text_nav_inline{
+  line-height: 40px;
+  background-color: #fff;
+  padding:0 3%;
+  text-align: center;
+  font-size: 14px;
+  li{
+    float: left;
+    width: 31%;
+    a{
+      display: inline-block;
+      width: 100%;
+      height: 94%;
+      font-size: 14px;
+      color: #333;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #fff;
+    }
+  }
+  li.current a {
+    color: #e60012;
+    border-bottom-color: #e60012;
+  }
+}
+//可滑动的文字导航
+.module_text_slide_nav{
+  //margin-top: 10px;
+  margin-top:10px;
+  background: #fff;
+  text-align: center;
+  .text_slide_nav_list{
+    width: 25%;
+    float: left;
+    line-height: 40px;
+    font-size: 14px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #fff;
+    a{
+      color: #333;
+    }
+  }
+  .text_slide_nav_list.current{
+    border-bottom-color: #e60012;
+    a{
+      color: #e60012;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/totop";
+
+//頭部
+.header{
+  position: static;
+}
+a{
+  color: #888;
+}
+.new_content{
+  margin: 10px;
+  background-color: #f8f8f8;
+  border:1px solid #e4e4e4;
+}
+.new_title{
+  padding:3%;
+  border-bottom: 1px solid #e4e4e4;
+  h3{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.6;
+  }
+  p{
+    color: #888;
+    text-align: center;
+    .writer{
+      padding:0 2%;
+    }
+  }
+}
+.new_center{
+  padding:3%;
+  background-color: #fff;
+  img{
+    display: block!important;
+    max-width: 100%!important;
+    margin: 10px auto!important;
+  }
+  p{
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+}
+
+//上下篇
+.up_down{
+  padding:3% 5%;
+  border-top: 1px solid #e4e4e4;
+  font-size: 10px;
+  color: #888;
+  >div{
+    position: relative;
+    vertical-align: top;
+    margin:5px 0;
+    a{
+      display: inline-block;
+      width: 57%;
+      vertical-align: 2px;
+      @include strictEll(1.4,1);
+    }
+    span.date{
+      position: absolute;
+      right: 0;
+    }
+  }
+}

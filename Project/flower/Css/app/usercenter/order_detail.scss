@@ -1,0 +1,308 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/recommend";
+a{
+  color: #666;
+}
+.m_content{
+  padding:0 40px 31px;
+  border-bottom:1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}    
+//详情头部    
+.order_detail_top{
+  padding: 30px 0;
+  font-size: 12px;
+  color: #666;
+  line-height: 25px;
+  span{
+    margin-right: 70px;
+  }
+}
+//订单状态
+.order_status{
+  padding:20px 10px;
+  border-bottom:1px solid #e4e4e4;
+  >div{
+    float: left;
+    position: relative;
+  }
+}
+.status_left{
+  position: absolute;
+  left:0;
+  top: 15px;
+  display: block;
+  height: 10px;
+  width: 152px;
+  background: #e4e4e4;
+}
+.status_right{
+  @extend .status_left;
+  left:auto;
+  right:0;
+}
+.status_circle{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  background: #e4e4e4;
+}
+.status_detail{
+  margin-top: 10px;
+  span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+.status_begin{
+  width: 210px;
+  .status_circle{
+    margin-left: 20px;
+  }
+  .status_detail{
+    span{
+      width: 80px;
+    }
+  }
+}
+.status_ele{
+  width:340px;
+  .status_circle{
+    margin:0 auto;
+  }
+}
+.status_end{
+  width:210px;
+  .status_circle{
+    margin-left: 150px;
+  }
+  .status_detail{
+    float: right;
+    span{
+      width: 80px;
+    }
+  }
+}
+//订单信息
+.order_info{
+  h3{
+    font-size: 18px;
+    padding:30px 0;
+    color: #333;
+  }
+}
+//收货人信息
+.receiver{
+  p{
+    float: left;
+    width: 560px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #888;
+  }
+  .detail_intro{
+    float: left;
+    width: 100px;
+    text-align: right;
+  }
+  .detail_content{
+    float: left;
+    width: 460px;
+  }
+}
+//支付方式及配送
+.pay_content{
+  span{
+    margin-right: 50px;
+    font-size: 14px;
+    color: #888;
+  }
+}
+//物流信息
+.logistics_top{
+  border-bottom:1px solid #e4e4e4;
+  .logistics_btn{
+    margin-left: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.logistics{
+  padding: 30px 0;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom:1px solid #e4e4e4;
+}
+.logistics_title{
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+  .logistics_record{
+    padding:0;
+    text-align: center;
+  }
+  .logistics_site{
+    padding: 0;
+    text-align: center;
+  }
+}
+.logistics_time{
+  float: left;
+  width: 260px;
+  text-align: center;
+}
+.logistics_record{
+  float: left;
+  width: 580px;
+  padding-left: 170px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.logistics_site{
+  float: left;
+  width: 280px;
+  padding-left: 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//订单商品
+.order_pro{
+  padding:30px 0;
+  border-bottom:1px solid #e4e4e4;
+  .order_pro_title{
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    >span{
+      float: left;
+    }
+    .pro_info{
+      text-align: left;
+      text-indent: 60px;;
+    }
+  }
+  .pro_info{
+    width: 370px;
+  }
+  .pro_operation{
+    width: 180px;
+  }
+  .order_type{
+    width: 150px;
+  }
+  .count{
+    width: 200px;
+  }
+  .pro_price{
+    width: 200px;
+  }
+  .pro_total{
+    width: 170px;
+  }
+}
+.order_pro_ele{
+  margin-top: 20px;
+  >div{
+    float: left;
+    text-align: center;
+  }
+  .pro_info{
+    text-align: left;
+  }
+  img{
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  .pro_detail{
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+  }
+  .pro_intro{
+    font-size: 14px;
+    color: #666;
+    line-height: 23px;
+    max-height: 52px;
+    @include ell(2);
+  }
+  .pro_size{
+    font-size: 12px;
+    color: #888;
+    line-height: 18px;
+    max-height: 54px;
+    @include ell(3);
+    span{
+      margin-right: 20px;
+    }
+  }
+  .pro_operation,& .order_type,& .count,& .pro_price,& .pro_total{
+    display: table;
+    height:100px;
+    p{
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .pro_operation{
+    span{
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+.order_bottom{
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 40px;
+  p{
+    span{
+      float: left;
+      width: 140px;
+    }
+   .total_intro{
+     text-align: right;
+   }
+  }
+  >div>div{
+    margin-top: 10px;
+    span{
+      float: right;
+      width: 130px;
+      height: 30px;
+      line-height: 30px;
+      margin-left: 30px;
+      background: #e4e4e4;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}

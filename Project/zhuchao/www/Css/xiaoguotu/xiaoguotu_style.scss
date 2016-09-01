@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import "../fh/lib";
+@import "../fh/reset";
+@import "../fh/commonclass";
+//三个顶部栏
+@import "../fh/moudle/module_top";
+@import "../fh/moudle/module_nav";
+@import "../fh/moudle/new_top/search";
+//共用样式
+@import "../fh/moudle/page";
+@import "../fh/moudle/routenav";
+@import "../fh/moudle/totop";
+@import "../fh/commonclass";
+@import "../fh/moudle/footer";
+.clearfix:after{clear:both;}
+.clearfix{
+  *zoom:1;/*IE/7/6*/
+}
+.no_marginR{
+  margin-right: 0!important;
+}
+/*basic_Width*/
+.conWidth{
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+.mainWidth{
+  width:969px;
+  height: 100%;
+}
+.mainWidth a:hover{
+  text-decoration: underline;
+}
+.module_nav{
+  .current{
+    z-index: 1000;
+  }
+}
+.m_asktop{
+  height: 68px;
+  background: #fafafa;
+  border-bottom: 1px solid #d1d1d1;
+  font-size: 16px;
+}
+//收藏
+
+.store{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+  height: 35px;
+  z-index: 3;
+  line-height: 35px;
+  /*background: rgba(0, 0, 0, 0.4);*/
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.store:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: #000;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  z-index: -1;
+  -webkit-border-radius:20px 0 0 20px;
+  -moz-border-radius:20px 0 0 20px;
+  border-radius:20px 0 0 20px;
+}
+.pubuliu_ele:hover .text{
+  background: rgba(66,74,102,0.2);
+  color: #FFFFFF;
+}
+.store span{
+  float: left;
+}
+.store_img{
+  margin: 12px 5px 9px 11px;
+  width: 12px;
+  height: 12px;
+  background: url("../../Images/sprite_xgt_zhengzhuang4.png") no-repeat;
+  z-index: 3;
+}
+.store:hover:before{
+  background: #093;
+  opacity: 0.6;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+}

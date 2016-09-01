@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/pagelist";
+body{
+  background-color: #fff;
+}
+.recruit{
+  padding: 50px 0;
+}
+.recruit_content{
+  margin-top:20px;
+  h3{
+    height: 40px;
+    line-height: 40px;
+    background-color: #F8F8F8;
+    font-size: 18px;
+    text-indent: 26px;
+    color: #333;
+  }
+}
+.recruit_li{
+  margin:20px 26px;
+  .recruit_dt {
+    width: 85px;
+    font-size: 16px;
+    color: #333;
+  }
+  .recruit_dd{
+    width: 862px;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #666;
+    em{
+      margin-right: 5px;
+    }
+  }
+  .recruit_dd>span{
+    display: block;
+  }
+
+}

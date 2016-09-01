@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/strategy_top";
+@import "../mobile_moudle/moudle/usercenter_collectnav";
+@import "../mobile_moudle/moudle/strate_list_ele";
+.m_com{
+  margin: 10px 0 0;
+}
+.time_fr{
+  float: left;
+}
+.strategy_sort{
+  float: right;
+  text-align: center;
+  width: 70px;
+  margin-right: 4%;
+  font-size: 0.8rem;
+  line-height: 25px;
+  color: #FFFFFF;
+  background: $normalcolor;
+}

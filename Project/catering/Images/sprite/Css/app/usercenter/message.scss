@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/site";
+@import "../../module/pagelist";
+.checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin:0 14px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.message_items{
+  padding:15px 0;
+  font-size: 14px;
+}
+.message_text{
+  p{
+    max-width: 530px;
+    width: 530px;
+  }
+}
+.message_status{
+  width: 150px;
+  text-align: center;
+}
+.message_action{
+  margin-top:30px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f8f8f8;
+  .action_btn{
+    width: 694px;
+    font-size: 14px;
+    a{
+      width: 85px;
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+@import "../model/site_nav";
+@import "../model/usercenter";
+@import "../model/recommend_shps";
+//右侧内容显示区域
+.mr{
+  width: 940px;
+  overflow: hidden;
+  .title {
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid #dedede;
+    h1{
+      font-size: 24px;
+    }
+  }
+  .collected{
+    margin-top: 20px;
+    padding: 0 10px;
+    ul{
+      li{
+        float: left;
+        width:220px;
+        margin: 0 10px 15px 0;
+        .pro_wrap{
+          border: 1px solid #dfdfdf;
+          margin-right: -1px;
+          margin-bottom: -1px;
+          &:hover{
+            .pro_info{
+              border-color: #efcacc;
+            }
+          }
+          .pro_info {
+            background-color: #f8f8f8;
+            border: 4px solid #f8f8f8;
+            position: relative;
+            height: 230px;
+            text-align: center;
+            transition: all .3s ease;
+            .pro_img{
+              a{
+                width: 150px;
+                display: block;
+                margin: 6px auto 0;
+                img{
+                  width: 150px;
+                  height: 150px;
+                }
+              }
+            }
+            .pro_name{
+
+              a{
+                &:hover{
+                  color: #e01d20;
+                  text-decoration: underline;
+                }
+                span{
+                  color: #e01d20;
+                }
+              }
+            }
+            .pro_price{
+              color: #e01d20;
+              margin-right: 4px;
+              font-size: 20px;
+            }
+            .pro_tag{
+              position: absolute;
+              top:-4px;
+              left:-4px;
+              z-index: 5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

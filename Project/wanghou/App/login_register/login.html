@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/login_register/login.css">
+</head>
+<body>
+<!--头部 begin-->
+<div class="head">
+    <div class="head_center conwidth clearfix">
+        <!--logo-->
+        <div class="logo fl">
+            <a href="#">
+                <img src="../../Images/test/text_advert_img.png">
+            </a>
+        </div>
+        <span class="welcome_text">欢迎登陆</span>
+        <!--header_right-->
+        <div class="header_right fr">
+            <span class="iconfont main">&#xe602;</span>
+            <span>正品保障</span>
+            <span class="iconfont main">&#xe626;</span>
+            <span>金牌服务</span>
+            <span class="iconfont main">&#xe603;</span>
+            <span>闪电发货</span>
+        </div>
+    </div>
+</div>
+<!--头部 end-->
+<!--内容begin-->
+<div class="l_main">
+    <div class="conwidth">
+        <img src="../../Images/test/text_advert_img.png">
+        <div class="m_content">
+            <h2 class="title">欢迎登录<span>已注册请<a href="register.html" class="main">注册</a> </span></h2>
+            <div class="container">
+                <div class="message_ele">
+                    <i class="iconfont">&#xe621;</i>
+                    <input id="user_name" type="text" placeholder="请输入手机号码" onkeyup="value=value.replace(/[^\d]/,'')">
+                    <div class="tip hide" style="color: red;">手机号格式不正确！</div>
+                </div>
+                <div class="message_ele">
+                    <i class="iconfont">&#xe61d;</i>
+                    <input id="password" type="password" placeholder="密码有6-20位字母，数字和符号组合">
+                    <div class="tip hide" style="color: red;">密码格式不正确！</div>
+                </div>
+                <div class="message_ele  identify clearfix">
+                    <i class="iconfont">&#xe61c;</i>
+                    <input id="identify"  type="text" placeholder="验证码">
+                    <img src="../../Images/test/test_pro1.jpg">
+                    <span>换一张</span>
+                    <div class="tip hide" style="color: red;">请输入验证码！</div>
+                </div>
+                <div class="message_ele default_login">
+                    <label>
+                        <input  type="checkbox" checked="checked">
+                        <div class="check_btn">
+                            <i class="iconfont main">&#xe617;</i>
+                        </div>
+                    </label>
+                    <span> 两周内自动登录</span>
+                    <a class="forget_pwd main_hover">忘记密码？</a>
+                </div>
+                <div class="submit main_bg">
+                    <input  type="submit" value="立即登录">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容end-->
+<!--底部-->
+<div class="foot">
+    <div class="foot_box conwidth">
+        <div class="friend_link">
+            <p class="clearfix">
+                <a href="#">商家入驻</a>|
+                <a href="#">销售联盟</a>|
+                <a href="#">关于筑巢在线</a>|
+                <a href="#">企业大客户</a>|
+                <a href="#">首批用户体验调研</a>|
+                <a href="#">友情链接</a>|
+                <a href="#">手机筑巢</a>|
+                <a href="#">热门搜索</a>|
+                <a href="#">商品专题</a>|
+                <a href="#">品牌大全</a>
+            </p>
+            <p>郑州神恩信息科技有限公司版权所有 2011－2015 <a href="#">@fhzc.com</a></p>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="login_register/register" src="../../Js/lib/require.js"></script>
+</body>
+</html>

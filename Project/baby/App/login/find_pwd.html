@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/login_register/find_pwd.css">
+</head>
+<body>
+<div class="l_main conwidth">
+    <h3>安全中心-找回密码</h3>
+    <div class="m_content hide">
+        <form action="">
+        <div class="find_ele clearfix">
+            <span class="find_intro">你的账户：</span>
+            <input class="main_focus" type="text" placeholder="请输入手机号或邮箱">
+            <div class="find_tip main"><i class="main_bg">!</i>请输入手机号或邮箱</div>
+        </div>
+        <div class="find_ele confirm clearfix">
+            <span class="find_intro">验证码：</span>
+            <input class="main_focus" type="text" placeholder="验证码">
+            <img src="../../Images/test/test_img.jpg" alt="">
+            <span class="flash_btn main_hover">换一个</span>
+            <div class="find_tip main"><i class="main_bg">!</i>请输入验证码</div>
+        </div>
+        <div class="find_ele phone_confirm clearfix">
+            <span class="find_intro">请填写手机校检码：</span>
+            <input class="main_focus" type="text" >
+            <div class="find_tip main"><i class="main_bg">!</i>请输入手机校检码</div>
+            <span class="send_msg main_bg">获取验证码</span>
+        </div>
+            <input class="submit_btn main_border main" type="submit" value="提交">
+        </form>
+    </div>
+    <div class="m_content hide">
+        <form action="">
+            <div class="find_ele clearfix">
+                <span class="find_intro">新密码：</span>
+                <input class="main_focus" type="password" >
+                <div class="find_tip main"><i class="main_bg">!</i>请输入密码</div>
+            </div>
+            <div class="find_ele clearfix">
+                <span class="find_intro">确认密码：</span>
+                <input class="main_focus" type="password" >
+                <div class="find_tip main"><i class="main_bg">!</i>两次密码输入不一致</div>
+            </div>
+            <input class="submit_btn main_border main" type="submit" value="提交">
+        </form>
+    </div>
+    <div class="m_content find_success">
+        <i class="icon-duihaoyuanquan main"></i>
+        <p>新密码设置成功，请您牢记新密码</p>
+        <a href="../mall/index.html">返回首页</a>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="common" src="../../Js/lib/require.js"></script>
+</body>
+</html>

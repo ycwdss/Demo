@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/product_list";
+@import "../mobile_moudle/moudle/_strategy_top";
+//重写top    
+.top a:nth-child(3){
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  font-size: 0.9rem;   
+  line-height: 45px;
+  color: #FFFFFF;
+  padding: 0 11px;
+}
+.m_pro{
+  margin-bottom: 10px;
+}
+.pro_shop{
+  font-size: 0.9rem;
+  line-height: 40px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #e4e4e4;
+  a{
+    float: left;
+    color: #333;
+  }
+}
+.checkbox_container{
+  width: 6%;
+}
+.shop_container{
+  margin: 0 5px;
+}
+.checkbox{
+  display: block;   
+  margin: 11px auto;
+  width: 18px;
+  height:18px;
+  background: #e4e4e4;
+}
+.shop_img{
+  display:block;
+  width: 22px;
+  @extend .checkbox;
+  background: url("../../../Images/mobile/cart/icon_cart.png") -42px -45px;
+  background-size: 150px;
+}
+.clicked .checkbox{
+  background: url("../../../Images/mobile/cart/icon_cart.png") 0px -45px;
+  -webkit-background-size: 150px;
+  background-size: 150px;
+}
+.pro_ele{
+  padding: 10px 0;
+  background: #FFFFFF;
+  border-bottom: 1px dashed #e4e4e4;
+}
+//.pro_ele .checkbox{
+//  margin-top: 41px;
+//}
+.pro_img{
+  width: 30%;
+  img{
+    margin: 0 auto;
+    display: block;
+    height: 70px;
+    max-width: 100%;
+  }
+}
+.pro_count{
+  margin: 10px auto 0;
+  max-width: 112px;
+}
+.pro_count span{
+  float: left;
+  width: 30%;
+  max-width: 35px;
+  height: 20px;
+  font-size: 0.8rem;
+  line-height: 20px;
+  text-align: center;
+  background: #e4e4e4;
+}
+.pro_count span:nth-child(2){
+  width: 42px;
+  background: #f8f8f8;
+}
+.pro_detail{
+  width: 60%;
+  padding: 0 2%;
+  h3{
+    font-size: 0.9rem;
+    line-height: 25px;
+    height: 50px;
+    color: #333;
+    @include ell(2);
+  }
+}
+.pro_guige{
+  span{
+    float: left;
+    width: 50%;
+    line-height: 20px;
+    color: #888;
+    height: 20px;
+    @include ell(1);
+  }
+}
+.pro_price{
+  margin-top: 10px;
+  font-size: 1rem;
+  color: $activecolor;
+  span{
+    font-size: 0.7rem;
+  }
+}
+.no_borderB{
+  border-bottom: 0;
+}
+//可能还喜欢
+.suggest_top {
+  height: 48px;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+}
+.title_border{
+  float: left;
+  width: 47%;
+  height: 18px;
+  margin: 14px 3% ;
+  padding: 0 5px;
+  font-size:1.2rem;
+  overflow: visible;
+  border-left:2px solid #093;
+  h3{
+    display: block;
+    color: #333;
+    line-height: 20px;
+    margin-top: -1px;
+    margin-left: 2px;
+  }
+}
+//结算
+#scroller li:nth-child(3){
+  padding-bottom:10px;
+}
+.total{
+  background: #FFFFFF;
+  height: 50px;
+}
+.total_left{
+  width: 20%;
+  font-size: 1rem;
+  line-height: 50px;
+}
+.total_left .checkbox_container{
+  width:30%;
+}
+.total_left .checkbox{
+  margin: 16px auto;
+}
+.total_price p:nth-child(1){
+  font-size: 1rem;
+  line-height: 30px;
+  span{
+    color: $normalcolor;
+  }
+}
+.total_price p:nth-child(2){
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+.jiesuan{
+  float: right;
+  width: 100px;
+  height: 34px;
+  margin: 8px 10px 0 0;
+  font-size: 1rem;
+  line-height: 34px;
+  text-align: center;
+  background: $normalcolor;
+  color: #FFFFFF;
+}
+.edit{
+  display: none;
+  @extend .total;
+}
+.add_store,.del{
+  @extend .jiesuan;
+}
+//.scroll li:nth-child(4){
+//  display: none;
+//}
+.pull_img{
+  margin: 0 auto 20px;
+  width: 200px;
+  height: 40px;
+  background: url("../../../Images/mobile/cart/icon_cart.png") 0 0;
+  -webkit-background-size: 200px;
+  background-size: 200px;
+}
+#pullDown{
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  p{
+    margin-bottom: 10px;
+  }
+}
+.jiesuan_bottom{
+  position: fixed;
+  bottom: 52px;   
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid #e4e4e4;
+  max-width: 640px;
+  box-shadow: 0 -1px 3px #d5d5d5;
+}
+.footer{
+  box-shadow:0;
+}
+
+/*
+*购物车空空如也
+*/
+
+.cart_empty{
+  margin: 10px 0;
+  height: 200px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.empty_img{
+  padding-left: 30px;
+  img{
+    display: block;
+    width: 150px !important;
+    height: 115px !important;
+    margin: 0 auto;
+  }
+}
+.empty_text{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  a{
+    color: #093;
+  }
+}

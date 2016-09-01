@@ -1,0 +1,285 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/drop";
+@import "../../module/site";
+@import "../../module/recommend";
+@import "../../module/usercenter_style";
+
+.order_detail {
+  padding: 0 25px;
+}
+
+//订单信息
+.detail_info {
+  padding: 15px 0;
+  li {
+    width: 236px;
+    line-height: 24px;
+    float: left;
+    font-size: 14px;
+    color: #666;
+    span {
+      display: inline-block;
+      width: 70px;
+      text-align: right;
+    }
+  }
+}
+
+//订单步骤
+.detail_step {
+  padding: 15px 0;
+  margin-right: -12px;
+  border-bottom: 1px solid #e4e4e4;
+  li {
+    width: 170px;
+    margin-right: 10px;
+    float: left;
+    p {
+      font-size: 14px;
+      color: #888;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  .step_line {
+    width: 170px;
+    height: 8px;
+    position: relative;
+    background-color: #e4e4e4;
+  }
+  .circle_wrap {
+    position: absolute;
+    left: 50%;
+    top: -21px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  .circle_inner {
+    position: absolute;
+    left: 50%;
+    top: -16px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    border-radius: 50%;
+    background-color: #e4e4e4;
+  }
+  .step_item {
+    margin-top: 35px;
+  }
+}
+
+//收货人信息
+.receiver_info, .logistics {
+  padding: 10px 0;
+  h1 {
+    font-size: 16px;
+    color: #333;
+    line-height: 32px;
+  }
+  ul {
+    li {
+      font-size: 14px;
+      color: #888;
+      line-height: 30px;
+      span {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+//配送方式
+.send_style {
+  margin-top: 20px;
+  h1 {
+    font-size: 16px;
+    color: #333;
+    line-height: 32px;
+  }
+  p {
+    padding: 30px 0;
+    font-size: 14px;
+    color: #888;
+  }
+}
+
+//物流信息
+.logistics {
+  h1 {
+    padding-bottom: 25px;
+    a {
+      font-size: 12px;
+      color: #ff6699;
+      padding-left: 30px;
+    }
+  }
+}
+
+.logistics_info {
+  display: none;
+  .logis_head {
+    height: 50px;
+    display: table;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+  }
+  .lh_date {
+    width: 160px;
+  }
+  .lh_mark {
+    width: 348px;
+  }
+  .lh_site {
+    width: 200px;
+  }
+  .lh_date,.lh_mark,.lh_site{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .logis_list{
+    display: table;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    height: 40px;
+    .lh_mark{
+      padding: 0 30px;
+    }
+  }
+}
+
+//头部
+.goods_head {
+  display: table;
+  height: 50px;
+  border-top: 1px solid #e4e4e4;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+.rh_pro {
+  width: 130px;
+}
+
+.rh_num {
+  width: 198px;
+}
+
+.rh_price, .rh_total {
+  width: 191px;
+}
+
+//退换货的商品
+.goods_list {
+  display: table;
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e4;
+  .rh_pro,
+  .rh_num, .rh_price, .rh_total {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+  .rh_pro {
+    .pro_img {
+      display: block;
+      width: 130px;
+      height: 130px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .pro_name, p {
+      text-align: left;
+      display: inline-block;
+      font-size: 14px;
+      color: #333;
+      margin-top: 5px;
+      width: 130px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      line-height: 18px;
+    }
+    p {
+      font-size: 12px;
+      color: #666;
+      margin: 0;
+    }
+  }
+}
+
+.list_paddingb {
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+
+//金额
+.detail_price {
+  text-align: right;
+  .all_wrap {
+    padding-top: 10px;
+    > div {
+      line-height: 36px;
+      font-size: 16px;
+      color: #888;
+      span {
+        display: inline-block;
+        width: 120px;
+        text-align: right;
+      }
+      .all_pay {
+        font-size: 24px;
+
+      }
+      em {
+        display: inline-block;
+        min-width: 120px;
+        text-align: left;
+      }
+    }
+  }
+  p {
+    padding: 10px 0 30px 0;
+    a {
+      display: inline-block;
+      width: 130px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      background-color: #ccc;
+      margin: 0 10px;
+      em {
+        font-size: 14px;
+        color: #fff;
+        font-family: sans-serif, 'Microsoft YaHei';
+        margin-left: 5px;
+      }
+    }
+  }
+}

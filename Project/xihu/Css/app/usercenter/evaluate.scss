@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/recommend";
+@import "../../module/order_ele";
+@import "../../module/empty";
+@import "../../module/pagelist";     
+
+.usercenter_right{
+  >h3{
+    background: #FFFFFF;
+    border:none;
+    span{
+      margin-right: 20px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+.order_ele .order_code p span {
+  i{
+    margin-right: 10px;
+  }
+  em{
+    margin-right: 10px;
+    color: #999;
+  }
+
+}
+.to_evaluate_btn{
+  position: absolute;
+  bottom:20px;
+  right: 60px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+//评论详情
+.to_evaluate{
+  border-top:1px solid #e4e4e4;
+}
+.evaluate_container{
+  position: relative;
+  overflow: hidden;
+  padding:0 40px 0;
+  background: #FFFFFF;
+  border-bottom:1px solid #e4e4e4;
+
+}
+.detail_intro{
+  float: left;
+  width: 80px;
+  height: 30px;
+  text-align: left;
+  font-size: 13px;
+
+}
+.to_score{
+  padding:20px 0;
+  line-height: 30px;
+  .score_star{
+    color: #ccc;
+    i{
+      margin-right: 3px;
+      font-size:16px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .score_result{
+      margin-right: 3px;
+      color: #666;
+      font-size: 13px;
+    }
+  }
+}
+.evaluate_detail_info{
+  position: relative;
+  textarea{
+    width: 770px;
+    height: 182px;
+    resize: none;
+    border: 1px solid #e4e4e4;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 5px 10px;
+    outline-style:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .evaluate_tip{
+    position: absolute;
+    bottom: 10px;;
+    right: 40px;
+    font-size: 14px;
+    color: #888;
+  }
+}
+.submit_evaluate{
+  margin: 30px 0;
+  span{
+    float: left;
+  }
+  .submit_evaluate_btn{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.empty{
+  border-top:1px solid #e4e4e4;
+}

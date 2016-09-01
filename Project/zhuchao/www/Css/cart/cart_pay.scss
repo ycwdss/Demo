@@ -1,0 +1,540 @@
+@charset "UTF-8";
+@import "../fh/lib";
+
+.l_main_bg {
+  background: #f8f8f8;
+  padding-bottom: 100px;
+  > h2 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #666;
+  }
+}
+
+.l_main {
+  background: #FFFFFF;
+  font-size: 14px;
+  color: #666;
+  > div {
+    h3 {
+      font-size: 18px;
+      color: #000;
+      line-height: 64px;
+      padding-top: 10px;
+    }
+    margin: 0 20px;
+  }
+}
+
+//收货人信息
+.m_buyer {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.buyer_title {
+  position: relative;
+  span {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    color: #093;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+      color: $activeColor;
+    }
+  }
+}
+.buyer_infor .address {
+  position: relative;
+  @include box-sizing();
+  height: 35px;
+  margin-top:0;
+  width: 170px;
+  line-height: 33px;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.buyer_infor .choosed{
+  border: 1px solid $normalColor;
+}
+.buyer_infor .choosed:after, .pay_current:after {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../../cart/Images/sprite_green_sanjiao.png");
+}
+
+.buyer_infor {
+  position: relative;
+  padding: 10px 22px 15px;
+  font-size: 14px;
+  color: #666666;
+  > p {
+    float: left;
+    margin-left: 30px;
+    max-width: 900px;
+    @include strictEll(2.5, 1);
+    > span {
+      margin: 0 5px;
+    }
+  }
+  > span {
+    margin-right:5px;
+    float: right;
+    line-height: 35px;
+    color: $normalColor;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+      color: $activeColor;
+    }
+  }
+}
+.address_box.current{
+  max-height: 60px;
+  overflow: hidden;
+}
+
+//查看更多地址
+.read_more{
+  height: 18px;
+  line-height: 18px;
+  padding: 5px 20px;
+  cursor: pointer;
+  span{
+    color: #666;
+  }
+  b{
+    display: inline-block;
+    vertical-align: middle;
+    height: 10px;
+    line-height: 10px;
+    width: 9px;
+    margin-left: 5px;
+    background:url(../../../Images/pc/cart/icon_address.png?_nosprite) no-repeat;
+  }
+  b.current{
+    background-position: 0 -10px;
+  }
+}
+//支付方式
+.pay_way {
+  padding: 0 22px 30px;
+  border-bottom: 1px solid #e4e4e4;
+  > div {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 35px;
+    border: 1px solid #e4e4e4;
+    line-height: 33px;
+    text-align: center;
+    margin-right: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    @include box-sizing();
+  }
+}
+
+.pay_way .pay_current {
+  border: 1px solid $normalColor;
+}
+
+//确认商品信息
+.pro_ele {
+  margin-bottom: 10px;
+  h4 {
+    font-size: 14px;
+    line-height: 37px;
+    text-indent: 22px;
+  }
+}
+
+.pro_infor {
+  padding-top: 10px;
+  padding-bottom: 35px;
+  border-top: 1px dashed #e4e4e4;
+}
+
+.infor_title {
+  margin-bottom: 6px;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+  border-bottom: 2px solid #e4e4e4;
+  span {
+    float: left;
+  }
+}
+
+.infor_title .pro_title {
+  width: 750px;
+}
+
+.pro_title {
+  width: 530px;
+}
+
+.pro_infor_title {
+  width: 220px;
+}
+
+.price_ele_title {
+  width: 130px;
+}
+
+.count_title {
+  width: 70px;
+}
+
+.discount_title {
+  width: 215px;
+}
+
+.all_title {
+  width: 95px;
+}
+
+.pro_content {
+  line-height: 20px;
+  > div {
+    float: left;
+  }
+}
+
+.pro_descri {
+  padding: 0 22px;
+  @extend .pro_title;
+  @include box-sizing();
+  img {
+    float: left;
+    width: 64px !important;
+    height: 40px !important;
+  }
+  p {
+    float: left;
+    margin-left: 20px;
+    height: 40px;
+    width: 402px;
+    @include strictEll(20px, 2);
+  }
+}
+
+.pro_detail {
+  @extend .pro_infor_title;
+  text-align: left;
+  color: #888;
+  font-size: 12px;
+}
+
+.price_ele {
+  @extend .price_ele_title;
+  text-align: center;
+  color: #000;
+  line-height: 40px;
+}
+
+.count {
+  @extend .count_title;
+  text-align: center;
+  line-height: 40px;
+}
+
+.discount {
+  @extend .discount_title;
+  @include box-sizing();
+  height: 40px;
+  padding: 10px 0;
+  line-height: 20px;
+  > div {
+    text-align: center;
+    width: auto;
+  }
+  select {
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    color: #333;
+  }
+  span {
+    @include strictEll(20px, 1);
+  }
+}
+
+.all {
+  @extend .all_title;
+  text-align: center;
+  color: #000;
+  line-height: 40px;
+}
+
+.remarks {
+  padding: 20px 22px 30px;
+  line-height: 30px;
+  @include box-sizing();
+  border-bottom: 1px solid #e4e4e4;
+  input {
+    height: 30px;
+    width: 300px;
+    margin-left: 20px;
+    padding: 0 10px;
+    border: 1px solid #e4e4e4;
+    @include box-sizing();
+    @include transition();
+    &:focus {
+      border: 1px solid $normalColor;
+    }
+  }
+}
+
+.send_price {
+  float: right;
+  color: #000;
+}
+
+//发票
+.m_fapiao {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.fapiao_content {
+  padding: 0 22px;
+}
+.fapiao_content{
+  .fapiao_btn{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    border: 1px solid #e4e4e4;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    @include box-sizing();
+  }
+}
+.fapiao_content .fapiao_current {
+  border: 1px solid $normalColor;
+  &:after{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../../cart/Images/sprite_green_sanjiao.png");
+  }
+}
+.fapiao_content input{
+  height: 30px;
+  width: 300px;
+  padding: 0 10px;
+  border: 1px solid #e4e4e4;
+  @include box-sizing();
+  @include transition();
+  &:focus{
+    border: 1px solid $normalColor;
+  }
+}
+.change_fapiao{
+  height: 18px;
+  line-height: 18px;
+  padding:5px 5px 0 30px;
+  color: #666;
+}
+//总结
+.m_total {
+  padding: 25px 0;
+  border-bottom: 1px solid #e4e4e4;
+  p {
+    float: right;
+    text-align: right;
+    width: 100%;
+    line-height: 35px;
+    span {
+      float: right;
+      width: 100px;
+      text-align: right;
+    }
+  }
+}
+
+.total_price {
+  span {
+    color: $activeColor;
+  }
+}
+
+.pay_define {
+  padding: 30px 0;
+  line-height: 50px;
+  p {
+    float: right;
+    font-size: 20px;
+    color: #000;
+    span {
+      font-size: 24px;
+      color: $activeColor;
+    }
+  }
+  input {
+    float: right;
+    margin-left: 20px;
+    width: 245px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: $normalColor;
+    cursor: pointer;
+    @include transition();
+    &:hover{
+      background-color: #048b31;
+      -webkit-box-shadow: 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px #ccc;
+    }
+  }
+}
+
+//新增收货人
+.new_receiver {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  min-height: 600px;
+  z-index: 99999;
+  &:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #000;
+    @include opacity(30);
+    z-index: -1;
+  }
+}
+
+.receiver_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.m_receiver {
+  position: absolute;
+  width: 640px;
+  height: 400px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FFFFFF;
+  font-size: 14px;
+  color: #333333;
+  line-height: 25px;
+  h3 {
+    line-height: 50px;
+    text-indent: 20px;
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  input {
+    line-height: 23px;
+    padding: 0 10px;
+    height: 25px;
+    width: 180px;
+    @include box-sizing();
+    border: 1px solid #e4e4e4;
+    &:focus {
+      border: 1px solid $normalColor;
+    }
+  }
+  select {
+    width: 90px;
+    height: 25px;
+    margin-right: 20px;
+    border: 1px solid #e4e4e4;
+  }
+  > form > div {
+    padding: 10px 0;
+    > span {
+      float: left;
+      width: 120px;
+      text-align: right;
+    }
+  }
+}
+
+.new_right {
+  float: left;
+}
+
+.address_detail {
+  input {
+    width: 360px;
+  }
+}
+
+.m_receiver .remind {
+  padding: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.m_receiver .submit {
+  position: absolute;
+  left: 120px;
+  bottom: 42px;
+  width: 120px;
+  height: 30px;
+  background: $normalColor;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+}
+
+.m_receiver .cancel {
+  @extend .submit;
+  padding: 0;
+  left: 290px;
+  bottom: 42px;
+  width: 100px;
+}

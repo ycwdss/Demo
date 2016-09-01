@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.empty{
+  position: relative;
+  height: 570px;
+  background: #FFFFFF;
+  >div{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: 340px;
+    height:80px;
+    padding:20px 0 10px 90px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    i{
+      position: absolute;
+      top:0;
+      left:0;
+      font-size: 80px;
+      line-height: 80px;
+      color: #ccc;
+    }
+    p{
+      font-size: 15px;
+      color: #999;
+      line-height: 25px;
+    }
+  }
+}
+/*
+<!--为空 begin-->
+<div class="empty">
+<div class="">
+<i class="iconfont">&#xe602;</i>
+<p>购物车是空的，快去看看商品吧</p>
+<P><a href="" class="main">go...</a> </P>
+</div>
+</div>
+<!--为空 end-->
+*/

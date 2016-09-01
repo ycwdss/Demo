@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import "../fh/lib";
+//主体背景
+.grey_back{
+  background: #f8f8f8;
+}
+//主体内容
+.cart_con{
+  padding:40px 0 75px 0;
+}
+//左侧主体内容
+.left_con{
+  width:1036px;
+}
+//成功加入购物车模块
+.enter_cart{
+  padding-top: 50px;
+  height: 150px;
+  background: white;
+  margin-bottom: 20px;
+  .success_enter{
+    width: 556px;
+    height: 117px;
+    padding-left:100px ;
+    padding-top: 25px;
+  }
+  h1{
+    font-size:30px ;
+    color: #009933;
+    &:before{
+      width:49px ;
+      height: 50px;
+      display: inline-block;
+      margin-right:20px;
+      margin-bottom: -17px;
+      background: url("../../cart/Images/sprite_cart_right_.png");
+      content: '';
+    }
+  }
+}
+.pay_shop{
+  width: 180px;
+  height: 40px;
+  a{
+    display: block;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom:20px;
+    @include transition();
+  }
+  .pay{
+    background: #009933;
+    color: white;
+    &:hover{
+      background: #048b31;
+    }
+  }
+  .shop{
+    background: #f8f8f8;
+    color:#333333;
+    &:hover{
+      background: #f3f3f3;
+    }
+  }
+}
+
+//标题
+.cart_hd{
+  height: 50px;
+  background: white;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  h2{
+    font-size: 18px;
+    line-height: 50px;
+    color:#333333 ;
+  }
+}
+//标题右侧的上一页，下一页
+.sum_pro{
+  padding-top: 15px;
+}
+.sum_pro i{
+  display: inline-block;
+  background-color: #fff;
+  border:1px solid #e4e4e4;
+  width: 33px;
+  height: 18px;
+  color: #666;
+  line-height: 18px;
+  margin:0 6px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "SimSun", serif;
+  &:hover{
+    background: #f5f5f5;
+  }
+}
+//商品样式重写
+.mall_module_list{
+  margin-bottom: 20px;
+  li{
+    background: white;
+    height: 320px;
+  }
+}
+.pro_enter{
+  display: block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #888888;
+  background: #f8f8f8;
+  margin-top: 20px;
+  margin-left: 50px;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease ;
+  -ms-transition: 0.2s ease ;
+  -o-transition: 0.2s ease ;
+  transition: 0.2s ease ;
+  &:hover{
+    background-color: #eee;
+  }
+}
+//右侧我的购物车
+.my_cart{
+  width:204px ;
+  background: white;
+  padding: 0 20px 20px 20px;
+  position: relative;
+  h2{
+    height: 45px;
+    border-bottom: 1px solid #e4e4e4;
+    a{
+      display: block;
+      font-size: 16px ;
+      line-height: 45px;
+      color: #009933;
+      &:hover{
+        color: #f60;
+      }
+    }
+  }
+}
+
+.select_all{
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #e4e4e4;
+  cursor: pointer;
+  font-size: 14px;
+  color: #888888;
+  position: relative;
+}
+.cart_checkbox{
+  position: relative;
+  width:15px;
+  height: 15px;
+  top: 18px;
+  overflow: hidden;
+}
+.cart_pro{
+  padding-top:20px ;
+  width: 204px;
+  border-bottom: 1px solid #e4e4e4;
+  h3{
+    font-size: 14px;
+    color:#333333 ;
+    margin-bottom: 10px;
+  }
+}
+.checkbox{
+  width: 35px;
+  height: 60px;
+  //background: #009933;
+}
+.pro_item{
+  position: relative;
+}
+.pro_detail{
+  padding-bottom: 20px;
+  //width: 169px;
+  a{
+    display: block;
+  }
+  img{
+    display: block;
+    width: 169px;
+    height: 105px;
+    margin: 0 auto;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+  p{
+    font-size: 12px;
+    color: #888888;
+    line-height: 20px;
+    cursor: pointer;
+    &:hover{
+      color: #f60;
+    }
+  }
+  .price{
+    font-size: 14px;
+    span{
+      color: #f60;
+    }
+  }
+}
+.else_pro{
+  border-bottom: none;
+}
+.calculate{
+  font-size: 14px;
+  color: #333333;
+  line-height: 26px;
+  span{
+    color: #f60;
+    font-size: 18px;
+  }
+}
+.pay_button{
+  width: 244px;
+  height: 50px;
+  background: #009933;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    @include transition();
+    &:hover{
+      background: #048b31;
+    }
+  }
+}
+//轮播图
+.more_slick{
+  position:relative;
+  width: 1036px;
+  height: 402px;
+  overflow: hidden;
+}
+.slick-slider{
+  margin: 0;
+}

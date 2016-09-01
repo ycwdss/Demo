@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>店铺街</title>
+    <link rel="stylesheet" type="text/css" href="../Css/mall/mall_style.css"/>
+    <link rel="stylesheet" type="text/css" href="../Css/mall/shopstreet.css">
+</head>
+<body>
+<!--网站顶部 begin-->
+<div class="module_top">
+    <div class="conWidth clearfix">
+        <a class="goback_index fl" href="../zhuchao/index.html"><span class="top_logo"></span>返回筑巢首页</a>
+        <p class="fl welcome">你好，欢迎来凤凰筑巢</p>
+        <ul class="fr module_topright">
+            <li id="username" class="head1">
+                <a href="../register_login/login.html" target="_blank" class="link_user">超级玛丽</a>
+                <a href="../register_login/register.html" class="link_quit">退出</a>
+            </li>
+            <li class="line"></li>
+            <li class="head2 pull_down" id="mt_personal">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="../usercenter/usercenter_index.html">我的凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <div class="user_head_top clearfix">
+                        <a href="../usercenter/usercenter_index.html" class="fl user_head_top_img"><img src="Images/test_user_head.png" alt=""/></a>
+                        <div class="fl">
+                            <h3><a href="../usercenter/usercenter_index.html">超级玛丽</a></h3>
+                            <a href="../usercenter/usercenter_index.html">等级：<i>v3</i></a>
+                            <a href="../usercenter/usercenter_index.html">积分：<i>200</i></a>
+                        </div>
+                    </div>
+                    <div class="user_message">
+                        <h3><a href="../usercenter/usercenter_allmessages.html">消息<i>3</i></a></h3>
+                        <div class="clearfix">
+                            <a href="../usercenter/usercenter_evaluation.html"><span>待评价：</span><i>10</i></a>
+
+                            <a href="../usercenter/usercenter_inforchange.html"><span>正在退货：</span><i>0</i></a>
+
+                            <a href="../usercenter/usercenter_index.html"><span>待收货：</span><i>0</i></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head3">
+                <a href="" class="link_buy">购物车<i>3</i>件</a>
+            </li>
+            <li class="line"></li>
+            <li class="head4 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">收藏夹</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href="../usercenter/usercenter_prostore.html"><span>收藏的商品:</span><i>10</i></a>
+
+                    <a href="../usercenter/usercenter_storecollect.html"><span>收藏的店铺：</span><i>0</i></a>
+
+                    <a href="../usercenter/usercenter_imgstore.html"><span>收藏的图片：</span><i>0</i></a>
+                    <a href="../usercenter/usercenter_articlestore.html"><span>收藏的文章：</span><i>0</i></a>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head5 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">手机凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href=""><img src="../Images/icon_erweima.png" alt=""/><i>扫码下载凤凰筑巢客户端</i></a>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head6 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">关注凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href=""><img src="../Images/icon_erweima.png" alt=""/><i>关注凤凰筑巢</i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--网站顶部 end-->
+<!--网站头部 begin-->
+<div class="mall_header conWidth clearfix clear">
+    <h1 class="mall_logo fl">
+        <img src="Images/sprite_mall_logo.png" alt="凤凰筑巢LOGO"/>
+        <span>筑巢商城</span>
+    </h1>
+    <div class="mall_header_right fr clearfix">
+        <div class="m_searchWrap">
+            <div class="c_searchItem boxSizing" id="searchItem">
+                <div id="searchItems">
+                    <i class="c_searchArrow"></i>
+                    <span id="currentItem">建材</span>
+                    <span class="c_notCurrent">攻略</span>
+                </div>
+            </div>
+            <div class="c_searchInput boxSizin">
+                <input id="search" class="search_input" placeholder="最精确的家装指南">
+            </div>
+
+            <div class="c_search_button" id="searchClick"><span>搜&nbsp;&nbsp;索</span></div>
+            <div id="searchSuggest">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--网站头部 end-->
+<!--商城导航 begin-->
+<div class="mall_nav">
+    <div class="mall_navinner conWidth">
+        <div class="allclass fl">
+            <h3><a href=""><i></i>全部商品分类</a></h3>
+            <div class="classlist_box">
+                <div id="classlist" class="classlist">
+                    <div class="classlist_items">
+                        <dl class="items_1 clearfix">
+                            <dt class="fl"><i></i><a href="">建材</a></dt>
+                            <dd class="fl">
+                                <a href="">地板</a>
+                                <a href="">涂料</a>
+                                <a href="">墙纸</a>
+                                <a href="">地板</a>
+                                <a href="">涂料</a>
+                                <a href="">墙纸</a>
+                            </dd>
+                            <span class="fr"></span>
+                        </dl>
+                        <span></span>
+                    </div>
+                    <div class="classlist_items">
+                        <dl class="items_2 clearfix">
+                            <dt class="fl"><i></i><a href="">家具</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">沙发</a>
+                                <a href="">餐桌</a>
+                                <a href="">衣柜</a>
+                                <a href="">沙发</a>
+                                <a href="">餐桌</a>
+                            </dd>
+                            <span class="fr"></span>
+                        </dl>
+                        <span></span>
+                    </div>
+                    <div class="classlist_items">
+                        <dl class="items_3 clearfix">
+                            <dt class="fl"><i></i><a href="">家居</a></dt>
+                            <dd class="fl">
+                                <a href="">地板</a>
+                                <a href="">涂料</a>
+                                <a href="">墙纸</a>
+                                <a href="">地板</a>
+                                <a href="">涂料</a>
+                                <a href="">墙纸</a>
+                            </dd>
+                            <span class="fr"></span>
+                        </dl>
+                        <span></span>
+                    </div>
+                    <div class="classlist_items">
+                        <dl class="items_4 clearfix">
+                            <dt class="fl"><i></i><a href="">家饰</a></dt>
+                            <dd class="fl">
+                                <a href="">地板</a>
+                                <a href="">涂料</a>
+                                <a href="">墙纸</a>
+                                <a href="">地板</a>
+                                <a href="">涂料</a>
+                                <a href="">墙纸</a>
+                            </dd>
+                            <span class="fr"></span>
+                        </dl>
+                        <span></span>
+                    </div>
+                </div>
+                <!--右侧多出内容-->
+                <div class="classlist_right clearfix">
+                    <div class="classlist_right_list hide">
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类三打算</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜阿斯顿飞</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a><a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a><a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a> <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a><a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a><a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="classlist_right_list hide">
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">衣厨类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt class="fl"><a href="">柜类</a></dt>
+                            <dd class="fl">
+                                <a href="">衣柜</a>
+                                <a href="">书柜</a>
+                                <a href="">床头柜</a>
+                                <a href="">角柜</a>
+                                <a href="">餐边柜</a>
+                                <a href="">懒人沙发</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--导航-->
+        <ul class="class_nav fl clearfix">
+            <li><a href="jingxuan_list.html">精选专题</a></li>
+            <li><a href="shopstreet_index.html">品牌街</a></li>
+            <li><a href="../zhuchao/index.html">凤凰筑巢</a></li>
+        </ul>
+    </div>
+</div>
+<!--商城导航 end-->
+<div class="l_content_bg">
+<div class="routeInfo conWidth clearfix">
+    <!-- 网站路径导航开始 -->
+    <a href=""><span>商城首页</span></a> <span>&gt;</span>
+    <a href="" target="_self"><span>品牌街</span></a>
+    <!-- 网站路径导航结束 -->
+    </div>
+<div class="clearfix l_content conWidth ">
+    <div class="shop_left fl">
+     <h4>北城</h4>
+        <ul>
+            <li class="left_click">1F</li>
+            <li class="left_h_bottom">2F</li>
+            <li>3F</li>
+            <li>4F</li>
+        </ul>
+        <h4>南城</h4>
+        <ul>
+            <li>1F</li>
+            <li>2F</li>
+            <li>3F</li>
+            <li>4F</li>
+        </ul>
+    </div>
+    <div class="shop_right fr">
+        <div class="right_top">
+            <ul class="clearfix">
+                <li class="noselect">全部</li>
+                <li class="noselect">陶瓷</li>
+                <li class="right_t_click noselect">其他</li>
+            </ul>
+        </div>
+        <div class="right_content">
+            <ul class="clearfix">
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei clearfix">
+                            <p>主营</p>
+                            <ul>
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear_right">
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                           <a href=""><img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei clearfix">
+                            <p>主营</p>
+                            <ul>
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear_right">
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                            <a href=""><img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei clearfix">
+                            <p>主营</p>
+                            <ul>
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                            <a href=""> <img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="clear_right">
+                    <div class="clearfix shop_main">
+                        <div class="shop_logo fl">
+                            <a href=""><img src="../Images/test_shopstreet_shop1.png"></a>
+                        </div>
+                        <div class="shop_fenlei fr">
+                            <p>主营</p>
+                            <ul class="clearfix">
+                                <li><a href="#">地面砖</a> </li>
+                                <li><a href="#">墙面砖</a> </li>
+                                <li><a href="#">马赛克</a> </li>
+                                <li><a href="#">外墙砖</a> </li>
+                                <li><a href="#">艺术砖</a> </li>
+                                <li><a href="#">釉面砖</a> </li>
+                                <li><a href="#">通体砖</a> </li>
+                                <li><a href="#">抛光砖</a> </li>
+                                <li><a href="#">玻化砖</a> </li>
+                                <li><a href="#">腰线</a> </li>
+                                <li><a href="#">脚线</a> </li>
+                                <li><a href="#">其他</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="l_footer">
+    <div class="m_footerInner conWidth">
+        <p class="footer_nav"><a>关于我们</a> ｜ <a>联系我们</a> ｜ <a>商家入驻</a> ｜ <a>诚聘英才</a> ｜<a>免责声明</a> ｜ <a>精选专题 </a></p>
+
+        <p class="c_copy">&copy;2014-2015凤凰筑巢保留所有权利<br/>
+            Copyright &copy; 2014- 2015 Cntysoft.All Rights. 豫ICP备14029737号
+        </p>
+    </div>
+</footer>
+<script data-main="../pc/shopstreet" src="../pc/lib/require.js"></script>
+</body>
+</html>

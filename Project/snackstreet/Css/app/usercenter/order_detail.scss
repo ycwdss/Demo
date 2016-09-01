@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter";
+@import "../../module/order_ele";
+
+.right_content{
+  padding:0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.m_order_detail{
+  padding-bottom: 30px;
+  border-bottom:1px solid #e4e4e4;
+  >h2{
+    font-size:20px;
+    color: #333;
+    line-height: 50px;
+  }
+}
+.c_order_detail{
+  padding-top: 15px;
+  color: #333;
+  p{
+    font-size: 13px;
+    line-height: 30px;
+    span{
+      margin-right:20px;
+    }
+  }
+}
+.m_logistics{
+  padding:20px 0 30px;
+  border-bottom:1px solid #e4e4e4;
+  >h2{
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+  }
+}
+.logistics_content{
+  margin-left: 25px;
+  h4{
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+  }
+  p{
+    font-size: 12px;
+    color: #666;
+    line-height: 25px;
+  }
+}
+.order_bd{
+  padding-bottom: 50px;
+}
+.order_last{
+  margin-top: 20px;
+  padding-right: 20px;
+  text-align: right;
+  a{
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+//订单列表样式重置
+.order_money,.order_num,.order_pay,.order_operation{
+  width: 140px;
+}
+.order_row{
+  .money_wrap,.num_wrap{
+    width: 140px;
+  }
+
+
+}

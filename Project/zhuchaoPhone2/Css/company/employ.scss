@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/company/module_title";
+
+//招聘
+.employ_ele{
+  margin:0 5px;
+  font-size: 1.3rem;
+  background:#fff;
+  img{
+    display: block;
+    max-width: 100%!important;
+  }
+  >h3{
+    position: relative;
+    line-height: 40px;
+    @include ell(1);
+    font-size: 1.4rem;
+    border-bottom:1px solid #e4e4e4;
+    i{
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      vertical-align: 2px;
+      margin:0 5px 0 10px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      background: #666;
+    }
+    a{
+      position: absolute;
+      top:0;
+      right: 10px;
+      color: #999;
+      font-size: 1.1rem;
+    }
+  }
+}
+.employ_detail{
+  padding: 10px;
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 25px;
+}

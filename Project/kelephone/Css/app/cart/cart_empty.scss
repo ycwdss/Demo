@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../../lib/mixin";
+//空购物车
+.cart_empty_box{
+  padding-top: 33px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  .cart_empty_pic{
+    height: 110px;
+    background: url(../../../Images/icon/cart_empty_icon.png?_nosprite) center center no-repeat!important;
+    background-size: 93px 77px!important;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+  }
+  .cart_empty_text{
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    line-height: 18px;
+    min-height: 50px;
+  }
+}

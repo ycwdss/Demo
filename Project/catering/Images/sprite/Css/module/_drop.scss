@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.drop_menu{
+  float: left;
+  margin-right:5px;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e4e4e4;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .drop_show{
+    padding-right: 30px;
+    padding-left: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .active{
+    @include transform(180deg);
+  }
+  .drop_arrow, .drop_arrow:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    border: 8px solid transparent;
+    border-top-color:#ccc;
+    webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%;
+  }
+
+  .drop_arrow:after {
+    margin-top: -10px;
+    right: -8px;
+    border-top-color: #fff;
+  }
+  .drop_list {
+    position: absolute;
+    top:100%;
+    left: -1px;
+    z-index: 9999;
+    width:inherit;
+    max-height:200px;
+    overflow-y: auto;
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    li {
+      padding-left: 2px;
+      height: inherit;
+      line-height: inherit;
+      text-align: center;
+      border: 1px solid #e4e4e4;
+      border-bottom: 0;
+      word-break: break-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import "../../lib/_mixin";
+@import "../../module/routenav";
+@import "../../module/usercenter";
+@import "../../module/drop";
+@import "../../module/totop";
+.address_new{
+  display: inline-block;
+  width: 110px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin-top: 17px;
+  &:hover{
+    .address_plus{
+      background: url("../../../Images/sprite/sprite_plus_FFF.png") no-repeat;
+    }
+  }
+}
+.address_plus{
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: url("../../../Images/sprite/sprite_plus.png") no-repeat;
+  margin-right: 5px;
+}
+//每项尺寸
+.address_name {
+  width: 120px;
+}
+
+.address_detail{
+  width: 340px;
+}
+
+.address_tel {
+  width: 240px;
+}
+.address_operate{
+  width: 100px;
+}
+//标题
+.address_title {
+  padding: 10px 0;
+  li {
+    float: left;
+    font-size: 16px;
+    color: #666;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+
+.address_wrap {
+  display: table;
+  padding: 20px 0;
+  border-bottom: 1px dotted #e4e4e4;
+}
+
+.address_wrap {
+  .address_name,
+  .address_tel,
+  .address_detail,
+  .address_operate
+  {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+  }
+  .address_detail{
+    text-align: left;
+  }
+  .address_tel{
+    span{
+      margin-left: 10px;
+    }
+  }
+}
+
+//地址编辑 或删除按钮
+.address_edit{
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.address_del{
+  font-size: 17px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+//收货地址弹窗
+.address_popup{
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100%;
+   width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: none;
+
+}
+.address_add_wrap{
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -300px;
+  border: 1px solid #e4e4e4;
+}
+.address_add_inner{
+  position:relative;
+  padding: 50px;
+  .list{
+    margin-bottom: 10px;
+    position: relative;
+    label{
+      display: inline-block;
+      width: 80px;
+      text-align: left;
+      font-size: 14px;
+      color: #333;
+    }
+    input{
+      width: 388px;
+      height: 32px;
+      line-height: 32px;
+      border: 1px solid #e4e4e4;
+      padding: 3px 5px;
+      font-size: 14px;
+      @include transition(border,0.2s,ease);
+    }
+  }
+
+  .email{
+    width: 138px!important;
+    height: 32px!important;
+    line-height: 32px!important;
+  }
+  .address_btn{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #999;
+    font-size: 14px;
+    color: #fff;
+  }
+  .save_btn{
+    margin-left: 85px;
+    margin-right: 40px;
+  }
+  .tips{
+    width: 400px;
+    margin-left: 85px;
+    padding-top: 5px;
+    height: 20px;
+    line-height: 20px;
+    visibility: hidden;
+  }
+  .del{
+    display: block;
+    font-size: 12px;
+    width: 12px;
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .email_del{
+    top: 12px;
+    left: 215px;
+  }
+}
+.address_select{
+  label{
+    width: 83px!important;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+  }
+  .drop_menu{
+    width: 128px;
+  }
+}
+//关闭
+//关闭
+.offbtn{
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 25px;
+  @include transition(background,0.3s,ease);
+  cursor: pointer;
+}

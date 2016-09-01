@@ -1,0 +1,461 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/recommend";
+@import "../../module/site";
+@import "../../module/_cart_head";
+
+.cart_title{
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  padding-left: 42px;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative;
+  i{
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 32px;
+    color: #888;
+    display: inline-block;
+  }
+}
+.order{
+  background-color: #fff;
+  padding: 0 20px;
+}
+.receive_info{
+border-bottom: 1px solid #e4e4e4;
+}
+.set_address{
+  padding: 0 30px;
+}
+.address_title{
+  font-size: 15px;
+  padding: 20px 0 10px 0 ;
+  margin-bottom: 10px;
+  color: #666;
+
+}
+.address_eidt{
+  width: 200px;
+  padding-right: 20px;
+  line-height: 18px;
+  display: none;
+  a{
+    margin-right:20px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+}
+.address_info{
+  overflow: hidden;
+  li{
+    padding: 6px 0;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover{
+      background-color: #fff4e5;
+    }
+
+    .address_main{
+      padding-left: 20px;
+      color: #666;
+      input{
+        vertical-align: middle;
+      }
+      em{
+        margin-left: 15px;
+      }
+      span{
+        margin-left: 24px;
+        display: inline-block;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+    }
+  }
+  .current{
+    background-color: #fff4e5;
+  }
+}
+.new_address{
+ padding: 6px 0 6px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  input{
+    vertical-align: middle;
+  }
+  label{
+    margin-left: 15px;
+    color: #888;
+    cursor: pointer;
+  }
+}
+
+
+
+//修改收货地址信息 弹窗
+.address_fill{
+  width: 100%;
+  background-color:#fff4e5;
+  font-size: 14px;
+  display: none;
+  margin-bottom: 20px;
+  form{
+    padding:20px;
+    color: #666;
+    .edit_list{
+      margin-bottom: 10px;
+      label{
+        width: 100px;
+        display: inline-block;
+        text-align: right;
+        em{
+          margin-right: 5px;
+          color:#ca141c ;
+        }
+      }
+      input{
+        padding: 4px 6px;
+        height: 18px;
+        line-height: 18px;
+        border: 1px solid #e4e4e4;
+        background-color: #fff;
+        outline: none;
+      }
+
+    }
+    .set_defalut{
+      padding-left: 80px;
+      line-height: 28px;
+      input{
+        vertical-align: middle;
+      }
+      label{
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+    .fixed_line{
+      b{
+        padding: 0 7px;
+      }
+    }
+  }
+
+}
+.fill_address{
+  margin-left: 5px;
+  .select_address{
+    margin-bottom: 10px;
+    select{
+      margin-right: 15px;
+      width: 80px;
+      height: 28px;
+      border: 1px solid #e4e4e4;
+      outline: none;
+    }
+  }
+}
+.fill_detail{
+  textarea{
+    width: 380px;
+    height: 60px;
+    resize: none;
+    padding: 7px 10px;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    outline: none;
+  }
+}
+.submit_not{
+  padding: 10px 0 0 100px;
+  text-align: left;
+  a{
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0 20px;
+    margin-right: 10px;
+    &:hover{
+      opacity: 0.8;
+      filter: alpha(opacify=80);
+    }
+  }
+}
+
+//送货时间
+.order .choose{
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20px 30px;
+
+  p.title{
+    height: 32px;
+    line-height:32px;
+    font-size: 15px;
+    color: #666;
+  }
+  .item{
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    width: 170px;
+    text-align: left;
+    input{
+      vertical-align: middle;
+    }
+    label{
+      padding-left: 10px;
+    }
+  }
+}
+//发票信息
+.set_note .note,.dis_ticket .note{
+ /* width: 335px;*/
+  margin-top:15px;
+  position: relative;
+  label{
+    font-size: 13px;
+    color: #666;
+    width: 80px;
+    display: inline-block;
+    text-align: right;
+  }
+  input{
+    width: 240px;
+    border: 1px solid #e4e4e4;
+    padding: 3px 3px 3px 5px;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+  }
+
+  .arrow{
+    position: absolute;
+    top: 2px;
+    left: 280px;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-left: 1px solid #e4e4e4;
+    i{
+      font-size: 12px;
+      color: #777;
+    }
+  }
+  .down{
+    display: none;
+    width: 248px;
+    position: absolute;
+    left: 83px;
+    z-index: 888;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    background-color: #fff;
+    p{
+      color: #666;
+      padding-left: 36px;
+      height: 32px;
+      line-height: 32px;
+      cursor: pointer;
+      border-bottom: 1px solid #e4e4e4;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:hover{
+        background-color: #fff4e5;
+      }
+      i{
+        padding-right: 10px;
+      }
+    }
+    .no_coupon{
+      padding-left: 10px;
+    }
+  }
+}
+.fill_note{
+  display: none;
+}
+//优惠券
+
+.ticket_num{
+  em{
+    padding: 0 10px;
+  }
+  .fill_num{
+    display: none;
+  }
+}
+//商品
+.cart_goods_list {
+  font-size: 14px;
+}
+
+.cart_goods_list .list_head {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  color: #333;
+}
+
+.list_check {
+  width: 80px;
+  .icon_checkbox {
+    margin-right: 15px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+  }
+  .icon_checkbox_selected{
+
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 14px;
+      height: 10px;
+      vertical-align: 2px;
+      background: url("../../../Images/sprite/sprite_icon_checked.png") no-repeat;
+    }
+  }
+}
+
+.list_name {
+  width: 350px;
+  text-align: center;
+  color: #333;
+}
+
+.list_sale,
+.list_promotion,
+.list_discount,
+.list_num,
+.list_total,
+.list_action{
+  width: 175px;
+  font-size: 14px;
+  text-align: center;
+}
+.list_items{
+  .list_sale,
+  .list_promotion,
+  .list_discount,
+  .list_num,
+  .list_total,
+  .list_action{
+    color: #666;
+  }
+}
+
+//购物车商品列表
+.list_content .list_items {
+  padding: 15px 0 15px 30px;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.list_name {
+  .list_good_img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    _zoom: 1;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .list_good_text {
+    width: 240px;
+    padding-left: 10px;
+    line-height: normal;
+    .title {
+      display: inline-block;
+      width: 240px;
+      font-size: 14px;
+      color: #333;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p {
+      font-size: 12px;
+      color: #9b9b9b;
+      line-height: 20px;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+//结算
+.total_money{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  .delete{
+    margin-top: 10px;
+    margin-left:18px;
+    display: inline-block;
+    i{
+      padding-right: 10px;
+      display: inline-block;
+    }
+  }
+}
+.account_list{
+  .list{
+    line-height: 32px;
+    color: #666;
+    font-size: 14px;
+    margin-right: 40px;
+    label{
+      width: 150px;
+      text-align: right;
+      display: inline-block;
+    }
+    .total{
+      font-size: 20px;
+    }
+    a{
+      font-size: 15px;
+      color: #fff;
+      width: 130px;
+      height: 35px;
+      line-height: 35px;
+      margin-top: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      text-align: center;
+      background-color: #666;
+      i{
+        font-family: \5b8b\4f53;
+        font-weight: 600;
+      }
+      &:hover{
+        opacity: 0.8;
+        filter: alpha(opacify=80);
+      }
+    }
+  }
+}

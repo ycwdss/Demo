@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/strategy_top";
+@import "../mobile_moudle/moudle/usercenter_collectnav";
+@import "../mobile_moudle/moudle/strate_list_ele";
+.m_com{
+  margin: 10px 0 0;
+}
+.text_title{
+  line-height: 25px;
+  height: 50px;
+}
+.price{
+  line-height: 24px;
+  font-size: 1.2rem;
+  color: $activecolor;
+  i{
+    font-size: 0.7rem;
+  }
+}

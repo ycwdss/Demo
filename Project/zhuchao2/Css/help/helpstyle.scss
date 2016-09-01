@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../lib/commonclass";
+@import "../lib/reset";
+@import "../lib/font";
+@import "../lib/layer";
+@import "../module/header_top";
+@import "../module/header_search";
+@import "../module/site";
+@import "../module/footer";
+@import "../module/totop";
+//左侧信息
+.help_left_nav {
+  width: 170px;
+  padding: 20px 30px 50px 30px;
+  min-height: 605px;
+  _height: 605px;
+  background-color: #fff;
+  .left_menu {
+    color: #666;
+    .menu_head {
+      line-height: 40px;
+      height: 40px;
+      position: relative;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      color: #555;
+      i{
+        display: none;
+        font-size: 23px;
+        float: right;
+        line-height: 40px;
+        -webkit-transition: transform .2s;
+        -moz-transition: transform .2s;
+        -o-transition: transform .2s;
+        transition: transform .2s;
+      }
+    }
+    .menu_head:hover{
+      i{
+        display: block;
+      }
+    }
+    .menu_item.current{
+      i{
+        display: block;
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+      }
+    }
+    .sub_menu {
+      display: none;
+      padding-right: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ededed;
+      .sub_item{
+        padding: 2px 0 2px 6px;
+        height: 30px;
+        .sub_link{
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #999;
+          padding-left: 8px;
+          -webkit-transition: background .1s;
+          -moz-transition: background .1s;
+          -o-transition: background .1s;
+          transition: background .1s;
+          background: #fff;
+          &:hover{
+            background: #f2f2f2;
+            color: #093;
+          }
+        }
+        .sub_link.active{
+          background: #093;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+//右侧信息
+.right_content{
+  display: inline-block;
+  width: 950px;
+  padding:0 50px;
+  background-color: #fff;
+}

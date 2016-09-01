@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/site";
+@import "../module/company/_company_about_left";
+@import "../module/company/_company_info";
+@import "../module/pagelist";
+
+
+.m_left{
+  border:none;
+}
+.m_right {
+  padding-right: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  >h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+}
+//招聘列表
+.recruit_wrap {
+  border: 1px solid #E4E4E4;
+  @include box-sizing();
+}
+
+.recruit_title, .recruit_table {
+  display: table;
+  > div {
+    font-size: 14px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+//表格头部
+.recruit_title {
+  padding: 0 20px;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #E4E4E4;
+  > div {
+    height: 80px;
+    color: #333;
+  }
+}
+
+.recruit_title .recruit_name {
+  text-indent: 35px;
+}
+
+.recruit_name {
+  width: 330px;
+  text-align: left !important;
+}
+
+.recruit_category {
+  width: 180px;
+}
+
+.recruit_city {
+  width: 200px;
+
+}
+
+.recruit_date {
+  width: 100px;
+
+}
+
+.recruit_body {
+
+}
+
+//表格内容
+.recruit_table {
+  margin: 0 20px;
+  border-bottom: 1px dashed #E4E4E4;
+  > div {
+    height: 40px;
+    padding: 10px 0;
+    color: #666;
+  }
+}
+
+.recruit_table:last-child {
+  border-bottom: 0;
+}
+//招聘详情
+.zhaopin_ele {
+  font-size: 18px;
+  line-height: 40px;
+  color: #333;
+  p {
+    font-size: 14px;
+    line-height: 30px;
+    .zhaopin_intro {
+      float: left;
+      width: 105px;
+    }
+    .zhaopin_detail{
+      float: left;
+      width: 705px;
+      color: #666;
+    }
+  }
+}
+
+//上下篇
+.up_down {
+  margin-top: 20px;
+  padding: 20px 0;
+  height: 80px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #888;
+  > div {
+    position: relative;
+    vertical-align: top;
+    margin: 5px 0;
+    a {
+      display: inline-block;
+      width: 566px;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #666;
+    }
+    span.date {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.bg_grey {
+  background: #f8f8f8;
+  padding-top: 10px; }
+
+.bg_white {
+  background: white; }
+
+.content {
+  margin: 0 auto 0;
+  width: 100%;
+  max-width: 640px; }
+
+.addr_list {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.buyer_message {
+  /* padding: 9px 10px; */
+  position: relative;
+  margin-right: 60px;
+  min-height: 110px; }
+  .buyer_message .name_tel {
+    padding: 9px 10px 0; }
+    .buyer_message .name_tel i {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      content: '';
+      margin-bottom: -5px;
+      background: url("../../../Images/mobile/cart/sprite_comfirm_order.png") no-repeat;
+      -webkit-background-size: 35px;
+      background-size: 35px; }
+    .buyer_message .name_tel span {
+      display: inline-block;
+      font-size: 18px;
+      color: #333 !important;
+      line-height: 34px; }
+    .buyer_message .name_tel .tel {
+      color: #333333; }
+      .buyer_message .name_tel .tel i {
+        background-position: 5px -30px; }
+  .buyer_message .addr {
+    font-size: 14px;
+    color: #888;
+    line-height: 24px;
+    margin-top: 10px;
+    padding: 0 10px; }
+    .buyer_message .addr i {
+      display: block;
+      float: left;
+      width: 25px;
+      height: 25px;
+      margin-bottom: -10px;
+      background: url("../../../Images/mobile/cart/sprite_comfirm_order.png") no-repeat 0 -55px;
+      -webkit-background-size: 35px;
+      background-size: 35px; }
+    .buyer_message .addr span {
+      width: 80%;
+      float: left;
+      overflow: hidden; }
+
+.edit_list {
+  width: 50px; }
+  .edit_list .edit {
+    background: white;
+    text-align: center;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 10px;
+    position: relative;
+    min-height: 50px; }
+    .edit_list .edit a {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      margin-left: -10px;
+      margin-top: -13px;
+      margin-bottom: -5px;
+      background: url("../../../Images/mobile/cart/sprite_addr_list.png") no-repeat;
+      -webkit-background-size: 26px;
+      background-size: 26px; }
+  .edit_list .edit1 a {
+    background-position: 0 0; }
+  .edit_list .edit2 {
+    margin-bottom: 0; }
+    .edit_list .edit2 a {
+      background-position: 0 -30px; }
+
+#check {
+  background-position: 0 -60px; }
+
+.addr_btn {
+  padding: 9px 10px;
+  margin-top: 10px; }
+  .addr_btn a {
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    color: white;
+    background: #093;
+    width: 160px;
+    display: block;
+    margin: 0 auto; }

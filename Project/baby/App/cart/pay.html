@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付页面</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/cart/pay.css">
+</head>
+<body>
+<!--顶部状态栏-->
+<div class="header_top">
+    <div class="conwidth clearfix">
+        <div class="fl">
+            欢迎来到凤凰筑巢！ <a class="login_btn main_hover">请登录</a> <a class="register_btn main_hover">注册</a>
+        </div>
+        <ul class="fr header_top_nav">
+            <li><a href="" class="main_hover">正品保证</a></li>
+            <li class="line"></li>
+            <li><a href="../help/help.html" class="main_hover">帮助</a></li>
+            <li class="line"></li>
+            <li><a href="../usercenter/user_index.html" class="main_hover">账户中心</a></li>
+            <li class="line"></li>
+            <li class="more_btn mainbg_hover"><a>更多</a><i></i>
+
+                <div class="pull_more main_bg">
+                    <a href="">邀请好友</a>
+                    <a href="">加入收藏</a>
+                    <a href="">新浪微博</a>
+                    <a href="">邀请好友</a>
+                    <a href="">加入收藏</a>
+                    <a href="">新浪微博</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--购物车顶部-->
+<div class="cart_top conwidth clearfix">
+    <a href=""><img src="../../Images/test/test_top_logo.png"> </a>
+    <div class="cart_top_right">
+        <span class="main_bg">1.我的购物车<i class="icon-jiantou6"></i> <em class="main_border"></em></span>
+        <span class="main_bg">2.提交订单中心<i class="icon-jiantou6"></i> <em class="main_border"></em></span>
+        <span class="main_bg">3.成功提交订单</span>
+    </div>
+</div>
+<div class="l_main conwidth">
+    <!--订单信息-->
+    <div class="submit_success">
+        <div class="submit_title">
+            <i class="icon_success main icon-duihaoyuanquan"></i>
+            <p class="tips">订单提交成功，请您尽快付款！<b>（逾期订单将取消）</b></p>
+            <p class="sum ">
+                <span>订单号：151027101520669</span>
+                <span>应付总额：<em class="main"></em>￥199.00元</span>
+            </p>
+        </div>
+        <ul class="submit_info">
+            <li>
+                <label>订单号：</label>
+                <span>1151027101520669</span>
+            </li>
+            <li>
+                <label>收货信息：</label>
+                <span>张三 156****48697 河南省郑州市金水区郑汴路与玉凤路</span>
+            </li>
+            <li>
+                <label>商品名称：</label>
+                <span>小米note3 (送耳机，电视，vip等)</span>
+            </li>
+            <li>
+                <label>配送时间：</label>
+                <span>不限送货时间</span>
+            </li>
+            <li>
+                <label>打牌信息：</label>
+                <span>个人电子发票</span>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<!--支付方式 网银支付-->
+<div class=" conwidth pay_box">
+    <h3>请选择支付方式</h3>
+    <div class="pay_way_box">
+        <div class="pay_way_nav clearfix">
+            <a class="current">平台支付</a>
+            <a>网银支付</a>
+        </div>
+        <div class="pay_way_item">
+            <!--平台支付-->
+            <div class="pay_way_ele">
+                <ul class="clearfix noselect">
+                    <li class="mainbd_hover">
+                        <span class="pay_icon1">支付宝</span>
+                    </li>
+                    <li class="mainbd_hover weixin_btn">
+                        <span class="pay_icon2">微信</span>
+                    </li>
+                </ul>
+            </div>
+            <!--网银支付-->
+            <div class="pay_way_ele hide">
+                <ul class="clearfix noselect ">
+                    <li class="mainbd_hover">
+                        <span class="pay_icon3">中国银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon4">中国工商银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon5">招商银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon6">中国农业银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon7">中国建设银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon8">平安银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon9">中国邮政储蓄银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon10">浦发银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon11">兴业银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon12">广发银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon13">富滇银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon14">杭州银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon15">上海银行</span>
+                    </li>
+                    <li class="mainbd_hover">
+                        <span class="pay_icon16">宁波银行</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--微信扫码-->
+<div class="weixin hide ">
+    <div class="weixin_content bounceIn">
+        <h3 class="main_border">微信支付</h3>
+        <img src="../../Images/test/test_erweima.png" alt="">
+        <div class="weixin_bottom main_bg clearfix">
+            <span class="fl icon-saomiao"></span>
+            <p class="fl">请使用微信扫一扫 <br>扫描二维码支付</p>
+        </div>
+         <span class="weixin_close mainbg_hover ">
+        <i class="icon-cuohao"></i>
+    </span>
+    </div>
+
+</div>
+<!--网银支付-->
+<div class="wangyin hide">
+    <div class="wangyin_content bounceIn">
+        <h3>网银支付</h3>
+        <p>请您在新打开的网页上银行页面进行支付，支付完成前请不要关闭该窗口</p>
+        <div class="wangyin_container clearfix">
+            <div class="wangyin_left fl">
+                <a href="" class="wangyin_btn main main_border">支付完成</a>
+                <a href="" class="wangyin_link main">立即查看订单详情 >></a>
+            </div>
+            <div class="wangyin_right fl">
+                <a href="" class="wangyin_btn ">支付失败</a>
+                <a href="" class="wangyin_link main">立即查看订单详情 >></a>
+            </div>
+        </div>
+        <span class="wangyin_close mainbg_hover "><i class="icon-cuohao"></i></span>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footer_inner conwidth">
+        <div class="footer_content clearfix">
+            <dl class="footer_nav footer_about_us">
+                <dt>
+                    <img class="gray" src="../../Images/test/test_icon_logo.jpg" alt=""/>
+                </dt>
+                <dd>关于我们
+                    <a href=""><img src="../../Images/icon/footer_about_us1.png" /></a>
+                    <a href=""><img src="../../Images/icon/footer_about_us2.png" /></a>
+                    <a href=""><img src="../../Images/icon/footer_about_us3.png" /></a>
+                </dd>
+            </dl>
+            <dl class="footer_nav main_hover">
+                <dt>帮助中心</dt>
+                <dd>
+                    <a href="">购物指南</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">配送方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="footer_nav main_hover">
+                <dt>服务支持</dt>
+                <dd>
+                    <a href="">售后政策</a>
+                </dd>
+                <dd>
+                    <a href="">自助服务</a>
+                </dd>
+                <dd>
+                    <a href="">相关下载</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="footer_nav main_hover">
+                <dt>唠嗑之家</dt>
+                <dd>
+                    <a href="">唠嗑之家</a>
+                </dd>
+                <dd>
+                    <a href="">服务网点</a>
+                </dd>
+                <dd>
+                    <a href="">预约到店</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="footer_nav main_hover">
+                <dt>关于唠嗑</dt>
+                <dd>
+                    <a href="">了解唠嗑</a>
+                </dd>
+                <dd>
+                    <a href="">加入唠嗑</a>
+                </dd>
+                <dd>
+                    <a href="">联系我们</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="erweima fr">
+                <dt>手机筑巢</dt>
+                <dd><img src="../../Images/test/test_erweima.png" alt=""></dd>
+                <dd>下载移动客户端</dd>
+            </dl>
+        </div>
+        <div class="copy">
+            <p>©2014-2015凤凰筑巢保留所有权利</p>
+
+            <p>Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc25</p>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="cart/pay" src="../../Js/lib/require.js"></script>
+</body>
+</html>

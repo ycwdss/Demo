@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/*choose_list*/
+$currentcolor:#093;
+.choose_list{
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.choose_list_items>li{
+  float: left;
+  padding:0 35px;
+  border-right: 1px solid #e5e5e5;
+}
+.choose_list_items>li a{
+  color: #666;
+  font-size: 14px;
+  line-height: 14px;
+  position: relative;
+}
+.choose_list_items>li a span{
+  display: inline-block;
+  width: 8px;
+  height: 11px;
+  margin-left: 5px;
+  vertical-align: middle;
+  background: url(../../mall/Images/sprite_mall_list_btn.png) no-repeat center;
+}
+.icon_sj_up{
+  position: absolute;
+  top:3px;
+  right:-15px;
+  display: inline-block;
+  @include arrow(top,5px,#666);
+}
+.icon_sj_down{
+  position: absolute;
+  bottom:3px;
+  right:-15px;
+  display: inline-block;
+  @include arrow(bottom,5px,#666);
+}
+.choose_list_items>li.current a{
+  color:$currentcolor;
+}
+.choose_list_items>li.current a span{
+  background: url(../../mall/Images/sprite_mall_list_currentbtn.png) no-repeat center;
+}
+.choose_list_items>li.currentUp a .icon_sj_up{
+  @include arrow(top,5px,$currentcolor);
+}
+.choose_list_items>li.currentDown a .icon_sj_down{
+  @include arrow(bottom,5px,$currentcolor);
+}
+.choose_list_items .clear_border{
+  border: 0;
+}
+.count{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #333;
+  span{
+    color: $currentcolor;
+  }
+}
+//<div class="choose_list clearfix con_width">
+//<ul class="choose_list_items fl clearfix">
+//<li class="no_paddingL current noselect"><a href="">官方推荐<span></span></a></li>
+//<li class="noselect"><a href="">访问量<span></span></a></li>
+//<li class="noselect"><a href="">新品<span></span></a></li>
+//<li class="noselect"><a href="">价格<i class="icon_sj_up"></i><i class="icon_sj_down"></i></a></li>
+//<li class="no_borderR noselect"><a href="">好评指数<span></span></a></li>
+//</ul>
+//<div class="sum_pro fr">
+//<span class="noselect">1/99</span>
+//<i class="noselect">&lt;</i>
+//<i class="noselect">&gt;</i>
+//</div>
+//</div>

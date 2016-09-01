@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/pagelist";
+
+.case_banner{
+  display: block;
+  position: relative;
+  .case_banner_main{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../../Images/icon/icon_case_banner.jpg?_nosprite) no-repeat center 100%;
+  }
+  .margin_top{
+    margin-top: 13%;
+  }
+}
+.case_items{
+  margin-top: 30px;
+  min-height: 400px;
+}
+.case_li{
+  height: 227px;
+  padding:30px 0;
+  border-bottom: 1px dotted #e6e6e6;
+  position: relative;
+  &:before,&:after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 0;
+    height:1px;
+    background-color: #0a7fd4;
+    @include transition(width,0.5s,ease-out);
+  }
+  &:before{
+    left: 50%;
+  }
+  &:after{
+    right: 50%;
+  }
+  &:hover{
+    &:before,&:after{
+      width:50%;
+    }
+    .case_text_box a{
+      color: #0a7fd4;
+    }
+  }
+  .case_img{
+    position: absolute;
+    top:30px;
+    left:0;
+    display: block;
+    width: 363px;
+    height: 227px;
+    overflow: hidden;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .case_text_box{
+    margin-left: 400px;
+    h3{
+      margin: 10px 0 15px;
+      font-size: 20px;
+      a{
+        color: #333;
+        display: block;
+        @include strictEll(1.6,1);
+        &:hover{
+          color: $main;
+        }
+      }
+    }
+    p{
+      font-size: 14px;
+      color: #888;
+      @include strictEll(1.6,3);
+    }
+    span{
+      position: absolute;
+      bottom: 30px;
+      left: 400px;
+      font-size: 14px;
+      color: #888;
+    }
+  }
+}
+.case_li:last-child{
+  border-bottom: 0;
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.focus_Box{
+  position: relative;
+  width: 965px;
+  height: 480px;
+  margin:0 auto;
+}
+.focus_Box ul{
+  position:relative;
+  width:965px;
+  height:480px
+}
+.focus_Box li{
+  z-index:0;
+  position:absolute;
+  width:100%;
+  //background: rgba(255,255,255,0.8);
+  height:100%;
+  top:146px;
+  cursor:pointer;
+  left:377px;
+  border-radius:4px;
+  overflow: visible;
+  img{
+    width:100%;
+    height:100%;
+  }
+}

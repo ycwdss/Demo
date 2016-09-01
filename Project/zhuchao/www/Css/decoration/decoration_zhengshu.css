@@ -1,0 +1,80 @@
+.show_img_bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+
+.show_img_bg:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #000\9;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+  z-index: -1; }
+
+.show_img {
+  position: relative;
+  margin: 0 auto;
+  width: 40%;
+  height: 100%;
+  min-height: 600px;
+  min-width: 600px;
+  display: table; }
+  .show_img > div {
+    display: none;
+    vertical-align: middle; }
+    .show_img > div img {
+      width: 100%;
+      max-height: 85%; }
+  .show_img p {
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 30px; }
+
+.arrow_com {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer; }
+  .arrow_com span {
+    display: block;
+    width: 22px;
+    height: 44px;
+    margin: 3px 4px; }
+
+.arrow_prev {
+  top: 49%;
+  left: -50px; }
+  .arrow_prev span {
+    background: url("../../foreman/Images/sprite_foreman_arrowleft.png"); }
+
+.arrow_next {
+  top: 49%;
+  right: -50px; }
+  .arrow_next span {
+    background: url("../../foreman/Images/sprite_foreman_arrowright.png"); }
+
+.show_img_close {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 42px;
+  height: 40px;
+  background: url("../../foreman/Images/sprite_foreman_close.png");
+  cursor: pointer; }
+
+.show {
+  display: table-cell !important; }

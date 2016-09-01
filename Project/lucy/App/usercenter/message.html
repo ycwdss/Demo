@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>evaluate</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/message.css">
+</head>
+<body>
+<!--顶部状态-->
+<div class="top_bar deepbg">
+    <div class="con_width">
+        <a class="t_login">登录</a>
+        <span>|</span>
+        <a class="t_register">注册</a>
+        <a class="icon_cart" href="../cart/cart.html">
+            <i class="iconfont">&#xe614;</i>
+        </a>
+    </div>
+</div>
+<!--导航-->
+<div class="nav bgfff">
+    <div class="con_width nav_inner clearfix">
+        <a class="icon_logo fl" href="../mall/index.html">
+            <img src="../../Images/test/test_pro_img.jpg"/>
+        </a>
+        <ul class="nav_text fl clearfix deep">
+            <li class="current">
+                <a href="../mall/index.html">商城首页</a>
+            </li>
+            <li>
+                <a href="../mall/prolist.html">手机</a>
+            </li>
+            <li>
+                <a href="../mall/prolist.html">耳机</a>
+            </li>
+            <li>
+                <a href="../mall/newlist.html">关于我们</a>
+            </li>
+            <li>
+                <a href="../mall/newlist.html">店铺新闻</a>
+            </li>
+        </ul>
+        <!--搜索-->
+        <div class="search fr">
+            <form action="" class="search_form">
+                <input id="searchInput" class="search_input" type="text" required placeholder="5000000万代金券等您来领！"
+                       autocomplete="off"/><a
+                    class="search_btn"> <i class="iconfont">&#xe607;</i></a>
+            </form>
+            <!--建议搜索-->
+            <div id="searchSuggest" class="search_suggest hide">
+                <a href="">手机</a>
+                <a href="" class="current">电脑</a>
+                <a href="">门</a>
+                <a href="">门司机</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--站点指示-->
+<div class="con_width">
+    <div class="route">
+        <a href="../mall/index.html">首页</a>
+        <span>&gt;</span>
+        <a href="../usercenter/basic_info.html">个人中心</a>
+        <span>&gt;</span>
+        <a>优惠券</a>
+    </div>
+</div>
+
+<!--个人中心内容-->
+<div class="personal_center con_width clearfix">
+    <!--左侧导航-->
+    <div class="left_side fl">
+        <h1>个人中心</h1>
+        <ul>
+            <li><a href="my_coupons.html">优惠券</a></li>
+            <li><a href="my_collect.html">商品收藏</a></li>
+            <li><a href="my_evaluatelist.html">我的评价</a></li>
+        </ul>
+        <h1>订单</h1>
+        <ul>
+            <li><a href="my_order.html">我的订单</a></li>
+            <li><a href="apply_list.html">退货单</a></li>
+        </ul>
+        <h1>我的信息</h1>
+        <ul class="no_bb">
+            <li><a class="main" href="basic_info.html">基本信息</a></li>
+            <li><a href="my_address.html">我的地址</a></li>
+            <li><a href="change_password.html">修改密码</a></li>
+            <li><a href="message.html">我的消息</a></li>
+        </ul>
+    </div>
+    <!--右侧内容-->
+    <div class="right_side fr">
+        <div class="item_title basic_title">我的消息</div>
+        <ul class="msg_tab clearfix">
+            <li class="main_border"><a class="main" href="#">新消息</a></li>
+            <li><a class="no_br" href="#">已读消息</a></li>
+        </ul>
+        <div class="msg_wrap">
+            <!--未读消息列表-->
+            <div class="msg_list">
+                <p class="msg_date">
+                    <span>2016-02-15</span>
+                    <span>21:02:21</span>
+                </p>
+                <div class="msg_info">
+                    <p class="msg_info_title">优惠券过期<i class="iconfont main_hover">&#xe612;</i></p>
+                    <p class="msg_info_article">优惠券过期 您有一张200.00元的优惠券将在2016年02月02日23:59过期啦，请记得使用哦!</p>
+                    <p class="msg_info_use"><a class="main" href="#">已过期>></a></p>
+                </div>
+            </div>
+            <!--已读消息列表-->
+            <div class="msg_list">
+                <p class="msg_date">
+                    <span>2016-02-15</span>
+                    <span>21:02:21</span>
+                </p>
+                <div class="msg_info">
+                    <p class="msg_info_title">优惠券<i class="iconfont main_hover">&#xe612;</i></p>
+                    <p class="msg_info_article">您有一张200.00元的优惠券将在2016年02月02日23:59过期啦，请记得使用哦!</p>
+                    <p class="msg_info_use"><a class="main" href="#">点击使用>></a></p>
+                </div>
+            </div>
+            <!--无消息-->
+            <div class="msg_no">
+                <p>
+                    <i class="iconfont">&#xe617;</i>
+                    <span>您还没有收到消息哦~</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer bgfff">
+    <div class="con_width clearfix">
+        <dl class="erweima fl">
+            <dt><img src="../../Images/test/test_erweima.png" alt=""/></dt>
+            <dd>微信扫一扫</dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>帮助中心</dt>
+            <dd>
+                <a href="../help/help.html">支付方式</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">配送方式</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">购物指南</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>服务支持</dt>
+            <dd>
+                <a href="../help/help.html">相关下载</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">售后政策</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">物流查询</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>关于我们</dt>
+            <dd>
+                <a href="../help/help.html">服务网点</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">品牌授权商</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">线下合作零售店</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>关于公司</dt>
+            <dd>
+                <a href="../help/help.html">加入我们</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">联系我们</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">了解神恩信息</a>
+            </dd>
+        </dl>
+        <div class="footer_contact fr">
+            <p>客服电话 <br/>
+                400-111-1111</p>
+            <a href="" class="btn main_bg kefu_btn">
+                <i class="iconfont">&#xe616;</i>
+                在线咨询
+            </a>
+        </div>
+    </div>
+</div>
+<div class="copy bgfff">
+    <div class="con_width">
+        <p>©2014-2015凤凰筑巢保留所有权利</p>
+
+        <p>Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc25</p>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/message" id="require"
+        src="../../Js/lib/require.js"></script>
+</body>
+</html>

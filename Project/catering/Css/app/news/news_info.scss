@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+
+
+.article_content{
+  margin-top: 40px;
+  background: #FFFFFF;
+}
+.article_box{
+  padding:25px 50px;
+}
+.site{
+  border-bottom:1px solid #e4e4e4;
+  span{
+    font-family: sans-serif,'Microsoft YaHei';
+    margin: 0 2px;
+  }
+  a{
+    font-size: 14px;
+    color: #666;
+  }
+}
+.article_ele{
+  position: relative;
+  overflow: hidden;
+  border-bottom:1px dashed #e4e4e4;
+  h3{
+    font-size: 20px;
+    color: #333;
+    margin:35px 10px 15px;
+    line-height: 30px;
+    height: 30px;
+    @include ell(1);
+  }
+}
+
+.new_content_title{
+  padding:35px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  h3{
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+  }
+  .writer_info{
+    padding:0 200px;
+    font-size: 14px;
+    color: #999;
+    line-height: 28px;
+    .writer{
+      padding:0 50px;
+    }
+  }
+}
+//分享
+.share{
+  width: 194px;
+  >span{
+    display: inline-block;
+    float: left;
+  }
+}
+.module_content {
+  font-size: 14px;
+  line-height: 2;
+  padding: 0 20px;
+  img {
+    display: block !important;
+    width: 60%;
+    max-width: 100% !important;
+    margin: 40px auto !important;
+  }
+  h4 {
+    font-size: 18px;
+    color: #333;
+  }
+}
+
+//上下篇
+.up_down {
+  margin-top: 20px;
+  padding: 15px 0;
+  height: 80px;
+  border-top: 1px solid #e4e4e4;
+  font-size: 14px;
+  color: #888;
+  > div {
+    position: relative;
+    vertical-align: top;
+    margin: 5px 0;
+    a {
+      display: inline-block;
+      width: 566px;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #666;
+    }
+    span.date {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

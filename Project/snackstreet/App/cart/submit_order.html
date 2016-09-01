@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>submit_order</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/cart/submit_order.css">
+</head>
+<body>
+<!--顶部 begin-->
+<div class="header">
+    <div class="inner conwidth clearfix">
+        <div class="head_left">
+            <span class="main">您好，欢迎来到零食街！</span>
+            馋嘴猴 <a><i class="quit_btn main_hover">退出</i></a>
+        </div>
+        <div class="head_right">
+            <a href="index.html"><i class="iconfont main">&#xe600;</i>（<i class="main">0</i>）</a>
+            <a href="../usercenter/order_list.html">
+                我的订单
+            </a>
+            <a href="../usercenter/my_collect.html">我的收藏</a>
+            <a href="../usercenter/help.html" class="no_borderR">帮助中心</a>
+        </div>
+    </div>
+</div>
+<!--顶部end-->
+<!--商城头部 begin-->
+<div class="l_top">
+    <div class="m_top conwidth">
+        <a href="index.html" class="top_logo">
+            <img src="../../Images/test/test_top_logo.png">
+            <span>购物车</span>
+        </a>
+        <div class="top_right">
+            <div class="process main">
+                <i class="iconfont">&#xe618;</i>
+                <span class="process_right main_bg"></span>
+                <span>我的购物车</span>
+            </div>
+            <div class="process main">
+                <span class="process_left main_bg"></span>
+                <i class="iconfont">&#xe619;</i>
+                <span class="process_right main_bg"></span>
+                <span>提交订单</span>
+            </div>
+            <div class="process ">
+                <span class="process_left "></span>
+                <i class="iconfont">&#xe61a;</i>
+                <span>成功提交订单</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--商城头部end-->
+<!--内容 begin-->
+<div class="l_main conwidth">
+    <h2>收货地址</h2>
+    <div class="order_content">
+        <div class="m_address">
+            <!--已添加地址-->
+            <ul class="address_info">
+                <li class="list clearfix">
+                    <div class="address_num">地址1：</div>
+                    <div class="address_main fl">
+                        <div class="address_show fl">
+                            <em>王赞</em>
+                            <span>河南省郑州市金水区金水路玉凤路口家乐福6楼89室</span>
+                            <span>收货人：王赞</span>
+                            <span>电话：15461763566</span>
+                        </div>
+                        <div class="address_eidt fr">
+                            <a class="default_addr show">默认地址</a>
+                            <a class="edit_addr">修改</a>
+                            <a class="del_addr">删除</a>
+                            <a class="use_addr">使用该地址</a>
+                        </div>
+                    </div>
+                    <!--使用改地址-->
+                    <i class="main iconfont">&#xe623;</i>
+                </li>
+                <li class="list clearfix">
+                    <div class="address_num">地址1：</div>
+                    <div class="address_main fl">
+                        <div class="address_show fl">
+                            <em>王赞</em>
+                            <span>河南省郑州市金水区金水路玉凤路口家乐福6楼89室</span>
+                            <span>收货人：王赞</span>
+                            <span>电话：15461763566</span>
+                        </div>
+                        <div class="address_eidt fr">
+                            <a class="default_addr">设为默认地址</a>
+                            <a class="edit_addr">修改</a>
+                            <a class="del_addr">删除</a>
+                            <a class="use_addr">使用该地址</a>
+                        </div>
+                    </div>
+                    <!--使用改地址-->
+                    <i class="main iconfont">&#xe623;</i>
+                </li>
+            </ul>
+            <div class="m_new_addr">
+                <div class="new_addr_btn main_bg">新增收货地址</div>
+                <!--添加新地址-->
+                <div class="address_new">
+                    <form>
+                        <div class="info_list">
+                            <span><em>*</em>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</span>
+                            <input type="text">
+                        </div>
+                        <div class="info_list clearfix">
+                            <span class="fl"><em>*</em>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+                            <div class="on_address fl">
+                                <div class="select_address">
+                                    <select>
+                                        <option>--省份--</option>
+                                        <option>河南省</option>
+                                        <option>安徽省</option>
+                                        <option>江苏省</option>
+                                    </select>
+                                    <select>
+                                        <option>--直辖市--</option>
+                                        <option>郑州市</option>
+                                        <option>南京市</option>
+                                        <option>淮北市</option>
+                                    </select>
+                                    <select>
+                                        <option>--区/县--</option>
+                                        <option>永城市</option>
+                                        <option>金水区</option>
+                                        <option>管城区</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info_list ">
+                            <span><em>*</em>详细地址：</span>
+                            <input class="detail_address" type="text">
+                        </div>
+                        <div class="info_list">
+                            <span><em>*</em>手机号码：</span>
+                            <input type="text">
+                        </div>
+                        <div class="info_list">
+                            <span>邮政编码：</span>
+                            <input type="text">
+                        </div>
+                        <div class="submit_not">
+                            <a class="main_bg linkbtn" href="#">确定</a>
+                            <a class="main_bg linkbtn close" href="#">取消</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="m_pro">
+            <div class="cart_pro_title clearfix">
+                <span class="pro_describe">订单详情</span>
+                <span class="pro_price">单价</span>
+                <span class="pro_quantity">数量</span>
+                <span class="pro_sum">总价</span>
+                <span class="pro_action">交易状态</span>
+            </div>
+            <div class="cart_pro_infor clearfix">
+                <div class="fl pro_describe clearfix">
+                    <a href="" class="fl pro_describe_img"><img src="../../Images/test/test_index_pro.jpg" alt=""/></a>
+
+                    <p class="fl pro_describe_title"><a href="" class="link_active">2015秋季新款秋冬低跟短靴休闲时尚圆头方跟女靴套脚马丁靴休闲纯色女靴YS-CY-210
+                        棕色 38偏小半码</a></p>
+                </div>
+                <div class="fl pro_price"><span>128.00</span></div>
+                <div class="fl pro_quantity">
+                <span class="clearfix">
+                    1
+                </span>
+                </div>
+                <div class="fl pro_sum"><span>128.00</span></div>
+                <div class="fl pro_action">
+                    <span>
+                          <a class=" ">有货</a>
+                        <a href="" class=" ">返回购物车</a>
+                    </span>
+
+                </div>
+            </div>
+            <div class="cart_pro_infor no_marginB clearfix">
+                <div class="fl pro_describe clearfix">
+                    <a href="" class="fl pro_describe_img"><img src="../../Images/test/test_index_pro.jpg" alt=""/></a>
+
+                    <p class="fl pro_describe_title"><a href="" class="link_active">2015秋季新款秋冬低跟短靴休闲时尚圆头方跟女靴套脚马丁靴休闲纯色女靴YS-CY-210
+                        棕色 38偏小半码</a></p>
+                </div>
+                <div class="fl pro_price"><span>128.00</span></div>
+                <div class="fl pro_quantity">
+                <span class="clearfix">
+                    1
+                </span>
+                </div>
+                <div class="fl pro_sum"><span>128.00</span></div>
+                <div class="fl pro_action">
+                    <span>
+                          <a class=" ">有货</a>
+                        <a href="" class=" ">返回购物车</a>
+                    </span>
+
+                </div>
+            </div>
+            <div class="m_remark clearfix">
+                <span class="remark_title">备注</span>
+                <input type="text">
+            </div>
+        </div>
+        <!--选择支付方式-->
+        <div class="m_payway">
+            <h3>支付方式</h3>
+            <div class="option_content clearfix">
+                <span class="main_bg">在线支付</span>
+                <span >公司转账</span>
+            </div>
+        </div>
+        <div class="m_invoice">
+            <h3>发票</h3>
+            <div class="option_content clearfix">
+                <span class="main_bg">需要发票</span>
+                <span >不需要发票</span>
+            </div>
+            <input type="text" placeholder="发票抬头">
+        </div>
+
+        <div class="m_coupon">
+            <h3>使用优惠券</h3>
+            <div class="coupon_content clearfix">
+                <div class="coupons main_bg fl">
+                    <span class="cpn_tips "></span>
+                    <div class="cpn_info clearfix">
+                        <span class="cpn_money fl"><i>￥</i><em>10</em></span>
+                        <p class="cpn_condition fl">
+                            <span>元旦优惠券</span>
+                            <span>满100减10元</span>
+                        </p>
+                    </div>
+                    <div class="cpn_time">
+                        使用时间：<span>1月20日-1月25日</span>
+                    </div>
+                    <!--齿轮-->
+                    <ul class="cpn_triangle">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="coupons main_bg fl">
+                    <span class="cpn_tips "></span>
+                    <div class="cpn_info clearfix">
+                        <span class="cpn_money fl"><i>￥</i><em>10</em></span>
+                        <p class="cpn_condition fl">
+                            <span>元旦优惠券</span>
+                            <span>满100减10元</span>
+                        </p>
+                    </div>
+                    <div class="cpn_time">
+                        使用时间：<span>1月20日-1月25日</span>
+                    </div>
+                    <!--齿轮-->
+                    <ul class="cpn_triangle">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="coupons main_bg fl">
+                    <span class="cpn_tips "></span>
+                    <div class="cpn_info clearfix">
+                        <span class="cpn_money fl"><i>￥</i><em>10</em></span>
+                        <p class="cpn_condition fl">
+                            <span>元旦优惠券</span>
+                            <span>满100减10元</span>
+                        </p>
+                    </div>
+                    <div class="cpn_time">
+                        使用时间：<span>1月20日-1月25日</span>
+                    </div>
+                    <!--齿轮-->
+                    <ul class="cpn_triangle">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order_bottom clearfix">
+        <div class="order_bottom_content ">
+            <span class="using_coupon">使用优惠券：￥<em>20</em>元</span>
+            <span>运费：0.00元</span>
+            <span>实付款：<i class="main">￥200.88</i></span>
+           <a href="pay.html"><div class="buy_btn main_bg">立即购买</div></a>
+        </div>
+    </div>
+</div>
+<!--内容end-->
+<!--//地址弹窗-->
+<div class="l_edit_addr">
+    <div class="m_edit_addr">
+        <h3>修改收货地址</h3>
+        <div class="address_new">
+            <form>
+                <div class="info_list">
+                    <span><em>*</em>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</span>
+                    <input type="text">
+                </div>
+                <div class="info_list clearfix">
+                    <span class="fl"><em>*</em>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+                    <div class="on_address fl">
+                        <div class="select_address">
+                            <select>
+                                <option>--省份--</option>
+                                <option>河南省</option>
+                                <option>安徽省</option>
+                                <option>江苏省</option>
+                            </select>
+                            <select>
+                                <option>--直辖市--</option>
+                                <option>郑州市</option>
+                                <option>南京市</option>
+                                <option>淮北市</option>
+                            </select>
+                            <select>
+                                <option>--区/县--</option>
+                                <option>永城市</option>
+                                <option>金水区</option>
+                                <option>管城区</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_list ">
+                    <span><em>*</em>详细地址：</span>
+                    <input class="detail_address" type="text">
+                </div>
+                <div class="info_list">
+                    <span><em>*</em>手机号码：</span>
+                    <input type="text">
+                </div>
+                <div class="info_list">
+                    <span>邮政编码：</span>
+                    <input type="text">
+                </div>
+                <div class="submit_not">
+                    <a class="main_bg linkbtn" href="#">确定</a>
+                    <a class="main_bg linkbtn close" href="#">取消</a>
+                </div>
+            </form>
+        </div>
+        <span class=" close_window iconfont main">&#xe622;</span>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footer_top_bg"></div>
+    <div class="m_footer conwidth">
+        <div class="footer_top">
+            <ul class="clearfix">
+                <li><i class="iconfont main">&#xe612;</i>正品采购</li>
+                <li><i class="iconfont main">&#xe610;</i>如实描述</li>
+                <li><i class="iconfont main">&#xe61b;</i>专业配送</li>
+                <li><i class="iconfont main">&#xe611;</i>金牌服务</li>
+                <li><i class="iconfont main">&#xe60f;</i>万千依赖</li>
+                <li><i class="iconfont main">&#xe60e;</i>权威荣誉</li>
+            </ul>
+        </div>
+        <div class="m_footer_detail">
+            <div class="footer_logo">
+                <a href="">
+                    <img src="../../Images/test/test_top_logo.png">
+                </a>
+            </div>
+            <div class="footer_detail clearfix">
+                <div class="footer_connect">
+                    <h4>购物帮助</h4>
+                    <ul class="">
+                        <li><a href="">购物流程</a></li>
+                        <li><a href="">忘记密码</a></li>
+                        <li><a href="">账户安全</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">支付帮助</a></li>
+                    </ul>
+                </div>
+                <div class="footer_connect">
+                    <h4>货到付款</h4>
+                    <ul class="">
+                        <li><a href="">在线支付</a></li>
+                        <li><a href="">分期付款</a></li>
+                        <li><a href="">公司转账</a></li>
+                        <li><a href="">发票制度</a></li>
+                        <li><a href="">门店支付</a></li>
+                        <li><a href="">配送帮助</a></li>
+                    </ul>
+                </div>
+                <div class="footer_connect">
+                    <h4>配送查询</h4>
+                    <ul class="">
+                        <li><a href="">配送说明</a></li>
+                        <li><a href="">配送费用</a></li>
+                        <li><a href="">签收与验货</a></li>
+                        <li><a href="">售后帮助</a></li>
+                    </ul>
+                </div>
+                <div class="footer_connect">
+                    <h4>退换货服务</h4>
+                    <ul class="">
+                        <li><a href="">退款说明</a></li>
+                        <li><a href="">家电保养</a></li>
+                        <li><a href="">延保服务</a></li>
+                        <li><a href="">远程服务</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_code">
+                <span>下载APP</span>
+                <img src="../../Images/test/test_footer_code.jpg">
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p> ©2014-2015凤凰筑巢保留所有权利</p>
+            <p>Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc24
+            </p>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="cart/submit_order" src="../../Js/lib/require.js"></script>
+</body>
+</html>

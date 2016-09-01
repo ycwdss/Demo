@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import "../lib/_commonclass";
+@import "../lib/_reset";
+@import "../lib/_lib";
+@import "../lib/_font";
+@import "../module/totop";
+@import "../module/showImage";
+
+//颜色
+//-变化颜色-
+$main: #093;
+$main_hover: #2e93d7;
+$main_light: #63bf82;
+//字体颜色
+.main {
+  color: $main !important;
+}
+.add_color{
+  color: $main_hover!important;
+}
+.main_light{
+  color: $main_light !important;
+}
+
+//背景颜色
+.main_bg {
+  background-color: $main !important;
+  color: #fff !important;
+}
+
+//背景颜色浅色
+.main_bg_light {
+  background-color: $main_light !important;
+  color: #fff !important;
+}
+
+//边框颜色
+.main_border {
+  border-color: $main !important;
+}
+.main_border_light{
+  border-color: $main_light !important;
+}
+
+
+
+html{
+  max-width: 640px;
+  margin:0 auto;
+  overflow-x: hidden!important;
+}
+body{
+  position: relative;
+  letter-spacing: 1px;
+  background: #efeff4;
+
+}
+a{
+  color: #333;
+}
+//头部
+.header{
+  position: relative;
+  line-height: 45px;
+  height: 45px;
+  background: #fcfcfc;
+  z-index: 19;
+  overflow: hidden;
+}
+.header_left{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 50px;
+  text-align: center;
+  line-height: 45px;
+  z-index: 9;
+  cursor: pointer;
+  span{
+    color: #999;
+    font-size: 2rem;
+    line-height: 45px;
+  }
+}
+.header_right{
+  @extend .header_left;
+  left:auto;
+  right:0;
+  span{
+    line-height: 45px;
+    font-size: 2rem;
+  }
+}
+.header_title{
+  padding:0 70px;
+  text-align: center;
+  @include ell(1);
+  font-size: 1.6rem;
+  color: #333;
+}
+//.classify{
+//  position: absolute;
+//  top: 0px;
+//  left: 0;
+//  height:100%;
+//  width: 0;
+//  overflow: hidden;
+//  background: #333;
+//  text-indent: 20px;
+//
+//  @include transition();
+//  z-index:10;
+//  ul{
+//    padding-top: 50px;
+//  }
+//  li{
+//    width: 120px;
+//    font-size: 1.4rem!important;
+//    line-height: 40px;
+//  }
+//  a{
+//    color: #fff;
+//  }
+//}
+//.l_main{
+//  width:100%;
+//  @include transition();
+//}
+
+//导航
+.classify{
+  display: none;
+  position: absolute;
+  top:45px;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  ul{
+    li{
+      width: 25%;
+      float: left;
+      padding: 15px 0 10px 0;
+      a{
+        display: inline-block;
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: #fff;
+        text-align: center;
+        border-right: 1px solid #fff;
+      }
+    }
+    li:nth-child(4){
+      a{
+        border: 0;
+      }
+    }
+    li:last-child{
+      a{
+        border: 0;
+      }
+    }
+
+  }
+}
+.show{
+  display: block;
+}
+//版权所有
+.copyright{
+  padding:10px 15px;
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+}

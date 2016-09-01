@@ -1,0 +1,108 @@
+@charset "UTF-8";
+$border1:1px solid #e4e4e4;
+$whitecolor: #fff;
+.c_search{
+  margin: 0 60px;
+}
+.icon_back{
+  margin: 8px 14px 0 19px;
+}
+//导航
+.mall_Category_nav{
+  padding-top: 50px;
+  background:#fff ;
+  height: 57px;
+  line-height: 57px;
+}
+.mall_Category_nav li{
+  text-align: center;
+  float: left;
+  height: 57px;
+  width:25%;
+  position: relative;
+  border-bottom:$border1;
+  cursor: pointer;
+}
+.mall_Category_nav li a{
+  font-size: 16px;
+  color: #333;
+}
+.mall_Category_nav li.current a{
+  color: #093;
+}
+.mall_Category_nav li.current:before{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom:-1px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #093;
+}
+//商品分类模块
+.moudle_mall_item{
+  margin-top: 10px;
+  background-color:$whitecolor ;
+}
+.moudle_mall_item h2{
+  padding:10px 0;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  border-bottom:$border1 ;
+}
+.index_main_box {
+  width: 100%;
+  padding-top: 10px;
+  background-color: $whitecolor;
+}
+
+.index_main_box li {
+  float: left;
+  width: 25%;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.index_main_box li span {
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  background: url(../../../Images/mobile/icon_all.png) no-repeat;
+  background-size: 53px;
+}
+.index_main_box li .index_main_icon2{
+  background-position: 0 -58px;
+}
+.index_main_box li .index_main_icon3{
+  background-position: 0 -116px;
+}
+.index_main_box li .index_main_icon4{
+  background-position: 0 -175px;
+}
+.index_main_box li .index_main_icon5{
+  background-position: 0 -233px;
+}
+.index_main_box li .index_main_icon6{
+  background-position: 0 -291px;
+}
+.index_main_box li .index_main_icon7{
+  background-position: 0 -350px;
+}
+.index_main_box li .index_main_icon8{
+  background-position: 0 -408px;
+}
+.index_main_box li a {
+  color: #888;
+}
+
+.index_main_box h3 {
+  font-size: 13px;
+  padding-top: 6px;
+}

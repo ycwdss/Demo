@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.question_ele{
+  width: 100%;
+  padding: 15px 3% 10px;
+  margin-top: 10px;
+  background: #FFFFFF;
+  @include box-sizing();
+  h3{
+    font-size: 1rem;
+    line-height: 30px;
+    white-space: normal;
+    a{
+      display: block;
+      padding-left: 7px;
+      color: #000;
+      margin-top: -7px;
+    }
+    span{
+      float: left;
+      height: 17px;
+      border-left: 2px solid $normalcolor;
+    }
+  }
+}
+.answer{
+  margin: 10px 0;
+}
+.new_answer {
+  float: left;
+  width: 70px;
+  margin-left: 10px;
+  font-size: 0.8rem;
+  line-height: 20px;
+  @include box-sizing();
+}
+.answer_detail{
+  margin-left: 80px;
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+.question_bottom{
+  font-size: 0.7rem;
+  line-height: 20px;
+  span{
+    float: left;
+    width: 50%;
+    @include ell(1);
+    height: 20px;
+  }
+}
+.answer_total{
+  color: $normalcolor;
+}

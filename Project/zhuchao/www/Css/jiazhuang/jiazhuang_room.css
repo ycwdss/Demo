@@ -1,0 +1,411 @@
+html, body {
+  outline: none; }
+
+.content {
+  margin-bottom: 135px;
+  background-color: #f8f8f8; }
+
+.banner {
+  width: 1300px;
+  height: 460px; }
+  .banner img {
+    width: 100%;
+    height: 100%; }
+
+.material, .floor, .door, .bathroom, .smart_home, .glazed_brick, .abinet, .paint, .board {
+  margin-top: 40px; }
+  .material h1, .floor h1, .door h1, .bathroom h1, .smart_home h1, .glazed_brick h1, .abinet h1, .paint h1, .board h1 {
+    font-size: 30px;
+    text-align: center; }
+  .material .line, .floor .line, .door .line, .bathroom .line, .smart_home .line, .glazed_brick .line, .abinet .line, .paint .line, .board .line {
+    width: 600px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative; }
+    .material .line p, .floor .line p, .door .line p, .bathroom .line p, .smart_home .line p, .glazed_brick .line p, .abinet .line p, .paint .line p, .board .line p {
+      position: absolute;
+      left: 50%;
+      bottom: -9px;
+      background: #f8f8f8;
+      font-size: 18px;
+      margin-left: -90px;
+      padding: 0 5px; }
+
+.list_show {
+  width: 962px;
+  height: 560px;
+  margin: 0 5px;
+  overflow: hidden; }
+  .list_show .list_pic {
+    width: 314px;
+    height: 478px;
+    overflow: hidden; }
+  .list_show img {
+    width: 100%; }
+  .list_show .every_info {
+    width: 314px;
+    height: 280px;
+    float: left;
+    margin: 0 5px 5px 0; }
+    .list_show .every_info .every_info_pic {
+      width: 314px;
+      height: 196px;
+      overflow: hidden; }
+
+.info {
+  padding: 10px 0; }
+  .info p {
+    line-height: 20px;
+    width: 314px;
+    height: 20px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap; }
+    .info p span {
+      padding-left: 40px; }
+
+.show_wrap {
+  width: 960px;
+  height: 560px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.material .space_show {
+  margin-top: 40px;
+  width: 1300px;
+  background-color: #fff; }
+  .material .space_show a {
+    position: relative;
+    color: #000; }
+  .material .space_show .tips_txt {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff; }
+  .material .space_show .items {
+    height: 600px; }
+    .material .space_show .items .hd {
+      border-bottom: 1px solid #ccc;
+      margin: 0 20px;
+      height: 70px;
+      line-height: 70px; }
+      .material .space_show .items .hd ul {
+        width: 680px;
+        margin: 0 auto;
+        position: relative; }
+        .material .space_show .items .hd ul li {
+          width: 170px;
+          float: left;
+          font-size: 24px;
+          text-align: center;
+          cursor: pointer; }
+        .material .space_show .items .hd ul li.on {
+          background: #fff;
+          height: 71px; }
+        .material .space_show .items .hd ul p {
+          position: absolute;
+          bottom: -7px;
+          left: 0px;
+          width: 170px;
+          height: 8px;
+          text-align: center;
+          z-index: 9999; }
+          .material .space_show .items .hd ul p img {
+            display: block; }
+    .material .space_show .items .bd {
+      height: 530px;
+      width: 1300px;
+      overflow: hidden;
+      outline: none; }
+      .material .space_show .items .bd .fade div {
+        float: left; }
+
+.slide_box {
+  width: 1300px;
+  height: 420px;
+  overflow: hidden; }
+  .slide_box li {
+    position: relative;
+    background-color: #fff; }
+  .slide_box a {
+    margin-left: 5px;
+    width: 1300px;
+    height: 420px;
+    overflow: hidden;
+    display: block; }
+    .slide_box a img {
+      width: 100%;
+      height: 100%; }
+  .slide_box .mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40); }
+  .slide_box .focus .mask {
+    display: none; }
+
+.floor .floor_info, .floor .glazed_brick_info, .floor .abinet_info, .floor .bathroom_info, .floor .paint_info, .floor .board_info, .glazed_brick .floor_info, .glazed_brick .glazed_brick_info, .glazed_brick .abinet_info, .glazed_brick .bathroom_info, .glazed_brick .paint_info, .glazed_brick .board_info, .abinet .floor_info, .abinet .glazed_brick_info, .abinet .abinet_info, .abinet .bathroom_info, .abinet .paint_info, .abinet .board_info, .bathroom .floor_info, .bathroom .glazed_brick_info, .bathroom .abinet_info, .bathroom .bathroom_info, .bathroom .paint_info, .bathroom .board_info, .paint .floor_info, .paint .glazed_brick_info, .paint .abinet_info, .paint .bathroom_info, .paint .paint_info, .paint .board_info, .board .floor_info, .board .glazed_brick_info, .board .abinet_info, .board .bathroom_info, .board .paint_info, .board .board_info {
+  width: 1300px;
+  position: relative;
+  margin-top: 30px; }
+  .floor .floor_info .floor_show, .floor .floor_info .glazed_brick_show, .floor .floor_info .abinet_show, .floor .floor_info .bathroom_show, .floor .floor_info .paint_show, .floor .floor_info .board_show, .floor .glazed_brick_info .floor_show, .floor .glazed_brick_info .glazed_brick_show, .floor .glazed_brick_info .abinet_show, .floor .glazed_brick_info .bathroom_show, .floor .glazed_brick_info .paint_show, .floor .glazed_brick_info .board_show, .floor .abinet_info .floor_show, .floor .abinet_info .glazed_brick_show, .floor .abinet_info .abinet_show, .floor .abinet_info .bathroom_show, .floor .abinet_info .paint_show, .floor .abinet_info .board_show, .floor .bathroom_info .floor_show, .floor .bathroom_info .glazed_brick_show, .floor .bathroom_info .abinet_show, .floor .bathroom_info .bathroom_show, .floor .bathroom_info .paint_show, .floor .bathroom_info .board_show, .floor .paint_info .floor_show, .floor .paint_info .glazed_brick_show, .floor .paint_info .abinet_show, .floor .paint_info .bathroom_show, .floor .paint_info .paint_show, .floor .paint_info .board_show, .floor .board_info .floor_show, .floor .board_info .glazed_brick_show, .floor .board_info .abinet_show, .floor .board_info .bathroom_show, .floor .board_info .paint_show, .floor .board_info .board_show, .glazed_brick .floor_info .floor_show, .glazed_brick .floor_info .glazed_brick_show, .glazed_brick .floor_info .abinet_show, .glazed_brick .floor_info .bathroom_show, .glazed_brick .floor_info .paint_show, .glazed_brick .floor_info .board_show, .glazed_brick .glazed_brick_info .floor_show, .glazed_brick .glazed_brick_info .glazed_brick_show, .glazed_brick .glazed_brick_info .abinet_show, .glazed_brick .glazed_brick_info .bathroom_show, .glazed_brick .glazed_brick_info .paint_show, .glazed_brick .glazed_brick_info .board_show, .glazed_brick .abinet_info .floor_show, .glazed_brick .abinet_info .glazed_brick_show, .glazed_brick .abinet_info .abinet_show, .glazed_brick .abinet_info .bathroom_show, .glazed_brick .abinet_info .paint_show, .glazed_brick .abinet_info .board_show, .glazed_brick .bathroom_info .floor_show, .glazed_brick .bathroom_info .glazed_brick_show, .glazed_brick .bathroom_info .abinet_show, .glazed_brick .bathroom_info .bathroom_show, .glazed_brick .bathroom_info .paint_show, .glazed_brick .bathroom_info .board_show, .glazed_brick .paint_info .floor_show, .glazed_brick .paint_info .glazed_brick_show, .glazed_brick .paint_info .abinet_show, .glazed_brick .paint_info .bathroom_show, .glazed_brick .paint_info .paint_show, .glazed_brick .paint_info .board_show, .glazed_brick .board_info .floor_show, .glazed_brick .board_info .glazed_brick_show, .glazed_brick .board_info .abinet_show, .glazed_brick .board_info .bathroom_show, .glazed_brick .board_info .paint_show, .glazed_brick .board_info .board_show, .abinet .floor_info .floor_show, .abinet .floor_info .glazed_brick_show, .abinet .floor_info .abinet_show, .abinet .floor_info .bathroom_show, .abinet .floor_info .paint_show, .abinet .floor_info .board_show, .abinet .glazed_brick_info .floor_show, .abinet .glazed_brick_info .glazed_brick_show, .abinet .glazed_brick_info .abinet_show, .abinet .glazed_brick_info .bathroom_show, .abinet .glazed_brick_info .paint_show, .abinet .glazed_brick_info .board_show, .abinet .abinet_info .floor_show, .abinet .abinet_info .glazed_brick_show, .abinet .abinet_info .abinet_show, .abinet .abinet_info .bathroom_show, .abinet .abinet_info .paint_show, .abinet .abinet_info .board_show, .abinet .bathroom_info .floor_show, .abinet .bathroom_info .glazed_brick_show, .abinet .bathroom_info .abinet_show, .abinet .bathroom_info .bathroom_show, .abinet .bathroom_info .paint_show, .abinet .bathroom_info .board_show, .abinet .paint_info .floor_show, .abinet .paint_info .glazed_brick_show, .abinet .paint_info .abinet_show, .abinet .paint_info .bathroom_show, .abinet .paint_info .paint_show, .abinet .paint_info .board_show, .abinet .board_info .floor_show, .abinet .board_info .glazed_brick_show, .abinet .board_info .abinet_show, .abinet .board_info .bathroom_show, .abinet .board_info .paint_show, .abinet .board_info .board_show, .bathroom .floor_info .floor_show, .bathroom .floor_info .glazed_brick_show, .bathroom .floor_info .abinet_show, .bathroom .floor_info .bathroom_show, .bathroom .floor_info .paint_show, .bathroom .floor_info .board_show, .bathroom .glazed_brick_info .floor_show, .bathroom .glazed_brick_info .glazed_brick_show, .bathroom .glazed_brick_info .abinet_show, .bathroom .glazed_brick_info .bathroom_show, .bathroom .glazed_brick_info .paint_show, .bathroom .glazed_brick_info .board_show, .bathroom .abinet_info .floor_show, .bathroom .abinet_info .glazed_brick_show, .bathroom .abinet_info .abinet_show, .bathroom .abinet_info .bathroom_show, .bathroom .abinet_info .paint_show, .bathroom .abinet_info .board_show, .bathroom .bathroom_info .floor_show, .bathroom .bathroom_info .glazed_brick_show, .bathroom .bathroom_info .abinet_show, .bathroom .bathroom_info .bathroom_show, .bathroom .bathroom_info .paint_show, .bathroom .bathroom_info .board_show, .bathroom .paint_info .floor_show, .bathroom .paint_info .glazed_brick_show, .bathroom .paint_info .abinet_show, .bathroom .paint_info .bathroom_show, .bathroom .paint_info .paint_show, .bathroom .paint_info .board_show, .bathroom .board_info .floor_show, .bathroom .board_info .glazed_brick_show, .bathroom .board_info .abinet_show, .bathroom .board_info .bathroom_show, .bathroom .board_info .paint_show, .bathroom .board_info .board_show, .paint .floor_info .floor_show, .paint .floor_info .glazed_brick_show, .paint .floor_info .abinet_show, .paint .floor_info .bathroom_show, .paint .floor_info .paint_show, .paint .floor_info .board_show, .paint .glazed_brick_info .floor_show, .paint .glazed_brick_info .glazed_brick_show, .paint .glazed_brick_info .abinet_show, .paint .glazed_brick_info .bathroom_show, .paint .glazed_brick_info .paint_show, .paint .glazed_brick_info .board_show, .paint .abinet_info .floor_show, .paint .abinet_info .glazed_brick_show, .paint .abinet_info .abinet_show, .paint .abinet_info .bathroom_show, .paint .abinet_info .paint_show, .paint .abinet_info .board_show, .paint .bathroom_info .floor_show, .paint .bathroom_info .glazed_brick_show, .paint .bathroom_info .abinet_show, .paint .bathroom_info .bathroom_show, .paint .bathroom_info .paint_show, .paint .bathroom_info .board_show, .paint .paint_info .floor_show, .paint .paint_info .glazed_brick_show, .paint .paint_info .abinet_show, .paint .paint_info .bathroom_show, .paint .paint_info .paint_show, .paint .paint_info .board_show, .paint .board_info .floor_show, .paint .board_info .glazed_brick_show, .paint .board_info .abinet_show, .paint .board_info .bathroom_show, .paint .board_info .paint_show, .paint .board_info .board_show, .board .floor_info .floor_show, .board .floor_info .glazed_brick_show, .board .floor_info .abinet_show, .board .floor_info .bathroom_show, .board .floor_info .paint_show, .board .floor_info .board_show, .board .glazed_brick_info .floor_show, .board .glazed_brick_info .glazed_brick_show, .board .glazed_brick_info .abinet_show, .board .glazed_brick_info .bathroom_show, .board .glazed_brick_info .paint_show, .board .glazed_brick_info .board_show, .board .abinet_info .floor_show, .board .abinet_info .glazed_brick_show, .board .abinet_info .abinet_show, .board .abinet_info .bathroom_show, .board .abinet_info .paint_show, .board .abinet_info .board_show, .board .bathroom_info .floor_show, .board .bathroom_info .glazed_brick_show, .board .bathroom_info .abinet_show, .board .bathroom_info .bathroom_show, .board .bathroom_info .paint_show, .board .bathroom_info .board_show, .board .paint_info .floor_show, .board .paint_info .glazed_brick_show, .board .paint_info .abinet_show, .board .paint_info .bathroom_show, .board .paint_info .paint_show, .board .paint_info .board_show, .board .board_info .floor_show, .board .board_info .glazed_brick_show, .board .board_info .abinet_show, .board .board_info .bathroom_show, .board .board_info .paint_show, .board .board_info .board_show {
+    margin: 0 -6px;
+    overflow: hidden; }
+
+.floor .floor_big, .floor .glazed_brick_big, .floor .abinet_big, .floor .bathroom_big, .floor .paint_big, .floor .board_big, .glazed_brick .floor_big, .glazed_brick .glazed_brick_big, .glazed_brick .abinet_big, .glazed_brick .bathroom_big, .glazed_brick .paint_big, .glazed_brick .board_big, .abinet .floor_big, .abinet .glazed_brick_big, .abinet .abinet_big, .abinet .bathroom_big, .abinet .paint_big, .abinet .board_big, .bathroom .floor_big, .bathroom .glazed_brick_big, .bathroom .abinet_big, .bathroom .bathroom_big, .bathroom .paint_big, .bathroom .board_big, .paint .floor_big, .paint .glazed_brick_big, .paint .abinet_big, .paint .bathroom_big, .paint .paint_big, .paint .board_big, .board .floor_big, .board .glazed_brick_big, .board .abinet_big, .board .bathroom_big, .board .paint_big, .board .board_big {
+  margin-top: 10px; }
+
+.floor .floor_big img,
+.floor .glazed_brick_big img,
+.floor .abinet_big img,
+.floor .bathroom_big img,
+.floor .paint_big img,
+.floor .board_big img, .glazed_brick .floor_big img,
+.glazed_brick .glazed_brick_big img,
+.glazed_brick .abinet_big img,
+.glazed_brick .bathroom_big img,
+.glazed_brick .paint_big img,
+.glazed_brick .board_big img, .abinet .floor_big img,
+.abinet .glazed_brick_big img,
+.abinet .abinet_big img,
+.abinet .bathroom_big img,
+.abinet .paint_big img,
+.abinet .board_big img, .bathroom .floor_big img,
+.bathroom .glazed_brick_big img,
+.bathroom .abinet_big img,
+.bathroom .bathroom_big img,
+.bathroom .paint_big img,
+.bathroom .board_big img, .paint .floor_big img,
+.paint .glazed_brick_big img,
+.paint .abinet_big img,
+.paint .bathroom_big img,
+.paint .paint_big img,
+.paint .board_big img, .board .floor_big img,
+.board .glazed_brick_big img,
+.board .abinet_big img,
+.board .bathroom_big img,
+.board .paint_big img,
+.board .board_big img {
+  width: 100%;
+  height: 100%; }
+
+.door .door_info {
+  width: 1300px;
+  position: relative;
+  margin-top: 30px; }
+
+.door .door_show {
+  width: 960px;
+  height: 690px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .door .door_show ul {
+    margin: 0 -10px; }
+    .door .door_show ul li {
+      float: left;
+      width: 290px;
+      border: 10px solid #fff;
+      margin: 0 8px; }
+      .door .door_show ul li .info {
+        padding: 10px 0; }
+        .door .door_show ul li .info p {
+          line-height: 20px; }
+          .door .door_show ul li .info p span {
+            padding-left: 40px; }
+
+.door .door_big {
+  margin-top: 10px; }
+
+.smart_home_pic {
+  width: 1300px;
+  height: 1050px;
+  margin-top: 30px;
+  background-color: #fff; }
+  .smart_home_pic img:hover {
+    opacity: .85; }
+  .smart_home_pic .part_one {
+    width: 1300px;
+    height: 268px; }
+    .smart_home_pic .part_one .item_one {
+      width: 325px;
+      height: 266px;
+      display: block;
+      overflow: hidden; }
+      .smart_home_pic .part_one .item_one .explain_sh {
+        margin: 65px 42px;
+        line-height: 24px;
+        color: #000;
+        height: 145px;
+        font-size: 14px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical; }
+    .smart_home_pic .part_one .item_two {
+      width: 650px;
+      height: 266px;
+      display: block; }
+    .smart_home_pic .part_one .item_three {
+      width: 325px;
+      height: 266px;
+      display: block;
+      background-color: #b4debe; }
+      .smart_home_pic .part_one .item_three .know_sh {
+        width: 180px;
+        height: 60px;
+        margin: 100px auto 0;
+        font-size: 30px;
+        text-align: center;
+        color: #fff; }
+        .smart_home_pic .part_one .item_three .know_sh .tip_line {
+          width: 100px;
+          height: 1px;
+          background-color: #fff;
+          margin: 0 auto; }
+        .smart_home_pic .part_one .item_three .know_sh h1 {
+          padding: 10px 0; }
+
+.same_pic {
+  width: 650px;
+  height: 260px; }
+  .same_pic a {
+    display: block;
+    color: #000; }
+  .same_pic img {
+    float: left; }
+  .same_pic .describe_txt {
+    width: 325px;
+    height: 260px;
+    float: left;
+    position: relative; }
+    .same_pic .describe_txt .tip_line {
+      width: 100px;
+      height: 1px;
+      background-color: #ccc;
+      margin: 0 auto; }
+    .same_pic .describe_txt h2 {
+      text-align: center;
+      font-size: 18px;
+      padding: 12px 0; }
+    .same_pic .describe_txt .top {
+      margin-top: 20px; }
+    .same_pic .describe_txt .txt {
+      padding: 0 43px;
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 20px;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      height: 96px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical; }
+    .same_pic .describe_txt .link {
+      font-size: 14px;
+      background-color: #093;
+      text-align: center;
+      width: 150px;
+      height: 30px;
+      margin: 30px auto 0;
+      line-height: 30px;
+      color: #fff; }
+  .same_pic .left_arrow {
+    position: absolute;
+    top: 120px;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #f8f8f8;
+    left: -10px; }
+  .same_pic .right_arrow {
+    position: absolute;
+    top: 120px;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #f8f8f8;
+    right: -10px; }
+
+.left_bar {
+  width: 80px;
+  position: fixed;
+  left: 50%;
+  top: 50px;
+  display: none;
+  z-index: 99999;
+  margin-left: -730px; }
+  .left_bar ul {
+    border: 1px dotted #e4e4e4; }
+    .left_bar ul li {
+      border-bottom: 1px dotted #e4e4e4;
+      text-align: center;
+      font-size: 16px;
+      overflow: hidden;
+      height: 40px;
+      line-height: 40px; }
+    .left_bar ul li a {
+      color: #093;
+      display: inline-block;
+      width: 100%;
+      height: 40px;
+      line-height: 40px; }
+    .left_bar ul .present {
+      background: #093;
+      color: #fff; }
+    .left_bar ul li:last-child {
+      border-bottom: 0; }
+
+.left_btn {
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 0;
+  z-index: 9999; }
+  .left_btn i {
+    width: 30px;
+    height: 51px;
+    display: block;
+    margin: 20px auto;
+    background: url("../../jiazhuang/Images/sprite_jiazhuang_left.png") no-repeat; }
+
+.right_btn {
+  display: block;
+  position: absolute;
+  right: 40px;
+  top: 0; }
+  .right_btn i {
+    display: block;
+    width: 30px;
+    height: 51px;
+    margin: 20px auto;
+    background: url("../../jiazhuang/Images/sprite_jiazhuang_right.png") no-repeat; }
+
+.left_btn, .right_btn {
+  background: #c6c6c6;
+  width: 90px;
+  height: 90px;
+  margin-top: 200px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: none; }
+
+@media screen and (max-width: 1500px) {
+  .left_bar {
+    display: none !important; } }

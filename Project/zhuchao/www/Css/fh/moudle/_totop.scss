@@ -1,0 +1,14 @@
+/*c_gotop*/
+#totop {
+  width: 65px;
+  height: 65px;
+  background: url(../../Images/sprite_totop.png) no-repeat center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000;
+}
+#totop:hover{
+  background: url(../../Images/sprite_totop_hover.png) no-repeat center;
+}

@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../model/routenav";
+@import "../model/totop";
+.header{
+  position: absolute;
+}
+.header_nav{
+  a:hover{
+    color: #333;
+  }
+}
+a:hover{
+  color: #5272e4;
+}
+.l_main{
+  padding-top:54px;
+  padding-bottom: 100px;
+}
+.header,.top_about_content{
+  background-color: rgba(255,255,255,0.3);
+  -pie-background: rgba(255,255,255,0.3);
+}
+.left_content{
+  width: 930px;
+  border:1px solid #e4e4e4;
+  background-color: #fff;
+  @include box-sizing();
+}
+//标题
+.left_news_head{
+  padding:35px 0;
+  height: 80px;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #f8f8f8;
+  text-align: center;
+  .left_news_title{
+    font-size: 24px;
+    max-width: 80%;
+    margin: 10px auto 15px;
+    line-height: 1.4;
+    max-height: 72px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  span{
+    color: #888;
+    font-size: 12px;
+  }
+  span.left_news_writer{
+    margin: 0 35px;
+  }
+}
+//新闻详情
+.left_content_inner{
+  padding:50px 0;
+  margin: 0 100px;
+  img{
+    display: block!important;
+    max-width: 100%!important;
+    margin: 0 auto 25px!important;
+  }
+  p{
+    font-size:14px;
+    line-height: 1.7;
+    margin-bottom:10px;
+  }
+}
+
+//上下篇
+.up_down{
+  padding:35px 110px;
+  height: 80px;
+  border-top: 1px solid #e4e4e4;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  color: #888;
+  >div{
+    position: relative;
+    vertical-align: top;
+    margin:10px 0;
+    a{
+      display: inline-block;
+      width: 566px;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow : hidden;
+      text-overflow: ellipsis;
+    }
+    span.date{
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+span.time,span.look{
+  font-size: 12px;
+  color: #aaa;
+  position: absolute;
+  bottom:20px;
+}
+.look{
+  position: absolute;
+  right: 20px;
+  .icon_look{
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    margin-right: 10px;
+    vertical-align:-1px;
+    background: url(../../Images/sprite_icon_look.png) no-repeat;
+  }
+}
+//右侧列表
+.right_side{
+  width: 350px;
+  *width:310px;
+  border:1px solid #e4e4e4;
+  padding:0 20px;
+  background-color: #f8f8f8;
+  @include box-sizing();
+  .right_side_title{
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 2.0;
+    color: #333;
+  }
+}
+.right_list{
+  position: relative;
+  padding:20px 0 30px;
+  border-top: 1px solid #e4e4e4;
+  .right_list_img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .right_list_img:hover:before{
+    display: none;
+  }
+  .right_list_title{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    @include strictEll(1.7,2);
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+//滚动列表
+.scrollbar{
+  margin-top:20px;
+}
+.some-content-related-div{
+  padding:15px 0;
+}
+.right_side_title{
+  border-bottom: 1px solid #e4e4e4;
+}
+.scrollbar_list{
+  position: relative;
+  padding: 20px 0 40px;
+  width:250px;
+  margin: 0 auto;
+  &:before{
+    position: absolute;
+    top:0;
+    left: -23px;
+    content: "";
+    width: 2px;
+    height: 100%;
+    display: inline-block;
+    background-color: #e4e4e4;
+  }
+  &:after{
+    position: absolute;
+    top:0;
+    left: -26px;
+    content: "";
+    width: 8px;
+    height:8px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #4074e1;
+  }
+  .right_list_img{
+    float: left;
+    display: block;
+    width: 100px;
+    height: 65px;
+    margin-right: 10px;
+  }
+  .time{
+    left: 0;
+    bottom: 10px;
+  }
+  .look{
+    right:0;
+    bottom: 10px;
+  }
+}
+.scrollbar_list:first-child{
+  padding-top:5px;
+  border-top: 0;
+}
+.slimScrollBar{
+  height: 120px!important;
+}

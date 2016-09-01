@@ -1,0 +1,811 @@
+@charset "UTF-8";
+//顶部---------------
+.top{
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #EDEDED;
+  background-color: #FAFAFA;
+  .top_center{
+    width: 1200px;
+    margin: 0 auto;
+    ul{
+      li{
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        background: url("../../index/Images/sprite_shu.png") 0 9px no-repeat;
+        padding: 0 10px;
+        a{
+          color:#8c8c8c;
+          &:hover{
+            color:  #BC1015;
+          }
+        }
+      }
+      .l1,.r1{
+        background: none;
+      }
+      .r1 a{
+        color: #333;
+      }
+      //登录后信息------
+      .r1{
+        .drop_down{
+          .hd{
+            min-width: 80px;
+            text-align: right;
+            white-space: nowrap;
+            em{
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              vertical-align: middle;
+              margin-top: -3px;
+              background: url("../../index/Images/test_level.png") no-repeat;
+            }
+            .level_1{
+              background-position: -26px 0;
+            }
+          }
+          .bd{
+            text-align: right;
+            span{
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+
+
+      //鼠标滑过显示--------
+      .r1,.l3,.r5{
+        &:hover{
+
+          .drop_down{
+            border: 1px solid #ededed;
+            border-top: none;
+            z-index: 88;
+            background-color: #fff;
+            margin: 0 -11px;
+            .hd{
+              //border: 1px solid #ededed;
+              i{
+                background: url("../../index/Images/sprite_arrow_up.png") no-repeat;
+              }
+            }
+            .bd{
+              display: block;
+            }
+          }
+        }
+        .drop_down{
+          margin: 0 -10px;
+          position: relative;
+          display: block;
+          z-index: 888;
+          .hd{
+            position: relative;
+            padding: 0 27px 0 10px;
+            i{
+              display: inline-block;
+              width:7px;
+              height: 4px;
+              position: absolute;
+              right: 8px;
+              top: 50%;
+              background: url("../../index/Images/sprite_arrow_down.png") no-repeat;
+            }
+          }
+          .bd{
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 29px;
+            padding: 0 10px;
+            background-color: #fff;
+            border: 1px solid #ededed;
+            border-top-color: #fff;
+            margin: 0 -1px;
+          }
+        }
+      }
+    }
+  }
+}
+//顶部banner--------------
+.top_banner{
+  width: 1200px;
+  margin: 10px auto 0;
+  position: relative;
+  i{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    display: block;
+    cursor: pointer;
+    background: url("../../index/Images/sprite_close.png") no-repeat;
+  }
+}
+//头部-----------------------
+.head{
+  height: 118px;
+  background-color: #fff;
+  .head_center{
+    width: 1200px;
+    margin: 0 auto;
+    .logo{
+      padding-top: 43px;
+      width: 345px;
+      a{
+        display: inline-block;
+      }
+    }
+    //搜索框
+    .search_bar{
+      padding: 43px 7px 0 0;
+      .search_form{
+        line-height: 1;
+        border: 2px solid #ca141d;
+        height: 28px;
+        overflow: hidden;
+        form{
+          width: 428px;
+          height: 28px;
+          line-height: 28px;
+          position: relative;
+          input[type=text]{
+            width:344px;
+            padding: 5px 10px;
+            &:focus{
+             .holder{
+              display: none;
+             }
+            }
+          }
+          input[type=button]{
+            position: absolute;
+            right: 0;
+            top: 0px;
+            width: 60px;
+            height: 28px;
+            cursor: pointer;
+            border: 0 none;
+            background-color: #ca141d;
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+      }
+      .search_hot{
+        width: 365px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: 5px;
+        color: #999;;
+        a{
+          padding: 0 5px;
+          color: inherit;
+        }
+      }
+    }
+    //我的商城购物车
+    .tool_bar{
+      float: left;
+      height: 31px;
+      border: 1px solid #e5e5e5;
+      border-bottom: 0;
+      background-color: #FFF;
+      margin-top: 43px;
+      .com{
+        .hd{
+          width: 99px;
+          height: 18px;
+          text-align: center;
+          padding: 6px 0;
+          cursor: pointer;
+          position: relative;
+          border-bottom: 1px solid #e5e5e5;
+          background-color: #FFF;
+          i{
+            width: 8px;
+            height:4px;
+            display: block;
+            position: absolute;
+            right: 8px;
+            top: 12px;
+            background: url("../../index/Images/sprite_mymall_down.png") no-repeat;
+          }
+          s{
+            position: absolute;
+            width: 1px;
+            height: 12px;
+            top: 9px;
+            right: 0px;
+            background-color: #e5e5e5;
+          }
+        }
+
+      }
+      //我的商城-------------
+      .mymall{
+        position: relative;
+        &:hover{
+          .hd{
+            height:19px;
+            border-bottom: 0;
+            i{
+              background: url("../../index/Images/sprite_mymall_up.png") no-repeat;
+            }
+            s{
+              height: 31px;
+              top:0px;
+            }
+          }
+          .bd{
+            z-index: 8888;
+            display: block;
+          }
+
+        }
+        .bd{
+          position: absolute;
+          width: 198px;
+          top: 31px;
+          left: -1px;
+          overflow: hidden;
+          display: none;
+          border: 1px solid #e5e5e5;
+          border-top: 0;
+          background-color: #FFF;
+          .unlogin_ifo{
+            padding: 11px 10px;
+            color: #666;
+            text-align: center;
+            p{
+              font-size: 12px;
+              a{
+                padding: 0 8px;
+              }
+            }
+          }
+          .login_info{
+            border-top: 1px solid #e5e5e5;
+            width: 210px;
+            padding-top: 29px;
+            overflow: hidden;
+            ul{
+              li{
+                float: left;
+                width: 99px;
+                line-height: 14px;
+                border-right: 1px solid #e5e5e5;
+                margin-bottom: 26px;
+                overflow: hidden;
+                text-align: center;
+                span{
+                  color: #e01d20;
+                  margin-left: 4px;
+                }
+              }
+            }
+          }
+          .activity{
+            text-align: center;
+            padding: 0 10px 10px;
+          }
+        }
+      }
+      //购物车--------------
+      .mycart{
+        position: relative;
+        &:hover{
+          .mymall{
+            .hd{
+              border-bottom: 0;
+              z-index: 8888;
+            }
+          }
+          .hd{
+            height:20px;
+            border-bottom: 0;
+            border-left: 1px solid #e5e5e5;
+            margin-left: -1px;
+            z-index: 9999;
+            i{
+              background: url("../../index/Images/sprite_mymall_up.png") no-repeat;
+            }
+          }
+          .bd{
+            display: block;
+            z-index: 8888;
+          }
+
+        }
+        //-------------------
+        .hd{
+          position: relative;
+          span{
+            position: absolute;
+            height: 15px;
+            line-height: 15px;
+            padding: 0 2px;
+            background-color: #ca141d;
+            right: 6px;
+            top: -16px;
+            color: #FFF;
+            b{
+              position: absolute;
+              right: 5px;
+              top: 15px;
+              width: 6px;
+              height: 3px;
+              display: block;
+              background: url("../../index/Images/sprite_mycart_dow.png") no-repeat;
+            }
+          }
+        }
+        .bd{
+          position: absolute;
+          width: 466px;
+          right: -1px;
+          top: 31px;
+          overflow: hidden;
+          display: none;
+          border: 1px solid #e5e5e5;
+          background-color: #FFF;
+          margin-top: -1px;
+          //购物车为空
+          .cart_empty{
+            text-align: center;
+            color: #999;
+            padding: 41px 0;
+            line-height: 1.5;
+            display: none;
+            p{
+              display: inline-block;
+              padding: 5px 0 5px 48px;
+              background: url("../../index/Images/sprite_emptycart.png") no-repeat;
+            }
+          }
+          //购物车
+          .cart_list{
+            //display: none;
+           ul{
+             li{
+               border-bottom: 1px solid #eaeaea;
+               padding: 0 23px 15px 15px;
+               margin-top: 15px;
+               vertical-align: top;
+               .pro_info{
+                 .pro_img{
+                   float: left;
+                   width: 80px;
+                   img{
+                     vertical-align: top;
+                     width: 80px;
+                     height: 80px;
+                   }
+                 }
+                 .pro_name{
+                   float: left;
+                   width: 283px;
+                   padding: 4px 0 0 15px;
+                   margin-bottom: 18px;
+                   a{
+                     display: block;
+                     height: 36px;
+                     line-height: 18px;
+                     overflow: hidden;
+                   }
+                 }
+                 .pro_price{
+                   float: left;
+                   width: 283px;
+                   padding-left: 15px;
+                   b{
+                     color: #e01d20;
+                     font-weight: 400;
+                   }
+                   em{
+                     color: #888;
+                     margin: 0 7px;
+                   }
+                   span{
+                     color: #888;
+                   }
+                 }
+                 .close{
+                   margin-top: -25px;
+                   float: right;
+                   cursor: pointer;
+                    i{
+                      display: inline-block;
+                      width: 13px;
+                      height: 13px;
+                      font-size: 1px;
+                      line-height: 1px;
+                      background: url("../../index/Images/sprite_pro_close.png") no-repeat;
+                      overflow: hidden;
+                    }
+                 }
+
+               }
+
+             }
+           }
+          }
+          .to_account{
+            background-color: #fafafa;
+
+            padding: 22px 24px;
+            height: 37px;
+            margin-top: -1px;
+            p{
+              position: relative;
+              height: 37px;
+              line-height: 37px;
+              em{
+                color: #e01d20;
+                font-size: 18px;
+                margin: 0 4px;
+                position: relative;
+                top: 1px;
+              }
+              b{
+                font-weight: 400;
+                font-size: 18px;
+                color: #e01d20;
+                margin-left: 4px;
+                position: relative;
+                top: 1px;
+              }
+              a{
+                border: 1px solid #e01d20;
+                background-color: #e01d20;
+                color: #FFF;
+                font-size: 16px;
+                width: 130px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top:0;
+              }
+            }
+          }
+        }
+      }
+    }
+    //二维码
+    .erweima{
+      padding-top: 15px;
+      float: right;
+      .erweima_box{
+        width: 91px;
+        height: 96px;
+        position: relative;
+        .erweima_img{
+          a{
+            position: absolute;
+            left: 0;
+            top:0;
+            font-size: 10px;
+            display: block;
+            &:hover{
+              color: #333;
+            }
+            img{
+              width: 76px;
+              height: 76px;
+            }
+            p{
+              width: 100px;
+              margin-top: -3px;
+            }
+          }
+          .img2{
+            display: none;
+          }
+        }
+        ul{
+          position: absolute;
+          top:0;
+          right: 0;
+          li{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #e5e5e5;
+            margin: 3px 0;
+            opacity: 1;
+          }
+          .current{
+            background-color: #f79f2e;
+          }
+        }
+      }
+    }
+  }
+}
+
+///导航------------------------
+//导航栏---------------
+.nav{
+  height: 40px;
+  background-color: #ca141d;
+  .nav_box{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    //分类------------
+    .category{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 220px;
+      height: 40px;
+      z-index: 8888;
+      &:hover{
+        .hd_arrow{
+          background: url("../../index/Images/sprite_category_up.png");
+        }
+        .bd{
+          display: block!important;
+        }
+      }
+      .hd{
+        height: 39px;
+        border: 1px solid #f86675;
+        border-bottom: 0 none;
+        background-color: #e63547;
+
+        h2{
+          line-height: 37px;
+          height: 38px;
+          font-size: 16px;
+          color: #FFF;
+          padding-left: 15px;
+          border-bottom: 1px solid #da3243;
+        }
+        i{
+          width: 8px;
+          height: 4px;
+          display: block;
+          position: absolute;
+          right: 13px;
+          top: 18px;
+          background: url("../../index/Images/sprite_category_down.png");
+        }
+      }
+      .bd{
+        display: none;
+        .category-list{
+          background-color: #e63547;
+          border: 1px solid #f86675;
+          border-top: 0 none;
+          padding-bottom: 7px;
+          outline: none;
+          .category-item{
+            position: relative;
+            z-index: 7777;
+            &:hover{
+              .category-info{
+                background-color:#fcf7f7;
+                background-color:#fcf7f7;
+                h3{
+                  a{color:#e63547;}
+                }
+                a{
+                  &:hover{
+                    color:  #d59698;
+                  }
+
+                }
+              }
+              .category_content{
+                display: block;
+                .sub_list{
+                  li{
+                    a:hover{
+                      color: #e63547;
+                      background-color: #efeaea;
+                    }
+                  }
+                }
+                .sub_activity{
+                  dd{
+                    a:hover{
+                      color: #333;
+                    }
+                  }
+                }
+              }
+            }
+            .category-info{
+              padding:8px 0 8px 4px;
+              _padding: 6px 0 8px 6px;
+              margin-left: 4px;
+              height: 40px;
+              h3{
+                margin-bottom: 2px;
+                a{
+                  font-size: 16px;
+                  color: #FFF;
+                }
+              }
+              a{
+                color:#ffb7ba;;
+                margin-left: 8px;
+                font-size: 13px;
+              }
+            }
+            .category_content{
+              display: none;
+              position: absolute;
+              left: 218px;
+              width: 179px;
+              border: 1px solid #efeaea;
+              border-left: 0 none;
+              background-color: #fcf7f7;
+              top: 0;
+              padding: 10px 0;
+              z-index:7878;
+              .sub_list{
+                .sub_item{
+                  a{
+                    display: block;
+                    padding-left: 30px;
+                    line-height: 37px;
+                    font-size: 14px;
+                    color: #666;
+                  }
+                }
+              }
+              .sub_activity{
+                margin: 10px 30px 8px;
+                dt{
+                  height: 22px;
+                  line-height: 22px;
+                  text-align: center;
+                  font-size: 13px;
+                  color: #FFF;
+                  background-color: #e63547;
+                  margin-bottom: 11px;
+                }
+                dd{
+                  overflow: hidden;
+                  white-space: nowrap;
+                  display: block;
+                  width: 100%;
+                  a{
+                    color: #666;
+                    font-size: 13px;
+                    line-height: 22px;
+                  }
+                }
+              }
+            }
+            .category_arrow{
+              position: absolute;
+              right: 12px;
+              top: 50%;
+              margin-top: -6px;
+              width: 7px;
+              height: 13px;
+              background: url("../../index/Images/sprite_category_arrow.png") no-repeat;
+            }
+          }
+        }
+        .itme3{
+          .category_content{
+            top:-25px!important;
+          }
+        }
+        .itme4{
+          .category_content{
+            top:-130px!important;
+          }
+        }
+        .itme5{
+          .category_content{
+            top:-188px!important;
+          }
+        }
+        .itme6{
+          .category_content{
+            top:-188px!important;
+          }
+        }
+        .itme7{
+          .category_content{
+            top:-188px!important;
+          }
+        }
+      }
+    }
+    //导航-----------
+    .nav_main{
+      padding-left: 219px;
+      ul{
+        border-left: 1px solid #da5b61;
+        li{
+          float: left;
+          position: relative;
+          a{
+            padding: 0 30px;
+            display: inline-block;
+            height: 40px;
+            line-height: 39px;
+            font-size: 16px;
+            color: #FFF;
+            white-space: nowrap;
+            text-align: center;
+            &:hover{
+              background-color: #d9141e;
+            }
+            img{
+              position: absolute;
+              right: 12px;
+              top: -5px;
+              line-height: 1.2;
+            }
+          }
+
+        }
+        .current{
+          background-color: #ba181f;
+        }
+        .more{
+          position: relative;
+          &:hover{
+            i.more_arrow{
+              background: url("../../index/Images/sprite_category_up.png");
+            }
+            ol{
+              display: block;
+              z-index:3333;
+            }
+
+          }
+          .more_arrow{
+            display: inline-block;
+            width: 8px;
+            height: 4px;
+            vertical-align: 4px;
+            margin-left: 5px;
+            background: url("../../index/Images/sprite_category_down.png");
+          }
+          ol{
+            position: absolute;
+            border: 1px solid #e8e8e8;
+            border-top: 0 none;
+            left: -1px;
+            top: 40px;
+            background-color: #FFF;
+            display: none;
+            li{
+              float: none;
+              a{
+                color: #636363;
+                height: 34px;
+                line-height: 34px;
+                background-color: #fff;
+                text-align: left;
+                font-size: 14px;
+                min-width: 80px;
+                &:hover{
+                  background-color: #fbfaf9;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../model/totop";
+@import "../model/small_sixside";
+//重写导航样式
+.header,.top_about_content{
+  background-color: rgba(255,255,255,0.3);
+  -pie-background: rgba(255,255,255,0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+}
+.header{
+  position: absolute;
+}
+.header_logo {
+  background: url("../../Images/sprite_header_logo2.png");
+}
+.header_nav ul a{
+  color: #fff;
+}
+.top_arrow{
+  border-color: #fff transparent transparent transparent;
+}
+
+.header.header_active{
+  background-color: #424fab;
+}
+@keyframes animateBorder1 {
+  0%  { opacity:1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:1; }
+}
+@keyframes animateBorder2 {
+  0%  { opacity:0.1; }
+  15%  { opacity:1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:1; }
+  100% { opacity:0.1; }
+}
+@keyframes animateBorder3 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:1; }
+  50% { opacity:0.1; }
+  70% { opacity:1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@keyframes animateBorder4 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@-moz-keyframes animateBorder1 {
+  0%  { opacity:1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:1; }
+}
+@-moz-keyframes animateBorder2 {
+  0%  { opacity:0.1; }
+  15%  { opacity:1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:1; }
+  100% { opacity:0.1; }
+}
+@-moz-keyframes animateBorder3 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:1; }
+  50% { opacity:0.1; }
+  70% { opacity:1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@-moz-keyframes animateBorder4 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@-o-keyframes animateBorder1 {
+  0%  { opacity:1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:1; }
+}
+@-o-keyframes animateBorder2 {
+  0%  { opacity:0.1; }
+  15%  { opacity:1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:1; }
+  100% { opacity:0.1; }
+}
+@-o-keyframes animateBorder3 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:1; }
+  50% { opacity:0.1; }
+  70% { opacity:1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@-o-keyframes animateBorder4 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@-ms-keyframes animateBorder1 {
+  0%  { opacity:1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:1; }
+}
+@-ms-keyframes animateBorder2 {
+  0%  { opacity:0.1; }
+  15%  { opacity:1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:1; }
+  100% { opacity:0.1; }
+}
+@-ms-keyframes animateBorder3{
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:1; }
+  50% { opacity:0.1; }
+  70% { opacity:1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@-ms-keyframes animateBorder4 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@-webkit-keyframes animateBorder1 {
+  0%  { opacity:1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes animateBorder2 {
+  0%  { opacity:0.1; }
+  15%  { opacity:1; }
+  30% { opacity:0.1; }
+  50% { opacity:0.1; }
+  70% { opacity:0.1; }
+  85% { opacity:1; }
+  100% { opacity:0.1; }
+}
+@-webkit-keyframes animateBorder3 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:1; }
+  50% { opacity:0.1; }
+  70% { opacity:1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+@-webkit-keyframes animateBorder4 {
+  0%  { opacity:0.1; }
+  15%  { opacity:0.1; }
+  30% { opacity:0.1; }
+  50% { opacity:1; }
+  70% { opacity:0.1; }
+  85% { opacity:0.1; }
+  100% { opacity:0.1; }
+}
+
+//contact_top
+.contact_top{
+  height: 700px;
+  background: url(../../Images/contact/icon_contact_bg.png) #3a4f9f center no-repeat;
+  overflow: hidden;
+}
+.contact_btn{
+  width: 521px;
+  height: 252px;
+  margin: 153px auto 70px;
+  text-align: center;
+  position: relative;
+  .contact_btn_img{
+    position: absolute;
+    top:60px;
+    left:60px;
+    width: 400px;
+    height: 110px;
+    background: url(../../Images/contact/sprite_contact_btn.png) #fff center no-repeat;
+    background-size: 320px;
+  }
+  .border{
+    display: inline-block;
+    width: 465px;
+    height: 174px;
+    @include box-sizing();
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fff;
+    position: absolute;
+  }
+  .border4{
+    top:56px;
+    left: 56px;
+    -webkit-animation:animateBorder4 4s forwards infinite  ease;
+    -o-animation:animateBorder4 4s forwards infinite  ease;
+    animation:animateBorder4 4s forwards infinite  ease;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+
+  }
+  .border3{
+    top:38px;
+    left: 38px;
+    -webkit-animation:animateBorder3 4s forwards infinite  ease;
+    -o-animation:animateBorder3 4s forwards infinite  ease;
+    animation:animateBorder3 4s forwards infinite  ease;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay:0s;
+    animation-delay: 0s;
+  }
+  .border2{
+    top:18px;
+    left: 18px;
+    -webkit-animation:animateBorder2 4s forwards infinite  ease;
+    -o-animation:animateBorder2 4s forwards infinite  ease;
+    animation:animateBorder2 4s forwards infinite  ease;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+
+  .border1{
+    top:0;
+    left: 0;
+    -webkit-animation:animateBorder1 4s forwards infinite  ease;
+    -o-animation:animateBorder1 4s forwards infinite  ease;
+    animation:animateBorder1 4s forwards infinite  ease;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+}
+.contact_title{
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+}
+
+//联系我们详情
+.contact_detail{
+  padding-top: 50px;
+  height: 470px;
+  background-color: #3f51b5;
+  p{
+    margin-top:30px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    letter-spacing:5px;
+  }
+}
+//地址
+.map {
+  width: 100%;
+  height: 636px;
+}
+td input{
+  border:1px solid #e4e4e4;
+}

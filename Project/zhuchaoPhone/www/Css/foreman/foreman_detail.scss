@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+
+@import "../foreman/module/module_site";
+
+@import "../designer/module/module_block";
+@import "../designer/module/module_assess";
+
+.moudle_top{
+  h1{
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.icon_shoucang_link {
+  position: absolute;
+  right: -2px;
+  top:-2px;
+  padding: 13px;
+  .icon_shoucang_btn{
+    height: 22px;
+    background-size: 25px;
+  }
+}
+//banner部分
+.banner{
+  padding:10px 0;
+  height: 180px;
+  overflow: hidden;
+  background: url(../../../Images/mobile/foreman/icon_foreman_banner_bg.png) no-repeat;
+}
+.user_head{
+  margin:0 auto;
+  width: 70px;
+  height: 70px;
+  border-radius:100%;
+  overflow: hidden;
+  img{
+  width: 70px;
+  height: 70px;
+  border-radius:100%
+}
+}
+.user_name{
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  max-width: 90%;
+  margin:6px auto;
+}
+.user_infor{
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  @include staticEll();
+  span{
+    &:after{
+      margin:0 3px;
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height:12px;
+      vertical-align: -2px;
+      background-color: #fff;
+    }
+  }
+  span:last-child{
+    &:after{
+      display: none;
+    }
+  }
+}
+.user_impression{
+  max-width: 90%;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin:6px auto;
+}
+.user_btn{
+  width: 180px;
+  margin:15px auto 0;
+  font-size: 14px;
+  a{
+    float: left;
+    width: 80px;
+    height: 25px;
+    margin: 0 5px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    border:1px solid #fff;
+    @include box-sizing();
+
+  }
+}
+//导航
+.detail_nav{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 5%;
+  height: 45px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e4e4e4;
+  li{
+    float: left;
+    width: 33.33%;
+    line-height: 45px;
+    text-align: center;
+    position: relative;
+    a{
+      font-size: 16px;
+      color: #000;
+    }
+  }
+  .current{
+    &:before{
+      position: absolute;
+      content: "";
+      bottom:1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #093;
+    }
+    a{
+      color: #093;
+    }
+  }
+}
+//列表
+.details_text_list {
+  margin: 10px 0;
+  padding:0 10px;
+  background-color: #fff;
+  li{
+    padding:10px 3px;
+    font-size: 14px;
+    border-top: 1px solid #e4e4e4;
+  }
+  li:first-child{
+    border-top: none;
+  }
+  .item {
+    display: -webkit-box;
+  }
+  .key {
+    width: 20%;
+    color: #888;
+  }
+  .val {
+    width: 80%;
+    color: #000;
+  }
+}
+.module_block{
+  dl{
+    dt.title{
+      padding:5px 3px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+      color: #000;
+      border-bottom: 1px solid #e4e4e4;
+    }
+    dd{
+      margin:10px 3px;
+      font-size: 14px;
+      color: #888;
+      @include staticEll(1.6,1);
+    }
+  }
+}
+//最新案例
+.new_case_box{
+  margin-top:10px;
+}
+.new_case_img{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  img{
+    width:100%;
+    height: 400px;
+  }
+}
+#case{
+  position: relative;
+  .new_case_page{
+    padding:6px 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 10;
+    color: #fff;
+    background-color: rgba(0,153,51,0.7);
+  }
+}
+.new_case_text{
+  padding:10px 10px 0;
+  background-color: #fff;
+  h4{
+    font-size: 14px;
+    @include staticEll(1.6,1);
+  }
+  .user_infor{
+    font-size: 12px;
+    text-align: left;
+    color: #888;
+    @include staticEll(1.5,1);
+    span{
+      &:after{
+        background-color: #888;
+      }
+    }
+  }
+}
+.user_state{
+  margin-top: 10px;
+  border-top: 1px solid #e4e4e4;
+  background-color: #fff;
+  li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    color: #888;
+    position: relative;
+    i{
+      width: 15px;
+      height: 15px;
+      margin:-2px 10px;
+      display: inline-block;
+    }
+  }
+  li:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+    width: 1px;
+    height:20px;
+    background-color: #e4e4e4;
+  }
+  li:last-child{
+    &:after{
+      display: none;
+    }
+  }
+  .icon_ping i{
+    background: url(../../../Images/mobile/foreman/icon_pinglun.png) no-repeat;
+    background-size:15px;
+  }
+  .icon_shoucang i{
+    background: url(../../../Images/mobile/foreman/icon_shoucang_star.png) no-repeat;
+    background-size: 15px;
+  }
+  .icon_good i{
+    background: url(../../../Images/mobile/foreman/icon_good.png) no-repeat;
+    background-size: 15px;
+  }
+}
+.read_more{
+  margin:10px 0;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  a{
+    color: #888;
+    font-size: 12px;
+  }
+}
+////最新在建工地
+//.case_work{
+//  margin:10px 0;
+//  background-color: #fff;
+//}
+//.case_work_infor{
+//  padding:10px 10px 0;
+//  background-color: #fff;
+//}
+//.case_work_img{
+//  width: 144px;
+//  height: 90px;
+//  overflow: hidden;
+//  img{
+//    display: block;
+//    width: 144px;
+//    height: 90px;
+//  }
+//}
+//.case_work_text{
+//  height: 90px;
+//  margin-left:154px;
+//  position: relative;
+//  h4{
+//    font-size: 14px;
+//    @include staticEll(1.7,1);
+//    a{
+//      color: #000;
+//    }
+//    span{
+//      font-size: 12px;
+//      color: #888;
+//    }
+//  }
+//  ul{
+//    li{
+//      float: left;
+//      width: 50%;
+//      text-align: left;
+//      font-size: 12px;
+//      color: #888;
+//      @include staticEll(1.7,1);
+//    }
+//  }
+//  a.see_btn{
+//    display: inline-block;
+//    position: absolute;
+//    right: 0;
+//    bottom: 0;
+//    padding:5px 10px;
+//    color: #fff;
+//    font-size: 12px;
+//    text-align: center;
+//    background-color: #093;
+//  }
+//}

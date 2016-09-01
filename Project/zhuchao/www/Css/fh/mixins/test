@@ -1,0 +1,5 @@
+echo -n '@import' >> _mixins.scss
+ls *.scss | while read var
+do
+echo -n ,\"$var\" >> _mixins.scss
+done

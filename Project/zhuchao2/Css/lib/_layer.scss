@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "lib";
+body .layui-layer-setwin {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  line-height: initial;
+  a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 16px;
+    -webkit-transition: background 0.3s ease ;
+    -moz-transition: background 0.3s ease ;
+    -ms-transition: background 0.3s ease ;
+    -o-transition: background 0.3s ease ;
+    transition: background 0.3s ease ;
+    cursor: pointer;
+    background: none;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      vertical-align: 2px;
+      background: url("../../Images/layer/icon_off_757575.png?_nosprite") no-repeat;
+    }
+  }
+  a:hover {
+    @include opacity(80);
+  }
+}
+
+body .layui-layer-btn {
+  padding-top: 0!important;
+  padding-bottom: 15px;
+  a {
+    line-height: 28px;
+    height: 28px;
+    border-radius: 0;
+    display: inline-block;
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+    border: 1px solid #b0b0b0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: background-color 0.4s ease;
+    -webkit-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover{
+      @include opacity(80);
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+//左侧区块
+.l_section {
+  width: 205px;
+}
+
+.company_info {
+  border: 1px solid #e4e4e4;
+}
+
+.company_name {
+  padding: 0 15px 10px;
+  border-bottom: 1px solid #e4e4e4;
+  h1 {
+    width: 175px;
+    line-height: 20px;
+    max-height: 40px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    @include ell(2);
+  }
+  p {
+    img {
+      margin-right: 3px;
+    }
+  }
+}
+.l_main{
+  min-height: 400px;
+}
+  //公司介绍
+.company_intro {
+  padding: 0 15px 10px;
+  dl {
+    padding: 5px 0;
+    *zoom: 1; /*IE/7/6*/
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  dt {
+    width: 60px;
+    text-align: left;
+    float: left;
+    font-size: 13px;
+    color: #000;
+  }
+  dd {
+    padding-left: 65px;
+    font-size: 13px;
+    color: #666;
+  }
+}

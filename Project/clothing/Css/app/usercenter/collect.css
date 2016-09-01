@@ -1,0 +1,493 @@
+@charset "UTF-8";
+html, body {
+  background: #F8F8F8; }
+
+.user_left {
+  width: 224px; }
+
+.user_left_top {
+  position: relative;
+  overflow: hidden;
+  height: 234px;
+  background: #ffffff; }
+  .user_left_top img {
+    position: relative;
+    display: block;
+    margin: 63px auto 0;
+    width: 100px !important;
+    height: 100px !important;
+    z-index: 1; }
+  .user_left_top .change_img {
+    position: relative;
+    display: block;
+    width: 100px;
+    margin: -30px auto 0;
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr='#80000000', endColorstr='#80000000');
+    z-index: 9; }
+  .user_left_top p {
+    width: 100px;
+    margin: 5px auto 0;
+    text-align: center;
+    line-height: 1.5;
+    height: 1.5em;
+    overflow: hidden; }
+
+.user_left_inner {
+  margin-top: 10px;
+  padding-top: 25px;
+  background: #ffffff; }
+
+.user_left_title {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #000;
+  text-indent: 40px; }
+
+.left_list {
+  position: relative;
+  overflow: hidden; }
+  .left_list li {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #333;
+    text-indent: 65px; }
+
+.user_right {
+  width: 956px; }
+
+.user_right_title {
+  height: 60px;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 58px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.right_inner {
+  position: relative;
+  overflow: hidden;
+  min-height: 816px; }
+
+.right_nav {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fcfcfc;
+  border: 1px solid #e4e4e4; }
+  .right_nav span {
+    display: inline-block;
+    padding: 0 15px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 38px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+/*
+个人中心为空页面，在right_inner 上加一个 empty_box 类，
+*/
+.empty_box {
+  min-height: 431px !important; }
+
+.empty {
+  margin-top: 80px;
+  text-align: center; }
+  .empty h2 {
+    font-size: 30px; }
+  .empty p {
+    margin-top: 10px;
+    font-size: 18px; }
+
+.drop_menu {
+  width: 100px !important;
+  height: 30px !important;
+  font-size: 12px !important;
+  line-height: 29px !important; }
+
+.drop_menu .drop_arrow, .drop_menu .drop_arrow:after {
+  margin-top: -3px;
+  border: 7px solid transparent !important;
+  border-top-color: #ccc !important; }
+
+.drop_menu .drop_arrow:after {
+  right: -7px !important;
+  margin-top: -9px !important;
+  border-top-color: #fff !important; }
+
+.check_ele {
+  float: left;
+  margin-right: 25px; }
+  .check_ele input {
+    display: none; }
+  .check_ele input:checked + i:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #63bf82;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .check_ele i {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: -1px;
+    border: 1px solid #63bf82;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .check_ele span {
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.submit_btn {
+  display: block;
+  width: 140px;
+  height: 40px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .submit_btn:hover {
+    filter: alpha(opacity=85);
+    /* IE */
+    -moz-opacity: 0.85;
+    /* 老版Mozilla */
+    -khtml-opacity: 0.85;
+    /* 老版Safari */
+    opacity: 0.85;
+    /* 支持opacity的浏览器*/ }
+
+.recommend_box .pro_card {
+  background-color: #fff !important; }
+
+.pro_card {
+  width: 245px;
+  height: 350px;
+  margin-bottom: 40px;
+  float: left;
+  background-color: #fff;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease; }
+  .pro_card:hover {
+    position: relative;
+    z-index: 9999;
+    -webkit-box-shadow: 1px 2px 3px 3px #E4E4E4;
+    -moz-box-shadow: 1px 2px 3px 3px #E4E4E4;
+    box-shadow: 1px 2px 3px 3px #E4E4E4; }
+
+.pro_card .pro_card_inner {
+  margin: 10px;
+  background-color: #fcfcfc; }
+
+.pro_card .pro_img {
+  display: block;
+  width: 224px;
+  height: 224px; }
+  .pro_card .pro_img img {
+    width: 100%;
+    height: 100%; }
+
+.pro_card .pro_name {
+  display: block;
+  width: 195px;
+  margin: 0 auto;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-top: 20px;
+  line-height: 20px;
+  max-height: 40px;
+  font-size: 13px;
+  color: #666; }
+
+.pro_card .pro_price {
+  padding: 15px;
+  font-size: 13px;
+  text-align: right; }
+
+/*
+              <div class="pro_card">
+                    <div class="pro_card_inner">
+                        <a class="pro_img" href="#"><img src="../../Images/test/test_img2.png"></a>
+                        <a class="pro_name main_hover" href="#">新疆和田玉山流水玉牌 太白醉酒 41.4克新疆和田玉山流水玉牌 </a>
+                        <p class="pro_price main">￥<em>799.00</em></p>
+                    </div>
+
+                </div>*/
+.recommend_title {
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #333; }
+
+.recommend_title span {
+  float: right;
+  width: 60px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 18px;
+  cursor: pointer;
+  color: #999;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.recommend_box {
+  margin: 0 -10px; }
+  .recommend_box .pro_card {
+    width: 224px;
+    height: 325px;
+    overflow: hidden;
+    background-color: #fcfcfc;
+    float: left;
+    margin: 0 10px 20px; }
+  .recommend_box .pro_img {
+    display: block;
+    width: 224px;
+    height: 224px; }
+    .recommend_box .pro_img img {
+      width: 100%;
+      height: 100%; }
+  .recommend_box .pro_name {
+    display: block;
+    width: 195px;
+    margin: 0 auto;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-top: 20px;
+    line-height: 20px;
+    max-height: 40px;
+    font-size: 13px;
+    color: #666; }
+  .recommend_box .pro_price {
+    padding: 15px;
+    font-size: 13px;
+    text-align: right; }
+
+.page_list {
+  padding: 20px 0;
+  margin-right: -10px;
+  text-align: center;
+  height: 32px;
+  line-height: 33px;
+  font-size: 14px; }
+  .page_list a {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 11px;
+    background-color: #fff;
+    color: #888;
+    border: 1px solid #e4e4e4; }
+  .page_list span {
+    display: inline-block; }
+  .page_list input {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .page_list b {
+    margin-right: 10px; }
+
+.page_submit {
+  margin-left: 10px;
+  width: 45px;
+  height: 27px;
+  line-height: 25px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.page_list .no_all_b {
+  border: 0 !important;
+  padding: 0 !important;
+  background-color: transparent; }
+
+/*
+<!--分页-->
+<div class="page_list">
+<p>
+<a class="prev_page" href="#">上一页</a>
+<a class="main_bg main_border" href="#">1</a>
+<a href="#">2</a>
+<a href="#">3</a>
+<a href="#">4</a>
+<a href="#">5</a>
+<a class="no_all_b" href="#">......</a>
+<a href="#">100</a>
+<a class="next_page no_marginR" href="#">下一页</a>
+</p>
+</div>*/
+.user_right {
+  overflow: hidden; }
+
+.collect_title {
+  margin: 20px 0; }
+  .collect_title span {
+    float: left; }
+
+.choose_all {
+  font-size: 14px;
+  line-height: 30px; }
+  .choose_all i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    line-height: 9px;
+    font-size: 12px;
+    border: 1px solid #e4e4e4;
+    background: #ffffff;
+    cursor: pointer; }
+
+.del_checked {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-left: 25px;
+  line-height: 28px;
+  font-size: 12px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.collect_box {
+  margin-right: -20px; }
+
+.pro_card {
+  position: relative;
+  width: 224px;
+  height: 335px;
+  margin-bottom: 20px;
+  margin-right: 20px; }
+  .pro_card:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+    .pro_card:hover .del_pro_btn {
+      display: block; }
+
+.pro_card .pro_card_inner {
+  position: relative;
+  margin: 0;
+  background: #ffffff; }
+
+.del_pro_btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  font-size: 18px;
+  color: #888;
+  cursor: pointer; }
+
+.check_btn {
+  position: absolute;
+  bottom: 18px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  line-height: 9px;
+  font-size: 12px;
+  border: 1px solid #e4e4e4;
+  background: #ffffff;
+  cursor: pointer; }
+
+.del_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 225px;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr='#66000000', endColorstr='#66000000'); }
+  .del_box h4 {
+    margin-top: 75px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center; }
+  .del_box span {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.empty {
+  margin-top: 125px; }
+
+/*# sourceMappingURL=collect.css.map */

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.route {
+  line-height: 40px;
+  font-size: 14px; }
+  .route span {
+    margin: 0 0.2em;
+    font-family: sans-serif; }
+
+.personal_center .left_side {
+  width: 210px;
+  min-height: 840px;
+  padding: 30px 10px;
+  background-color: #fff; }
+  .personal_center .left_side h1 {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #333; }
+  .personal_center .left_side ul {
+    padding: 10px 0; }
+    .personal_center .left_side ul li {
+      height: 32px;
+      line-height: 32px;
+      text-align: center; }
+      .personal_center .left_side ul li a {
+        font-size: 14px; }
+
+.right_side {
+  width: 800px;
+  min-height: 870px;
+  padding: 0 30px 30px;
+  background-color: #fff; }
+  .right_side .item_title {
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #e4e4e4; }
+
+.page {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top: 30px\9;
+  margin: 30px auto 0; }
+
+.page a, .c_page_text, .c_page_btn {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 12px;
+  line-height: 30px;
+  border: 1px solid #e0e0e0;
+  color: #999;
+  margin-right: 5px;
+  cursor: pointer;
+  font-family: "SimSun"; }
+
+.page a.now_page:hover {
+  cursor: default;
+  color: #999; }
+
+.page a:hover {
+  color: #ff6700;
+  background-color: #fff;
+  border-color: #ff6700; }
+
+.page a.active {
+  background: #fff;
+  color: #e1e1e1; }
+
+.page a.current {
+  background: #ff6700;
+  color: #fff;
+  border-color: #ff6700;
+  cursor: default; }
+
+.page span {
+  padding-left: 25px; }
+
+.c_page_text {
+  width: 16px;
+  background: #fff; }
+
+.c_page_btn {
+  font-family: "Microsoft YaHei", serif; }
+
+.no_have {
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  font-size: 14px; }
+  .no_have a:hover {
+    text-decoration: underline; }
+
+/*c_gotop*/
+#totop {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000; }
+
+.m_coupon {
+  min-height: 725px; }
+
+.coupon_nav {
+  padding: 20px 0 10px;
+  margin: 0 20px; }
+  .coupon_nav li {
+    float: left;
+    font-size: 16px;
+    padding: 0 20px;
+    height: 15px;
+    line-height: 12px;
+    border-right: 1px solid #e4e4e4;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.coupon_price, .coupon_status {
+  width: 100px; }
+
+.coupon_code {
+  width: 240px; }
+
+.coupon_name, .coupon_time {
+  width: 180px; }
+
+.c_coupon {
+  height: 70px;
+  font-size: 14px;
+  color: #666; }
+  .c_coupon > div {
+    float: left;
+    display: table;
+    height: 100%; }
+    .c_coupon > div > span {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+  .c_coupon .coupon_price {
+    font-size: 24px;
+    text-indent: 16px; }
+    .c_coupon .coupon_price i {
+      font-size: 14px; }
+
+.coupon_status .btn {
+  width: 100px;
+  border: 0;
+  line-height: 32px;
+  height: 32px;
+  font-size: 12px; }
+
+.lose_efficacy {
+  border: 1px solid transparent !important;
+  color: #999;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .lose_efficacy:hover {
+    color: #fff;
+    background-color: #e4e4e4; }

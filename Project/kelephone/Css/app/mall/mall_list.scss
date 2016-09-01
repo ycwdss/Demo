@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "../../lib/module/productcard";
+//商品列表导航
+.mall_list_nav{
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  width: 100%;
+  border:1px solid #e3e3e8;
+  .nav_list{
+    width: 25%;
+    height: 94%;
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px ;
+    border-bottom-color: #fff;
+  }
+  .nav_list.current{
+    color:#e60012;
+    border-bottom-color: #e60012;
+  }
+}

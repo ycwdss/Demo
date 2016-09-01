@@ -1,0 +1,132 @@
+@charset "UTF-8";
+.l_content {
+  position: relative;
+  margin: 20px auto 50px;
+  width: 1300px;
+  min-height: 700px; }
+
+.m_list {
+  width: 170px;
+  float: left; }
+
+.list_top {
+  display: block;
+  padding: 20px 0 20px;
+  width: 170px;
+  height: 90px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 35px;
+  background: #fcfcfc;
+  border-bottom: 1px solid #e4e4e4; }
+
+.c_list {
+  display: block;
+  width: 170px;
+  height: 90px;
+  font-size: 16px;
+  line-height: 90px;
+  background: #fcfcfc;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 2px; }
+
+.c_list span {
+  color: #000; }
+
+.c_list_bg {
+  background: #093; }
+
+.c_list_bg span {
+  color: #ffffff; }
+
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+.m_aboutus {
+  position: relative;
+  float: right;
+  width: 830px;
+  padding: 92px 135px;
+  font-size: 15px;
+  line-height: 35px;
+  text-indent: 30px;
+  color: #333;
+  background: #fcfcfc; }
+
+.m_aboutus h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  text-indent: 20px;
+  color: #093;
+  line-height: 70px;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 20px; }
+
+.rz_title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 70px;
+  color: #333;
+  font-weight: bold; }
+
+.connect {
+  text-align: center;
+  font-size: 15px; }
+
+.connect h2 {
+  color: #888;
+  line-height: 80px; }
+
+.connect p span {
+  letter-spacing: 5px; }
+
+.indent {
+  display: block;
+  text-indent: 30px;
+  line-height: 30px; }
+
+/*ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½*/
+.m_connect {
+  position: relative;
+  float: right;
+  width: 750px;
+  padding: 40px 175px 50px;
+  background: #fcfcfc; }
+
+.connect_top {
+  margin-bottom: 25px; }
+
+.connect_top_left {
+  float: left; }
+
+.connect_top_left span {
+  float: left;
+  line-height: 28px;
+  font-size: 15px;
+  color: #333; }
+
+.connect_common {
+  display: block;
+  width: 15px;
+  height: 18px;
+  margin-right: 15px;
+  margin-top: 4px; }
+
+.connect_2weima {
+  float: right;
+  width: 120px;
+  height: 120px;
+  background: url(../../Images/pc/icon.png) 0 -60px; }
+
+.connect_2weima img {
+  width: 120px;
+  height: 120px; }
+
+.connect_map img {
+  width: 750px; }
+
+.m_connect, .mianze, .ruzhu, .emp {
+  display: none; }

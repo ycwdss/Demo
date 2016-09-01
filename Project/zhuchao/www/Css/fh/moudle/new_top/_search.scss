@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import "../../../fh/lib";
+
+//搜索框横条
+
+///头部信息
+.index_header {
+  height: 114px;
+  background-color: #fff;
+  >.con_width{
+    height: 114px;
+  }
+}
+.index_header_logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.icon_slogan {
+  width: 200px;
+  height: 16px;
+  margin-top: 42px;
+  margin-left: 10px;
+  background: url(../../Images/sprite_index_slogan.png) no-repeat;
+}
+.index_header_right{
+  margin-top:40px;
+}
+.mall_header_right{
+  margin-top:15px;
+}
+.m_searchWrap{
+  position: relative;
+  width: 422px;
+  height: 35px;
+  top:0;
+  margin-left: 100px;
+  float: left;
+  background: #ffffff;
+  z-index: 2;
+}
+.c_searchInput {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 14px;
+  &:before {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: 2;
+    content: "";
+    display: block;
+    border: 1px solid rgba(0, 153, 51, 0);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  &:hover:before {
+    border: 1px solid rgba(0, 153, 51, 1);
+  }
+}
+.c_searchItem{
+  float: left;
+  //top:50%;
+  //margin-top:-17.5px;
+  font-size: 14px;
+  height: 35px;
+  width: 70px;
+}
+.c_search_button{
+  position: relative;
+  width: 90px;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  background-image: none;
+  text-align: center;
+  box-sizing:border-box;
+  z-index: 1;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  span {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+.c_search_button:hover{
+  background:#fff;
+  border-color: #093;
+  border-bottom:1px solid #093;
+  -webkit-box-shadow:1px 1px 1px #ccc;
+  -moz-box-shadow: 1px 1px 1px #ccc;
+  box-shadow:1px 1px 1px #ccc;
+  span {
+    color: #093;
+  }
+}
+#search.search_input{
+  position: relative;
+  z-index:3;
+  width:79%;
+}
+#searchItems{
+  width: 70px;
+  height: 35px;
+  font-size: 14px;
+  overflow: hidden;
+  background: #ffffff;
+}
+#searchItems span{
+  float: left;
+  display: block;
+  text-indent: 13px;
+  line-height: 35px;
+  border-left:1px solid #e4e4e4;
+  border-right:1px solid #e4e4e4;
+  border-bottom:1px solid #e4e4e4;
+  width: 70px;
+  height: 35px;
+  font-size: 14px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  @include transition();
+  &:hover{
+    border-color:#093;
+  }
+}
+
+.c_notCurrent:hover,.c_login a:hover{
+  color: #ffffff;
+  background: #009933;
+}
+#currentItem{
+  border-top:1px solid #e4e4e4;
+}
+
+.c_searchArrow{
+  position: absolute;
+  display: block;
+  left:49px;
+  top:17px;
+  height: 0;
+  width: 0;
+  border-width: 5px;
+  border-left: 5px solid transparent;
+  border-right:5px solid transparent;
+  cursor: pointer;
+  border-top: 5px solid #888;
+  transition:  transform 0.1s;
+  -moz-transition:  -moz-transform 0.1s;
+  -webkit-transition:-webkit-transform 0.1s;
+  -o-transition: -o-transform 0.1s;
+}
+.arrowNow{
+  transform:rotate(180deg);
+}
+
+#searchSuggest{
+  display: none;
+  position: absolute;
+  top:35px;
+  width: 250px;
+  background: white;
+  left:70px;
+  font-size: 15px;
+  line-height: 30px;
+  border-top: none;
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.1);
+  z-index:99999;
+  .current_item{
+    background: #eee;
+  }
+}
+#searchSuggest li{
+  cursor:pointer;
+  padding-left: 10px;
+  color:#888;
+}
+#searchSuggest li:hover{
+  background: #eee;
+}

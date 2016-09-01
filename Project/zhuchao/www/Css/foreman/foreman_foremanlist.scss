@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@import "../fh/style";
+@import "../fh/moudle/list_sort";
+@import "../fh/moudle/_list";
+@import "../fh/moudle/foreman/case_ele";
+/*覆盖模型*/
+.list{
+  width: 1010px;
+}
+.lis_choice{
+  width: 760px;
+}
+.lis_long{
+  li{
+    width: 90px;
+  }
+}
+.lis_long  .total{
+  width: 75px;
+}
+.m_price {
+  .lis_choice{
+    width: 800px;
+  }
+}
+.price{
+  line-height: 50px;
+  span{
+    float: left;
+  }
+  input{
+    float: left;
+    width: 40px;
+    height: 20px;
+    margin: 14px 5px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+    line-height: 20px;
+  }
+  .submit{
+    width: 42px;
+    height: 22px;
+  }
+}
+.content_left{
+  width: 1010px;
+  @include box-sizing();
+  padding-right: 20px;
+}
+.choose_list{
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+/*左侧，工长信息*/
+.foreman_content{
+  margin-bottom: 100px;
+}
+.foreman_ele{
+  position: relative;
+  margin: 20px 0 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e4e4e4;
+  font-size: 12px;
+  color: #888;
+  line-height: 22px;
+}
+.foreman_img{
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  @include border-radius(50px);
+  img{
+    width: 100px!important;
+    height: 100px!important;
+    @include border-radius(50px);
+  }
+}
+.foreman_infor{
+  width: 870px;
+  position: relative;
+}
+.forman_title{
+  h3{
+    display: inline-block;
+    font-size: 17px;
+    color: #000;
+    line-height: 34px;
+    margin-right: 30px;
+    a{
+      color: #000;
+      &:hover{
+        color: $activeColor;
+      }
+    }
+  }
+  >span{
+    display: inline-block;
+    color: #666;  
+    font-size: 12px;
+    >span{
+      font-size: 16px;
+      color: $normalColor;
+    }
+  }
+}
+.score{
+  span{
+    float: left;
+  }
+}
+.star{
+  width: 13px;
+  height:13px;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.star1{
+  background: url("../../foreman/Images/sprite_star1.png");
+}
+.star2{
+  background: url("../../foreman/Images/sprite_star2.png");
+}
+.score_text{
+  margin-left: 10px;
+  span{
+    color: $normalColor;
+  }
+}
+.congye{
+  width: 100%;
+  overflow: hidden;
+  div{
+    float: left;
+    width: 110px;
+    height: 22px;
+    overflow: hidden;
+    @include ell(1);
+    span{
+      color: #333;
+    }
+  }
+}
+.impress{
+  width: 100%;
+  overflow: hidden;
+  span{
+    margin-right: 30px;
+    color: #333;
+  }
+}
+.store{
+  position: absolute;
+  right: 0;
+  top: 0;
+  span{
+    float: left;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: $normalColor;
+    margin-right: 10px;
+    cursor: pointer;
+    @include transition();
+    &:hover{
+      background: #048b31;
+      -webkit-box-shadow: 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px #ccc;
+    }
+  }
+}
+.show_case{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  color: $normalColor;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.case_arrow{  
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 13px;
+  height: 8px;
+  background: url("../../foreman/Images/sprite_foreman_arrowdown1.png");
+}
+.arrow_up{
+  background: url("../../foreman/Images/sprite_foreman_arrowup1.png");
+}
+.case{
+  margin: 0 10px;
+  display: none;
+}
+.case_ele_content{
+  height: 80px;
+  background: #f8f8f8;
+}
+.case_title{
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  @include ell();
+  line-height: 40px;
+}
+.case_detail{
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  >span{
+    span{
+      color: $activeColor;
+      font-size: 14px;
+    }
+  }
+}
+.clear_right{
+  margin-right: 0;
+}
+/*右侧*/
+.content_right{
+  h2{
+    display: block;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    line-height: 80px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+.m_show{
+  background: #f8f8f8;
+  margin-bottom: 20px;
+  width: 240px;
+  padding: 0 20px;
+}
+.show_ele{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e4e4e4;
+  line-height: 22px;
+  color: #888;
+}
+.show_ele_top{
+  margin-bottom: 15px;
+}
+.show_score{
+  width: 110px;
+  >span{
+    margin-top: 2px;
+  }
+}
+.show_congye .show_congye_right{
+  margin-right: 0;
+  float: right;
+}
+.more{
+  font-size: 16px;
+  line-height: 50px;
+  color: $normalColor;
+  text-align: center;
+  cursor: pointer;
+  a{
+    color: $normalColor;
+    &:hover{
+      color: $activeColor;
+    }
+  }
+}
+.case_show{
+ img{
+   display: block;
+   width: 230px!important;
+   height: 144px!important; ;
+   &:hover{
+     @include opacity(85);
+   }
+ }
+}
+.case_show_detail p:nth-child(1){
+  color: #333;
+  @include ell();
+  font-size: 14px;
+  line-height: 35px;
+  text-align: center;
+    a {
+      color: #333;
+      &:hover {
+        color: $activeColor;
+      }
+    }
+}
+.case_show_detail p:nth-child(2){
+  color: #888;
+  @include ell();
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  span{
+    color: #f60;
+    font-size: 16px;
+  }
+}
+.clear_border{
+  border: 0;
+}

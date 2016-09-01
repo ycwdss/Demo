@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.recommend {
+  margin-top: 20px;
+  padding: 0 45px 25px;
+  background-color: #fff;
+  h1 {
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #333;
+  }
+}
+
+.recommend_box {
+  margin: 14px 55px;
+  height: 240px;
+  overflow: hidden;
+  .item {
+    float: left;
+    width: 180px;
+    margin: 0 10px;
+    .pro_img {
+      display: block;
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .pro_name {
+      display: block;
+      width: 180px;
+      padding-top: 15px;
+      line-height: 24px;
+      font-size: 14px;
+      color: #333;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-align: center;
+    }
+    p{
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+/*推荐HTML*/
+/*
+<div class="recommend">
+<h1>特别推荐</h1>
+<div class="recommend_box clearfix">
+<div class="item">
+<a class="pro_img" href="#"><img src="../../Images/test/test_pro.png"></a>
+<a class="pro_name main_hover" href="#">西京大烤鸭，好吃流口水</a>
+<p class="main">￥188.00</p>
+</div>
+</div>
+</div>*/

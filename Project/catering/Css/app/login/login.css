@@ -1,0 +1,378 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/jiayin
+@charset "UTF-8";
+html {
+  width: 100%;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  min-width: 1200px;
+  height: 100%;
+  margin: 0;
+  background-color: #f8f8f8;
+  -webkit-overflow-scrolling: touch;
+  font: 12px/1.5 "Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif; }
+
+* {
+  word-break: break-all; }
+
+pre, html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, textarea, p, span, table, th, td, form, img, div {
+  margin: 0;
+  padding: 0;
+  word-break: break-all; }
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word; }
+
+.fontsong {
+  font-size: 12px;
+  font-family: "SimSun",serif; }
+
+img, a, input, button {
+  border: none;
+  outline: none;
+  background: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, b {
+  font-weight: normal;
+  cursor: hand; }
+
+em, i, b {
+  font-style: normal; }
+
+ul, ol {
+  list-style: none; }
+
+<<<<<<< HEAD
+=======
+.fr {
+  float: right;
+  *display: inline; }
+
+.fl {
+  float: left;
+  *display: inline; }
+
+>>>>>>> origin/jiayin
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+/**
+ * 文本对齐方式，左中右两端
+ */
+<<<<<<< HEAD
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+=======
+>>>>>>> origin/jiayin
+.tl {
+  text-align: left !important; }
+
+.tc {
+  text-align: center !important; }
+
+.tr {
+  text-align: right !important; }
+
+/**
+ * 文本强制不换行
+ */
+.text_nowrap {
+  white-space: nowrap;
+  word-wrap: normal; }
+
+/**
+ * 文本强制换行
+ */
+.text_break {
+  white-space: normal;
+  word-wrap: break-word; }
+
+/**
+ * 文字溢出显示省略号
+ * 1. Opera 9-10.6
+ * 2. Chrome 21+ bug https://bugs.webkit.org/show_bug.cgi?id=121902
+ */
+.text_ellipsis {
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  /* 1 */
+  text-overflow: ellipsis;
+  text-align: left;
+  /* 2 */ }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.noselect * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.hide {
+  display: none; }
+
+.conwidth {
+  width: 1200px;
+  margin: 0 auto; }
+
+.no_before:before {
+  display: none !important; }
+
+.no_after:after {
+  display: none !important; }
+
+.no_mt {
+  margin-top: 0 !important; }
+
+.no_mr {
+  margin-right: 0 !important; }
+
+.no_mb {
+  margin-bottom: 0 !important; }
+
+.no_ml {
+  margin-left: 0 !important; }
+
+.no_bt {
+  border-top: 0 !important; }
+
+.no_br {
+  border-right: 0 !important; }
+
+.no_bb {
+  border-bottom: 0 !important; }
+
+.no_bl {
+  border-left: 0 !important; }
+
+/*# sourceMappingURL=login.css.map */
+<<<<<<< HEAD
+=======
+@charset "UTF-8";
+/*--登录--*/
+.login_head {
+  height: 100px;
+  line-height: 100px;
+  background-color: #fff; }
+
+.login_head .head_box a {
+  display: inline-block;
+  max-width: 200px;
+  height: 70px;
+  margin-top: 15px; }
+  .login_head .head_box a img {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+.login_head .head_box ul li {
+  width: 180px;
+  float: left;
+  font-size: 16px;
+  color: #333; }
+  .login_head .head_box ul li i {
+    font-size: 50px;
+    margin-right: 15px;
+    vertical-align: middle; }
+  .login_head .head_box ul li .icon-zhengpincaigou {
+    font-size: 60px; }
+
+.login_content {
+  margin-top: 42px;
+  background-color: #fff; }
+
+.login_box {
+  padding: 100px 0 30px 65px; }
+
+.form_wrap {
+  width: 500px;
+  text-align: left; }
+
+.form_tab li {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  font-size: 20px;
+  color: #333;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative; }
+.form_tab .tab_line {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  z-index: 9999;
+  width: 250px;
+  height: 1px;
+  display: inline-block;
+  text-align: center; }
+  .form_tab .tab_line i {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: 6px;
+    cursor: pointer;
+    border-style: solid dashed dashed dashed;
+    border-color: #093 transparent transparent transparent;
+    border-bottom: none; }
+
+.form_box {
+  margin-top: 50px; }
+
+.form_list {
+  padding: 12px 0; }
+  .form_list input {
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 16px;
+    font-size: 14px; }
+
+.form_error {
+  font-size: 12px;
+  color: #ff6700; }
+  .form_error i {
+    margin-right: 5px; }
+
+.form_submit input {
+  font-size: 20px;
+  padding-left: 0;
+  cursor: pointer; }
+
+.login_auto {
+  font-size: 16px;
+  color: #999; }
+  .login_auto i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 5px;
+    vertical-align: -4px; }
+
+.forget_pw a {
+  font-size: 16px;
+  color: #999; }
+
+/*右侧图片*/
+.form_img {
+  margin: 20px 0 0 10px; }
+  .form_img a {
+    display: block;
+    width: 625px;
+    height: 460px;
+    text-align: center; }
+    .form_img a img {
+      width: 100%;
+      height: 100%; }
+
+.other_way {
+  margin-top: 60px;
+  width: 500px;
+  height: 1px;
+  background-color: #e4e4e4;
+  position: relative;
+  text-align: center; }
+  .other_way span {
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -60px;
+    background-color: #fff;
+    display: inline-block; }
+
+.other_way_icon {
+  margin-top: 30px;
+  text-align: center; }
+  .other_way_icon a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px; }
+  .other_way_icon .icon1 {
+    background: url("../../../Images/sprite/sprite_login_icon1.png") no-repeat; }
+  .other_way_icon .icon2 {
+    background: url("../../../Images/sprite/sprite_login_icon2.png") no-repeat; }
+  .other_way_icon .icon3 {
+    background: url("../../../Images/sprite/sprite_login_icon3.png") no-repeat; }
+
+.fill_img_yzm input, .fill_msg input {
+  width: 230px; }
+
+.get_img_yzm {
+  width: 230px;
+  height: 50px;
+  line-height: 50px; }
+  .get_img_yzm a img {
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 20px; }
+  .get_img_yzm a em {
+    font-size: 16px;
+    color: #999; }
+
+.get_msg input {
+  width: 230px;
+  color: #fff;
+  border: 0;
+  padding: 0;
+  cursor: pointer; }
+
+.form_agree {
+  margin-top: -5px; }
+  .form_agree a:hover {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=login.css.map */

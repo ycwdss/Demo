@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../lib/reset";
+@import "../../lib/commonclass";
+body,html{
+  height:100%;
+}
+.l_main{
+  position: relative;
+  min-width:1300px;
+  height:100%;
+  min-height:600px;
+  background:url("../../../Images/icon/icon_404_bg.jpg?_nosprite") ;
+}
+.content{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  width: 600px;
+  height: 280px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  img{
+    display: block;
+    width: 600px;
+    height: 165px;
+  }
+  p{
+    line-height: 25px;
+  }
+  a{
+    display: block;   
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin:10px auto  0;
+    background: #7d6fcb;
+    color: #FFFFFF;
+
+  }
+}

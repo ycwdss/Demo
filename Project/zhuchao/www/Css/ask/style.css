@@ -1,0 +1,392 @@
+html {
+    width: 100%;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    font: 12px/1.2 "Microsoft YaHei", serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    min-width: 1300px;
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+}
+
+html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, textarea, p, span, table, th, td, form, img {
+    margin: 0;
+    padding: 0;
+}
+
+img, a, input, button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    cursor: hand;
+}
+
+em {
+    font-style: normal;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.ar {
+    text-align: right;
+}
+
+/*basic_Width*/
+.conWidth {
+    width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mainWidth {
+    width: 969px;
+    height: 100%;
+}
+
+.mainWidth a:hover {
+    text-decoration: underline;
+}
+
+.m_asktop {
+    height: 68px;
+    background: #fafafa;
+    border-bottom: 1px solid #d1d1d1;
+    font-size: 16px;
+}
+
+/*m_topNav*/
+.m_topNav {
+    margin-right: 120px;
+}
+
+.m_topNav li {
+    float: left;
+}
+
+.m_topNav li a {
+    display: inline-block;
+    height: 68px;
+    line-height: 68px;
+    padding: 0 18px;
+    color: #000;
+}
+
+.m_topNav li a:hover, .m_topNav li a.current {
+    color: #fff;
+    background: #093;
+}
+
+.m_topNav span {
+    float: left;
+    margin-top: 10px;
+    margin-right: 16px;
+    display: inline-block;
+    width: 57px;
+    height: 53px;
+    background: url(../Images/bg.png) no-repeat;
+    background-position: -69px -231px;
+}
+
+/*m_search*/
+.m_search {
+    margin-top: 12px;
+    height: 45px;
+    line-height: 44px;
+    line-height: 44px \9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #093;
+}
+
+.c_search_title {
+    position: relative;
+    width: 85px;
+    /* height: auto; */
+    text-indent: 20px;
+    cursor: pointer;
+    border-right: 1px solid #093;
+}
+
+.c_search_title .c_sj {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    border: 7px solid;
+    border-color: #093 transparent transparent;
+}
+
+.c_subnav {
+    position: relative;
+    /* top:44px; */
+    left: -1px;
+    width: 87px;
+    z-index: 1300;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.c_subnav li {
+    border: 1px solid #093;
+    border-top: 0;
+    text-align: center;
+    text-indent: 0;
+}
+
+.c_search_text {
+    width: 60%;
+    line-height: 24px;
+    text-indent: 18px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", serif;
+}
+
+.c_search_btn {
+    position: relative;
+    width: 16%;
+    height: 44px;
+    line-height: 44px \9;
+    background: #093;
+    cursor: pointer;
+}
+
+.c_search_btn:after {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    z-index: 10;
+    display: block;
+    content: "";
+    width: 26px;
+    height: 26px;
+    background: url(../Images/bg.png);
+    background-size: 350px;
+    background-position: 0 -401px;
+}
+
+.m_user a {
+    display: inline-block;
+    width: 59px;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+}
+
+.m_user a:hover, .m_user a.current {
+    color: #fff;
+    background: #093;
+}
+
+/*c_gotop*/
+#totop {
+    width: 65px;
+    height: 65px;
+    background: url(../Images/bg.png) no-repeat;
+    background-position: 0 -442px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 300px;
+    right: 5%;
+    z-index: 1000;
+    display: none;
+}
+
+#totop:hover {
+    background-position: -67px -442px;
+}
+
+/*m_right*/
+.l_main_inner {
+    position: relative;
+}
+
+.m_right {
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    z-index: 333;
+    width: 306px;
+    height: 211px;
+    border: 1px solid #eee;
+    border-bottom: none;
+    background: #fafafa;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.m_right_fixed {
+    position: fixed;
+    top: 0;
+    right: 16%;
+}
+
+.m_right p {
+    padding-top: 44px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.m_right p span {
+    color: #f60;
+    font-size: 36px;
+}
+
+.m_right_btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 79px;
+    line-height: 79px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.m_right_btn:before {
+    position: absolute;
+    top: 19px;
+    left: 152px;
+    content: "";
+    width: 2px;
+    height: 40px;
+    background: #fff;
+}
+
+.m_right_btn a {
+    display: inline-block;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    background-color: #093;
+    border: 1px solid #093;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*page*/
+.page {
+    padding: 45px 0 80px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.page a, .c_page_text, .c_page_btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 12px;
+    line-height: 30px;
+    border: 1px solid #e0e0e0;
+    color: #000;
+    cursor: pointer;
+    background: #f6f6f6;
+}
+
+.page a:hover {
+    color: #f60;
+    background-color: #fff;
+}
+
+.page a.active {
+    background: #fff;
+    color: #e1e1e1;
+}
+
+.page a.current {
+    background: #fff;
+    color: #f60;
+    border: none;
+}
+
+.page span {
+    padding-left: 25px;
+}
+
+.c_page_text {
+    width: 16px;
+    background: #fff;
+}
+
+.c_page_btn {
+    font-family: "Microsoft YaHei", serif;
+}
+
+/*footer*/
+.l_footer {
+    height: 126px;
+    padding: 44px 0 113px;
+    border-top: 2px solid #093;
+    background: url(../Images/down_banner.png) no-repeat;
+}
+
+.l_footer p {
+    text-align: center;
+}
+
+.footer_nav {
+    padding-bottom: 33px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer_nav a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+.c_copy {
+    line-height: 26px;
+}
+
+.c_rz {
+    width: 176px;
+    height: 30px;
+    margin: 13px auto 0;
+}

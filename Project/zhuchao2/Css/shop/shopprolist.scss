@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/pagelist";
+.cover {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, .3);
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-property: opacity -webkit-transform;
+  transition-property: opacity transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  @include box-sizing();
+}
+.cover .cover_text {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  span {
+    width: 100%;
+    line-height: 325px;
+    display: inline-block;
+    text-align: center;
+    -webkit-align-self: center;
+    align-self: center;
+    -ms-flex-item-align: center;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: .05em;
+    color: #fff;
+  }
+}
+//产品导航
+.pro_nav{
+  height: 40px;
+  margin: 30px auto;
+  text-align: center;
+  li{
+    position: relative;
+    margin-right: 8px;
+    display: inline-block;
+    width: 110px;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+  li:hover{
+    .pro_sub_nav{
+      display: block;
+    }
+  }
+  .pro_sub_nav{
+    display: none;
+    width: 110px;
+    position: absolute;
+    top:40px;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+    li{
+      margin-bottom: 1px;
+      line-height: 40px;
+      background-color: #e4e4e4;
+      color: #666;
+    }
+    li:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+//产品列表
+.pro_list {
+  padding:50px 0;
+  overflow: hidden;
+  .pro_item {
+    margin: 0 -5px;
+    .pro_li {
+      float: left;
+      width: 242px;
+      margin: 0 5px 10px;
+      overflow: hidden;
+      >a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      >a:hover .cover {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+      }
+    }
+    .pro_item_img{
+      width: 242px;
+      height: 242px;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      overflow: hidden;
+      img{
+        display: inline-block;
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+      }
+    }
+    .pro_item_text{
+      padding:15px 0;
+      width: 100%;
+      text-align: center;
+      h4,p{
+        width: 80%;
+        margin: 0  auto;
+        display: block;
+        font-size: 18px;
+        color: #000;
+        text-align: center;
+      }
+      p{
+        color: #999;
+        margin-top: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+  .pro_item .pro_li a:hover{
+    h4{
+      color: #2e93d7 !important;
+    }
+  }
+}

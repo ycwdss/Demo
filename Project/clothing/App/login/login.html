@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/login_register/login.css">
+</head>
+<body>
+<div class="header">
+    <div class="header_inner conwidth clearfix">
+        <a class="header_logo " href="#">
+            <img src="../../Images/test/test_img.png">
+            <span>欢迎来到木木果果</span>
+        </a>
+        <ul class="clearfix main_hover">
+            <li>
+                <a href="#">登录</a>
+                <span class="line"></span>
+                <a href="#">注册</a>
+            </li>
+            <li><a href="#">订单中心</a></li>
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="#">手机版</a></li>
+        </ul>
+    </div>
+</div>
+<!--内容-->
+<div class="content conwidth">
+    <!--登陆-->
+    <div class="form_wrap hide">
+        <div class="form_title">
+            <a class="active main_border" href="#">登录</a>
+            <a href="#">注册</a>
+        </div>
+        <div class="form_list">
+            <input type="text" placeholder="请输入手机号">
+            <i class="icon-user"></i>
+        </div>
+        <div class="form_list">
+            <input type="password" placeholder="请输入密码">
+            <i class="icon-mima"></i>
+        </div>
+        <div class="form_operate clearfix">
+            <span class="fl"><em><i></i></em>自动登录</span>
+            <a class=" fr main_hover" href="#">忘记密码？</a>
+        </div>
+        <div class="form_submit">
+            <input class="sec_bg" type="submit" value="登录">
+        </div>
+    </div>
+    <!--注册-->
+    <div class="form_wrap ">
+        <div class="form_title">
+            <a href="#">登录</a>
+            <a class="active main_border" href="#">注册</a>
+        </div>
+        <div class="form_list">
+            <input type="text" placeholder="请输入手机号">
+        </div>
+        <div class="form_list">
+            <input type="password" placeholder="请输入密码">
+        </div>
+        <div class="form_list">
+            <input type="password" placeholder="请确认密码">
+        </div>
+        <div class="form_list form_img_yzm clearfix">
+            <input type="text" placeholder="请输入验证码">
+            <a href="#"><img src="../../Images/test/test_img.png"></a>
+        </div>
+        <div class="form_list form_msg_yzm">
+            <input type="text" placeholder="请输入验证码">
+            <input type="button" value="获取短信验证码">
+        </div>
+        <div class="form_list form_agree">
+            <em><i></i></em>我已阅读并同意<a class="sec main_hover" href="#">《XX用户注册协议》</a>
+        </div>
+        <div class="form_submit">
+            <input class="sec_bg" type="submit" value="注册">
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="login/login" src="../../Js/lib/require.js"></script>
+</body>
+</html>

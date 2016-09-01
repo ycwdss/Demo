@@ -1,0 +1,119 @@
+.case_ele {
+  margin-top: 20px; }
+
+.case_ele_head {
+  float: left;
+  width: 100px;
+  padding-right: 10px;
+  line-height: 35px;
+  text-align: right;
+  font-size: 14px;
+  color: #666; }
+
+.upload_button {
+  float: left;
+  width: 133px;
+  height: 35px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #093;
+  color: #093;
+  line-height: 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.upload_button:hover {
+  background: #093;
+  color: #FFF;
+  -moz-transition: .2s ease;
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease; }
+
+.upload_descri {
+  float: left;
+  font: 9pt SimSun, serif;
+  line-height: 35px;
+  color: #888;
+  margin-left: 10px; }
+
+.upload_detail {
+  padding-left: 110px;
+  margin-top: 20px;
+  overflow: hidden; }
+  .upload_detail > .upload_ele {
+    width: 400px;
+    padding: 30px 20px 20px;
+    background: #f8f8f8;
+    position: relative; }
+  .upload_detail img {
+    width: 400px;
+    height: 250px;
+    display: block; }
+  .upload_detail .del_case {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 14px;
+    height: 13px;
+    background: url("../../usercenter/Images/sprite_delete.png") no-repeat;
+    cursor: pointer; }
+
+.intro {
+  margin: 20px 0 0 10px;
+  font-size: 14px;
+  line-height: 35px; }
+  .intro span {
+    margin-right: 12px; }
+
+.intro_text {
+  width: 220px;
+  font-size: 14px;
+  line-height: 25px;
+  height: 37px;
+  resize: none;
+  outline-color: #093;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.upload_ele.upload_xiaoguotu {
+  float: left;
+  width: 280px;
+  margin-right: 20px; }
+  .upload_ele.upload_xiaoguotu img {
+    width: 280px;
+    height: 175px; }
+
+.upload_ele.more_img {
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+  .upload_ele.more_img img {
+    width: 280px;
+    height: 175px; }
+
+.submit {
+  width: 80px;
+  margin: 50px auto 0; }
+  .submit > input {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    background: #093;
+    color: #FFFFFF;
+    font-family: "Microsoft YaHei " !important;
+    cursor: pointer;
+    border-color: #093; }
+    .submit > input:hover {
+      background: #048b31;
+      -webkit-box-shadow: 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px #ccc; }

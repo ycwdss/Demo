@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/pagelist";
+@import "../../module/usercenter";
+@import "../../module/pro_card";
+@import "../../module/empty";
+.content_title{
+  .item1{
+    font-size: 16px;
+  }
+  .item2{
+    font-size: 12px;
+  }
+}
+
+.my_collect{
+  margin-top: 20px;
+}
+.shops_cart{
+  margin-left: 20px;
+}
+.my_collect {
+  margin-top: 20px;
+  .pro_card{
+    width: 234px;
+    margin: 0px 13px 15px 0;
+    img{
+      width: 232px;
+      height: 232px;
+    }
+  }
+}

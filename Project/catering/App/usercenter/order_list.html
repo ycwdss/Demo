@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单列表</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/order_list.css">
+</head>
+<body>
+<div class="l_main clearfix conwidth">
+    <!--左侧导航-->
+    <div class="left_content fl">
+        <!--头像-->
+        <div class="user_head">
+            <a class="user_head_img">
+                <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+            </a>
+            <p class="user_name">西天大圣</p>
+            <a  class="main" href="basic_info.html">修改个人信息 &gt;</a>
+        </div>
+        <dl class="user_nav">
+            <dt>个人中心</dt>
+            <dd><a class="main_hover mainbd_hover" href="coupon.html">优惠券</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="collect.html">商品收藏</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="evaluate.html">我的评价</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="message.html">我的消息</a></dd>
+        </dl>
+        <dl class="user_nav">
+            <dt>我的订单</dt>
+            <dd><a class="main main_border" href="order_list.html">我的订单</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="refund_list.html">退换货</a></dd>
+        </dl>
+        <dl class="user_nav">
+            <dt>我的信息</dt>
+            <dd><a class="main_hover mainbd_hover" href="basic_info.html">基本信息</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="address.html">我的地址</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="change_pwd.html">修改密码</a></dd>
+        </dl>
+    </div>
+    <!--右侧信息-->
+    <div class="right_content fr">
+        <div class="right_title">
+            <h3>我的订单</h3>
+        </div>
+        <!--为空-->
+        <div class="empty_box">
+            <span><i class="icon-wudingdan"></i>
+                <b>您尚未有订单记录！
+                    <a href="../mall/index.html" class="main">返回首页去购买吧   &gt;&gt; </a>
+                </b>
+
+            </span>
+        </div>
+        <!--切换按钮-->
+        <div class="select_nav clearfix">
+            <div class="drop_wrap">
+                <div class="drop_menu">
+                    <div class="drop_show">全部订单</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li class="mainbg_hover">全部订单</li>
+                        <li class="mainbg_hover">待付款</li>
+                        <li class="mainbg_hover">待发货</li>
+                        <li class="mainbg_hover">待收货</li>
+                        <li class="mainbg_hover">已完成</li>
+                        <li class="mainbg_hover">已取消</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="order_box select_items">
+            <div class="order_title">
+                <div class="col order_good">商品</div>
+                <div class="col order_price">单价</div>
+                <div class="col order_num">数量</div>
+                <div class="col order_price">实付金额</div>
+                <div class="col order_status">交易状态</div>
+                <div class="col order_action">操作</div>
+            </div>
+            <div class="order_items">
+                <div class="col order_good">
+                    <a href="../mall/pro_info.html" class="col good_img">
+                        <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+                    </a>
+                    <div class="col good_test">
+                        <p class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">西京烤鲭鱼</a></p>
+                        <span class="col">2.5kg</span>
+                    </div>
+                </div>
+                <div class="col order_price">
+                    ¥188.0
+                </div>
+                <div class="col order_num">
+                    3
+                </div>
+                <div class="col order_price">
+                    299元
+                </div>
+                <div class="col order_status">
+
+                    <p>待付款</p>
+                    <a href="order_detail.html" class="mainbg_hover">订单详情</a>
+                </div>
+                <div class="col order_action">
+                    <a href="../cart/pay.html" class="main_bg">去付款</a>
+                    <a class="action_btn mainbg_hover">删除</a>
+                </div>
+                <p class="order_time clearfix">
+                    <span>订单号：134565654648</span>
+                    <span class="fr">下单时间：2016-02-02    12：22：22</span>
+                </p>
+            </div>
+            <div class="order_items">
+                <div class="col order_good">
+                    <a href="../mall/pro_info.html" class="col good_img">
+                        <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+                    </a>
+                    <div class="col good_test">
+                        <p class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">西京烤鲭鱼</a></p>
+                        <span class="col">2.5kg</span>
+                    </div>
+                </div>
+                <div class="col order_price">
+                    ¥188.0
+                </div>
+                <div class="col order_num">
+                    3
+                </div>
+                <div class="col order_price">
+                    299元
+                </div>
+                <div class="col order_status">
+
+                    <p>待付款</p>
+                    <a href="order_detail.html" class="mainbg_hover">订单详情</a>
+                </div>
+                <div class="col order_action">
+                    <a href="../cart/pay.html" class="main_bg">去付款</a>
+                    <a class="action_btn mainbg_hover">删除</a>
+                </div>
+                <p class="order_time clearfix">
+                    <span>订单号：134565654648</span>
+                    <span class="fr">下单时间：2016-02-02    12：22：22</span>
+                </p>
+            </div>
+            <!--分页布局-->
+            <div class="page_list">
+                <p>
+                    <a class="prev_page" href="#">上一页</a>
+                    <a class="main_bg main_border" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a class="no_all_b" href="#">......</a>
+                    <a href="#">100</a>
+                    <a class="next_page no_marginR" href="#">下一页</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/usercenter" id="require"
+        src="../../Js/lib/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/recommend";
+@import "../../module/pagelist";
+
+.cupon_nav{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 38px;
+  background: #fcfcfc;
+  border:1px solid #e4e4e4;
+  span{
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    border-bottom:2px solid transparent;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.coupon_price{
+  float: left;
+  width: 200px;
+}
+.coupon_time{
+  float: left;
+  width: 330px;
+}
+.coupon_condition{
+  float: left;
+  width: 300px;
+}
+.coupon_status{
+  float: left;
+  width: 124px;
+}
+.coupon_title{
+  font-size: 12px;
+  text-align: center;
+  line-height: 45px;
+  background: #ffffff;
+  border:1px solid #e4e4e4;
+}
+.coupon_ele{
+  margin-top: 20px;
+  background: #ffffff;
+  >div{
+    height: 100px;
+  }
+  .coupon_price{
+    position: relative;
+    background: #f55555;
+    color: #ffffff;
+    h4{
+      margin-top: 10px;
+      font-size: 36px;
+      text-align: center;
+    }
+    p{
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  .coupon_time{
+    line-height: 100px;
+    text-align: center;
+  }
+  .coupon_condition{
+    display: table;
+    text-indent: 40px;
+    padding:0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    >div{
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .coupon_status{
+    line-height: 100px;
+    text-align: center;
+  }
+}
+.used{
+  .coupon_price{
+    background: #3c619e;
+  }
+}
+.disable{
+  .coupon_price{
+    background: #dcdcdc;
+  }
+}
+.circle{
+  position: absolute;
+  top: 3px;
+  right: -5px;
+  li{
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    background: #ffffff;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+  }
+}

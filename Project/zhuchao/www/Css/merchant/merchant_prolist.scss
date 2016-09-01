@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import "../fh/lib";
+@import "../fh/moudle/list_sort";
+@import "../fh/moudle/mall/productCard2";
+//重写
+.routeInfo{
+  border: 0;
+  margin: 0 auto;
+}
+.l_main{
+  margin-bottom: 50px;
+}
+.m_prolist{
+  margin-bottom: 150px;
+}
+.mall_module_list li {
+  width: 244px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+  margin-bottom: 20px;
+  .mall_list_img {
+    width: 244px;
+    height: 152px;
+    display: block;
+  }
+  h4,p{
+    width: 86%;
+    margin:18px auto;
+  }
+}
+.clear_rightM{
+  margin-right: 0!important;
+}

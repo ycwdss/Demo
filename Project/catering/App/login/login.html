@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/login/login.css">
+</head>
+<body>
+<!--登陆头部-->
+<div class="login_head ">
+    <div class="head_box conwidth clearfix">
+        <a class="fl" href="#"><img src="../../Images/test/test_logo.png"></a>
+        <ul class="fr">
+            <li><i class="main icon-zhengpincaigou"></i>正品采购</li>
+            <li><i class="main icon-jinpaifuwu"></i>金牌服务</li>
+            <li><i class="main icon-quanweirongyu"></i>权威荣誉</li>
+        </ul>
+    </div>
+</div>
+<!--登录内容-->
+<div class="login_content conwidth">
+    <div class="login_box clearfix">
+       <div class="form_wrap fl">
+           <ul class="form_tab  clearfix">
+               <li>
+                   <a class="main" href="#">登录</a>
+                   <span class="tab_line main_bg"><i></i></span>
+               </li>
+               <li><a href="#">注册账号</a></li>
+
+           </ul>
+           <!--登录-->
+           <div class="form_box  ">
+               <div class="form_list">
+                   <input type="text" placeholder="请输入账号/手机号码">
+               </div>
+               <div class="form_list">
+                   <input type="text" placeholder="请输入密码">
+               </div>
+               <p class="form_error "><i class=" icon-tanhao"></i>用户名不存在或者密码错误</p>
+               <div class="form_list form_submit">
+                   <input class="main_bg main_border" type="submit" value="登录">
+               </div>
+               <div class="form_list clearfix">
+                  <div class="login_auto fl"><i class="main_border"></i>自动登录</div>
+                   <div class="forget_pw fr"><a class="main_hover" href="#">忘记密码？</a></div>
+               </div>
+               <!--其他方式登录-->
+               <div class="other_way"><span>用其他方式登录</span></div>
+               <div class="other_way_icon clearfix">
+                   <a class="icon1" href="#"></a>
+                   <a class="icon2" href="#"></a>
+                   <a class="icon3" href="#"></a>
+               </div>
+           </div>
+           <!--注册-->
+           <div class="form_box hide">
+               <div class="form_list">
+                   <input type="text" placeholder="请输入手机号码">
+               </div>
+               <div class="form_list">
+                   <input type="text" placeholder=" 请输入手机号 字母、数字、符号均可，6-25个字符的密码">
+               </div>
+               <div class="form_list">
+                   <input type="text" placeholder="请再次输入密码">
+               </div>
+               <div class="form_list clearfix">
+                   <div class="fill_img_yzm fl"><input type="text" placeholder="验证码"></div>
+                   <div class="get_img_yzm fr">
+                       <a href="#"><img src="../../Images/test/test_yzm.png"><em>换一张</em> </a>
+                   </div>
+               </div>
+               <div class="form_list clearfix">
+                   <div class="fill_msg fl"><input type="text" placeholder="验证码"></div>
+                   <div class="get_msg main_bg fr"><input type="button" value="获取短信验证码"></div>
+               </div>
+               <p class="form_error "><i class=" icon-tanhao"></i>用户名已存在</p>
+               <div class="form_list form_submit">
+                   <input class="main_bg main_border" type="submit" value="立即注册">
+               </div>
+               <p class="form_agree">点击注册，表示您同意神恩信息<a class="main" href="#">《神恩信息服务协议》</a></p>
+           </div>
+       </div>
+        <div class="form_img fr">
+            <a href="#"><img src="../../Images/test/test_login_bg.png"> </a>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="login/login" id="require" src="../../Js/lib/require.js"></script>
+</body>
+</html>

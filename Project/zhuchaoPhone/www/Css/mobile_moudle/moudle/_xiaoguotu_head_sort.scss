@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import "../lib";
+html,body{
+  height: 100%;
+  position: relative;
+}
+.sort{
+  width: 100%;
+  //margin-top: 45px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #e4e4e4;
+  li{
+    position: relative;
+    float: left;
+    width: 25%;
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+    line-height: 45px;
+  }
+  .current{
+    color: #093;
+    span{
+      @include arrow(bottom,6px,#093)
+    }
+  }
+  .sort_click{
+    color: #093;
+    span{
+      @include arrow(top,6px,#093);
+    }
+  }
+}
+.sort_arrow{
+  position: absolute;
+  top: 21px;
+  margin: 0 5px;
+  @include arrow(bottom,6px,#e4e4e4)
+}
+.sort_detail_bg{
+  display: none;
+  position: absolute;
+  top: 91px;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.3);
+}
+.sort_detail{
+  background: #FFFFFF;
+  padding-bottom: 20px;
+  font-size: 0.7rem;
+  line-height: 24px;
+  text-align: center;
+  li{
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 19%;
+    margin: 20px 3% 0;
+    @include ell();
+    height: 24px;
+    border: 1px solid #e4e4e4;
+  }
+  .sort_detail_click{
+    border: 1px solid #093;
+  }
+}

@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/recommend";
+@import "../../module/drop";
+@import "../../module/address_ele";
+@import "../../module/empty";
+
+
+.address_content{
+  position: relative;
+  overflow: hidden;
+  border-bottom:1px solid #e4e4e4;
+}
+.new_addr_btn{
+  width: 150px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+//新增收货地址
+.new_addr{
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.5);
+}
+.new_addr_content{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  width: 800px;
+  height: 480px;
+  background: #FFFFFF;
+  >h2{
+    position: relative;
+    margin:5px;
+    font-size: 20px;
+    line-height: 50px;
+    text-indent: 20px;
+    i{
+      position: absolute;
+      right: 20px;
+      top:0;
+      line-height: 50px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+.new_addr_container{
+  margin: 40px auto 0;
+  width: 400px;
+}
+.new_addr_ele{
+  position: relative;
+  margin-bottom: 20px;
+  >span{
+    float: left;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+  }
+  >input{
+    float: left;
+    width: 310px;
+    height: 30px;
+    padding:4px 10px;
+    line-height: 20px;
+    font-size: 13px;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+}
+.addr_tip{
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 180px;
+  line-height: 30px;
+}
+.set_default{
+  p{
+    float: left;
+    line-height: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    span{
+      float: left;
+      margin-top: 8px;
+      margin-right: 5px;
+      width: 12px;
+      height: 12px;
+      border:1px solid #aaa;
+      -webkit-border-radius:50%;
+      -moz-border-radius:50%;
+      border-radius:50%;
+    }
+    i{
+      display: none;
+      margin: 3px;
+      width: 6px;;
+      height: 6px;
+      background: #aaa;
+      -webkit-border-radius:50%;
+      -moz-border-radius:50%;
+      border-radius:50%;
+    }
+  }
+  .addr_checked{
+    i{
+      display: block;
+    }
+  }
+}
+.submit{
+  margin-left: 90px;
+  span,& input{
+    float: left;
+    width: 120px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 20px;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+// 重写select_btn
+.select_btn{
+  width: 95px;
+  margin-right: 12px;
+  ul{
+    width:95px;
+  }
+}
+.drop_menu{
+  float: left;
+  margin-right: 12px;
+  width: 95px!important;
+  height:30px!important;
+  line-height:28px!important;
+  .drop_list li{
+    height: 29px;
+  }
+}

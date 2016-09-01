@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情pro_info</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/slick.css"/>
+    <link rel="stylesheet" href="../../Css/app/mall/pro_info.css">
+</head>
+<body>
+<!--头部-->
+<div class="header main_bg">
+    <a class="icon_logo" href="index.html">
+        <img src="../../Images/test/test_mall_logo.png" alt=""/>
+    </a>
+    <div class="header_nav_box">
+        <ul class="header_nav">
+            <li><a class="mainbg_opacity" href="pro_list.html">鲜花</a></li>
+            <li><a class="mainbg_opacity" href="pro_list.html">永生花</a></li>
+            <li><a class="mainbg_opacity" href="pro_list.html">礼品</a></li>
+            <li><a class="mainbg_opacity" href="../new/new_list.html">花语大全</a></li>
+        </ul>
+    </div>
+    <ul class="header_icon">
+        <li class="mainbg_opacity icon_search"><i class="icon-search"></i></li>
+        <li class="mainbg_opacity"><i class="icon-cart"></i></li>
+        <li class="mainbg_opacity"><i class="icon-phone"></i>
+            <div class="icon_phone_pull main_bg">
+                <a><img src="http://statics-res.fhzc.com/Images/pc/icon_erweima.png"><span>扫码下载客户端</span></a>
+            </div>
+        </li>
+        <li class="mainbg_opacity">
+            <i class="icon-user-white"></i>
+            <span class="h_login">登录</span>
+            <span class="h_register">注册</span>
+        </li>
+    </ul>
+    <div class="search_box  main_bg hide">
+        <div class="search_box_inner">
+            <form action="" class="search_form">
+                <input class="search_input" type="text" required/><input
+                    class="search_btn" type="button" value="搜索"/>
+            </form>
+            <!--热门搜索-->
+            <div class="search_hot">
+                <h4>人气搜索关键词：</h4>
+                <a href="">玫瑰花</a>
+                <a href="">友情花</a>
+                <a href="">探望病人</a>
+                <a href="">永生花</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--商品详情-->
+<div class="main_box conwidth clearfix">
+    <!--商品图片-->
+    <div class="pro_img_box fl">
+        <div class="pro_big_img_box">
+            <a class="prev" href="javascript:void(0)"><i class="icon-jiantou-left"></i></a>
+            <!--商品切换-->
+            <div class="pro_big_img">
+                <div class="pro_big_img_li">
+                    <img src="../../Images/test/test_pro_img1.png" alt=""/>
+                </div>
+                <div class="pro_big_img_li">
+                    <img src="../../Images/test/test_pro_list2.png" alt=""/>
+                </div>
+                <div class="pro_big_img_li">
+                    <img src="../../Images/test/test_pro_list3.png" alt=""/>
+                </div>
+                <div class="pro_big_img_li">
+                    <img src="../../Images/test/test_pro_list4.png" alt=""/>
+                </div>
+                <div class="pro_big_img_li">
+                    <img src="../../Images/test/test_pro_img1.png" alt=""/>
+                </div>
+                <div class="pro_big_img_li">
+                    <img src="../../Images/test/test_pro_img3.png" alt=""/>
+                </div>
+                <div class="pro_big_img_li">
+                    <img src="../../Images/test/test_pro_img2.png" alt=""/>
+                </div>
+            </div>
+            <a class="next" href="javascript:void(0)"><i class="icon-jiantou-right"></i></a>
+        </div>
+        <!--弹出图片-->
+        <div class="pro_img_popup popup_box">
+            <div class="pro_img_popup_inner">
+                <i class="icon-cancel"></i>
+                <a class="popup_prev" href="javascript:void(0)"><i class="icon-jiantou-left"></i></a>
+                <!--商品切换-->
+                <div class="popup_big_img">
+                    <div class="popup_big_img_li">
+                        <img src="../../Images/test/test_pro_img1.png" alt=""/>
+                    </div>
+                    <div class="popup_big_img_li">
+                        <img src="../../Images/test/test_pro_list2.png" alt=""/>
+                    </div>
+                    <div class="popup_big_img_li">
+                        <img src="../../Images/test/test_pro_list3.png" alt=""/>
+                    </div>
+                    <div class="popup_big_img_li">
+                        <img src="../../Images/test/test_pro_list4.png" alt=""/>
+                    </div>
+                    <div class="popup_big_img_li">
+                        <img src="../../Images/test/test_pro_img1.png" alt=""/>
+                    </div>
+                    <div class="popup_big_img_li">
+                        <img src="../../Images/test/test_pro_img3.png" alt=""/>
+                    </div>
+                    <div class="popup_big_img_li">
+                        <img src="../../Images/test/test_pro_img2.png" alt=""/>
+                    </div>
+                </div>
+                <a class="popup_next" href="javascript:void(0)"><i class="icon-jiantou-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--商品介绍-->
+    <div class="pro_info_box fr">
+        <!--优惠券-->
+        <div class="coupon_btn noselect main_bg">
+            <span>领取优惠卷</span>&yen;
+            <div class="m_coupon bounceIn hide clearfix">
+                <div class="coupon_arrow"></div>
+                <div class="coupon_ele ">
+                    <span class="coupon_left">满100元减10</span>
+                    <span class="coupon_right">领取</span>
+                </div>
+                <div class="coupon_ele ">
+                    <span class="coupon_left">满100元减10</span>
+                    <span class="coupon_right">领取</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>厄瓜多尔进口蓝色永生玫瑰厄瓜多尔进口蓝色永生玫瑰厄瓜多尔进口蓝色永生玫瑰</h2>
+
+        <h3>海之恋----永生花盒</h3>
+
+        <dl class="pro_price pro_info_li">
+            <dt>价格</dt>
+            <dd>
+                <span class="main"> &yen;111.00 </span><span class="main_bg">8.5折</span><span
+                    class="del">&yen;140.00</span>
+            </dd>
+        </dl>
+
+        <div class="pro_info_li_box">
+            <dl class="pro_info_li">
+                <dt>类 别</dt>
+                <dd>
+                    礼品-永生花 编 号：1073010
+                </dd>
+            </dl>
+            <dl class="pro_info_li spec_box">
+                <dt>规 格</dt>
+                <dd>
+                    <ul>
+                        <li class="mainbg_hover main_border_hover">增强版</li>
+                        <li class="mainbg_hover main_border_hover">UEw-1</li>
+                        <li class="mainbg_hover main_border_hover">UEw-2</li>
+                        <li class="mainbg_hover main_border_hover">增强版</li>
+                        <li class="mainbg_hover main_border_hover">UEw-1</li>
+                        <li class="mainbg_hover main_border_hover">UEw-2</li>
+                        <li class="without">增强版</li>
+                        <li class="mainbg_hover main_border_hover">UEw-1</li>
+                        <li class="mainbg_hover main_border_hover">UEw-2</li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="pro_info_li">
+                <dt>材 料</dt>
+                <dd>
+                    FlowerSong系列薰衣草：进口薰衣草1扎，高档礼盒
+                </dd>
+            </dl>
+            <dl class="pro_info_li">
+                <dt>包 装</dt>
+                <dd>
+                    长形魔力铁山灰高档礼盒
+                </dd>
+            </dl>
+            <dl class="pro_info_li">
+                <dt>备 注</dt>
+                <dd>
+                    那一月，我转过所有经轮，不为超度，只为触摸你的指尖。”守住内心的信念，终会触摸到美好的爱情。
+                </dd>
+            </dl>
+            <dl class="pro_info_li">
+                <dt>附 送</dt>
+                <dd>
+                    免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)
+                </dd>
+            </dl>
+            <dl class="pro_info_li">
+                <dt>配 送</dt>
+                <dd>
+                    全国 （本商品通过快递公司或邮政EMS寄送，全国可达，包邮）
+                </dd>
+            </dl>
+        </div>
+        <!--数量-->
+        <dl class="pro_num pro_info_li noselect">
+            <dt>数量</dt>
+            <dd>
+                <div class="pro_count clearfix fl">
+                    <span class="btn_minus main_hover">-</span><input class="text" id="proNum" value="1"><span
+                        class="btn_add main_hover">+</span>
+                </div>
+                <span class="stock fl">库存数量34件</span>
+            </dd>
+        </dl>
+        <!--加入购物车-->
+        <div class="append_btn clearfix">
+            <a class="button main_bg" href="../cart/submit_order.html">立即购买</a>
+            <a class="button add_cart" href="">加入购物车</a>
+        </div>
+        <!--收藏和分享-->
+        <div class="share_box">
+            <span class="collect_btn"><i class="star">☆</i><span>收藏</span></span>
+            <span class="share">分享至</span>
+
+            <div class="bdsharebuttonbox">
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--商品图片列表-->
+<div class="pro_img_list_box conwidth">
+    <a class="list_prev" href="javascript:void(0)"><i class="icon-jiantou-left"></i></a>
+
+    <div class="pro_img_list clearfix">
+        <div class="pro_img_list_li">
+            <img src="../../Images/test/test_pro_img1.png" alt=""/>
+            <span class="main_bg"></span>
+        </div>
+        <div class="pro_img_list_li">
+            <img src="../../Images/test/test_pro_list2.png" alt=""/>
+            <span class="main_bg"></span>
+        </div>
+        <div class="pro_img_list_li">
+            <img src="../../Images/test/test_pro_list3.png" alt=""/>
+            <span class="main_bg"></span>
+        </div>
+        <div class="pro_img_list_li">
+            <img src="../../Images/test/test_pro_list4.png" alt=""/>
+            <span class="main_bg"></span>
+        </div>
+        <div class="pro_img_list_li">
+            <img src="../../Images/test/test_pro_img1.png" alt=""/>
+            <span class="main_bg"></span>
+        </div>
+        <div class="pro_img_list_li">
+            <img src="../../Images/test/test_pro_img3.png" alt=""/>
+            <span class="main_bg"></span>
+        </div>
+        <div class="pro_img_list_li">
+            <img src="../../Images/test/test_pro_img2.png" alt=""/>
+            <span class="main_bg"></span>
+        </div>
+    </div>
+    <a class="list_next" href="javascript:void(0)"><i class="icon-jiantou-right"></i></a>
+</div>
+<!--商品展示导航 begin-->
+<div id="fixedNav" class="fixed_nav hide">
+    <div class="fixed_nav_inner clearfix">
+        <dl class="fixed_nav_info">
+            <dt>
+                <img src="../../Images/test/test_pro_list2.png" alt=""/>
+            </dt>
+            <dd>
+                <h4>厄瓜多尔进口蓝色永生……</h4>
+
+                <p class="main"><span>&yen;</span>111.00</p>
+            </dd>
+        </dl>
+        <div id="fixedNavMenu" class="fixed_nav_menu">
+            <ul>
+                <li class="main_hover"><a>商品详情</a></li>
+                <li class="main_hover"><a>用户评价</a></li>
+            </ul>
+        </div>
+        <a class="fixed_nav_btn main_bg" href="../cart/cart.html">
+            立即购买
+        </a>
+    </div>
+</div>
+<!--产品展示导航 end-->
+<!--商品介绍-->
+<div class="pro_content conwidth">
+    <!--导航-->
+    <ul class="pro_info_nav clearfix">
+        <li class="main">商品详情</li>
+        <li class="main_hover">用户评价</li>
+    </ul>
+    <div class="pro_content_box">
+        <!--商品详情-->
+        <div class="pro_content_list">
+            <img src="../../Images/test/test_pro_list4.png" alt="">
+            <img src="../../Images/test/test_pro_list2.png" alt="">
+            <img src="../../Images/test/test_pro_img1.png" alt="">
+        </div>
+        <!--用户评价-->
+        <div class="pro_content_list comment_box hide">
+            <h2><span>用户评价</span></h2>
+            <div class="comment_title">
+                <span>综合评分</span>
+                <span class="line">|</span>
+                <i class="icon-star-black main"></i>
+                <i class="icon-star-black main"></i>
+                <i class="icon-star-black main"></i>
+                <i class="icon-star-black main"></i>
+                <i class="icon-star-black"></i>
+                <span>5.0分</span>
+                <!--<a href="../usercenter/evaluate_detail.html" class="comment_btn main_bg">发表评价</a>-->
+            </div>
+            <ul class="comment_box_item">
+                <li>
+                    <!--用户头像-->
+                    <div class="user_head">
+                        <img src="../../Images/icon/icon_user_head.jpg" alt=""/>
+                        <span>12***24</span>
+                    </div>
+                    <p class="comment_item_top">
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black"></i>
+                        <span>5.0分</span>
+                        <span class="time">2016.01.20  11:30:21</span>
+                    </p>
+                    <p class="comment_text">大屏旗舰，HiFi 双卡双待 索尼 1300 万像素 骁龙810 64位八核心处理器5.5 英寸，4k/3840x2160分辨率, IPS
+                        显示屏约2300万像素，24mm广角镜头，索尼G
+                        镜头1/2.3英寸影像传感器，ISO 12800高感光度镜头1/2.3英寸影像传感器，ISO 12800高高高高高高高高高高高高高高高高高高高高感光度镜头1/2.3英寸影像传器，ISO 12800高感光度镜头1/2.3英寸影像传感器，ISO 12800高感光度镜头1/2.3英寸影像传感器，ISO 12800高感光度镜头1/2.3英寸影像传感器感光度镜头1/2.3英寸影像传感器影像传感器......
+                        <a href="" class="main">更多</a></p>
+
+                    <p class="comment_item_down">
+                        <span>【海之恋----永生花盒】 厄瓜多尔进口蓝色永生玫瑰</span>
+                    </p>
+                </li>
+                <li>
+                    <!--用户头像-->
+                    <div class="user_head">
+                        <img src="../../Images/test/test_pro_img1.png" alt=""/>
+                        <span>12***24</span>
+                    </div>
+                    <p class="comment_item_top">
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black"></i>
+                        <span>5.0分</span>
+                        <span class="time">2016.01.20  11:30:21</span>
+                    </p>
+                    <p class="comment_text">大屏旗舰，HiFi 双卡双待 索尼 1300 万像素 骁龙810 64位八核心处理器5.5 英寸，4k/3840x2160分辨率, IPS
+                        显示屏约2300万像素，24mm广角镜头，索尼G
+                        镜头1/2.3英寸影像传感器，ISO 12800高感光度</p>
+
+                    <p class="comment_item_down">
+                        <span>【海之恋----永生花盒】 厄瓜多尔进口蓝色永生玫瑰</span>
+                    </p>
+                    <div class="answer">
+                        <span class="main">客服回复：</span>
+                        <span>亲，如果您在商品使用中遇到任何问题，请及时与我们联系，贵宾专线：4008756789，客服童鞋将会尽最大努力的帮您处理好问题的！</span>
+                    </div>
+                </li>
+                <li>
+                    <!--用户头像-->
+                    <div class="user_head">
+                        <img src="../../Images/test/test_pro_list2.png" alt=""/>
+                        <span>12***24</span>
+                    </div>
+                    <p class="comment_item_top">
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black main"></i>
+                        <i class="icon-star-black"></i>
+                        <span>5.0分</span>
+                        <span class="time">2016.01.20  11:30:21</span>
+                    </p>
+                    <p class="comment_text">大屏旗舰，HiFi 双卡双待 索尼 1300 万像素 骁龙810 64位八核心处理器5.5 英寸，4k/3840x2160分辨率, IPS
+                        显示屏约2300万像素，24mm广角镜头，索尼G
+                        镜头1/2.3英寸影像传感器，ISO 12800高感光度镜头1/2.3英寸影像传感器，ISO 12800高高高高高高高高高高高高高高高高高高高高感光度镜头1/2.3英寸影像传器，ISO 12800高感光度镜头1/2.3英寸影像传感器，ISO 12800高感光度镜头1/2.3英寸影像传感器，ISO 12800高感光度镜头1/2.3英寸影像传感器感光度镜头1/2.3英寸影像传感器影像传感器......
+                        <a href="" class="main">更多</a></p>
+
+                    <p class="comment_item_down">
+                        <span>【海之恋----永生花盒】 厄瓜多尔进口蓝色永生玫瑰</span>
+                    </p>
+                </li>
+            </ul>
+            <!--分页-->
+            <div class="page_list ">
+                <p>
+                    <a class="prev_page" href="#">上一页</a>
+                    <a class="main_bg main_border" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a class="no_all_b" href="#">......</a>
+                    <a href="#">100</a>
+                    <a class="next_page no_marginR" href="#">下一页</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹出框-->
+<!--加入购物车成功-->
+<div class="popup_box success_cart">
+    <div class="popup_box_inner">
+        <h2 class="popup_title main_bg">加入购物车成功<i class="close icon-cancel"></i></h2>
+        <p>添加成功</p>
+        <div class="popup_btn">
+            <a href="../cart/cart.html" class="main_bg">去购物车结算</a>
+            <a href="../mall/pro_list.html" class="popup_right_btn">继续购买</a>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="service">
+    <ul class="conwidth service_inner">
+        <li>
+            <a href="../help/help.html">
+                <i class="icon-footer1"></i>
+                <h4>定做预约申请</h4>
+
+                <p>我们会做出您最满意的商品</p>
+            </a>
+        </li>
+        <li>
+            <a href="../help/help.html">
+                <i class="icon-footer2"></i>
+                <h4>服务与支持</h4>
+
+                <p>我们将为您提供金牌服务</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="conwidth clearfix">
+        <dl class="footer_nav">
+            <dt>新手指南</dt>
+            <dd>
+                <a class="main_hover" href="">购物流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">会员政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">联系客服</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">积分政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">加入我们</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>配送方式</dt>
+            <dd>
+                <a class="main_hover" href="">全程冷链</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送时间</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送范围</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送收费标准</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">关于我们</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>支付方式</dt>
+            <dd>
+                <a class="main_hover" href="">货到付款</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">在线支付</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">其他支付方式</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">优惠券使用</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">礼金卡使用</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>售后服务</dt>
+            <dd>
+                <a class="main_hover" href="">验货与拒收政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退换货政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退换货流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退款流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">发票制度</a>
+            </dd>
+        </dl>
+        <dl class="erweima fl">
+            <dt>手机筑巢</dt>
+            <dd><img src="../../Images/test/test_erweima.png" alt=""/></dd>
+            <dd>下载移动客户端</dd>
+        </dl>
+    </div>
+    <p class="copy">Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc23</p>
+</div>
+<script data-main="../../Js/requireenter" app="mall/pro_info" id="require" src="../../Js/lib/require.js"></script>
+</body>
+</html>

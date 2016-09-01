@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.l_right{
+  >p{
+    font-size: 13px;
+    line-height: 35px;
+    text-indent: 25px;
+  }
+}
+.culture_ele{
+  float: left;
+  width: 326px;
+  margin:40px 0;
+  i{
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+.culture2{
+  i{
+    font-size: 80px;
+    margin:-10px 0 20px;
+  }
+}
+.culture2{
+  i{
+    margin:-5px 0 15px;
+  }
+}

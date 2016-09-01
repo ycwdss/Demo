@@ -1,0 +1,302 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/strategy_top";
+/*
+*重写
+*/
+.tiwen{
+  float: right;
+  font-size: 15px;
+  line-height: 45px;
+  margin-right: 12px;
+  color: #FFFFFF;
+  text-align: center;
+}
+/* 头部*/
+.user_top{
+  position: relative;
+  height: 160px;
+  width: 100%;
+  background: url("../../../Images/mobile/usercenter/icon_usercenter_indexbg.png") no-repeat;
+  -webkit-background-size:100% 160px;
+  background-size:100% 160px;
+}
+.user_img{
+  margin:0 auto;
+  padding: 10px 0;
+  width: 60px;
+  height: 60px;
+  @include border-radius(30px);
+  overflow: hidden;
+  img{
+    width: 60px !important;
+    height: 60px !important;
+    @include border-radius(30px);
+    overflow: hidden;
+  }
+}
+.user_name{
+  a{
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    @include box-sizing();
+    span{
+      display: block;
+      text-align: center;
+      line-height: 30px;
+      width: 45px;
+      color: #FFFFFF;
+      background: $normalcolor;
+      @include border-radius(10px);
+    }
+  }
+  p{
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+}
+.user_top_bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  div{
+    width: 50%;
+    height: 40px;
+    float: left;
+    font-size: 0.9rem;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    @include box-sizing();
+    background: url("../../../Images/mobile/usercenter/icon_usercenter_qiandaobg.png") no-repeat;
+  }
+}
+.youhuiquan{
+  border-right: 1px solid transparent;
+}
+.qiandao{
+  border-left: 1px solid transparent;
+}
+
+//我的订单
+.user_order{
+  margin-top: 10px;
+  padding: 0 3%;
+  background: #FFFFFF;
+  i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #888;
+    line-height: 45px;
+    font-size: 0.9rem;
+  }
+}
+.funciton_ele{
+  position: relative;
+  border-bottom: 1px solid #f8f8f8;
+  height: 45px;
+}
+.ele_title{
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  padding-left: 35px;
+  line-height: 45px;
+  color: #333; 
+}
+.ele_title:before{
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: '';
+  width: 25px;
+  height: 24px;
+  background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") 0 0;
+  -webkit-background-size: 200px;
+  background-size: 200px;
+}
+.user_order .ele_title{
+  &:before{
+    height: 28px;
+    top: 8px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -3px  -3px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.order_detail{
+  padding: 10px 0;
+}
+.order_detail_ele{
+  float: left;
+  width: 20%;
+  p{
+    margin-top: 7px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #333;
+  }
+}
+.detail_img{
+  position: relative;
+  width: 40px;
+  height: 30px;
+  margin: 0 auto;
+  span{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    @include border-radius(8px);
+    color: #FFFFFF;
+    background: #093;
+    font-size: 9px;
+    text-align: center;
+  }
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 30px;
+    height: 30px;
+    @include border-radius(15px);
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -2px -24px ;
+    -webkit-background-size: 125px;
+    background-size: 125px;
+  }
+}
+.shouhuo .detail_img{
+  &:before{
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -36px -24px ;
+    -webkit-background-size: 125px;
+    background-size: 125px;
+  }
+}
+.pingjia .detail_img{
+  &:before{
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -70px -24px ;
+    -webkit-background-size: 125px;
+    background-size: 125px;
+  }
+}
+.fanxiu .detail_img{
+  &:before{
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -2px -57px ;
+    -webkit-background-size: 125px;
+    background-size: 125px;
+  }
+}
+//其他功能
+.other_funciton{
+  margin-top: 10px;
+  background: #FFFFFF;
+  padding: 0 3%;
+}
+.cart .ele_title{
+  &:before{
+    top: 10px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -9px -151px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.collect .ele_title{
+  &:before{
+    top: 10px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -45px -151px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.guanzhu .ele_title{
+  &:before{
+    top: 10px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -75px -151px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.jifen .ele_title{
+  &:before{
+    top: 10px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -105px -151px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.yuyue .ele_title{
+  &:before{
+    top: 10px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -135px -151px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.pingjia .ele_title{
+  &:before{
+    top: 10px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -167px -151px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.wenda .ele_title{
+  &:before{
+    top: 10px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -75px -111px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.shezhi .ele_title{
+  &:before{
+    top: 10px;
+    background: url("../../../Images/mobile/usercenter/icon_usercenterindex.png") -105px -111px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+  }
+}
+.arrow_right{
+  position: absolute;
+  display: block;
+  top: 0;
+  right:0;
+  margin:13px 0;
+  width: 10px;;
+  height: 18px;
+  background: url("../../../Images/mobile/icon_strategy.png") 0 0;
+  -webkit-background-size: 163px;
+  background-size: 163px;
+}
+
+//退出
+.end_btn{
+  margin: 10px 0;
+  padding:10px 0;
+  text-align: center;
+  background-color: #fff;
+  a{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #093;
+    color: #fff;
+    font-size: 12px;
+    &:hover{
+      background: #048b31;
+      -webkit-box-shadow: 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px #ccc;
+    }
+  }
+}

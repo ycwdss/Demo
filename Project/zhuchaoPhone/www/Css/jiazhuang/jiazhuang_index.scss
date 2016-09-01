@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+
+.moudle_top {
+  h1 {
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.hidden{
+  display: none!important;
+}
+.m_topSubnav {
+  position: absolute;
+  display: block;
+  top: 45px;
+  right: 0;
+  z-index: 100;
+  width: 35%;
+  min-height: 160px;
+  background-color: #fff;
+  box-shadow: -3px 0 5px rgba(0,0,0,0.1);
+  a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+  }
+}
+//banner
+.jiazhuang_banner {
+  width: 100%;
+  max-height: 270px;
+  height: auto;
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//块标题
+.module_jiazhuang_title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 89px;
+  overflow: hidden;
+  background-color: rgba(149,149,149,.5);
+  > img {
+    width: 100%;
+    max-height: 106px;
+  }
+  p {
+    @include staticEll(1, 1)
+  }
+}
+
+.module_jiazhuang_title_text {
+  padding: 1rem 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  span {
+    display: inline-block;
+    padding: 8px 53px;
+    margin-bottom: 8px;
+    border: 1px solid #fff;
+    font-size: 18px;
+  }
+}
+
+//样板间详情
+.yangroom_box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.yangroom_detail {
+  margin-bottom: 10px;
+  li{
+    padding-top:10px;
+  }
+  li > h4 {
+    padding-left:15px;
+    font-size: 16px;
+    line-height:1.6;
+    a{
+      color: #000;
+    }
+  }
+  li>p{
+    padding-bottom: 10px;
+    padding-left:15px;
+    font-size: 12px;
+    color: #888;
+  }
+  li:last-child {
+    a {
+      padding-right: 0;
+    }
+  }
+}
+
+.detail_text {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding: 18px 0;
+  span {
+    display: block;
+    font-size: 16px;
+    margin:5px 0;
+  }
+  b, p {
+    font-size: 12px;
+  }
+}
+/*room_btn*/
+.index_banner .swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet{
+  float: left;
+  margin:0 4px;
+}
+.index_banner .swiper-container-vertical > .swiper-pagination{
+  position: absolute;
+  right: 45%;
+  text-align: center;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+  background-color:rgba(255,255,255,1);
+}
+
+@media screen and (min-width: 600px) {
+  .detail_text {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 2.9rem 0;
+  }
+  .service_detail .detail_text {
+    padding: 18px 0;
+  }
+  .intelligence .intelligence_detail {
+    a {
+      i {
+        margin: 40px auto 20px;
+      }
+    }
+  }
+  .module_list {
+    .module_list_text {
+      padding: 20px 30px 50px;
+      background-color: #f98e56;
+      color: #fff;
+    }
+  }
+}
+
+//特色服务
+.intelligence {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.service_detail {
+  a {
+    display: block;
+    max-height: 98px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    > img {
+      width: 100%;
+      max-height: 98px;
+    }
+  }
+  .detail_text {
+    padding-left: 20px;
+  }
+}
+
+.intelligence_detail {
+  a {
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #000;
+    i {
+      display: block;
+      width: 48px;
+      height: 48px;
+      margin: 6px auto;
+      background: url(../../../Images/mobile/jiazhuang/icon_intelligence.png) no-repeat;
+      background-size: 48px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.intelligence_detail .icon_intelligence1 {
+  background-position: 0 0;
+}
+
+.intelligence_detail .icon_intelligence2 {
+  background-position: 0 -61px;
+}
+
+.intelligence_detail .icon_intelligence3 {
+  background-position: 0 -123px;
+}
+
+.intelligence_detail .icon_intelligence4 {
+  background-position: 0 -184px;
+}
+
+.intelligence_detail .icon_intelligence5 {
+  background-position: 0 -246px;
+}
+
+.intelligence_detail .icon_intelligence6 {
+  background-position: 0 -306px;
+}
+
+.intelligence_detail .icon_intelligence7 {
+  background-position: 0 -368px;
+}
+
+.intelligence_detail .icon_intelligence8 {
+  background-position: 0 -429px;
+}
+
+.intelligence_detail .icon_intelligence9 {
+  background-position: 0 -491px;
+}
+
+.intelligence_detail .icon_intelligence10 {
+  background-position: 0 -552px;
+}
+
+//筑巢贷款、保险
+.zhuchao_nav {
+  background-color: #fff;
+  margin: 10px 0;
+  li {
+    text-align: center;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+    a {
+      font-size: 14px;
+      color: #000;
+    }
+  }
+}
+.zhuchao{
+  position: relative;
+}
+#zhuchaoListScrollBar {
+  height: 1px;
+  opacity: 0.5;
+}
+
+#zhuchaoListScrollBar .swiper-scrollbar-drag {
+  position: absolute;
+  height: 1px;
+  top: 39px;
+  background: #093;
+}
+.module_list_text {
+  padding: 20px 10px 50px;
+  background-color: #f98e56;
+  color: #fff;
+  h4 {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.7;
+  }
+  ol {
+    li {
+      font-size: 12px;
+      line-height: 1.9;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border: 2px solid #fff;
+        @include box-sizing();
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.module_list_text_tip {
+  padding: 2px 10px;
+  font-size: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #f98e56;
+}
+
+.module_list_btn {
+  float: right;
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 14px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.module_list_img{
+  position: relative;
+  span{
+    display: block;
+    position: absolute;
+    top:-35px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background: url(../../../Images/mobile/jiazhuang/loan_icon.png) #fff center no-repeat;
+    background-size:35px;
+  }
+}
+.safe {
+  .module_list_text_tip{
+    color: #3dd394;
+  }
+  .module_list_text{
+    background-color:#3dd394 ;
+  }
+  .module_list_img{
+    span{
+      background: url(../../../Images/mobile/jiazhuang/icon_safe.png) #fff center no-repeat;
+      background-size:35px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+body {
+  background-color: #efece7; }
+
+.nopage {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -300px;
+  text-align: center; }
+  .nopage .nopage_img {
+    background: url(../../../Images/icon/icon_404.png?_nosprite) center no-repeat;
+    width: 100%;
+    -o-background-size: cover;
+       background-size: cover;
+    height: 78%;
+    margin: 0 auto; }
+  .nopage dl dt {
+    padding: 35px 0 0;
+    font-size: 25px;
+    color: #d96415; }
+  .nopage dl dd {
+    margin: 45px auto 20px;
+    width: 343px; }
+    .nopage dl dd a {
+      display: inline-block;
+      width: 130px;
+      height: 35px;
+      line-height: 35px;
+      margin: 0 20px;
+      text-align: center;
+      color: #666;
+      border: 1px solid #aaa9a6;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: 0.2s ease;
+      -moz-transition: 0.2s ease;
+      -ms-transition: 0.2s ease;
+      -o-transition: 0.2s ease;
+      transition: 0.2s ease; }
+      .nopage dl dd a:hover {
+        border-color: #cf5400;
+        color: #cf5400; }

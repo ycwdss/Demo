@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import "../mobile_moudle/moudle/_strategy_top";
+body{
+  background-color: #f8f8f8;
+}
+.content{
+  .pay_over_info{
+    background-color: #fff;
+    padding-top: 25px;
+  }
+  .pay_over_icon{
+    width: 30px;
+    height: 40px;
+    margin: 0 auto 25px;
+  }
+  h2{
+    font-size: 18px;
+    text-align: center;
+  }
+  .pay_money{
+    text-align: center;
+    margin: 25px auto;
+    font-size:1rem;
+    span:last-child{
+      color: #f60;
+    }
+  }
+  .check_back{
+    margin: 0 auto;
+    width: 300px;
+    padding-bottom: 25px;
+    ul{
+      li{
+
+        background-color: #093;
+
+        text-align: center;
+        float: left;
+        margin-right: 25px;
+        a{
+          line-height: 40px;
+          display: inline-block;
+          width: 120px;
+          height: 40px;
+          color: #fff;
+          font-size: 14px;
+        }
+    }
+    }
+  }
+}
+//你可以继续
+.you_continue{
+  margin: 10px 0;
+  padding: 0 10px;
+  background-color: #fff;
+  h3{
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+  }
+  ul{
+    padding: 0 15px;
+    margin: 15px auto;
+    li{
+      float: left;
+      width: 25%;
+      a{
+        display: block;
+        text-align: center;
+      }
+      span{
+        font-size:14px;
+        display: inline-block;
+        padding: 12px 0 15px 0;
+        color: #333;
+      }
+      .pic_logo{
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+//顶部导航
+.xgt_nav{
+  display: inline-block;
+  margin:7px auto;
+  height: 27px;
+  line-height: 27px;
+  border:1px solid #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.xgt_nav li{
+  float: left;
+  position: relative;
+}
+.xgt_nav li a{
+  display:inline-block;
+  padding:0 16px;
+  color: #fff;
+  font-size: 16px;
+}
+.xgt_nav li:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width:1px;
+  height:98%;
+  z-index: 1;
+  border-bottom: 0 !important;
+  background-color: #fff;
+  //background-position: bottom;
+  //background-image: linear-gradient(to left, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
+  //-webkit-background-size: 100% 1px;
+  //background-size: 100% 1px;
+  //background-repeat: repeat-y !important;
+}
+.xgt_nav li.current a{
+  color: #093;
+  background-color: #fff;
+}
+.xgt_nav li.last_li:before{
+  display: none;
+}
+
+.moudle_top h1{
+  font-size: 18px;
+  color: #fff;
+  vertical-align: -19px;
+}

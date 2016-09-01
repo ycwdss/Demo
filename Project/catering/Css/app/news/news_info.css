@@ -1,0 +1,102 @@
+.fr {
+  float: right;
+  *display: inline; }
+
+.fl {
+  float: left;
+  *display: inline; }
+
+.article_content {
+  margin-top: 40px;
+  background: #FFFFFF; }
+
+.article_box {
+  padding: 25px 50px; }
+
+.site {
+  border-bottom: 1px solid #e4e4e4; }
+  .site span {
+    font-family: sans-serif,'Microsoft YaHei';
+    margin: 0 2px; }
+  .site a {
+    font-size: 14px;
+    color: #666; }
+
+.article_ele {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px dashed #e4e4e4; }
+  .article_ele h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 35px 10px 15px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+
+.new_content_title {
+  padding: 35px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4; }
+  .new_content_title h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+    color: #333; }
+  .new_content_title .writer_info {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    line-height: 28px; }
+    .new_content_title .writer_info .writer {
+      padding: 0 50px; }
+
+.share {
+  width: 194px; }
+  .share > span {
+    display: inline-block;
+    float: left; }
+
+.module_content {
+  font-size: 14px;
+  line-height: 2;
+  padding: 0 20px; }
+  .module_content img {
+    display: block !important;
+    width: 60%;
+    max-width: 100% !important;
+    margin: 40px auto !important; }
+  .module_content h4 {
+    font-size: 18px;
+    color: #333; }
+
+.up_down {
+  margin-top: 20px;
+  padding: 15px 0;
+  height: 80px;
+  border-top: 1px solid #e4e4e4;
+  font-size: 14px;
+  color: #888; }
+  .up_down > div {
+    position: relative;
+    vertical-align: top;
+    margin: 5px 0; }
+    .up_down > div a {
+      display: inline-block;
+      width: 566px;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #666; }
+    .up_down > div span.date {
+      position: absolute;
+      right: 0; }
+
+/*# sourceMappingURL=news_info.css.map */

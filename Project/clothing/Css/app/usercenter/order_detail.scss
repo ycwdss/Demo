@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/usercenter_style";
+@import "../../module/order_ele";
+@import "../../module/recommend";
+
+//订单详情
+.detail_box {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+}
+
+.detail_title {
+  padding: 0 15px;
+  line-height: 60px;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 16px;
+  background: #fcfcfc;
+  a {
+    float: right;
+    margin:17px 0 17px 20px;
+    width: 85px;
+    height: 25px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 23px;
+    color: #666;
+    border: 1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    @include transition();
+  }
+}
+.detail_content{
+  >p{
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 14px;
+    span{
+      margin-right: 40px;
+    }
+  }
+}
+
+.liucheng{
+  margin:50px auto;
+  width: 656px;
+}
+.liucheng_ele{
+  float: left;
+  position: relative;
+  width: 200px;
+  height: 6px;
+  background: #e4e4e4;
+  margin-left: 14px;
+  span{
+    position: absolute;
+    display: block;
+    top: -5px;
+    left: -37px;
+    width: 60px;
+    text-align: center;
+    i{
+      position: relative;
+      display: block;
+      margin:0 auto 10px;
+      width: 14px;
+      height: 14px;
+      background: #e4e4e4;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+      border-radius:5px;
+      &:before{
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: #ffffff;
+      }
+    }
+  }
+}
+.liucheng_last{
+  width: 0px;
+}
+.success{
+  background: -webkit-linear-gradient(left,#3c619e , #e4e4e4); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(left,#3c619e , #e4e4e4); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(left,#3c619e, #e4e4e4); /* Firefox 3.6 - 15 */
+  background: linear-gradient(left,#3c619e, #e4e4e4); /* 标准的语法 */
+}
+.order_detail_box{
+  margin-top: 20px;
+}
+
+//订单详信息
+.order_info{
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  background: #ffffff;
+  border:1px solid #e4e4e4;
+}
+.receive_box{
+  position: relative;
+  margin:0 20px;
+  padding:10px 0 20px;
+  border-bottom:1px solid #e4e4e4;
+  h4{
+    font-size: 15px;
+    line-height: 45px;
+  }
+  p{
+    font-size: 12px;
+    line-height: 25px;
+    color: #666;
+  }
+}
+.edit_order{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 85px;
+  height: 25px;
+  text-align: center;
+  line-height: 23px;
+  border:1px solid #e4e4e4;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @include transition();
+  &:hover{
+    background-color: #f8f8f8;
+  }
+}
+.order_bottom{
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 25px;
+  background: #fcfcfc;
+  p{
+    text-align: right;
+  }
+  i{
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+  }
+  h4{
+    margin-top: 10px;
+    i{
+      font-size: 24px;
+    }
+  }
+}

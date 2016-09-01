@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import "../../lib/mixin";
+
+.order_pro {
+  margin-top: 10px;
+  background: #FFFFFF;
+  padding: 15px;
+  img {
+    display: block;
+    float: left;
+    width: 85px !important;
+    height: 85px !important;
+  }
+}
+
+.pro_describe {
+  position: relative;
+  padding-left: 100px;
+  h4 {
+    height: 40px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: #333;
+    @include ell(2);
+  }
+  p {
+    span {
+      font-size: 1.2rem;
+      color: #888;
+      line-height: 16px;
+      margin-right: 20px;
+    }
+  }
+  > span {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 29px;
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.pro_count {
+  line-height: 40px;
+  margin-left: 15px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+//
+.model_tit {
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.list_check_box {
+  .list_item_btn {
+    float: left;
+    min-width: 28%;
+    border: 1px solid #e4e4e4;
+    color: #848689;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 11px;
+    overflow: hidden;
+    height: 25px;
+    line-height: 25px;
+  }
+  .list_item_btn.current{
+    border: 1px solid #e60012;
+    background-color: #e60012;
+    color: #fff;
+  }
+}
+
+//
+.apply_text{
+  border: 1px solid #e4e4e4;
+  padding: 10px;
+  min-width: 93%;
+  font-size: 12px;
+  outline: none;
+}
+//star
+.star{
+  font-size: 18px;
+  line-height: 1;
+  font-family: "ËÎÌå";
+  span{
+    margin-right: 3px;
+  }
+}

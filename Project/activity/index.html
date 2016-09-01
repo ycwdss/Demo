@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>凤凰城430白拿活动</title>
+    <meta name="keywords" content="凤凰城,凤凰城430,就是白拿,凤凰城就是白拿,凤凰城430就是白拿">
+    <meta name="description" content="瓷砖门扇白拿活动任性开启，火爆预约中。">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+
+    <link href="css/reset1.css" rel="stylesheet" />
+    <link href="css/index1.css?ac=201604010244" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
+    <link href="css/load.css" rel="stylesheet" />
+    <link href="css/mobiscroll_date.css" rel="stylesheet" />
+    <link href="css/ui-dialog.css" rel="stylesheet" />
+</head>
+<body>
+<div style="height:1px;overflow:hidden; display: none;">
+    <img src="img/share.jpg">
+</div>
+<div id="loading" >
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
+<div id="content" >
+    <div class="page page-1-1 page-current wx-page-move">
+        <div class="wrap">
+            <img class="img_1 pt-page-moveCircle" src="img/o-text2.0.png" />
+            <img class="img_2 pt-page-moveFromLeft" src="img/o-logo.png" />
+            <img class="img_3 pt-page-moveIconUp" src="img/top.png" />
+        </div>
+    </div>
+    <div class="page page-2-1 hide wx-page-move">
+        <div class="wrap">
+            <img class="img_1 hide pt-page-moveFromLeft" src="img/t-title.png" />
+            <img class="img_2 hide pt-page-moveFromRight" src="img/t-logo1.png" />
+            <img class="img_6 pt-page-moveIconUp" src="img/top.png" />
+        </div>
+    </div>
+    <div class="page page-3-1 hide wx-page-move">
+        <div class="wrap">
+            <img class="img_1 hide pt-page-moveCircle" src="img/s-date.png" />
+            <img class="img_2 hide pt-page-moveFromLeft" src="img/s-content2.0.png" />
+            <!--<img class="img_3 hide pt-page-moveFromTop" src="img/t-ico3.png" />-->
+            <img class="img_6 hide pt-page-moveIconUp" src="img/top.png" />
+        </div>
+    </div>
+    <div class="page page-4-1 hide wx-page-move">
+        <div class="wrap">
+            <img class="img_1 hide pt-page-moveFromRight" src="img/f-title.png" />
+            <img class="img_2 hide pt-page-moveFromLeft" src="img/f-content.png" />
+            <img class="img_6 hide pt-page-moveIconUp" src="img/top.png" />
+        </div>
+    </div>
+
+    <div class="page page-5-1 hide wx-page-move">
+        <div class="wrap">
+            <div class="control-input">
+                <div class="input-group-bo"><input type="text" id="userName" name="userName" class="form-control" placeholder="姓名" value=""></div>
+                <div class="input-group-bo"><input type="text" id="userPhone" name="userPhone" class="form-control" placeholder="电话" value=""></div>
+                <div class="input-group-bo"><input type="text" id="communityName" name="communityName" class="form-control" placeholder="小区名称" value=""></div>
+                <div class="input-group-bo"><input type="text" name="apartmentDate" id="apartmentDate" class="form-control" placeholder="交房日期" value=""></div>
+                <div class="input-title">您通过哪种媒介知晓活动？</div>
+                <div class="input-check" data-id="">
+                    <span data-id="1"><i></i>户外广告</span>
+                    <span data-id="2"><i></i>广播</span>
+                    <span data-id="3"><i></i>网络</span>
+                    <span data-id="4"><i></i>报纸</span>
+                    <span data-id="5"><i></i>朋友推荐</span>
+                    <span data-id="6"><i></i>其他</span>
+                </div>
+                <!--<div class="decoration_type" data-id="1">
+                    <label>装修类型</label>
+                    <span class="hover" data-id="1"><i><storng></storng></i>首次装修</span>
+                    <span data-id="2"><i><storng></storng></i>二次装修</span>
+                </div>-->
+
+                <div class="input-bottom">
+                    <span class="input-btn" id="input_btn">立即报名</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<div id="audiocontainer"></div>
+<div id="textsuper">
+    <div id="textsub"><img id="fontimg" />
+    </div></div>
+<div class="mask-layer"></div>
+<div class="baoming-layer">
+    <div class="layer-bg"></div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/wx-index.js"></script>
+<script type="text/javascript">
+
+    document.onreadystatechange = loading;
+    function loading(){
+        if(document.readyState == "complete")
+        {
+            $("#loading").hide();
+            $("#content").show();
+            //playbksound();
+        }
+    }
+    function shareDialog(){
+        $("#share").show();
+    }
+    function closeDialog(){
+        $("#share").hide();
+    }
+</script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/mobiscroll_date.js"></script>
+<script src="js/mobiscroll.js"></script>
+<script src="js/useragent-base.js"></script>
+<script src="js/ua-device.js"></script>
+<script src="js/dialog-min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $.ajax({
+            type: "POST",
+            url: "/message/activities.php",
+            data: "",
+            dataType: "json",
+            success: function (msg) {
+                if (msg.code == "进行") {
+                    $(".input-check span").on("touchend",function(){
+                        var val = $(this).attr("data-id");
+                        $(this).addClass("hover").siblings("span").removeClass("hover");
+                        $(".input-check").attr("data-id",val);
+                    })
+                    $(".decoration_type span").on("touchend",function(){
+                        var val = $(this).attr("data-id");
+                        $(this).addClass("hover").siblings("span").removeClass("hover");
+                        $(".decoration_type").attr("data-id",val);
+                    })
+                    var d = wxdevice(navigator.userAgent),
+                            browser=d.browser.name,
+                            engine=d.engine.name,
+                            os=d.os.name,
+                            device=d.device.type,
+                            manufacturer=d.device.manufacturer?d.device.manufacturer:"",
+                            model=d.device.model?d.device.model:"",
+                            screens=screen.width + " * " + screen.height,
+                            userAgent=navigator.userAgent;
+                    var currYear = (new Date()).getFullYear();
+                    var opt = {};
+                    opt.date = {preset: 'date'};
+                    opt.datetime = {preset: 'datetime'};
+                    opt.time = {preset: 'time'};
+                    opt.default = {
+                        theme: 'android-ics light', //皮肤样式
+                        display: 'modal', //显示方式
+                        mode: 'scroller', //日期选择模式
+                        dateFormat: 'yyyy-mm-dd',
+                        lang: 'zh',
+                        showNow: true,
+                        nowText: "今天",
+                        startYear: currYear - 50, //开始年份
+                        endYear: currYear + 10, //结束年份
+                        onSelect: function () {
+                        }
+                    };
+                    $("#apartmentDate").on("touchend",function(){
+
+                        $("#apartmentDate").mobiscroll(
+                                $.extend(opt['date'], opt['default'])
+                        );
+                    })
+
+                    $("#input_btn").on("touchend",function(){
+                        var userName = $("#userName").val(),
+                                userPhone = $("#userPhone").val(),
+                                communityName = $("#communityName").val(),
+                                apartmentDate = $("#apartmentDate").val(),
+                                source=$(".input-check").attr("data-id");
+                        var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1})|(14[0-9]{1}))+\d{8})$/;
+                        if (userName == "") {
+                            var d_msg = dialog({
+                                title: "提示",
+                                content: '<div style=" text-align:center; line-height:70px;">请输入姓名</div>',
+                                width: 200,
+                                height:80
+                            });
+                            d_msg.showModal();
+                        } else if (userPhone == "") {
+                            var d_msg = dialog({
+                                title: "提示",
+                                content: '<div style=" text-align:center; line-height:70px;">请输入电话</div>',
+                                width: 200,
+                                height:80
+                            });
+                            d_msg.showModal();
+                        }  else if (!myreg.test(userPhone)) {
+
+                            var d_msg = dialog({
+                                title: "提示",
+                                content: '<div style=" text-align:center; line-height:70px;">请输入有效的手机号码</div>',
+                                width: 200,
+                                height:80
+                            });
+                            d_msg.showModal();
+                        } else if (communityName == "") {
+                            var d_msg = dialog({
+                                title: "提示",
+                                content: '<div style=" text-align:center; line-height:70px;">请输入小区名称</div>',
+                                width: 200,
+                                height:80
+                            });
+                            d_msg.showModal();
+                        } else if (apartmentDate == "") {
+                            var d_msg = dialog({
+                                title: "提示",
+                                content: '<div style=" text-align:center; line-height:70px;">请选择交房日期</div>',
+                                width: 200,
+                                height:80
+                            });
+                            d_msg.showModal();
+                        } else if(source == ""){
+                            var d_msg = dialog({
+                                title: "提示",
+                                content: '<div style=" text-align:center; line-height:70px;">请选择知晓来源</div>',
+                                width: 200,
+                                height:80
+                            });
+                            d_msg.showModal();
+                        } else {
+                            $.ajax({
+                                type: "POST",
+                                url: "/message/activities.php",
+                                data: {
+                                    'act': 'addactivities',
+                                    'userName': userName,
+                                    'userPhone': userPhone,
+                                    'communityName': communityName,
+                                    'apartmentDate': apartmentDate,
+                                    'browser':browser,
+                                    'engine':engine,
+                                    'os':os,
+                                    'device':device,
+                                    'manufacturer':manufacturer,
+                                    'model':model,
+                                    'screens':screens,
+                                    'userAgent':userAgent,
+                                    'source':$(".input-check").attr("data-id"),
+                                    'decoration_type':"1",
+                                    'inputer':"1"
+                                },
+                                dataType:"json",
+                                success: function(msg){
+                                    if(msg.code == "结束"){
+                                        var d_msg = dialog({
+                                            title: "提示",
+                                            content: '<div style=" text-align:center;">本活动已结束报名！</div>',
+                                            cancelValue: '关闭',
+                                            cancel: function () {
+                                                window.location.reload();
+                                            }
+                                        });
+                                        d_msg.showModal();
+                                        //window.location.reload();
+                                    }else if(msg.code == "进行"){
+                                        if(msg.data == "报名成功"){
+                                            $(".mask-layer").show();
+                                            $(".baoming-layer").show();
+                                            $("#userName").val("");
+                                            $("#userPhone").val("");
+                                            $("#communityName").val("");
+                                            $("#apartmentDate").val("");
+                                            $(".input-check").attr("data-id","");
+                                            $(".input-check span").removeClass("hover");
+                                            /*$(".decoration_type").attr("data-id","1");
+                                             $(".decoration_type span").removeClass("hover");
+                                             $(".decoration_type span:first").addClass("hover");*/
+                                        }else if(msg.data == "手机号已存在"){
+                                            var d_msg = dialog({
+                                                title: "提示",
+                                                content: '<div style=" text-align:center; line-height:70px;">该手机号已经参加过报名，请更换！</div>',
+                                                width: 247,
+                                                height:80
+                                            });
+                                            d_msg.showModal();
+                                        }else{
+                                            var d_msg = dialog({
+                                                title: "提示",
+                                                content: '<div style=" text-align:center; line-height:70px;">报名失败，请重新填写！</div>',
+                                                width: 200,
+                                                height:80
+                                            });
+                                            d_msg.showModal();
+                                        }
+                                    }
+
+                                }
+                            });
+                        }
+                    })
+                }else if(msg.code == "结束"){
+                    $(".page-5-1 .control-input").html('<div style="padding-top:100px; text-align: center; font-size: 2.0em; line-height:40px;">本次活动已结束报名 ！<br/>下次记得早来哦 ！！</div>');
+                }
+            }
+        })
+    })
+</script>
+<div style=" display: none; height: 0;">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?73c3b1b1f43e98c2609b09c210ff96ff";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script src="http://s4.cnzz.com/z_stat.php?id=1258313860&web_id=1258313860" language="JavaScript"></script>
+</div>
+</body>
+
+</html>

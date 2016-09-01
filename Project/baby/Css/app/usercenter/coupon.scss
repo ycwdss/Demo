@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/site";
+@import "../../module/empty_tips";
+@import "../../module/recommend";
+@import "../../module/pagelist";
+@import "../../module/usercenter_style";
+
+  
+.coupon_wrap{
+  padding: 0 28px;
+}
+.coupon_title{
+  border-bottom: 2px solid #e4e4e4;
+  .coupon_price ,.coupon_name ,.coupon_code,.coupon_date,.coupon_status{
+    height: 45px;
+    text-indent: 10px;
+    color: #666;
+  }
+  .coupon_status{
+    width: 67px;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+.coupon_price{
+  width: 110px;
+}
+.coupon_name{
+  width: 180px;
+}
+.coupon_code{
+  width: 175px;
+}
+.coupon_date{
+  width: 160px;
+}
+.coupon_status{
+  width: 77px;
+  text-align: right!important;
+}
+.coupon_price ,.coupon_name ,.coupon_code,.coupon_date,.coupon_status{
+  display: table-cell;
+  vertical-align: middle;
+  height: 85px;
+  text-align: left;
+  font-size: 14px;
+  color: #888;
+}
+
+.coupon_list {
+  display: table;
+  border-bottom: 1px solid #e4e4e4;
+  .coupon_price{
+    font-size: 30px;
+  }
+}

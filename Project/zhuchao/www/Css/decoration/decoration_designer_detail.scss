@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import "../fh/lib";
+.route{
+  height: 62px;
+  font-size: 14px;
+  line-height: 62px;
+
+  p{
+    word-spacing: 18px;
+    a{
+      color:#333333 ;
+      @include transition();
+      &:hover{
+        color: #f60;
+      }
+    }
+  }
+  div{
+     span{
+       color: #888888;
+       margin-right: 9px;
+     }
+    .current{
+      color: #093;
+    }
+    i{
+      display: inline-block;
+      width:12px ;
+      height: 14px;
+      margin-right: 24px;
+      margin-bottom: -2px;
+    }
+  }
+}
+.sprite_look{
+  background: url("../../decoration/Images/sprite_look.png");
+}
+.sprite_list{
+  background: url("../../decoration/Images/sprite_list.png");
+}
+
+.designer_info{
+  width: 230px;
+  margin-left: 27px;
+  img{
+    margin-left: 67px;
+    width:100px ;
+    height: 100px;
+    border-radius:50px;
+  }
+}
+.fans_works{
+  width: 230px;
+  height: 40px;
+  margin: 16px 0;
+}
+.fans{
+  width: 75px;
+  border-right: 1px solid #e4e4e4;
+  text-align: center;
+  color:#444444 ;
+  float: left;
+  p{
+    font-size: 18px;
+  }
+  div{
+    font-size: 14px;
+
+  }
+}
+.last_fans{
+  border: none;
+}
+.work_time{
+  height: 14px;
+  font-size: 12px;
+  color:#666666;
+  margin-bottom: 15px;
+}
+.design_button{
+  p{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background: #009933;
+    color: white;
+    font-size:16px ;
+    line-height: 40px;
+    cursor: pointer;
+    @include transition();
+    &:hover{
+      background: #048b31;
+    }
+  }
+}
+.designer_detail{
+  width: 990px;
+  margin-bottom: 124px;
+}
+.designer_head{
+  height: 38px;
+  margin-bottom: 30px;
+  h1{
+    span{
+      font-size: 24px;
+      color:#333333;
+      line-height: 38px;
+    }
+    em{
+       font-size: 12px;
+       color:#888888;
+    }
+  }
+}
+.designer_intro{
+    line-height: 36px;
+    margin-bottom: 13px;
+  h2{
+    font-size: 18px;
+    color:#444444;
+  }
+  p{
+    font-size: 14px;
+    color:#666666;
+  }
+}
+.designer_works{
+  padding-top:11px;
+  border-top: 1px solid #e4e4e4;
+  h2{
+    font-size: 18px;
+    color:#444444;
+  }
+}
+.works{
+  margin-top: 10px;
+  width:220px ;
+  background: #f8f8f8;
+  padding: 10px;
+  float: left;
+  margin-right: 10px;
+  img{
+    width: 220px;
+    height: 139px;
+  }
+  h3{
+    a{
+      height: 36px;
+      padding-left: 7px;
+      font-size: 14px;
+      line-height: 36px;
+      color:#333333;
+      overflow: hidden;
+      @include transition();
+      &:hover{
+        color: #f60;
+      }
+    }
+  }
+  p{
+    padding-left: 7px;
+    font-size: 12px;
+    line-height: 18px;
+    color:#888888;
+    height: 36px;
+    overflow: hidden;
+  }
+}
+.last_work{
+  margin-right: 0;
+}

@@ -1,0 +1,14 @@
+@import "../fh/reset";
+@import "../fh/lib";
+@import "../fh/commonclass";
+input{
+  border:1px solid black;
+}
+.content{
+  font-size: 20px;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+  top:50px;
+}

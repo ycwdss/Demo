@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import "../fh/style";
+@import "../fh/moudle/usercenter/order_orderevaluate";
+.c_order{
+  padding: 0;
+  margin: 0;
+}
+.order_detail{
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+.evaluate_ele{
+  margin-top: 40px;
+}
+.evaluate_title{
+  float: left;
+  width: 60px;
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}
+.evaluate_detail{
+  float: left;
+  margin-left: 20px;
+  width: 920px;
+}
+.wujiaoxing{
+  float: left;
+  margin-right: 5px;
+  width: 28px;
+  height: 30px;
+}
+.wujiaoxing1{
+  background: url("../../usercenter/Images/sprite_usercenter_wujiaoxing1.png");
+}
+.wujiaoxing2{
+  background: url("../../usercenter/Images/sprite_usercenter_wujiaoxing2.png");
+}
+.pingfen_title{
+  line-height: 30px;
+}
+.select{
+  display: inline-block;
+  width: 140px;
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 20px;
+  input{
+    float: left;
+    width: 15px;
+    margin-top: 4px;
+    margin-right: 3px;
+  }
+  span{
+    float: left;
+    width: 110px;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.pingjia_detail{
+  textarea{
+    width: 920px;
+    height: 180px;
+    font-size: 13px;
+    color: #666;
+    line-height: 25px;
+    @include box-sizing();
+    padding: 0 10px;
+    resize: none;
+    border: 1px solid #e4e4e4;
+    background: #f8f8f8;
+    outline: none;
+    &:focus{
+      border: 1px solid $normalColor!important;
+    }
+  }
+}
+.add_ele{
+  width: 112px;
+  p{
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+  }
+}
+.add_img{
+  width: 112px;
+  height: 70px;
+  background: #f8f8f8;
+  line-height: 70px;
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  cursor: pointer;
+}
+.add_tool{
+  display: none;
+}
+.submit{
+  input{
+    width: 80px;
+    height: 40px;
+    @include box-sizing();
+    border: 1px solid #093;
+    color: #093;
+    cursor: pointer;
+    &:hover{
+      @include transition;
+      background: #093;
+      color: #FFFFFF;
+    }
+  }
+}
+.last_word{
+  text-align: right;
+  font-size: 13px;
+}

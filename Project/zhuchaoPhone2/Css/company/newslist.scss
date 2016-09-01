@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.l_main{
+  >h3{
+    margin: 10px auto;
+    height: 40px;
+    background: #ffffff;
+    border-bottom:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    span{
+      display: inline-block;
+      width: 100px;
+      font-size: 1.5rem;
+      line-height: 38px;
+      border-bottom:2px solid transparent;
+    }
+    span:last-child{
+      margin-left: 30px;
+    }
+  }
+}
+.news_ele{
+  margin:0 5px 10px;
+  padding: 10px;
+  background: #ffffff;
+  img{
+    float: left;
+    margin-right: 15px;
+    height: 60px;
+    max-width: 96px;
+  }
+  h4{
+    a{
+      display: block;
+      color: #333;
+      font-size: 1.3rem;
+      line-height:23px;
+      height: 46px;
+      @include ell(2);
+    }
+  }
+  p{
+    font-size:1.1rem;
+    line-height: 14px;
+    color: #999;
+  }
+}

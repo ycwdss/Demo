@@ -1,0 +1,248 @@
+.cart_box {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4; }
+  .cart_box h3 {
+    font-size: 18px;
+    padding: 0 25px;
+    line-height: 50px;
+    color: #333; }
+    .cart_box h3 span {
+      font-size: 14px; }
+
+.col {
+  display: table-cell;
+  vertical-align: middle; }
+
+.good_name {
+  width: 530px; }
+
+.good_price {
+  width: 88px;
+  text-align: center; }
+
+.good_num {
+  width: 210px;
+  text-align: center; }
+
+.good_total {
+  width: 90px;
+  text-align: center; }
+
+.good_action {
+  padding-left: 64px;
+  width: 66px;
+  text-align: center; }
+  .good_action a {
+    color: #b8b8b8; }
+
+.good_title {
+  height: 40px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4; }
+  .good_title > div {
+    height: 40px; }
+  .good_title .good_name {
+    padding-left: 28px; }
+
+.good_items {
+  padding: 50px 0;
+  margin: -1px 28px 0;
+  border-top: 1px solid #e4e4e4; }
+
+.good_name .good_img {
+  width: 80px;
+  height: 80px; }
+  .good_name .good_img img {
+    display: block;
+    width: 80px;
+    height: 80px; }
+
+.good_name .good_test {
+  max-width: 78%;
+  padding-left: 12px;
+  font-size: 14px;
+  color: #666; }
+
+.checkbox {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.good_num_box {
+  height: 30px;
+  width: 105px;
+  margin: 0 auto;
+  border: 1px solid #e4e4e4;
+  position: relative; }
+  .good_num_box a {
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-table;
+    font-size: 15px;
+    vertical-align: 1px;
+    color: #666;
+    background-color: #f5f5f5; }
+  .good_num_box .t_num {
+    width: 39px;
+    height: 30px;
+    line-height: 30px;
+    border-right: 0;
+    border-left: 0;
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    vertical-align: 2px; }
+  .good_num_box .t_minus {
+    left: 0;
+    border-right: 1px solid #e4e4e4; }
+  .good_num_box .t_add {
+    right: 0;
+    border-left: 1px solid #e4e4e4; }
+
+.good_bar {
+  padding: 0 10px;
+  line-height: 66px;
+  height: 66px;
+  border-top: 1px solid #e4e4e4;
+  position: relative;
+  text-align: right; }
+  .good_bar .total_price {
+    font-size: 20px;
+    color: #333;
+    padding-right: 14px; }
+  .good_bar .buy_btn {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center; }
+
+.pro_card_ele {
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+  background: #fff; }
+  .pro_card_ele img {
+    display: block;
+    width: 260px !important;
+    height: 260px !important; }
+  .pro_card_ele .pro_card_intro {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px 10px;
+    height: 50px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+    .pro_card_ele .pro_card_intro a {
+      color: #666; }
+  .pro_card_ele .pro_card_price {
+    margin: 0 10px 10px;
+    font-size: 24px;
+    line-height: 35px; }
+    .pro_card_ele .pro_card_price .buy_btn {
+      float: right;
+      font-size: 12px;
+      width: 65px;
+      height: 22px;
+      margin-top: 8px;
+      line-height: 22px;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+
+.recommend {
+  height: 438px;
+  line-height: 50px;
+  margin-top: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px; }
+  .recommend h4 {
+    padding-left: 15px; }
+  .recommend .recommend_slick {
+    height: 386px;
+    width: 1080px;
+    padding: 0 10px; }
+  .recommend .pro_card_ele {
+    float: left;
+    margin: 0 5px 10px !important; }
+    .recommend .pro_card_ele a {
+      display: block; }
+  .recommend .recommend_dots {
+    position: absolute;
+    top: -35px;
+    right: 20px; }
+    .recommend .recommend_dots li {
+      float: left;
+      width: 8px;
+      height: 8px;
+      background: #f1f1f1;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin-right: 7px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      .recommend .recommend_dots li button {
+        display: none; }
+
+.border_bottom {
+  border-bottom: 1px solid #e4e4e4; }
+
+.empty {
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  height: 400px;
+  text-align: center; }
+  .empty span {
+    width: 100%;
+    text-align: center;
+    -webkit-align-self: center;
+    align-self: center;
+    -ms-flex-item-align: center;
+    font-size: 18px; }
+    .empty span i {
+      font-size: 150px;
+      color: #f5f5f5;
+      vertical-align: middle; }
+    .empty span a.main:hover {
+      text-decoration: underline; }
+
+.good_bar .checkbox_all {
+  position: absolute;
+  top: 0;
+  left: 28px;
+  font-size: 14px; }
+  .good_bar .checkbox_all span {
+    vertical-align: 2px; }

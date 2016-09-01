@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/mall/_adarea";
+.module_ad_img{
+  background-size: 100% 100%!important;
+}
+//新闻列表
+.new_box{
+  padding:0 10px;
+  background-color: #fff;
+  li{
+    width: 100%;
+    padding: 3% 0;
+    height: 68px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: 1px dotted #e4e4e4;
+    a{
+      position: relative;
+      display: block;
+      height: 68px;
+      overflow: hidden;
+    }
+    .new_img{
+      position: absolute;
+      left: 0;
+      height: 68px;
+      width: 110px;
+      .new_table{
+        display: table-cell;
+        height: 68px;
+        width: 110px;
+        text-align: center;
+        vertical-align: middle;
+        img {
+          height: 68px;
+          width: 110px;
+        }
+      }
+    }
+  }
+  li:last-child{
+    border-bottom: 0;
+  }
+  .new_text,.writer_info{
+    margin-left: 125px;
+    font-size: 14px;
+  }
+  .new_text{
+    margin-top:3px;
+    color: #333;
+    @include strictEll(1.4, 2);
+  }
+  .writer_info{
+    position: absolute;
+    bottom:0;
+    color: #999;
+    font-size: 12px;
+    .writer{
+      margin-right: 6px;
+    }
+  }
+  .look{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    color: #999;
+    font-size: 12px;
+  }
+}
+//无图片
+.new_box .no_img{
+  height: 70px;
+  a{
+    height: 70px;
+  }
+  .new_text,.writer_info{
+    margin-left:0;
+  }
+}
+

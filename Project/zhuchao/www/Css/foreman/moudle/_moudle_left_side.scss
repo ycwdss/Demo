@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import "../../fh/lib";
+$border1:1px solid #e4e4e4;
+$borderdashed:1px dashed #e4e4e4;
+.left_side{
+  width: 270px;
+}
+.module_left_item{
+  padding:0 20px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+//头像
+.module_foreman_head{
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  margin:20px auto;
+  img{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+  }
+}
+//按钮
+.module_foreman_btn{
+  padding-bottom: 20px;
+  a{
+    float: left;
+    margin-right: 30px;
+    display:block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #093;
+    @include transition();
+  }
+  a:hover{
+    background: #048b31;
+    -webkit-box-shadow: 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+  }
+}
+//个人详细信息
+.module_foreman_infor{
+  padding:20px 0;
+  border-top:$borderdashed;
+  color: #888;
+  font-size: 14px;
+  p{
+    font-size: 20px;
+    a{
+      color: #333;
+      &:hover{
+        color: #f60;
+      }
+    }
+    em{
+      padding-left: 20px;
+      font-size: 12px;
+      color: #888;
+      i{
+        color: #093;
+      }
+    }
+
+  }
+  .infor{
+    display: table;
+    a{
+      padding-top:10px;
+      float:left;
+      width: 50%;
+      display: block;
+      em:hover{
+        color: #f60;
+      }
+    }
+    .width100{
+      width:100%;
+    }
+  }
+}
+//星级
+.module_foreman_stars{
+  border-top: $borderdashed;
+  margin-top: 20px;
+  padding-top: 10px;
+  div{
+    padding-top: 10px;
+    p{
+      padding-right: 20px;
+      font-size: 14px;
+      color: #888;
+      display: inline-block;
+    }
+    span{
+      i{
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
+      }
+      .star1{
+        background: url(../../foreman/Images/sprite_star1.png) no-repeat;
+      }
+      .star2{
+        background: url(../../foreman/Images/sprite_star2.png) no-repeat;
+      }
+    }
+    em{
+      color: #093;
+      padding-left: 10px;
+    }
+  }
+}
+
+//右侧最新案例
+.formeman_left_case{
+  margin-top: 20px;
+}
+.module_left_item{
+  h2{
+    height: 79px;
+    line-height: 79px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    border-bottom: $border1;
+  }
+}
+.module_left_case_list{
+  padding:20px 0 17px;
+  border-bottom: $borderdashed;
+  img{
+    width: 230px;
+    height: 143px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
+    &:hover{
+      opacity: 0.85;
+    }
+  }
+  h3{
+    padding:10px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    a{
+      font-size: 14px;
+      color: #333;
+      &:hover{
+        color:#f60;
+      }
+    }
+  }
+  p{
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+    b{
+      font-size: 14px;
+      color: #f60;
+    }
+  }
+}
+.read_more{
+  display: block;
+  margin:13px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #093;
+  &:hover{
+    color:#f60;
+  }
+}

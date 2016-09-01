@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "../fh/style";
+@import "../fh/moudle/usercenter/rightsort";
+@import "../fh/moudle/usercenter/store_article_ele";
+.c_store{
+  img{
+    height: 142px!important;
+  }
+}
+.m_content_right{
+  background: none;
+}
+.content_top_title{
+  margin-bottom:20px;
+}
+.store_detail{
+  height: 142px;
+  h4{
+    font-size: 16px;
+    line-height: 35px;
+    color: #333;
+    &:hover{
+      color: $activeColor;
+    }
+  }
+}
+.store_descri{
+  @include ell(3);
+  height: 75px;
+}

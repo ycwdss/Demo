@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+.order_pro{
+  float: left;
+  width: 300px;
+}
+.order_price{
+  float: left;
+  width: 220px;
+}
+.order_receiver{
+  float: left;
+  width: 100px;
+}
+.order_total{
+  float: left;
+  width: 100px;
+}
+.order_status{
+  float: left;
+  width: 110px;
+}
+.order_operation{
+  float: left;
+  width: 124px;
+}
+.order_title{
+  line-height: 45px;
+  text-align: center;
+  background: #ffffff;
+  border:1px solid #e4e4e4;
+}
+.order_ele{
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  background: #ffffff;
+  border:1px solid #e4e4e4;
+}
+.order_ele .order_code{
+  padding:0 0 0 10px;
+  color: #999;
+  height: 40px;
+  line-height: 39px;
+  background: #fcfcfc;
+  border-bottom:1px solid #e4e4e4;
+  span{
+    margin-right: 50px;
+    i{
+      color: #333;
+    }
+  }
+}
+.order_box{
+  >div{
+    height: 100px;
+    padding:15px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+.order_ele .order_pro{
+  padding:15px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  img{
+    float: left;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+  }
+  .pro_detail{
+    line-height: 23px;
+    height: 46px;
+    @include ell(2);
+    a{
+      color: #333;
+    }
+  }
+  .pro_size{
+    line-height: 24px;
+    height: 24px;
+    @include ell(1);
+  }
+  .buy_time{
+    line-height: 30px;
+    color: #666;
+  }
+}
+.order_ele{
+  .pro_count{
+    float: left;
+    width: 55px;
+    text-align: center;
+    color: #999;
+  }
+  .pro_price{
+    @extend .pro_count;
+    width: 65px;
+  }
+  .pro_link{
+    float: left;
+    margin-left: 20px;
+    width: 60px;
+    height: 25px;
+    line-height: 23px;
+    text-align: center;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    @include transition();
+    &:hover{
+      background: #F8F8F8;
+    }
+  }
+}
+.order_ele .order_receiver{
+  color: #999;
+  text-align: center;
+  @include ell(1);
+}
+.order_ele .order_total{
+  color: #999;
+  text-align: center;
+  @include ell(1);
+}
+.order_ele .order_status{
+  text-align: center;
+  color: #999;
+}
+.order_ele .order_operation{
+  a{
+    display: block;
+    margin:0 auto;
+    width: 85px;
+    height: 25px;
+    line-height: 23px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    @include transition();
+    &:hover{
+      background: #F8F8F8;
+    }
+  }
+}
+.order_ele2 {
+  .order_pro{
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .order_price{
+    border-bottom:1px solid #e4e4e4;
+  }
+
+  .order_price{
+    border-right:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+.order_ele .order_box:last-child{
+  .order_pro{
+    border-bottom:none!important;
+  }
+  .order_price{
+    border-bottom:none;
+  }
+}

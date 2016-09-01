@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交订单</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/cart/submit_order.css">
+</head>
+<body>
+<!--顶部状态栏-->
+<div class="header_top">
+    <div class="conwidth clearfix">
+        <div class="fl">
+            欢迎来到凤凰筑巢！ <a class="login_btn main_hover">请登录</a> <a class="register_btn main_hover">注册</a>
+        </div>
+        <ul class="fr header_top_nav">
+            <li><a href="" class="main_hover">正品保证</a></li>
+            <li class="line"></li>
+            <li><a href="../help/help.html" class="main_hover">帮助</a></li>
+            <li class="line"></li>
+            <li><a href="../usercenter/user_index.html" class="main_hover">账户中心</a></li>
+            <li class="line"></li>
+            <li class="more_btn mainbg_hover"><a>更多</a><i></i>
+
+                <div class="pull_more main_bg">
+                    <a href="">邀请好友</a>
+                    <a href="">加入收藏</a>
+                    <a href="">新浪微博</a>
+                    <a href="">邀请好友</a>
+                    <a href="">加入收藏</a>
+                    <a href="">新浪微博</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--购物车顶部-->
+<div class="cart_top conwidth clearfix">
+    <a href=""><img src="../../Images/test/test_top_logo.png"> </a>
+    <div class="cart_top_right">
+        <span class="main_bg">1.我的购物车<i class="icon-jiantou6"></i> <em class="main_border"></em></span>
+        <span class="main_bg">2.提交订单中心<i class="icon-jiantou6 main"></i> <em class="main_border"></em></span>
+        <span class="">3.成功提交订单</span>
+    </div>
+</div>
+<div class="l_main conwidth">
+    <!--收货地址-->
+    <div class="l_address">
+    <h3>收货地址 <span class="new_addr_btn main_bg"><i class="icon-jiahao"></i>新增收货地址</span></h3>
+    <div class="clearfix">
+        <div class="addr_ele main_border">
+        <div class="addr_title clearfix">
+            <span class="default_addr main">默认地址</span>
+            <div class="del_addr  main_hover">
+                <i class="icon-cuohao"></i>
+                <div class="msg_tip hide bounceIn">
+                    <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                    <p class="clearfix">
+                        <span class="del_msg main_bg">确认</span>
+                        <span class="cancel_del main_hover">取消</span>
+                    </p>
+                    <span class="msg_tip_arrow"></span>
+                </div>
+            </div>
+            <span class="edit_addr main_hover">编辑</span>
+        </div>
+        <div class="addr_container">
+            <p>看看&nbsp;&nbsp;15639708641</p>
+            <p class="addr_detail">河南&nbsp;周口市&nbsp;淮阳县淮阳县是飒飒奥斯卡好似河南 </p>
+            <p>450000</p>
+        </div>
+        <span class="icon-duihao1 main"> </span>
+    </div>
+        <div class="addr_ele ">
+            <div class="addr_title clearfix">
+                <div class="del_addr  main_hover">
+                    <i class="icon-cuohao"></i>
+                    <div class="msg_tip hide bounceIn">
+                        <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                        <p class="clearfix">
+                            <span class="del_msg main_bg">确认</span>
+                            <span class="cancel_del main_hover">取消</span>
+                        </p>
+                        <span class="msg_tip_arrow"></span>
+                    </div>
+                </div>
+                <span class="edit_addr main_hover">编辑</span>
+            </div>
+            <div class="addr_container">
+                <p>看看&nbsp;&nbsp;15639708641</p>
+                <p class="addr_detail">河南&nbsp;周口市&nbsp;淮阳县淮阳县是飒飒奥斯卡好似河南 </p>
+                <p>450000</p>
+            </div>
+            <span class="icon-duihao1 "> </span>
+        </div>
+        <div class="addr_ele no_mr">
+            <div class="addr_title clearfix">
+                <div class="del_addr  main_hover">
+                    <i class="icon-cuohao"></i>
+                    <div class="msg_tip hide bounceIn">
+                        <p class="msg_tip_detail">你确定要删除该信息吗？</p>
+                        <p class="clearfix">
+                            <span class="del_msg main_bg">确认</span>
+                            <span class="cancel_del main_hover">取消</span>
+                        </p>
+                        <span class="msg_tip_arrow"></span>
+                    </div>
+                </div>
+                <span class="edit_addr main_hover">编辑</span>
+            </div>
+            <div class="addr_container">
+                <p>看看&nbsp;&nbsp;15639708641</p>
+                <p class="addr_detail">河南&nbsp;周口市&nbsp;淮阳县淮阳县是飒飒奥斯卡好似河南 </p>
+                <p>450000</p>
+            </div>
+            <span class="icon-duihao1 "> </span>
+        </div>
+    </div>
+</div>
+    <!--送货时间-->
+    <div class="l_send_time">
+        <h3>送货时间</h3>
+        <div class="send_time_content clearfix">
+            <input type="radio" name="time" id="every" checked="checked"><label for="every">不限</label>
+            <input type="radio" name="time" id="work"><label for="work">只有工作日</label>
+            <input type="radio" name="time" id="holidy"><label for="holidy">只有双休日/节假日</label>
+        </div>
+    </div>
+    <!--支付方式-->
+    <div class="l_send_time">
+        <h3>支付方式</h3>
+        <div class="send_time_content clearfix">
+            <input type="radio" name="pay_way" id="online" checked="checked"><label for="online">在线支付</label>
+            <input type="radio" name="pay_way" id="company"><label for="company">公司转账</label>
+            <input type="radio" name="pay_way" id="receive"><label for="receive">货到付款</label>
+        </div>
+    </div>
+    <!--使用优惠券-->
+    <div class="l_coupon">
+        <h3>使用优惠券</h3>
+        <div class="m_coupon clearfix">
+            <div class="coupon_intro fl">使用优惠券：</div>
+            <div class="coupon_container fl">
+                <input class="main_focus" type="text" placeholder="请选择您的优惠券">
+                <span>&nbsp;&nbsp;或&nbsp;&nbsp;<i class="main">直接输入券号</i></span>
+                <div class="coupon_list hide  main_border">
+                    <ul class=" ">
+                        <li>满100减10元</li>
+                        <li>满200减30元</li>
+                    </ul>
+                    <span class=""><i class="main_bg">!</i> 您目前没有优惠券可用</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--发票信息-->
+    <div class="l_invoice">
+        <h3>发票信息</h3>
+        <div class="send_time_content clearfix">
+            <input type="radio" name="invoice" id="need_invoice" checked="checked"><label for="need_invoice">在线支付</label>
+            <input type="radio" name="invoice" id="unwanted_invoice"><label for="unwanted_invoice">公司转账</label>
+        </div>
+        <div class="invoice_content clearfix">
+            <span>发票抬头：</span><input type="text" placeholder="请输入您的发票抬头">
+        </div>
+    </div>
+    <!--商品详情-->
+    <div class="l_pro">
+        <h3>商品详情</h3>
+        <div class="cart_box">
+            <div class="cart_title clearfix">
+                <div class="pro_name fl">商品名称</div>
+                <div class="pro_num fl">数量</div>
+                <div class="pro_price fl">单价</div>
+                <div class="pro_total fl">小计</div>
+                <div class="pro_operate fl">操作</div>
+            </div>
+            <div class="cart_list  clearfix">
+                <div class="pro_name clearfix fl">
+                    <a class="fl" href="#">  <img src="../../Images/test/test_cart_pro.jpg"></a>
+                    <div class="describe fl">
+                        <a class="main_hover" href="#">西京烤鸡，好吃看的见</a>
+                        <p class="main">￥188.00</p>
+                    </div>
+                </div>
+                <div class="pro_num fl">
+                    <div class="num_box clearfix">
+                        <a class=" min fl">-</a>
+                        <input class="num_text fl" type="text" value="1">
+                        <a class=" add fr">+</a>
+                    </div>
+                    <p>库存 <i>22</i>件</p>
+                </div>
+                <div class="pro_price fl">188.00</div>
+                <div class="pro_total main fl">188.00</div>
+                <div class="pro_operate fl">
+                    <p>
+                        <a class="main_hover operate_del" href="#">删除</a>
+                        <a class="main_hover" href="#">加入收藏</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="leave_msg clearfix">
+            <span>留言：</span>
+            <input type="text" placeholder="选填，可填写您和卖家达成一致的要求">
+          </div>
+        <div class="cart_pay">
+            <span>已选商品：<em class="main pay_num">4</em> </span>
+            <span>优惠金额：<em class="main">¥0.00</em></span>
+            <span>商品总金额：<em class="main pay_total">¥1799.00</em> </span>
+            <a class="main" href="../mall/index.html">继续购物 >></a>
+            <a class="main_bg" href="pay.html">提交订单</a>
+        </div>
+    </div>
+</div>
+<!--推荐-->
+<div class="cart_recommend conwidth">
+    <ul class="pro_show_list clearfix">
+        <li>
+            <a class="pro_show_img" href="../mall/pro_info.html">
+                <img src="../../Images/test/test_pro_img6.jpg" alt=""/>
+            </a>
+            <div class="pro_show_text_box">
+                <h3 class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">PacificBaby 太平洋宝贝</a></h3>
+                <p class="text_ellipsis">寒冬温暖宝宝的胃</p>
+                <div class="pro_show_price">
+                    <p class="main">&yen;<b>6999</b></p>
+                    <span class="main_bg">3.0折</span>
+                    <p class="del">&yen;699</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a class="pro_show_img" href="../mall/pro_info.html">
+                <img src="../../Images/test/test_pro_img7.jpg" alt=""/>
+            </a>
+            <div class="pro_show_text_box">
+                <h3 class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">PacificBaby 太平洋宝贝</a></h3>
+                <p class="text_ellipsis">寒冬温暖宝宝的胃</p>
+                <div class="pro_show_price">
+                    <p class="main">&yen;<b>6999</b></p>
+                    <span class="main_bg">3.0折</span>
+                    <p class="del">&yen;699</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a class="pro_show_img" href="../mall/pro_info.html">
+                <img src="../../Images/test/test_pro_img8.jpg" alt=""/>
+            </a>
+            <div class="pro_show_text_box">
+                <h3 class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">PacificBaby 太平洋宝贝</a></h3>
+                <p class="text_ellipsis">寒冬温暖宝宝的胃</p>
+                <div class="pro_show_price">
+                    <p class="main">&yen;<b>6999</b></p>
+                    <span class="main_bg">3.0折</span>
+                    <p class="del">&yen;699</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a class="pro_show_img" href="../mall/pro_info.html">
+                <img src="../../Images/test/test_pro_img7.jpg" alt=""/>
+            </a>
+            <div class="pro_show_text_box">
+                <h3 class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">PacificBaby 太平洋宝贝</a></h3>
+                <p class="text_ellipsis">寒冬温暖宝宝的胃</p>
+                <div class="pro_show_price">
+                    <p class="main">&yen;<b>6999</b></p>
+                    <span class="main_bg">3.0折</span>
+                    <p class="del">&yen;699</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--新增收货地址-->
+<div class="new_addr hide">
+    <div class="new_addr_content bounceIn">
+        <h2 class="main_border">收货地址<i class="icon-cuohao  mainbg_hover addr_cancel"></i></h2>
+        <div class="new_addr_container">
+            <form>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main">*</i>收货人：</span>
+                    <div class="addr_input">
+                        <input type="text">
+                        <p class="error_tips">收货人不能为空！</p>
+                    </div>
+
+                </div>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main">*</i>收货地区：</span>
+                    <div class="addr_input">
+                        <div class="drop_menu ">
+                            <div class="drop_show">省份</div>
+                            <div class="drop_arrow"></div>
+                            <ul class="drop_list">
+                                <li>河南省</li>
+                                <li>安徽安徽安徽安徽省</li>
+                                <li>山东省</li>
+                                <li>江西省</li>
+                                <li>广西省</li>
+                                <li>广东省</li>
+                                <li>福建省</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                            </ul>
+                        </div>
+                        <div class="drop_menu  ">
+                            <div class="drop_show">直辖市</div>
+                            <div class="drop_arrow"></div>
+                            <ul class="drop_list">
+                                <li>郑州安徽安徽市</li>
+                                <li>湘乡市</li>
+                                <li>新乡市</li>
+                                <li>新郑市</li>
+                                <li>商丘市</li>
+                                <li>南阳市</li>
+                                <li>信阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                            </ul>
+                        </div>
+                        <div class="drop_menu no_mr  ">
+                            <div class="drop_show">区/县</div>
+                            <div class="drop_arrow"></div>
+                            <ul class="drop_list">
+                                <li>金水区</li>
+                                <li>管城区</li>
+                                <li>惠济区</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                            </ul>
+                        </div>
+                        <p class="error_tips">请选择收货地区！</p>
+                    </div>
+
+                </div>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main">*</i>收货地址：</span>
+                    <div class="addr_input">
+                        <input type="text">
+                        <p class="error_tips">请填写收货地址！</p>
+                    </div>
+                </div>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main">*</i>手&nbsp;&nbsp;机：</span>
+                    <div class="addr_input">
+                        <input type="text">
+                        <p class="error_tips">请输入手机号码！</p>
+                    </div>
+                </div>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main"></i>邮&nbsp;&nbsp;编：</span>
+                    <div class="addr_input">
+                        <input type="text">
+                        <p class="error_tips"></p>
+                    </div>
+                </div>
+                <div class="new_addr_ele set_default clearfix">
+                    <p><span class="addr_checked"><i></i></span> 设置为默认</p>
+                </div>
+                <div class="submit clearfix">
+                    <input class="main main_border" type="submit" value="保存信息">
+                    <span class="addr_cancel">取消</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footer_inner conwidth">
+        <div class="footer_content clearfix">
+            <dl class="footer_nav footer_about_us">
+                <dt>
+                    <img class="gray" src="../../Images/test/test_icon_logo.jpg" alt=""/>
+                </dt>
+                <dd>关于我们
+                    <a href=""><img src="../../Images/icon/footer_about_us1.png" /></a>
+                    <a href=""><img src="../../Images/icon/footer_about_us2.png" /></a>
+                    <a href=""><img src="../../Images/icon/footer_about_us3.png" /></a>
+                </dd>
+            </dl>
+            <dl class="footer_nav main_hover">
+                <dt>帮助中心</dt>
+                <dd>
+                    <a href="">购物指南</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">配送方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="footer_nav main_hover">
+                <dt>服务支持</dt>
+                <dd>
+                    <a href="">售后政策</a>
+                </dd>
+                <dd>
+                    <a href="">自助服务</a>
+                </dd>
+                <dd>
+                    <a href="">相关下载</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="footer_nav main_hover">
+                <dt>唠嗑之家</dt>
+                <dd>
+                    <a href="">唠嗑之家</a>
+                </dd>
+                <dd>
+                    <a href="">服务网点</a>
+                </dd>
+                <dd>
+                    <a href="">预约到店</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="footer_nav main_hover">
+                <dt>关于唠嗑</dt>
+                <dd>
+                    <a href="">了解唠嗑</a>
+                </dd>
+                <dd>
+                    <a href="">加入唠嗑</a>
+                </dd>
+                <dd>
+                    <a href="">联系我们</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="erweima fr">
+                <dt>手机筑巢</dt>
+                <dd><img src="../../Images/test/test_erweima.png" alt=""></dd>
+                <dd>下载移动客户端</dd>
+            </dl>
+        </div>
+        <div class="copy">
+            <p>©2014-2015凤凰筑巢保留所有权利</p>
+
+            <p>Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc25</p>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="cart/submit_order" src="../../Js/lib/require.js"></script>
+</body>
+</html>

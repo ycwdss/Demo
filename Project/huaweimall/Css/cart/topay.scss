@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+
+//===================购物车步骤提示-======================
+.cart_step{
+  padding-top: 43px;
+  li{
+    width: 196px;
+    height: 34px;
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    em{
+      color: #e01d20;
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      display: inline-block;
+      text-align: center;
+      font-size: 9px;
+      border-radius:3px;
+    }
+  }
+  .mycart{
+    background: url("../../cart/Images/sprite_mycart2.png") no-repeat;
+  }
+  .fill_order{
+    background: url("../../cart/Images/sprite_step.png") no-repeat;
+
+  }
+  .submit_sucess{
+    color: #fff;
+    em{
+      background-color: #fff;
+    }
+    background: url("../../cart/Images/sprite_stepnow.png") no-repeat;
+  }
+  .com{
+    color: #333;
+    em{
+      background-color: #666;
+      color: #fff;
+    }
+  }
+}
+
+//================订单信息=============
+.order_confirm{
+
+  .hd{
+    background-color: #f1f8ee;
+    border-top: 2px solid #7abd54;
+    position: relative;
+    padding-left: 165px;
+    min-height: 116px;
+    padding-bottom: 21px;
+    .sucess{
+      display: inline-block;
+      width: 72px;
+      height: 72px;
+      position: absolute;
+      top: 35px;
+      left: 56px;
+      background: url("../../cart/Images/sprite_sucess.png") no-repeat;
+    }
+    h3{
+      font-size: 18px;
+      color: #7baa61;
+      padding-top:27px;
+    }
+    p{
+      color: #777;
+      padding: 5px 0;
+      em{
+        padding:0 8px;
+      }
+      .sure_pay{
+        padding-left:8px;
+      }
+      .last_paytime{
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+  .bd{
+    background-color: #f1f8ee;
+    padding-left: 165px;
+    padding-bottom: 20px;
+    display: none;
+    ul{
+      li{
+        padding: 3px 0;
+        .order_code{
+          color: #e01d20;
+        }
+        .receiver_name{
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  .hs{
+    border-top: 1px solid #d7ebcb;
+    text-align: center;
+    position: relative;
+    a{
+      display: block;
+      width: 108px;
+      height: 32px;
+      background-color: #f1f8ee;
+      position: relative;
+      line-height: 30px;
+      font-size: 14px;
+      color: #649a45;
+      text-indent: 3px;
+      margin: -1px auto 0;
+      .arrow{
+        position: absolute;
+        left: 17px;
+        top: 14px;
+        height: 3px;
+        width: 6px;
+       display: block;
+        background: url("../../cart/Images/sprite_down_hide.png") no-repeat;
+      }
+      .current{
+        background: url("../../cart/Images/sprite_up_show.png") no-repeat;
+      }
+    }
+  }
+}
+
+//===============选择支付方式============
+.pay_way{
+  margin-top: 20px;s
+  .choice_title{
+    font-size: 14px;
+    border-left: 4px solid #e5e5e5;
+    padding-left: 6px;
+    margin-bottom: 10px;
+  }
+  .choice_way{
+    border: 1px solid #dedede;
+    h2{
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 1px solid #dedede;
+      background-color: #fcfcfc;
+      font-size: 14px;
+      color: #666;
+    }
+    ul{
+      padding: 20px;
+      li{
+        margin-right:30px;
+        padding-bottom: 25px;
+        float: left;
+        input{
+          vertical-align: 8px;
+        }
+      label{
+        padding: 2px;
+        border: 1px solid #ededed;
+        display: inline-block;
+        cursor: pointer;
+        img{
+          width: 90px;
+          height: 30px;
+          display: inline-block;
+          overflow: hidden;
+        }
+      }
+      }
+    }
+  }
+
+  .bank_pay{
+    margin-top: -1px;
+    h2{
+      em{
+        color: #999;
+        font-size: 12px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+//================确认支付=============
+.topay_link{
+  text-align: right;
+  margin: 50px 0;
+  a{
+    font-size: 16px;
+    width: 148px;
+    height: 35px;
+    line-height: 33px;
+    color: #FFF;
+    background-color: #d81b24;
+    text-align: center;
+    display: inline-block;
+    &:hover{
+      opacity: 0.8;
+      filter: alpha(opacity=0.8);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/**
+ * Created by Administrator on 2016/2/15.
+ */
+define(['jquery','module/recommend','module/totop','module/change_img','module/base'],function(){
+    $(function(){
+        $('.logistics_btn').click(function(){
+            if(!$(this).hasClass('main')){
+                $(this).html('[取消查看]');
+                $(this).addClass('main');
+                $('.logistics').slideDown();
+            }
+            else{
+                $(this).html('[查看物流]');
+                $(this).removeClass('main');
+                $('.logistics').slideUp();
+            }
+        })
+    })
+})

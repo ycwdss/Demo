@@ -1,0 +1,16 @@
+@charset "UTF-8";
+//站点
+.site{
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  li{
+    float: left;
+    color: #666;
+  }
+  .arrow{
+    line-height: 38px;
+    font-family: \5b8b\4f53,'Microsoft YaHei';
+    margin: 2px  5px 0;
+  }
+}

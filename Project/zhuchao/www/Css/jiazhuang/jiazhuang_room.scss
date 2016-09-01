@@ -1,0 +1,453 @@
+@charset "UTF-8";
+html,body{outline: none}
+.content{
+  margin-bottom: 135px;
+  background-color: #f8f8f8;
+}
+.banner{
+  width: 1300px;
+  height: 460px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+  //公共
+.material,.floor,.door,.bathroom,.smart_home,.glazed_brick,.abinet,.paint,.board{
+  margin-top: 40px;
+  h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .line{
+    width: 600px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    p{
+      position: absolute;
+      left: 50%;
+      bottom: -9px;
+      background: #f8f8f8;
+      font-size: 18px;
+      margin-left: -90px;
+      padding: 0 5px;
+    }
+  }
+}
+//每块显示内容
+.list_show{
+  width: 962px;
+  height: 560px;
+  margin: 0 5px;
+  overflow: hidden;
+  .list_pic{
+    width: 314px;
+    height: 478px;
+    overflow:hidden;
+  }
+  img{width: 100%;}
+  .every_info{
+    width: 314px;
+    height: 280px;
+    float: left;
+    margin: 0 5px 5px 0;
+    .every_info_pic{
+      width: 314px;
+      height: 196px;
+      overflow: hidden;
+    }
+  }
+}
+.info{
+  padding: 10px 0;
+  p{
+    line-height: 20px;
+    width: 314px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    span{
+      padding-left: 40px;
+    }
+  }
+}
+.show_wrap{
+  width: 960px;
+  height: 560px;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+//设计师精心配材
+.material{
+  .space_show{
+    margin-top: 40px;
+    width: 1300px;
+    background-color: #fff;
+    a{position: relative;color:#000}
+    .tips_txt{
+      position: absolute;
+      top: 10px;
+      left: 25px;
+      font-size: 24px;
+      line-height: 24px;
+      color: #fff;
+    }
+    .items{
+      height: 600px;
+      .hd{
+        border-bottom: 1px solid #ccc;
+        margin:0 20px;
+        height: 70px;
+        line-height: 70px;
+        ul{
+          width: 680px;
+          margin: 0 auto;
+          position: relative;
+          li{
+            width: 170px;
+            float: left;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+
+          }
+          li.on{
+          background: #fff;  height: 71px;
+          }
+          p{
+            position: absolute;
+            bottom: -7px;
+            left: 0px;
+            width: 170px;
+            height: 8px;
+            text-align: center;
+            z-index:9999;
+            img{
+              display: block;
+            }
+          }
+        }
+      }
+      .bd{
+        height: 530px;
+        width: 1300px;
+        overflow: hidden;
+        outline: none;
+      .fade{
+        div{
+          float: left;
+        }
+      }
+      }
+
+    }
+  }
+}
+//滑动
+.slide_box{
+  width: 1300px;
+  height: 420px;
+  overflow: hidden;
+li{
+  position: relative;
+  background-color: #fff;
+}
+  a{
+    margin-left: 5px;
+    width: 1300px;
+    height: 420px;
+    overflow: hidden;
+    display: block;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .mask{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+  }
+  .focus{
+    .mask{
+      display: none;
+    }
+  }
+}
+//地板
+.floor, .glazed_brick,.abinet,.bathroom,.paint,.board {
+  .floor_info, .glazed_brick_info,.abinet_info,.bathroom_info,.paint_info,.board_info{
+    width: 1300px;
+    position: relative;
+    margin-top: 30px;
+    .floor_show, .glazed_brick_show,.abinet_show, .bathroom_show,.paint_show,.board_show{
+
+      margin: 0 -6px;
+      overflow: hidden;
+    }
+  }
+  .floor_big, .glazed_brick_big,.abinet_big, .bathroom_big,.paint_big,.board_big{
+    margin-top: 10px;
+  }
+  .floor_big img,
+  .glazed_brick_big img,
+  .abinet_big img,
+  .bathroom_big img,
+  .paint_big img,
+  .board_big img{
+   width: 100%;
+    height: 100%;
+  }
+}
+//室内门
+.door{
+  .door_info{
+    width: 1300px;
+    position: relative;
+    margin-top: 30px;
+  }
+  .door_show{
+    width: 960px;
+    height: 690px;
+    margin:0 auto;
+    overflow: hidden;
+
+      ul{
+        margin: 0 -10px;
+        li{
+          float: left;
+          width: 290px;
+          border: 10px solid #fff;
+          margin:0 8px;
+          .info{
+            padding: 10px 0;
+            p{
+              line-height: 20px;
+              span{
+                padding-left: 40px;
+              }
+            }
+          }
+        }
+      }
+
+  }
+  .door_big{
+    margin-top: 10px;
+  }
+}
+//智能家居
+.smart_home_pic{
+  width: 1300px;
+  height: 1050px;
+  margin-top: 30px;
+  background-color: #fff;
+  img:hover{
+    opacity: .85;
+  }
+  .part_one{
+    width: 1300px;
+    height: 268px;
+    .item_one{
+      width: 325px;
+      height: 266px;
+      display: block;
+      overflow: hidden;
+      .explain_sh{
+        margin: 65px 42px;
+        line-height: 24px;
+        color: #000;
+        height: 145px;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+      }
+    }
+    .item_two{
+      width: 650px;
+      height: 266px;
+      display:block;
+    }
+    .item_three{
+      width:325px;
+      height: 266px;
+      display:block;
+      background-color: #b4debe;
+      .know_sh{
+        width: 180px;
+        height: 60px;
+        margin: 100px auto 0;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        .tip_line{
+          width: 100px;
+          height: 1px;
+          background-color: #fff;
+          margin:0 auto;
+        }
+        h1{
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+.same_pic{
+  width: 650px;
+  height: 260px;
+  a{
+    display: block;
+    color: #000;
+  }
+  img{
+    float: left;
+  }
+
+  .describe_txt{
+    width: 325px;
+    height: 260px;
+    float: left;
+position: relative;
+    .tip_line{
+      width: 100px;
+      height: 1px;
+      background-color: #ccc;
+      margin:0 auto;
+    }
+    h2{
+      text-align: center;
+      font-size: 18px;
+      padding: 12px 0;
+    }
+    .top{
+      margin-top: 20px;
+    }
+    .txt{
+      padding: 0 43px;
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  height: 96px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+    .link{
+      font-size: 14px;
+      background-color: #093;
+      text-align: center;
+      width: 150px;
+      height: 30px;
+      margin: 30px auto 0;
+      line-height: 30px;
+      color: #fff;
+    }
+  }
+  .left_arrow{
+    position: absolute;
+    top: 120px;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #f8f8f8;
+    left: -10px;
+  }
+  .right_arrow{
+    position: absolute;
+    top: 120px;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #f8f8f8;
+    right: -10px;
+  }
+}
+//左侧快捷选项
+.left_bar{
+  width: 80px;
+  position: fixed;
+  left: 50%;
+  top:50px;
+  display: none;
+  z-index: 99999;
+  margin-left: -730px;
+  ul{
+    border: 1px dotted #e4e4e4;
+    li{
+      border-bottom: 1px dotted #e4e4e4;
+      text-align: center;
+      font-size: 16px;
+      overflow: hidden;
+      height: 40px;
+      line-height: 40px;
+    }
+    li a{color: #093;display:inline-block; width:100%;height: 40px;line-height: 40px;}
+    .present{background: #093;color: #fff;}
+    li:last-child{border-bottom: 0;}
+  }
+}
+//箭头
+.left_btn{
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 0;
+  z-index: 9999;
+  i{
+    width: 30px;
+    height: 51px;
+    display:block ;
+    margin: 20px auto;
+    background:url("../../jiazhuang/Images/sprite_jiazhuang_left.png") no-repeat;
+  }
+}
+.right_btn{
+  display: block;
+  position: absolute;
+  right: 40px;
+  top: 0;
+
+  i{
+    display: block;
+    width: 30px;
+    height: 51px;
+    margin: 20px auto;
+    background:url("../../jiazhuang/Images/sprite_jiazhuang_right.png") no-repeat;
+  }
+}
+.left_btn, .right_btn{
+  background:#c6c6c6;
+  width: 90px;
+  height: 90px;
+  margin-top: 200px;
+  border-radius: 50%;
+  display: none;
+}
+
+//媒体查询
+@media screen and (max-width: 1500px){
+  .left_bar{
+    display: none!important;
+  }
+}

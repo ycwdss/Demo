@@ -1,0 +1,263 @@
+body {
+  background: #FFFFFF; }
+
+.top_title {
+  position: relative;
+  height: 660px;
+  padding-top: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("../../Images/icon/icon_xihu_top.jpg?_nosprite") center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.top_title_content h2 {
+  margin-top: 120px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 90px; }
+  .top_title_content h2 span {
+    font-size: 55px; }
+.top_title_content p {
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center; }
+
+.pain_content {
+  position: relative;
+  overflow: hidden;
+  height: 550px; }
+  .pain_content h3 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 90px;
+    margin-top: 15px; }
+
+.pain_container {
+  margin: 30px auto 0;
+  width: 950px; }
+
+.pain {
+  position: relative;
+  float: left;
+  width: 250px;
+  margin-right: 100px; }
+
+.pain_title {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  font-size: 36px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .pain_title span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 9px auto;
+    color: #FFFFFF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+    .pain_title span:before {
+      position: absolute;
+      top: 35px;
+      left: 160px;
+      content: '';
+      width: 140px;
+      height: 1px; }
+    .pain_title span:after {
+      position: absolute;
+      top: 35px;
+      left: -50px;
+      content: '';
+      width: 140px;
+      height: 1px; }
+
+.pain_detail h4 {
+  position: relative;
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF; }
+  .pain_detail h4:before {
+    position: absolute;
+    top: -40px;
+    left: 125px;
+    content: '';
+    width: 1px;
+    height: 40px; }
+.pain_detail p {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 15px;
+  height: 125px;
+  line-height: 25px;
+  color: #FFFFFF; }
+
+.pain1 .pain_title {
+  border: 1px solid #8c97cb; }
+  .pain1 .pain_title span {
+    background: #8c97cb; }
+    .pain1 .pain_title span:before {
+      background: #8c97cb; }
+.pain1 .pain_detail h4 {
+  background: #8c97cb; }
+  .pain1 .pain_detail h4:before {
+    background-color: #8c97cb; }
+.pain1 .pain_detail p {
+  background: #8c97cb; }
+
+.pain2 .pain_title {
+  border: 1px solid #ff8772; }
+  .pain2 .pain_title span {
+    background: #ff8772; }
+    .pain2 .pain_title span:before {
+      background: #ff8772; }
+    .pain2 .pain_title span:after {
+      background: #ff8772; }
+.pain2 .pain_detail h4 {
+  background: #ff8772; }
+  .pain2 .pain_detail h4:before {
+    background-color: #ff8772; }
+.pain2 .pain_detail p {
+  background: #ff8772; }
+
+.pain3 .pain_title {
+  border: 1px solid #448aca; }
+  .pain3 .pain_title span {
+    background: #448aca; }
+    .pain3 .pain_title span:after {
+      background: #448aca; }
+.pain3 .pain_detail h4 {
+  background: #448aca; }
+  .pain3 .pain_detail h4:before {
+    background-color: #448aca; }
+.pain3 .pain_detail p {
+  background: #448aca; }
+
+.manage_title {
+  position: relative;
+  margin-top: 45px;
+  text-align: center; }
+  .manage_title h3 {
+    font-size: 30px;
+    line-height: 50px; }
+    .manage_title h3 i {
+      color: #ff0000; }
+  .manage_title p {
+    font-size: 18px;
+    line-height: 40px; }
+
+.l_oto {
+  height: 550px;
+  background: #fbcbb7; }
+  .l_oto .manage_title {
+    margin-top: 30px;
+    color: #FFFFFF; }
+
+.oto_content {
+  position: relative;
+  overflow: hidden; }
+  .oto_content img {
+    display: block;
+    margin: 25px auto 0; }
+
+.l_zero {
+  height: 550px; }
+
+.zero_content {
+  position: relative;
+  overflow: hidden; }
+  .zero_content img {
+    display: block;
+    margin: 30px auto 0; }
+
+.l_brand {
+  height: 550px;
+  background: #b6dcd3; }
+  .l_brand .manage_title {
+    margin-top: 90px; }
+
+.brand_content {
+  position: relative;
+  overflow: hidden; }
+  .brand_content img {
+    display: block;
+    margin: 90px auto 0; }
+
+.l_manage {
+  position: relative;
+  overflow: hidden;
+  height: 550px;
+  background: url("../../Images/icon/icon_xihu_manage_bg.jpg?_nosprite"); }
+
+.manage_title {
+  position: relative;
+  margin-top: 45px;
+  text-align: center; }
+  .manage_title h3 {
+    font-size: 30px;
+    line-height: 50px; }
+  .manage_title p {
+    font-size: 18px;
+    line-height: 40px; }
+
+.manage_container {
+  position: relative;
+  margin-top: 90px; }
+  .manage_container li {
+    float: left;
+    margin-right: 50px;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-size: 16px;
+    color: #6d3628;
+    z-index: 9; }
+    .manage_container li:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      z-index: -1; }
+    .manage_container li img {
+      margin-top: 20px; }
+    .manage_container li span {
+      margin-top: 10px;
+      display: block; }
+  .manage_container .wuliu img {
+    margin: 30px 0 0; }
+
+.manage_part1 {
+  margin: 0 174px; }
+
+.manage_part2 {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  margin: 0 260px 0; }
+
+.footer {
+  margin-top: 0; }
+
+/*# sourceMappingURL=xihu_case.css.map */

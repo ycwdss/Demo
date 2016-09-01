@@ -1,0 +1,93 @@
+@charset "UTF-8";
+//最新评论
+.assess_box{
+  margin:10px 0;
+  background-color: #fff;
+}
+.assess_user{
+  padding:10px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.assess_user_head{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  overflow: hidden;
+  img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: block;
+  }
+}
+.assess_user_name{
+  margin-left:40px;
+  color: #888;
+  line-height: 30px;
+  a{
+    font-size: 14px;
+    color: #888;
+  }
+}
+.assess_text{
+  margin:10px;
+  padding-bottom: 10px;
+  p{
+    color: #888;
+    font-size: 12px;
+  }
+}
+.assess_star_box{
+  span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+  .icon_star1{
+    background: url(../../../Images/mobile/foreman/icon_star1.png) no-repeat;
+    background-size: 10px;
+  }
+  .icon_star2{
+    background: url(../../../Images/mobile/foreman/icon_star2.png) no-repeat;
+    background-size: 10px;
+  }
+  .icon_star3{
+    background: url(../../../Images/mobile/foreman/icon_star3.png) no-repeat;
+    background-size: 10px;
+  }
+}
+//评论导航
+.module_block_nav{
+  margin: 10px 0;
+  line-height: 45px;
+  background-color: #fff;
+  li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    a{
+      color: #333;
+    }
+  }
+  li:after{
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top:-10px;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: #e4e4e4;
+  }
+  li:last-child:after{
+    display: none;
+  }
+  .current{
+    a{
+      color: #093;
+    }
+  }
+}

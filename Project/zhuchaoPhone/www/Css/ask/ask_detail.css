@@ -1,0 +1,252 @@
+.moudle_top h1 {
+  line-height: 45px;
+  font-size: 18px;
+  color: #fff; }
+
+.ask_question {
+  padding: 0 10px;
+  background-color: #fff; }
+
+.question_title {
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000; }
+
+.question_tip {
+  display: flex; }
+  .question_tip li {
+    flex: 1;
+    font-size: 12px;
+    color: #888;
+    text-align: right; }
+  .question_tip .tr {
+    flex: 1.6;
+    text-align: right; }
+  .question_tip .tl {
+    text-align: left; }
+
+.question_btn {
+  display: block;
+  margin-top: 10px;
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #093;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer; }
+
+.num_answer {
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #093; }
+
+.ask_answer {
+  padding: 0 10px;
+  background-color: #fff; }
+  .ask_answer li:first-child {
+    border-top: 1px solid #e4e4e4; }
+  .ask_answer li {
+    padding-bottom: 10px;
+    border-top: 1px dashed #e4e4e4; }
+    .ask_answer li h3 {
+      margin-top: 10px;
+      padding-left: 10px;
+      font-size: 14px;
+      color: #000;
+      position: relative; }
+      .ask_answer li h3:before {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 16px;
+        background-color: #093;
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+        left: 0; }
+
+.user_infor {
+  padding-top: 10px; }
+
+.user_head {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px; }
+  .user_head img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px; }
+
+.user_detail {
+  margin-left: 60px;
+  color: #aaa; }
+  .user_detail p {
+    font-size: 12px; }
+    .user_detail p span {
+      font-size: 14px;
+      color: #000; }
+    .user_detail p i {
+      padding-right: 16%; }
+    .user_detail p .fr {
+      padding-right: 0; }
+  .user_detail p:first-child {
+    line-height: 2.6; }
+
+.answer_infor_box {
+  margin: 10px 0; }
+  .answer_infor_box span {
+    font-size: 14px;
+    color: #000; }
+  .answer_infor_box p {
+    margin-left: 20px;
+    color: #888;
+    font-size: 12px;
+    line-height: 1.6; }
+
+.answer_state span {
+  margin-right: 30px;
+  font-size: 12px;
+  color: #888; }
+
+.answer_state i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: -2px 2px; }
+
+.answer_state .answer_ping i {
+  background: url(../../../Images/mobile/foreman/icon_pinglun.png) no-repeat;
+  background-size: 15px; }
+
+.answer_state .answer_good i {
+  background: url(../../../Images/mobile/foreman/icon_good.png) no-repeat;
+  background-size: 15px; }
+
+.my_answer_box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 89; }
+
+.my_answer_inner {
+  width: 310px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin: 131.5px auto 0;
+  text-align: center;
+  background-color: #fff;
+  position: relative; }
+  .my_answer_inner h2 {
+    line-height: 40px;
+    background-color: #093;
+    color: #fff;
+    font-size: 16px; }
+  .my_answer_inner .answer_tip {
+    margin: 0 10px;
+    color: #888; }
+    .my_answer_inner .answer_tip span {
+      margin-top: 5px; }
+    .my_answer_inner .answer_tip span i {
+      color: #f60; }
+  .my_answer_inner #answerOff {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px; }
+
+.textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #f8f8f8;
+  background: #f8f8f8;
+  resize: none;
+  outline: none;
+  color: #888; }
+
+.answer_text {
+  width: 85%;
+  min-height: 100px; }
+
+.answer_submit_btn {
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #093;
+  color: #fff;
+  text-align: center; }
+
+.pinglun_box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 89; }
+
+.pinglun_inner {
+  min-width: 320px;
+  width: 90%;
+  max-width: 640px;
+  margin: 131.5px auto 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  position: relative; }
+
+.pinglun_text {
+  width: 87%;
+  min-height: 40px; }
+
+.pinglun_tip {
+  margin: 0 10px;
+  color: #888; }
+  .pinglun_tip span {
+    margin-top: 5px; }
+  .pinglun_tip span i {
+    color: #f60; }
+
+.pinglun_list {
+  margin: 10px 10px 0;
+  text-align: left; }
+  .pinglun_list li {
+    margin-bottom: 6px;
+    padding: 6px 0 20px;
+    position: relative;
+    border-top: 1px dashed #e4e4e4; }
+  .pinglun_list li:first-child {
+    border-top: 1px solid #e4e4e4; }
+
+.pinglun_user {
+  line-height: 1.6;
+  height: 1.6em; }
+  .pinglun_user span {
+    font-size: 14px;
+    color: #093;
+    margin-right: 10px; }
+  .pinglun_user i {
+    color: #aaa;
+    font-size: 12px; }
+
+.pinglun_content {
+  color: #888;
+  font-size: 12px;
+  line-height: 1.6; }
+
+.pinglun_btn {
+  position: absolute;
+  bottom: -11px;
+  right: -11px;
+  padding: 12px; }

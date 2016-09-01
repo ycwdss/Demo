@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/company/module_title";
+
+.header{
+  -webkit-box-shadow:  0 2px 30px rgba(0,0,0,0.2);
+  -moz-box-shadow:  0 2px 30px rgba(0,0,0,0.2);
+  box-shadow:  0 2px 30px rgba(0,0,0,0.2);
+}
+//banner
+.banner{
+  position: relative;
+  overflow: hidden;
+  img{
+    display: block;
+    width: 100%!important;
+  }
+}
+.swiper-pagination{
+  width: 100%;
+  left:0;
+  bottom: 5px!important;
+  span{
+    margin:0 5px;
+  }
+}
+
+//公司介绍
+.company_intro{
+  margin:0 5px;
+  padding: 10px 7px;
+  background: #ffffff;
+}
+.intro_img{
+  text-align: center;
+  img{
+    max-width: 30%;
+    margin-right: 2%;
+    max-height: 100px;
+  }
+}
+.intro_detial{
+  padding:0 7px;
+  margin-top: 10px;
+  text-indent: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #555;
+  a{
+    color: #999;
+  }
+}
+//新闻动态
+.news_ele{
+  margin:0 5px 10px;
+  padding: 10px;
+  background: #ffffff;
+  img{
+    float: left;
+    margin-right: 15px;
+    height: 60px;
+    max-width: 96px;
+  }
+  h4{
+    a{
+      display: inline-block;
+      color: #333;
+      font-size: 1.3rem;
+      line-height:23px;
+      height: 46px;
+      overflow: hidden;
+    }
+  }
+  p{
+    font-size:1.1rem;
+    line-height: 14px;
+    color: #999;
+  }
+}
+//产品展示
+.pro_show{
+  margin:0 5px 10px;
+  padding:10px 10px;
+  background: #ffffff;
+  h4{
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 25px;
+  }
+  p{
+    margin-top: 5px;
+  }
+  img{
+    display: block;
+    margin: 10px auto 0;
+    width: 100%;
+  }
+}
+
+.pro_price{
+  float: left;
+  font-size:1.6rem;
+  line-height: 40px;
+  text-align: center;
+  margin:0 20px 0 5px;
+  color: #333;
+}
+.pro_detail{
+  padding-right: 20px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  @include ell(2);
+  color: #666;
+}
+
+//新闻
+.icon-xinwen{
+  font-size: 1.8rem!important;
+}
+
+// 产品展示
+.icon-chanpinzhanshi{
+  font-size: 2rem!important;
+}
+//html,body{
+//  position: relative;
+//  height: 100%;
+//  overflow: hidden;
+//}
+//.hammer{
+//  position: absolute;
+//  display: table;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  background: #fff;
+//  text-align: center;
+//   z-index: 999;
+//  .icon-fanhuijian{
+//    position: absolute;
+//    top:0;
+//    left:0;
+//    width: 40px;
+//    font-size: 24px;
+//    line-height: 40px;
+//    text-align: center;
+//    color: #666;
+//
+//  }
+//  >div{
+//    display: table-cell;
+//    vertical-align: middle;
+//    text-align: center;
+//    width:100%;
+//  }
+//  img{
+//    position: relative;
+//    max-width: 100%;
+//  }
+//}

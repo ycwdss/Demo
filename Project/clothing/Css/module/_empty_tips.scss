@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+//订单为空  收藏为空等为空页面
+
+.empty_tips{
+  height: 495px;
+  line-height: 495px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  i{
+    font-size:130px;
+    color: #ccc;
+    vertical-align: middle;
+    margin-right: 50px;
+  }
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+
+/*
+<div class="empty_tips hide">
+<i class="icon-xiaoxingxingkong"></i>您还没有收藏，<a class="main" href="../mall/index.html">去逛逛吧~</a>
+</div>*/

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+//每个模块的头部
+.moudle_top_title{
+  margin: 10px auto 5px;
+  background-color: #fff;
+  height: 47px;
+  line-height: 47px;
+  position: relative;
+}
+.moudle_top_title a{
+  display: block;
+  position: relative;
+  @include box-sizing();
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  padding-left:20px;
+  span{
+    position: absolute;
+    font-size: 14px;
+    color: $normalcolor;
+    right: 0;
+    padding-right: 20px;
+  }
+}
+.moudle_top_title:before{
+  position: absolute;
+  top:50%;
+  margin-top: -9px;
+  left: 10px;
+  display: inline-block;
+  content: "";
+  width: 3px;
+  height: 18px;
+  background-color: #093;
+}
+//更多
+.more_btn{
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  background-color: #fff;
+  border-top:1px solid #e4e4e4;
+}
+.more_btn a{
+  font-size: 13px;
+  color: #888;
+}

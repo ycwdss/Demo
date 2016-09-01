@@ -1,0 +1,135 @@
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background: #f8f8f8;
+  font-size: 1.4rem; }
+
+.content {
+  margin: 0 auto 0;
+  width: 100%; }
+
+.pay_way, .send_way {
+  background-color: #fff;
+  padding: 15px 10px;
+  margin-bottom: 10px; }
+  .pay_way h3, .send_way h3 {
+    font-size: 1rem;
+    height: 32px;
+    line-height: 32px;
+    color: #666; }
+  .pay_way .goods, .send_way .goods {
+    width: 100%; }
+    .pay_way .goods ul li, .send_way .goods ul li {
+      float: left;
+      width: 80px;
+      height: 50px;
+      margin-right: 10px;
+      margin-bottom: 10px; }
+  .pay_way .select_which_way ul li, .send_way .select_which_way ul li {
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    position: relative; }
+    .pay_way .select_which_way ul li a, .send_way .select_which_way ul li a {
+      border: 1px solid #e4e4e4;
+      line-height: 30px;
+      width: 110px;
+      height: 30px;
+      display: inline-block;
+      color: #888888;
+      font-size: 1rem;
+      padding-left: 8px; }
+  .pay_way .select_which_way p, .send_way .select_which_way p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #888; }
+  .pay_way .select_which_way .date, .send_way .select_which_way .date {
+    color: #333; }
+
+.check {
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 14px;
+  height: 30px;
+  line-height: 30px;
+  display: none; }
+  .check img {
+    width: 14px;
+    height: 10px; }
+
+.submit_btn {
+  margin: 50px auto 200px;
+  text-align: center; }
+  .submit_btn input {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: 0;
+    background-color: #093; }
+
+.on {
+  color: #093 !important;
+  border: 1px solid #093 !important; }

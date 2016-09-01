@@ -1,0 +1,219 @@
+@charset "UTF-8";
+.fr {
+  float: right;
+  _display: inline; }
+
+.fl {
+  float: left;
+  _display: inline; }
+
+.main {
+  color: #093 !important; }
+
+.add_color {
+  color: #2e93d7; }
+
+.main_light {
+  color: #63bf82 !important; }
+
+.main_bg {
+  background-color: #093 !important;
+  color: #fff !important; }
+
+.main_bg_light {
+  background-color: #63bf82 !important;
+  color: #fff !important; }
+
+.main_border {
+  border-color: #093 !important; }
+
+.main_border_light {
+  border-color: #63bf82 !important; }
+
+.main_hover:hover {
+  color: #2e93d7 !important; }
+
+.main_hover a:hover {
+  color: #2e93d7 !important; }
+
+.mainbg_hover:hover {
+  background-color: #093 !important;
+  color: #FFFFFF !important; }
+  .mainbg_hover:hover a {
+    color: #fff !important; }
+
+.mainbg_hover_light:hover {
+  background-color: #63bf82 !important;
+  color: #FFFFFF !important; }
+  .mainbg_hover_light:hover a {
+    color: #fff !important; }
+
+.mainbd_hover:hover {
+  border-color: #093 !important; }
+
+.main_focus:focus {
+  border-color: #093 !important; }
+
+.site {
+  position: relative;
+  height: 52px;
+  line-height: 52px;
+  font-size: 14px; }
+  .site a {
+    color: #333; }
+  .site span {
+    margin: 0 3px; }
+
+/*
+<!--站点指示-->
+<div class="site">
+<a href="#">首页</a>
+<span>&gt;</span>
+<a>个人中心</a>
+</div>
+*/
+.m_left {
+  width: 205px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .m_left h3 {
+    font-size: 18px;
+    padding: 10px 17px 0;
+    text-indent: 17px;
+    line-height: 70px;
+    background: #fcfcfc;
+    border-bottom: 1px solid #e4e4e4; }
+  .m_left li {
+    margin: 0 17px;
+    text-indent: 17px;
+    color: #333;
+    font-size: 13px;
+    line-height: 59px;
+    border-bottom: 1px solid #e4e4e4; }
+
+.m_right {
+  width: 875px;
+  min-height: 380px; }
+
+.page_list {
+  padding: 20px 0;
+  text-align: center;
+  height: 32px;
+  line-height: 33px;
+  font-size: 14px; }
+  .page_list a {
+    display: inline-block;
+    margin-right: 3px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 11px;
+    background-color: #fff;
+    color: #888;
+    border: 1px solid #e4e4e4; }
+  .page_list span {
+    display: inline-block; }
+  .page_list input {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .page_list b {
+    margin-right: 10px; }
+
+.page_submit {
+  margin-left: 10px;
+  width: 45px;
+  height: 27px;
+  text-align: center;
+  line-height: 25px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.page_list .no_all_b {
+  border: 0 !important;
+  padding: 0 !important;
+  background-color: transparent; }
+
+/*
+<div class="page_list ">
+<p>
+<a class="prev_page" href="#">上一页</a>
+<a class="main_bg_light main_border_light" href="#">1</a>
+<a  href="#">2</a>
+<a  href="#">3</a>
+<a  href="#">4</a>
+<a class="next_page no_marginR" href="#">下一页</a>
+<span>&nbsp;共2页&nbsp;到第</span>
+<input type="text" onkeyup="value=value.replace(/[^\d/g]/,'')">
+<span>页</span>
+<span class="page_submit mainbg_hover">确认</span>
+</p>
+</div>*/
+.news_ele {
+  padding: 15px 15px 15px 0;
+  border-bottom: 1px solid #e4e4e4; }
+  .news_ele img {
+    float: left;
+    display: block;
+    width: 190px !important;
+    height: 120px !important;
+    margin-right: 30px;
+    -moz-transition: all 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: all 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .news_ele img:hover {
+      filter: alpha(opacity=90);
+      /* IE */
+      -moz-opacity: 0.9;
+      /* 老版Mozilla */
+      -khtml-opacity: 0.9;
+      /* 老版Safari */
+      opacity: 0.9;
+      /* 支持opacity的浏览器*/ }
+  .news_ele h4 {
+    font-size: 16px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden; }
+    .news_ele h4 a {
+      display: inline-block;
+      height: 30px;
+      overflow: hidden; }
+  .news_ele .news_detail {
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+    height: 50px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px; }
+  .news_ele .news_time {
+    font-size: 12px;
+    line-height: 20px;
+    color: #888;
+    height: 20px;
+    margin: 0; }
+
+.page_list {
+  margin-top: 100px; }

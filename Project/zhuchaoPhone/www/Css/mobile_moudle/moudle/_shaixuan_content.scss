@@ -1,0 +1,49 @@
+@charset "UTF-8";
+$sort_border:1px solid #e4e4e4;
+.list{
+  background: #FFFFFF;
+}
+.l_sort{
+  margin-left:20px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 40px;
+  border-bottom: $sort_border;
+}
+.m_sort{
+  display: none;
+  @extend .l_sort;
+  margin-left: 75px;
+  font-size: 0.8rem;
+  background: #FFFFFF;
+}
+.sort{
+  display: none;
+  .click{
+    color: #093;
+  }
+}
+.sort li{
+  @extend .l_sort;
+  margin-left: 120px;
+  font-size: 0.7rem;
+  line-height: 35px;
+}
+.list a{
+  color:#666;
+}
+.arrow_more{
+  float: right;
+  margin: 15px 10px 15px 0;
+  width: 15px;
+  height: 10px;
+  background: url("../../Images/mobile/icon_strategy.png") -128px -5px;
+  -webkit-background-size: 150px;
+  background-size: 150px;
+}
+.arrow_short{
+  @extend .arrow_more;
+  background: url("../../Images/mobile/icon_strategy.png") -127px -16px;
+  -webkit-background-size: 150px;
+  background-size: 150px;
+}

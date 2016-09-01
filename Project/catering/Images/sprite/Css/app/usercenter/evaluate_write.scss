@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+
+.evaluate_area{
+  padding:50px 55px 0;
+  min-height: 400px;
+  background-color: #fff;
+  .pro_info{
+    width:160px;
+    .pro_img{
+      width: 100px;
+      height:100px;
+      display: block;
+      overflow: hidden;
+      img{
+        width: 100px;
+        height:100px;
+        display: block;
+      }
+    }
+    .pro_name{
+      display: inline-block;
+      margin-top: 8px;
+      width: 100px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 14px;
+      color: #333;
+      line-height: 24px;
+    }
+    p{
+      font-size: 14px;
+      max-height: 36px;
+      overflow: hidden;
+    }
+  }
+}
+
+.evaluate_fill {
+  width:675px;
+  label{
+    font-size: 14px;
+    padding-right: 5px;
+  }
+  .score{
+    padding-bottom: 15px;
+    i{
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
+      color: #e4e4e4;
+    }
+
+    em{
+      font-size: 12px;
+      padding-left: 10px;
+      vertical-align: 2px;
+    }
+  }
+  .comment{
+    label{
+      float: left;
+    }
+    textarea{
+      float: left;
+      width: 615px;
+      padding: 5px;
+      height: 150px;
+      border: 1px solid #e4e4e4;
+      resize: none;
+      vertical-align: top;
+      outline: none;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #666;
+      font-family: '\5fae\8f6f\96c5\9ed1';
+      @include transition(border-color,0.2s,ease);
+    }
+    p{
+      text-align: right;
+      margin-top: 5px;
+      b{
+        display: none;
+      }
+    }
+  }
+  .btn{
+    float: right;
+    margin-top:30px;
+    width: 180px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+  }
+}

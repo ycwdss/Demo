@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404页面没有找到!</title>
+    <link type='text/css' rel='stylesheet' href='../Css/zhuchao/style.css'>
+    <link type='text/css' rel='stylesheet' href='../Css/zhuchao/404.css'>
+</head>
+<body>
+<div class="l_bg">
+    <div class="l_content">
+        <div class="m_content ">
+            <div class="c_top">
+                <img src="../../Images/pc/zhuchao/icon_404top.png">
+            </div>
+            <div class="clearfix">
+                <a href="javascript:history.back();" class="goback fl com_link "><span>回去吧</span></a>
+                <span class="error">-error-</span>
+                <a href="/" class="return_index fr com_link"><span>回到首页</span></a>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="rope"></div>
+            <div class="logo"></div>
+        </div>
+        <div class="left_4 img_4"></div>
+        <div class="right_4 img_4"></div>
+        <div class="people"></div>
+        <div class="search hover">
+            <input class="search_input" type="text" placeholder="找你想找" id="search">
+            <div class="btn_border" id="searchClick"><span class="search_btn"></span></div>
+        </div>
+    </div>
+</div>
+<script language='javascript' charset='utf-8' type='text/javascript' src='/Statics/Skins/Js/pc/lib/jquery.js'></script>
+<script language='javascript' charset='utf-8' type='text/javascript' src='/Statics/Skins/Js/pc/404.js'></script>
+<script language='javascript' charset='utf-8' type='text/javascript' src='/Statics/CommonJs/Cntysoft//Core.js'></script>
+<script language='javascript' charset='utf-8' type='text/javascript' src='/Statics/CommonJs/Cntysoft//Front.js'></script>
+<script>
+    $(function(){
+        $("#search").keyup(
+                function(){
+                    if(13==event.keyCode && $(this).val()){
+                        var key=$(this).val();
+                        window.location.href='/query/'+Cntysoft.toQueryString({'keyword' : key}, true);
+                    }
+                }
+        );
+        $('#searchClick').click(function(){
+            if($("#search").val()!==""){
+                var key=$("#search").val();
+//            alert(String.fromCharCode(key));
+                window.location.href='/query/'+Cntysoft.toQueryString({'keyword' : key}, true);
+            }
+        });
+
+    })
+</script>
+</body>
+</html>

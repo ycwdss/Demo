@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+.message_confirm_bg{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0,0,0,0.6);
+}
+.message_confirm{
+  width: 260px;
+  height: 120px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  background: #f8f8f8;
+  margin: 48% auto 0;
+  padding: 0 5%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  @include box-sizing();
+  h4{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    margin: 0 auto;
+    @include ell(1);
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+.message_button{
+  padding-top: 20px;
+  font-size: 0.8rem;
+}
+.message_del{
+  float: left;
+  width: 70px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  background: #FFFFFF;
+}
+.message_sure{
+  @extend .message_del;
+  float: right;
+  background: $normalcolor;
+  color: #FFFFFF;
+}

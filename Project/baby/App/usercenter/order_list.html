@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/slick.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/order_list.css">
+</head>
+<body>
+<div class="content conwidth">
+    <!--站点指示-->
+    <div class="site">
+        <a href="#">首页</a>
+        <span>&gt;</span>
+        <a>我的订单</a>
+    </div>
+    <!--内容-->
+    <div class="content clearfix">
+        <!--左侧-->
+        <div class="content_left main_border fl">
+            <h1>我的神恩</h1>
+            <p>我的账户</p>
+            <ul>
+                <li><a href="coupon.html"><i></i>优惠券</a></li>
+                <li><a href="collect.html"><i></i>商品收藏</a></li>
+                <li><a href="evaluate.html"><i></i>我的评价</a></li>
+                <li><a  href="message.html"><i></i>我的信息</a></li>
+            </ul>
+            <p>我的订单</p>
+            <ul>
+                <li><a class="main" href="order_list.html"><i  class="main_bg"></i>我的订单</a></li>
+                <li><a href="refund_list.html"><i></i>退货单</a></li>
+            </ul>
+            <p>我的资料</p>
+            <ul class="no_bb">
+                <li><a href="basic_info.html"><i></i>基本信息</a></li>
+                <li><a href="address.html"><i></i>我的地址</a></li>
+                <li><a href="change_pwd.html"><i></i>修改密码</a></li>
+            </ul>
+        </div>
+        <!--右侧-->
+        <div class="content_right fr">
+            <div class="item_wrap">
+                <div class="item_title">
+                    <a class="main_bg" href="#">全部订单</a>
+                    <a href="#">等待付款</a>
+                    <a href="#">等待收货确认</a>
+                    <a href="#">等待评价</a>
+                </div>
+                <div class="item_content main_border">
+
+                    <div class="order_wrap ">
+                        <div class="order_head  clearfix">
+                            <div class="pro_info">订单详情</div>
+                            <div class="pro_price">总价(元)</div>
+                            <div class="pro_num">商品数量</div>
+                            <div class="pro_status">订单状态</div>
+                            <div class="pro_operate">操作</div>
+                        </div>
+                        <!--我的订单 四种条目-->
+                        <!--等待付款-->
+                        <div class="order_list  clearfix">
+                            <div class="pro_info">
+                                <p>订单号：9232323</p>
+                                <p>交易时间：2015-10-25 09:28</p>
+                                <p>商品金额：¥134.00(运费5.00元)</p>
+                                <p>由<em>聚美油品</em>发货</p>
+                            </div>
+                            <div class="pro_price">¥134.00</div>
+                            <div class="pro_num">1</div>
+                            <div class="pro_status">
+                                <a class="main" href="#">等待付款</a>
+                            </div>
+                            <div class="pro_operate">
+                                <a class="main" href="#">去付款</a>
+                                <a class="main_hover" href="#">查看详情</a>
+                                <a class="main_hover" href="#">删除订单</a>
+                            </div>
+                        </div>
+                        <!--等待收货确认-->
+                        <div class="order_list  clearfix">
+                            <div class="pro_info">
+                                <p>订单号：9232323</p>
+                                <p>交易时间：2015-10-25 09:28</p>
+                                <p>商品金额：¥134.00(运费5.00元)</p>
+                                <p>由<em>聚美油品</em>发货</p>
+                            </div>
+                            <div class="pro_price">¥134.00</div>
+                            <div class="pro_num">1</div>
+                            <div class="pro_status">
+                                <p>已付款[正在备货...]</p>
+                                <a class="main" href="#">查看物流详情</a>
+                            </div>
+                            <div class="pro_operate">
+                                <a class="main" href="#">确认收货</a>
+                                <a class="main_hover" href="#">查看详情</a>
+                                <a class="main_hover" href=refund_reason.html>退货/换货</a>
+                                <a class="main_hover" href="#">删除订单</a>
+                            </div>
+                        </div>
+                        <div class="order_list  clearfix">
+                            <div class="pro_info">
+                                <p>订单号：9232323</p>
+                                <p>交易时间：2015-10-25 09:28</p>
+                                <p>商品金额：¥134.00(运费5.00元)</p>
+                                <p>由<em>聚美油品</em>发货</p>
+                            </div>
+                            <div class="pro_price">¥134.00</div>
+                            <div class="pro_num">1</div>
+                            <div class="pro_status">
+                                <p>已付款[已发货]</p>
+                                <a class="main" href="#">查看物流详情</a>
+                            </div>
+                            <div class="pro_operate">
+                                <a class="main" href="#">查看详情</a>
+                                <a class="main_hover" href=refund_reason.html>退货/换货</a>
+                                <a class="main_hover" href="#">删除订单</a>
+                            </div>
+                        </div>
+                        <!--等待评价-->
+                        <div class="order_list  clearfix">
+                            <div class="pro_info">
+                                <p>订单号：9232323</p>
+                                <p>交易时间：2015-10-25 09:28</p>
+                                <p>商品金额：¥134.00(运费5.00元)</p>
+                                <p>由<em>聚美油品</em>发货</p>
+                            </div>
+                            <div class="pro_price">¥134.00</div>
+                            <div class="pro_num">1</div>
+                            <div class="pro_status">
+                                <p>已收货</p>
+                                <a class="main" href="#">查看物流详情</a>
+                            </div>
+                            <div class="pro_operate">
+                                <a class="main" href="#">去评价</a>
+                                <a class="main_hover" href="#">查看详情</a>
+                                <a class="main_hover" href=refund_reason.html>退货/换货</a>
+                                <a class="main_hover" href="#">删除订单</a>
+                            </div>
+                        </div>
+                        <!--分页-->
+                        <div class="page_list">
+                            <p>
+                                <a class="prev_page" href="#">上一页</a>
+                                <a class="main_bg main_border" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a class="no_all_b" href="#">......</a>
+                                <a href="#">100</a>
+                                <a class="next_page no_marginR" href="#">下一页</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--订单为空-->
+                    <div class="empty_tips hide">
+                        <i class="icon-daizi"></i>您还没有完成订单，<a class="main" href="../mall/index.html">去逛逛吧~</a>
+                    </div>
+                </div>
+            </div>
+            <!--热门商品 最近浏览商品-->
+            <div class="hot_recently ">
+                <div class="hr_title">
+                    <a class="main_bg" href="#">热门商品</a>
+                    <a href="#">最近浏览商品</a>
+                </div>
+                <div class="hr_content main_border">
+                    <!--热门商品-->
+                    <div class="hr_wrap clearfix">
+                        <div class="hr_box clearfix">
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                        </div>
+                        <!--左右切换按钮-->
+                        <a class="next_btn"><i class="icon-arrow_left"></i></a>
+                        <a class="prev_btn"><i class="icon-arrow-right"></i></a>
+                    </div>
+                    <!--最近浏览-->
+                    <div class="hr_wrap hide clearfix">
+                        <div class="hr_box clearfix">
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                            <div class="hr_list">
+                                <a class="hr_img" href="#"><img src="../../Images/test/test_pro.png"> </a>
+                                <a class="hr_name" href="#">PacificBaby 太平洋宝贝寒冬温暖宝宝的胃 </a>
+                                <p>神恩价：<em class="main">￥6990</em></p>
+                            </div>
+                        </div>
+                        <!--左右切换按钮-->
+                        <a class="next_btn"><i class="icon-arrow_left"></i></a>
+                        <a class="prev_btn"><i class="icon-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/order_list" id="require"
+        src="../../Js/lib/require.js"></script>
+</body>
+</html>

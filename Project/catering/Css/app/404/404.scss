@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import "../../lib/reset";
+@import "../../lib/lib";
+@import "../../lib/commonclass";
+.no_page {
+  width: 685px;
+  height:690px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 9;
+  margin-left: -342px;
+  margin-top: -500px;
+  text-align: center;
+  .nopage_img {
+    background: url(../../../Images/icon/icon_404_bg.png?_nosprite) center no-repeat;
+    width: 100%;
+    background-size: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  p{
+    font-size: 35px;
+    color: #333;
+    a{
+      font-size: 25px;
+    }
+  }
+}
+.no_footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background: url(../../../Images/icon/icon_404_footer_bg.png?_nosprite)   no-repeat;
+  background-size: contain;
+}

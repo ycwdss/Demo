@@ -1,0 +1,274 @@
+@charset "UTF-8";
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  //left:0;
+  //right:0;
+  z-index:  99999;
+  height: 52px;
+  background-color: #fff;
+  box-shadow: 0 -1px 3px #d5d5d5;
+}
+.footer ul li{
+  float: left;
+  width: 20%;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+}
+.footer ul li>a{
+  position: relative;
+  display: block;
+  color: #888;
+  font-size: 12px;
+  padding-top: 12px;
+}
+.footer a:before{
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  display: block;
+  content: "";
+  background: url(../../Images/mobile/icon_all.png) no-repeat;
+  background-size: 27px;
+}
+.footer ul li.current a{
+  color:#093;
+}
+.footer_nav1 a:before{
+  width: 22px;
+  height: 22px;
+  margin-left: -11px;
+  background-position:0 -399px;
+}
+.footer_nav2 a:before{
+  width: 22px;
+  height: 23px;
+  margin-left: -11px;
+  background-position:0px -424px;
+}
+.footer_nav3 a:before{
+  width:22px;
+  height:23px;
+  margin-left:-11px;
+  background-position: 0 -500px;
+}
+.footer_nav4 a:before{
+  width:20px;
+  height: 23px;
+  margin-left:-10px;
+  background-position: 0 -449px;
+}
+.footer_nav5 a:before{
+  width: 22px;
+  height: 22px;
+  margin-left:-11px;
+  background-position: 0px -475px;
+}
+.footer ul li.footer_nav1.current a:before{
+  background-position:0 -526px;
+}
+.footer ul li.footer_nav2.current a:before{
+  background-position:0 -551px;
+}
+.footer ul li.footer_nav4.current a:before{
+  background-position:0 -576px;
+}
+.footer ul li.footer_nav5.current a:before{
+  background-position:0 -601px;
+}
+
+//网站底部导航布局
+//<footer class="footer">
+//<ul class="clearfix">
+//<li class="footer_nav1"><a href="/">首页</a></li>
+//<li class="footer_nav2"><a href="">攻略</a></li>
+//<li class="footer_nav3"><a href="">应用中心</a></li>
+//<li class="footer_nav4"><a href="">凤凰商城</a></li>
+//<li class="footer_nav5"><a href="">我的</a></li>
+//</ul>
+//</footer>
+
+//应用中心
+.footer_menu{
+  position: fixed;
+  top: 0;
+  //left: 0;
+  //right: 0;
+  //bottom: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 640px;
+  background-color: rgba(255,255,255,.95);
+  z-index: 99990;
+}
+.footer_menu_nav{
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -131.5px;
+  li{
+    text-align: center;
+    width: 33.33333%;
+    box-sizing: border-box;
+    float: left;
+    a{
+      display: block;
+      color: #000;
+    }
+    span{
+      display: inline-block;
+      width: 53px;
+      height: 53px;
+      background: url(../../Images/mobile/icon_all.png) no-repeat;
+      background-size: 53px;
+    }
+    p{
+      font-size: 13px;
+      margin: 14px 0 20px;
+    }
+  }
+}
+.footer_menu_nav li .footer_icon1{
+  background-position:0 0;
+}
+.footer_menu_nav li .footer_icon2{
+  background-position: 0 -408px;
+}
+.footer_menu_nav li .footer_icon3{
+  background-position: 0  -351px;
+}
+.footer_menu_nav li .footer_icon4{
+  background-position: 0 -58px;
+}
+.footer_menu_nav li .footer_icon5{
+  background-position: 0 -116px;
+}
+.footer_menu_nav li .footer_icon6{
+  background-position: 0 -175px;
+}
+.footer_menu_nav li .footer_icon7{
+  background-position: 0 -233px;
+}
+.footer_menu_nav li .footer_icon8{
+  background-position: 0 -291px;
+}
+//删除
+.icon_delete{
+  position: absolute;
+  right:5px;
+  top:5px;
+  padding:14px;
+  i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../../Images/mobile/icon_delete.png) no-repeat;
+    background-size: 15px;
+  }
+}
+@-webkit-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px)
+  }
+  80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px)
+  }
+  80% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px)
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+@keyframes bounceDown {
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  20%{
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+  }
+  40%{
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px)
+  }
+  100%{
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px)
+  }
+}
+
+@-webkit-keyframes bounceDown {
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  20%{
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+  }
+  40%{
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px)
+  }
+  100%{
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px)
+  }
+}
+
+.bounceOut{
+  -webkit-animation-name: bounceDown;
+  animation-name: bounceDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.bounceIn {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+ -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

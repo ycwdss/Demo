@@ -1,0 +1,52 @@
+.moudle_top h1 {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  vertical-align: -19px; }
+
+.design_fangan {
+  margin-top: 8px; }
+
+.design_fangan > li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff; }
+
+.design_fangan figure {
+  position: relative; }
+
+.design_fangan a {
+  display: block; }
+
+.design_fangan img {
+  max-width: 100%;
+  min-height: 150px;
+  width: 100%;
+  display: block; }
+
+.design_fangan figcaption {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 12px; }
+
+.design_fangan h4 {
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff; }
+
+.design_fangan ul {
+  overflow: hidden;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #fff; }
+
+.design_fangan ul li {
+  display: inline; }

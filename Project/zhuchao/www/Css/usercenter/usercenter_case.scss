@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import "../fh/style";
+.m_case{
+  margin-bottom: 50px;
+}
+.c_case{
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e4e4e4;
+  img{
+    float: left;
+    width: 283px!important;
+    height: 177px!important;
+    margin-right: 20px;
+  }
+  input{
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    font:$littleFont;
+    line-height: 25px;
+    background: #093;
+    color: #FFFFFF;
+    cursor: pointer;
+    @include transition();
+    &:hover{
+      background: #048b31;
+      -webkit-box-shadow: 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px #ccc;
+    }
+  }
+}
+.case_detail{
+  float: left;
+  a{
+    color: #333;
+  }
+  h4{
+    font-size: 16px;
+    line-height: 30px;
+    @include ell();
+  }
+  >p{
+    font:$littleFont;
+    line-height: 25px;
+    color: #888;
+    >span{
+      color: #333;
+    }
+  }
+}
+.del{
+  top: 0;
+  right: 0
+}
+.case_edit{
+  top: 0;
+  right: 70px;
+}

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/recommend";
+
+.pwd_container{
+  width: 460px;
+  padding: 50px 0;
+  margin:0 auto;
+  border-bottom:1px solid #e4e4e4;
+}
+.pwd_ele{
+  position: relative;
+  margin-bottom: 30px;
+  input{
+    float: left;
+    width: 340px;
+    height: 28px;
+    padding:4px 10px;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  input[type="password"]{
+    letter-spacing: 2px;
+  }
+}
+.pwd_intro{
+  float: left;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.tip{
+  position: absolute;
+  bottom: -20px;
+  left: 120px;
+  font-size: 12px;
+  color: #888888;
+}
+.submit{
+  input{
+    width: 160px;
+    border:none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.confirm{
+  input{
+    width: 160px;
+  }
+  img{
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin: 0 20px;
+  }
+  .confirm_update{
+    line-height: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.submit{
+  padding:0;
+  margin-top: 50px;
+  margin-bottom:0;
+  font-size: 16px;
+  input{
+    font-size: 14px;
+  }
+}

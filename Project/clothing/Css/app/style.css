@@ -1,0 +1,525 @@
+@charset "UTF-8";
+html {
+  width: 100%;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  min-width: 1200px;
+  height: 100%;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  font: 12px/1.5 "Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif; }
+
+* {
+  word-break: break-all; }
+
+pre, html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, textarea, p, span, table, th, td, form, img, div {
+  margin: 0;
+  padding: 0;
+  word-break: break-all; }
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word; }
+
+.fontsong {
+  font-size: 12px;
+  font-family: "SimSun",serif; }
+
+img, a, input, button {
+  border: none;
+  outline: none;
+  background: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, b {
+  font-weight: normal;
+  cursor: hand; }
+
+em, i, b {
+  font-style: normal; }
+
+ul, ol {
+  list-style: none; }
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+/**
+ * 文本对齐方式，左中右两端
+ */
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+.tl {
+  text-align: left !important; }
+
+.tc {
+  text-align: center !important; }
+
+.tr {
+  text-align: right !important; }
+
+/**
+ * 文本强制不换行
+ */
+.text_nowrap {
+  white-space: nowrap;
+  word-wrap: normal; }
+
+/**
+ * 文本强制换行
+ */
+.text_break {
+  white-space: normal;
+  word-wrap: break-word; }
+
+/**
+ * 文字溢出显示省略号
+ * 1. Opera 9-10.6
+ * 2. Chrome 21+ bug https://bugs.webkit.org/show_bug.cgi?id=121902
+ */
+.text_ellipsis {
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  /* 1 */
+  text-overflow: ellipsis;
+  text-align: left;
+  /* 2 */ }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.noselect * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.hide {
+  display: none; }
+
+.conwidth {
+  width: 1200px;
+  margin: 0 auto; }
+
+.no_before:before {
+  display: none !important; }
+
+.no_after:after {
+  display: none !important; }
+
+.no_mt {
+  margin-top: 0 !important; }
+
+.no_mr {
+  margin-right: 0 !important; }
+
+.no_mb {
+  margin-bottom: 0 !important; }
+
+.no_ml {
+  margin-left: 0 !important; }
+
+.no_bt {
+  border-top: 0 !important; }
+
+.no_br {
+  border-right: 0 !important; }
+
+.no_bb {
+  border-bottom: 0 !important; }
+
+.no_bl {
+  border-left: 0 !important; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("font/iconfont.eot");
+  /* IE9*/
+  src: url("font/iconfont.eot?#iefix") format("embedded-opentype"), url("font/iconfont.woff") format("woff"), url("font/iconfont.ttf") format("truetype"), url("font/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  font-family: "iconfont";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-duihuakuang:before {
+  content: "\e627"; }
+
+.icon-duihao:before {
+  content: "\e624"; }
+
+.icon-duihuanyouhuiquan:before {
+  content: "\e628"; }
+
+.icon-gouwuche:before {
+  content: "\e600"; }
+
+.icon-daifahuo:before {
+  content: "\e629"; }
+
+.icon-fanxiutuihuo:before {
+  content: "\e62a"; }
+
+.icon-daifukuan:before {
+  content: "\e62b"; }
+
+.icon-bianji:before {
+  content: "\e601"; }
+
+.icon-m-levelEvaluation:before {
+  content: "\e62c"; }
+
+.icon-upjiantou:before {
+  content: "\e623"; }
+
+.icon-mima:before {
+  content: "\e602"; }
+
+.icon-nextarrow:before {
+  content: "\e603"; }
+
+.icon-prevarrow:before {
+  content: "\e604"; }
+
+.icon-banxing:before {
+  content: "\e605"; }
+
+.icon-biaoqian:before {
+  content: "\e606"; }
+
+.icon-sucess:before {
+  content: "\e607"; }
+
+.icon-qianjin:before {
+  content: "\e608"; }
+
+.icon-fenxiang:before {
+  content: "\e609"; }
+
+.icon-guanbifuhao:before {
+  content: "\e60a"; }
+
+.icon-gundongtiao:before {
+  content: "\e60b"; }
+
+.icon-jiahao:before {
+  content: "\e60c"; }
+
+.icon-jianhao:before {
+  content: "\e60d"; }
+
+.icon-kongxing:before {
+  content: "\e60e"; }
+
+.icon-manxing:before {
+  content: "\e60f"; }
+
+.icon-shanchu:before {
+  content: "\e610"; }
+
+.icon-shangmian:before {
+  content: "\e611"; }
+
+.icon-shangxian:before {
+  content: "\e612"; }
+
+.icon-uploading:before {
+  content: "\e613"; }
+
+.icon-uparrow:before {
+  content: "\e614"; }
+
+.icon-sousuo:before {
+  content: "\e615"; }
+
+.icon-xiamian:before {
+  content: "\e616"; }
+
+.icon-xiaxian:before {
+  content: "\e617"; }
+
+.icon-get:before {
+  content: "\e618"; }
+
+.icon-user:before {
+  content: "\e619"; }
+
+.icon-youhuiquanditu:before {
+  content: "\e61a"; }
+
+.icon-youmian:before {
+  content: "\e61b"; }
+
+.icon-youxian:before {
+  content: "\e61c"; }
+
+.icon-zuomian:before {
+  content: "\e61d"; }
+
+.icon-zuoxian:before {
+  content: "\e61e"; }
+
+.icon-404kuang1:before {
+  content: "\e61f"; }
+
+.icon-404kuang2:before {
+  content: "\e620"; }
+
+.icon-worktime:before {
+  content: "\e621"; }
+
+.icon-kefudianhua:before {
+  content: "\e622"; }
+
+.icon-smallcuo:before {
+  content: "\e625"; }
+
+.icon-downjiantou:before {
+  content: "\e626"; }
+
+.header {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fcfcfc;
+  color: #666;
+  border-bottom: 1px solid #E4E4E4; }
+  .header .header_top_nav li {
+    float: left;
+    position: relative; }
+    .header .header_top_nav li > a {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px;
+      color: #666; }
+      .header .header_top_nav li > a i {
+        font-size: 15px;
+        color: #666;
+        vertical-align: -1px;
+        transition: transform .1s ease-in 0s;
+        -webkit-transition: -webkit-transform .1s ease-in 0s; }
+      .header .header_top_nav li > a .icon-gouwuche {
+        font-size: 18px;
+        margin-right: 6px;
+        vertical-align: -1px; }
+      .header .header_top_nav li > a .num_tips {
+        margin-left: 3px; }
+    .header .header_top_nav li .down_list {
+      display: none;
+      position: absolute;
+      top: 41px;
+      left: -1px;
+      z-index: 777;
+      padding: 10px;
+      background-color: #fcfcfc;
+      border: 1px solid #E4E4E4;
+      border-top: 0; }
+      .header .header_top_nav li .down_list .user img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: left; }
+      .header .header_top_nav li .down_list .user .user_info {
+        height: 40px; }
+        .header .header_top_nav li .down_list .user .user_info a {
+          display: inline-block;
+          width: 80px;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      .header .header_top_nav li .down_list ul li {
+        height: 22px;
+        line-height: 22px;
+        padding: 20px 0 10px; }
+        .header .header_top_nav li .down_list ul li span {
+          font-size: 12px;
+          line-height: 12px;
+          color: #666;
+          vertical-align: 6px;
+          padding: 0 3px; }
+      .header .header_top_nav li .down_list a {
+        display: inline-block;
+        height: 22px;
+        line-height: 22px;
+        color: #666;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0; }
+    .header .header_top_nav li .user_list {
+      width: 250px; }
+    .header .header_top_nav li .erweima_list p {
+      line-height: 14px;
+      padding-top: 10px;
+      font-size: 12px;
+      color: #666;
+      text-align: center; }
+    .header .header_top_nav li:hover i {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    .header .header_top_nav li:hover .down_link {
+      height: 41px;
+      line-height: 41px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 1px 5px rgba(100, 100, 100, 0.3);
+      -moz-box-shadow: 0 1px 5px rgba(100, 100, 100, 0.3);
+      box-shadow: 0 1px 5px rgba(100, 100, 100, 0.3); }
+    .header .header_top_nav li:hover .down_list {
+      display: block; }
+  .header .header_top_nav .line {
+    padding: 0;
+    margin-top: 15px;
+    width: 1px;
+    height: 10px;
+    background-color: #E4E4E4; }
+  .header .down_list .erweima {
+    display: block;
+    width: 80px;
+    height: 80px; }
+
+.footer {
+  background-color: #000; }
+
+.footer_box {
+  padding-top: 50px; }
+  .footer_box dl {
+    width: 300px;
+    float: left;
+    text-align: center; }
+  .footer_box dt {
+    color: #fff; }
+  .footer_box dd a {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    line-height: 22px; }
+
+.footer_last {
+  padding: 30px 0; }
+  .footer_last p {
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #666; }
+    .footer_last p a {
+      line-height: 12px;
+      padding: 0 40px; }
+
+/*c_gotop*/
+#totop {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000; }
+
+a {
+  color: #666; }
+
+.main {
+  color: #f00 !important; }
+  .main a {
+    color: #f00; }
+
+.sec {
+  color: #3c619e !important; }
+
+.main_bg {
+  background-color: #f00 !important;
+  color: #fff !important; }
+
+.sec_bg {
+  background-color: #3c619e !important;
+  color: #fff !important; }
+
+.main_border {
+  border-color: #f00 !important; }
+
+.sec_border {
+  border-color: #3c619e !important; }
+
+.main_hover:hover {
+  color: #f00 !important; }
+.main_hover a:hover {
+  color: #f00 !important; }
+
+.sec_hover:hover {
+  color: #3c619e !important; }
+.sec_hover a:hover {
+  color: #3c619e !important; }
+
+.mainbg_hover:hover {
+  background-color: #f00 !important;
+  color: #FFFFFF !important; }
+
+.secbg_hover:hover {
+  background-color: #3c619e !important;
+  color: #FFFFFF !important; }
+
+.mainbd_hover:hover {
+  border-color: #f00 !important; }
+
+.secbd_hover:hover {
+  border-color: #3c619e !important; }
+
+.main_focus:focus {
+  border-color: #f00 !important; }
+
+.sec_focus:focus {
+  border-color: #3c619e !important; }
+
+body .layer-ext-myskin .layui-layer-setwin a:hover {
+  background: #f00 !important; }
+
+body .layer-ext-myskin .layui-layer-btn .layui-layer-btn0 {
+  border-color: #f00 !important;
+  background-color: #f00 !important; }
+body .layer-ext-myskin .layui-layer-btn:hover {
+  background-color: #f50000 !important; }
+
+/*# sourceMappingURL=style.css.map */

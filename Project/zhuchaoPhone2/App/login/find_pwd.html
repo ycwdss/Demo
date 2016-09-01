@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>忘记密码</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,width=device-width">
+    <meta name="description" content="凤凰筑巢-建材家居行业_市场_搜建材行业的所有信息就去凤凰筑巢网-家具、建材、装修、装修攻略、效果图!">
+    <meta name="Keywords" content="凤凰筑巢,网上商城,家具,壁纸,壁灯,建材,攻略,建材攻略,建材价格,效果图,装修攻略,窗帘,壁画,装修流程">
+    <link rel="stylesheet" href="../../Css/login/style.css"/>
+    <link rel="stylesheet" href="../../Css/login/login.css"/>
+</head>
+<body>
+<div class="login_main w">
+    <div class="login_icon">
+        <i class="login_icon_bg"></i>
+        <h3>忘记密码</h3>
+    </div>
+    <!--短信验证-->
+    <form action="" class="">
+        <ul class="form_box">
+            <li>
+                <input id="phone" name="phone" type="text" tabindex="1" required="required" placeholder="请输入注册时的手机号">
+            </li>
+            <li class="tips tl">
+                <span>请输入注册时的手机号</span>
+            </li>
+            <!--验证码-->
+            <li class="input_code">
+                <input class="fl code" type="text" name="code" autocomplete="off" placeholder="请输入图片验证码">
+                <a class="icode_image">
+                    <img alt="图片验证码" title="看不清换一张" src="../../Images/test/test_banner_01.jpg">
+                    <i class="icon-svgupdate"></i>
+                </a>
+            </li>
+            <li class="tips tl">
+                <i></i>
+                <span class="maincolor">请输入图片验证码</span>
+            </li>
+        </ul>
+
+        <div class="user_action">
+            <a class="submit_btn">找回密码</a>
+        </div>
+    </form>
+    <!--输入密码-->
+    <form action="" class="hide">
+        <ul class="form_box">
+            <!--短信验证-->
+            <li>
+                <input class="yzm_input" id="yzm" name="yzm" type="text" required="required" placeholder="请输入短信验证码">
+                <a class="yzm_btn">发送短信到手机</a>
+            </li>
+            <li class="tips tl">
+                <i></i>
+                <span class="maincolor">请输入短信验证码</span>
+            </li>
+            <li>
+                <input id="pwd" name="pwd" class="error_input" type="password" placeholder="请输入新密码">
+            </li>
+            <li class="tips tl">
+                <span class="maincolor">密码由6-20位字母，数字和符号组合</span>
+            </li>
+            <li>
+                <input id="confirmpwd" name="confirmpwd" type="password" placeholder="请输入确认密码">
+            </li>
+            <li class="tips tl">
+                <span class="maincolor">请确保两次输入密码一致</span>
+            </li>
+        </ul>
+
+        <div class="user_action">
+            <a class="submit_btn">确认</a>
+        </div>
+    </form>
+    <!--设置成功-->
+    <!--成功-->
+    <div class="form_box tc success">
+        <i class="icon-duihaoyuanquan"></i>
+        <p>新密码设置成功，请您牢记新密码</p>
+        <!--返回首页-->
+        <div class="user_action">
+            <a class="submit_btn">返回首页</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

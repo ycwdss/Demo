@@ -1,0 +1,40 @@
+/**
+ * Created by Administrator on 2016/2/16.
+ */
+define(['jquery','module/totop'], function () {
+    $(document).ready(function () {
+        //全选按钮
+        $('.choose_all').click(function(){
+            if(!$(this).find('i').hasClass('icon-duihao')){
+                $(this).find('i').addClass('icon-duihao');
+                $(".check_btn").addClass('icon-duihao');
+            }else{
+                $(this).find('i').removeClass('icon-duihao');
+                $(".check_btn").removeClass('icon-duihao');
+            }
+        });
+        $('.del_pro_btn').click(function(){
+            $(this).siblings('.pro_card_inner').find('.del_box').show();
+        });
+        $('.cancel_del').click(function(){
+            $(this).parents('.del_box').hide();
+        });
+        $('.to_del').click(function(){
+           $(this).parents('.pro_card').remove();
+        });
+        $('.del_checked').click(function(){
+            $('.pro_card').each(function(){
+                if($(this).find('.check_btn').hasClass('icon-duihao')){
+                    $(this).remove();
+                }
+            })
+        });
+        $('.check_btn').click(function(){
+            if($(this).hasClass('icon-duihao')){
+                $(this).removeClass('icon-duihao');
+            }else{
+                $(this).addClass('icon-duihao');
+            }
+        })
+    });
+});

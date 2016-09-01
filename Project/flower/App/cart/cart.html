@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/slick.css">
+    <link rel="stylesheet" href="../../Css/app/cart/cart.css">
+</head>
+<body>
+<!--头部-->
+<div class="header main_bg">
+    <a class="icon_logo" href="../mall/index.html">
+        <img src="../../Images/test/test_mall_logo.png" alt=""/>
+    </a>
+
+    <div class="header_nav_box">
+        <ul class="header_nav">
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">鲜花</a></li>
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">永生花</a></li>
+            <li><a class="mainbg_opacity" href="../mall/pro_list.html">礼品</a></li>
+            <li><a class="mainbg_opacity" href="../new/new_list.html">花语大全</a></li>
+        </ul>
+    </div>
+    <ul class="header_icon">
+        <li class="mainbg_opacity icon_search"><i class="icon-search"></i></li>
+        <li class="mainbg_opacity"><i class="icon-cart"></i></li>
+        <li class="mainbg_opacity"><i class="icon-phone"></i>
+            <div class="icon_phone_pull main_bg">
+                <a><img src="http://statics-res.fhzc.com/Images/pc/icon_erweima.png"><span>扫码下载客户端</span></a>
+            </div>
+        </li>
+        <li class="mainbg_opacity"><i class="icon-user-white"></i><span>登录</span> <span>注册</span></li>
+    </ul>
+    <div class="search_box  main_bg hide">
+        <div class="search_box_inner">
+            <form action="" class="search_form">
+                <input class="search_input" type="text" required/><input
+                    class="search_btn" type="button" value="搜索"/>
+            </form>
+            <!--热门搜索-->
+            <div class="search_hot">
+                <h4>人气搜索关键词：</h4>
+                <a href="">玫瑰花</a>
+                <a href="">友情花</a>
+                <a href="">探望病人</a>
+                <a href="">永生花</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容区域-->
+<div class="content conwidth">
+    <!--站点指示-->
+    <div class="site">
+        <a href="../mall/index.html">首页</a>
+        <span>&gt;</span>
+        <a>个人中心</a>
+    </div>
+    <!--我的购物车-->
+    <div class="cart">
+        <div class="cart_head clearfix">
+            <span class="cart_icon fl"><i class="icon-cart"></i>我的购物车</span>
+            <!--购物进度-->
+            <ul class="cart_step fr ">
+                <li class="step1 main_bg">1.我的购物车<i class="main_border right_arrow"></i></li>
+                <li class="step2">
+                    2.提交订单中心
+                    <i class="left_arrow"></i>
+                    <i class="right_arrow"></i>
+                </li>
+                <li class="step3 no_marginR">3.提交订单成功<i class="left_arrow"></i></li>
+            </ul>
+        </div>
+        <div class="cart_body">
+            <div class="list_head clearfix">
+                <div class="fl list_check noselect">
+                    <i class="icon_checkbox" id="selectAll"></i>全选
+                </div>
+                <div class="fl list_name">商品名称</div>
+                <div class="fl list_sale">销售价</div>
+                <div class="fl list_promotion">促销价</div>
+                <div class="fl list_num">数量</div>
+                <div class="fl list_total">小计</div>
+                <div class="fl list_action">操作</div>
+            </div>
+            <div class="list_content">
+                <div class="list_items clearfix">
+                    <div class="fl list_check noselect">
+                        <i class="icon_checkbox"></i>
+                    </div>
+                    <div class="fl list_name clearfix">
+                        <a href="../mall/pro_info.html" class="fl list_good_img">
+                            <img src="../../Images/test/test_cart_img.png" alt="">
+                        </a>
+
+                        <div class="fl list_good_text">
+                            <div>
+                                <a class="main_hover title" href="../mall/pro_info.html">真不多的被子哦哦真不多的被子哦哦啊哈哈</a>
+
+                                <p>维格尚品生活馆-餐椅 550*570*770 ZQB-致趣本 无面料 550*570*770</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="fl list_sale">￥<em>2.00</em></div>
+                    <div class="fl list_promotion">￥<em>1.00</em></div>
+                    <div class="fl list_num">
+                        <div class="clearfix">
+                        <a class="min main_hover fl" href="javascript:;">-</a>
+                        <input class="text fl" type="text" value="1">
+                        <a class="add main_hover fl" href="javascript:;">+</a>
+                        </div>
+                        <p class="main">已尔萨润肤乳为爱</p>
+                    </div>
+                    <div class="fl main list_total">￥<em>1.00</em></div>
+                    <div class="fl list_action">
+                        <a class="main_hover list_delete" href="#">删除</a>
+                        <i>|</i>
+                        <a class="main_hover" href="#">加入收藏</a>
+                    </div>
+                    <div class="main_bg_opacity"></div>
+                </div>
+                <div class="list_items clearfix">
+                    <div class="fl list_check noselect">
+                        <i class="icon_checkbox"></i>
+                    </div>
+                    <div class="fl list_name clearfix">
+                        <a href="../mall/pro_info.html" class="fl list_good_img">
+                            <img src="../../Images/test/test_cart_img.png" alt="">
+                        </a>
+
+                        <div class="fl list_good_text">
+                            <div>
+                                <a class="main_hover title" href="../mall/pro_info.html">真不多的被子哦哦真不多的被子哦哦啊哈哈</a>
+
+                                <p>维格尚品生活馆-餐椅 550*570*770 ZQB-致趣本 无面料 550*570*770</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="fl list_sale">￥<em>2.00</em></div>
+                    <div class="fl list_promotion">￥<em>1.00</em></div>
+                    <div class="fl list_num">
+                        <div class="clearfix">
+                            <a class="min main_hover fl" href="javascript:;">-</a>
+                            <input class="text fl" type="text" value="1">
+                            <a class="add main_hover fl" href="javascript:;">+</a>
+                        </div>
+                        <p class="main">已尔萨润肤乳为爱</p>
+                    </div>
+                    <div class="fl main list_total">￥<em>1.00</em></div>
+                    <div class="fl list_action">
+                        <a class="main_hover list_delete" href="#">删除</a>
+                        <i>|</i>
+                        <a class="main_hover" href="#">加入收藏</a>
+                    </div>
+                    <div class="main_bg_opacity"></div>
+                </div>
+                <div class="list_items clearfix">
+                    <div class="fl list_check noselect">
+                        <i class="icon_checkbox"></i>
+                    </div>
+                    <div class="fl list_name clearfix">
+                        <a href="../mall/pro_info.html" class="fl list_good_img">
+                            <img src="../../Images/test/test_cart_img.png" alt="">
+                        </a>
+
+                        <div class="fl list_good_text">
+                            <div>
+                                <a class="main_hover title" href="../mall/pro_info.html">真不多的被子哦哦真不多的被子哦哦啊哈哈</a>
+
+                                <p>维格尚品生活馆-餐椅 550*570*770 ZQB-致趣本 无面料 550*570*770</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="fl list_sale">￥<em>2.00</em></div>
+                    <div class="fl list_promotion">￥<em>1.00</em></div>
+                    <div class="fl list_num">
+                        <div class="clearfix">
+                            <a class="min main_hover fl" href="javascript:;">-</a>
+                            <input class="text fl" type="text" value="1">
+                            <a class="add main_hover fl" href="javascript:;">+</a>
+                        </div>
+                        <p class="main">已尔萨润肤乳为爱</p>
+                    </div>
+                    <div class="fl main list_total">￥<em>1.00</em></div>
+                    <div class="fl list_action">
+                        <a class="main_hover list_delete" href="#">删除</a>
+                        <i>|</i>
+                        <a class="main_hover" href="#">加入收藏</a>
+                    </div>
+                    <div class="main_bg_opacity"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--结算-->
+    <div class="total_wrap">
+        <div class="total_inner  clearfix">
+            <a class="delete main_hover fl" href="javascript:;"><i class="icon-del main_hover"></i>删除选择商品</a>
+            <div class="account_list fr">
+                <div class="list no_discount">
+                    <label>商品金额：</label>
+                    <em>¥<b>212.00</b></em>
+                </div>
+                <div class="list discount">
+                    <label>优惠金额：</label>
+                    <em>¥<b>212.00</b></em>
+                </div>
+                <div class="list after_discount">
+                    <label>总计(不含运费)：</label>
+                    <em class="main total">¥<b>212.00</b></em>
+                </div>
+                <div class="list">
+                    <a  class="btn go_again" href="../mall/index.html">继续购物</a>
+                    <a class="btn main_bg" href="submit_order.html">下单结算 <i>&gt;</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main_bg_opacity"></div>
+    </div>
+    <!--购物车为空-->
+    <div class="cart_empty clearfix">
+        <i class="icon_empty icon-cart fl"></i>
+        <p>
+            <em>您的购物车里还没有商品，</em>你可以:<br>将收藏夹中的商品添加进来，或者去看看
+            <a class="main" href="../mall/pro_list.html">商品<b>&gt;&gt;</b></a>
+        </p>
+    </div>
+    <!--精品推荐-->
+    <div class="recommend">
+        <div class="recommend_title">
+            <i class="icon-recommend"></i>为您推荐
+        </div>
+        <div class="recommend_content">
+            <div class="recommend_slick">
+                <div>
+                    <div class="recommend_pro">
+                        <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                        <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                        <h4 class="main">￥198</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="recommend_pro">
+                        <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                        <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                        <h4 class="main">￥198</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="recommend_pro">
+                        <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                        <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                        <h4 class="main">￥198</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="recommend_pro">
+                        <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                        <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                        <h4 class="main">￥198</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="recommend_pro">
+                        <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.jpg"></a>
+                        <p class="main_hover"><a href="../mall/pro_info.html">【薰衣草永生花礼盒/感慕】 感受爱的温暖</a></p>
+                        <h4 class="main">￥198</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend_left icon-jiantou-left"></div>
+            <div class="recommend_right icon-jiantou-right"></div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="service">
+    <ul class="conwidth service_inner">
+        <li>
+            <a href="../help/help.html">
+                <i class="icon-footer1"></i>
+                <h4>定做预约申请</h4>
+
+                <p>我们会做出您最满意的商品</p>
+            </a>
+        </li>
+        <li>
+            <a href="../help/help.html">
+                <i class="icon-footer2"></i>
+                <h4>服务与支持</h4>
+
+                <p>我们将为您提供金牌服务</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="conwidth clearfix">
+        <dl class="footer_nav">
+            <dt>新手指南</dt>
+            <dd>
+                <a class="main_hover" href="">购物流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">会员政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">联系客服</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">积分政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">加入我们</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>配送方式</dt>
+            <dd>
+                <a class="main_hover" href="">全程冷链</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送时间</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送范围</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">配送收费标准</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">关于我们</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>支付方式</dt>
+            <dd>
+                <a class="main_hover" href="">货到付款</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">在线支付</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">其他支付方式</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">优惠券使用</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">礼金卡使用</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>售后服务</dt>
+            <dd>
+                <a class="main_hover" href="">验货与拒收政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退换货政策</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退换货流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">退款流程</a>
+            </dd>
+            <dd>
+                <a class="main_hover" href="">发票制度</a>
+            </dd>
+        </dl>
+        <dl class="erweima fl">
+            <dt>手机筑巢</dt>
+            <dd><img src="../../Images/test/test_erweima.png" alt=""/></dd>
+            <dd>下载移动客户端</dd>
+        </dl>
+    </div>
+    <p class="copy">Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc23</p>
+</div>
+<script data-main="../../Js/requireenter" app="cart/cart" id="require" src="../../Js/lib/require.js"></script>
+</body>
+</html>

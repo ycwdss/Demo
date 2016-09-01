@@ -1,0 +1,448 @@
+@charset "UTF-8";
+.fr {
+  float: right;
+  _display: inline; }
+
+.fl {
+  float: left;
+  _display: inline; }
+
+.main {
+  color: #093 !important; }
+
+.add_color {
+  color: #2e93d7; }
+
+.main_light {
+  color: #63bf82 !important; }
+
+.main_bg {
+  background-color: #093 !important;
+  color: #fff !important; }
+
+.main_bg_light {
+  background-color: #63bf82 !important;
+  color: #fff !important; }
+
+.main_border {
+  border-color: #093 !important; }
+
+.main_border_light {
+  border-color: #63bf82 !important; }
+
+.main_hover:hover {
+  color: #2e93d7 !important; }
+
+.main_hover a:hover {
+  color: #2e93d7 !important; }
+
+.mainbg_hover:hover {
+  background-color: #093 !important;
+  color: #FFFFFF !important; }
+  .mainbg_hover:hover a {
+    color: #fff !important; }
+
+.mainbg_hover_light:hover {
+  background-color: #63bf82 !important;
+  color: #FFFFFF !important; }
+  .mainbg_hover_light:hover a {
+    color: #fff !important; }
+
+.mainbd_hover:hover {
+  border-color: #093 !important; }
+
+.main_focus:focus {
+  border-color: #093 !important; }
+
+.drop_menu {
+  float: left;
+  margin-right: 5px;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e4e4e4;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .drop_menu .drop_show {
+    padding-right: 30px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    overflow: hidden; }
+  .drop_menu .active {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .drop_menu .drop_arrow, .drop_menu .drop_arrow:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    border: 8px solid transparent;
+    border-top-color: #ccc;
+    webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -webkit-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    -o-transform-origin: 50% 20%;
+       transform-origin: 50% 20%; }
+  .drop_menu .drop_arrow:after {
+    margin-top: -10px;
+    right: -8px;
+    border-top-color: #fff; }
+  .drop_menu .drop_list {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    z-index: 9999;
+    width: inherit;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4; }
+    .drop_menu .drop_list li {
+      padding-left: 2px;
+      height: inherit;
+      line-height: inherit;
+      text-align: center;
+      border: 1px solid #e4e4e4;
+      border-bottom: 0;
+      word-break: break-all;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+
+/*
+<div class="drop_menu ">
+<div class="drop_show">省份</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>河南省</li>
+<li>安徽安徽安徽安徽省</li>
+<li>山东省</li>
+<li>江西省</li>
+<li>广西省</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu ">
+<div class="drop_show">城市</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>郑州市</li>
+<li>开封市</li>
+<li>安阳市</li>
+<li>安阳市</li>
+<li>安阳市</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu">
+<div class="drop_show">地区</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>金水区</li>
+<li>管城区</li>
+<li>二七区</li>
+<li>高新区</li>
+<li>惠济区</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>*/
+.items_title .add_btn {
+  margin-top: 14px;
+  float: right;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 29px;
+  font-size: 14px; }
+  .items_title .add_btn i {
+    font-size: 18px;
+    margin-right: 10px; }
+
+.address_container {
+  position: relative;
+  padding: 30px 0 0;
+  overflow: hidden;
+  border-bottom: 1px solid #e4e4e4; }
+
+.address_ele {
+  float: left;
+  position: relative;
+  width: 322px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.defult_btn {
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .defult_btn:hover {
+    filter: alpha(opacity=85);
+    /* IE */
+    -moz-opacity: 0.85;
+    /* 老版Mozilla */
+    -khtml-opacity: 0.85;
+    /* 老版Safari */
+    opacity: 0.85;
+    /* 支持opacity的浏览器*/ }
+
+.edit_btn, .del_addr {
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .edit_btn:hover, .del_addr:hover {
+    background-color: #F8F8F8; }
+
+.right_logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  line-height: 40px;
+  font-size: 40px;
+  color: #e4e4e4; }
+
+.address_border {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: url("../../Images/huiyuan/icon_address_border.png") repeat-x; }
+
+.address_borderT {
+  top: -1px; }
+
+.address_borderB {
+  bottom: -1px; }
+
+.address_title {
+  border-bottom: 1px dashed #e4e4e4; }
+
+.address_name {
+  max-width: 120px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.address_name, .address_detail, .address_phone {
+  position: relative;
+  padding-left: 30px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 15px;
+  color: #666; }
+  .address_name i, .address_detail i, .address_phone i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 45px; }
+
+.address_handle {
+  margin-top: 12px; }
+  .address_handle > span {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 10px;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.address_detail {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 60px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  border-bottom: 1px dashed #e4e4e4; }
+  .address_detail p {
+    height: 100%;
+    overflow: hidden;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; }
+
+.new_address {
+  position: relative;
+  padding: 30px 0 20px;
+  background: #FFFFFF; }
+
+.new_address_content {
+  position: relative;
+  padding-bottom: 50px; }
+  .new_address_content > form > div {
+    margin-top: 35px; }
+    .new_address_content > form > div > input {
+      float: left;
+      width: 405px;
+      height: 40px;
+      font-size: 13px;
+      padding: 10px;
+      line-height: 20px;
+      border: 1px solid #e4e4e4;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+
+.address_intro {
+  float: left;
+  width: 120px;
+  height: 27px;
+  line-height: 27px;
+  font-size: 16px;
+  padding-right: 10px;
+  color: #666;
+  text-align: right; }
+
+.new_local .select_btn {
+  float: left;
+  margin-right: 20px; }
+
+.new_defult {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 27px; }
+  .new_defult input {
+    float: left;
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 110px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .new_defult label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.submit_address, .cancel_btn {
+  display: inline-block;
+  margin: 40px 0 0 110px;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid transparent;
+  color: #666;
+  cursor: pointer;
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: '\5fae\8f6f\96c5\9ed1';
+  -moz-transition: all 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .submit_address:hover, .cancel_btn:hover {
+    filter: alpha(opacity=85);
+    /* IE */
+    -moz-opacity: 0.85;
+    /* 老版Mozilla */
+    -khtml-opacity: 0.85;
+    /* 老版Safari */
+    opacity: 0.85;
+    /* 支持opacity的浏览器*/ }
+
+.cancel_btn {
+  margin-left: 20px; }
+
+.tip {
+  float: left;
+  margin-left: 20px;
+  line-height: 27px;
+  color: red; }
+
+.address select {
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  outline: 0;
+  border: 1px solid #e4e4e4;
+  margin-right: 2px; }
+  .address select option {
+    height: 40px;
+    text-align: center; }
+
+.no_order {
+  height: 448px; }

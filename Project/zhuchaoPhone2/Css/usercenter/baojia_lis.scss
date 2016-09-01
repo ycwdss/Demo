@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/usercenter/user_style";
+
+.c_baojia{
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  background: #ffffff;
+}
+.baojia_time{
+  padding:0 15px;
+  font-size: 1.3rem;
+  color: #999;
+  line-height: 40px;
+  border-bottom:1px solid #e4e4e4;
+  span:last-child{
+    color: #333;
+  }
+}
+.baojia_content{
+  padding: 5px;
+  margin:0 10px;
+  border-bottom:1px dashed #e4e4e4;
+  p{
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 25px;
+    @include ell(1);
+  }
+}
+.baojia_count{
+  color: #333;
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+.baojia_pro{
+  i{
+    color: #333;
+  }
+}
+.to_detail{
+  margin: 15px auto;
+  display: block;
+  width: 80%;
+  height: 40px;
+  font-size: 1.5rem;
+  line-height: 40px;
+  text-align: center;
+}

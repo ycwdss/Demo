@@ -1,0 +1,125 @@
+.top {
+  border-bottom: 1px solid #e4e4e4; }
+
+.m_content_right {
+  padding-top: 0; }
+
+.content_top_title {
+  border-bottom: 0; }
+
+.content_top_title li {
+  display: inline-block;
+  height: 79px;
+  line-height: 79px; }
+
+.content_top_title li a {
+  display: block;
+  font-size: 16px;
+  padding: 0 25px;
+  color: #888; }
+
+.content_top_title li.current a {
+  color: #093; }
+
+.header_right {
+  font-size: 14px;
+  line-height: 79px; }
+
+.header_right span {
+  display: inline-block; }
+
+.header_right .shezhi_btn i {
+  margin: 0 5px 0 60px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../../usercenter/Images/sprite_allmassage_shezhi.png) no-repeat center;
+  vertical-align: -3px; }
+
+.header_right .shezhi_btn em {
+  color: #093; }
+
+.checkbox_btn {
+  position: relative; }
+  .checkbox_btn input[type=checkbox] {
+    position: absolute\9;
+    width: 17px\9;
+    height: 17px\9;
+    z-index: 10\9;
+    top: 50%;
+    margin-top: -8px;
+    left: 0\9;
+    visibility: hidden;
+    visibility: visible\9; }
+  .checkbox_btn label {
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    margin-top: -8px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+  .checkbox_btn label:after {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background: transparent;
+    top: 3px;
+    left: 2px;
+    border: 2px solid #093;
+    border: none\0;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .checkbox_btn label:hover::after {
+    opacity: 0.4; }
+  .checkbox_btn input[type=checkbox]:checked + label:after {
+    opacity: 1; }
+  .checkbox_btn em {
+    padding-left: 10px;
+    padding-left: 20px\9; }
+
+.messages_item {
+  padding: 0px 30px; }
+  .messages_item .messages_list {
+    position: relative;
+    padding: 15px 0;
+    height: 50px;
+    border-bottom: 1px dashed #e4e4e4; }
+    .messages_item .messages_list .checkbox_btn {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -7px; }
+    .messages_item .messages_list .time {
+      padding-left: 55px;
+      color: #ccc;
+      font-size: 12px; }
+    .messages_item .messages_list .text {
+      padding-top: 15px;
+      padding-left: 50px;
+      font-size: 14px;
+      color: #333;
+      overflow: hidden; }
+      .messages_item .messages_list .text p {
+        display: inline-block;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 90%; }
+      .messages_item .messages_list .text a {
+        vertical-align: 4px;
+        padding-left: 10px;
+        color: #093; }

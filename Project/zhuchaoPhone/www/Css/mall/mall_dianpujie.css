@@ -1,0 +1,270 @@
+@charset "UTF-8";
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.l_nav {
+  height: 45px;
+  background: #FFFFFF;
+  color: #333333;
+  font-size: 1rem;
+  line-height: 45px; }
+  .l_nav div {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    text-align: center; }
+
+.current span.arrow_down {
+  position: absolute;
+  top: 0;
+  margin: 17px 0 13px 5px;
+  width: 12px;
+  height: 15px;
+  background: url("../../../Images/mobile/icon_strategy.png") -15px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.nav_ele span.shaixuan_img {
+  position: absolute;
+  top: 0;
+  margin: 17px 0 13px 5px;
+  width: 12px;
+  height: 15px;
+  background: url("../../../Images/mobile/icon_strategy.png") -44px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.nav_ele a {
+  color: black; }
+
+.l_nav .current a {
+  color: #093; }
+
+.nav_ele span {
+  position: absolute;
+  top: 0;
+  margin: 17px 0 13px 5px;
+  width: 12px;
+  height: 15px;
+  background: url("../../../Images/mobile/icon_strategy.png") -30px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.current span.arrow_up {
+  position: absolute;
+  top: 0;
+  margin: 17px 0 13px 5px;
+  width: 12px;
+  height: 15px;
+  background: url("../../../Images/mobile/icon_mall.png") -263.5px -4px;
+  -webkit-background-size: 300px;
+  background-size: 300px; }
+
+/* 筛选*/
+.shaixuan_bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3); }
+
+.shaixuan {
+  position: relative;
+  display: block;
+  margin-left: 10%;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+  background: #fff; }
+
+.shaixuan_top {
+  height: 45px;
+  width: 100%;
+  background: #FFFFFF;
+  margin-bottom: 10px; }
+  .shaixuan_top span {
+    float: left; }
+
+.cancel, .queding {
+  width: 20%;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 45px;
+  color: #888; }
+
+.top_text {
+  line-height: 45px;
+  font-size: 1rem;
+  width: 60%;
+  text-align: center; }
+
+.list {
+  background: #FFFFFF; }
+
+.l_sort, .m_sort, .sort li {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 40px;
+  border-bottom: 1px solid #e4e4e4; }
+
+.m_sort {
+  display: none;
+  margin-left: 75px;
+  font-size: 0.8rem;
+  background: #FFFFFF; }
+
+.sort {
+  display: none; }
+  .sort .click {
+    color: #093; }
+
+.sort li {
+  margin-left: 120px;
+  font-size: 0.7rem;
+  line-height: 35px; }
+
+.list a {
+  color: #666; }
+
+.arrow_more, .arrow_short {
+  float: right;
+  margin: 15px 10px 15px 0;
+  width: 15px;
+  height: 10px;
+  background: url("../../Images/mobile/icon_strategy.png") -128px -5px;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.arrow_short {
+  background: url("../../Images/mobile/icon_strategy.png") -127px -16px;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.m_dianpu {
+  background: #FFFFFF;
+  margin-top: 10px;
+  padding: 10px 0; }
+
+.dianpu_logo {
+  padding: 5px 0;
+  width: 150px;
+  max-width: 40%;
+  height: 75px; }
+  .dianpu_logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+    height: 75px; }
+
+.dianpu_detail {
+  width: 55%;
+  margin: 0 2.5%; }
+  .dianpu_detail h3 {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 25px; }
+  .dianpu_detail > span {
+    color: #333;
+    font-size: 0.8rem;
+    line-height: 20px; }
+  .dianpu_detail p {
+    white-space: normal;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 20px; }
+    .dianpu_detail p > span {
+      margin-right: 8px;
+      color: #666;
+      font-size: 0.7rem;
+      line-height: 15px; }
+
+/*头部分类*/
+.l_nav div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 1px solid #e4e4e4;
+  margin-top: 10px;
+  height: 25px;
+  overflow: visible; }
+
+.l_nav div:nth-child(3) {
+  border: 0; }
+
+.l_nav span {
+  display: block !important;
+  position: relative;
+  height: 45px;
+  width: 60px;
+  margin: -10px auto 0;
+  background: #fff;
+  border-bottom: 1px solid #FFFFFF; }
+
+.l_nav .current span {
+  position: relative;
+  background: #FFFFFF;
+  border-bottom: 1px solid #093; }

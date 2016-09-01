@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "../lib/lib";
+//筛选
+.choose_box{
+  padding:3px 7px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.choose_list{
+  border-bottom: 1px solid #e4e4e4;
+  dt.choose_key{
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 0 4px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #333;
+  }
+  dd.choose_value{
+    width: 72%;
+  }
+  .choose_value_info{
+    overflow: hidden;
+    border-left: 1px solid #e4e4e4;
+    padding-bottom: 3px;
+    >a{
+      display: inline-block;
+      margin: 3px;
+      max-width:70px;
+      @include strictEll(1.6,1);
+      padding: 0 6px;
+      text-align: center;
+      color: #888;
+      font-size: 12px;
+      &:hover{
+        color: #fff;
+        background-color: #63bf82;
+      }
+    }
+  }
+}
+.choose_list:last-child{
+  border-bottom: 0;
+}
+//列表
+.class_item{
+  margin-top: 10px;
+  padding:10px;
+  background-color: #fff;
+  .class_title{
+    margin-bottom: 5px;
+    font-size: 14px;
+    a{
+      color: #333;
+    }
+  }
+  .writer_info{
+    font-size: 12px;
+    line-height: 20px;
+    color: #888;
+    span.writer{
+      margin-left: 20px;
+    }
+    .look{
+      i{
+        font-size: 15px;
+        margin-right: 4px;
+        vertical-align: -1px;
+      }
+    }
+  }
+  .class_img{
+    margin: 10px 0;
+    text-align: center;
+    img{
+      display: block !important;
+      max-width: 100% !important;
+      height: auto!important;
+      margin: 10px auto !important;
+    }
+  }
+  .class_text{
+    text-align: justify;
+    font-size: 12px;
+    color: #666;
+    @include strictEll(1.6,2);
+  }
+  .user_action{
+    margin-top:15px;
+    line-height: 25px;
+    color: #666;
+    font-size: 14px;
+    .study_btn{
+      display: block;
+      padding:0 10px;
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+}

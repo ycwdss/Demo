@@ -1,0 +1,110 @@
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.main_con {
+  margin-top: 10px;
+  height: 100%;
+  background: white; }
+  .main_con div {
+    width: 80%;
+    margin: 0 auto 25px; }
+    .main_con div input {
+      border: none;
+      padding: 5px 5px;
+      font-size: 12px;
+      height: 30px;
+      line-height: 20px;
+      background: #f8f8f8; }
+
+.input_tel {
+  padding-top: 25px;
+  height: 30px; }
+  .input_tel .first_input {
+    color: #888;
+    margin-right: 10px;
+    width: 50%; }
+  .input_tel .last_input {
+    background: #093;
+    color: white;
+    font-size: 14px; }
+
+.input_yanzhengma span {
+  font-size: 14px; }
+
+.input_yanzhengma input {
+  width: 63%; }
+
+.main_con .reset_pw {
+  width: 200px;
+  height: 40px;
+  background: #093;
+  margin: 10px auto; }
+  .main_con .reset_pw a {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+    text-align: center; }

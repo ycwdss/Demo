@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import "../../Css/mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+.top_title{
+  font-size: 18px;
+}
+//头部忘记密码
+.top .login{
+  font-size: 12px;
+  float: right;
+  line-height: 45px;
+  color: white;
+  text-align: right;
+  width: 25%;
+  margin-right: 3%;
+}
+//主体内容
+.main_con{
+  height: 100%;
+}
+
+//表单
+.main_con{
+  background: white;
+  form{
+    width:95%;
+    margin: 0 auto;
+    div{
+      margin-top: 25px;
+      height:30px;
+      span{
+        width: 91px;
+        font-size: 16px;
+        line-height:30px;
+        color: black;
+        text-align: right;
+        float: left;
+      }
+      input{
+        float: left;
+        background: #f8f8f8;
+        outline: none;
+        padding:5px 3%;
+        color: black;
+        font-size: 13px;
+        line-height:18px;
+        height: 20px;
+        border: none;
+        width: 60%;
+      }
+    }
+    .yanzhengma{
+      span{
+        float: left;
+      }
+      .yanzheng_img{
+        float: right;
+        display: inline-block;
+        width: 85px;
+        height: 30px;
+        img{
+          display: block;
+          width: 85px;
+          height: 30px;
+        }
+      }
+      .yanzheng_input{
+        margin-top: 0;
+        margin-left:91px;
+        width: 66%;
+        input{
+          height: 20px;
+        }
+        .yan1{
+          float: left;
+          width: 44%;
+        }
+        .yan2{
+          float: right;
+          width: 45%;
+          height: 30px;
+          padding: 0;
+        }
+      }
+    }
+    .protocol{
+      margin-top: 20px;
+      margin-left: 82px;
+      color: #093;
+      font-size: 12px;
+      line-height:18px;
+      height: 20px;
+      i{
+        display: inline-block;
+        margin-bottom: -6px;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        background: url("../../../Images/mobile/usercenter/sprite_registerandtel.png") no-repeat;
+        -webkit-background-size: 30px;
+        background-size: 30px;
+      }
+      .active{
+        background: url("../../../Images/mobile/usercenter/sprite_registerandtel.png") no-repeat 0 -22px;
+        -webkit-background-size: 30px;
+        background-size: 30px;
+      }
+    }
+    .register{
+      width: 200px;
+      height: 40px;
+      margin: 25px auto;
+      input{
+        width: 200px;
+        background: #e4e4e4;
+        font-size: 18px;
+        line-height:40px;
+        height: 40px;
+        padding: 0;
+        color: white;
+       text-align: center;
+      }
+    }
+  }
+}

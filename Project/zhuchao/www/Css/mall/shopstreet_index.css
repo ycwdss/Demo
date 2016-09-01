@@ -1,0 +1,379 @@
+@charset "UTF-8";
+.module_nav {
+  background: #009933; }
+
+.module_nav > ul > li {
+  float: left;
+  position: relative;
+  margin-right: 1px; }
+  .module_nav > ul > li:hover .icon_arrow {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .module_nav > ul > li:hover > a {
+    background-color: #018a2e; }
+  .module_nav > ul > li:hover .subnav {
+    display: block; }
+  .module_nav > ul > li > a {
+    display: block;
+    padding: 0 24px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+
+.module_nav > ul .current {
+  background-color: #018a2e; }
+
+.icon_arrow {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: 3px;
+  margin-left: 10px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  -moz-transition: 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
+.module_nav > ul > li .subnav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: #093;
+  font-size: 13px;
+  text-align: center;
+  z-index: 9999; }
+  .module_nav > ul > li .subnav li {
+    margin: 10px 0; }
+  .module_nav > ul > li .subnav li > a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .module_nav > ul > li .subnav li > a:hover {
+      background-color: #018a2e; }
+
+.shopstreet_list {
+  padding-top: 30px;
+  margin: 0 -10px; }
+  .shopstreet_list li {
+    position: relative;
+    float: left;
+    width: 260px;
+    height: 300px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    background-color: #fff;
+    -moz-transition: 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease; }
+    .shopstreet_list li:hover {
+      -webkit-box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+      box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+      -webkit-transform: translate3d(0, -2px, 0);
+      -moz-transform: translate3d(0, -2px, 0);
+           transform: translate3d(0, -2px, 0); }
+
+.shopstreet_logo {
+  margin-bottom: 10px;
+  display: block;
+  width: 260px;
+  height: 130px;
+  overflow: hidden; }
+  .shopstreet_logo img {
+    display: block;
+    width: 260px;
+    height: 130px; }
+
+.shop_list_title {
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #666; }
+  .shop_list_title h4 {
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden; }
+    .shop_list_title h4 a {
+      color: #333;
+      font-size: 18px; }
+      .shop_list_title h4 a:hover {
+        color: #f60; }
+  .shop_list_title p {
+    line-height: 2;
+    height: 2em;
+    overflow: hidden; }
+  .shop_list_title dl {
+    max-height: 75px;
+    overflow: hidden; }
+    .shop_list_title dl dt {
+      width: 37px;
+      text-align: right;
+      font-size: 16px; }
+    .shop_list_title dl dd {
+      padding-left: 10px;
+      width: 186px; }
+      .shop_list_title dl dd a {
+        float: left;
+        display: block;
+        margin-right: 10px;
+        color: #666;
+        line-height: 2; }
+        .shop_list_title dl dd a:hover {
+          color: #f60; }
+
+.shopstreet_erweima {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -moz-transition: 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+  .shopstreet_erweima img {
+    position: absolute;
+    display: block;
+    width: 145px;
+    height: 145px;
+    margin-top: 20px;
+    left: 50%;
+    margin-left: -72px; }
+
+.shopstreet_list li:hover .shopstreet_erweima {
+  bottom: 0; }
+
+.shopstreet_floor_top {
+  padding-top: 26px;
+  padding-bottom: 12px; }
+  .shopstreet_floor_top .more a {
+    font-size: 14px;
+    padding: 0 21px;
+    color: #666; }
+    .shopstreet_floor_top .more a:hover {
+      color: #f60; }
+
+.shopstreet_floor_top h3 {
+  display: inline-block; }
+  .shopstreet_floor_top h3 i {
+    display: inline-block;
+    padding-left: 5px;
+    width: 32px;
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    background: url(../../../Images/pc/mall/icon_shopstreet_floor.png) no-repeat; }
+  .shopstreet_floor_top h3 span {
+    font-size: 18px; }
+
+.shopstreet_floor_nav > li {
+  float: left; }
+
+.shopstreet_floor_nav > li.current a {
+  color: #093; }
+
+.shopstreet_floor_nav > li a {
+  display: inline-block;
+  padding: 0 21px;
+  color: #666;
+  font-size: 14px; }
+
+.shopstreet_floor_nav > li a:hover {
+  color: #f60; }
+
+.mall_list_nav_box {
+  display: none; }
+
+.allclass:hover .mall_list_nav_box {
+  display: block; }
+
+.routeInfo {
+  border-bottom: none; }
+
+.shopstreet_bg {
+  padding-bottom: 80px;
+  background-color: #f8f8f8; }
+
+.shopstreet_banner {
+  width: 835px;
+  height: 449px;
+  overflow: hidden;
+  position: relative; }
+  .shopstreet_banner i {
+    position: absolute;
+    display: block;
+    width: 835px;
+    height: 449px;
+    background: url(../../../Images/pc/mall/icon_shopstreet_banner1.png?_nosprite) no-repeat;
+    -moz-transition: 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    overflow: hidden; }
+  .shopstreet_banner img {
+    display: block;
+    position: absolute;
+    top: 49px;
+    left: 67px;
+    z-index: 2; }
+  .shopstreet_banner:hover i {
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.01); }
+
+.shopstreet_banner_right_side li {
+  width: 455px;
+  height: 220px;
+  overflow: hidden; }
+  .shopstreet_banner_right_side li a {
+    display: block;
+    width: 455px;
+    height: 220px;
+    position: relative; }
+    .shopstreet_banner_right_side li a:before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 220px;
+      top: 0;
+      left: -150px;
+      overflow: hidden;
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+      -webkit-transform: skewX(-25deg);
+      -moz-transform: skewX(-25deg); }
+  .shopstreet_banner_right_side li a:hover::before {
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s;
+    left: 485px; }
+
+.dengshi {
+  background: url(../../../Images/pc/mall/icon_shopstreet_banner_right_side1_img.png?_nosprite) no-repeat; }
+
+.bizhi {
+  margin-top: 9px;
+  background: url(../../../Images/pc/mall/icon_shopstreet_banner_right_side2_img.png?_nosprite) no-repeat; }
+
+.shopstreet_series_nav {
+  margin: 20px -5px 0; }
+  .shopstreet_series_nav li {
+    float: left;
+    width: 222px;
+    height: 270px;
+    padding: 15px;
+    margin: 0 5px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    -moz-transition: 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease; }
+    .shopstreet_series_nav li:hover {
+      -webkit-box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+      box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+      -webkit-transform: translate3d(0, -2px, 0);
+      -moz-transform: translate3d(0, -2px, 0);
+           transform: translate3d(0, -2px, 0); }
+  .shopstreet_series_nav h4 a {
+    font-size: 18px;
+    color: #666;
+    line-height: 2.4; }
+    .shopstreet_series_nav h4 a:hover {
+      color: #f60; }
+  .shopstreet_series_nav p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.6;
+    height: 1.6em;
+    overflow: hidden; }
+
+.shopstreet_nav_img {
+  margin-top: 22px;
+  display: block;
+  max-width: 100%;
+  text-align: center; }
+  .shopstreet_nav_img img {
+    display: inline-block;
+    max-width: 100%; }
+
+.shopstreet_floor_side_nav {
+  width: 40px;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -700px;
+  text-align: center;
+  display: none; }
+  .shopstreet_floor_side_nav .shopstreet_floor_h2 {
+    border-bottom: 1px solid #ccc; }
+  .shopstreet_floor_side_nav li.current a {
+    color: #093; }
+  .shopstreet_floor_side_nav li {
+    border-bottom: 1px dashed #ccc; }
+    .shopstreet_floor_side_nav li a {
+      line-height: 30px;
+      font-size: 16px;
+      color: #666; }
+      .shopstreet_floor_side_nav li a:hover {
+        color: #093; }
+
+@media only screen and (min-width: 1422px) {
+  .shopstreet_floor_side_nav {
+    display: block; } }
+
+.shopstreet_list_box {
+  width: 100%;
+  height: 330px; }
+
+.shopstreet_list {
+  padding-top: 0; }
+
+.shopstreet_list li {
+  width: 290px; }
+
+.shopstreet_logo {
+  width: 290px;
+  height: 145px; }
+  .shopstreet_logo img {
+    width: 290px;
+    height: 145px; }

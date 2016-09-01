@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.l_model{
+  overflow: hidden;
+  margin-top: 60px;
+}
+.model_box{
+  margin-right: -40px;
+}
+.model_ele{
+  float: left;
+  width: 270px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  a{
+    position: relative;
+    display: block;
+    @include transition();
+    overflow: hidden;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 270px;
+      top: 0;
+      left: -150px;
+      overflow: hidden;
+      background: -moz-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+      background: -webkit-gradient(linear,left top,right top,color-stop(0,rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,.2)),color-stop(100%,rgba(255,255,255,0)));
+      background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+      background: -o-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+      -webkit-transform: skewX(-25deg);
+      -moz-transform: skewX(-25deg);
+    }
+    &:hover{
+      &:before{
+        -webkit-transition: left 1s;
+        -moz-transition: left 1s;
+        -o-transition: left 1s;
+        transition: left 1s;
+        left: 485px;
+      }
+    }
+  }
+  img{
+    display: block;
+    width: 270px;
+    height: 270px;
+  }
+  h4{
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+  }
+}

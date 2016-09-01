@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import "../fh/reset";
+@import "../fh/commonclass";
+@import "../fh/moudle/module_top";
+@import "../fh/moudle/footer";
+//头部
+.login_head{
+  padding: 15px 0 15px;
+  border-bottom: 2px solid $normalColor;
+}
+.head_content{
+  position: relative;
+}
+.head_logo{
+  position: relative;
+}
+.head_img2{
+  display: inline-block;
+  width: 200px;
+  height: 16px;
+  margin-bottom: 20px;
+  margin-left: 6px;
+  background: url(../../../Images/pc/usercenter/sprite_index_slogan.png) no-repeat;
+}
+.head_right{
+  position: absolute;
+  right: 0;
+  bottom:5px;
+  font-size: 16px;
+  a{
+    color: #666;
+    &:hover{
+      color: $activeColor;
+    }
+  }
+}
+//内容
+.l_content{
+  position: relative;
+  height: 600px;
+  min-width: 1300px;
+  margin:20px 0;
+  background: url("../../../Images/pc/icon_register_bg.jpg") center;
+  >div{
+    position: relative;
+  }
+}
+.m_content{
+  position: absolute;
+  top: 68px;
+  right: 0;
+  padding: 0 50px;
+  width: 350px;
+  height: 500px;
+  background: #FFFFFF;
+  z-index: 999;
+  box-shadow:0 0 30px 10px rgba(255,255,255,0.45) ;
+  h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 94px;
+  }
+  input{
+    font-family: "Microsoft YaHei"!important;
+    @include box-sizing();
+    font-size: 13px;
+    font-weight: 500;
+    padding:5px 10px;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 30px;
+    border: 1px solid #e4e4e4;
+    &:focus{
+      @include transition(0.3s);
+      border: 1px solid #093;
+    }
+  }
+  //&:before{
+  //  position: absolute;
+  //  top: 0;
+  //  right: 0;
+  //  width: 100%;
+  //  height: 100%;
+  //  content: '';
+  //  background: #093;
+  //  @include opacity(5);
+  //  z-index: -1;
+  //}
+}
+.m_content .confirm{
+  position: relative;
+  input{
+    font-size: 15px;
+    float: left;
+    width: 200px;
+  }
+  img{
+    float: left;
+    margin-left: 12px;
+    width: 104px;
+    height: 35px;
+  }
+}
+.confirm_refresh{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 24px;
+  height: 24px;
+  background: url("../../usercenter/Images/sprite_register_refresh.png");
+}
+.m_content .forget {
+  position: relative;
+  input {
+    float: left;
+    width: 15px;
+    height: 15px !important;
+    margin-top: 2px;
+  }
+  span {
+    float:left;
+    color: #666;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.m_content .button{
+  height: 40px;
+  background: $normalColor;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-color: #093;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @include transition;
+  &:hover{
+    background: #048b31;
+    -webkit-box-shadow: 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+  }
+}
+.error{
+  border:1px solid red !important;
+}

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import "../../lib/mixin";
+@import "../../module/routenav";
+@import "../../module/usercenter";
+@import "../../module/totop";
+.evaluate_title{
+  span{
+    color: #333;
+    cursor: pointer;
+  }
+  .line{
+    width: 1px;
+    height: 18px;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: #e4e4e4;
+    vertical-align: middle;
+    cursor: none;
+  }
+}
+
+.evaluate_area{
+  margin-top:50px;
+  padding: 0 20px;
+  .pro_info{
+    width: 180px;
+    border-right: 1px solid #e4e4e4;
+    .pro_img{
+      width: 92px;
+      height: 92px;
+      display: block;
+      img{
+        width: 92px;
+        height: 92px;
+        display: block;
+      }
+    }
+    .pro_name{
+      display: inline-block;
+      width: 150px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 14px;
+      color: #333;
+      line-height: 24px;
+    }
+    p{
+      font-size: 12px;
+      width: 150px;
+      max-height: 36px;
+      overflow: hidden;
+     @include line(2);
+    }
+  }
+}
+
+.evaluate_fill {
+  width: 550px;
+  label{
+    font-size: 14px;
+    padding-right: 5px;
+  }
+  .score{
+    padding-bottom: 15px;
+    i{
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
+      color: #e4e4e4;
+    }
+
+    em{
+      font-size: 12px;
+      padding-left: 10px;
+      vertical-align: 2px;
+    }
+  }
+  .comment{
+    label{
+      float: left;
+    }
+    textarea{
+      float: left;
+      font-size: 14px;
+      width: 490px;
+      padding: 5px;
+      height: 140px;
+      border: 1px solid #e4e4e4;
+      resize: none;
+      vertical-align: top;
+    }
+    p{
+      text-align: right;
+      b{
+        display: none;
+      }
+    }
+  }
+  .btn{
+    float: right;
+    margin-top:30px;
+  }
+}

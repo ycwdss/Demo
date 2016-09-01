@@ -1,0 +1,126 @@
+@charset "UTF-8";
+.m_content_right {
+  padding-left: 0;
+  padding-right: 0; }
+
+/*右侧分类*/
+.m_content_right {
+  padding: 0;
+  width: 1080px;
+  background: none; }
+
+.content_top_title {
+  border: 0;
+  padding-top: 20px;
+  background: #FFFFFF;
+  background: #FFFFFF; }
+  .content_top_title h2 {
+    display: block;
+    text-indent: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e4e4e4; }
+
+.right_sort {
+  position: relative;
+  font-size: 16px;
+  background: #FFFFFF; }
+  .right_sort a {
+    float: left;
+    color: #888888;
+    height: 18px;
+    margin: 20px 0;
+    overflow: visible;
+    padding: 0 30px 0;
+    border-right: 1px solid #e4e4e4; }
+    .right_sort a:hover {
+      -moz-transition: 0.2s ease;
+      /* Firefox 4 */
+      -webkit-transition: 0.2s ease;
+      /* Safari 和 Chrome */
+      -o-transition: 0.2s ease;
+      transition: 0.2s ease;
+      color: #f60; }
+  .right_sort span {
+    display: block;
+    margin-top: -2px; }
+
+.now_site span {
+  color: #093; }
+
+.right_sort .clear_border {
+  border: 0; }
+
+/*商家*/
+.m_content_right {
+  background: #fff; }
+
+.m_store {
+  background: #FFFFFF;
+  padding-bottom: 20px;
+  margin-bottom: 50px; }
+
+.c_store {
+  padding: 20px;
+  border-bottom: 1px dashed #e4e4e4; }
+  .c_store img {
+    float: left;
+    width: 228px !important;
+    height: 114px !important;
+    margin-right: 45px; }
+
+.store_detail {
+  position: relative;
+  float: left;
+  width: 767px;
+  height: 114px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 25px; }
+
+.store_descri {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+.store_visit {
+  position: absolute;
+  bottom: 0;
+  width: 767px;
+  font: 12px "SimSun", serif;
+  line-height: 20px;
+  color: #888888; }
+
+.store_time {
+  float: right; }
+
+.c_store img {
+  height: 142px !important; }
+
+.m_content_right {
+  background: none; }
+
+.content_top_title {
+  margin-bottom: 20px; }
+
+.store_detail {
+  height: 142px; }
+  .store_detail h4 {
+    font-size: 16px;
+    line-height: 35px;
+    color: #333; }
+    .store_detail h4:hover {
+      color: #f60; }
+
+.store_descri {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 75px; }

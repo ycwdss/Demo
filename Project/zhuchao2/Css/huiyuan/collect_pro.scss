@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/pagelist";
+
+a{
+  color: #333;
+}
+.collect_ele{
+  padding: 25px 0;
+  border-bottom:1px solid #e4e4e4;
+}
+.collect_ele_img{
+  float: left;
+  position: relative;
+  width: 165px;
+  height: 165px;
+  margin-right: 25px;
+  img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    max-width: 165px;
+    max-height: 165px;
+  }
+}
+.collect_container{
+  float: left;
+  width: 645px;
+  >h4{
+    font-size: 18px;
+    margin-top:20px;
+    @include ell(1);
+    height:1.5em;
+  }
+  .collect_price{
+    margin:10px 0 10px;
+    font-size: 15px;
+    span{
+      float: left;
+      width: 100px;
+    }
+    i{
+      color: #666;
+    }
+  }
+  p{
+    font-size: 15px;
+  }
+  .collect_intro{
+    float: left;
+    line-height: 25px;
+    width: 100px;
+    @include ell(1);
+  }
+  .collect_detail{
+    float: left;
+    width: 545px;
+  }
+}
+.collect_operation{
+  float: right;
+  width: 170px;
+  p{
+    margin-top: 35px;
+    span{
+      display: block;
+      width: 37px;
+      height: 37px;
+      font-size: 25px;
+      color: #999;
+      text-align: center;
+      line-height: 37px;
+      margin-left: 20px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      @include transition();
+      &:hover{
+        color: #666;
+      }
+    }
+  }
+}
+.phone_btn{
+  @include transition();
+  &:hover{
+    @include opacity(85);
+  }
+}
+.xunjia_btn{
+  background: #F8F8F8;
+  @include transition();
+  &:hover{
+    background-color: #e4e4e4;
+  }
+}
+.page_list{
+  margin-top: 40px;
+}
+.collect_operation  .icon-yishixiao{
+  display: block;
+  width:100%;
+  font-size: 60px;
+  color: #e00a2d;
+  text-indent: 65px;
+}
+.online  .submit_btn {
+  font-family: '\5fae\8f6f\96c5\9ed1';
+}

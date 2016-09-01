@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/recommend";
+@import "../../module/pagelist";
+@import "../../module/empty";
+
+.refund_content{
+  border-bottom:1px solid #e4e4e4;
+  .refund_pro{
+    width: 350px;
+  }
+  .refund_time{
+    width: 250px;
+  }
+  .refund_type{
+    width: 200px;
+  }
+  .refund_status{
+    width: 270px;
+  }
+  .refund_operate{
+    width: 130px;
+  }
+  .refund_title{
+    li{
+      float: left;
+      font-size: 16px;
+      line-height: 35px;
+      padding:30px 0;
+      text-align: center;
+
+    }
+  }
+}
+.refund_content{
+  position: relative;
+  overflow: hidden;
+  .refund_ele{
+    font-size: 14px;
+    margin-bottom: 30px;
+    li{
+      float: left;
+      text-align: center;
+      display: table;
+      height: 100px;
+      >div{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .refund_pro{
+      text-align: left;
+      padding-left: 30px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      img{
+        float: left;
+        width: 100px!important;
+        height: 100px!important;
+      }
+      .refund_pro_info{
+        float: left;
+        margin-left: 15px;
+        width: 160px;
+      }
+      .refund_pro_intro{
+        font-size: 14px;
+        color: #666;
+        line-height: 23px;
+        max-height: 46px;
+        @include ell(2);
+      }
+      .refund_pro_spec{
+        font-size: 12px;
+        line-height: 18px;
+        max-height: 54px;
+        color: #888;
+        @include ell(3);
+        span{
+          margin-right: 15px;
+        }
+      }
+    }
+    .refund_operate{
+      a{
+        display: block;
+        line-height: 25px;
+      }
+    }
+  }
+}
+.empty{
+  border-bottom:1px solid #e4e4e4;
+}
+

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交订单</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/cart/submit_order.css">
+</head>
+<body>
+<!--收货地址-->
+<div class="cart_box conwidth">
+    <h3>收货地址</h3>
+
+    <div class="addr_content clearfix">
+        <div class="addr_ele main_border">
+            <div class="addr_container">
+                <p class="addr_user_name">侯景生 <span>（默认地址）</span></p>
+
+                <p class="addr_phone">15512345212</p>
+
+                <p class="addr_detail">河南省郑州市金水区郑汴路125号凤凰城</p>
+            </div>
+            <div class="addr_bottom clearfix">
+                <span class="edit_addr_btn">修改</span>
+                <span class="del_addr_btn no_br">删除</span>
+            </div>
+        </div>
+        <div class="add_addr">
+            <div class="add_addr_btn">
+                <p class="add_addr_logo">+</p>
+                <span>使用新地址</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--支付方式-->
+<div class="cart_box conwidth">
+    <h3>支付方式</h3>
+
+    <div class="bill_content">
+        <span class="item">
+            <input type="radio" name="pay" id="pay1" checked>
+            <label for="pay1">在线支付</label>
+        </span>
+        <span class="item">
+            <input type="radio" name="pay" id="pay2">
+            <label for="pay2">公司转账</label>
+        </span>
+    </div>
+</div>
+<!--配送时间-->
+<div class="cart_box conwidth">
+    <h3>配送时间</h3>
+
+    <div class="bill_content">
+        <span class="item">
+            <input type="radio" name="time" id="time1" checked>
+            <label for="time1">不限</label>
+        </span>
+        <span class="item">
+            <input type="radio" name="time" id="time2">
+            <label for="time2">只有工作日</label>
+        </span>
+         <span class="item">
+            <input type="radio" name="time" id="time3">
+            <label for="time3">只有双休日/节假日</label>
+        </span>
+    </div>
+</div>
+<!--发票-->
+<div class="cart_box conwidth">
+    <h3>发票</h3>
+
+    <div class="bill_content">
+        <span class="item no_need">
+            <input type="radio" name="note" id="note1" checked>
+            <label for="note1">不需要发票</label>
+        </span>
+        <span class="item need">
+            <input type="radio" name="note" id="note2">
+            <label for="note2">需要发票</label>
+        </span>
+
+        <div class="fill_note hide">
+            <div class="note">
+                <label>发票抬头：</label>
+                <input class="main_focus" type="text" maxlength="50" placeholder="请输入发票抬头信息！">
+            </div>
+            <div class="note">
+                <label>发票内容：</label>
+                <input class="select main_focus" readonly="true" type="text" value="" placeholder="请选择发票内容">
+                <span class="arrow">
+                    <i class="icon-arrow-down"></i>
+                </span>
+
+                <div class="down">
+                    <p>家电</p>
+
+                    <p>生活用品</p>
+
+                    <p>办公用品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--优惠券-->
+<div class="cart_box conwidth">
+    <h3>优惠券</h3>
+    <div class="coupon_content note">
+        <label>使用优惠券：</label>
+        <input class="select main_focus" readonly="true" type="text" value="" placeholder="请选择您的优惠券">
+        <span class="arrow">
+            <i class="icon-jiantou3"></i>
+        </span>
+        <div class="down">
+            <p class="no_coupon"><i class="main icon-tanhao"></i>您目前没有优惠券可用</p>
+            <p>满199减20</p>
+            <p>满199减20</p>
+            <p>满199减20</p>
+        </div>
+        <!--直接输入优惠券号码-->
+        <span class="coupon_num">
+            <em>或</em>
+            <a class="main fill_link">直接输入券号</a>
+            <input class="fill_num main_focus hide" type="text" placeholder="直接输入券号">
+        </span>
+    </div>
+</div>
+<!--订单详情-->
+<div class="conwidth order_info">
+    <div class="good_title">
+        <div class="col good_name">商品</div>
+        <div class="col good_price">单价</div>
+        <div class="col good_num">数量</div>
+        <div class="col good_total">总价</div>
+    </div>
+    <div class="good_items">
+        <div class="col good_name">
+            <a href="" class="col good_img"><img src="../../Images/test/test_pro_x_img.jpg" alt=""/></a>
+            <a href="" class="col good_test main_hover">法兰玫 口红持久保湿不脱色 玫瑰色</a>
+        </div>
+        <div class="col good_price">&yen;49.00</div>
+        <div class="col good_num">
+            1
+        </div>
+        <div class="col good_total">&yen;49.00</div>
+    </div>
+    <div class="good_items">
+        <div class="col good_name">
+            <a href="" class="col good_img"><img src="../../Images/test/test_pro_x_img.jpg" alt=""/></a>
+            <a href="" class="col good_test main_hover">法兰玫 口红持久保湿不脱色 玫瑰色</a>
+        </div>
+        <div class="col good_price">&yen;49.00</div>
+        <div class="col good_num">
+            1
+        </div>
+        <div class="col good_total">&yen;49.00</div>
+    </div>
+    <!--优惠信息-->
+    <div class="whole_money clearfix">
+        <ul class="fr">
+            <li class="clearfix">
+                <label>商品总价：</label>
+                <span class="val main">&yen;1299元</span>
+            </li>
+            <li class="clearfix">
+                <label>运费：</label>
+                <span class="val main">&yen;<i>0</i>元</span>
+            </li>
+        </ul>
+    </div>
+    <div class="good_bar clearfix">
+        <span class="total_price">应付金额：<em class="main">¥49.00</em>元</span>
+        <a class="buy_btn main_bg" href="pay.html">
+            提交订单
+        </a>
+    </div>
+</div>
+<!--新增收货地址-->
+<div class="new_addr hide">
+    <div class="new_addr_container">
+        <h3>添加收货地址</h3>
+
+        <div class="new_addr_content">
+            <div class=" clearfix">
+                <input class="new_name" type="text" placeholder="姓名">
+                <input class="new_phone no_mr" type="text" placeholder="手机号"
+                       onkeyup="value=value.replace(/[^\d/g]/,'')">
+            </div>
+            <div class="new_addr1 clearfix">
+                <div class="drop_menu ">
+                    <div class="drop_show">省份</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li>河南省</li>
+                        <li>安徽安徽安徽安徽省</li>
+                        <li>山东省</li>
+                        <li>江西省</li>
+                        <li>广西省</li>
+                        <li>广东省</li>
+                        <li>福建省</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                    </ul>
+                </div>
+                <div class="drop_menu ">
+                    <div class="drop_show">城市</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li>郑州市</li>
+                        <li>开封市</li>
+                        <li>安阳市</li>
+                        <li>安阳市</li>
+                        <li>安阳市</li>
+                        <li>广东省</li>
+                        <li>福建省</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                    </ul>
+                </div>
+                <div class="drop_menu no_mr">
+                    <div class="drop_show">地区</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li>金水区</li>
+                        <li>管城区</li>
+                        <li>二七区</li>
+                        <li>高新区</li>
+                        <li>惠济区</li>
+                        <li>广东省</li>
+                        <li>福建省</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="new_addr2">
+                <input type="text" placeholder="街道编号、楼宇名称">
+            </div>
+            <div class="set_default clearfix">
+                <label>
+                    <input type="checkbox" checked="checked">
+                    <span>设为默认</span>
+                </label>
+            </div>
+        </div>
+        <div class="new_addr_bottom clearfix">
+            <span class="cancel_new_btn">取消</span>
+            <span class="add_new_btn main_bg main_border">确认</span>
+        </div>
+        <a id="payOffBtn" class="pay_offbtn mainbg_hover">
+            <i class="icon-cuohao"></i>
+        </a>
+    </div>
+</div>
+<!--右侧bar-->
+<div class="bar">
+    <a class="bar_item " href="../mall/index.html#hot"><i class="icon-huoyan"></i>热卖商品</a>
+    <a class="bar_item" href="../mall/index.html#activity"><i class="icon-remenhuodong"></i>热门活动</a>
+    <a class="bar_item" href="../mall/index.html#popular"><i class="icon-renqibaokuan"></i>人气爆款</a>
+    <a class="bar_item no_bb"><i class="icon-fanhuidingbu"></i>返回顶部</a>
+</div>
+<script data-main="../../Js/requireenter" app="cart/submit_order" id="require" src="../../Js/lib/require.js"></script>
+</body>
+</html>

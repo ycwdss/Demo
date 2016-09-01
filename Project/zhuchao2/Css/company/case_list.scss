@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/site";
+@import "../module/pagelist";
+
+.case_list{
+  margin-top: -20px;
+}
+.case_img{
+  position: relative;
+  float: left;
+  margin-right: 40px;
+  width: 360px;
+  height: 230px;
+  img{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    max-width: 100%!important;
+    max-height: 100%!important;
+    @include transition();
+    &:hover{
+      @include opacity(85);
+    }
+  }
+}
+.case_ele{
+  height: 230px;
+  padding:20px 0;
+  border-bottom:1px dashed #e4e4e4;
+  h4 {
+    font-size: 16px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    a{
+      display: inline-block;
+      height: 30px;
+      overflow: hidden;
+    }
+  }
+  .case_info{
+    margin:30px 0;
+    height: 50px;
+    font-size: 14px;
+    color:#666;
+    line-height: 25px;
+    @include ell(2);
+  }
+  .case_about{
+    font-size: 14px;
+    line-height: 25px;
+    height: 25px;
+    @include ell(1);
+    span{
+      margin-right: 30px;
+    }
+  }
+  .case_time{
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+}
+.page_list{
+  margin-top:50px;
+}

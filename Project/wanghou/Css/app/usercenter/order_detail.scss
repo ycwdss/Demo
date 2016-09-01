@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/site";
+
+@import "../../module/recommend";
+@import "../../module/order_return_status";
+
+//订单信息
+.m_order_infor{
+  background: #FFFFFF;
+  h2{
+    margin:0 20px;
+    font-size:24px;
+    line-height: 70px;
+    border-bottom:1px solid #e4e4e4;
+    color: #333;
+    a{
+      float: right;
+      font-size: 13px;
+    }
+  }
+}
+.c_order_infor{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  span{
+    font-size: 13px;
+    color: #333;
+    line-height: 25px;
+    margin-right: 20px;
+    i{
+      float: left;
+      width: 70px;
+      text-align: right;
+    }
+  }
+}
+.m_order_status{
+  margin:0 20px;
+  padding-bottom: 30px;
+  border-bottom:1px solid #e4e4e4;
+}
+
+//收货人信息
+.m_receiver{
+  padding: 0 20px 0;
+  background: #FFFFFF;
+  h3{
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+    padding: 25px 0;
+  }
+}
+.recevier_infor,.pay_way{
+  font-size: 13px;
+  color: #333;
+  line-height: 30px;
+}
+.recevier_infor span{
+  float: left;
+  width:105px;
+  text-align: right;
+}
+.pay_way span{
+  margin-right: 20px;
+}
+.m_logistics{
+  background: #FFFFFF;
+  padding:0 20px;
+  h3{
+    font-size: 18px;
+    color: #333;
+    line-height: 60px;
+    padding-top: 20px;
+    border-bottom:1px solid #e4e4e4;
+    span{
+      font-size: 13px;
+      margin-left: 40px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+.c_logistics{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  line-height: 35px;
+  color: #888;
+  border-bottom:1px solid #e4e4e4;
+  span{
+    float: left;
+    height: 35px;
+  }
+}
+.logistics_title{
+  font-size: 15px;
+  text-align: center;
+  color: #666;
+}
+.logistics_title .logistics_record{
+  text-align: left;
+  text-indent: 90px;
+}
+.logistics_time{
+  width: 260px;
+  text-align: center;
+}
+.logistics_record{
+  width: 550px;
+  padding-left: 125px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.logistics_site{
+  width: 230px;
+}
+
+//订单商品
+.m_pro{
+  padding:0 20px;
+  background: #FFFFFF;
+  border-bottom:1px dashed #e4e4e4;
+}
+.pro_title{
+  font-size: 16px;
+  padding-top: 20px;
+  text-align: center;
+  color: #888888;
+  span{
+    float: left;
+  }
+}
+.c_pro{
+  padding:20px 0;
+  >div{
+    float: left;
+    display: table;
+    height: 100px;
+    >span{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+    }
+  }
+}
+.pro_infor{
+  width: 325px;
+}
+.c_pro .pro_price,.pro_title .pro_price{
+  width: 190px;
+}
+.pro_coupon{
+  width: 190px;
+}
+.pro_handle{
+  width: 190px;
+}
+.pro_subtotal{
+  width: 145px;
+  padding-left: 45px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pro_infor{
+  img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+}
+.pro_detail{
+  float: left;
+  width: 205px;
+  padding: 18px 0 18px 20px;
+  h4{
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    height: 24px;
+    width:100%;
+    overflow: hidden;
+    @include ell(1);
+  }
+  p{
+    height: 40px;
+    overflow: hidden;
+    @include ell(2);
+    span{
+      font-size: 12px;
+      line-height: 20px;
+      color: #888;
+    }
+  }
+}
+.m_total{
+  background: #FFFFFF;
+  font-size: 16px;
+  color: #888888;
+  line-height: 40px;
+  >p{
+    >span{
+      float: right;
+    }
+  }
+}
+.c_price{
+  width: 140px;
+}
+.m_total .total_price{
+  line-height: 60px;
+  .c_price{
+    font-size: 24px;
+  }
+}
+.total_bottom{
+  padding-bottom: 20px;
+}
+.total_btn{
+  float: right;
+  margin-right: 20px;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #666;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

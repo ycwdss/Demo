@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/site";
+@import "../../module/usercenter_style";
+
+
+@import "../../module/order_return_status";
+@import "../../module/recommend";
+@import "../../module/return_ele";
+@import "../../module/no_order";
+
+//退款详情
+.return_title{
+  font-size: 24px;
+  color: #333;
+  line-height: 70px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.m_return,.m_apply,.m_return_pro{
+  padding:0 20px;
+  background: #FFFFFF;
+}
+.return_container{
+  margin-top: 20px;
+  padding:0 20px;
+  background: #fff4e5;
+  >h4{
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom:1px dashed #e4e4e4;
+  }
+}
+.return_content{
+  padding:20px 0 20px 100px;
+  p{
+    font-size: 14px;
+    color: #888;
+    line-height: 25px;
+  }
+  .return_detail_title{
+    font-size: 18px;
+    line-height: 40px;
+    color: #666;
+  }
+}
+.m_order_status{
+  padding-top: 20px;
+}
+.status_left{
+  border-left:12px solid #fff4e5;
+}
+
+//申请详情
+.apply_container{
+  font-size: 16px;
+  color: #666;
+  padding:5px 0 20px;
+}
+.apply_type{
+  width: 120px;
+}
+.apply_reason{
+  width: 770px;
+}
+.apply_time{
+  width:150px;
+}
+.apply_title{
+  >div{
+    float: left;
+    line-height: 50px;
+    text-align: center;  
+  }
+}
+.apply_content{
+  position: relative;
+  >div{
+    float: left;
+    display: table;
+    min-height: 40px;
+    text-align: center;
+  }
+  .apply_type{
+    span{
+      display: block;
+      position: absolute;
+      top:50%;
+      margin-top: -20px;
+      line-height: 40px;
+      left: 44px;
+    }
+  }
+  .apply_time{
+    span{
+      display: block;
+      position: absolute;
+      top:50%;
+      margin-top: -20px;
+      line-height: 40px;
+      right: 38px;
+    }
+  }
+}
+

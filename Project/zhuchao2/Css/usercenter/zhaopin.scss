@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import "../lib/mixin";
+@import "../module/pagelist";
+$main: #0a7fd4;
+$main_hover: #2e93d7;
+$main_light: #00aaff;
+.content_wrap{
+  background-color: #fff;
+}
+.items_title {
+  a {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    @include transition(opacity, 0.2s, ease);
+    &:hover {
+      @include opacity(85);
+    }
+    em{
+      margin: 0 5px;
+    }
+  }
+}
+
+.notice {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  margin-top: 20px;
+  a {
+    color: #fff;
+  }
+  i {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+  }
+}
+
+//招聘列表
+
+.recruit_title {
+  width: 328px;
+  text-align: left!important;
+}
+.recruit_num{
+  width: 168px;
+}
+.recruit_time {
+  width: 185px;
+}
+.recruit_status{
+  width: 146px;
+}
+.recruit_operate {
+  width: 183px;
+}
+
+table {
+  border-collapse: collapse;
+
+}
+
+.recruit_items {
+  border-bottom: 1px solid #E4E4E4;
+  th {
+    height: 60px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+  }
+  .recruit_title{
+    text-indent: 40px;
+  }
+}
+
+//每列
+.recruit_list {
+  border-bottom: 1px solid #E4E4E4;
+  td {
+    height: 75px;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+
+  }
+  .recruit_title {
+    color: #333;
+    .caption{
+      width: 288px;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #666;
+      &:hover{
+        color: #2e9bd7;
+      }
+    }
+  }
+
+  .recruit_time {
+    color: #888;
+  }
+  .recruit_operate {
+    a{
+      color: #666;
+      &:hover{
+        color: #2e9bd7;
+      }
+    }
+    span{
+      margin: 0 8px;
+      font-size: 12px;
+      color: #ccc;
+    }
+  }
+}
+//没有新闻
+.no_recruit{
+  td{
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+  }
+}
+//选择按钮
+.check {
+  display: inline-block;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+  em {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    border: 1px solid #b0b0b0;
+    margin-right: 20px;
+    vertical-align: 2px;
+    i {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      font-size: 14px;
+      color: #b0b0b0;
+    }
+  }
+}
+
+//删除
+.recruit_delete {
+  margin: 20px 0;
+  .btn {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    background-color: #e4e4e4;
+    margin-left: 20px;
+    cursor: pointer;
+    @include transition(opacity, 0.2s, ease);
+    &:hover {
+      @include opacity(85);
+    }
+  }
+  .check em{
+    vertical-align: -1px;
+  }
+  .btn_del {
+    color: #999;
+  }
+  a.question {
+    font-size: 12px;
+    color: $main;
+    margin-left: 20px;
+    &:hover {
+      color: #2e9bd7;
+    }
+  }
+}
+
+//分页
+.page_list input {
+  vertical-align: -8px;
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+.m_content {
+  padding: 50px 20px 50px;
+  .title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  .title_info {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    position: relative;
+    span {
+      margin: 0 28px;
+    }
+    .bdsharebuttonbox {
+      position: absolute;
+      right: 0;
+      top: 2px;
+    }
+  }
+  .news_inner {
+    padding: 20px;
+    p {
+      font-size: 15px;
+      text-indent: 25px;
+      color: #666;
+      line-height: 30px;
+    }
+    img {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+}
+//上下篇
+.up_down {
+  margin-top: 20px;
+  padding: 15px 0;
+  height: 80px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #888;
+  > div {
+    position: relative;
+    vertical-align: top;
+    margin: 5px 0;
+    a {
+      display: inline-block;
+      width: 566px;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #666;
+    }
+    span.date {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

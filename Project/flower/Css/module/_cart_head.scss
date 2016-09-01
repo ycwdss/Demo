@@ -1,0 +1,65 @@
+@charset "UTF-8";
+//购物步骤
+.cart_head{
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  font-size: 24px;
+  background-color: #f1f1f1;
+  position: relative;
+}
+.cart_icon{
+  font-size:16px;
+  color: #333;
+  padding-left: 40px;
+  position: relative;
+  i{
+    position: absolute;
+    left: 0;
+    top:20px;
+    font-size: 30px;
+    color: #8f8f8f;
+  }
+}
+.cart_step{
+  float: right;
+  margin-top: 20px;
+  li{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    background-color: #e4e4e4;
+  }
+  i{
+    position: absolute;
+    top:0;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-top: 15px solid transparent!important;
+    border-bottom: 15px solid transparent!important;
+  }
+  .left_arrow{
+    left:0;
+    border-left: 12px solid #f1f1f1;
+  }
+  .right_arrow{
+    right:-12px;
+    border-left: 12px solid #c5c5c5;
+  }
+  .step1{
+    width: 160px;
+  }
+  .step2,.step3{
+    width: 150px;
+    background-color: #c5c5c5;
+  }
+
+}

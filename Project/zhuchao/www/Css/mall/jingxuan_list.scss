@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import "../fh/lib";
+@import "../fh/moudle/routenav";
+$banner_height:400px;
+$dots_size:20px;
+@mixin ele_shadow{
+  margin-top: 33px;
+  margin-bottom: 2px;
+  @include box-shadow(0 15px 50px rgba(0,0,0,0.1))
+}
+//banner
+.banner{
+  position: relative;
+  overflow: hidden;
+  height: $banner_height;
+  img{
+    width: 100%;
+    height: $banner_height;
+  }
+}
+.banner:hover .button{
+  display: block;
+}
+.dots{
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  li{
+    display: inline-block;
+    width: $dots_size;
+    height: $dots_size;
+    font-size: 12px;
+    line-height: $dots_size;
+    color: #666;
+    @include border-radius($dots_size/2);
+    cursor:pointer;
+    margin: 0 5px;
+    background: rgba(255,255,255,0.8)
+  }
+  li:hover{
+    background: rgba(0,153,51,0.4);
+    color: #FFFFFF;
+  }
+  li:focus{
+    background: rgba(0,153,51,0.4);
+    color: #FFFFFF;
+  }
+  li.slick-active{
+    background: rgba(0,153,51,0.4);
+    color: #FFFFFF;
+  }
+}
+.slick{
+  img{
+    display: block;
+    margin: 0 auto;
+    width: 1300px!important;
+    height: 400px!important;
+  }
+}
+.banner_img1{
+  background: #dedede;
+}
+.banner_img2{
+  background: #dedede;
+}
+.button{
+  position: relative;
+  display: none;
+  .right{
+    right: 0;
+  }
+  .left{
+    left: 0;
+  }
+}
+.button_com {
+  position: absolute;
+  top: -255px;
+  width: 50px;
+  height: 70px;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  div {
+    margin: 19px 16px;
+    width: 17px;
+    height: 32px;
+  }
+  .left_img {
+    background: url("../../mall/Images/sprite_jingxuan_listleft.png");
+  }
+  .right_img {
+    background: url("../../mall/Images/sprite_jingxuan_listright.png");
+  }
+}
+//内容
+.content{
+  margin: 15px auto 100px;
+}
+.m_content{
+  float: left;
+  margin: 35px 0 0;
+  width: 270px;
+  background: #f8f8f8;
+  padding: 20px 20px 36px;
+  @include transition();
+  img{
+    width: 270px;
+    height: 168px;
+  }
+  .title{
+    margin-top: 15px;
+    line-height: 35px;
+    font-size: 22px;
+    height: 70px;
+    @include ell(2);
+    color: #333;
+  }
+  .title:hover{
+    color: #ff6600;
+  }
+}
+.m_content:hover{
+  margin-top: 33px;
+  margin-bottom: 2px;  
+  @include ele_shadow();
+}
+.margin_right{
+  margin-right: 20px;
+}
+.visit{
+  span{
+    float: left;
+  }
+  .visit_img{
+    margin:12px 20px 12px 0;
+    width: 22px;
+    height: 17px;
+    background: url("../../mall/Images/sprite_jingxuan_detail1.png") no-repeat;
+  }
+  .visit_count{
+    font-size: 14px;
+    line-height: 40px;
+    color: #093;
+  }
+}
+.about{
+  font-size: 14px;
+  line-height: 25px;
+  @include ell(4);
+  color: #888;
+  height: 100px;
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+@import "../mobile_moudle/moudle/strategy_list_sort";
+@import "../mobile_moudle/moudle/shaixuan_top";
+@import "../mobile_moudle/moudle/_shaixuan_content";
+@import "../mobile_moudle/moudle/strate_list_ele";
+$sort_border:1px solid #e4e4e4;
+/*内容*/
+.l_content{
+  margin-top: 15px;
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "module/module_user_input";
+.module_user_input>label{
+  margin-top: 8px;
+  display: inline-block;
+  width: 130px;
+  font-size: 14px;
+  color: #888;
+  >input{
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    vertical-align: -2px;
+    margin-right: 5px;
+  }
+}
+.module_user_input em{
+  height: 65px;
+}

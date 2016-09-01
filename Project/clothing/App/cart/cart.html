@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/slick.css"/>
+    <link rel="stylesheet" href="../../Css/app/cart/cart.css">
+</head>
+<body>
+<div class="cart_box conwidth">
+    <!--为空-->
+    <div class="empty">
+        <p>
+            <span>您的购物车空空如也！</span>
+            <br/>
+            <a href="../mall/index.html" class="main">去随便逛逛吧</a>，看看有没有喜欢的
+        </p>
+    </div>
+    <h3>全部商品( <span class="main">2</span> )</h3>
+
+    <div class="good_list_box">
+        <div class="good_title">
+            <div class="col good_check"><i class="checkbox"></i><span>全选</span></div>
+            <div class="col good_name">商品</div>
+            <div class="col good_price">单价</div>
+            <div class="col good_num">数量</div>
+            <div class="col good_total">小计</div>
+            <div class="col good_action">操作</div>
+        </div>
+        <div class="good_items">
+            <div class="col good_name">
+                <div class="col">
+                    <i class="checkbox checked"></i>
+                </div>
+                <a href="" class="col good_img"><img src="../../Images/test/test_pro.png" alt=""/></a>
+                <a href="" class="col good_test main_hover">法兰玫 口红持久保湿不脱色 玫瑰色</a>
+            </div>
+            <div class="col good_price">&yen;49.00</div>
+            <div class="col good_num">
+                <div class="noselect good_num_box">
+                    <a class="t_minus">-</a>
+                    <input type="text" class="t_num" value="1">
+                    <a class="t_add">+</a>
+                </div>
+            </div>
+            <div class="col good_total">&yen;49.00</div>
+            <div class="col good_action">
+                <a class="main_hover mainbd_hover">删除</a>
+                <a class="main_hover mainbd_hover">收藏</a>
+            </div>
+        </div>
+        <div class="good_items">
+            <div class="col good_name">
+                <div class="col">
+                    <i class="checkbox"></i>
+                </div>
+                <a href="" class="col good_img"><img src="../../Images/test/test_user_img.jpg" alt=""/></a>
+
+                <div class="col good_test ">
+                    <p><a href="" class="main_hover">法兰玫 口红持久保湿不脱色 玫瑰色</a></p>
+
+                    <p>颜色：黑白</p>
+
+                    <p>颜色：黑白</p>
+                </div>
+            </div>
+            <div class="col good_price">&yen;49.00</div>
+            <div class="col good_num">
+                <div class="noselect good_num_box">
+                    <a class="t_minus">-</a>
+                    <input type="text" class="t_num" value="1">
+                    <a class="t_add">+</a>
+                </div>
+            </div>
+            <div class="col good_total">&yen;49.00</div>
+            <div class="col good_action">
+                <a class="main_hover mainbd_hover">删除</a>
+                <a class="main_hover mainbd_hover">收藏</a>
+            </div>
+        </div>
+    </div>
+    <!--全选-->
+    <div class="good_bar clearfix">
+        <div class="checkbox_all">
+            <i class="checkbox"></i><span>全选</span>
+            <a class="main_hover">删除选中的商品</a>
+            <a class="main_hover">收藏选中的商品</a>
+        </div>
+        <span>已选择 <i class="main">3</i> 件商品</span>
+        <span class="total_price">总价（不含运费）：<em class="main">&yen;<span>49.00</span></em>元</span>
+
+    </div>
+    <div class="user_action">
+        <a class="buy_btn sec_border sec secbg_hover" href="submit_order.html">
+            继续购物
+        </a>
+        <a class="buy_btn main_bg" href="submit_order.html">
+            去结算
+        </a>
+    </div>
+</div>
+<!--猜你喜欢-->
+<div class="conwidth recommend">
+    <h3>猜你喜欢 <span class="fr"><i class="main_hover mainbd_hover">&lt;</i><i class="main_hover mainbd_hover">
+        &gt;</i></span></h3>
+    <ul class="recommend_box clearfix">
+        <li class="recommend_item">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.png" alt=""/></a>
+            <h4 class="main_hover"><a href="../mall/pro_info.html">新疆和田玉山流水玉牌 太白醉
+                酒 41.4</a></h4>
+
+            <p class="main">￥760.00</p>
+        </li>
+        <li class="recommend_item">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.png" alt=""/></a>
+            <h4 class="main_hover"><a href="../mall/pro_info.html">新疆和田玉山流水玉牌 太白醉
+                酒 41.4</a></h4>
+
+            <p class="main">￥760.00</p>
+        </li>
+        <li class="recommend_item">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.png" alt=""/></a>
+            <h4 class="main_hover"><a href="../mall/pro_info.html">新疆和田玉山流水玉牌 太白醉
+                酒 41.4</a></h4>
+
+            <p class="main">￥760.00</p>
+        </li>
+        <li class="recommend_item">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.png" alt=""/></a>
+            <h4 class="main_hover"><a href="../mall/pro_info.html">新疆和田玉山流水玉牌 太白醉
+                酒 41.4</a></h4>
+
+            <p class="main">￥760.00</p>
+        </li>
+        <li class="recommend_item">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_pro.png" alt=""/></a>
+            <h4 class="main_hover"><a href="../mall/pro_info.html">新疆和田玉山流水玉牌 太白醉
+                酒 41.4</a></h4>
+
+            <p class="main">￥760.00</p>
+        </li>
+    </ul>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="cart/cart" src="../../Js/lib/require.js"></script>
+</body>
+</html>

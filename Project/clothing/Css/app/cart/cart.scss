@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/cart_style";
+@import "../../module/recommend";
+
+.good_list_box {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+}
+.empty {
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  height: 400px;
+  text-align: center;
+  p {
+    width: 100%;
+    text-align: center;
+    -webkit-align-self: center;
+    align-self: center;
+    -ms-flex-item-align: center;
+    font-size: 18px;
+    span{
+      font-size: 30px;
+      color: #333;
+      line-height: 2;
+    }
+  }
+}
+//全选
+.good_bar {
+  margin-top: 20px;
+  padding: 0 10px;
+  line-height: 70px;
+  height: 70px;
+  position: relative;
+  text-align: right;
+  background-color: #fcfcfc;
+  border: 1px solid #e4e4e4;
+  color: #666;
+  font-size: 14px;
+  > span {
+    margin-left: 25px;
+  }
+  .total_price {
+    padding-right: 14px;
+    em {
+      font-size: 24px;
+    }
+  }
+}
+.checkbox_all {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 14px;
+  span {
+    vertical-align: 2px;
+  }
+  a {
+    margin-left: 25px;
+    vertical-align: 2px;
+  }
+}
+
+//用户事件
+.user_action {
+  margin-top: 25px;
+  text-align: right;
+  .buy_btn {
+    margin-left: 20px;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    @include box-sizing();
+    vertical-align: top;
+    @include transition(background-color, 0.3s, ease);
+  }
+  .sec_border {
+    border: 1px solid transparent;
+  }
+}

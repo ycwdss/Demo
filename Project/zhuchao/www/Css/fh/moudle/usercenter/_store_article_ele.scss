@@ -1,0 +1,44 @@
+@charset "UTF-8";
+$border_color:#e4e4e4;
+/*商家*/
+.m_content_right{
+  background: #fff;
+}
+.m_store{
+  background: #FFFFFF;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+.c_store{
+  padding: 20px;
+  border-bottom: 1px dashed $border_color;
+  img{
+    float: left;
+    width: 228px !important;
+    height: 114px !important;
+    margin-right: 45px;
+  }
+}
+.store_detail{
+  position: relative;
+  float: left;
+  width: 767px;
+  height: 114px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 25px;
+}
+.store_descri{
+  @include ell(2);
+}
+.store_visit{
+  position: absolute;
+  bottom: 0;
+  width: 767px;
+  font:$littleFont;
+  line-height: 20px;
+  color: #888888;
+}
+.store_time{
+  float: right;
+};

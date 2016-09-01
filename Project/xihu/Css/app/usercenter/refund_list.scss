@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/recommend";
+@import "../../module/empty";
+@import "../../module/pagelist";
+
+.usercenter_right h3{
+  background-color: #fff;
+  border:none;
+}
+.refund_code{
+  width: 160px;
+}
+.refund_pro{
+  width: 170px;
+}
+.refund_time{
+  width: 130px;
+}
+.refund_type{
+  width: 130px;
+}
+.refund_status{
+  width: 130px;
+}
+.refund_operate{
+  width: 130px;
+}
+.refund_title{
+  margin:0 10px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  span{
+    float: left;
+  }
+}
+.refund_list{
+  background: #FFFFFF;
+}
+.refund_ele{
+  margin:0 10px;
+  background: #fff;
+  border-bottom:1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  li{
+    float: left;
+    line-height:60px;
+    height: 60px;
+    text-align: center;
+    @include ell(1);
+  }
+  .refund_pro{
+    padding:0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a{
+    color: #666;
+  }
+}

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import "../fh/style";
+.m_content{
+  top: 25px;
+  height: 550px;
+  h3{
+    line-height: 70px;
+  }
+}
+.register_sort{
+  position: absolute;
+  top: 70px;
+  left: 25px;
+  width: 400px;
+  li{
+    float: left;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 1px;
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.register_sort .register_current {
+  padding: 0;
+  border-top: 2px solid $normalColor;
+}
+.arrow_down{
+  position: absolute;
+  top: 0;
+  left: 45px ;
+  @include arrow(bottom,6px,#009933);
+}
+.register_com{
+  margin-top: 60px;
+}
+.send_message{
+  position: relative;
+  float: right;
+  >span{
+    display: block;
+    width: 120px;
+    padding:0 3px;
+    text-align: center;
+    margin-left: 12px;
+    line-height: 35px;
+    height: 35px;
+    //margin-top: 15px;
+    @include box-sizing();
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+    background: #f8f8f8;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+}
+//发送验证码
+.confirm2{
+  position: absolute;
+  top: -120px;
+  left: -50px;
+  background: #e5f5ea;
+  padding: 15px;
+  width: 170px;
+  @include border-radius(10px);
+  span{
+    float: left;
+    font-size: 12px;
+    margin-left: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.m_content .confirm_top{
+  img{
+    float: left;
+    margin: 0;
+    width: 100px!important;
+    height: 37px!important;
+  }
+  span{
+    color: $normalColor;
+    line-height: 37px;
+  }
+}
+.m_content .confirm_content{
+  padding-top: 10px;
+  input{
+    float: left;
+    margin: 0;
+    width: 100px;
+    height: 27px;
+    border: 1px solid #e4e4e4;
+    background: #FFFFFF;
+  }
+  span{
+    height: 25px;
+    width: 50px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: $normalColor;
+    text-align:center;
+    @include box-sizing();
+  }
+}
+.confirm_bottom{  
+  position: absolute;
+  left: 95px;
+  bottom: -10px;
+  @include arrow(bottom,10px,#e5f5ea)
+}
+.login{
+  span{
+    float: right;
+  }
+  a{
+    float: right;
+    color: $normalColor;
+    &:hover{
+      color: $activeColor;
+    }
+  }
+}
+.m_content{
+  .tip{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color:red;
+    padding-left:5px;
+  }
+}

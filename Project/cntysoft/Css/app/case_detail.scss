@@ -1,0 +1,378 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+
+@import "../model/focus_box";
+@import "../model/totop";
+
+body{
+  background: #ffffff;
+}
+.header{
+  position: absolute;
+  background-color: rgba(255,255,255,0.3);
+  -pie-background: rgba(255,255,255,0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+}
+.header_content{
+  position: relative;
+}
+.header_cancel{
+  position: absolute;
+  width: 50px;
+  height:50px;
+  top:0;
+  left: 625px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  span{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url("../../Images/case_detail/spirte_header_cancel.png");
+  }
+}
+//顶部
+.case_top{
+  padding:105px 0 30px;
+  background: url("../../Images/case_detail/icon_case_detail_bg.jpg");
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+.case_top_content{
+  color: #ffffff;
+  text-align: center;
+  h2{
+    font-size: 48px;
+    line-height:95px;
+  }
+  h3{
+    font-size: 24px;
+    line-height: 60px;
+  }
+}
+.case_intro{
+  h2{
+    font-size: 48px;
+    color: #000;
+    text-align: center;
+    line-height: 200px;
+    background: #ffffff;
+  }
+}
+.focus_Box{
+  margin-top:15px;
+  li{
+    @include box-shadow(0 5px 20px rgba(0, 0, 0, 0.4));
+  }
+}
+
+//搜索介绍
+.search{
+ }
+.con_width{
+  position: relative;
+}
+.search_text{
+  position: absolute;
+  color: #ffffff;
+    h3{
+      font-size: 30px;
+      line-height: 60px;
+    }
+  p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+.search_intro1{
+  position: relative;
+  padding:125px 0 0;
+  background: #3341a6;
+  >div{
+    position: relative;
+    height: 690px;
+  }
+}
+.search_text1{
+  top:0;
+  left: 30px;
+  width: 225px;
+  p{
+    padding-left: 15px;
+  }
+}
+.search_img1{
+  position: absolute;
+  display: block;
+  right:0;
+  top:0;
+}
+.search_arrow1{
+  position: absolute;
+  display: block;
+  top: 245px;
+  left: 65px;
+}
+.search_intro2{
+  position: relative;
+  background: #3341a6;
+  >div{
+    height: 800px;
+  }
+}
+.search_img2{
+  position: absolute;
+  display: block;
+  left:15px;
+  top:0;
+}
+.search_text2{
+  width: 400px;
+  top: 35px;
+  right: 15px;
+  h3{
+    padding-right: 20px;
+    text-align: right;
+  }
+  p{
+    margin-left: 200px;
+    width: 200px;
+  }
+}
+.search_arrow2{
+  position: absolute;
+  display: block;
+  top: 345px;
+  right: 120px;
+}
+.search_intro3{
+  position: relative;
+}
+.search_intro3_bottom{
+  position: relative;
+  left:0;
+  width:0;
+  height: 0;
+  z-index:9;
+  //border-top: 500px  solid #3341a6;
+  border-top:550px solid #3341a6;
+  border-left: 1920px solid transparent;
+}
+.search_text3{
+  position: absolute;
+  width: 480px;
+  top: -20px ;
+  right: 15px;
+  z-index: 999;
+  h3{
+    padding-right: 20px;
+    text-align: right;
+  }
+
+}
+.search_arrow3{
+  position: absolute;
+  display: block;
+  bottom: -125px;
+  right: 400px;
+  z-index: 999;
+}
+.intro3_process{
+  position: relative;
+  vertical-align: middle;
+  img{
+    display: block;
+    position: absolute;
+    z-index:99;
+  }
+  span{
+    display: block;
+    position: absolute;
+    font-size:72px;
+    color: #3341a6;
+  }
+}
+.intro3_img1{
+  top:60px;
+  left:0;
+}
+.intro3_img2{
+  top:177px;
+  left: 420px;
+}
+.intro3_img3{
+  top: 303px;
+  right:0;
+}
+.intro3_process1{
+   top: 445px;
+   left: 107px;
+ }
+.intro3_process2{
+  top: 690px;
+  left: 605px;
+}
+.intro3_process3{
+  top: 675px;
+  right: 180px;
+}
+.arrow_blue1{
+   top:520px;
+   left: 168px;
+ }
+.arrow_blue2{
+  top:705px;
+  left: 690px;
+}
+
+//pc
+
+.pc{
+  margin-top: 200px;
+}
+.pc_top{
+  position: relative;
+  height: 550px;
+}
+.pc_title{
+  position: relative;
+  h2{
+    position: absolute;
+    top: 140px;
+    right: 40px;
+    font-size: 48px;
+    color: #333;
+  }
+}
+.pc_top_bg{
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:0;
+  height: 0;
+  z-index:9;
+  //border-top: 500px  solid #3341a6;
+  border-bottom:550px solid #3341a6;
+  border-right: 1920px solid transparent;
+}
+.index_page{
+  background: #3341a6;
+  >div{
+    height: 1035px;
+  }
+
+}
+.index_page1{
+  position: relative;
+  margin-top: -250px;
+  margin-left: 65px;
+  z-index: 99;
+  h3{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    z-index: 99;
+  }
+  img{
+    display: block;
+    margin-top: 40px;
+    z-index: 99;
+    -webkit-box-shadow: 0 10px 20px rgba(100,100,100,.1)    ;
+    -moz-box-shadow: 0 10px 20px rgba(100,100,100,.1)    ;
+    box-shadow: 0 10px 20px rgba(100,100,100,.1) ;
+  }
+}
+.index_page2{
+  @extend .index_page1;
+  margin-left:0;
+  margin-top: 80px;
+}
+
+//phone
+.phone_top{
+  position: relative;
+  height: 325px;
+  h3{
+    position: relative;
+    padding-top: 215px;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+  }
+  img{
+    position: absolute;
+    display: block;
+    top:180px;
+    left: 55px;
+    z-index:99;
+  }
+}
+.phone_describe{
+  position: relative;
+  height: 825px;
+
+}
+.phone_describe_bg{
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:0;
+  height: 0;
+  z-index:-1;
+  //border-top: 500px  solid #3341a6;
+  border-bottom:550px solid #3341a6;
+  border-left: 1920px solid transparent;
+}
+.phone_describe_img{
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background: url("../../Images/case_detail/icon_phone_bg1.png") center no-repeat;
+  background-position: 0 0;
+  z-index: 90;
+}
+.loan{
+  position: relative;
+  background: #3341a6;
+  height: 1420px;
+  z-index: 9;
+}
+.loan_left{
+  h4{
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  img{
+    display: block;
+    margin-top: 40px;
+    box-shadow: 0 10px 20px rgba(100,100,100,.1) ;
+  }
+}
+.loan_right{
+  img{
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+//底部
+.all_index{
+  height: 770px;
+  padding-top: 180px;
+  background: #eeeeee;
+  img{
+    display: block;
+    margin:0 auto;
+  }
+}

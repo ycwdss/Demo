@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>退换货列表</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/slick.css"/>
+    <link rel="stylesheet" href="../../Css/app/usercenter/refund_list.css">
+</head>
+<body>
+<div class="l_main clearfix conwidth">
+    <!--左侧导航-->
+    <div class="left_content fl">
+        <!--头像-->
+        <div class="user_head">
+            <a class="user_head_img">
+                <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+            </a>
+            <p class="user_name">西天大圣</p>
+            <a  class="main" href="basic_info.html">修改个人信息 &gt;</a>
+        </div>
+        <dl class="user_nav">
+            <dt>个人中心</dt>
+            <dd><a class="main_hover mainbd_hover" href="coupon.html">优惠券</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="collect.html">商品收藏</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="evaluate.html">我的评价</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="message.html">我的消息</a></dd>
+        </dl>
+        <dl class="user_nav">
+            <dt>我的订单</dt>
+            <dd><a class="main_hover mainbd_hover" href="order_list.html">我的订单</a></dd>
+            <dd><a class="main main_border" href="refund_list.html">退换货</a></dd>
+        </dl>
+        <dl class="user_nav">
+            <dt>我的信息</dt>
+            <dd><a class="main_hover mainbd_hover" href="basic_info.html">基本信息</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="address.html">我的地址</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="change_pwd.html">修改密码</a></dd>
+        </dl>
+    </div>
+    <!--右侧信息-->
+    <div class="right_content fr">
+        <div class="right_title">
+            <h3>退换货</h3>
+        </div>
+        <!--为空-->
+        <div class="empty_box">
+            <span><i class="icon-wuxiaoxi"></i>暂无退换货申请！</span>
+        </div>
+        <!--特别推荐-->
+        <div class="recommend_box noselect">
+            <h4>特别推荐</h4>
+            <a class="recommend_btn recommend_prev">&lt;</a>
+           <div class="recommend_content">
+               <div class="recommend_items clearfix">
+                   <div class="recommend_li">
+                       <a href="../mall/pro_info.html" class="recommend_pro_img">
+                           <img src="../../Images/test/test_pro_img.jpg" alt="">
+                       </a>
+                       <p class="recommend_text"><a href="../mall/pro_info.html">西京烤鲭鱼</a></p>
+                       <p class="recommend_price main">¥188.00  </p>
+                   </div>
+                   <div class="recommend_li">
+                       <a href="../mall/pro_info.html" class="recommend_pro_img">
+                           <img src="../../Images/test/test_pro_img.jpg" alt="">
+                       </a>
+                       <p class="recommend_text"><a href="../mall/pro_info.html">西京烤鲭鱼</a></p>
+                       <p class="recommend_price main">¥188.00  </p>
+                   </div>
+                   <div class="recommend_li">
+                       <a href="../mall/pro_info.html" class="recommend_pro_img">
+                           <img src="../../Images/test/test_pro_img.jpg" alt="">
+                       </a>
+                       <p class="recommend_text"><a href="../mall/pro_info.html">西京烤鲭鱼</a></p>
+                       <p class="recommend_price main">¥188.00  </p>
+                   </div>
+                   <div class="recommend_li">
+                       <a href="../mall/pro_info.html" class="recommend_pro_img">
+                           <img src="../../Images/test/test_pro_img.jpg" alt="">
+                       </a>
+                       <p class="recommend_text"><a href="../mall/pro_info.html">西京烤鲭鱼</a></p>
+                       <p class="recommend_price main">¥188.00  </p>
+                   </div>
+                   <div class="recommend_li">
+                       <a href="../mall/pro_info.html" class="recommend_pro_img">
+                           <img src="../../Images/test/test_pro_img.jpg" alt="">
+                       </a>
+                       <p class="recommend_text"><a href="../mall/pro_info.html">西京烤鲭鱼</a></p>
+                       <p class="recommend_price main">¥188.00  </p>
+                   </div>
+
+               </div>
+           </div>
+            <a class="recommend_btn recommend_next">&gt;</a>
+        </div>
+
+        <!--切换按钮-->
+        <div class="select_nav clearfix">
+            <div class="drop_wrap">
+                <div class="drop_menu">
+                    <div class="drop_show">全部</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li class="mainbg_hover">全部</li>
+                        <li class="mainbg_hover">退货</li>
+                        <li class="mainbg_hover">换货</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="refund_box select_items">
+            <div class="refund_title">
+                <div class="col refund_good">商品</div>
+                <div class="col refund_style">类型</div>
+                <div class="col refund_status">处理状态</div>
+                <div class="col refund_detail">订单详情</div>
+            </div>
+            <div class="refund_items">
+                <div class="col refund_good">
+                    <a href="../mall/pro_info.html" class="col good_img">
+                        <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+                    </a>
+                    <div class="col good_test">
+                        <p class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">西京烤鲭鱼</a></p>
+                        <span class="col main">¥188.0</span>
+                    </div>
+                </div>
+                <div class="col refund_style">
+                    退货
+                </div>
+                <div class="col refund_status">
+                    处理中
+                </div>
+                <div class="col refund_detail">
+                    <a href="refund_detail.html" class="action_btn mainbg_hover">查看订单详情</a>
+                </div>
+            </div>
+            <div class="refund_items">
+                <div class="col refund_good">
+                    <a href="../mall/pro_info.html" class="col good_img">
+                        <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+                    </a>
+                    <div class="col good_test">
+                        <p class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">西京烤鲭鱼</a></p>
+                        <span class="col main">¥188.0</span>
+                    </div>
+                </div>
+                <div class="col refund_style">
+                    退货
+                </div>
+                <div class="col refund_status">
+                    处理中
+                </div>
+                <div class="col refund_detail">
+                    <a href="refund_detail.html" class="action_btn mainbg_hover">查看订单详情</a>
+                </div>
+            </div>
+            <div class="refund_items">
+                <div class="col refund_good">
+                    <a href="../mall/pro_info.html" class="col good_img">
+                        <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+                    </a>
+                    <div class="col good_test">
+                        <p class="text_ellipsis"><a href="../mall/pro_info.html" class="main_hover">西京烤鲭鱼</a></p>
+                        <span class="col main">¥188.0</span>
+                    </div>
+                </div>
+                <div class="col refund_style">
+                    退货
+                </div>
+                <div class="col refund_status">
+                    处理中
+                </div>
+                <div class="col refund_detail">
+                    <a href="refund_detail.html" class="action_btn mainbg_hover">查看订单详情</a>
+                </div>
+            </div>
+            <!--分页布局-->
+            <div class="page_list">
+                <p>
+                    <a class="prev_page" href="#">上一页</a>
+                    <a class="main_bg main_border" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a class="no_all_b" href="#">......</a>
+                    <a href="#">100</a>
+                    <a class="next_page no_marginR" href="#">下一页</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/usercenter" id="require"
+        src="../../Js/lib/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+@charset "UTF-8";
+.pro_card {
+  width: 270px;
+  height: 365px;
+  background: #FFFFFF; }
+  .pro_card img {
+    display: block;
+    width: 270px !important;
+    height: 270px !important; }
+
+.pro_card_img {
+  position: relative;
+  display: block;
+  overflow: hidden; }
+  .pro_card_img:hover:before {
+    left: 430px;
+    -moz-transition: 1s 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: 1s 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: 1s 0.2s ease;
+    transition: 1s 0.2s ease; }
+  .pro_card_img:before {
+    position: absolute;
+    top: 0;
+    left: -160px;
+    content: '';
+    width: 80px;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    -webkit-transform: skewX(-25deg);
+    -moz-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+    -o-transform: skewX(-25deg);
+    transform: skewX(-25deg); }
+
+.pro_card_intro {
+  display: block;
+  margin: 25px 25px 0;
+  height: 25px;
+  font-size: 14px;
+  line-height: 25px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #333;
+  text-align: center; }
+
+.pro_card_price {
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px; }
+
+/*
+<div class="pro_card">
+<a href="" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+<a href="" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+<p class="main pro_card_price">￥188.00 </p>
+</div>
+*/
+body {
+  background: #F8F8F8; }
+
+.sort_list {
+  display: block; }
+
+.banner {
+  width: 100%;
+  height: 500px;
+  z-index: 3;
+  text-align: center;
+  overflow: hidden; }
+  .banner img {
+    height: 100%; }
+
+.banner_dots {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+  .banner_dots li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+    filter: alpha(opacity=95);
+    /* IE */
+    -moz-opacity: 0.95;
+    /* 老版Mozilla */
+    -khtml-opacity: 0.95;
+    /* 老版Safari */
+    opacity: 0.95;
+    /* 支持opacity的浏览器*/
+    cursor: pointer; }
+    .banner_dots li button {
+      display: none; }
+  .banner_dots li[class="slick-active"] {
+    background: #093;
+    filter: alpha(opacity=80);
+    /* IE */
+    -moz-opacity: 0.8;
+    /* 老版Mozilla */
+    -khtml-opacity: 0.8;
+    /* 老版Safari */
+    opacity: 0.8;
+    /* 支持opacity的浏览器*/ }
+
+.hot {
+  margin-top: 30px; }
+
+.hot_nav {
+  line-height: 50px;
+  text-align: center; }
+  .hot_nav span {
+    float: left;
+    width: 25%;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.hot_slick {
+  height: 292px;
+  overflow: hidden; }
+
+.hot_ele {
+  position: relative;
+  width: 292px;
+  height: 292px;
+  margin: 0 4px; }
+  .hot_ele:hover .hot_info {
+    filter: alpha(opacity=100);
+    /* IE */
+    -moz-opacity: 1;
+    /* 老版Mozilla */
+    -khtml-opacity: 1;
+    /* 老版Safari */
+    opacity: 1;
+    /* 支持opacity的浏览器*/ }
+  .hot_ele img {
+    display: block;
+    width: 292px !important;
+    height: 292px !important; }
+
+.hot_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  filter: alpha(opacity=0);
+  /* IE */
+  -moz-opacity: 0;
+  /* 老版Mozilla */
+  -khtml-opacity: 0;
+  /* 老版Safari */
+  opacity: 0;
+  /* 支持opacity的浏览器*/
+  -moz-transition: 0.5s 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: 0.5s 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: 0.5s 0.2s ease;
+  transition: 0.5s 0.2s ease; }
+  .hot_info p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center; }
+  .hot_info:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000;
+    filter: alpha(opacity=50);
+    /* IE */
+    -moz-opacity: 0.5;
+    /* 老版Mozilla */
+    -khtml-opacity: 0.5;
+    /* 老版Safari */
+    opacity: 0.5;
+    /* 支持opacity的浏览器*/
+    z-index: -1; }
+
+.hot_intro {
+  margin: 90px 96px 0;
+  height: 25px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.hot_info .hot_btn {
+  display: block;
+  width: 90px;
+  height: 25px;
+  font-size: 14px;
+  margin: 10px auto 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.floor_title {
+  margin-top: 20px; }
+  .floor_title h3 {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center; }
+
+.floor_nav {
+  margin: 5px auto 15px;
+  width: 700px;
+  text-align: center; }
+  .floor_nav span {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 20px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.floor_nav_active {
+  background: #000; }
+
+.floor_left {
+  height: 740px;
+  width: 840px; }
+
+.floor_right {
+  height: 740px;
+  width: 360px;
+  background: #FFFFFF; }
+
+.floor_pro {
+  margin-bottom: 10px; }
+
+.pro_card {
+  float: left;
+  margin-right: 10px; }
+
+.floor_slick {
+  overflow: hidden;
+  width: 360px;
+  height: 450px; }
+  .floor_slick img {
+    display: block;
+    width: 360px !important;
+    height: 450px !important; }
+
+.ranking h3 {
+  font-size: 18px;
+  text-align: center;
+  line-height: 45px; }
+
+.rank_pro {
+  padding: 15px 0;
+  margin: 0 20px;
+  border-bottom: 1px dashed #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .rank_pro img {
+    float: left;
+    width: 50px !important;
+    height: 50px !important; }
+
+.rank_pro_info {
+  float: left;
+  margin: 5px 13px;
+  width: 244px; }
+  .rank_pro_info p {
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+
+/*# sourceMappingURL=index.css.map */

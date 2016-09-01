@@ -1,0 +1,270 @@
+@charset "UTF-8";
+.page {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top: 30px\9; }
+
+.page a, .c_page_text, .c_page_btn {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 12px;
+  line-height: 30px;
+  color: #888;
+  background-color: #f7f7f7;
+  margin-right: 5px;
+  cursor: pointer;
+  font-family: "SimSun";
+  -moz-transition: 0.1s ease-out;
+  /* Firefox 4 */
+  -webkit-transition: 0.1s ease-out;
+  /* Safari 和 Chrome */
+  -o-transition: 0.1s ease-out;
+  transition: 0.1s ease-out; }
+
+.page a.now_page:hover {
+  cursor: default;
+  color: #999; }
+
+.page a:hover {
+  color: #5272e4;
+  background-color: #fff;
+  border-color: #5272e4; }
+
+.page a.active {
+  background: #fff;
+  color: #e1e1e1; }
+
+.page a.current {
+  background: #5272e4;
+  color: #fff;
+  border-color: #5272e4;
+  cursor: default; }
+
+.page span {
+  padding-left: 25px; }
+
+.c_page_text {
+  width: 16px;
+  background: #f7f7f7; }
+
+.c_page_btn {
+  font-family: "Microsoft YaHei", serif; }
+
+/*c_gotop*/
+#totop {
+  width: 65px;
+  height: 65px;
+  -webkit-border-radius: 65px;
+  border-radius: 65px;
+  background-color: #ddd;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000; }
+  #totop:hover {
+    background-color: #5272e4; }
+  #totop a {
+    display: block;
+    width: 23px;
+    height: 13px;
+    margin: 26px auto 0;
+    background: url(../../Images/sprite_totop.png) no-repeat; }
+
+.header {
+  position: absolute; }
+
+.header_nav a:hover {
+  color: #333; }
+
+a:hover {
+  color: #5272e4; }
+
+.l_main {
+  padding-top: 54px;
+  padding-bottom: 100px; }
+
+.header, .top_about_content {
+  background-color: rgba(255, 255, 255, 0.3);
+  -pie-background: rgba(255, 255, 255, 0.3); }
+
+.left_content {
+  width: 930px; }
+
+.left_content_title {
+  padding-top: 33px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  font-size: 14px;
+  color: #666; }
+  .left_content_title h3 {
+    float: left;
+    margin-right: 1px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer; }
+    .left_content_title h3:after {
+      background: transparent;
+      content: "";
+      display: block;
+      margin: 2px auto 0;
+      width: 0;
+      height: 2px;
+      -webkit-transition: all .3s ease-out;
+      -moz-transition: all .3s ease-out;
+      -ms-transition: all .3s ease-out;
+      -o-transition: all .3s ease-out;
+      transition: all .3s ease-out; }
+    .left_content_title h3:hover {
+      color: #5272e4; }
+      .left_content_title h3:hover:after {
+        background: #5272e4;
+        width: 100%; }
+  .left_content_title h3.current {
+    color: #5272e4; }
+    .left_content_title h3.current:after {
+      background: #5272e4;
+      width: 100%; }
+  .left_content_title span {
+    color: #888;
+    cursor: pointer; }
+  .left_content_title .line {
+    margin: 0 15px; }
+  .left_content_title span.current {
+    color: #5272e4; }
+    .left_content_title span.current .icon_down {
+      background: url(../../Images/sprite_down_btn_current.png) no-repeat; }
+
+.icon_down {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  vertical-align: middle;
+  background: url(../../Images/sprite_down_btn.png) no-repeat; }
+
+.left_list {
+  position: relative;
+  height: 180px;
+  *height: 142px;
+  margin-top: 20px;
+  padding: 20px;
+  padding-left: 250px;
+  border: 1px solid #e4e4e4;
+  background-color: #f8f8f8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+  .left_list .news_img {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: block;
+    width: 210px;
+    height: 140px;
+    border: 1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .left_list .news_img img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .left_list .news_title {
+    font-size: 18px;
+    line-height: 2.0;
+    color: #333; }
+  .left_list .news_content {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.7;
+    height: 3.4em;
+    overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+
+.left_list:hover {
+  border-color: #5272e4; }
+  .left_list:hover .news_title a {
+    color: #5272e4; }
+
+span.time, span.look {
+  font-size: 12px;
+  color: #aaa;
+  position: absolute;
+  bottom: 20px; }
+
+.look {
+  position: absolute;
+  right: 20px; }
+  .look .icon_look {
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    margin-right: 10px;
+    vertical-align: -1px;
+    background: url(../../Images/sprite_icon_look.png) no-repeat; }
+
+.noimg_list {
+  padding-left: 20px; }
+
+.page {
+  margin-top: 50px; }
+
+.right_side {
+  margin-top: 83px;
+  width: 350px;
+  *width: 310px;
+  border: 1px solid #e4e4e4;
+  padding: 0 20px;
+  background-color: #f8f8f8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .right_side .right_side_title {
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 2.0;
+    color: #333; }
+
+.right_list {
+  position: relative;
+  padding: 20px 0 30px;
+  border-top: 1px solid #e4e4e4; }
+  .right_list .right_list_img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px; }
+    .right_list .right_list_img img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .right_list .right_list_title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.7;
+    height: 3.4em;
+    overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+
+/*# sourceMappingURL=newslist.css.map */

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.index_banner{
+  margin-top:45px;
+  max-width: 640px;
+  cursor: pointer;
+}
+#banner .swiper-container {
+  max-height: 200px;
+}
+.index_banner .swiper-wrapper div{
+  display: block;
+  width: 100%;
+}
+.index_banner .swiper-slide img{
+  display: block;
+  width: 100%;
+}
+/*index_bottom_btn*/
+.index_banner .swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet{
+  float: left;
+  margin:0 6px;
+}
+.index_banner .swiper-container-vertical > .swiper-pagination{
+  position: absolute;
+  right: 45%;
+  text-align: center;
+}
+.swiper-pagination-bullet{
+  border:1px solid rgba(255,255,255,1);
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+  background-color:rgba(0,153,51,0.5);
+  border:1px solid rgba(255,255,255,0.5);
+}
+
+
+//<div class="swiper-container">
+//<div class="swiper-wrapper">
+//<div class="swiper-slide"><img src="Images/mobile/banner01.png" alt="banner图片"/></div>
+//<div class="swiper-slide"><img src="Images/mobile/banner01.png" alt="banner图片"/></div>
+//</div>
+//<!-- 如果需要分页器 -->
+//<div class="swiper-pagination"></div>
+//</div>

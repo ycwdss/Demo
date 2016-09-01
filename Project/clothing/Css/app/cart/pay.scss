@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/cart_style";
+//提交成功
+.success_submit {
+  padding:20px 0;
+  border: 1px solid #e4e4e4;
+  border-bottom: 0;
+  text-align: center;
+  background-color: #fcfcfc;
+  position: relative;
+  .success_icon{
+    position: absolute;
+    left: 282px;
+    top:30px;
+    i{
+      font-size:70px;
+    }
+  }
+  p {
+    font-size: 24px;
+  }
+  span {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    em{
+      font-size: 30px;
+    }
+  }
+}
+//订单详情
+.order_list{
+  padding: 20px;
+  line-height: 24px;
+  border:1px solid #e4e4e4;
+  font-size: 14px;
+  color: #666;
+  background-color: #fff;
+  li:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  i{
+    float: left;
+  }
+  span{
+    display: block;
+    float: left;
+    width: 1080px;
+  }
+  li:first-child{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #000;
+  }
+}
+//选择支付方式
+.pay_box{
+  h3{
+    line-height: 48px;
+    background-color: #fcfcfc;
+    font-size: 16px;
+    color: #000;
+  }
+}
+.pay_way_box{
+  background-color: #fff;
+}
+.pay_way_nav{
+  padding-left: 25px;
+  >a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+  }
+}
+.pay_way_box{
+  ul{
+    padding: 10px 40px;
+  }
+  li{
+    float: left;
+    margin: 0 10px 20px;
+    width: 164px;
+    height: 38px;
+    cursor: pointer;
+    border: 1px solid #f5f5f5;
+    @include transition(border-color,0.2s,ease)
+  }
+  li span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    @include transition();
+    font-size: 0;
+    background-position: center;
+  }
+}
+//支付宝
+.pay_icon1{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zfb.png) no-repeat;
+}
+//微信
+.pay_icon2{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_wx.png) no-repeat;
+}
+//中国银行
+.pay_icon3{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zhongguo.png) no-repeat;
+}
+//中国工商银行
+.pay_icon4{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_gs.png) no-repeat;
+}
+//招商银行
+.pay_icon5{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zs.png) no-repeat;
+}
+//中国农业银行
+.pay_icon6{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_nongye.png) no-repeat;
+}
+//中国建设银行
+.pay_icon7{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_jianshe.png) no-repeat;
+}
+//平安银行
+.pay_icon8{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_pingan.png) no-repeat;
+}
+//中国邮政储蓄银行
+.pay_icon9{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_youzheng.png) no-repeat;
+}
+//浦发银行
+.pay_icon10{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_pufa.png) no-repeat;
+}
+//兴业银行
+.pay_icon11{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_xingye.png) no-repeat;
+}
+//广发银行
+.pay_icon12{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_guangfa.png) no-repeat;
+}
+//富滇银行
+.pay_icon13{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_fudian.png) no-repeat;
+}
+//杭州银行
+.pay_icon14{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_hangzhou.png) no-repeat;
+}
+//上海银行
+.pay_icon15{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_shanghai.png) no-repeat;
+}
+//宁波银行
+.pay_icon16{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_ningbo.png) no-repeat;
+}
+
+//微信支付
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.pay_block{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#93888980,endColorstr=#93888980);
+  h4{
+    padding-left: 30px;
+    color: #333;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    text-align: left;
+    -webkit-box-shadow: 0 2px 0 0 #ddd ;
+    -moz-box-shadow: 0 2px 0 0 #ddd ;
+    box-shadow: 0 2px 0 0 #ddd;
+  }
+  >div{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    -webkit-transition:top 0.2s ease-out;
+    transition:top 0.2s ease-out;
+  }
+  >div.in{
+    top:0;
+  }
+}
+.pay_weixin .pay_erweima{
+  width: 572px;
+  height: 402px;
+}
+.pay_erweima{
+  span{
+    display: block;
+    width: 248px;
+    height: 248px;
+    margin: 25px auto 10px;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  p.tip{
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.pay_block .pay_offbtn{
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 25px;
+  @include transition(background,0.3s,ease);
+  cursor: pointer;
+  i{
+    width: 13px;
+    height: 13px;
+    vertical-align:middle;
+    font-size: 13px;
+  }
+}
+
+//支付完成弹出框
+.pay_finish{
+  width: 572px;
+  height:250px;
+  text-align: center;
+  .order_num{
+    padding-top:40px;
+    font-size: 18px;
+  }
+  p.action{
+    padding-top: 30px;
+    a{
+      display: inline-block;
+      width: 125px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      @include box-sizing();
+    }
+    a.action_btn{
+      margin-right: 60px;
+      border:1px solid #e4e4e4;
+      vertical-align: top;
+      @include transition();
+      &:hover{
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
+.pay_finish .pay_offbtn {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+}

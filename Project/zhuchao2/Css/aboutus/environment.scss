@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.env_ele{
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 551px;
+  img{
+    display: block;
+    width: 100%;
+  }
+  p{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 60px;
+    @include bg(rgba(0,0,0,0.4))
+  }
+}

@@ -1,0 +1,59 @@
+/*模块底部*/
+.mall_module_list li{
+  float: left;
+  width: 202px;
+  height: 288px;
+  padding:20px 20px 0px;
+  border: 1px solid #f8f8f8;
+  margin-right: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 14px;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.mall_module_list li:hover{
+  -webkit-box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+  box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0)
+}
+.mall_module_list .mall_list_img{
+  width: 205px;
+  height: 128px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.mall_list_img a,.mall_list_img img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mall_module_list p{
+  height: 40px;
+  margin-bottom: 23px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.mall_module_list p a{
+  color: #888;
+}
+.mall_module_list em{
+  font-size: 18px;
+  color: #f60;
+}
+.mall_module_list em i{
+  font-size: 14px;
+}
+.mall_module_list a:hover{
+  color: #f60;
+}
+.mall_module_list .oldprice{
+  font-size: 12px;
+  color: #666;
+  text-decoration: line-through;
+  margin-left: 4px;
+}

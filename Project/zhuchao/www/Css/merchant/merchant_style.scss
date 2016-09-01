@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import "../fh/_lib";
+@import "../fh/reset";
+@import "../fh/moudle/totop";
+@import "../fh/commonclass";
+@import "../fh/moudle/footer";
+@import "../fh/moudle/module_top";
+@import "../fh/moudle/page";
+@import "../fh/moudle/routenav";
+
+.l_footer{
+  background-image: url(../../Images/pc/icon_footer_bg.png?_nosprite);
+}
+
+  //商家logo和搜素
+  .logo_search {
+    margin: 10px auto;
+  }
+  .merchant_logo {
+    img {
+      width: 200px;
+      height: 100px;
+      margin-right: 32px;
+      float: left;
+    }
+    h1 {
+      font-size: 24px;
+      color: #333333;
+      float: left;
+      margin-top: 34px;
+    }
+  }
+
+  //搜素框
+  .merchant_search {
+    width: 458px;
+    height: 33px;
+    position: relative;
+    border: 1px solid #009933;
+    margin-top: 33px;
+    .search_icon {
+      width: 15px;
+      height: 14px;
+      display: block;
+      background: url("../../merchant/Images/sprite_search_icon.png") no-repeat;
+      position: absolute;
+      top: 9px;
+      left: 10px;
+    }
+    input {
+      width: 248px;
+      height: 33px;
+      position: absolute;
+      left: 30px;
+      font-size: 14px;
+      line-height: 33px;
+      padding: 0 10px;
+    }
+  }
+  .search_button {
+    width: 160px;
+    height: 33px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #009933;
+    a {
+      width: 80px;
+      height: 33px;
+      font-size: 14px;
+      line-height:33px;
+      color: black;
+      text-align: center;
+      display: block;
+      float: left;
+    }
+    .active {
+      background: #018a2e;
+      color: #fff;
+    }
+  }
+
+  //导航栏
+  .merchant_nav {
+    background: #009933;
+    height: 40px;
+    overflow: hidden;
+  }
+  .merchant_nav ul {
+    li {
+      width: 150px;
+      height: 40px;
+      margin-right: 1px;
+      a {
+        font-size: 16px;
+        line-height: 40px;
+        color: white;
+        display: block;
+        text-align: center;
+        &:hover {
+          background: #018a2e;
+        }
+      }
+    }
+    .active {
+      background: #018a2e;
+    }
+  }
+
+

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/strate_list_ele";
+//装修流程
+.zhuangxiu{
+  margin-top: 50px;
+}
+.strategy_top {
+  height: 47px;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+}
+.title_border{
+  float: left;
+  width: 47%;
+  height: 18px;
+  margin: 14px 3% ;
+  padding: 0 5px;
+  font-size:1.1rem;
+  overflow: visible;
+  border-left:3px solid #093;
+  h3{
+    display: block;
+    color: #333;
+    line-height: 20px;
+    margin-top: -2px;
+    font-size: 16px;
+  }
+}
+.arrow_right{
+  float: right;
+  margin: 15px 3% 15px 0;
+  width: 10px;;
+  height: 18px;
+  background: url("../../../Images/mobile/icon_strategy.png") 0 0;
+  -webkit-background-size: 163px;
+  background-size: 163px;
+}
+.zhuangxiu_content{
+  background: #FFFFFF;
+  margin-bottom: 10px;
+}
+.zhuangxiu_title{
+  width: 90%;
+  margin: 0 5%;
+  h4{
+    float: left;
+    width: 1/3*100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    line-height: 40px;
+    border-bottom: 2px solid #e4e4e4;
+  }
+  .current{
+    color: #093;
+    border-bottom: 2px solid #093;
+  }
+}
+.container{
+  width: 100%;
+  height: 101px;
+  overflow: hidden;
+}
+.zhuangxiu_detail{
+  width: 100%;
+}
+.zhuangxiu_ele{
+  float: left;
+  margin-top: 15px;
+  width: 25%;
+}
+%zhuangxiu_ele_img{
+  display: block;
+  margin: 0 auto;
+  width: 51px;
+  height: 51px;
+}
+.zhuangxiu_ele_text{
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 35px;
+  color: #666;
+}
+.shoufang_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_strategy.png") -1px  -24px;
+  -webkit-background-size: 138px;
+  background-size: 138px;
+}
+.yusuan_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_strategy.png") -1px -79px;
+  -webkit-background-size: 138px;
+  background-size: 138px;
+}
+.sheji_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_strategy.png") -54px -24px;
+  -webkit-background-size: 139px;
+  background-size: 139px;
+}
+.hetong_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_strategy.png") -54px -80px;
+  -webkit-background-size: 139px;
+  background-size: 139px;
+}
+.chaigai_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png") -2px -27px;
+  -webkit-background-size: 280px;
+  background-size: 280px;
+}
+.shuidian_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png") -60px -27px;
+  -webkit-background-size: 280px;
+  background-size: 280px;
+}
+.fangshui_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png") -2px -144px;
+  -webkit-background-size: 280px;
+  background-size: 280px;
+}
+.niwa_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png") -188px -88px;
+  -webkit-background-size: 280px;
+  background-size: 280px;
+}
+.mugong_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png") -123px -88px;
+  -webkit-background-size: 280px;
+  background-size: 280px;
+}
+.youqi_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png") -60px -88px;
+  -webkit-background-size: 280px;
+  background-size: 280px;
+}
+.jungong_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png") -2px -88px;
+  -webkit-background-size: 280px;
+  background-size: 280px;
+}
+.ruanzhuang_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png") -188px -26px;
+  -webkit-background-size: 280px;
+  background-size: 280px;
+}
+.ruzhu_img{
+  @extend %zhuangxiu_ele_img;
+  background: url("../../../Images/mobile/icon_mall.png")  -123px -26px;
+  -webkit-background-size: 280px;
+  background-size:280px;
+}
+//选材等共有属性
+.strategy_com{
+  margin-bottom: 10px;
+}

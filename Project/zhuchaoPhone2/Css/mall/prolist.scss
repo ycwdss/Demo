@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.pro_list_nav{
+  padding: 6px 0 6px 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  >a{
+    float: left;
+    padding:6px 0;
+    width: 25%;
+    display: block;
+    color: #666;
+    font-size: 14px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+}
+.special_nav{
+  >a{
+    width: 50%;
+  }
+}

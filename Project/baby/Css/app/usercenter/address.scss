@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/drop";
+@import "../../module/address_ele";
+@import "../../module/msg_tip";
+@import "../../module/site";
+@import "../../module/recommend";
+@import "../../module/usercenter_style";
+
+.address_wrap{
+  padding: 30px;
+  margin-right: -15px;
+  .addr_ele{
+    width: 340px;
+    height: 180px;
+    border: 2px solid #ccc;
+  }
+}
+
+//新地址
+.new_address{
+  text-align: center;
+  font-size: 30px;
+  i{
+    font-size: 33px;
+    margin-right: 15px;
+  }
+  p{
+    margin-top: 62px;
+    cursor: pointer;
+  }
+}

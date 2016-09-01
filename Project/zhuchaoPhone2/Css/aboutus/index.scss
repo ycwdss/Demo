@@ -1,0 +1,216 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/mall/_adarea";
+
+
+
+.module_ad3 .module_ad_box {
+  margin-top: 31.25%;
+}
+.module_ad_list{
+  width: 100%;
+  height: 180px;
+  a{
+    height: 180px;
+    img{
+      width: 100%;
+      height: 180px;
+    }
+  }
+}
+//简介
+
+.jianjie, .business, .culture, .law {
+  background-color: #fff;
+  padding: 10px 15px 0;
+  font-size: 14px;
+  color: #333;
+  p {
+    text-indent: 2em;
+    line-height: 1.6;
+    padding-bottom: 10px;
+  }
+}
+
+//业务介绍
+.business {
+  p{
+    text-indent: 1em;
+  }
+  img {
+    width: 100%;
+    margin-top: 10px;
+  }
+  p:last-child {
+    span {
+      display: inline-block;
+      width: 45%;
+    }
+    span:first-child {
+      float: left;
+    }
+    span:last-child {
+      float: right;
+    }
+  }
+}
+
+//企业文化
+.culture {
+
+  ul {
+    padding: 5px 0 15px 0;
+    li {
+      float: left;
+      width: 30%;
+      text-align: center;
+      img {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+      }
+      h2 {
+        font-size: 14px;
+        color: #333;
+        font-weight: 500;
+        text-align: center;
+      }
+      span {
+        font-size: 10px;
+        color: #333;
+        display: inline-block;
+      }
+    }
+    li:nth-child(2) {
+      margin: 0 5%;
+    }
+  }
+}
+
+//法律声明
+.law {
+  p {
+    font-size: 12px;
+    span {
+      text-indent: 0;
+      display: block;
+      padding: 20px 0;
+      font-size: 14px;
+      color: #333;
+    }
+  }
+}
+
+//企业资质
+.zihi, .join_us {
+  ul {
+    li {
+
+      div:first-child {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        /* padding: 0 15px;*/
+        font-size: 14px;
+        color: #333;
+        background-color: #fff;
+        span {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          margin: 0 15px;
+          background-color: #fff;
+          border-bottom: 1px solid #efeff4;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        i {
+          float: right;
+          margin-top: 13px;
+          color: #888;
+        }
+      }
+      div:last-child {
+        display: none;
+        img {
+          display: block;
+          min-width: 165px;
+          max-width: 50%;
+          margin: 15px auto;
+        }
+      }
+
+    }
+    li:last-child {
+      div:first-child {
+        span {
+          border-bottom: 0;
+        }
+      }
+    }
+    .on {
+      div:first-child {
+
+        span {
+          border-bottom:0;
+        }
+      }
+      div:last-child {
+        display: block;
+      }
+    }
+
+  }
+}
+
+//联系我们
+.contact_us {
+  background-color: #fff;
+  padding: 5px 15px 15px;
+  ul {
+    padding: 5px 0;
+    li {
+      line-height: 32px;
+      font-size: 14px;
+      color: #666;
+      label {
+        float: left;
+
+        font-size: 14px;
+        color: #333;
+      }
+    }
+  }
+}
+
+.BMapLabel {
+  width: auto !important;
+  border: 1px solid red !important;
+  font-size: 14px;
+  color: #333 !important;
+}
+
+//加入我们
+.join_us {
+  p {
+    margin: 5px 0;
+    padding-left: 20px;
+    text-indent: -20px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+  }
+  h4 {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+  }
+  ul {
+    li div:last-child {
+      padding: 15px;
+    }
+  }
+}
+

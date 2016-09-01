@@ -1,0 +1,71 @@
+.write_order {
+  background: #f8f8f8; }
+  .write_order p {
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #666666; }
+
+.page_back {
+  background: #f8f8f8;
+  padding-bottom: 125px; }
+
+.con_back {
+  background: white; }
+
+.message_item {
+  padding: 30px 20px;
+  border-bottom: 1px solid #e4e4e4; }
+  .message_item h2 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 30px; }
+
+.message_con {
+  padding-left: 22px; }
+  .message_con .buyer_message {
+    height: 34px;
+    margin-bottom: 10px; }
+    .message_con .buyer_message a {
+      display: inline-block;
+      margin-right: 30px;
+      text-align: center;
+      width: 168px;
+      border: 1px solid #e4e4e4;
+      position: relative; }
+      .message_con .buyer_message a:hover {
+        background: #f8f8f8; }
+    .message_con .buyer_message .current {
+      border: 1px solid #009933; }
+      .message_con .buyer_message .current:after {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url("../../cart/Images/sprite_green_sanjiao.png"); }
+    .message_con .buyer_message p {
+      display: inline-block; }
+    .message_con .buyer_message span {
+      font-size: 14px;
+      line-height: 32px;
+      color: #666666;
+      margin-right: 12px; }
+
+.pay_method a {
+  width: 150px; }
+
+.message_con h3 {
+  font-size: 14px;
+  color: #666666;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e4e4; }
+
+.pro_message {
+  position: relative;
+  margin-top: 30px; }
+
+/*# sourceMappingURL=cart_balance.css.map */

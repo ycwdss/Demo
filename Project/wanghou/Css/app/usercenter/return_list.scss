@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/site";
+
+@import "../../module/return_ele";
+@import "../../module/no_order";
+@import "../../module/recommend";
+@import "../../module/pagelist";
+
+.return_pro_content .return_pro_total span{
+  font-size: 14px;
+  i{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.return_pro_container {
+  min-height: 470px;
+}

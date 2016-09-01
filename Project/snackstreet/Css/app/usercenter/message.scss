@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter";
+@import "../../module/pagelist";
+@import "../../module/empty";
+
+.content_title{
+  a{
+    margin: 0 15px;
+  }
+}
+
+
+.message_time{
+  width:200px;
+}
+.message_sender{
+  width: 150px;
+}
+.message_detail{
+  width: 500px;
+}
+.message_handle{
+  width: 120px;
+}
+.message_title{
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  span{
+    float: left;
+    color: #333;
+  }
+}
+.message_ele{
+  position: relative;
+  padding:15px 0;
+  color: #666;
+  font-size: 13px;
+  >div{
+    float: left;
+    display: table;
+    height:100%;
+    text-align: center;
+    min-height: 80px;
+    >p{
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .message_time{
+
+  }
+  .message_detail{
+    text-align: left;
+    padding: 0 10px ;
+    line-height: 20px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .message_handle{
+    p{
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+.message_content{
+  min-height: 474px;
+}
+.no_order{
+  height: 474px;
+  line-height: 474px;
+  font-size: 16px;
+  text-align: center;
+}

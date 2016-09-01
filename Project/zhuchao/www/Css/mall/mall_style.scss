@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import "../fh/lib";
+@import "../fh/reset";
+@import "../fh/commonclass";
+@import "../fh/moudle/footer";
+@import "../fh/moudle/new_top/search";
+@import "../fh/moudle/module_top";
+@import "../fh/moudle/mall/productCard";
+@import "../fh/moudle/mall/nav";
+@import "../fh/moudle/totop";
+@import "../fh/moudle/routenav";
+a{
+  @include transition;
+}
+a:hover{
+  color:$activeColor;
+}
+.no_paddingL{
+  padding-left: 0!important;
+}
+.no_borderR{
+  border-right: none!important;
+}
+.no_marginR {
+  margin-right: 0!important;
+}
+.no_marginB {
+  margin-bottom: 0!important;
+}
+//没有搜索结果
+.noresult{
+  width: 1100px;
+  margin: 10px auto;
+  padding: 20px 100px;
+  height: 60px;
+  background: #e5f5ea;
+  color: #093;
+  font-size: 16px;
+  line-height: 30px;
+}
+.noresult span{
+  color: #f60;
+}
+.remen{
+  /*background: #f8f8f8;*/
+  height: 50px;
+  width:1300px;
+  margin:10px auto;
+}
+.remen span{
+  text-align: left;
+  color: #000;
+  line-height: 50px;
+  font-size: 17px;
+
+}
+.pro_list_content{
+  margin-bottom: 50px;
+}

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_search {
+  background: none; }
+
+.l_nav li {
+  float: left;
+  height: 45px;
+  line-height: 44px;
+  width: 25%;
+  text-align: center;
+  font-size: 0.9rem;
+  background: #FFFFFF; }
+  .l_nav li a {
+    display: block;
+    width: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #333; }
+
+.l_nav .nav_current a {
+  color: #093;
+  border-bottom: 1px solid #093; }
+
+.no_paddingL {
+  padding-left: 0 !important; }
+
+.no_borderR {
+  border-right: none !important; }
+
+/*案例列表*/
+.case_ele {
+  width: 100%;
+  padding: 10px 3%;
+  margin: 10px 0;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .case_ele img {
+    display: block;
+    width: 100% !important; }
+  .case_ele p {
+    font-size: 0.8rem;
+    color: #888; }
+    .case_ele p span {
+      display: inline-block;
+      height: 14px;
+      padding: 0 5px;
+      border-right: 1px solid #888; }
+    .case_ele p i {
+      display: block;
+      margin-top: -2px; }
+
+.case_title {
+  position: relative;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #333333;
+  line-height: 30px; }
+  .case_title h4 {
+    width: 80%;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+  .case_title span {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #093;
+    color: #FFFFFF;
+    line-height: 20px;
+    font-size: 0.7rem;
+    text-align: center; }

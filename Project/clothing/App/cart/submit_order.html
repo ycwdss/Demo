@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交订单</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/cart/submit_order.css">
+</head>
+<body>
+<div class="buy_content conwidth">
+    <!--收货人地址-->
+    <div class="list list_address">
+        <div class="buy_address clearfix list_header">
+            <h3 class="fl">确认收货地址</h3>
+            <span id="appendAddress" class="append_address fr ">新增收货地址</span>
+        </div>
+        <div class="address_infor_box clearfix">
+            <div class="address_infor_list current">
+                <p class="name_phone">
+                    <span class="name">玛丽苏</span>
+                    <span class="phone">15093167007</span>
+                </p>
+                <p class="address_text">
+                    河南省  郑州市  金水区黄河路10号院金水区
+                    黄河路10号院
+                </p>
+                <p class="user_action">
+                    <span class="fl main">默认地址</span>
+                    <span class="fr">
+                        <i class="icon-bianji"></i>
+                        <i class="icon-shanchu"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="address_infor_list">
+                <p class="name_phone">
+                    <span class="name">玛丽苏</span>
+                    <span class="phone">15093167007</span>
+                </p>
+                <p class="address_text">
+                    河南省  郑州市  金水区黄河路10号院金水区
+                    黄河路10号院
+                </p>
+                <p class="user_action">
+                    <span class="fl">设为默认地址</span>
+                    <span class="fr">
+                        <i class="icon-bianji"></i>
+                        <i class="icon-shanchu"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="address_infor_list">
+                <p class="name_phone">
+                    <span class="name">玛丽苏</span>
+                    <span class="phone">15093167007</span>
+                </p>
+                <p class="address_text">
+                    河南省  郑州市  金水区黄河路10号院金水区
+                    黄河路10号院
+                </p>
+                <p class="user_action">
+                    <span class="fl">设为默认地址</span>
+                    <span class="fr">
+                        <i class="icon-bianji"></i>
+                        <i class="icon-shanchu"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="address_infor_list">
+                <p class="name_phone">
+                    <span class="name">玛丽苏</span>
+                    <span class="phone">15093167007</span>
+                </p>
+                <p class="address_text">
+                    河南省  郑州市  金水区黄河路10号院金水区
+                    黄河路10号院
+                </p>
+                <p class="user_action">
+                    <span class="fl">设为默认地址</span>
+                    <span class="fr">
+                        <i class="icon-bianji"></i>
+                        <i class="icon-shanchu"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="address_infor_list">
+                <p class="name_phone">
+                    <span class="name">玛丽苏</span>
+                    <span class="phone">15093167007</span>
+                </p>
+                <p class="address_text">
+                    河南省  郑州市  金水区黄河路10号院金水区
+                    黄河路10号院
+                </p>
+                <p class="user_action">
+                    <span class="fl">设为默认地址</span>
+                    <span class="fr">
+                        <i class="icon-bianji"></i>
+                        <i class="icon-shanchu"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="address_infor_list">
+                <p class="name_phone">
+                    <span class="name">玛丽苏</span>
+                    <span class="phone">15093167007</span>
+                </p>
+                <p class="address_text">
+                    河南省  郑州市  金水区黄河路10号院金水区
+                    黄河路10号院
+                </p>
+                <p class="user_action">
+                    <span class="fl">设为默认地址</span>
+                    <span class="fr">
+                        <i class="icon-bianji"></i>
+                        <i class="icon-shanchu"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="read_more">
+            <span>更多收货地址</span>
+            <i class="icon-xiaxian"></i>
+        </div>
+    </div>
+    <!--支付方式-->
+    <div class="list list_payment">
+        <div class="clearfix list_header">
+            <h3 class="fl">确认支付方式</h3>
+        </div>
+        <div class="list_contnet payment_infor">
+            <a class="btn current">在线支付</a>
+            <a class="btn">公司转账</a>
+        </div>
+    </div>
+    <!--发票信息-->
+    <div class="list list_invoice">
+        <div class="clearfix list_header">
+            <h3 class="fl">确认发票信息</h3>
+        </div>
+        <div class="list_contnet invoice_infor">
+            <a class="btn">不开发票</a><br/><br/>
+            <a class="btn">普通发票</a>
+            <span>发票抬头：</span><input class="text" type="text"/>
+        </div>
+    </div>
+    <!--配送时间-->
+    <div class="list list_shipment">
+        <div class="clearfix list_header">
+            <h3 class="fl">确认配送时间</h3>
+        </div>
+        <div class="list_contnet shipment_infor">
+            <a class="btn">不限送货时间：周一至周日</a>
+            <a class="btn">工作日送货：周一至周五</a>
+            <a class="btn">双休日送货：周六至周日</a>
+        </div>
+    </div>
+    <!--商品及优惠-->
+    <div class="list list_goods">
+        <div class="clearfix list_header">
+            <h3 class="fl">确认商品信息</h3>
+            <a class="goback fr" href="cart.html" target="_blank">返回购物车&gt;&gt;</a>
+        </div>
+        <div class="goods_message clearfix">
+            <!--商品信息-->
+            <div class="goods_infor fl">
+                <div class="list_items clearfix">
+                    <div class="fl list_name clearfix">
+                        <a href="" class="fl list_good_img">
+                            <img src="../../Images/test/test_pro.png" alt=""/>
+                        </a>
+
+                        <div class="fl list_good_text">
+                            <h3><a href=""  class="sec main_hover">小米盒子mini版（小米小盒子） 白色橙底 颜色：miss you(红色)</a></h3>
+                            <p><span>颜色：黑白</span><br/>
+                                <span>尺寸：黑白</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fl list_num">2</div>
+                    <div class="fl list_total main">&yen;<span>128.00</span></div>
+                </div>
+                <div class="list_items clearfix">
+                    <div class="fl list_name clearfix">
+                        <a href="" class="fl list_good_img">
+                            <img src="../../Images/test/test_pro.png" alt=""/>
+                        </a>
+
+                        <div class="fl list_good_text">
+                            <h3><a href=""  class="sec main_hover">小米盒子mini版（小米小盒子） 白色橙底 颜色：miss you(红色)</a></h3>
+                            <p><span>颜色：黑白</span><br/>
+                                <span>尺寸：黑白</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fl list_num">2</div>
+                    <div class="fl list_total main">&yen;<span>128.00</span></div>
+                </div>
+            </div>
+            <div class="message fr">
+                <h4>买家留言</h4>
+                <input class="text" type="text"/>
+                <h4>添加备注留言</h4>
+                <textarea maxlength="90" placeholder="限45个字"></textarea>
+                <span>提示：请勿填写有关支付、收货、发票方面的信息</span>
+                <a class="btn sec_bg sec_border">确定</a>
+            </div>
+        </div>
+    </div>
+    <!--使用优惠券-->
+    <div class="list clearfix">
+        <!--优惠券-->
+        <div class="clearfix list_header">
+            <h3 class="fl">使用优惠券</h3>
+        </div>
+        <ul class="list_contnet coupon_item clearfix">
+            <li class="coupon_list clearfix current">
+                <div class="coupon_num">
+                    <span>5</span>元
+                </div>
+                <div class="coupon_text ">
+                    <p>满200元即可使用</p>
+                </div>
+            </li>
+            <li class="coupon_list clearfix">
+                <div class="coupon_num">
+                    <span>50</span>元
+                </div>
+                <div class="coupon_text ">
+                    <p>满200元即可使用</p>
+                </div>
+            </li>
+            <li class="coupon_list clearfix">
+                <div class="coupon_num">
+                    <span>500</span>元
+                </div>
+                <div class="coupon_text ">
+                    <p>满200元的裤装</p>
+                    <p>即可使用</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--结算总合-->
+    <div class="list_contnet list list_money clearfix">
+        <ul class="fr whole">
+            <li class="clearfix">
+                <label>商品件数：</label>
+                <span class="val main">1件</span>
+            </li>
+            <li class="clearfix">
+                <label>金额合计：</label>
+                <span class="val main">1299元</span>
+            </li>
+            <li class="clearfix">
+                <label>活动优惠：</label>
+                <span class="val main">-0元</span>
+            </li>
+            <li class="clearfix">
+                <label>运费：</label>
+                <span class="val main"><i id="J_postageVal">0</i>元</span>
+            </li>
+            <li class="clearfix total-price">
+                <label>应付总额：</label>
+                <span class="val main"><em id="J_totalPrice">129900.00</em>元</span>
+            </li>
+        </ul>
+    </div>
+    <!--寄送地址-->
+    <div class="send_address clearfix">
+        <p>寄送至： 河南 郑州市 金水区 金水区郑汴路凤台路凤凰城南城6楼神恩信息公司</p>
+
+        <p>收货人：王音歌 150****7007</p>
+    </div>
+    <!--按钮-->
+    <div class="submit_box">
+        <span>应付总额：<em class="main">¥<b>3899.00</b></em></span>
+        <a class="submit_btn" href="pay.html">提交订单</a>
+    </div>
+</div>
+<!--新增收货地址-->
+<div class="new_addr hide">
+    <div class="new_addr_content bounceIn">
+        <h2>收货地址<i class="icon-guanbifuhao  addr_cancel secbg_hover"></i></h2>
+        <div class="new_addr_container">
+            <form>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main">*</i>收货人：</span>
+                    <div class="addr_input">
+                        <input type="text">
+                        <p class="error_tips">收货人不能为空！</p>
+                    </div>
+
+                </div>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main">*</i>收货地区：</span>
+                    <div class="addr_input">
+                        <div class="drop_menu ">
+                            <div class="drop_show">省份</div>
+                            <div class="drop_arrow"></div>
+                            <ul class="drop_list">
+                                <li>河南省</li>
+                                <li>安徽安徽安徽安徽省</li>
+                                <li>山东省</li>
+                                <li>江西省</li>
+                                <li>广西省</li>
+                                <li>广东省</li>
+                                <li>福建省</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                                <li>上海市</li>
+                            </ul>
+                        </div>
+                        <div class="drop_menu  ">
+                            <div class="drop_show">直辖市</div>
+                            <div class="drop_arrow"></div>
+                            <ul class="drop_list">
+                                <li>郑州安徽安徽市</li>
+                                <li>湘乡市</li>
+                                <li>新乡市</li>
+                                <li>新郑市</li>
+                                <li>商丘市</li>
+                                <li>南阳市</li>
+                                <li>信阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                                <li>洛阳市</li>
+                            </ul>
+                        </div>
+                        <div class="drop_menu no_mr  ">
+                            <div class="drop_show">区/县</div>
+                            <div class="drop_arrow"></div>
+                            <ul class="drop_list">
+                                <li>金水区</li>
+                                <li>管城区</li>
+                                <li>惠济区</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                                <li>新郑市</li>
+                            </ul>
+                        </div>
+                        <p class="error_tips">请选择收货地区！</p>
+                    </div>
+
+                </div>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main">*</i>收货地址：</span>
+                    <div class="addr_input">
+                        <input type="text">
+                        <p class="error_tips">请填写收货地址！</p>
+                    </div>
+                </div>
+                <div class="new_addr_ele clearfix">
+                    <span><i class="main">*</i>手&nbsp;&nbsp;机：</span>
+                    <div class="addr_input">
+                        <input type="text">
+                        <p class="error_tips">请输入手机号码！</p>
+                    </div>
+                </div>
+                <div class="new_addr_ele set_default clearfix">
+                    <p><span class="addr_checked"><i></i></span> 设置为默认</p>
+                </div>
+                <div class="submit clearfix">
+                    <input class="sec_bg sec_border" type="submit" value="保存信息">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script data-main="../../Js/requireenter" app="cart/submit_order" id="require" src="../../Js/lib/require.js"></script>
+</body>
+</html>

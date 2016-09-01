@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+@import "../model/site_nav";
+@import "../model/usercenter";
+@import "../model/recommend_shps";
+//右侧内容区
+.mr{
+  width: 940px;
+  .hd{
+    padding-top: 20px;
+    .my_logo{
+     float: left;
+      img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 50%;
+      }
+    }
+    .my_info{
+      padding-left: 120px;
+      h1{
+        font-size: 24px;
+        font-weight: normal;
+        padding-bottom: 10px;
+      }
+      .simple_info{
+        margin-left: -10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        span{
+          padding:0 10px;
+          border-right: 1px solid #dedede;
+          a{
+            color: #ca151e;
+            padding: 0 5px;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+        span:last-child{
+          border-right:none;
+        }
+      }
+    }
+  }
+  .bd{
+    margin-top: 25px;
+    .wait{
+      .title{
+        padding: 10px 20px;
+        background-color: #fafafa;
+        span{
+          float: left;
+          a{
+            padding: 0 5px;
+            color: #ca151e;
+          }
+        }
+        .more{
+          float: right;
+          i{
+            font-size: 16px;
+            padding: 0 5px;
+            font-family: "宋体";
+            font-size: 16px;
+          }
+        }
+      }
+      .wait_list{
+        display: table;
+        .list_wrap{
+          display: table-row;
+          border-bottom: 1px solid #dedede;
+          .col{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            border-bottom: 1px solid #dedede;
+          }
+          //没有待支付待评价
+          .no_wait{
+            width:940px;
+            padding: 52px 0;
+            p{
+              font-size: 14px;
+              color: #888;
+              text-align: center;
+              a{
+                color: #36c;
+              }
+            }
+          }
+          .list_img{
+            width: 120px;
+            padding: 10px 0;
+            img{
+              width: 100px;
+              height: 100px;
+              overflow: hidden;
+              display: block;
+            }
+          }
+          .list_code{
+            width:388px;
+
+          }
+          .list_price{
+            width: 140px;
+            border-left: 1px solid #dedede;
+          }
+          .list_info{
+            width: 110px;
+            border-left: 1px solid #dedede;
+            a{
+              color: #36c;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+          .list_pay{
+            width: 180px;
+            border-left: 1px solid #dedede;
+            a{
+              width: 120px;
+              height: 30px;
+              line-height:30px;
+              font-size: 14px;
+              text-align: center;
+              background-color: #ca151e;
+              color: #fff;
+              display: inline-block;
+              &:hover{
+                opacity: 0.8;
+                filter:alpha(opacity=80);
+              }
+            }
+          }
+        }
+      }
+    }
+    .wait_evaluate{
+      margin-top: -1px;
+    }
+
+  }
+}
+

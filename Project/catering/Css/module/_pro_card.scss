@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+//pro_card
+.pro_card{
+  width: 270px;
+  height: 365px;
+  background: #FFFFFF;
+  img{
+    display: block;
+    width: 270px!important;
+    height: 270px!important;
+  }
+}
+.pro_card_img{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  &:hover{
+    &:before{
+      left: 430px;
+      @include transition(1s);
+    }
+  }
+  &:before{
+    position:absolute;
+    top:0;
+    left: -160px;
+    content: '';
+    width: 80px;
+    height: 100%;
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+    background: -moz-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 50%,rgba(255,255,255,0) 100%);
+    -webkit-transform: skewX(-25deg);
+    -moz-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+    -o-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+}
+.pro_card_intro{
+  display: block;
+  margin:25px 25px 0;
+  height: 25px;
+  font-size: 14px;
+  line-height: 25px;
+  @include ell(1);
+  color: #333;
+  text-align: center;
+}
+.pro_card_price{
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+}
+/*
+<div class="pro_card">
+<a href="" class="pro_card_img"><img src="../../Images/test/test_pro1.jpg" alt=""></a>
+<a href="" class="pro_card_intro main_hover"><p>西京烤鲭鱼</p></a>
+<p class="main pro_card_price">￥188.00 </p>
+</div>
+*/

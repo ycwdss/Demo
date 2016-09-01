@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.pro_card {
+  float: left;
+  padding: 10px;
+  width: 260px;
+  &:hover {
+    > div {
+      -webkit-box-shadow: inset 0 0 30px #ccc;
+      -moz-box-shadow: inset 0 0 30px #ccc;
+      box-shadow: inset 0 0 30px #ccc;
+    }
+  }
+  > div {
+    position: relative;
+    overflow: hidden;
+    background: #F8F8F8;
+    z-index: 2;
+    -webkit-transition: box-shadow 0.2s ease;
+    -moz-transition: box-shadow 0.2s ease;
+    -ms-transition: box-shadow 0.2s ease;
+    -o-transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+    > a {
+      display: block;
+      position: relative;
+      width: 240px !important;
+      height: 150px !important;
+      margin: 10px auto;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      width: 240px !important;
+      height: 150px !important;
+    }
+    p {
+      margin: 5px 10px 30px;
+      font-size: 13px;
+      line-height: 25px;
+      height: 50px;
+      @include ell(2);
+      text-align: center;
+      color: #666;
+      a {
+        display: inline-block;
+        height: 50px;
+        overflow: hidden;
+      }
+    }
+    span {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/*
+ <div class="pro_card">
+                <div>
+                    <a href=""><img src="../../Images/test/test_company_pro1.jpg" alt=""></a>
+                    <p class="active_hover"><a href="">新疆和田玉水玉牌 太白醉酒 41.4克新疆和田玉山流水玉牌 </a></p>
+                    <span class="">￥700.00</span>
+                </div>
+            </div>
+  */

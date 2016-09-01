@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change_pwd</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/change_pwd.css">
+</head>
+<body>
+<div class="l_main conwidth clearfix">
+    <!--个人中心左侧-->
+    <div class="user_left fl">
+        <div class="user_left_top">
+            <img src="../../Images/test/test_user_img.jpg" alt="">
+            <a href="" class="change_img">编辑头像</a>
+            <p>Ingrid</p>
+        </div>
+        <div class="user_left_inner">
+            <h3 class="user_left_title">我的订单</h3>
+            <ul class="left_list">
+                <li class="main_hover"><a href="order_list.html">我的订单</a></li>
+                <li class="main_hover"><a href="refund_list.html">退货单</a></li>
+            </ul>
+            <h3 class="user_left_title">个人中心</h3>
+            <ul class="left_list">
+                <li class="main_hover"><a href="coupon.html">优惠券</a></li>
+                <li class="main_hover"><a href="collect.html">商品收藏</a></li>
+                <li class="main_hover"><a href="evaluate.html">我的评价</a></li>
+                <li class="main_hover"><a href="message.html">我的消息</a></li>
+            </ul>
+
+            <h3 class="user_left_title">账号信息</h3>
+            <ul class="left_list">
+                <li class="main_hover"><a href="basic_info.html">基本信息</a></li>
+                <li class="main_hover"><a href="chang_img.html">头像编辑</a></li>
+                <li class=" main_hover"><a href="address.html">我的地址</a></li>
+                <li class="main main_hover"><a href="change_pwd.html">修改密码</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--个人中心右侧-->
+    <div class="user_right fr">
+        <h3 class="user_right_title">修改登录密码</h3>
+        <div class="pwd_inner">
+            <form>
+            <div class="pwd_box">
+                <div class="pwd_ele clearfix">
+                    <div class="pwd_intro">旧&nbsp;密&nbsp;码：</div>
+                    <input type="text">
+                    <div class="tips main">原始密码错误，请重试</div>
+                </div>
+                <div class="pwd_ele clearfix">
+                    <div class="pwd_intro">新&nbsp;密&nbsp;码：</div>
+                    <input type="text">
+                    <div class="tips ">由字母加数字或符号至少两种以上字符组成的6-20半角字符，区分大小写</div>
+                </div>
+                <div class="pwd_ele clearfix">
+                    <div class="pwd_intro">确认密码：</div>
+                    <input type="text">
+                    <div class="tips main">两次密码不一致，请重试</div>
+                </div>
+            </div>
+                <input class="submit_btn sec_bg" type="submit">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

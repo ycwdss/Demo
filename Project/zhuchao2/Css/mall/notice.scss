@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/pagelist";
+@import "../module/site";
+
+//公告进度
+.notice_progress{
+  width: 980px;
+}
+
+.progress_circle {
+  width: 2px;
+  height: 185px;
+  margin-left: 40px;
+  position: relative;
+  background-color: #e4e4e4;
+  @include transition(background-color,.3s,ease);
+  span {
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #888;
+    background-color: #f8f8f8;
+    @include transition(border,.3s,ease);
+    em {
+      display: block;
+      width: 14px;
+      height: 14px;
+      margin: 6px;
+      border-radius: 50%;
+      background-color: #888;
+      @include transition(background-color,.3s,ease);
+    }
+  }
+}
+
+.progress_info {
+  width: 860px;
+  padding-left: 45px;
+  a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #333;
+    overflow: hidden;
+    padding-top: 20px;
+  }
+  .p_text {
+    font-size: 16px;
+    color: #666;
+    height: 60px;
+    line-height: 30px;
+    overflow: hidden;
+  }
+  .p_date {
+    font-size: 14px;
+    color: #888;
+    padding: 20px 0;
+  }
+}
+.progress {
+  height: 185px;
+}
+.progress:nth-child(2n+1){
+  background-color: #fff;
+  .progress_circle span{
+    background-color: #fff;
+  }
+}
+.progress:hover{
+  .progress_circle {
+    background-color: #63bf82;
+    span {
+      border-color: #63bf82;
+      background-color: #fff;
+      em {
+        background-color: #63bf82;
+      }
+    }
+  }
+}
+.progress:nth-child(2n):hover{
+  .progress_circle span{
+    background-color: #f8f8f8;
+  }
+}
+
+//公告新闻
+.notice_news {
+  width: 300px;
+  .erweima {
+    background-color: #fff;
+    img {
+      width: 240px;
+      height: 240px;
+      margin: 30px 30px 10px 30px;
+    }
+    p {
+      font-size: 16px;
+      color: #666;
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+}
+
+.college_news {
+  margin-top: 20px;
+  padding: 0 20px;
+  background-color: #fff;
+  h1 {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+  }
+  ul {
+    padding: 10px 0;
+    li {
+      a {
+        display: inline-block;
+        width: 235px;
+        @include strictEll(1.6,1);
+        font-size: 14px;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: #63bf82;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+//深度解读
+.deepness {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  .a_img {
+    display: block;
+    width: 260px;
+    height: 170px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+   }
+  .a_link{
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+    overflow: hidden;
+  }
+  .p_intro{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888;
+    height: 42px;  
+    overflow: hidden;
+  }
+  .p_info{
+    font-size: 12px;
+    .fr{
+      em{
+        color:#63bf82;
+      }
+    }
+  }
+}
+
+//公告详情
+.main_left {
+  padding: 20px;
+  background-color: #fff;
+  @include box-sizing();
+}
+
+.content_title {
+  h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: left;
+    color: #333;
+  }
+  .writer_info {
+    padding:0 50px 15px;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    .read {
+      padding: 0 50px;
+    }
+    .share {
+      width: 194px;
+      > span {
+        display: inline-block;
+        float: left;
+      }
+    }
+  }
+}
+.module_content {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 2;
+  h4 {
+    font-size: 18px;
+    color: #333;
+  }
+  img {
+    display: block !important;
+    max-width: 100% !important;
+    height: auto!important;
+    margin: 40px auto !important;
+  }
+}
+//上下篇
+.up_down {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #888;
+  > div {
+    position: relative;
+    vertical-align: top;
+    margin: 5px 0;
+    a {
+      display: inline-block;
+      width: 566px;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #666;
+    }
+    span.date {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

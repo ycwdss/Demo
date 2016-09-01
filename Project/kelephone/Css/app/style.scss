@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import "../lib/commonclass";
+@import "../lib/reset";
+@import "../lib/mixin";
+@import "../lib/iconfont";
+
+@import "../lib/module/header";
+@import "../lib/module/footer";
+@import "../lib/module/totop";
+
+//主色调
+$mainColor: #e60012;
+$white:#fff;
+a{
+  text-decoration:none;
+  color:#666;
+  cursor: pointer;
+}
+.bg333{
+  background-color: #333;
+}
+.text333{
+  color: #333;
+}
+.maincolor{
+  color:$mainColor;
+  a{
+    color: $mainColor;
+  }
+  .iconfont{
+    color: $mainColor;
+  }
+}
+.mainbgcolor{
+  background-color: $mainColor;
+  color: #FFFFFF!important;
+  border-color:$mainColor;
+}
+.mainbordercolor{
+  border-color: $mainColor;
+}
+body{
+  color: #666;
+  background-color:#efeff4;
+}
+.normal_bg{
+  background-color: #faccd0;
+}
+
+.user_action{
+  margin-top: 30px;
+  text-align: center;
+  .submit_btn{
+    width: 120px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    @include transition(background,0.3s,ease);
+    cursor: pointer;
+    color: #fff;
+    &:hover{
+      color: #fff;
+      background-color: darken(#e60012,2%);
+    }
+  }
+  .submit_right{
+    margin-left:30px;
+  }
+  .tiled_btn{
+    min-width: 60%;
+    margin: 0 auto;
+  }
+}
+.small_btn{
+  width:75px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  color: #666;
+  border: 1px solid #b0b0b0;
+  @include box-sizing();
+  @include transition(background-color,0.3s,ease);
+  &:hover{
+    color: #fff;
+    background-color: darken(#fff,30%);
+  }
+}
+.action_btn{
+  display: block;
+  margin:20px auto 40px;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  @include transition(background-color,0.3s,ease);
+}
+//单选按钮
+.checkbox_container{
+  width: 6%;
+  text-align: center;
+}
+.checkbox{
+  display: block;
+  margin: 35px auto;
+  width: 18px;
+  height:18px;
+  background: #e4e4e4;
+  position: relative;
+  cursor: pointer;
+  i{
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0;
+    line-height: 20px;
+    filter: alpha(opacity=0) \9;
+  }
+}
+.clicked .checkbox{
+  color: #fff;
+  i{
+    opacity: 1;
+    filter: alpha(opacity=100) \9;
+  }
+}
+
+
+
+
+

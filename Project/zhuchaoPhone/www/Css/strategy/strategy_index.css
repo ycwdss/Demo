@@ -1,0 +1,202 @@
+.m_com {
+  margin-bottom: 5px;
+  padding: 10px 0;
+  zoom: 1;
+  background: #ffffff; }
+
+.product_img {
+  float: left;
+  width: 145px;
+  max-width: 35%;
+  height: 90px;
+  text-align: center; }
+
+.product_img img {
+  margin: 10px 0;
+  width: 85%;
+  max-width: 112px;
+  height: 75px; }
+
+.product_text {
+  float: left;
+  width: 65%;
+  /*line-height: 30px;*/
+  padding: 5px 0; }
+
+.text_title {
+  font-size: 1rem;
+  color: #333;
+  line-height: 27px;
+  text-overflow: ellipsis;
+  height: 54px;
+  overflow: hidden;
+  margin-right: 7%;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+.text_summary {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  color: #888;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.time {
+  color: #888;
+  line-height: 20px;
+  font-size: 0.6rem; }
+  .time span {
+    color: #093; }
+
+.time_fr {
+  float: right;
+  margin-right: 8%; }
+
+.zhuangxiu {
+  margin-top: 50px; }
+
+.strategy_top {
+  height: 47px;
+  margin-bottom: 10px;
+  background: #FFFFFF; }
+
+.title_border {
+  float: left;
+  width: 47%;
+  height: 18px;
+  margin: 14px 3%;
+  padding: 0 5px;
+  font-size: 1.1rem;
+  overflow: visible;
+  border-left: 3px solid #093; }
+  .title_border h3 {
+    display: block;
+    color: #333;
+    line-height: 20px;
+    margin-top: -2px;
+    font-size: 16px; }
+
+.arrow_right {
+  float: right;
+  margin: 15px 3% 15px 0;
+  width: 10px;
+  height: 18px;
+  background: url("../../../Images/mobile/icon_strategy.png") 0 0;
+  -webkit-background-size: 163px;
+  background-size: 163px; }
+
+.zhuangxiu_content {
+  background: #FFFFFF;
+  margin-bottom: 10px; }
+
+.zhuangxiu_title {
+  width: 90%;
+  margin: 0 5%; }
+  .zhuangxiu_title h4 {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    line-height: 40px;
+    border-bottom: 2px solid #e4e4e4; }
+  .zhuangxiu_title .current {
+    color: #093;
+    border-bottom: 2px solid #093; }
+
+.container {
+  width: 100%;
+  height: 101px;
+  overflow: hidden; }
+
+.zhuangxiu_detail {
+  width: 100%; }
+
+.zhuangxiu_ele {
+  float: left;
+  margin-top: 15px;
+  width: 25%; }
+
+.shoufang_img, .yusuan_img, .sheji_img, .hetong_img, .chaigai_img, .shuidian_img, .fangshui_img, .niwa_img, .mugong_img, .youqi_img, .jungong_img, .ruanzhuang_img, .ruzhu_img {
+  display: block;
+  margin: 0 auto;
+  width: 51px;
+  height: 51px; }
+
+.zhuangxiu_ele_text {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 35px;
+  color: #666; }
+
+.shoufang_img {
+  background: url("../../../Images/mobile/icon_strategy.png") -1px -24px;
+  -webkit-background-size: 138px;
+  background-size: 138px; }
+
+.yusuan_img {
+  background: url("../../../Images/mobile/icon_strategy.png") -1px -79px;
+  -webkit-background-size: 138px;
+  background-size: 138px; }
+
+.sheji_img {
+  background: url("../../../Images/mobile/icon_strategy.png") -54px -24px;
+  -webkit-background-size: 139px;
+  background-size: 139px; }
+
+.hetong_img {
+  background: url("../../../Images/mobile/icon_strategy.png") -54px -80px;
+  -webkit-background-size: 139px;
+  background-size: 139px; }
+
+.chaigai_img {
+  background: url("../../../Images/mobile/icon_mall.png") -2px -27px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.shuidian_img {
+  background: url("../../../Images/mobile/icon_mall.png") -60px -27px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.fangshui_img {
+  background: url("../../../Images/mobile/icon_mall.png") -2px -144px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.niwa_img {
+  background: url("../../../Images/mobile/icon_mall.png") -188px -88px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.mugong_img {
+  background: url("../../../Images/mobile/icon_mall.png") -123px -88px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.youqi_img {
+  background: url("../../../Images/mobile/icon_mall.png") -60px -88px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.jungong_img {
+  background: url("../../../Images/mobile/icon_mall.png") -2px -88px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.ruanzhuang_img {
+  background: url("../../../Images/mobile/icon_mall.png") -188px -26px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.ruzhu_img {
+  background: url("../../../Images/mobile/icon_mall.png") -123px -26px;
+  -webkit-background-size: 280px;
+  background-size: 280px; }
+
+.strategy_com {
+  margin-bottom: 10px; }

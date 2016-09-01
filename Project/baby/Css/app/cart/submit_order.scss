@@ -1,0 +1,349 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/cart_style";
+@import "../../module/address_ele";
+@import "../../module/msg_tip";
+
+.l_main{
+  padding:15px 30px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  >div{
+    border-bottom:1px solid #e4e4e4;
+    h3{
+      font-size: 18px;
+      line-height: 70px;
+    }
+  }
+  .l_pro{
+    border-bottom:0;
+  }
+}
+//收货地址
+.l_address{
+  >div{
+    padding-bottom:30px;
+  }
+  .new_addr_btn{
+    float: right;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    i{
+      font-size: 14px;
+      margin-right: 5px;
+    }
+  }
+  .addr_ele{
+    margin-right: 25px;
+  }
+}
+//送货时间
+.l_send_time{
+  position: relative;
+  overflow: hidden;
+}
+.send_time_content{
+  margin-left: 30px;
+  margin-bottom: 30px;
+  label{
+    float: left;
+    font-size: 14px;
+    margin-right:80px;
+    color: #666;
+  }
+  input{
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+}
+//优惠券
+.l_coupon{
+  position: relative;
+  font-size: 14px;
+  .m_coupon{
+    margin-bottom:30px;
+  }
+}
+.coupon_intro{
+  width: 110px;
+  color: #666;
+  line-height: 30px;
+  text-align: right;
+}
+.coupon_container{
+  position: relative;
+  input{
+    padding:5px 10px;
+    width: 260px;
+    height: 30px;
+    text-align: center;
+    color: #666;
+    line-height: 20px;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+  }
+}
+.coupon_list{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border:1px solid #e4e4e4;
+  border-top:none;
+  li{
+    width: 258px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover{
+      background: #F8F8F8;
+    }
+  }
+  span{
+    display: block;
+    height: 50px;
+    text-align: center;
+    color: #666;
+    line-height: 20px;
+    background: #FFFFFF;
+    i{
+      margin-top: 15px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;;
+      -webkit-border-radius:50%;
+      -moz-border-radius:50%;
+      border-radius:50%;
+    }
+  }
+}
+//发票信息
+.l_invoice{
+  .send_time_content{
+    margin-bottom:10px;
+  }
+}
+.invoice_content{
+  font-size: 14px;
+  line-height: 30px;
+  margin:20px 0 20px 30px;
+  span{
+    float: left;
+
+  }
+  input{
+    float: left;
+    width: 260px;
+    height: 30px;
+    padding:4px 10px;
+    line-height: 28px;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+//商品详情
+.l_pro{
+  h3{
+    line-height: 50px!important;
+  }
+}
+/*购物车*/
+.cart_box {
+  padding: 0 25px;
+  background-color: #fff;
+}
+
+.cart_title {
+  margin:0 25px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  border-bottom:1px solid #e4e4e4;
+  .fl {
+    height: 30px;
+    line-height: 30px;
+  }
+
+}
+
+
+.pro_name {
+  width: 300px;
+}
+
+.pro_num, .pro_price, .pro_total, .pro_operate {
+  width: 150px;
+  text-align: center;
+}
+
+
+//商品列表
+.cart_list {
+  margin: 0 25px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e4e4e4;
+  .pro_check {
+    height: 92px;
+    line-height: 92px;
+  }
+  .pro_name {
+    img{
+      display: block;
+      width: 90px !important;
+      height: 90px !important;
+    }
+    .describe {
+      margin-left: 10px;
+      padding-top: 20px;
+      width: 200px;
+      font-size: 14px;
+      line-height: 24px;
+      a {
+        display: inline-block;
+        width: 200px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #333;
+      }
+    }
+  }
+  .pro_num {
+    p{
+      margin-top: 2px;
+      font-size: 12px;
+      line-height: 24px;
+      color: #888;
+    }
+    .num_box {
+      width: 120px;
+      color: #666;
+      margin: 32px auto 0;
+      border: 1px solid #e4e4e4;
+      a {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .min{
+        border-right:1px solid #e4e4e4;
+      }
+      .add{
+        border-left:1px solid #e4e4e4;
+      }
+      input {
+        width: 70px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+      }
+    }
+  }
+  .pro_price,.pro_total{
+    height: 92px;
+    line-height: 92px;
+    font-size: 18px;
+    color: #666;
+  }
+  .pro_operate{
+    p{
+      margin-top: 38px;
+      line-height: 15px;
+    }
+    a{
+      display: inline-block;
+      color: #666;
+    }
+    .operate_del{
+      padding-right: 5px;
+      margin-right: 1px;
+      border-right:1px solid #999;
+    }
+  }
+}
+//去结算
+.cart_pay{
+  line-height: 40px;
+  background-color: #fff;
+  text-align: right;
+  font-size: 16px;
+  color: #333;
+  text-align: right;
+  padding-bottom: 25px;;
+  a{
+    display: inline-block;
+    width: 130px;
+    height: 35px;
+    margin-top:10px;
+    margin-right:20px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .main_bg{
+
+  }
+  span{
+    display: block;
+    padding-right: 40px;
+  }
+  em{
+    display: inline-block;
+    width: 120px;
+    margin-left: 10px;
+    text-align: left;
+  }
+  .pay_total{
+    font-size: 24px;
+  }
+}
+.leave_msg{
+  margin:20px 0 20px 30px;
+  font-size: 14px;
+  line-height: 30px;
+  span{
+    float: left;
+  }
+  input{
+    float: left;
+    width: 260px;
+    height: 30px;
+    padding:4px 10px;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}

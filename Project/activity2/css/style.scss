@@ -1,0 +1,468 @@
+@charset "UTF-8";
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, optgroup, p, blockquote, figure, hr, menu, dir, thead, tbody, tfoot, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+a, abbr, acronym, div, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Microsoft Yahei", Tahoma, Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  //去掉点击时阴影
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  border: 0;
+}
+
+i, b {
+  font-style: normal;
+}
+
+ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, textarea, p, table, th, td {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+input, select, button, textarea {
+  font: 12px/1.5 heiqi, tahoma, arial, \5b8b\4f53;
+}
+
+input, select, textarea {
+  font-size: 100%;
+}
+
+//清除浮动
+.clearfix {
+  *zoom: 1; /*IE/7/6*/
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+html, body, .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+//第一屏
+.first_page {
+  position: relative;
+  background: url("../img/first_page_bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  .header {
+    margin-top: 30px;
+    text-align: center;
+    img {
+      width: 80%;
+    }
+    p {
+      font-size: 1.6rem;
+      color: #fff;
+
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    a {
+      display: block;
+      width: 20px;
+      margin: -10px auto 0;
+    }
+    span:first-child {
+      margin-bottom: -7px;
+      //-webkit-animation-delay: .1s;
+      //-moz-animation-delay: .1s;
+      //-o-animation-delay: .1s;
+      //animation-delay: .1s
+    }
+    .scroll_btn {
+      display: block;
+      width: 14px;
+      height: 14px;
+      opacity: 0.6;
+      box-sizing: border-box;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: scrollDown 1.5s infinite;
+      -moz-animation: scrollDown 1.5s infinite;
+      -ms-animation: scrollDown 1.5s infinite;
+      -o-animation: scrollDown 1.5s infinite;
+      animation: scrollDown 1.5s infinite;
+    }
+    @keyframes scrollDown {
+      0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        -moz-transform: rotate(-45deg) translate(0, 0);
+        -ms-transform: rotate(-45deg) translate(0, 0);
+        -o-transform: rotate(-45deg) translate(0, 0);
+        -transform: rotate(-45deg) translate(0, 0);
+        opacity: 0
+      }
+      50% {
+        opacity: 1
+      }
+
+      100% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+        -moz-transform: rotate(-45deg) translate(-10px, 10px);
+        -ms-transform: rotate(-45deg) translate(-10px, 10px);
+        -o-transform: rotate(-45deg) translate(-10px, 10px);
+        -transform: rotate(-45deg) translate(-10px, 10px);
+        opacity: 0
+      }
+    }
+    @-webkit-keyframes scrollDown {
+      0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        -moz-transform: rotate(-45deg) translate(0, 0);
+        -ms-transform: rotate(-45deg) translate(0, 0);
+        -o-transform: rotate(-45deg) translate(0, 0);
+        -transform: rotate(-45deg) translate(0, 0);
+        opacity: 0
+      }
+      50% {
+        opacity: 1
+      }
+      100% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+        -moz-transform: rotate(-45deg) translate(-10px, 10px);
+        -ms-transform: rotate(-45deg) translate(-10px, 10px);
+        -o-transform: rotate(-45deg) translate(-10px, 10px);
+        -transform: rotate(-45deg) translate(-10px, 10px);
+        opacity: 0
+      }
+    }
+  }
+}
+
+//第二屏
+.second_page {
+  position: relative;
+  .header {
+    text-align: center;
+    img.date {
+      margin-top: 20px;
+      width: 23%;
+    }
+  }
+  .header_title {
+    background-color: #d5d5d5;
+  }
+  .body {
+    position: relative;
+    width: 90%;
+    height: 58%;
+    margin: 20px auto 0;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    color: #0e0c15;
+    text-align: left;
+    @media screen and (max-height: 480px) {
+      height: 55%;
+    }
+    @media screen and (min-height: 481px) and (max-height: 568px) {
+      height: 64%;
+    }
+    @media screen and (min-height: 569px) {
+      height: 70%;
+    }
+    .body_inner {
+      height: 80%;
+      line-height: 2rem;
+      padding: 0 10px;
+      overflow-y: scroll;
+    }
+    p {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #e2388e;
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    background: url("../img/tobaoming.png") no-repeat;
+    background-size: 100% 100%;
+    a {
+      display: inline-block;
+      width: 10rem;
+      height: 5rem;
+      margin-top: 14%;
+    }
+  }
+}
+
+//第三屏
+.third_page {
+  background: url("../img/third_bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  .header {
+    height: 16%;
+    text-align: center;
+    img.third_header {
+      margin-top: 20px;
+      width: 70%;
+    }
+  }
+  .body {
+    width: 90%;
+    margin: 40px auto 0;
+    .form_list {
+      width: 100%;
+      margin: 0 auto 1.2rem;
+      @media screen and (max-height: 480px) {
+        margin: 0 auto 0.6rem;
+      }
+      p {
+        font-size: 1.6rem;
+        color: #fff;
+        text-align: left;
+        text-indent: 3px;
+      }
+      input[type=text] {
+        width: 100%;
+        height: 40px;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, .6);
+        border: 0;
+        box-sizing: border-box;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        color: #333;
+        &:focus {
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      .submit {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #e2388e;
+        border: 0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    @media screen and (max-height: 480px){
+      margin: 40px auto 0;
+    }
+    @media screen and (min-height:667px) and (max-height: 735px) {
+      margin: 80px auto 0;
+    }
+    @media screen and (min-height: 736px){
+      margin: 100px auto 0;
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    left: 4%;
+    width: 92%;
+    text-align: center;
+    font-size: 1.2rem;  
+    color: #E4E4E4;
+  }
+}
+
+//第四屏
+.fourth_page {
+  background: url("../img/fourth_bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  .body {
+    position: absolute;
+    left: 5%;
+    top: 48%;
+    width: 90%;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: justify;
+    @media screen and (max-height: 480px) {
+      top: 45%;
+    }
+    @media screen and (min-height: 481px) and (max-height: 568px) {
+      height: 50%;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+//第五屏
+.fifth_page {
+  background: url("../img/fifth_bg.png") no-repeat;
+  background-size: 100% 100%;
+
+}
+
+//to头部
+.header_title {
+  position: relative;
+  width: 60%;
+  height: 1px;
+  margin: 10px auto 0;
+  background-color: #d5d5d5;
+  img {
+    display: block;
+    position: absolute;
+    top: -0.8rem;
+    left: 50%;
+    margin-left: -4rem;
+    width: 8rem;
+    background-color: #8f8fcd;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+//动画
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+  }
+}
+
+.fadeInUp {
+  -webkit-animation: fadeInUp 1.2s ease-in-out;
+  -o-animation: fadeInUp 1.2s ease-in-out;
+  animation: fadeInUp 1.2s ease-in-out;
+}

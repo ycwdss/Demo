@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+.coupon_list{
+  margin-top:40px;
+  position: relative;
+  ul{
+    padding:0 50px 50px;
+    margin: 0 -10px;
+    position: relative;
+    z-index: 2;
+    li{
+      position: relative;
+      float: left;
+      margin:50px 10px 0;
+      padding:15px 32px;
+      width: 289px;
+      height: 136px;
+      background-color: #cb274e;
+    }
+    li:before,li:after{
+      position: absolute;
+      left: 0;
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 9px;
+    }
+    li:before{
+      top:-9px;
+      background: url(../../../Images/sprite/sprite_coupon_up.png) no-repeat;
+    }
+    li:after{
+      background: url(../../../Images/sprite/sprite_coupon_down.png) no-repeat;
+      bottom:-9px;
+    }
+  }
+  span.main_bg{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+  }
+  .coupon_list_content{
+    width: 289px;
+    height: 126px;
+    padding-top: 10px;
+    border:1px solid #e1476b;
+    color: #fffee9;
+    text-align: center;
+    p.coupon_top{
+      font-size: 25px;
+      b{
+        padding-right: 6px;
+        padding-left: 3px;
+        line-height: 1;
+        font-size: 45px;
+        vertical-align: -1px;
+        font-family: Impact, Microsoft YaHei, \5FAE\8F6F\96C5\9ED1, serif;
+      }
+      span{
+        font-size: 32px;
+      }
+    }
+    p.coupon_btn{
+      a{
+        width: 160px;
+        display: inline-block;
+        font-size: 25px;
+        line-height: 38px;
+        font-weight: bold;
+        text-align: center;
+        color: #cb274e;
+        background-color: #fffee9;
+        -webkit-box-shadow: inset 1px 0 1px #fff;
+        -moz-box-shadow: inset 1px 0 1px #fff;
+        box-shadow: inset 1px 0 1px #fff;
+        &:hover{
+          background-color: darken(#fffee9,2%);
+        }
+      }
+    }
+    >span{
+      font-size: 19px;
+    }
+  }
+}
+//领取成功弹出框
+.popup_box{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+  .popup_box_inner{
+    width: 600px;
+    height: 270px;
+    background-color: #fff;
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -135px;
+    p{
+      margin: 40px 0;
+      text-align: center;
+      font-size: 24px;
+      color: #333;
+      letter-spacing: 12px;
+    }
+  }
+}
+.popup_title {
+  height: 47px;
+  line-height: 47px;
+  text-align: left;
+  font-size: 18px;
+  position: relative;
+  margin: 5px;
+  padding-left: 15px;
+  i {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+.popup_btn{
+  text-align: center;
+  font-size: 18px;
+  a{
+    display: inline-block;
+    width: 200px;
+    line-height: 50px;
+  }
+  .popup_right_btn{
+    margin-left:15px;
+    color: #fff;
+    background-color: #ccc;
+    @include transition();
+    &:hover{
+      background-color: darken(#ccc,3%);
+    }
+  }
+}
+

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter";
+@import "../../module/pagelist";
+@import "../../module/order_ele";
+@import "../../module/empty";
+
+.evaluated{
+  margin-right: 30px;
+}
+.evaluate_wrap{
+  padding-bottom: 20px;
+}
+//评论内容
+.eval_hd{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px dotted #e4e4e4;
+}
+.eval_info{
+  width: 505px;
+}
+.eval_shops{
+  width:470px;
+}
+
+
+.eval_table{
+  display: table;
+}
+.eval_row{
+  display: table-row;
+
+}
+.eval_cell{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+//内容
+.eval_bd {
+  padding:15px 0;
+  border-bottom: 1px dashed #e4e4e4;
+}
+.eval_info_inner{
+  padding-left: 30px;
+  .eval_score{
+    span{
+      padding-left: 30px;
+    }
+  }
+  .eval_content{
+    line-height: 20px;
+    color: #666;
+  }
+}
+
+.eval_bd {
+  .eval_shops{
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+//重写待评价
+.order_info{
+  width: 845px;
+}
+.order_wrap{
+  margin-top: 20px;
+}
+.list_bd{
+  background-color: #fff;
+}
+.order_row{
+  display: block;
+  margin-bottom: 15px;
+  background-color: #f8f8f8;
+}
+
+.empty{
+  >div{
+    padding-left:70px;
+    i{
+      font-size: 50px;
+      top: 5px;
+    }
+  }
+}
+.operation_wrap{
+  height: 100px;
+  padding:10px 0;
+  a{
+    margin:39px auto;
+  }
+}

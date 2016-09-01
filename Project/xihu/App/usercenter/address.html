@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>address</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/slick.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/address.css">
+</head>
+<body>
+<!--导航-->
+<div class="nav conwidth clearfix">
+    <ul>
+        <li><a class="main_hover all_sort" href="">全部商品</a></li>
+        <li><a class="main_hover" href="">护肤闪购</a></li>
+        <li><a class="main_hover" href="">护肤闪购</a></li>
+        <li><a class="main_hover" href="">护肤闪购</a></li>
+        <li><a class="main_hover no_br" href="../news/new_list.html">公司新闻</a></li>
+    </ul>
+    <div class="nav_cart">
+        <i></i>
+        <a href="#">购物车(<em class="main">0</em>)</a>
+    </div>
+</div>
+<!--内容-->
+<div class="m_content conwidth clearfix">
+    <div class="usercenter_left">
+        <div class="left_top">
+            <a href="usercenter.html"> <img src="../../Images/test/test_user_img.jpg" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="basic_info.html" class="  main_hover">基本信息</a></li>
+            <li><a href="order_list.html" class="main_hover">我的订单</a></li>
+            <li><a href="address.html" class=" main_bg main_border ">我的地址</a></li>
+            <li><a href="change_pwd.html" class="main_hover">修改密码</a></li>
+            <li><a href="collect.html" class="main_hover">商品收藏</a></li>
+            <li><a href="evaluate.html" class="main_hover">我的评价</a></li>
+            <li><a href="message.html" class="  main_hover ">我的消息</a></li>
+            <li><a href="coupon.html" class="main_hover">优惠活动</a></li>
+            <li><a href="refund_list.html" class="main_hover no_bb">退货详情</a></li>
+        </ul>
+    </div>
+    <div class="usercenter_right">
+        <h3>填写地址</h3>
+        <div class="addr_content clearfix">
+            <div class="addr_ele main_border">
+                <div class="addr_container">
+                    <p class="addr_user_name">侯景生 <span>（默认地址）</span></p>
+                    <p class="addr_phone">15512345212</p>
+                    <p class="addr_detail">河南省郑州市金水区郑汴路125号凤凰城</p>
+                </div>
+                <div class="addr_bottom clearfix">
+                    <span class="edit_addr_btn">修改</span>
+                    <span class="del_addr_btn no_br">删除</span>
+                </div>
+            </div>
+            <div class="add_addr main_border">
+                <div class="add_addr_btn">
+                    <p class="add_addr_logo">+</p>
+                    <span>使用新地址</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+<!--新增收货地址-->
+<div class="new_addr hide">
+    <div class="new_addr_container">
+        <h3>添加收货地址</h3>
+        <div class="new_addr_content">
+           <div class=" clearfix">
+               <input class="new_name" type="text" placeholder="姓名">
+               <input class="new_phone no_mr" type="text" placeholder="手机号" onkeyup="value=value.replace(/[^\d/g]/,'')">
+           </div>
+            <div class="new_addr1 clearfix">
+                <div class="drop_menu ">
+                <div class="drop_show">省份</div>
+                <div class="drop_arrow"></div>
+                <ul class="drop_list">
+                    <li>河南省</li>
+                    <li>安徽安徽安徽安徽省</li>
+                    <li>山东省</li>
+                    <li>江西省</li>
+                    <li>广西省</li>
+                    <li>广东省</li>
+                    <li>福建省</li>
+                    <li>上海市</li>
+                    <li>上海市</li>
+                    <li>上海市</li>
+                    <li>上海市</li>
+                    <li>上海市</li>
+                    <li>上海市</li>
+                </ul>
+            </div>
+                <div class="drop_menu ">
+                    <div class="drop_show">城市</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li>郑州市</li>
+                        <li>开封市</li>
+                        <li>安阳市</li>
+                        <li>安阳市</li>
+                        <li>安阳市</li>
+                        <li>广东省</li>
+                        <li>福建省</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                    </ul>
+                </div>
+                <div class="drop_menu no_mr">
+                    <div class="drop_show">地区</div>
+                    <div class="drop_arrow"></div>
+                    <ul class="drop_list">
+                        <li>金水区</li>
+                        <li>管城区</li>
+                        <li>二七区</li>
+                        <li>高新区</li>
+                        <li>惠济区</li>
+                        <li>广东省</li>
+                        <li>福建省</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                        <li>上海市</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="new_addr2">
+                <input type="text" placeholder="街道编号、楼宇名称">
+            </div>
+            <div class="set_default clearfix">
+                <label>
+                    <input type="checkbox" checked="checked">
+                    <span>设为默认</span>
+                </label>
+            </div>
+        </div>
+        <div class="new_addr_bottom clearfix">
+            <span class="cancel_new_btn">取消</span>
+            <span class="add_new_btn main_bg main_border">确认</span>
+        </div>
+    </div>
+</div>
+<!--猜你喜欢-->
+<div class="recommend conwidth">
+    <h4 class="main">猜您喜欢</h4>
+    <div class="recommend_slick">
+        <div class="pro_card_ele border_bottom">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_hot_img.png" alt=""></a>
+            <p class="pro_card_intro"><a href="" class="main_hover"> 雅诗兰黛为您诚现唇印服务服务服务雅诗兰黛为您诚现唇印服务服务服务</a></p>
+            <p class="pro_card_price clearfix">
+                <span>￥39.00</span>
+                <a class="buy_btn main_bg" href="../cart/cart.html">立即购买</a>
+            </p>
+        </div>
+        <div class="pro_card_ele border_bottom">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_hot_img.png" alt=""></a>
+            <p class="pro_card_intro"><a href="" class="main_hover"> 雅诗兰黛为您诚现唇印服务服务服务雅诗兰黛为您诚现唇印服务服务服务</a></p>
+            <p class="pro_card_price clearfix">
+                <span>￥39.00</span>
+                <a class="buy_btn main_bg" href="../cart/cart.html">立即购买</a>
+            </p>
+        </div>
+        <div class="pro_card_ele border_bottom">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_hot_img.png" alt=""></a>
+            <p class="pro_card_intro"><a href="" class="main_hover"> 雅诗兰黛为您诚现唇印服务服务服务雅诗兰黛为您诚现唇印服务服务服务</a></p>
+            <p class="pro_card_price clearfix">
+                <span>￥39.00</span>
+                <a class="buy_btn main_bg" href="../cart/cart.html">立即购买</a>
+            </p>
+        </div>
+        <div class="pro_card_ele border_bottom">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_hot_img.png" alt=""></a>
+            <p class="pro_card_intro"><a href="" class="main_hover"> 雅诗兰黛为您诚现唇印服务服务服务雅诗兰黛为您诚现唇印服务服务服务</a></p>
+            <p class="pro_card_price clearfix">
+                <span>￥39.00</span>
+                <a class="buy_btn main_bg" href="../cart/cart.html">立即购买</a>
+            </p>
+        </div>
+        <div class="pro_card_ele border_bottom">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_hot_img.png" alt=""></a>
+            <p class="pro_card_intro"><a href="" class="main_hover"> 雅诗兰黛为您诚现唇印服务服务服务雅诗兰黛为您诚现唇印服务服务服务</a></p>
+            <p class="pro_card_price clearfix">
+                <span>￥39.00</span>
+                <a class="buy_btn main_bg" href="../cart/cart.html">立即购买</a>
+            </p>
+        </div>
+        <div class="pro_card_ele border_bottom">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_hot_img.png" alt=""></a>
+            <p class="pro_card_intro"><a href="" class="main_hover"> 雅诗兰黛为您诚现唇印服务服务服务雅诗兰黛为您诚现唇印服务服务服务</a></p>
+            <p class="pro_card_price clearfix">
+                <span>￥39.00</span>
+                <a class="buy_btn main_bg" href="../cart/cart.html">立即购买</a>
+            </p>
+        </div>
+        <div class="pro_card_ele border_bottom">
+            <a href="../mall/pro_info.html"><img src="../../Images/test/test_hot_img.png" alt=""></a>
+            <p class="pro_card_intro"><a href="" class="main_hover"> 雅诗兰黛为您诚现唇印服务服务服务雅诗兰黛为您诚现唇印服务服务服务</a></p>
+            <p class="pro_card_price clearfix">
+                <span>￥39.00</span>
+                <a class="buy_btn main_bg" href="../cart/cart.html">立即购买</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!--右侧bar-->
+<div class="bar">
+    <a class="bar_item " href="../mall/index.html#hot"><i class="icon-huoyan"></i>热卖商品</a>
+    <a class="bar_item" href="../mall/index.html#activity"><i class="icon-remenhuodong"></i>热门活动</a>
+    <a class="bar_item" href="../mall/index.html#popular"><i class="icon-renqibaokuan"></i>人气爆款</a>
+    <a class="bar_item no_bb"><i class="icon-fanhuidingbu"></i>返回顶部</a>
+</div>
+<script data-main="../../Js/requireenter" id="require" app="usercenter/address" src="../../Js/lib/require.js"></script>
+</body>
+</html>

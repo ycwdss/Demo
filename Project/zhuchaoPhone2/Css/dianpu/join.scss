@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import "../lib/lib";
+.itemsbox{
+  margin: 10px 0;
+  padding:15px;
+  background-color: #fff;
+  h2{
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+  }
+  p{
+    margin: 5px 0;
+    padding-left: 20px;
+    text-indent: -20px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+  }
+  h4{
+    padding: 17px 0 5px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+  }
+}
+.join_li{
+  padding: 10px 0;
+  border-top: 1px solid #efeff4;
+  border-bottom: 1px solid #efeff4;
+  li{
+    float: left;
+    margin: 5px 1%;
+    line-height: 1.6;
+    width:48%;
+    font-size: 14px;
+  }
+  li.line{
+    width: 98%;
+  }
+}
+
+

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import "../lib/mixin";
+//注册弹窗
+.popup_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.register_box {
+  width: 650px;
+  height: 680px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -325px;
+  margin-top: -300px;
+  background-color: #fff;
+  .register_title {
+    width: 590px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 30px;
+    background-color: #e4e4e4;
+    font-size: 20px;
+    color: #666;
+    position: relative;
+    .offbtn {
+      position: absolute;
+      right: 32px;
+      top:20px;
+      display: block;
+      width: 25px;
+      height: 25px;
+      line-height: 1;
+      font-size: 24px;
+      text-align: center;
+      border-radius: 25px;
+      @include  transition(background,0.3s,ease);
+      cursor: pointer;
+      .iconfont{
+        vertical-align: 2px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+//登录区域
+.register_area {
+  width: 380px;
+  margin: 60px auto 0;
+  input {
+    width: 368px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #e4e4e4;
+    padding: 3px 5px;
+    font-size: 14px;
+    @include transition(border, 0.2s, ease);
+  }
+
+}
+
+.distance {
+  margin-bottom: 30px;
+}
+
+.password_tips {
+  margin: 5px -5px 20px;
+  li {
+    float: left;
+    width: 120px;
+    height: 16px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+  }
+  .length1 {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+  }
+  .length2 {
+    opacity: 0.6;
+    filter: alpha(opacity=70);
+  }
+  .length3 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+.fill_yzm {
+  .yzm {
+    width: 158px;
+  }
+  img {
+    width: 100px;
+    height: 40px;
+    margin-left: 30px;
+  }
+  a {
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.fill_msg{
+  .msg{
+    width: 198px;
+    vertical-align:top;
+  }
+  .masg_btn{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #999;
+    margin-left: 15px;
+    padding: 0!important;
+  }
+}
+.define_btn{
+  width: 380px!important;
+  border: 0!important;
+  height: 40px!important;
+  line-height: 40px!important;
+  padding: 0px!important;
+}
+.error_tips {
+  height: 40px;
+  line-height: 40px;
+  i {
+    font-size: 15px;
+    margin: 0 5px 0 15px;
+  }
+}
+
+.you_konw{
+  margin-top:15px;
+  padding: 0 5px;
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*右边负责人  */
+.team_leader {
+  margin-left: 70px; }
+
+.team_leader ul {
+  width: 915px; }
+
+.team_leader ul li {
+  width: 115px;
+  padding-right: 68px;
+  position: relative;
+  margin-bottom: 45px;
+  cursor: pointer; }
+
+.team_leader li .pic, .team_leader li .pic img, .team_leader li .shade, .team_leader li .pic .black_shade {
+  width: 115px;
+  height: 115px; }
+
+.team_leader li .shade, .team_leader li .pic .black_shade {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.team_leader li .shade {
+  display: block;
+  background: url("../../_pass_decoration/Images/icon_decoration_team1.png"); }
+
+.team_leader li .leader_title, .team_leader li .leader_name, .team_leader li .pic .black_shade a {
+  text-align: center;
+  width: 115px;
+  font-size: 12px;
+  line-height: 16px; }
+
+.team_leader li .leader_title {
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 5px; }
+
+.team_leader li .leader_name {
+  color: #333333;
+  display: block; }
+
+.team_leader li .pic .black_shade {
+  display: none;
+  z-index: 9999;
+  background: url("../../_pass_decoration/Images/icon_decoration_team2.png"); }
+
+.team_leader li .pic:hover .black_shade {
+  display: block; }
+
+.team_leader li .pic .black_shade a {
+  display: block;
+  color: white;
+  padding-top: 50px;
+  height: 53px; }
+
+.team_leader li .pic .black_shade a span {
+  display: block;
+  font-size: 18px; }
+
+/*右边负责人 结束*/

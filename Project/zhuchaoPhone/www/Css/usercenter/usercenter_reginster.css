@@ -1,0 +1,163 @@
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.top_title {
+  font-size: 18px; }
+
+.top .login {
+  font-size: 12px;
+  float: right;
+  line-height: 45px;
+  color: white;
+  text-align: right;
+  width: 25%;
+  margin-right: 3%; }
+
+.main_con {
+  height: 100%; }
+
+.main_con {
+  background: white; }
+  .main_con form {
+    width: 95%;
+    margin: 0 auto; }
+    .main_con form div {
+      margin-top: 25px;
+      height: 30px; }
+      .main_con form div span {
+        width: 91px;
+        font-size: 16px;
+        line-height: 30px;
+        color: black;
+        text-align: right;
+        float: left; }
+      .main_con form div input {
+        float: left;
+        background: #f8f8f8;
+        outline: none;
+        padding: 5px 3%;
+        color: black;
+        font-size: 13px;
+        line-height: 18px;
+        height: 20px;
+        border: none;
+        width: 60%; }
+    .main_con form .yanzhengma span {
+      float: left; }
+    .main_con form .yanzhengma .yanzheng_img {
+      float: right;
+      display: inline-block;
+      width: 85px;
+      height: 30px; }
+      .main_con form .yanzhengma .yanzheng_img img {
+        display: block;
+        width: 85px;
+        height: 30px; }
+    .main_con form .yanzhengma .yanzheng_input {
+      margin-top: 0;
+      margin-left: 91px;
+      width: 66%; }
+      .main_con form .yanzhengma .yanzheng_input input {
+        height: 20px; }
+      .main_con form .yanzhengma .yanzheng_input .yan1 {
+        float: left;
+        width: 44%; }
+      .main_con form .yanzhengma .yanzheng_input .yan2 {
+        float: right;
+        width: 45%;
+        height: 30px;
+        padding: 0; }
+    .main_con form .protocol {
+      margin-top: 20px;
+      margin-left: 82px;
+      color: #093;
+      font-size: 12px;
+      line-height: 18px;
+      height: 20px; }
+      .main_con form .protocol i {
+        display: inline-block;
+        margin-bottom: -6px;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        background: url("../../../Images/mobile/usercenter/sprite_registerandtel.png") no-repeat;
+        -webkit-background-size: 30px;
+        background-size: 30px; }
+      .main_con form .protocol .active {
+        background: url("../../../Images/mobile/usercenter/sprite_registerandtel.png") no-repeat 0 -22px;
+        -webkit-background-size: 30px;
+        background-size: 30px; }
+    .main_con form .register {
+      width: 200px;
+      height: 40px;
+      margin: 25px auto; }
+      .main_con form .register input {
+        width: 200px;
+        background: #e4e4e4;
+        font-size: 18px;
+        line-height: 40px;
+        height: 40px;
+        padding: 0;
+        color: white;
+        text-align: center; }

@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/strategy_top";
+.l_main{
+}
+.m_site_infor{
+  margin-top: 10px;
+  padding: 0 3% 10px;
+  background: #FFFFFF;
+  h4{
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 40px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+.site_infor{
+  span{
+    float: left;
+    width: 50%;
+    @include ell(1);
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 30px;
+  }
+}
+.m_site_img{
+  margin-top: 10px;
+}
+.site_img_title{
+  height: 40px;
+  color: #333;
+  background: #FFFFFF;
+  border-bottom: 1px solid #e4e4e4;
+  p{
+    width: 158px;
+    margin: 0 auto;
+  }
+  span{
+    width: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 40px;
+    display: inline-block;
+  }
+}   
+.current{
+  color: $normalcolor;
+  border-bottom: 1px solid $normalcolor;
+}
+.c_site_img{
+  overflow: hidden;
+}
+.site_img_ele{
+  width: 100%;
+}
+.site_img{
+  padding: 10px 3% 0;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  img{
+    display: block;
+    width: 100%;
+  }
+  p{
+    font-size: 0.9rem;
+    line-height: 35px;
+  }
+}
+.m_pinglun{
+  padding: 0 3%;
+  font-size: 0.9rem;
+  line-height: 40px;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  p{
+    position: relative;
+    padding-left: 25px;
+    &:before{
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '';
+      background: url("../../../Images/mobile/foreman/icon_pinglun.png");
+      -webkit-background-size: 20px;
+      background-size: 20px;;
+    }
+    span{
+      color: $normalcolor;
+      margin: 0 5px;
+    }
+  }
+}
+.pinglun_detail{
+  padding: 10px  3%;
+  background: #FFFFFF;
+  border-bottom: 1px dashed #e4e4e4;
+}
+.textarea{
+  width: 100%;
+  height: 60px;
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 30px;
+  padding: 0 10px;
+  resize: none;
+  border: none;
+  background: #f8f8f8;
+  @include box-sizing();
+  outline-color: #FFFFFF;
+}
+.detail_bottom{
+  margin-top: 5px;
+  input{
+    float: right;
+    font-size: 0.8rem;
+    line-height: 25px;
+    width: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    background: $normalcolor;
+    border: none;
+  }
+  span{
+    float: right;
+    margin-right: 10px;
+    line-height: 25px;
+    i{
+      color: $activecolor;
+    }
+  }
+}
+.m_other_pinglun{
+  padding-bottom: 10px;
+}
+.c_other_pinglun{
+  padding: 10px 3%;
+  background: #FFFFFF;
+  border-bottom: 1px dashed #e4e4e4;
+
+  p{
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+}
+.other_title{
+  h4{
+    float: left;
+    font-size: 0.9rem;
+    line-height: 30px;
+    color: $normalcolor;
+    max-width: 60%;
+    height: 30px;
+    @include ell(1);
+  }
+  span{
+    float: left;
+    margin-left: 10px;
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 30px;
+  }
+}

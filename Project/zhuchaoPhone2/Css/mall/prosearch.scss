@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/mall/_nav";
+@import "../module/mall/_productcard";
+
+html.current, body.current {
+  height: 100%;
+  overflow: hidden;
+}
+
+//搜索导航
+.mall_search_nav {
+  line-height: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4;
+  overflow: hidden;
+  li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    a {
+      font-size: 14px;
+      color: #333;
+    }
+    i {
+      color: #ccc;
+      vertical-align: -2px;
+    }
+  }
+  li.current {
+    a, i {
+      color: #093;
+    }
+  }
+  li.search_price.up .up_sanjiao {
+    border-color: transparent transparent #093;
+  }
+  li.search_price.down .down_sanjiao {
+    border-color: #093 transparent transparent;
+  }
+  .sanjiao {
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    left: 70%;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+  }
+  .down_sanjiao {
+    border: 6px solid;
+    border-color: #ccc transparent transparent;
+  }
+  .up_sanjiao {
+    top: 7px;
+    border: 6px solid;
+    border-color: transparent transparent #ccc;
+  }
+}
+
+//筛选条件
+.shaixuan_box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, .3);
+}
+
+.shaixuan_list, .shaixuan_item {
+  position: relative;
+  display: block;
+  margin-left: 10%;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+  background: #fff;
+}
+
+.shaixuan_head {
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative;
+  overflow: hidden;
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  }
+  a {
+    padding: 17px;
+    line-height: 1;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    color: #666;
+  }
+  a.goback {
+    padding: 14px 10px;
+    i {
+      font-size: 23px;
+    }
+  }
+}
+.module_text_nav {
+  padding-left: 15px;
+  background: #fff;
+  text-align: left;
+  li {
+    line-height: 50px;
+    font-size: 14px;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+    a {
+      padding-left: 7px;
+      display: block;
+      color: #333;
+      &:after {
+        width: 5px;
+        height: 5px;
+        content: "";
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        top: 23px;
+        right: 15px;
+        position: absolute;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+    }
+    .choose_text {
+      position: absolute;
+      top: 0;
+      right: 9%;
+    }
+    i {
+      position: absolute;
+      right: 4%;
+      top: 17px;
+      color: #ccc;
+      font-size: 14px;
+    }
+  }
+}
+.user_action{
+  margin-top: 30px;
+  text-align: center;
+  .submit_btn {
+    width: 120px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    -moz-transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+//shaixuan_item
+.shaixuan_item {
+  width: 100%;
+  margin-left: 0;
+}
+
+.shaixuan_item .module_text_nav li.current {
+  a, i {
+    color: #093;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .mall_search_nav .sanjiao {
+    left: 60%;
+  }
+  .module_text_nav {
+    li {
+      .choose_text {
+        position: absolute;
+        top: 0;
+        right: 5%;
+      }
+    }
+  }
+}
+

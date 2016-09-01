@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+//商品介绍
+.pro_text {
+  font-size: 14px;
+  color: #333;
+  @include strictEll(1.8, 2);
+}
+
+.pro_price {
+  font-size: 16px;
+}
+
+//详情商品列表
+.card3 {
+  overflow: hidden;
+  li {
+    width: 94%;
+    padding: 3%;
+    height: 70px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    background-color: #fff;
+    a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      height: 70px;
+      .pro_img{
+        margin-top: 4px;
+        position: absolute;
+        left: 0;
+        height: 62px;
+        width: 108px;
+        .pro_table{
+          display: block;
+          height: 62px;
+          width: 108px;
+          text-align: center;
+          vertical-align: middle;
+          img {
+            height: 62px;
+            width: 108px;
+          }
+        }
+      }
+    }
+  }
+  .pro_text,.pro_price{
+    margin-left:120px;
+  }
+}

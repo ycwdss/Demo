@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换货申请</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/refund_reason.css">
+</head>
+<body>
+<div class="l_main clearfix conwidth">
+    <!--左侧导航-->
+    <div class="left_content fl">
+        <!--头像-->
+        <div class="user_head">
+            <a class="user_head_img">
+                <img src="../../Images/test/test_pro_img.jpg" alt=""/>
+            </a>
+            <p class="user_name">西天大圣</p>
+            <a  class="main" href="basic_info.html">修改个人信息 &gt;</a>
+        </div>
+        <dl class="user_nav">
+            <dt>个人中心</dt>
+            <dd><a class="main_hover mainbd_hover" href="coupon.html">优惠券</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="collect.html">商品收藏</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="evaluate.html">我的评价</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="message.html">我的消息</a></dd>
+        </dl>
+        <dl class="user_nav">
+            <dt>我的订单</dt>
+            <dd><a class="main_hover mainbd_hover" href="order_list.html">我的订单</a></dd>
+            <dd><a class="main main_border" href="refund_list.html">退换货</a></dd>
+        </dl>
+        <dl class="user_nav">
+            <dt>我的信息</dt>
+            <dd><a class="main_hover mainbd_hover" href="basic_info.html">基本信息</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="address.html">我的地址</a></dd>
+            <dd><a class="main_hover mainbd_hover" href="change_pwd.html">修改密码</a></dd>
+        </dl>
+    </div>
+    <!--右侧信息-->
+    <div class="right_content fr">
+        <div class="right_title">
+            <h3>退换货</h3>
+        </div>
+        <div class="refund_info">
+            <p>订单编号： 65984985468498</p>
+            <p>商品：西京考鲭鱼</p>
+            <p>数量：1件</p>
+            <p>金额：199.00元</p>
+            <p>下单时间：2016年2月2日</p>
+            <span>退款金额：<b class="main">&yen;199.00</b>元</span>
+        </div>
+        <!--申请详情-->
+        <div class="apply_info">
+            <!--申请类型-->
+            <div class="apply_type clearfix">
+                <label>申请类型：</label>
+                <div class="drop_wrap">
+                    <div class="drop_menu">
+                        <div class="drop_show">换货</div>
+                        <div class="drop_arrow"></div>
+                        <ul class="drop_list">
+                            <li class="mainbg_hover">退货</li>
+                            <li class="mainbg_hover">换货</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--退款金额-->
+            <p class="apply_money">
+                退货金额：<span class="main">199.00元</span>
+            </p>
+            <!--申请理由-->
+            <div class="apply_reason clearfix">
+                <label>申请理由：</label>
+                <textarea class="main_focus" placeholder="请填写申请理由,1~100个字哦~"></textarea>
+            </div>
+            <a class="apply_btn main_bg">提交申请</a>
+        </div>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/basic_info" id="require"
+        src="../../Js/lib/require.js"></script>
+</body>
+</html>

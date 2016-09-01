@@ -1,0 +1,142 @@
+.moudle_top h1 {
+  height: 45px;
+  overflow: hidden;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 45px;
+  font-size: 18px;
+  color: #fff;
+  padding: 0 70px; }
+
+.icon_more_link {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  padding: 14px;
+  cursor: pointer; }
+
+#icon_more_link .icon_more_btn {
+  height: 23px;
+  background: url(../../../Images/mobile/jiazhuang/icon_more_jiazhuang.png) no-repeat;
+  background-size: 25px; }
+
+.hidden {
+  display: none !important; }
+
+.m_topSubnav {
+  position: absolute;
+  display: block;
+  top: 45px;
+  right: 0;
+  z-index: 100;
+  width: 35%;
+  min-height: 160px;
+  background-color: #fff;
+  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1); }
+  .m_topSubnav a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333; }
+
+.l_nav {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 40px;
+  margin-bottom: 10px;
+  background: #FFFFFF; }
+  .l_nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%; }
+  .l_nav li {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 16.66667%;
+    overflow: hidden;
+    height: 40px;
+    font-size: 12px;
+    line-height: 39px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+    .l_nav li span {
+      display: block;
+      margin: 0 10%;
+      color: #000;
+      border-bottom: 1px solid #FFFFFF;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+
+.l_nav .nav_current span {
+  border-bottom: 2px solid #093; }
+
+.m_container {
+  position: relative;
+  overflow: hidden; }
+
+.banner {
+  position: relative;
+  width: 100%;
+  margin: 0 0 15px; }
+
+.swiper-slide img {
+  width: 100% !important;
+  text-align: center; }
+
+.swiper-pagination-bullet-active {
+  background: #093; }
+
+.pro {
+  margin: 10px 5px 0;
+  padding: 8px;
+  background: #FFFFFF; }
+  .pro img {
+    width: 100% !important; }
+  .pro h3 {
+    font-size: 12px;
+    color: #000;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+  .pro span {
+    float: left;
+    font-size: 10px;
+    position: relative;
+    padding: 0 10px; }
+    .pro span:before {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 100%;
+      height: 80%;
+      content: '';
+      color: #888888;
+      border-right: 1px solid #888888; }
+
+.no_paddingL {
+  padding-left: 0 !important; }
+
+.no_borderR:before {
+  border-right: 0 !important; }

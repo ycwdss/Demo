@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/site";
+@import "../../module/drop";
+
+
+.info_box{
+  background: #ffffff;
+  padding-top: 25px;
+  border:1px solid #e4e4e4;
+}
+.info_ele{
+  position: relative;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.info_intro{
+  float: left;
+  width: 85px;
+  text-align: right;
+  line-height: 30px;
+  margin-right: 15px;
+}
+.info_detail{
+  float: left;
+  line-height: 30px;
+}
+.nicheng{
+  .info_detail{
+    input{
+      width: 200px;
+      height: 30px;
+      padding:4px 10px;
+      font-size: 12px;
+      line-height: 22px;
+      background: #F8F8F8;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+}
+.birth{
+  .info_detail{
+    .drop_menu{
+      width: 80px!important;
+    }
+    span{
+      float: left;
+      margin:0 15px 0 10px;
+    }
+  }
+}
+.local{
+  .drop_menu{
+    margin-right: 20px;
+  }
+}
+.submit{
+  margin-top:120px;
+}
+.tips{
+  position: absolute;
+  top: 30px;
+  left: 100px;;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+//头像修改
+.change_img,.basic_info{
+  position: relative;
+  margin: 30px 28px 0;
+  padding-bottom: 40px;
+}
+.change_img_left{
+  float: left;
+  width: 451px;
+}
+.choose_img {
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  background: #f8f8f8;
+  font-size: 14px;
+  cursor: pointer;
+  i{
+    font-size: 16px;
+    line-height: 38px;
+    color: #666;
+  }
+  span {
+    color: #666666;
+    margin-left: 10px;
+    line-height: 40px;
+  }
+}
+.change_img .choose_waring{
+  padding-top: 5px;
+  height: 45px;
+  color: #888888;
+  font-size: 12px;
+  line-height: 45px;
+
+}
+.change_img .upload_img{
+  position: relative;
+  width: 300px;
+  height: 300px ;
+  background: #f8f8f8;
+}
+.change_img .head_img{
+  position: absolute;
+  overflow: hidden;
+  margin: 43px 150px;
+}
+.change_img_right{
+  float: left;
+  margin-left: 50px;
+  h4{
+    font-size: 16px;
+    color: #333;
+    line-height: 40px;
+  }
+}
+.change_img .save_btn{
+  margin-top: 30px;
+  .btn{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+.change_img .preview span{
+  font-size: 12px;
+  color: #888888;
+}
+.change_img .preview1{
+  height: 100px;
+  width: 100px;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+.change_img .preview2{
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
+  overflow: hidden;
+  background: #f8f8f8;
+}

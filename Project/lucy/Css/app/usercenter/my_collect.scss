@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import "../../lib/_mixin";
+@import "../../module/routenav";
+@import "../../module/usercenter";
+@import "../../module/page";
+@import "../../module/nohave";
+@import "../../module/totop";
+
+.pro_name {
+  width: 342px;
+}
+
+.pro_num {
+  width: 77px;
+}
+
+.pro_price {
+  width: 202px;
+}
+
+.pro_operate {
+  width: 139px;
+}
+
+.collec_title {
+  padding: 10px 20px;
+  li {
+    font-size: 16px;
+    color: #666;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .pro_name{
+    text-align: left;
+    text-indent: 20px;
+  }
+}
+
+.collect_box {
+  display: table;
+  padding: 20px;
+  border-bottom: 1px dotted #e4e4e4;
+}
+
+.pro_name,
+.pro_num,
+.pro_price,
+.pro_operate {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pro_name {
+  .pro_img {
+    display: inline-block;
+    width: 92px;
+    height: 92px;
+    overflow: hidden;
+    img {
+      width: 92px;
+      height: 92px;
+    }
+  }
+  .pro_text {
+    padding-left: 20px;
+    text-align: left;
+    a {
+      display: inline-block;
+      width: 150px;
+      height: 92px;
+      line-height: 92px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.pro_operate {
+
+  .define_btn {
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+  }
+  .cancel {
+    margin-top: 15px;
+    border: 1px solid #e4e4e4;
+    &:hover {
+      border: 1px solid transparent;
+      background-color: #e4e4e4!important;
+    }
+  }
+}
+
+///没有收藏
+.no_coupon {
+  display: none;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  font-size: 14px;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

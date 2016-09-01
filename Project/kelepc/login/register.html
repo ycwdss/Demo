@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <link rel="stylesheet" href="../Css/login/login.css"/>
+</head>
+<body>
+<!--logo-->
+<div class="logo_register clearfix">
+    <div class="icon_logo">
+    </div>
+    <h3>商家后台登录</h3>
+
+</div>
+<div class="wrap">
+    <div class="wrap_inner">
+        <div class="login_box">
+            <div class="login_header">
+                <h4 class="login_title">账户注册</h4>
+            </div>
+            <div class="login_form">
+                <form action="">
+                    <div class="login_form_input">
+                        <input class="form_text" type="text" name="user" id="username" placeholder="请输入手机号">
+                        <!--密码-->
+                        <input class="form_text" type="password" name="user" id="password" placeholder="请输入字母、数字、符号均可，6-25个字符的密码">
+                        <!--再次输入密码-->
+                        <input class="form_text" type="password" name="user" id="password_again" placeholder="请再次输入密码">
+                        <!--验证码-->
+                        <div class="input_code clearfix">
+                            <input class="fl code" type="text" name="code" autocomplete="off" placeholder="图片验证码">
+                            <a class="icode_image" >
+                                <img alt="图片验证码" title="看不清换一张" src="../Images/test/test_case_img.jpg">
+                                <i class="icon-shuaxin"></i>
+                            </a>
+                        </div>
+                        <!--获取短信验证码-->
+                        <div class="input_code clearfix">
+                            <input class="fl code" type="text" name="code" autocomplete="off" placeholder="请输入短信验证码">
+                            <a class="icode_image tc" >
+                                <span>获取短信验证码</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--忘记密码-->
+                    <div class="login_forget clearfix">
+                        <div class="login_auto checked">
+                            <i class="icon-checked main_light"></i><span>我已经同意《凤凰筑巢用户注册协议》</span>
+                        </div>
+                    </div>
+                    <!--提交-->
+                    <input class="submit_btn main_bg_light disable" disabled type="submit" value="立即注册">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--版权 begin-->
+<div class="login_footer">
+    <div class="copyright">© 2015 LaoKeBa.com 凤凰筑巢 保留所有权利<br/>
+        Copyright 2010-2016 Fhzc.com All Rights Reserved 增值电信业务经营许可证：豫 B2-20160047 豫ICP备14029737号 31.11ms</div>
+</div>
+</body>
+</html>

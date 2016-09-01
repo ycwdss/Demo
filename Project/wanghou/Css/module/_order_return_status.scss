@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.m_order_status{
+  font-size: 13px;
+  text-align: center;
+  line-height: 24px;
+}
+.c_order_status{
+  position: relative;
+  float: left;
+  width: 170px;
+  height: 24px;
+  color: #888888;
+  margin-right: 20px;
+  background: #e4e4e4;
+}
+.status_left{
+  position: absolute;
+  top:0;
+  left: 0px;
+  border-top:12px solid transparent!important;
+  border-bottom:12px solid transparent!important;
+  border-left:12px solid #FFFFFF;
+}
+.status_right{
+  position: absolute;
+  top:0;
+  right: -12px;
+  border-top:12px solid transparent!important;
+  border-bottom:12px solid transparent!important;
+  border-left:12px solid #e4e4e4;
+}

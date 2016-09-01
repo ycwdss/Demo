@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+@import "../model/site_nav";
+@import "../model/usercenter";
+@import "../model/recommend_shps";
+//===============右侧显示区域-============
+.mr {
+  width: 940px;
+  overflow: hidden;
+  .title {
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid #dedede;
+    h1{
+      font-size: 24px;
+    }
+    ul{
+      li{
+        float: left;
+        a{
+          display: block;
+          color: #888;
+          font-size: 14px;
+          padding: 0 13px;
+        }
+      }
+      .current{
+        a{
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+  }
+
+// ========--我的退换货单============
+.order_exchange{
+  margin-top: 20px;
+  .ex_code{
+    width:237px;
+  }
+  .ex_date{
+    width: 180px;
+  }
+  .ex_status{
+    width: 112px;
+  }
+  .ex_operate{
+    width: 170px;
+  }
+
+}
+.hd{
+  margin-right: -1px;
+  li{
+    float: left;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    em{
+      font-size: 14px;
+      color: #888;
+      display: inline-block;
+      border-right: 1px solid #dedede;
+    }
+  }
+
+}
+  .bd{
+    display: table;
+  }
+.bd_box{
+  display: table-row;
+  margin-right: -1px;
+  li{
+    display: table-cell;
+    vertical-align:middle;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    a{
+      color: #36c;
+    }
+  }
+}
+.re_code{
+  width: 323px;
+}
+.re_date{
+  width: 180px;
+}
+.re_money{
+  width: 320px;
+}
+.re_status{
+  width: 114px;
+}
+//==========我的退款订单===========
+.return_money{
+  margin-top: 20px;
+  display: none;
+}
+}

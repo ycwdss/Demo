@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/site";
+@import "../module/company/_company_about_left";
+@import "../module/pagelist";
+
+.news_ele {
+  padding: 15px 15px 15px 0;
+  border-bottom: 1px solid #e4e4e4;
+  img {
+    float: left;
+    display: block;
+    width: 190px !important;
+    height: 120px !important;
+    margin-right: 30px;
+    @include transition();
+    &:hover {
+      @include opacity(90);
+    }
+  }
+  h4 {
+    font-size: 16px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    a{
+      display: inline-block;
+      height: 30px;
+      overflow: hidden;
+    }
+  }
+  .news_detail {
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+    height: 50px;
+    @include ell(2);
+    margin-bottom: 20px;
+
+  }
+  .news_time {
+    font-size: 12px;
+    line-height: 20px;
+    color: #888;
+    height: 20px;
+    margin: 0;
+  }
+}
+
+.page_list {
+  margin-top: 100px;
+}

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import "../../lib/_mixin";
+@import "../../module/routenav";
+@import "../../module/usercenter";
+@import "../../module/totop";
+//退款金额
+.change_money{
+  margin-top:50px;
+  label{
+    font-size: 14px;
+    color: #333;
+    padding-left: 15px;
+  }
+  em{
+    font-size: 14px;
+  }
+}
+
+//退换货处理进度
+.handle_step{
+  padding-left: 80px;
+  margin-top: 50px;
+  li{
+    float: left;
+    width: 210px;
+    height: 2px;
+    background-color: #e4e4e4;
+    position: relative;
+    .circle{
+      position: absolute;
+      top:-10px;
+      left: 50%;
+      margin-left: -10px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      @include border-radius(10px);
+      text-align: center;
+      background-color: #e4e4e4;
+      color: #fff;
+    }
+    p{
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      padding-top: 20px;
+    }
+    strong{
+      position: absolute;
+      top:-50px;
+      left: 0;
+      width: 210px;
+      display: inline-block;
+      font-size: 20px;
+      text-align: center;
+      font-weight: normal;
+    }
+  }
+}
+
+//每项尺寸
+.pro_name {
+  width: 280px;
+}
+
+.pro_reason{
+  width: 180px;
+}
+
+.pro_type,.pro_time {
+  width: 120px;
+}
+.pro_info{
+  margin-top:70px;
+  background-color: #f7f7f7;
+}
+//标题
+.pro_title {
+  padding-left: 30px;
+  li {
+    float: left;
+    font-size: 16px;
+    color: #333;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+  }
+  .pro_name{
+    text-align: left;
+    text-indent: 20px;
+  }
+}
+.pro_wrap {
+  display: table;
+ padding: 0 30px 30px;
+}
+
+.pro_inner {
+  display: table-row;
+
+}
+.pro_name,
+.pro_type,
+.pro_reason,
+.pro_time
+{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pro_name {
+  .pro_img {
+    display: inline-block;
+    width: 92px;
+    height: 92px;
+    overflow: hidden;
+    img {
+      width: 92px;
+      height: 92px;
+    }
+  }
+  .pro_text {
+    padding: 10px 10px 0;
+    text-align: left;
+    width: 150px;
+    a {
+      display: inline-block;
+      width: 150px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 14px;
+      color: #333;
+    }
+    p {
+      font-size: 12px;
+      width: 150px;
+      max-height: 36px;
+      overflow: hidden;
+      @include line(2);
+    }
+  }
+}
+
+//内容字体大小
+.pro_wrap{
+  .pro_type,
+  .pro_reason,
+  .pro_time{
+    font-size: 14px;
+  }
+
+}

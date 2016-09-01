@@ -1,0 +1,506 @@
+@charset "UTF-8";
+.yuyue_pic {
+  height: 560px;
+  width: 100%;
+  background: url("../../../Images/pc/jiazhuang/icon_loan_banner.jpg?_nosprite") no-repeat;
+  position: relative; }
+  .yuyue_pic p {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    background-color: #ff6633;
+    color: #fff;
+    line-height: 30px;
+    font-size: 18px;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    margin-left: -75px;
+    cursor: pointer; }
+
+.mask {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; }
+  .mask .make_order {
+    width: 430px;
+    height: 290px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -145px 0 0 -215px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+    .mask .make_order h1 {
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+      background-color: #093;
+      position: relative; }
+      .mask .make_order h1 i {
+        height: 18px;
+        width: 18px;
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        background: url("../../jiazhuang/Images/sprite_jiazhuang_loan_close.png") no-repeat;
+        -o-background-size: cover;
+           background-size: cover; }
+    .mask .make_order form {
+      margin-top: 30px; }
+      .mask .make_order form div {
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 15px; }
+        .mask .make_order form div label {
+          width: 80px;
+          margin-right: 10px;
+          line-height: 40px;
+          font-weight: normal;
+          text-align: right;
+          display: inline-block;
+          font-size: 14px; }
+        .mask .make_order form div input {
+          width: 300px;
+          height: 40px;
+          display: inline-block;
+          font-size: 14px;
+          border: 1px solid #e4e4e4;
+          padding-left: 5px; }
+      .mask .make_order form .tel {
+        margin-bottom: 20px; }
+      .mask .make_order form .btn {
+        width: 300px;
+        margin-left: 92px;
+        background-color: #093;
+        color: #fff; }
+
+.bg_grey {
+  background: #f8f8f8; }
+
+.bg_white {
+  background: white; }
+
+.loan_feature {
+  height: 70px;
+  padding: 20px 0; }
+  .loan_feature > div {
+    float: left;
+    width: 382px;
+    height: 70px;
+    padding-left: 50px;
+    border-right: 1px solid #e4e4e4; }
+    .loan_feature > div i {
+      float: left;
+      width: 70px;
+      height: 70px; }
+
+.right_txt {
+  float: left;
+  width: 289px;
+  height: 70px;
+  padding-left: 14px; }
+  .right_txt h2 {
+    font-size: 24px;
+    height: 30px;
+    line-height: 30px;
+    color: #333333;
+    margin-bottom: 5px; }
+  .right_txt p {
+    font-size: 14px;
+    color: #888;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden; }
+
+.safe i {
+  background: url("../../jiazhuang/Images/sprite_loanfeature1.png"); }
+
+.professional i {
+  background: url("../../jiazhuang/Images/sprite_loanfeature2.png"); }
+
+.loan_feature .rich {
+  border-right: none; }
+  .loan_feature .rich i {
+    background: url("../../jiazhuang/Images/sprite_loanfeature3.png"); }
+
+.apply_hd {
+  font-size: 38px;
+  color: #666;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 28px; }
+
+.condition {
+  height: 413px;
+  padding: 32px 40px 27px 40px; }
+  .condition > div {
+    height: 372px;
+    float: left;
+    margin-right: 55px; }
+    .condition > div:last-child {
+      margin-right: 0; }
+    .condition > div i {
+      width: 348px;
+      height: 255px;
+      display: block;
+      margin-bottom: 13px; }
+    .condition > div h3 {
+      font-size: 30px;
+      color: #666;
+      line-height: 52px;
+      height: 52px;
+      text-align: center; }
+    .condition > div p {
+      font-size: 18px;
+      color: #666;
+      line-height: 24px;
+      text-align: center;
+      height: 24px;
+      overflow: hidden; }
+
+.member i {
+  background: url("../../../Images/pc/jiazhuang/icon_member.png?no_sprite"); }
+
+.chanquanzheng i {
+  background: url("../../../Images/pc/jiazhuang/icon_chanquanzheng.png?no_sprite"); }
+
+.income i {
+  background: url("../../../Images/pc/jiazhuang/icon_income.png?no_sprite"); }
+
+.data {
+  height: 375px;
+  padding: 32px 0 27px 0; }
+
+.data_item {
+  width: 310px;
+  height: 302px;
+  margin-right: 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  position: relative;
+  float: left; }
+  .data_item:last-child {
+    margin-right: 0; }
+  .data_item .data_txt {
+    position: relative;
+    top: 139px;
+    padding: 0 28px;
+    text-align: center; }
+  .data_item span {
+    position: absolute;
+    font-size: 36px;
+    color: #333;
+    top: 58px;
+    left: 134px; }
+  .data_item h3 {
+    font-size: 24px;
+    color: #666;
+    line-height: 47px;
+    text-align: center;
+    height: 47px;
+    margin-bottom: 10px; }
+  .data_item p {
+    font-size: 18px;
+    color: #666;
+    line-height: 24px;
+    height: 72px;
+    overflow: hidden; }
+
+.data1, .data3 {
+  background: url("../../../Images/pc/jiazhuang/data_bg1.png?_nosprite") no-repeat; }
+
+.data2, .data4 {
+  background: url("../../../Images/pc/jiazhuang/data_bg2.png?_nosprite") no-repeat; }
+
+.cheap {
+  margin: 0 auto;
+  height: 382px;
+  width: 1096px;
+  padding: 32px 98px 30px 106px; }
+
+.platform {
+  width: 340px;
+  margin-right: 24px;
+  float: left; }
+  .platform:last-child {
+    margin-right: 0; }
+
+.pf_hd {
+  width: 340px;
+  height: 50px; }
+  .pf_hd p {
+    font-size: 18px;
+    color: white;
+    line-height: 50px;
+    height: 50px;
+    text-align: center; }
+
+.pf_txt {
+  height: 168px;
+  padding: 17px 20px;
+  border: 1px solid #e4e4e4;
+  border-top: none; }
+  .pf_txt p {
+    font-size: 18px;
+    color: #888;
+    line-height: 32px;
+    height: 32px;
+    text-align: center; }
+  .pf_txt span {
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    height: 32px;
+    color: #f60;
+    display: block; }
+  .pf_txt .txt_border {
+    height: 45px;
+    line-height: 45px;
+    text-align: left;
+    text-indent: 2em;
+    border-bottom: 1px solid #e4e4e4; }
+    .pf_txt .txt_border em {
+      font-size: 14px; }
+    .pf_txt .txt_border strong {
+      font-weight: normal;
+      font-size: 24px;
+      color: #f60; }
+
+.pf1 {
+  height: 251px; }
+
+.pf2 {
+  height: 280px; }
+  .pf2 .pf_txt {
+    height: 197px; }
+    .pf2 .pf_txt span {
+      font-size: 36px;
+      height: 60px;
+      line-height: 60px; }
+
+.pf_bg1 {
+  background: #7fcc99; }
+
+.pf_bg2 {
+  background: #093; }
+
+.calculator {
+  margin: 0 auto;
+  height: 268px;
+  width: 1096px;
+  padding: 32px 98px 30px 106px; }
+
+.wrap_cal {
+  padding-top: 25px;
+  height: 176px; }
+
+.left_cal {
+  width: 612px;
+  height: 161px;
+  padding-right: 100px;
+  border-right: 1px solid #e4e4e4; }
+  .left_cal label {
+    font-size: 18px;
+    color: #666666;
+    line-height: 22px;
+    height: 22px;
+    margin-right: 16px; }
+  .left_cal .money {
+    margin-bottom: 28px; }
+    .left_cal .money input {
+      width: 523px;
+      height: 22px;
+      font-size: 18px;
+      line-height: 22px;
+      color: #666;
+      text-align: center;
+      border-bottom: 1px solid #e4e4e4; }
+    .left_cal .money span {
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: -40px; }
+  .left_cal .time {
+    margin-bottom: 40px; }
+    .left_cal .time label {
+      float: left; }
+    .left_cal .time a {
+      float: left;
+      display: block;
+      width: 78px;
+      height: 28px;
+      border: 1px solid #e4e4e4;
+      color: #666;
+      font-size: 14px;
+      line-height: 28px;
+      margin-right: 10px;
+      text-align: center; }
+      .left_cal .time a:hover {
+        background: #093;
+        color: white;
+        border: 1px solid #093; }
+      .left_cal .time a:last-child {
+        margin-right: 0; }
+    .left_cal .time .current_time {
+      -webkit-transition: background 0.2s;
+      -moz-transition: background 0.2s;
+      -o-transition: background 0.2s;
+      transition: background 0.2s;
+      background: #093;
+      border: 1px solid #093;
+      color: white;
+      -moz-transition: 0.2s ease;
+      /* Firefox 4 */
+      -webkit-transition: 0.2s ease;
+      /* Safari 和 Chrome */
+      -o-transition: 0.2s ease;
+      transition: 0.2s ease; }
+      .left_cal .time .current_time:hover {
+        background: #048b31;
+        -webkit-box-shadow: 1px 1px 1px #ccc;
+        -moz-box-shadow: 1px 1px 1px #ccc;
+        box-shadow: 1px 1px 1px #ccc; }
+  .left_cal p {
+    width: 150px;
+    height: 40px;
+    background: #093;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0 auto;
+    cursor: pointer; }
+    .left_cal p:hover {
+      background: #048b31; }
+
+.result {
+  width: 258px;
+  height: 258px;
+  margin-top: -45px;
+  position: relative;
+  background: url("../../../Images/pc/jiazhuang/result_bg.png?_nosprite") no-repeat; }
+  .result p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #888;
+    top: 50px; }
+  .result span {
+    position: absolute;
+    left: 55px;
+    top: 70px;
+    width: 150px;
+    text-align: center;
+    color: #f60;
+    font-size: 24px; }
+  .result .total_money {
+    width: 170px;
+    height: 75px;
+    position: absolute;
+    left: 70px;
+    top: 115px; }
+  .result .per_money {
+    position: absolute;
+    left: 100px;
+    top: 35px; }
+
+.loan_flow {
+  height: 285px;
+  padding: 32px 98px 30px 106px; }
+
+.loan_txt {
+  position: relative;
+  height: 222px;
+  background: url("../../../Images/pc/jiazhuang/loan_flowbg.png?_nosprte") no-repeat; }
+  .loan_txt > div {
+    position: absolute;
+    color: #f60;
+    top: 41px;
+    width: 288px;
+    overflow: hidden; }
+    .loan_txt > div h2 {
+      font-size: 60px;
+      text-align: center; }
+    .loan_txt > div p {
+      font-size: 36px;
+      height: 47px;
+      line-height: 47px;
+      width: 288px;
+      overflow: hidden;
+      text-align: center; }
+
+.submit {
+  left: 57px; }
+
+.loan_txt .eva {
+  left: 585px;
+  width: 144px; }
+  .loan_txt .eva p {
+    width: 144px; }
+
+.give {
+  right: 10px; }
+
+.loan_advantage {
+  height: 316px;
+  padding: 32px 98px 30px 106px;
+  margin-bottom: 60px; }
+
+.advantage {
+  height: 246px; }
+
+.advan {
+  width: 195px;
+  height: 246px;
+  float: left;
+  margin-right: 20px; }
+  .advan:last-child {
+    margin-right: 0; }
+  .advan i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px auto; }
+
+.advan_txt {
+  width: 162px;
+  height: 109px;
+  padding: 15px 16px 8px 16px;
+  background: url("../../jiazhuang/Images/sprite_advantxtbg.png?_nosprite") no-repeat; }
+  .advan_txt h3 {
+    font-size: 21px;
+    color: #333;
+    line-height: 36px;
+    height: 36px;
+    text-align: center; }
+  .advan_txt p {
+    font-size: 13px;
+    color: #333;
+    line-height: 30px;
+    text-align: center; }
+
+.advan1 i {
+  background: url("../../jiazhuang/Images/sprite_loanadvan1.png") no-repeat; }
+
+.advan2 i {
+  background: url("../../jiazhuang/Images/sprite_loanadvan2.png") no-repeat; }
+
+.advan3 i {
+  background: url("../../jiazhuang/Images/sprite_loanadvan3.png") no-repeat; }
+
+.advan4 i {
+  background: url("../../jiazhuang/Images/sprite_loanadvan4.png") no-repeat; }
+
+.advan5 i {
+  background: url("../../jiazhuang/Images/sprite_loanadvan5.png") no-repeat; }
+
+.advan6 i {
+  background: url("../../jiazhuang/Images/sprite_loanadvan6.png") no-repeat; }

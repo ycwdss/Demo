@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/mall/_adarea";
+
+.module_ad{
+  padding:10px 0;
+  background-color: #fff;
+}
+.module_ad .module_ad_list{
+  padding-bottom: 0;
+}
+.module_ad3 .module_ad_box{
+  margin-top: 100%;
+}
+.module_ad3 .module_ad_img{
+  max-width: 80%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.swiper-pagination-bullet-active{
+  background-color: #093;
+}
+//产品名称及价格
+.pro_name_price{
+  margin:  0 10px 10px;
+  font-size: 18px;
+  .name{
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+    overflow : hidden;
+    max-height: 38px;
+  //-webkit-box-orient: vertical;
+  }
+}
+//详情介绍
+//标题
+.module_title{
+  font-size: 14px;
+  line-height: 40px;
+  position: relative;
+  font-weight: bold;
+  span.fr{
+    font-size: 12px;
+    color: #666;
+  }
+  i{
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    font-size: 18px;
+    transition: transform .1s ease-in 0s;
+    -webkit-transition: -webkit-transform .1s ease-in 0s;
+    font-weight: normal;
+  }
+}
+.item_box{
+  margin:0 10px ;
+  border-top: 1px solid #e4e4e4;
+}
+.item_box:last-child{
+  border-bottom: 1px solid #e4e4e4;
+}
+//所在地
+.info_box{
+  font-size: 14px;
+  color: #333;
+  .box_dl{
+    padding:3px 0;
+    padding-left: 72px;
+    text-indent: -72px;
+  }
+  .box_dt{
+    color: #666;
+  }
+  .box_dd{
+    line-height: 1.6;
+  }
+}
+//产品介绍
+.pro_info{
+  .info_box{
+    color: #666;
+  }
+}
+//产品介绍
+.pro_info_box{
+  display: none;
+  overflow: hidden;
+  padding-bottom: 20px;
+  @include transition(display,0.5s,ease-in-out);
+  img{
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+  }
+  line-height: 1.6;
+  font-size: 14px;
+  color: #666;
+}
+//选中效果
+.item_box.current{
+  i.icon-youjiantou{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .pro_info_box{
+    display: block;
+  }
+}
+.pro_info{
+
+}
+//产品属性
+.pro_details_box{
+  background: #fff;
+  margin: 10px 0;
+  border:1px solid #e4e4e4;
+  .item{
+    display: -webkit-box;
+    margin-top: -1px;
+    font-size: 14px;
+    line-height: 40px;
+    border-top: solid 1px #d8d8d8;
+  }
+}
+.pro_details_box .item .key{
+  width: 27%;
+  text-align: right;
+  line-height: 40px;
+  padding-right: 3%;
+  color: #333;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+.pro_details_box .item .val{
+  padding: 9px 0 3px 10px;
+  width: 70%;
+  line-height: 1.8;
+  color: #666;
+  @include box-sizing();
+}
+.footer_padding{
+  padding-bottom: 53px;
+}
+//查看更多
+.read_more{
+  display: block;
+  line-height: 45px;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+//查看大图
+body{
+  position: relative;
+  height:100%;
+}
+.out{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  z-index:999;
+  h3{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    >i{
+      line-height: 40px;
+    }
+  }
+}
+.out_img{
+  height: 100%;
+  padding-top: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ .swiper-slide{
+   position: relative;
+   img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin:auto;
+     max-width:90%;
+     max-height:90%;
+   }
+ }
+}

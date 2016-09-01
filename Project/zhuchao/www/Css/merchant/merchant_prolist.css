@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*choose_list*/
+.choose_list {
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 20px; }
+
+.choose_list_items > li {
+  float: left;
+  padding: 0 35px;
+  border-right: 1px solid #e5e5e5; }
+
+.choose_list_items > li a {
+  color: #666;
+  font-size: 14px;
+  line-height: 14px;
+  position: relative; }
+
+.choose_list_items > li a span {
+  display: inline-block;
+  width: 8px;
+  height: 11px;
+  margin-left: 5px;
+  vertical-align: middle;
+  background: url(../../mall/Images/sprite_mall_list_btn.png) no-repeat center; }
+
+.icon_sj_up {
+  position: absolute;
+  top: 3px;
+  right: -15px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-width: 5px;
+  cursor: pointer;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #666 transparent;
+  border-top: none; }
+
+.icon_sj_down {
+  position: absolute;
+  bottom: 3px;
+  right: -15px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-width: 5px;
+  cursor: pointer;
+  border-style: solid dashed dashed dashed;
+  border-color: #666 transparent transparent transparent;
+  border-bottom: none; }
+
+.choose_list_items > li.current a {
+  color: #093; }
+
+.choose_list_items > li.current a span {
+  background: url(../../mall/Images/sprite_mall_list_currentbtn.png) no-repeat center; }
+
+.choose_list_items > li.currentUp a .icon_sj_up {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-width: 5px;
+  cursor: pointer;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #093 transparent;
+  border-top: none; }
+
+.choose_list_items > li.currentDown a .icon_sj_down {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-width: 5px;
+  cursor: pointer;
+  border-style: solid dashed dashed dashed;
+  border-color: #093 transparent transparent transparent;
+  border-bottom: none; }
+
+.choose_list_items .clear_border {
+  border: 0; }
+
+.count {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #333; }
+  .count span {
+    color: #093; }
+
+/*模块底部*/
+.mall_module_list li {
+  float: left;
+  width: 202px;
+  height: 288px;
+  padding: 20px 20px 0px;
+  border: 1px solid #f8f8f8;
+  margin-right: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 14px;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
+.mall_module_list li:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+  box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  -moz-transform: translate3d(0, -2px, 0);
+       transform: translate3d(0, -2px, 0); }
+
+.mall_module_list .mall_list_img {
+  width: 205px;
+  height: 128px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.mall_list_img a, .mall_list_img img {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.mall_module_list p {
+  height: 40px;
+  margin-bottom: 23px;
+  line-height: 20px;
+  overflow: hidden; }
+
+.mall_module_list p a {
+  color: #888; }
+
+.mall_module_list em {
+  font-size: 18px;
+  color: #f60; }
+
+.mall_module_list em i {
+  font-size: 14px; }
+
+.mall_module_list a:hover {
+  color: #f60; }
+
+.mall_module_list .oldprice {
+  font-size: 12px;
+  color: #666;
+  text-decoration: line-through;
+  margin-left: 4px; }
+
+.routeInfo {
+  border: 0;
+  margin: 0 auto; }
+
+.l_main {
+  margin-bottom: 50px; }
+
+.m_prolist {
+  margin-bottom: 150px; }
+
+.mall_module_list li {
+  width: 244px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+  margin-bottom: 20px; }
+  .mall_module_list li .mall_list_img {
+    width: 244px;
+    height: 152px;
+    display: block; }
+  .mall_module_list li h4, .mall_module_list li p {
+    width: 86%;
+    margin: 18px auto; }
+
+.clear_rightM {
+  margin-right: 0 !important; }

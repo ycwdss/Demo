@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/strategy_top";
+@import "../mobile_moudle/moudle/xiaoguotu_head_sort";
+.l_nav{
+}
+/*重写*/
+.sort li{
+  font-size: 1rem;
+  @include ell(1);
+  width: 25%;
+}
+/*列表*/
+.foreman_ele{
+  margin-top: 10px;
+  padding: 10px 0;
+  background: #FFFFFF;
+}
+.foreman_detail{
+  padding: 0 3%;
+}
+.content_list_img{
+  float: left;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  overflow: hidden;
+  //border: 1px solid #e4e4e4;
+  img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+}
+.content_text{
+  margin-left: 80px;
+  height: 79px;
+  p{
+    font-size: 12px;
+    color: #888;
+    span>i{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin:0 3px;
+      line-height: 15px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+}
+.content_text .score{
+  font-size: 14px;
+  color: #888;
+  span{
+    float: left;
+  }
+  i{
+    float: left;
+  }
+}
+.star{
+  width: 10px;
+  height: 10px;
+  margin: 5px 2px;
+}
+.star1{
+  background: url("../../../Images/mobile/foreman/icon_star1.png") 0 0 no-repeat;
+  -webkit-background-size: 10px;
+  background-size: 10px;
+}
+.star2{
+  background: url("../../../Images/mobile/foreman/icon_star2.png") 0 0 no-repeat;
+  -webkit-background-size: 10px;
+  background-size: 10px;
+}
+.star3{
+  background: url("../../../Images/mobile/foreman/icon_star3.png") 0 0 no-repeat;
+  -webkit-background-size: 10px;
+  background-size: 10px;
+}
+.content_text .detail_content{
+  margin:9px 0;
+  @include staticEll(1.4,1);
+  span{
+    &:after{
+      margin:0 2px;
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height:12px;
+      vertical-align: -2px;
+      background-color: #888;
+    }
+  }
+  span:last-child{
+    &:before{
+      display: none;
+    }
+  }
+  .case{
+    &:after{
+      display: none!important;
+    }
+  }
+}
+.contact{
+  margin:9px 0 0;
+  @include staticEll(1,1);
+}
+.foreman_other{
+  padding-left: 3%;
+}
+.foreman_name{
+  a{
+    float: left;
+    width: 70px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+  }
+}
+.foreman_shanchang{
+  margin-left: 80px;
+  padding-top: 1px;
+  span{
+    width:100px;
+    max-width: 33.3%;
+    float: left;
+    i{
+      display: block;
+      width: 60px;
+      font-size: 10px;
+      line-height: 18px;
+      padding: 0 3px;
+      text-align: center;
+      color: #093;
+      border: 1px solid #093;
+    }
+  }
+}
+.detail_bottom{
+  padding:9px 0 ;
+  span{
+    float: left;
+    position: relative;
+    font-size: 12px;
+    color: #888;
+    width: 100px;
+    max-width: 25%;
+    text-align: center;
+    &:after{
+      position: absolute;
+      top: 4px;
+      right: 0;
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height:12px;
+      background-color: #888;
+    }
+  }
+}
+.m_sort{
+  background: #FFFFFF;
+  width: 100%;
+}
+.m_sort li{
+  text-indent: 5px;
+  margin:0 20px 0 20px;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 40px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.arrow_clicked{
+  display: none;
+  float: right;
+  margin: 10px 15px 7px 10px;
+  width: 15px;
+  height: 10px;
+  background: url("../../../Images/mobile/icon_mall.png?_nosprite")-14px  0;
+  -webkit-background-size: 250px;
+  background-size: 250px;
+}
+.m_sort .m_sort_clicked{
+  color: #093;
+}
+.m_sort_clicked .arrow_clicked{
+  display: block;
+}
+.no_bg{
+  &:after{
+    background: none!important;
+  }
+}
+.no_borderB{
+  border-bottom: none !important;
+}

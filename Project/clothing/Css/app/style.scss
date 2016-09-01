@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/lib";
+@import "../lib/commonclass";
+@import "../lib/font";
+
+@import "../module/header";
+@import "../module/footer";
+@import "../module/totop";
+
+
+$main: #f00;
+$sec:#3c619e;
+
+a{
+  color: #666;
+}
+
+//字体颜色
+.main {
+  color: $main !important;
+  a{
+    color: $main;
+  }
+}
+.sec {
+  color: $sec !important;
+}
+
+//背景颜色
+.main_bg {
+  background-color: $main !important;
+  color: #fff !important;
+}
+.sec_bg{
+  background-color: $sec !important;
+  color: #fff !important;
+}
+//边框颜色
+.main_border {
+  border-color: $main !important;
+}
+.sec_border{
+  border-color: $sec!important;
+}
+//hover字体颜色
+.main_hover {
+  &:hover {
+    color: $main !important;
+  }
+  a:hover{
+    color: $main!important;
+  }
+}
+.sec_hover {
+  &:hover {
+    color: $sec !important;
+  }
+  a:hover{
+    color: $sec!important;
+  }
+}
+//hover背景颜色
+.mainbg_hover {
+  &:hover {
+    background-color: $main !important;
+    color: #FFFFFF !important;
+  }
+}
+.secbg_hover {
+  &:hover {
+    background-color: $sec !important;
+    color: #FFFFFF !important;
+  }
+}
+//hover边框颜色
+.mainbd_hover {
+  &:hover {
+    border-color: $main !important;
+  }
+}
+.secbd_hover {
+  &:hover {
+    border-color: $sec !important;
+  }
+}
+
+//focus颜色
+.main_focus {
+  &:focus {
+    border-color: $main !important;
+  }
+}
+.sec_focus {
+  &:focus {
+    border-color: $sec !important;
+  }
+}
+//layer重写
+body .layer-ext-myskin .layui-layer-setwin a:hover{
+  background: $main!important;
+}
+body .layer-ext-myskin .layui-layer-btn{
+  .layui-layer-btn0{
+    border-color: $main!important;
+    background-color: $main!important;
+  }
+  &:hover{
+    background-color: darken($main,2%)!important;
+  }
+}
+

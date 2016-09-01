@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@import "../../Css/mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+
+//头部样式
+.top{
+  .like{
+    float: right;
+    width: 25px;
+    height: 20px;
+    margin-right: 5%;
+    margin-top: 12px;
+    background: url("../../../Images/mobile/designer/sprite_designer_case_detail.png") no-repeat;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+  }
+}
+//评论
+.edit_eva{
+  margin-top: 10px;
+  background: white;
+  padding: 10px;
+  .edit{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f8f8f8;
+    textarea{
+      background: #f8f8f8;
+      color:#ccc;
+      padding: 0 5px;
+      font-size:12px;
+      line-height: 20px;
+      height: 52px;
+      border: none;
+      resize: none;
+      width: 100%;
+      outline: none;
+    }
+    .tip_submit{
+      margin-top: 10px;
+      float: right;
+      height: 30px;
+      span{
+        font-size: 10px;
+        color: #ccc;
+        line-height: 30px;
+        em{
+          color: #f60;
+        }
+      }
+      input{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        color: white;
+        background: #093;
+        text-align: center;
+        line-height: 30px;
+        border: none;
+      }
+    }
+  }
+}
+.eva_list{
+  .eva1{
+    padding: 10px 0;
+    border-bottom: 1px dashed #e4e4e4;
+    .hd{
+      margin-bottom: 5px;
+      line-height: 20px;
+      span{
+        font-size: 14px;
+        color: #093;
+      }
+      em{
+        font-size: 14px;
+        color: #ccc;
+        margin-left: 10px;
+      }
+    }
+    .response_con{
+      font-size: 14px;
+      line-height: 22px;
+      color: #888;
+      em{
+        float: right;
+        margin-right: 5%;
+      }
+    }
+  }
+  .eva2{
+    @extend .eva1;
+    border-bottom: none;
+  }
+}
+.main_content{
+  margin-top: 10px;
+}
+//顶部新家图片滑动切换
+.top_pic_slide{
+  background: white;
+  h1{
+    font-size:14px ;
+    line-height:40px ;
+    color: black;
+    height:40px ;
+    text-align: center;
+  }
+  .new_home_pic{
+    width: 100%;
+    .swiper-container{
+      display: block;
+      width: 100%;
+      height:auto;
+      position: relative;
+    }
+    .swiper_page{
+      position: absolute;
+      right: 0;
+      bottom: 5%;
+      z-index: 5;
+      p{
+        background:#68ae79 ;
+        color: white;
+        width: 40px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        span{
+          font-size:14px ;
+        }
+        em{
+          font-size:10px ;
+        }
+      }
+    }
+  }
+}
+.eva_like{
+  height: 40px ;
+
+  >div{
+    text-align: center;
+    width: 27%;
+    float: left;
+    padding-left: 15px;
+    i{
+      display: inline-block;
+      width:20px;
+      height:20px;
+      background: url("../../../Images/mobile/designer/sprite_designer_case_detail.png") no-repeat;
+      -webkit-background-size: 30px;
+      background-size: 30px;
+      margin-right: 10px;
+      margin-bottom: -4px;
+    }
+  }
+  span{
+    font-size:14px ;
+    line-height:40px ;
+    color: #888;
+    height:40px ;
+    text-align: center;
+    margin-right: 7px;
+  }
+  em{
+    font-size:14px ;
+    line-height:40px ;
+    color: #888;
+    margin-right: 10px;
+  }
+  strong{
+    float: right;
+    margin-top: 12px;
+    width: 1px;
+    height:15px;
+    border-right: 1px solid #888;
+  }
+  .eva{
+    i{
+      background-position: 0 -27px;
+    }
+  }
+  .save{
+    i{
+      background-position: 0 -51px;
+    }
+  }
+  .like{
+    i{
+      background-position: 0 -97px;
+    }
+  }
+}
+//案例基本信息
+.infor{
+  padding: 0 10px;
+  background: white;
+  font-size: 14px;
+  margin-top: 10px;
+  h2{
+    color: black;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+.infor_content{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  color: #888;
+  min-height: 118px;
+  .left_con{
+    width: 61%;
+    em{
+      width: 56%;
+    }
+  }
+  .right_con{
+    width: 39%;
+    em{
+      width: 55%;
+    }
+  }
+  span{
+    float: left;
+    line-height: 27px;
+  }
+  em{
+    float: left;
+    line-height: 27px;
+  }
+  p{
+    line-height: 21px;
+  }
+}

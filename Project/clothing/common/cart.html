@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../Css/app/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--购物车-->
+<div class="cart_wrap conwidth">
+    <div class="cart_box">
+        <h1>购物车</h1>
+        <!--购物车列表项-->
+        <div class="cart_title clearfix">
+            <div class="pro_check fl">
+                <span class="check"></span>全选
+            </div>
+            <div class="pro_name fl">商品名称</div>
+            <div class="pro_num fl">数量</div>
+            <div class="pro_price fl">单价</div>
+            <div class="pro_total fl">小计</div>
+            <div class="pro_operate fl">操作</div>
+        </div>
+        <!--购物车列表-->
+        <div class="cart_list  clearfix">
+            <div class="pro_check fl">
+                <span class="check"></span>
+            </div>
+            <div class="pro_name clearfix fl">
+                <a class="img_box fl" href="#">  <img src="../Images/test/test_pro.png"></a>
+                <div class="describe fl">
+                    <a class="main_hover" href="#">西京烤鸡，好吃看的见</a>
+                    <p class="main">￥188.00</p>
+                </div>
+            </div>
+            <div class="pro_num fl">
+                <div class="num_box clearfix">
+                    <a class=" min fl">-</a>
+                    <input class="num_text fl" type="text" value="1">
+                    <a class=" add fr">+</a>
+                </div>
+                <p>库存<em class="residue">22</em>件</p>
+            </div>
+            <div class="pro_price fl">188.00</div>
+            <div class="pro_total main fl">188.00</div>
+            <div class="pro_operate fl">
+                <p>
+                    <a class="main_hover operate_del" href="#">删除</a>
+                    <a class="main_hover" href="#">收藏</a>
+                </p>
+            </div>
+        </div>
+        <!--购物车为空提示-->
+        <div class="cart_nothing hide">
+            购物车空空如野，赶紧去填满吧<a class="main" href="#">Go~~</a>
+        </div>
+        <div class="cart_empty clearfix">
+            <div class="pro_check fl">
+                <span class="check"></span>全选
+            </div>
+            <div class="pro_delet fl">
+                <a class="main_hover delete" href="#">清空选中商品</a>
+                <span></span>
+                <a class="main_hover" href="#">继续购物</a>
+            </div>
+        </div>
+    </div>
+    <div class="cart_pay">
+        <span>已选商品：<em class="main pay_num">0</em>件 </span>
+        <span>商品总金额：<em class="main pay_total">¥0.00</em>元 </span>
+        <span>优惠金额：<em class="main">¥0.00</em>元</span>
+        <a class="main_bg" href="submit_order.html">去结账</a>
+    </div>
+</div>
+<script src="../Js/lib/jquery1.8.3.js"></script>
+<script>
+    $(document).ready(function () {
+        //单个删除
+
+        $('.operate_del').click(function () {
+            var offbtn=$(this).closest('.cart_list').find('.check').hasClass('checked');
+            var len=$('.cart_list').length;
+            if(offbtn){
+                $(this).closest('.cart_list').remove();
+            }
+            if(offbtn && len==1){
+                $(this).closest('.cart_list').remove();
+                $('.cart_title').find('.check').removeClass('checked main_bg main_border');
+                $('.cart_empty').find('.check').removeClass('checked main_bg main_border');
+            }
+            getTotal();
+            return false;
+
+        });
+        //清空选中操作
+        $('.delete ').click(function () {
+            $('.cart_list').each(function () {
+                var $chk = $(this).find('.check')
+                if ($chk.hasClass('checked')) {
+                    $(this).remove();
+                    $('.cart_title').find('.check').removeClass('checked main_bg main_border');
+                    $('.cart_empty').find('.check').removeClass('checked main_bg main_border');
+                }
+                getTotal();
+                return false;
+            });
+        });
+        //单选
+        $('.cart_list .check').click(function () {
+            var $this=$(this);
+            if($this.hasClass('checked')){
+                $this.removeClass('checked main_bg main_border')
+            }else {
+                $this.addClass('checked main_bg main_border')
+            }
+        });
+        //单个选中 全选中
+        $('.cart_list .check ').click(function () {
+            var $chklenght=$('.cart_list').has('.checked').length;
+            var $listlenght=$('.cart_box .cart_list').length;
+            if($chklenght==$listlenght){
+                $('.cart_title').find('.check').addClass('checked main_bg main_border');
+                $('.cart_empty').find('.check').addClass('checked main_bg main_border');
+            }else {
+                $('.cart_title').find('.check').removeClass('checked main_bg main_border');
+                $('.cart_empty').find('.check').removeClass('checked main_bg main_border');
+            }
+            getTotal();
+        });
+        //加
+        $('.add').click(function () {
+            var $value = $(this).prev('input');
+            $value.val(+$value.val()+1);
+            var payUnit=$(this).closest('.cart_list ').find('.pro_price');
+            if(!$.isNumeric($value.val()) || $value.val()<1){
+                $value.val(1);
+            }
+            var total=parseInt($value.val())*parseFloat(payUnit.text());
+            $(this).parents('.pro_num').siblings('.pro_total').text(total.toFixed(2));
+            $(this).parents('.cart_list').find('.check').addClass('checked main_bg main_border');
+            getTotal();
+        });
+        //减号
+        $('.min').click(function () {
+            var $value = $(this).next('input');
+            $value.val($value.val()-1);
+            var payUnit=$(this).closest('.cart_list ').find('.pro_price');
+            if(!$.isNumeric($value.val()) || $value.val()<1){
+                $value.val(1);
+            }
+            var total=parseInt($value.val())*parseFloat(payUnit.text());
+            $(this).parents('.pro_num').siblings('.pro_total').text(total.toFixed(2));
+            $(this).parents('.cart_list').find('.check').addClass('checked main_bg main_border');
+            getTotal();
+        });
+
+        //数量改变
+        $('.cart_list .num_text').keyup(function () {
+            var val=$(this).val();
+            var payUnit=$(this).closest('.cart_list ').find('.pro_price');
+            if(!(parseInt(val)==val) || val<1){
+                $(this).val(1);
+            }
+            var total=parseInt($(this).val())*parseFloat(payUnit.text());
+            $(this).parents('.pro_num').siblings('.pro_total').text(total.toFixed(2));
+            $(this).parents('.cart_list').find('.check').addClass('checked main_bg main_border');
+            getTotal();
+        });
+
+        //全选
+        $('.cart_title .check,.cart_empty .check').click(function () {
+            var $this=$(this);
+            if($this.hasClass('checked')){
+                $('.cart_title .check,.cart_empty .check').removeClass('checked main_bg main_border')
+                $('.cart_list').find('.check').removeClass('checked main_bg main_border');
+            }else {
+                $('.cart_title .check,.cart_empty .check').addClass('checked main_bg main_border')
+                $('.cart_list').find('.check').addClass('checked main_bg main_border');
+            }
+            getTotal();
+        });
+
+        //总额
+
+        var residue=$('.cart_list').find('.residue').text();
+
+        function getTotal(){
+            var unitPrice=0,totalMoney=0,num=0,totalNum= 0;
+            var $selected=$('.cart_list').find('.checked');
+
+
+            $selected.each(function (index,$element) {
+                unitPrice=$($element).closest('.cart_list').find('.pro_price').text();
+                num=$($element).closest('.cart_list').find('.num_text').val();
+                totalNum +=parseInt(num);
+                totalMoney +=unitPrice*num;
+            });
+            $('.cart_pay').find('.pay_num').text(totalNum);
+            $('.cart_pay').find('.pay_total').text(totalMoney.toFixed(2));
+        }
+    });
+</script>
+</body>
+</html>

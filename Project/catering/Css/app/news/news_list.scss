@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/site";
+@import "../../module/pagelist";
+
+body{
+  background: #F8F8F8;
+}
+.article_content{
+  margin-top: 40px;
+  padding:25px 50px;
+  background: #FFFFFF;
+}
+.site{
+  border-bottom:1px solid #e4e4e4;
+}
+.article_ele{
+  position: relative;
+  overflow: hidden;
+  border-bottom:1px dashed #e4e4e4;
+  h3{
+    font-size: 20px;
+    color: #333;
+    margin:35px 10px 15px;
+    line-height: 30px;
+    height: 30px;
+    @include ell(1);
+  }
+}
+.article_detail{
+  position: relative;
+  margin:0 0 40px 50px;
+  padding-right: 150px;;
+  font-size: 14px;
+  line-height: 25px;
+  a{
+    color: #999;
+  }
+  .more_detail{
+    position: absolute;
+    display: block;
+    bottom:0;
+    right:0;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    border:1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.article_time{
+  font-size: 12px;
+  color: #999;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  span{
+    margin-right: 40px;
+  }
+}
+.page_list{
+  padding:60px 0 30px;
+}

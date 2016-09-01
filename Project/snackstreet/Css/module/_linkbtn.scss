@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.linkbtn{
+  display: inline-block;
+  width: 125px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 10px;
+    color: #fff!important;
+  &:hover{
+    color: #fff!important;
+    opacity:0.8;
+    filter: alpha(opacity=80);
+  }
+}

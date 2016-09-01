@@ -1,0 +1,120 @@
+.top {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #009933;
+  z-index: 9999; }
+  .top span {
+    display: block; }
+
+.top a:nth-child(1) {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%; }
+
+.top a:nth-child(3) {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 44px;
+  height: 100%; }
+
+.top_left, .top_search {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 12px 0 11px 15px;
+  width: 13px;
+  height: 22px;
+  background: url("../../../Images/mobile/icon_strategy.png") -60px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+.top_title {
+  padding: 0 44px;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center; }
+
+.top_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 10px 11px 0;
+  width: 23px;
+  background: url("../../../Images/mobile/icon_strategy.png") -85px 0;
+  -webkit-background-size: 150px;
+  background-size: 150px; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.top_title {
+  font-size: 18px; }
+
+.top .forget_pw {
+  font-size: 12px;
+  float: right;
+  line-height: 45px;
+  color: white;
+  text-align: right;
+  width: 25%;
+  margin-right: 3%; }
+
+.main_con {
+  margin-top: 10px;
+  height: 100%; }
+
+.main_con {
+  background: white; }
+  .main_con form {
+    width: 80%;
+    margin: 0 auto; }
+    .main_con form div {
+      margin-top: 25px;
+      height: 30px; }
+      .main_con form div span {
+        font-size: 16px;
+        line-height: 30px;
+        color: black; }
+      .main_con form div input {
+        background: #f8f8f8;
+        outline: none;
+        padding: 5px 3%;
+        color: black;
+        font-size: 13px;
+        line-height: 18px;
+        height: 20px;
+        border: none;
+        width: 66%; }
+    .main_con form .login_register {
+      height: 40px;
+      width: 255px;
+      margin: 25px auto; }
+      .main_con form .login_register .login, .main_con form .login_register .register {
+        display: inline-block;
+        background: #093;
+        color: white;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        width: 100px;
+        padding: 0;
+        margin-right: 20%; }
+      .main_con form .login_register .register {
+        display: inline-block;
+        margin-right: 0; }

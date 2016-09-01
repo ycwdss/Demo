@@ -1,0 +1,163 @@
+.xgt_nav {
+  display: inline-block;
+  margin: 7px auto;
+  height: 27px;
+  line-height: 27px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.xgt_nav li {
+  float: left;
+  position: relative; }
+
+.xgt_nav li a {
+  display: inline-block;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px; }
+
+.xgt_nav li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 98%;
+  z-index: 1;
+  border-bottom: 0 !important;
+  background-color: #fff; }
+
+.xgt_nav li.current a {
+  color: #093;
+  background-color: #fff; }
+
+.xgt_nav li.last_li:before {
+  display: none; }
+
+.moudle_top h1 {
+  font-size: 18px;
+  color: #fff;
+  vertical-align: -19px; }
+
+html, body {
+  height: 100%;
+  overflow: hidden; }
+
+.xgt_content_box {
+  height: 100%;
+  background-color: #000;
+  position: relative;
+  padding-bottom: 97px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.swiper_img {
+  display: block;
+  padding-top: 40px; }
+
+.swiper_img > img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.swiper_text {
+  width: 90%;
+  margin: 30px auto;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #e4e4e4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-box-orient: vertical;
+  text-indent: 2em; }
+
+.swiper_text p {
+  padding: 10px 0;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-box-orient: vertical; }
+
+.swiper-container {
+  height: 100%; }
+
+.swiper-slide {
+  height: 100%;
+  overflow-y: scroll; }
+
+.swiper_page {
+  position: absolute;
+  top: 16%;
+  right: 0;
+  z-index: 99;
+  width: 58px;
+  height: 18px;
+  line-height: 100%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.swiper_page i {
+  display: inline-block;
+  vertical-align: -3px; }
+
+.icon_more_content {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.icon_more_content > ul {
+  position: relative;
+  top: 45px;
+  float: right;
+  width: 40%;
+  height: auto;
+  background-color: #f8f8f8; }
+
+.icon_more_content ul li {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 100%; }
+
+.icon_more_content ul li a {
+  color: #888;
+  font-size: 14px;
+  position: relative; }
+
+.icon_more_content ul li a:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: -25px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 12px;
+  background: url(../../xiaoguotu/Images/mobile/xgt_icon_more.png) no-repeat;
+  background-size: 100%; }
+
+.icon_more_content ul li.line {
+  width: 90%;
+  margin: 10px auto;
+  height: 1px;
+  background-color: #888; }
+
+.icon_more_content ul li.icon_share a:before {
+  margin-top: -8px;
+  background-position: 0 -15px;
+  height: 15px; }
+
+.icon_more_content ul li.icon_download a:before {
+  margin-top: -8px;
+  background-position: 0 -30px;
+  height: 15px; }

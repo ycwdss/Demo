@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+@import "../model/site_nav";
+@import "../model/usercenter";
+@import "../model/recommend_shps";
+//========商品评价=========
+.mr {
+  width: 940px;
+  overflow: hidden;
+  .title {
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid #dedede;
+    h1 {
+      font-size: 24px;
+    }
+    ul {
+      li {
+        float: left;
+        a {
+          display: block;
+          color: #888;
+          font-size: 14px;
+          padding: 0 13px;
+        }
+      }
+      .current {
+        a {
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+  }
+}
+//========买到的商品=======
+.shopings {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  .p_img{
+    a{
+      img{
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+    }
+  }
+  .p_name{
+    padding-left: 120px;
+    padding-top: 10px;
+    h1{
+      font-size: 24px;
+    }
+    p{
+      em{
+        color:#ca151e;
+      }
+    }
+  }
+}
+//==========商品评价=========
+.evaluate {
+  margin-top: 20px;
+  .info_list {
+    font-size: 14px;
+    margin-bottom: 25px;
+    label {
+      width: 100px;
+      display: inline-block;
+      text-align: right;
+      vertical-align: 5px;
+      float: left;
+      em {
+        margin-right: 5px;
+        color: #ca141c;
+      }
+    }
+    .score{
+      vertical-align: 5px;
+      font-size: 14px;
+    }
+    .star {
+      display: inline-block;
+      li {
+        float: left;
+        width: 22px;
+        height: 22px;
+        background: url("../../usercenter/Images/test_star.png") no-repeat;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+      .current{
+        background: url("../../usercenter/Images/test_star_gray.png") no-repeat;
+      }
+    }
+    .tag_wrap{
+      padding-left: 120px;
+      .tag{
+
+        li{
+          position: relative;
+          float: left;
+          margin: 0 10px 10px 0;
+          a{
+            display: block;
+            width: 148px;
+            height: 37px;
+            line-height: 37px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #dedede;
+            &:hover{
+              color: #333;
+              border-color: #ca151e;
+            }
+          }
+          i{
+            position: absolute;
+            right: 1px;
+            bottom: 1px;
+            width: 10px;
+            height: 10px;
+            display: none;
+            background: url("../../usercenter/Images/sprite_pingjia.png") no-repeat;
+          }
+        }
+        .current{
+          a{
+            color: #ca151e;
+            border-color: #ca151e;
+          }
+          i{
+            display: block;
+          }
+        }
+        .diy{
+          .diy_edit{
+            width: 198px;
+            height: 37px;
+            border: 1px solid #dedede;
+            position: relative;
+            input{
+              margin: 8px 12px;
+              border-right: 1px solid #dedede;
+              line-height: 21px;
+              height: 21px;
+              &:focus{
+               .diy_edit{
+                 border-color: #36c;
+               }
+              }
+            }
+            em{
+              position: absolute;
+              right: 0;
+              top: 0;
+              display: inline-block;
+              width: 32px;
+              height: 39px;
+              line-height: 39px;
+              vertical-align: middle;
+              cursor: pointer;
+              .check{
+                position: static;
+                margin-left: 7px;
+                display: inline-block;
+                width:20px;
+                height: 14px;
+                background: url("../../usercenter/Images/sprite_diy.png") no-repeat;
+              }
+            }
+
+          }
+        }
+
+      }
+
+      .diy_edit{
+        display: none;
+      }
+    }
+
+    .on_address {
+      margin-left: 5px;
+    }
+    textarea {
+      height: 174px;
+      width: 764px;
+      border: 1px solid #dedede;
+      padding: 8px 12px;
+      line-height: 21px;
+      font-size: 14px;
+      &:focus{
+        border-color: #666;
+        outline: none;
+      }
+    }
+    .chars_remain{
+      margin: 0 auto;
+      width: 840px;
+      text-align: right;
+      font-size: 12px;
+      color: #888;
+    }
+  }
+  .tag_tips{
+    display: none;
+    i{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url("../../usercenter/Images/sprite_tag_tips.png") no-repeat;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+  .tip_three{
+    font-size: 14px;
+    i{
+      vertical-align: -3px;
+      margin: 0 10px;
+
+    }
+  }
+  //立即评价---
+  .submit {
+    padding: 5px 0 30px 105px;
+    a {
+      display: inline-block;
+      min-width: 78px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      padding: 0 20px;
+      background-color: #BB7711;
+      font-size: 14px;
+      color: #fff;
+      &:hover {
+        background-color: #9A5C00;
+      }
+    }
+  }
+}

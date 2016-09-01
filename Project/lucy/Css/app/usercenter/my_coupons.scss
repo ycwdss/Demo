@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "../../lib/_mixin";
+@import "../../module/routenav";
+@import "../../module/usercenter";
+@import "../../module/page";
+@import "../../module/nohave";
+@import "../../module/totop";
+.m_coupon{
+  min-height: 725px;
+}
+.coupon_nav{
+  padding: 20px 0 10px;
+  margin:0 20px;
+  li{
+    float: left;
+    font-size: 16px;
+    padding:0 20px;
+    height: 15px;
+    line-height: 12px;
+    border-right:1px solid #e4e4e4;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+.coupon_price,.coupon_status{
+  width: 100px;
+}
+.coupon_code{
+  width:240px;
+}
+.coupon_name,.coupon_time{
+  width: 180px;
+}
+
+.c_coupon{
+  height: 70px;
+  font-size: 14px;
+  color: #666;
+  >div{
+    float: left;
+    display: table;
+    height:100%;
+    >span{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+  .coupon_price{
+    font-size: 24px;
+    text-indent: 16px;
+    i{
+      font-size: 14px;
+    }
+  }
+}
+.coupon_status{
+  .btn{
+    width:100px;
+    border: 0;
+    line-height: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+}
+
+.lose_efficacy{
+  border: 1px solid transparent!important;
+  color: #999;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @include transition();
+  &:hover{
+    color: #fff;
+    background-color: #e4e4e4;
+  }
+}
+
+///没优惠券

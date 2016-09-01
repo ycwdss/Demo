@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/recommend";
+
+//导航
+.l_nav{
+  background: #FFFFFF;
+  -webkit-box-shadow:none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-bottom:1px solid transparent;
+}
+.m_nav > ul > li a{
+  color: #333!important;
+}
+.all_sort{
+  &:before{
+    background: none;
+  }
+}
+.m_sort{
+  &:before{
+    background: none;
+  }
+}
+.right_content{
+ width: 1015px;
+  background-color: #fff;
+}
+.left_nav {
+  width: 165px;
+  background-color: #fff;
+
+  h1 {
+    margin: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e4e4e4;
+    @include box-sizing();
+    a {
+      color: #333;
+      font-size: 16px;
+      height: 24px;
+      line-height: 24px;
+      display: inline-block;
+      padding-left: 34px;
+      position: relative;
+      i {
+        position: absolute;
+        left: 0;
+        top:0;
+        font-size: 24px;
+        color: #9f9f9f;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+      }
+    }
+  }
+  ul {
+    margin: 0 25px;
+    padding-bottom: 50px;
+    li {
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #e4e4e4;
+      @include box-sizing();
+      i {
+        position: absolute;
+        top:0;
+        left: 0;
+        color: #9f9f9f;
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      a {
+        position: relative;
+        padding-left:35px;
+        height: 20px;
+        line-height: 20px;
+        color: #333;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+//右侧
+.right_content{
+  min-height: 550px;
+}
+.content_wrap{
+  padding:0 20px ;
+  min-height: 550px;
+}
+.content_title{
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 16px;
+}
+
+//猜你喜欢
+.youlike{
+  margin-top:30px;
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+}
+.youlike .title{
+  padding: 25px 20px;
+  border-top: 1px solid transparent;
+  color: #666;
+  .iconfont{
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+.youlike_wrap{
+  width: 1080px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}

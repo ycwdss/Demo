@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import "../../module/usercenter";
+@import "../../module/routenav";
+
+.msg_tab{
+  li{
+    float: left;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:-1px;
+    border-top: 1px solid transparent;
+   a{
+     display: inline-block;
+     width: inherit;
+     height: 20px;
+     line-height: 20px;
+     text-align: center;
+     font-size: 16px;
+     color: #999;
+     border-right: 1px solid #e4e4e4;
+   }
+  }
+
+}
+
+//--------消息列表-------
+
+.msg_wrap{
+  margin-top:40px;
+  .msg_list{
+    margin-bottom: 38px;
+  }
+}
+.msg_date{
+  line-height: 24px;
+  span{
+    padding: 0 10px;
+    font-size: 16px;
+  }
+}
+.msg_info{
+  padding: 10px 20px;
+  background-color: #F8F8F8;
+
+}
+.msg_info_title{
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0 10px 15px;
+  border-bottom: 1px dashed #999;
+  position: relative;
+  i{
+    font-size: 14px;
+    position: absolute;
+    top:20px;
+    right: 0;
+    cursor: pointer;
+  }
+}
+.msg_info_article{
+  padding: 10px 0;
+  width: 730px;
+  margin: 0 auto;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.msg_info_use{
+  font-size: 16px;
+  padding-right: 10px;
+  text-align: right;
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+//没有消息
+.msg_no{
+  padding-top:190px;
+  p{
+    text-align: center;
+    i{
+      font-size: 55px;
+      color: #e4e4e4;
+    }
+    span{
+      font-size: 16px;
+      display:block;
+      padding-top: 30px;
+    }
+  }
+}

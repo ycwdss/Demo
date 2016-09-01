@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>凤凰筑巢—商品列表</title>
+    <link rel="stylesheet" href="../Css/mall/mall_style.css"/>
+    <link rel="stylesheet" href="../Css/mall/mall_list.css"/>
+</head>
+<body>
+<!--网站顶部 begin-->
+<div class="module_top">
+    <div class="conWidth clearfix">
+        <a class="goback_index fl" href="../zhuchao/index.html"><span class="top_logo"></span>返回筑巢首页</a>
+        <p class="fl welcome">你好，欢迎来凤凰筑巢</p>
+        <ul class="fr module_topright">
+            <li id="username" class="head1">
+                <a href="../register_login/login.html" target="_blank" class="link_user">超级玛丽</a>
+                <a href="../register_login/register.html" class="link_quit">退出</a>
+            </li>
+            <li class="line"></li>
+            <li class="head2 pull_down" id="mt_personal">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="../usercenter/usercenter_index.html">我的凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <div class="user_head_top clearfix">
+                        <a href="../usercenter/usercenter_index.html" class="fl user_head_top_img"><img src="Images/test_user_head.png" alt=""/></a>
+                        <div class="fl">
+                            <h3><a href="../usercenter/usercenter_index.html">超级玛丽</a></h3>
+                            <a href="../usercenter/usercenter_index.html">等级：<i>v3</i></a>
+                            <a href="../usercenter/usercenter_index.html">积分：<i>200</i></a>
+                        </div>
+                    </div>
+                    <div class="user_message">
+                        <h3><a href="../usercenter/usercenter_allmessages.html">消息<i>3</i></a></h3>
+                        <div class="clearfix">
+                            <a href="../usercenter/usercenter_evaluation.html"><span>待评价：</span><i>10</i></a>
+
+                            <a href="../usercenter/usercenter_inforchange.html"><span>正在退货：</span><i>0</i></a>
+
+                            <a href="../usercenter/usercenter_index.html"><span>待收货：</span><i>0</i></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head3">
+                <a href="" class="link_buy">购物车<i>3</i>件</a>
+            </li>
+            <li class="line"></li>
+            <li class="head4 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">收藏夹</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href="../usercenter/usercenter_prostore.html"><span>收藏的商品:</span><i>10</i></a>
+
+                    <a href="../usercenter/usercenter_storecollect.html"><span>收藏的店铺：</span><i>0</i></a>
+
+                    <a href="../usercenter/usercenter_imgstore.html"><span>收藏的图片：</span><i>0</i></a>
+                    <a href="../usercenter/usercenter_articlestore.html"><span>收藏的文章：</span><i>0</i></a>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head5 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">手机凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href=""><img src="../Images/icon_erweima.png" alt=""/><i>扫码下载凤凰筑巢客户端</i></a>
+                </div>
+            </li>
+            <li class="line"></li>
+            <li class="head6 pull_down">
+                <div class="link_text link_item">
+                    <i class="link_arrow"></i>
+                    <a target="_blank" href="">关注凤凰筑巢</a>
+                </div>
+                <div class="pull_down_content">
+                    <a href=""><img src="../Images/icon_erweima.png" alt=""/><i>关注凤凰筑巢</i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--网站顶部 end-->
+<!--网站头部 begin-->
+<div class="mall_header clearfix conWidth ">
+    <h1 class="mall_logo fl">
+        <img src="Images/sprite_mall_logo.png" alt="凤凰筑巢LOGO"/>
+        <span>筑巢商城</span>
+    </h1>
+
+    <div class="mall_header_right fr clearfix">
+        <div class="m_searchWrap">
+            <div class="c_searchItem boxSizing" id="searchItem">
+                <div id="searchItems">
+                    <i class="c_searchArrow"></i>
+                    <span id="currentItem">建材</span>
+                    <span class="c_notCurrent">攻略</span>
+                </div>
+            </div>
+            <div class="c_searchInput boxSizin">
+                <input id="search" class="search_input" placeholder="最精确的家装指南">
+            </div>
+
+            <div class="c_search_button" id="searchClick"><span>搜&nbsp;&nbsp;索</span></div>
+            <div id="searchSuggest">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--网站头部 end-->
+<!--商城导航 begin-->
+<div class="mall_nav">
+    <div class="mall_navinner conWidth">
+        <div class="allclass fl">
+            <h3><a href=""><i></i>全部商品分类</a></h3>
+
+            <div class="mall_list_nav_box">
+                <ul id="list_nav" class="list_nav">
+                    <li class="list1">
+                        <a href="mall_list.html"><i></i><span>灯饰照明</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>灯饰照明</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/jingqiandeng.html">镜前灯</a>
+                                        <a href="/productclassify/xidingdeng.html">吸顶灯</a>
+                                        <a href="/productclassify/luodideng.html">落地灯</a>
+                                        <a href="/productclassify/diaodeng.html">吊灯</a>
+                                        <a href="/productclassify/xiaoyedeng.html">小夜灯</a>
+                                        <a href="/productclassify/yingjideng.html">应急灯</a>
+                                        <a href="/productclassify/huwaideng.html">户外灯</a>
+                                        <a href="/productclassify/leddeng.html">LED灯</a>
+                                    </li>
+                                    <li>
+                                        <a href="/productclassify/bideng.html">壁灯</a>
+                                        <a href="/productclassify/taideng.html">台灯</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a href="">推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list2">
+                        <a href="mall_list.html"><i></i><span>厨房卫浴</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>厨房卫浴</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/chugui.html">橱柜</a>
+                                        <a href="/productclassify/matong.html">马桶</a>
+                                        <a href="/productclassify/longtou.html">龙头</a>
+                                        <a href="/productclassify/yushigui.html">浴室柜</a>
+                                        <a href="/productclassify/yugang.html">浴缸</a>
+                                        <a href="/productclassify/linyufang.html">淋浴房</a>
+                                        <a href="/productclassify/dilou.html">地漏</a>
+                                        <a href="/productclassify/shuicao.html">水槽</a>
+                                    </li>
+                                    <li>
+                                        <a href="/productclassify/jiaofa.html">角阀</a>
+                                        <a href="/productclassify/huasa.html">花洒</a>
+                                        <a href="/productclassify/zhiwujia.html">置物架</a>
+                                        <a href="/productclassify/tuobachi.html">拖把池</a>
+                                        <a href="/productclassify/dunbianqi.html">蹲便器</a>
+                                        <a href="/productclassify/xishoupen.html">洗手盆</a>
+                                        <a href="/productclassify/xiaobianqi.html">小便器</a>
+                                        <a href="/productclassify/peijian.html">配件</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a href="">推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list3">
+                        <a href="mall_list.html"><i></i><span>墙地面材料</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>墙地面材料</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/qiangzhi.html">墙纸</a>
+                                        <a href="/productclassify/guizaoni.html">硅藻泥</a>
+                                        <a href="/productclassify/cizhuan.html">瓷砖</a>
+                                        <a href="/productclassify/diban.html">地板</a>
+                                        <a href="/productclassify/tuliao.html">涂料</a>
+                                        <a href="/productclassify/nizifen.html">腻子粉</a>
+                                        <a href="/productclassify/jinbo.html">金箔</a>
+                                        <a href="/productclassify/geyinmian.html">隔音棉</a>
+                                    </li>
+                                    <li>
+                                        <a href="/productclassify/guancai.html">管材</a>
+                                        <a href="/productclassify/youqi.html">油漆</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a href="">推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list4">
+                        <a href="mall_list.html"><i></i><span>装饰材料</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>装饰材料</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/men.html">门</a>
+                                        <a href="/productclassify/diaoding.html">吊顶</a>
+                                        <a href="/productclassify/nuanqipian.html">暖气片</a>
+                                        <a href="/productclassify/louti.html">楼梯</a>
+                                        <a href="/productclassify/gangcai.html">钢材</a>
+                                        <a href="/productclassify/bancai.html">板材</a>
+                                        <a href="/productclassify/chuangbilu.html">窗壁炉</a>
+                                        <a href="/productclassify/bigui.html">壁柜</a>
+                                    </li>
+                                    <li>
+                                        <a href="/productclassify/menchuangpeijian.html">门窗配件</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a href="">推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list5">
+                        <a href="mall_list.html"><i></i><span>窗帘布艺</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>窗帘布艺</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/chuanglian.html">窗帘</a>
+                                        <a href="/productclassify/zhulian.html">珠帘</a>
+                                        <a href="/productclassify/shachuang.html">纱窗</a>
+                                        <a href="/productclassify/juanlian.html">卷帘</a>
+                                        <a href="/productclassify/menlian.html">门帘</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a href="">推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list6">
+                        <a href="mall_list.html"><i></i><span>家具</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>卧室</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/chuang.html">床</a>
+                                        <a href="/productclassify/yigui.html">衣柜</a>
+                                        <a href="/productclassify/chuangdian.html">床垫</a>
+                                        <a href="/productclassify/shuzhuangtai.html">梳妆台</a>
+                                        <a href="/productclassify/chuangtougui.html">床头柜</a>
+                                        <a href="/productclassify/shuzhuangdeng.html">梳妆凳</a>
+                                        <a href="/productclassify/chuanyijing.html">穿衣镜</a>
+                                        <a href="/productclassify/yimaojia.html">衣帽架</a>
+                                    </li>
+                                    <li>
+                                        <a href="/productclassify/xiejia.html">鞋架</a>
+                                        <a href="/productclassify/dougui.html">斗柜</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fl list_title">
+                                <h4><a>客厅</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/shafa.html">沙发</a>
+                                        <a href="/productclassify/tatami.html">榻榻米</a>
+                                        <a href="/productclassify/xiegui.html">鞋柜</a>
+                                        <a href="/productclassify/dianshigui.html">电视柜</a>
+                                        <a href="/productclassify/pingfeng.html">屏风</a>
+                                        <a href="/productclassify/yizi.html">椅子</a>
+                                        <a href="/productclassify/chaji.html">茶几</a>
+                                        <a href="/productclassify/zhuangshigui.html">装饰柜</a>
+                                    </li>
+                                    <li>
+                                        <a href="/productclassify/dianshijia.html">电视架</a>
+                                        <a href="/productclassify/zuhegui.html">组合柜</a>
+                                        <a href="/productclassify/digui.html">地柜</a>
+                                        <a href="/productclassify/shitinggui.html">视听柜</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fl list_title">
+                                <h4><a>餐厅</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/canzhuo.html">餐桌</a>
+                                        <a href="/productclassify/batai.html">吧台</a>
+                                        <a href="/productclassify/bataiyi.html">吧台椅</a>
+                                        <a href="/productclassify/kafeizhuo.html">咖啡桌</a>
+                                        <a href="/productclassify/ertongyi.html">儿童椅</a>
+                                        <a href="/productclassify/canyi.html">餐椅</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fl list_title">
+                                <h4><a>书房</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/diannaozhuo.html">电脑桌</a>
+                                        <a href="/productclassify/shujia.html">书架</a>
+                                        <a href="/productclassify/shuzhuo.html">书桌</a>
+                                        <a href="/productclassify/shounahe.html">收纳盒</a>
+                                        <a href="/productclassify/zhuanyi.html">转椅</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fl list_title">
+                                <h4><a>户外/阳台</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/liangyijia.html">晾衣架</a>
+                                        <a href="/productclassify/zhediezhuo.html">折叠桌</a>
+                                        <a href="/productclassify/diaolan.html">吊篮</a>
+                                        <a href="/productclassify/yaoyi.html">摇椅</a>
+                                        <a href="/productclassify/diaochuang.html">吊床</a>
+                                        <a href="/productclassify/qiuqian.html">秋千</a>
+                                        <a href="/productclassify/tengyi.html">藤椅</a>
+                                        <a href="/productclassify/xiuxianyi.html">休闲椅</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a href="">推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list7">
+                        <a href="mall_list.html"><i></i><span>定制家具</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>定制家具</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/zhengtiyigui.html">整体衣柜</a>
+                                        <a href="/productclassify/dingzhichugui.html">橱柜</a>
+                                        <a href="/productclassify/dingzhimen.html">门</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a href="">推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list8">
+                        <a href="mall_list.html"><i></i><span>五金工具</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>五金工具</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/diandongji.html">电动机</a>
+                                        <a href="/productclassify/banshou.html">扳手</a>
+                                        <a href="/productclassify/shoudianzuan.html">手电钻</a>
+                                        <a href="/productclassify/jupian.html">锯片</a>
+                                        <a href="/productclassify/suoju.html">锁具</a>
+                                        <a href="/productclassify/qilianggongju.html">测量工具</a>
+                                        <a href="/productclassify/qizhonggongju.html">起重工具</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a>推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list9">
+                        <a href="mall_list.html"><i></i><span>电工电料</span><em></em></a>
+                        <span></span>
+                        <div class="list_subnav clearfix hide">
+                            <div class="fl list_title">
+                                <h4><a>电工电料</a></h4>
+                                <ul>
+                                    <li>
+                                        <a href="/productclassify/bianyaqi.html">变压器</a>
+                                        <a href="/productclassify/jidianqi.html">继电器</a>
+                                        <a href="/productclassify/chuanganqi.html">传感器</a>
+                                        <a href="/productclassify/kaiguan.html">开关</a>
+                                        <a  href="/productclassify/duanluqi.html">断路器</a>
+                                        <a href="/productclassify/dianxiandianlan.html">电线电缆</a>
+                                        <a href="/productclassify/chazuo.html">插座</a>
+                                        <a href="/productclassify/peidianxiang.html">配电箱</a>
+                                    </li>
+                                    <li>
+                                        <a href="/productclassify/dianyuanzhuanhuanqi.html">电源转换器</a>
+                                        <a href="/productclassify/chatou.html">插头</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fr nav_hot_shop">
+                                <h4><a>推荐店铺</a></h4>
+                                <a href=""><img src="../Images/test_hot_list1.jpg" alt=""/></a>
+                                <a href=""><img src="../Images/test_kbb_gongzhang_img1.png" alt=""/></a>
+                                <a href=""><img src="../Images/strategyDetail_UserImg.png" alt=""/></a>
+                                <a href=""><img src="../Images/sprite_xgt_zhengzhuang1.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--导航-->
+        <ul class="class_nav fl clearfix">
+            <li><a href="jingxuan_list.html">精选专题</a></li>
+            <li><a href="shopstreet_index.html">品牌街</a></li>
+            <li><a href="../zhuchao/index.html">凤凰筑巢</a></li>
+        </ul>
+    </div>
+</div>
+<!--商城导航 end-->
+<div class="lis_bg">
+    <div class="l_list conWidth">
+        <div class="list">
+            <div class="choose conWidth clearfix">
+                <!-- 网站路径导航开始 -->
+                <span class="choose_title">已选条件:</span>
+                <a class="lis_clicked" href=""><span>灯饰照明</span><span class="lis_cancel"></span> </a>
+                <a class="lis_clicked" href=""><span>灯饰照明</span><span class="lis_cancel"></span> </a>
+                <!-- 网站路径导航结束 -->
+            </div>
+            <div class="m_list m_brand clearfix">
+                <div class="lis_title fl">品牌</div>
+                <ul class="fl lis_choice brand">
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                    <li><a href=""><img src="Images/test_malllist_brand.jpg"><span>熙源灯饰</span></a></li>
+                </ul>
+                <div class="lis_arrow noselect clearfix">
+                    <div class="lis_arrow_border fr"><span class="lis_arrow_com lis_arrow_img1"></span></div>
+                    <span class="lis_arrow_text">更多</span>
+                </div>
+            </div>
+            <div class="m_list m_price clearfix">
+                <span class="lis_title  fl">价格</span>
+                <ul class="fl lis_choice">
+                    <li class="total chosen">全部</li>
+                    <li>0-200</li>
+                    <li>201-400</li>
+                    <li>401-600</li>
+                    <li>601-800</li>
+                    <li>801-1000</li>
+                    <li>1001-2000</li>
+                    <li>2001-4000</li>
+                    <li>4001-8000</li>
+                    <li>8000以上</li>
+                </ul>
+                <div class="price fl">
+                    <form>
+                        <input type="text"><span>-</span><input type="text"><input class="submit" type="submit" value="确定">
+                    </form>
+                </div>
+            </div>
+            <div class="m_list  clearfix">
+                <span class="lis_title fl">类别</span>
+                <ul class="fl lis_choice">
+                    <li class="total chosen">全部</li>
+                    <li>台灯</li>
+                    <li>节能灯</li>
+                    <li>装饰灯</li>
+                    <li>落地灯</li>
+                    <li>应急灯/手电</li>
+                    <li>LED灯</li>
+                    <li>吸顶灯</li>
+                    <li>筒灯射灯</li>
+                    <li>吊灯</li>
+                    <li>氛围照明</li>
+                    <li>台灯</li>
+                    <li>节能灯</li>
+                    <li>装饰灯</li>
+                    <li>落地灯</li>
+                    <li>应急灯/手电</li>
+                    <li>LED灯</li>
+                    <li>吸顶灯</li>
+                    <li>筒灯射灯</li>
+                    <li>吊灯</li>
+                    <li>氛围照明</li>
+                    <li>台灯</li>
+                    <li>节能灯</li>
+                    <li>装饰灯</li>
+                    <li>落地灯</li>
+                    <li>应急灯/手电</li>
+                    <li>LED灯</li>
+                    <li>吸顶灯</li>
+                    <li>筒灯射灯</li>
+                    <li>吊灯</li>
+                    <li>氛围照明</li>
+                </ul>
+                <div class="lis_arrow noselect clearfix">
+                    <div class="lis_arrow_border fr"><span class="lis_arrow_com lis_arrow_img1"></span></div>
+                    <span class="lis_arrow_text">更多</span>
+                </div>
+            </div>
+            <div class="m_list  clearfix">
+                <span class="lis_title fl">颜色</span>
+                <ul class="fl lis_choice">
+                    <li class="total chosen">全部</li>
+                    <li>白色</li>
+                    <li>红色</li>
+                    <li>绿色</li>
+                    <li>蓝色</li>
+                    <li>黄色</li>
+                    <li>橙色</li>
+                    <li>紫色</li>
+                    <li>粉色</li>
+                </ul>
+            </div>
+            <div class="m_list  clearfix">
+                <span class="lis_title fl">颜色</span>
+                <ul class="fl lis_choice">
+                    <li class="total chosen">全部</li>
+                    <li>白色</li>
+                    <li>红色</li>
+                    <li>绿色</li>
+                    <li>蓝色</li>
+                    <li>黄色</li>
+                    <li>橙色</li>
+                    <li>紫色</li>
+                    <li>粉色</li>
+                </ul>
+            </div>
+        </div>
+        <div class="shouqi clearfix">
+            <span class="shouqi_text noselect">更多选项</span>
+            <span class="shouqi_img_com shouqi_img"></span>
+        </div>
+    </div>
+
+    <!--推荐 begin-->
+    <div class="choose_list clearfix con_width">
+        <ul class="choose_list_items fl clearfix">
+            <li class="no_paddingL current noselect"><a href="">官方推荐<span></span></a></li>
+            <li class="noselect"><a href="">访问量<span></span></a></li>
+            <li class="noselect"><a href="">新品<span></span></a></li>
+            <li class="noselect"><a href="">价格<i class="icon_sj_up"></i><i class="icon_sj_down"></i></a></li>
+            <li class="no_borderR noselect"><a href="">好评指数<span></span></a></li>
+        </ul>
+        <div class="sum_pro fr">
+            <span class="noselect">1/99</span>
+            <i class="noselect">&lt;</i>
+            <i class="noselect">&gt;</i>
+        </div>
+    </div>
+    <!--推荐 end-->
+
+    <!--产品列表 begin-->
+    <ul class="mall_module_list clearfix con_width">
+        <li>
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+        <li>
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+        <li>
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+        <li>
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+        <li class="no_marginR">
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+        <li>
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+        <li>
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+        <li>
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+        <li>
+            <div class="mall_list_img">
+                <a href="procontent.html">
+                    <img src="Images/test_mall_img1.png" alt=""/>
+                </a>
+            </div>
+            <h4><a href="procontent.html">凯撒豪庭</a></h4>
+
+            <p><a href="procontent.html">水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具 508 Y欧式水晶客厅吊灯 田园卧室地中海铁艺复古餐厅美式吊灯具
+            </a></p>
+            <em><i>¥</i>3899.00</em>
+        </li>
+    </ul>
+    <!--产品列表 end-->
+
+    <!--分页布局-->
+    <div class="page">
+        <a page="1">首页</a>
+        <a href="/category/9/page/1.html">&lt; 上一页</a>
+        <a class="current" href="/category/9/page/1.html">1</a>
+        <a class="" href="/category/9/page/3.html">3</a>
+        <a class="" href="/category/9/page/4.html">4</a>
+        <a class="" href="/category/9/page/5.html">5</a>
+        <a class="" href="/category/9/page/6.html">6</a>
+        <a href="/category/9/page/2.html">下一页 &gt;</a>
+        <a page="1">尾页</a>
+    </div>
+
+</div>
+<!--网站底部  begin-->
+<div class="l_footer">
+    <div class="m_footerInner conWidth">
+        <p class="footer_nav"><a>关于我们</a> ｜ <a>联系我们</a> ｜ <a>商家入驻</a> ｜ <a>诚聘英才</a> ｜<a>免责声明</a> ｜ <a>精选专题 </a></p>
+
+        <p class="c_copy">&copy;2014-2015凤凰筑巢保留所有权利<br/>
+            Copyright &copy; 2014- 2015 Cntysoft.All Rights. 豫ICP备14029737号
+        </p>
+
+        <div class="icon_erweima">
+            <img src="Images/icon_erweima.png" alt="二维码"/>
+        </div>
+    </div>
+</div>
+<!--网站底部  end-->
+<script data-main="../pc/requireenter" app="mall_list" id="require" src="../pc/lib/require.js"></script>
+</body>
+</html>

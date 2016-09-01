@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../../lib/module/module_title";
+@import "../../lib/module/adarea";
+@import "../../lib/module/nav";
+@import "../../lib/module/productcard";
+.module_ad3{
+  .module_ad_list{
+    margin-top: 0!important;
+  }
+}
+.card_box{
+  width: 100%;
+  overflow: hidden;
+}

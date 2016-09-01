@@ -1,0 +1,140 @@
+@charset "UTF-8";
+//顶部状态栏
+.header{
+  position: relative;
+  height:40px;
+  line-height:40px;
+  background-color: #fcfcfc;
+  color: #666;
+  border-bottom: 1px solid #E4E4E4;
+  .header_top_nav{
+    li{
+      float: left;
+      position: relative;
+      >a{
+        display: inline-block;
+        height: 40px;
+        line-height:40px;
+        padding:0 10px;
+        color: #666;
+        i{
+          font-size: 15px;
+          color: #666;
+          vertical-align: -1px;
+          transition: transform .1s ease-in 0s;
+          -webkit-transition: -webkit-transform .1s ease-in 0s;
+        }
+        .icon-gouwuche{
+          font-size: 18px;
+          margin-right: 6px;
+          vertical-align: -1px;
+        }
+        .num_tips{
+          margin-left: 3px;
+        }
+      }
+      //下拉菜单
+      .down_list{
+        display: none;
+        position: absolute;
+        top:41px;
+        left: -1px;
+        z-index:777;
+        padding: 10px;
+        background-color: #fcfcfc;
+        border: 1px solid #E4E4E4;
+        border-top: 0;
+        .user{
+          img{
+            display: block;
+            width: 40px;
+            height: 40px;
+            float: left;
+          }
+        .user_info{
+          height: 40px;
+          a{
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 5px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+          }
+        }
+        }
+        ul li{
+          height: 22px;
+          line-height: 22px;
+          padding: 20px 0 10px;
+          span{
+            font-size: 12px;
+            line-height: 12px;
+            color: #666;
+            vertical-align:6px;
+            padding: 0 3px;
+          }
+        }
+        a{
+          display: inline-block;
+          height: 22px;
+          line-height: 22px;
+          color: #666;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          padding: 0;
+        }
+      }
+      //个人信息
+      .user_list{
+        width: 250px;
+      }
+      //二维码
+      .erweima_list{
+        p{
+          line-height: 14px;
+          padding-top: 10px;
+          font-size: 12px;
+          color: #666;
+          text-align: center;
+        }
+      }
+      &:hover{
+        i{
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+        .down_link{
+          height: 41px;
+          line-height: 41px;
+          background-color: #fff;
+          -webkit-box-shadow: 0 1px 5px rgba(100,100,100,.3);
+          -moz-box-shadow:0 1px 5px rgba(100,100,100,.3);
+          box-shadow: 0 1px 5px rgba(100,100,100,.3);
+        }
+        .down_list{
+          display: block;
+        }
+      }
+    }
+    .line{
+      padding:0;
+      margin-top:15px;
+      width: 1px;
+      height: 10px;
+      background-color: #E4E4E4;
+    }
+  }
+  //二维码
+  .down_list .erweima{
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+}

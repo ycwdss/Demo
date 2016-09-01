@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import "../../Css/mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+html{
+  height: 100%;
+}
+body{
+height: 100%;
+}
+.top_title{
+  font-size: 18px;
+}
+//头部忘记密码
+ .top .forget_pw{
+  font-size: 12px;
+  float: right;
+  line-height: 45px;
+  color: white;
+  text-align: right;
+  width: 25%;
+  margin-right: 3%;
+}
+ //主体内容
+.main_con{
+  margin-top: 10px;
+  height: 100%;
+}
+
+//表单
+.main_con{
+  background: white;
+form{
+  width:80%;
+  margin: 0 auto;
+  div{
+    margin-top: 25px;
+    height:30px;
+    span{
+      font-size: 16px;
+      line-height:30px;
+      color: black;
+    }
+    input{
+      background: #f8f8f8;
+      outline: none;
+      padding:5px 3%;
+      color: black;
+      font-size: 13px;
+      line-height:18px;
+      height: 20px;
+      border: none;
+      width: 66%;
+    }
+  }
+  .login_register{
+    height: 40px;
+    width: 255px;
+    margin: 25px auto;
+    .login{
+      display: inline-block;
+      background: #093;
+      color: white;
+      height: 40px;
+      font-size: 16px;
+      line-height: 40px;
+      text-align: center;
+      width: 100px;
+      padding: 0;
+      margin-right: 20%;
+    }
+    .register{
+      @extend .login;
+      display: inline-block;
+      margin-right: 0;
+    }
+  }
+}
+}

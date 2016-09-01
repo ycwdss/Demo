@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.slider_dots{
+  font-size: 1px;
+  line-height: 1px;
+  height: 15px;
+  text-align: right;
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  z-index: 3334;
+  li{
+    border-radius: 2px;
+    display: inline-block;
+    height: 13px!important;
+    margin-left: 9px;
+    width: 13px;
+    background-color: #3a3c40;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    cursor: pointer;
+    button{
+      font-size: 0;
+    }
+  }
+  .slick-active{
+    background-color: #ca141d;
+    opacity: .9;
+    filter: alpha(opacity=90);
+    button{
+      font-size: 0;
+    }
+  }
+}

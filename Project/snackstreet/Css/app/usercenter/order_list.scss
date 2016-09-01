@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+
+@import "../../module/pagelist";
+@import "../../module/usercenter";
+@import "../../module/order_ele";
+@import "../../module/empty";
+
+.order_hd {
+  background: #FFFFFF;
+  padding:20px 0 15px;
+  margin:0 20px;
+  border-bottom:1px solid #e4e4e4;
+}
+.order_bd_inner{
+  margin-top:0;
+  padding-top:0;
+}
+.order_hd li{
+  width: 150px;
+}
+.order_hd li a:hover{
+  text-decoration: none;
+}
+.empty{
+  >div i{
+    top:5px;
+    left: 10px;
+    font-size: 50px;
+  }
+}

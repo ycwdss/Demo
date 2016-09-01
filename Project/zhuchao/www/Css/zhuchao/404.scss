@@ -1,0 +1,195 @@
+html,body{
+  height: 100%;
+  min-height: 850px;
+}
+.l_bg{
+  width: 100%;
+  min-width: 1300px;
+  height: 100%;
+  background: #009933;
+}
+.l_content{
+  position: relative;
+  width: 1300px;
+  height: 850px;
+  margin: 0 auto;
+  background-image: -webkit-radial-gradient( 400px circle,rgb(80,183,40),rgb(0,153,51));
+  background-image: radial-gradient(400px circle ,rgb(80,183,40),rgb(0,153,51));
+}
+.m_content{
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.c_top{
+  padding: 35px auto 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.com_link{
+  position: relative;
+  font-size: 20px;
+  line-height: 50px;
+  width: 130px;
+  color: #ffffff;
+  /*border: 1px solid #ffffff;*/
+  z-index: 2;
+}
+.com_link:before{
+  position: absolute;
+  z-index: 1;
+  top:0;
+  left:0;
+  content: "";
+  width:100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  opacity: 0.7;
+
+}
+.goback{
+  margin-left: 330px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  width: 130px;
+  color: #ffffff;
+
+}
+.return_index{
+  margin-right: 330px;
+}
+.error{
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 50px;
+}
+.container{
+  position: absolute;
+  top: -5px;
+  left: 565px;
+  width: 183px;
+  z-index: 1;
+  height: 460px;
+  transform-origin:  center top;
+  -ms-transform-origin:center top;
+  -webkit-transform-origin:center top;
+  -moz-transform-origin:center top;
+  -o-transform-origin:center top;;
+}
+.rope{
+  position: absolute;
+  top: 0;
+  left: 75px;
+  width: 20px;
+  height: 275px ;
+  background: url(../../../Images/pc/zhuchao/icon_404icon.png?_nosprite) -83px -306px ;
+}
+.logo{
+  position: absolute;
+  top: 235px;
+  width: 178px;
+  height: 170px;
+  background: url(../../../Images/pc/zhuchao/icon_404icon.png?_nosprite) -266px  -12px;
+
+}
+.img_4{
+  position: absolute;
+  top: 230px;
+  width: 190px;
+  height: 170px;
+  background: url(../../../Images/pc/zhuchao/icon_404icon.png?_nosprite) -250px  -199px;
+}
+.left_4{
+
+  left: 310px;
+}
+.right_4{
+  right: 304px;
+}
+.people{
+  position: absolute;
+  top: 430px;
+  left: 565px;
+  width: 100px;
+  height: 420px;
+  background: url(../../../Images/pc/zhuchao/icon_404icon.png?_nosprite) -250px  -409px;
+}
+.search{
+  position: absolute;
+  top: 500px;
+  left: 410px;
+  height: 50px;
+  width: 481px;
+  /*border: 1px solid #ffffff;*/
+  color: #ffffff;
+}
+.search_input{
+  position: relative;
+  width: 380px;
+  padding: 10px 10px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #ffffff;
+  float: left;
+  /*border-right: 1px solid #ffffff;*/
+  z-index: 3;
+}
+
+/* WebKit browsers */
+::-webkit-input-placeholder {
+  color:#ffffff;
+}
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
+  color:#ffffff;
+  opacity: 1;
+}
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
+  color:#ffffff;
+  opacity: 1;
+}
+/* Internet Explorer 10+ */
+:-ms-input-placeholder {
+  color:#ffffff;
+}
+.hover:before{
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+  content: "";
+  width:100%;
+  height: 100%;
+  background: rgba(255,255,255,0.21);
+  border: 1px solid #ffffff;
+  opacity: 0.7;
+}
+.btn_border{
+  position: relative;
+  padding: 10px 25px;
+  float: right;
+  cursor: pointer;
+  z-index: 2;
+}
+.btn_border:before{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+  content: "";
+  width:100%;
+  height: 100%;
+  border-left: 1px solid #ffffff;
+  opacity: 0.7;
+}
+
+.search_btn{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../../../Images/pc/zhuchao/icon_404icon.png?_nosprite) -81px -647px;
+  z-index: 3;
+}

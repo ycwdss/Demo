@@ -1,0 +1,935 @@
+@charset "UTF-8";
+.header_top {
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.1); }
+
+.cart_top {
+  height: 100px; }
+  .cart_top a {
+    float: left;
+    margin-top: 17px; }
+    .cart_top a img {
+      display: block;
+      height: 66px;
+      max-width: 170px; }
+
+.cart_top_right {
+  float: right;
+  margin-top: 33px;
+  color: #666; }
+  .cart_top_right span {
+    position: relative;
+    float: left;
+    width: 210px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    background: #FFFFFF; }
+  .cart_top_right i {
+    float: right;
+    font-size: 19px;
+    margin-top: 7px; }
+  .cart_top_right em {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid transparent !important;
+    border-top: 17px solid transparent !important;
+    border-left: 17px solid #FFFFFF;
+    z-index: 99; }
+
+.cart_recommend {
+  padding: 30px;
+  background: #FFFFFF;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.pro_show_list li {
+  float: left;
+  margin-right: 10px;
+  width: 250px; }
+  .pro_show_list li .pro_show_img {
+    display: block;
+    width: 100%;
+    height: 250px; }
+    .pro_show_list li .pro_show_img img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+.pro_show_list .pro_show_text_box {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  position: relative; }
+  .pro_show_list .pro_show_text_box h3 {
+    margin: 0 20px;
+    text-align: center; }
+    .pro_show_list .pro_show_text_box h3 a {
+      color: #333;
+      font-size: 18px; }
+  .pro_show_list .pro_show_text_box p {
+    margin: 0 20px;
+    color: #888;
+    font-size: 14px;
+    text-align: center; }
+  .pro_show_list .pro_show_text_box .pro_show_price {
+    position: absolute;
+    z-index: 2;
+    top: -35px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #fff;
+    border: 1px solid #f9e7c2;
+    width: 72px;
+    height: 72px;
+    padding-top: 10px;
+    border-radius: 35px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center; }
+    .pro_show_list .pro_show_text_box .pro_show_price b {
+      font-size: 16px; }
+    .pro_show_list .pro_show_text_box .pro_show_price p {
+      width: 100%;
+      margin: 0; }
+    .pro_show_list .pro_show_text_box .pro_show_price span {
+      display: inline-block;
+      padding: 0 7px; }
+    .pro_show_list .pro_show_text_box .pro_show_price .del {
+      color: #888;
+      font-size: 13px;
+      text-decoration: line-through; }
+
+.drop_menu {
+  float: left;
+  margin-right: 5px;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e4e4e4;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .drop_menu .drop_show {
+    padding-right: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .drop_menu .active {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .drop_menu .drop_arrow, .drop_menu .drop_arrow:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    border: 8px solid transparent;
+    border-top-color: #ccc;
+    webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%; }
+  .drop_menu .drop_arrow:after {
+    margin-top: -10px;
+    right: -8px;
+    border-top-color: #fff; }
+  .drop_menu .drop_list {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    z-index: 9999;
+    width: inherit;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4; }
+    .drop_menu .drop_list li {
+      padding-left: 2px;
+      height: inherit;
+      line-height: inherit;
+      text-align: center;
+      border: 1px solid #e4e4e4;
+      border-bottom: 0;
+      word-break: break-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+
+/*
+<div class="drop_menu ">
+<div class="drop_show">省份</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>河南省</li>
+<li>安徽安徽安徽安徽省</li>
+<li>山东省</li>
+<li>江西省</li>
+<li>广西省</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu ">
+<div class="drop_show">城市</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>郑州市</li>
+<li>开封市</li>
+<li>安阳市</li>
+<li>安阳市</li>
+<li>安阳市</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu">
+<div class="drop_show">地区</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>金水区</li>
+<li>管城区</li>
+<li>二七区</li>
+<li>高新区</li>
+<li>惠济区</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>*/
+.addr_ele {
+  position: relative;
+  float: left;
+  width: 330px;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px 25px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888888;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .addr_ele .icon-duihao1 {
+    position: absolute;
+    bottom: -3px;
+    right: -1px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #aaa; }
+
+.addr_ele .addr_title {
+  line-height: 25px; }
+
+.addr_ele .default_addr {
+  float: left; }
+
+.addr_ele .del_addr {
+  position: relative;
+  float: right;
+  margin-left: 10px;
+  line-height: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.addr_ele .edit_addr {
+  float: right;
+  color: #333;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.addr_ele .addr_container {
+  margin-top: 13px;
+  line-height: 25px; }
+  .addr_ele .addr_container .addr_detail {
+    height: 50px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+
+.new_addr {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; }
+
+.new_addr_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 600px;
+  height: 490px;
+  background: #FFFFFF; }
+  .new_addr_content > h2 {
+    position: relative;
+    font-size: 18px;
+    color: #666;
+    line-height: 50px;
+    border-bottom: 1px solid transparent;
+    text-align: center; }
+    .new_addr_content > h2 i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+
+.new_addr_container {
+  margin: 40px auto 0;
+  width: 430px; }
+
+.new_addr_ele {
+  position: relative; }
+  .new_addr_ele > span {
+    float: left;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right; }
+  .new_addr_ele .addr_input {
+    float: left;
+    font-size: 0; }
+    .new_addr_ele .addr_input > input {
+      width: 350px;
+      height: 40px;
+      padding: 4px 10px;
+      line-height: 20px;
+      font-size: 13px;
+      border: 1px solid #e4e4e4;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .new_addr_ele .addr_input p {
+      line-height: 20px;
+      height: 20px;
+      font-size: 12px;
+      color: red;
+      visibility: hidden; }
+
+.addr_tip {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 180px;
+  line-height: 30px; }
+
+.set_default {
+  height: 20px;
+  padding-left: 90px; }
+  .set_default p {
+    float: left;
+    line-height: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: -10px; }
+    .set_default p span {
+      float: left;
+      margin-top: 3px;
+      margin-right: 5px;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #aaa;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+    .set_default p i {
+      display: none;
+      margin: 3px;
+      width: 6px;
+      height: 6px;
+      background: #aaa;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+  .set_default .addr_checked i {
+    display: block; }
+
+.submit {
+  margin-left: 80px; }
+  .submit span, .submit input {
+    float: left;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 20px;
+    border: 1px solid #e4e4e4;
+    font-family: '\5fae\8f6f\96c5\9ed1';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.select_btn {
+  width: 95px;
+  margin-right: 12px; }
+  .select_btn ul {
+    width: 95px; }
+
+.drop_menu {
+  float: none;
+  display: inline-block;
+  margin-right: 10px;
+  width: 110px !important;
+  height: 40px !important;
+  line-height: 40px !important; }
+  .drop_menu .drop_list li {
+    height: 40px; }
+
+/*
+<div class="new_addr hide">
+<div class="new_addr_content bounceIn">
+<h2 class="main_border">收货地址<i class="icon-cuohao main_bg addr_cancel"></i></h2>
+<div class="new_addr_container">
+<form>
+<div class="new_addr_ele clearfix">
+<span><i class="main">*</i>收货人：</span>
+<div class="addr_input">
+<input type="text">
+<p class="error_tips">收货人不能为空！</p>
+</div>
+
+</div>
+<div class="new_addr_ele clearfix">
+<span><i class="main">*</i>收货地区：</span>
+<div class="addr_input">
+<div class="drop_menu ">
+<div class="drop_show">省份</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>河南省</li>
+<li>安徽安徽安徽安徽省</li>
+<li>山东省</li>
+<li>江西省</li>
+<li>广西省</li>
+<li>广东省</li>
+<li>福建省</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+<li>上海市</li>
+</ul>
+</div>
+<div class="drop_menu  ">
+<div class="drop_show">直辖市</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>郑州安徽安徽市</li>
+<li>湘乡市</li>
+<li>新乡市</li>
+<li>新郑市</li>
+<li>商丘市</li>
+<li>南阳市</li>
+<li>信阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+<li>洛阳市</li>
+</ul>
+</div>
+<div class="drop_menu no_mr  ">
+<div class="drop_show">区/县</div>
+<div class="drop_arrow"></div>
+<ul class="drop_list">
+<li>金水区</li>
+<li>管城区</li>
+<li>惠济区</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+<li>新郑市</li>
+</ul>
+</div>
+<p class="error_tips">请选择收货地区！</p>
+</div>
+
+</div>
+<div class="new_addr_ele clearfix">
+<span><i class="main">*</i>收货地址：</span>
+<div class="addr_input">
+<input type="text">
+<p class="error_tips">请填写收货地址！</p>
+</div>
+</div>
+<div class="new_addr_ele clearfix">
+<span><i class="main">*</i>手&nbsp;&nbsp;机：</span>
+<div class="addr_input">
+<input type="text">
+<p class="error_tips">请输入手机号码！</p>
+</div>
+</div>
+<div class="new_addr_ele clearfix">
+<span><i class="main"></i>邮&nbsp;&nbsp;编：</span>
+<div class="addr_input">
+<input type="text">
+<p class="error_tips"></p>
+</div>
+</div>
+<div class="new_addr_ele set_default clearfix">
+<p><span class="addr_checked"><i></i></span> 设置为默认</p>
+</div>
+<div class="submit clearfix">
+<input class="main main_border" type="submit" value="保存信息">
+<span class="addr_cancel">取消</span>
+</div>
+</form>
+</div>
+</div>
+</div>*/
+.msg_tip {
+  position: absolute;
+  top: 30px;
+  left: -115px;
+  width: 170px;
+  height: 65px;
+  padding: 10px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 30px #eee;
+  -moz-box-shadow: 0px 0px 30px #eee;
+  box-shadow: 0px 0px 30px #eee;
+  z-index: 9999; }
+
+.msg_tip_detail {
+  text-align: center;
+  line-height: 30px;
+  color: #666 !important; }
+
+.del_msg, .cancel_del {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 60px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.cancel_del {
+  float: right;
+  margin: 10px 0 10px 0; }
+
+.msg_tip_arrow {
+  position: absolute;
+  top: -10px;
+  left: 110px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-width: 10px;
+  cursor: pointer;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #fff transparent;
+  border-top: none;
+  -webkit-box-shadow: 0px -10px 30px #eee;
+  -moz-box-shadow: 0px -10px 30px #eee;
+  box-shadow: 0px -10px 30px #eee; }
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3); }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3); }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+.bounceIn {
+  -webkit-animation: bounceIn 0.5s;
+  -o-animation: bounceIn 0.5s;
+  animation: bounceIn 0.5s; }
+
+/*
+<div class="msg_tip hide bounceIn">
+<p class="msg_tip_detail">你确定要删除该信息吗？</p>
+<p class="clearfix">
+<span class="del_msg main_bg">确认</span>
+<span class="cancel_del main_hover">取消</span>
+</p>
+<span class="msg_tip_arrow"></span>
+</div>
+*/
+.l_main {
+  padding: 15px 30px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .l_main > div {
+    border-bottom: 1px solid #e4e4e4; }
+    .l_main > div h3 {
+      font-size: 18px;
+      line-height: 70px; }
+  .l_main .l_pro {
+    border-bottom: 0; }
+
+.l_address > div {
+  padding-bottom: 30px; }
+.l_address .new_addr_btn {
+  float: right;
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .l_address .new_addr_btn i {
+    font-size: 14px;
+    margin-right: 5px; }
+.l_address .addr_ele {
+  margin-right: 25px; }
+
+.l_send_time {
+  position: relative;
+  overflow: hidden; }
+
+.send_time_content {
+  margin-left: 30px;
+  margin-bottom: 30px; }
+  .send_time_content label {
+    float: left;
+    font-size: 14px;
+    margin-right: 80px;
+    color: #666; }
+  .send_time_content input {
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px; }
+
+.l_coupon {
+  position: relative;
+  font-size: 14px; }
+  .l_coupon .m_coupon {
+    margin-bottom: 30px; }
+
+.coupon_intro {
+  width: 110px;
+  color: #666;
+  line-height: 30px;
+  text-align: right; }
+
+.coupon_container {
+  position: relative; }
+  .coupon_container input {
+    padding: 5px 10px;
+    width: 260px;
+    height: 30px;
+    text-align: center;
+    color: #666;
+    line-height: 20px;
+    border: 1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.coupon_list {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: 1px solid #e4e4e4;
+  border-top: none; }
+  .coupon_list li {
+    width: 258px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .coupon_list li:hover {
+      background: #F8F8F8; }
+  .coupon_list span {
+    display: block;
+    height: 50px;
+    text-align: center;
+    color: #666;
+    line-height: 20px;
+    background: #FFFFFF; }
+    .coupon_list span i {
+      margin-top: 15px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+
+.l_invoice .send_time_content {
+  margin-bottom: 10px; }
+
+.invoice_content {
+  font-size: 14px;
+  line-height: 30px;
+  margin: 20px 0 20px 30px; }
+  .invoice_content span {
+    float: left; }
+  .invoice_content input {
+    float: left;
+    width: 260px;
+    height: 30px;
+    padding: 4px 10px;
+    line-height: 28px;
+    border: 1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.l_pro h3 {
+  line-height: 50px !important; }
+
+/*购物车*/
+.cart_box {
+  padding: 0 25px;
+  background-color: #fff; }
+
+.cart_title {
+  margin: 0 25px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  border-bottom: 1px solid #e4e4e4; }
+  .cart_title .fl {
+    height: 30px;
+    line-height: 30px; }
+
+.pro_name {
+  width: 300px; }
+
+.pro_num, .pro_price, .pro_total, .pro_operate {
+  width: 150px;
+  text-align: center; }
+
+.cart_list {
+  margin: 0 25px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e4e4e4; }
+  .cart_list .pro_check {
+    height: 92px;
+    line-height: 92px; }
+  .cart_list .pro_name img {
+    display: block;
+    width: 90px !important;
+    height: 90px !important; }
+  .cart_list .pro_name .describe {
+    margin-left: 10px;
+    padding-top: 20px;
+    width: 200px;
+    font-size: 14px;
+    line-height: 24px; }
+    .cart_list .pro_name .describe a {
+      display: inline-block;
+      width: 200px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: #333; }
+  .cart_list .pro_num p {
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #888; }
+  .cart_list .pro_num .num_box {
+    width: 120px;
+    color: #666;
+    margin: 32px auto 0;
+    border: 1px solid #e4e4e4; }
+    .cart_list .pro_num .num_box a {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .cart_list .pro_num .num_box .min {
+      border-right: 1px solid #e4e4e4; }
+    .cart_list .pro_num .num_box .add {
+      border-left: 1px solid #e4e4e4; }
+    .cart_list .pro_num .num_box input {
+      width: 70px;
+      height: 24px;
+      line-height: 24px;
+      font-size: 18px;
+      color: #333;
+      text-align: center; }
+  .cart_list .pro_price, .cart_list .pro_total {
+    height: 92px;
+    line-height: 92px;
+    font-size: 18px;
+    color: #666; }
+  .cart_list .pro_operate p {
+    margin-top: 38px;
+    line-height: 15px; }
+  .cart_list .pro_operate a {
+    display: inline-block;
+    color: #666; }
+  .cart_list .pro_operate .operate_del {
+    padding-right: 5px;
+    margin-right: 1px;
+    border-right: 1px solid #999; }
+
+.cart_pay {
+  line-height: 40px;
+  background-color: #fff;
+  text-align: right;
+  font-size: 16px;
+  color: #333;
+  text-align: right;
+  padding-bottom: 25px; }
+  .cart_pay a {
+    display: inline-block;
+    width: 130px;
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 20px;
+    line-height: 35px;
+    text-align: center; }
+  .cart_pay span {
+    display: block;
+    padding-right: 40px; }
+  .cart_pay em {
+    display: inline-block;
+    width: 120px;
+    margin-left: 10px;
+    text-align: left; }
+  .cart_pay .pay_total {
+    font-size: 24px; }
+
+.leave_msg {
+  margin: 20px 0 20px 30px;
+  font-size: 14px;
+  line-height: 30px; }
+  .leave_msg span {
+    float: left; }
+  .leave_msg input {
+    float: left;
+    width: 260px;
+    height: 30px;
+    padding: 4px 10px;
+    border: 1px solid #e4e4e4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=submit_order.css.map */

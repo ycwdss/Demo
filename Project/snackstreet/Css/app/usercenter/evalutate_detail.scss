@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/usercenter";
+@import "../../module/order_ele";
+
+.right_content {
+  min-height: 550px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  > h2 {
+    font-size: 18px;
+    line-height: 50px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+
+.list_hd .order_info {
+  text-align: center;
+}
+
+//评论
+.evaluation_detail {
+  > div {
+    padding-top: 30px;
+  }
+}
+
+.evaluation_intro {
+  float: left;
+  font-size: 15px;
+  width: 95px;
+  line-height: 25px;
+  text-align: right;
+  padding-right: 5px;
+  color: #333;
+}
+
+.m_score {
+  > span {
+    float: left;
+    font-size: 15px;
+    line-height: 27px;
+    color: #666;
+  }
+  .evaluation_intro {
+    color: #333;
+  }
+  .iconfont {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  > i {
+    float: left;
+    color: #ccc;
+    margin: 0 5px;
+    font-size: 18px;
+  }
+}
+
+.evaluation_text {
+  position: relative;
+  textarea {
+    width: 800px;
+    height: 300px;
+    padding: 10px 10px 20px;
+    border: 1px solid #e4e4e4;
+    resize: none;
+    outline-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.text_count {
+  position: absolute;
+  bottom: 12px;
+  right: 85px;;
+  color: #888;
+}
+
+.submit_evaluation {
+  margin: 20px 0 20px 95px;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//重写订单列表样式
+
+.order_money, .order_num {
+  width: 180px;
+}
+
+.order_pay {
+  width: 155px;
+  text-align: center;
+}
+
+.order_row {
+  .order_money, .order_num {
+    width: 180px;
+    text-align: center;
+  }
+  .order_pay {
+    width: 155px;
+    text-align: center;
+  }
+  .money_wrap, .num_wrap {
+    width: 180px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,197 @@
+@charset "utf-8";
+/*������Ŀ*/
+.m_searchWrap {
+    margin-left: 100px;
+}
+
+.l_nav {
+    margin-top: 87px;
+    height: 47px;
+    border-bottom: 2px solid #093;
+    background: #f8f8f8;
+}
+
+.m_nav2 > li {
+    position: relative;
+    float: left;
+    width: 270px;
+    padding-top: 14px;
+    box-sizing: border-box;
+}
+
+.m_nav2 > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 33px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+.nav_click {
+    background: #ffffff;
+}
+
+
+/* ��������*/
+.sub_page_con{
+    background: #f8f8f8;
+    padding-bottom: 67px;
+}
+/* Ч��ͼ��ҳ����*/
+.sub_page_title {
+    color: #093;
+    height: 45px;
+    text-indent: 11px;
+    background: #FFFFFF;
+}
+.sub_page_title a{
+    line-height: 46px;
+    height: 46px;
+    color: #000;
+}
+.sub_page_title a:hover{
+    color: #ff6600;
+}
+.special_hd{
+    width: 1200px;
+    margin: 0 auto  12px;
+    height: 36px;
+    border-bottom: 1px solid #009933;
+    position: relative;
+    overflow: visible;
+}
+.special_hd h2{
+    width:500px ;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+    color:#666;
+    background: #f8f8f8;
+    position: absolute;
+    left: 400px;
+    top: 17px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+
+.concept{
+    margin: 0 auto;
+    width:752px ;
+    padding: 20px 30px 70px 20px;
+    margin-top: 35px;
+    background: white;
+}
+.concept i{
+    width: 50px;
+    height: 50px;
+}
+.concept .rec_1{
+    background: url("../../Images/xiaoguotu/sprite_concept1.png") no-repeat;
+    float: left;
+}
+.concept .rec_2{
+    background: url("../../Images/xiaoguotu/sprite_concept2.png") no-repeat;
+    float: right;
+}
+.concept h2{
+    font-size: 24px;
+    height: 27px;
+    padding-top: 23px;
+    color: #666;
+}
+.concept p{
+    width: 576px;
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+    left: 94px;
+    top: 16px;
+}
+
+
+.item{
+    width: 1050px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background: white;
+}
+.item .pic{
+    border: 2px solid #009933;
+    padding: 10px;
+}
+.item_1 .pic{
+    width: 1027px;
+    height: 645px;
+}
+.item_1 .pic img{
+    width: 1027px;
+    height: 646px;
+}
+.item_1 .txt{
+    width: 789px;
+    margin: 0 auto;
+    margin-top: 34px;
+    margin-bottom:26px ;
+    position: relative;
+}
+.item_1 .txt i{
+    width:256px ;
+    height: 5px;
+}
+.item_1 .txt .line_1, .item_2 .txt .line_1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.item_1 .txt .line_2,.item_2 .txt .line_2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.item_1 .txt .line_1{
+    background: url("../../Images/xiaoguotu/sprite_longline1.png")no-repeat;
+}
+.item_1 .txt .line_2{
+    background: url("../../Images/xiaoguotu/sprite_longline2.png")no-repeat;
+}
+.item_2 .txt .line_1{
+    background: url("../../Images/xiaoguotu/sprite_shortline1.png")no-repeat;
+}
+.item_2 .txt .line_2{
+    background: url("../../Images/xiaoguotu/sprite_shortline2.png")no-repeat;
+}
+.item .txt p{
+    font-size: 18px;
+    line-height: 32px;
+    word-break: normal;
+}
+.item_1 .txt p{
+    padding: 32px 100px 44px 111px;
+}
+.item_2 .txt p{
+    padding: 56px 60px 108px 48px;
+}
+.item_2 .pic{
+    width: 645px;
+    height: 406px;
+}
+.item_2 .pic img{
+    width: 645px;
+    height: 406px;
+}
+.item_2 .txt{
+    width: 297px;
+    margin-top:60px;
+    margin-right:30px ;
+    position: relative;
+}
+.item_2 .txt i{
+    width:156px;
+    height: 5px;
+    background: url("../Img/item_bg2.png") no-repeat;
+}

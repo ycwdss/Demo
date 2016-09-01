@@ -1,0 +1,373 @@
+.focus_Box {
+  position: relative;
+  width: 965px;
+  height: 480px;
+  margin: 0 auto; }
+
+.focus_Box ul {
+  position: relative;
+  width: 965px;
+  height: 480px; }
+
+.focus_Box li {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 146px;
+  cursor: pointer;
+  left: 377px;
+  border-radius: 4px;
+  overflow: visible; }
+  .focus_Box li img {
+    width: 100%;
+    height: 100%; }
+
+/*c_gotop*/
+#totop {
+  width: 65px;
+  height: 65px;
+  -webkit-border-radius: 65px;
+  border-radius: 65px;
+  background-color: #ddd;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000; }
+  #totop:hover {
+    background-color: #5272e4; }
+  #totop a {
+    display: block;
+    width: 23px;
+    height: 13px;
+    margin: 26px auto 0;
+    background: url(../../Images/sprite_totop.png) no-repeat; }
+
+body {
+  background: #ffffff; }
+
+.header {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  -pie-background: rgba(255, 255, 255, 0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); }
+
+.header_content {
+  position: relative; }
+
+.header_cancel {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 625px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .header_cancel span {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url("../../Images/case_detail/spirte_header_cancel.png"); }
+
+.case_top {
+  padding: 105px 0 30px;
+  background: url("../../Images/case_detail/icon_case_detail_bg.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.case_top_content {
+  color: #ffffff;
+  text-align: center; }
+  .case_top_content h2 {
+    font-size: 48px;
+    line-height: 95px; }
+  .case_top_content h3 {
+    font-size: 24px;
+    line-height: 60px; }
+
+.case_intro h2 {
+  font-size: 48px;
+  color: #000;
+  text-align: center;
+  line-height: 200px;
+  background: #ffffff; }
+
+.focus_Box {
+  margin-top: 15px; }
+  .focus_Box li {
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); }
+
+.con_width {
+  position: relative; }
+
+.search_text {
+  position: absolute;
+  color: #ffffff; }
+  .search_text h3 {
+    font-size: 30px;
+    line-height: 60px; }
+  .search_text p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 30px; }
+
+.search_intro1 {
+  position: relative;
+  padding: 125px 0 0;
+  background: #3341a6; }
+  .search_intro1 > div {
+    position: relative;
+    height: 690px; }
+
+.search_text1 {
+  top: 0;
+  left: 30px;
+  width: 225px; }
+  .search_text1 p {
+    padding-left: 15px; }
+
+.search_img1 {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0; }
+
+.search_arrow1 {
+  position: absolute;
+  display: block;
+  top: 245px;
+  left: 65px; }
+
+.search_intro2 {
+  position: relative;
+  background: #3341a6; }
+  .search_intro2 > div {
+    height: 800px; }
+
+.search_img2 {
+  position: absolute;
+  display: block;
+  left: 15px;
+  top: 0; }
+
+.search_text2 {
+  width: 400px;
+  top: 35px;
+  right: 15px; }
+  .search_text2 h3 {
+    padding-right: 20px;
+    text-align: right; }
+  .search_text2 p {
+    margin-left: 200px;
+    width: 200px; }
+
+.search_arrow2 {
+  position: absolute;
+  display: block;
+  top: 345px;
+  right: 120px; }
+
+.search_intro3 {
+  position: relative; }
+
+.search_intro3_bottom {
+  position: relative;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 9;
+  border-top: 550px solid #3341a6;
+  border-left: 1920px solid transparent; }
+
+.search_text3 {
+  position: absolute;
+  width: 480px;
+  top: -20px;
+  right: 15px;
+  z-index: 999; }
+  .search_text3 h3 {
+    padding-right: 20px;
+    text-align: right; }
+
+.search_arrow3 {
+  position: absolute;
+  display: block;
+  bottom: -125px;
+  right: 400px;
+  z-index: 999; }
+
+.intro3_process {
+  position: relative;
+  vertical-align: middle; }
+  .intro3_process img {
+    display: block;
+    position: absolute;
+    z-index: 99; }
+  .intro3_process span {
+    display: block;
+    position: absolute;
+    font-size: 72px;
+    color: #3341a6; }
+
+.intro3_img1 {
+  top: 60px;
+  left: 0; }
+
+.intro3_img2 {
+  top: 177px;
+  left: 420px; }
+
+.intro3_img3 {
+  top: 303px;
+  right: 0; }
+
+.intro3_process1 {
+  top: 445px;
+  left: 107px; }
+
+.intro3_process2 {
+  top: 690px;
+  left: 605px; }
+
+.intro3_process3 {
+  top: 675px;
+  right: 180px; }
+
+.arrow_blue1 {
+  top: 520px;
+  left: 168px; }
+
+.arrow_blue2 {
+  top: 705px;
+  left: 690px; }
+
+.pc {
+  margin-top: 200px; }
+
+.pc_top {
+  position: relative;
+  height: 550px; }
+
+.pc_title {
+  position: relative; }
+  .pc_title h2 {
+    position: absolute;
+    top: 140px;
+    right: 40px;
+    font-size: 48px;
+    color: #333; }
+
+.pc_top_bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  z-index: 9;
+  border-bottom: 550px solid #3341a6;
+  border-right: 1920px solid transparent; }
+
+.index_page {
+  background: #3341a6; }
+  .index_page > div {
+    height: 1035px; }
+
+.index_page1, .index_page2 {
+  position: relative;
+  margin-top: -250px;
+  margin-left: 65px;
+  z-index: 99; }
+  .index_page1 h3, .index_page2 h3 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    z-index: 99; }
+  .index_page1 img, .index_page2 img {
+    display: block;
+    margin-top: 40px;
+    z-index: 99;
+    -webkit-box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+    -moz-box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+    box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1); }
+
+.index_page2 {
+  margin-left: 0;
+  margin-top: 80px; }
+
+.phone_top {
+  position: relative;
+  height: 325px; }
+  .phone_top h3 {
+    position: relative;
+    padding-top: 215px;
+    font-size: 30px;
+    color: #333;
+    text-align: center; }
+  .phone_top img {
+    position: absolute;
+    display: block;
+    top: 180px;
+    left: 55px;
+    z-index: 99; }
+
+.phone_describe {
+  position: relative;
+  height: 825px; }
+
+.phone_describe_bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  border-bottom: 550px solid #3341a6;
+  border-left: 1920px solid transparent; }
+
+.phone_describe_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../../Images/case_detail/icon_phone_bg1.png") center no-repeat;
+  background-position: 0 0;
+  z-index: 90; }
+
+.loan {
+  position: relative;
+  background: #3341a6;
+  height: 1420px;
+  z-index: 9; }
+
+.loan_left h4 {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center; }
+.loan_left img {
+  display: block;
+  margin-top: 40px;
+  box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1); }
+
+.loan_right img {
+  display: block;
+  margin-top: 40px; }
+
+.all_index {
+  height: 770px;
+  padding-top: 180px;
+  background: #eeeeee; }
+  .all_index img {
+    display: block;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=case_detail.css.map */

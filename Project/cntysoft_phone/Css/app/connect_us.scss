@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/_page_title";
+@import "../module/_animate";
+@import "../module/totop";
+
+.connect_top{
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height: 300px;
+  background: url("../../Images/icon/icon_connect_top_bg.jpg");
+  -webkit-background-size:cover;
+  background-size:cover;
+  img{
+    display: block;
+    width: 200px;
+    margin: 85px auto 0;
+  }
+  p{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+.connect_content{
+  position: relative;
+  overflow: hidden;
+  background: #3f51b5;
+  padding-bottom: 20px;
+  .page_title h3{
+    color: #FFFFFF;
+  }
+  >p{
+    margin-top: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+  }
+}

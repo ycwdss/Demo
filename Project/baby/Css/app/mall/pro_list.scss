@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/pagelist";
+@import "../../module/procard";
+
+//广告
+.banner {
+  .banner_inner {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    > div {
+      width: 100%;
+      margin-left: 0;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 0 0 15px 15px;
+      a, img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .banner_inner .slick-track {
+    height: 100%;
+  }
+  .banner_bottom_btn {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner_bottom_btn li {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    width: 8px;
+    height: 8px;
+    padding: 6px;
+    margin: 0 2px;
+    cursor: pointer
+  }
+
+  .banner_bottom_btn li button {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    text-align: left;
+    text-indent: -9999em;
+    overflow: hidden;
+    _zoom: 1;
+    background-color: #ccc;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    outline: none;
+  }
+
+  .banner_bottom_btn li button:hover,
+  .banner_bottom_btn li button:focus {
+    background: #ff647c;
+  }
+  .banner_bottom_btn li.slick-active button {
+    background-color: #ff647c;
+  }
+}
+
+//产品分类筛选
+.pro_choose_box {
+  position: relative;
+  margin: 30px auto;
+  padding: 10px 0 20px;
+  @include box-sizing();
+  span.main_bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include opacity(10);
+  }
+  .list1 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+  }
+  .list2 dt{
+    line-height: 25px;
+  }
+  .list2 .choose_list_text a {
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center;
+    i{
+      font-size: 10px;
+    }
+  }
+  .list2 .choose_list_text .yes{
+    font-size: 14px;
+    line-height: 25px;
+    border:0;
+    width: auto;
+    i{
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      border-radius: 3px;
+      margin-right: 5px;
+      background-color: #e4e4e4;
+      border:1px solid #888;
+      @include box-sizing();
+      font-size: 10px;
+      text-align: center;
+      &:before{
+       @include opacity(0);
+      }
+    }
+  }
+  .list2 .choose_list_text .yes.current{
+    i:before{
+      @include opacity(100);
+    }
+  }
+}
+.choose_list {
+  overflow: hidden;
+  margin: 0 20px;
+  position: relative;
+  z-index: 1;
+  dt {
+    line-height: 32px;
+    float: left;
+    font-size: 16px;
+    color: #666;
+  }
+  dd {
+    width: 980px;
+    float: left;
+    a {
+      display: inline-block;
+      vertical-align: top;
+      width: 16%;
+      line-height: 2;
+      height: 32px;
+      font-size: 16px;
+      overflow: hidden;
+      position: relative;
+      color: #666;
+    }
+  }
+}
+.xinpin{
+  position: absolute;
+  top: 0;
+  left: -2px;
+  i{
+    font-size: 40px;
+  }
+  em{
+    position: absolute;
+    top: 2px;
+    left: 11px;
+    font-size: 19px;
+    color: #fff;
+  }
+}

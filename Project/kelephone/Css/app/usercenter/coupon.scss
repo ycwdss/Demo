@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import "../../lib/mixin";
+
+.l_main{
+  margin-bottom: 10px;
+}
+.l_main .empty{
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px 0;
+  font-size: 14px;
+  background-color: #fff;
+}
+.l_nav{
+  height: 45px;
+  background: #FFFFFF;
+  li{
+    float: left;
+    font-size: 1.2rem;
+    line-height: 44px;
+    width:1/3*100%-6%;
+    margin:0 3%;
+    text-align: center;
+    border-bottom:1px solid transparent;
+  }
+}
+.m_coupon{
+  background: #FFFFFF;
+  margin-top: 10px;
+  h4{
+    padding:10px 0  0 10px;
+    font-size: 1rem;;
+  }
+}
+
+.price{
+  padding-left: 20px;
+  i{
+    line-height: 50px;
+    font-size: 3rem;
+  }
+}
+.condition{
+  padding-right: 10px;
+  line-height: 25px;
+  color: #333333;
+ p{
+   text-align: center;
+   font-size: 1.2rem;
+ }
+}
+.useful_time{
+  padding-right: 10px;
+  border-top:1px dashed #e4e4e4;
+  text-align: right;
+  line-height: 30px;
+  font-size: 1rem;
+  color: #666;
+}

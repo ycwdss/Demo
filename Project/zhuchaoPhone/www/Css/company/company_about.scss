@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+$border1:1px solid #e4e4e4;
+.moudle_top h1{
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  vertical-align: -19px;
+}
+.company_about h2{
+  color:#333;
+  margin-bottom:15px;
+  padding: 15px;
+  font-size: 16px;
+  border-top:$border1;
+  border-bottom: $border1;
+  background: #fff;
+}
+.company_about p{
+  padding:10px;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-box-orient: vertical;
+  background-color: #fff;
+}
+//公司基本信息
+.pro_details_box{
+  margin: 10px 0;
+}
+.pro_details_box li{
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fff;
+  border-top: $border1;
+}
+.pro_details_box li.type{
+  margin-bottom:10px;
+  font-size: 16px;
+  color: #333;
+  border-top: 0;
+  //border-bottom: $border1;
+}
+.pro_details_box .item{
+  display: -webkit-box;
+}
+.pro_details_box .item .key{
+  width: 20%;
+  color: #333;
+}
+.pro_details_box .item .val{
+  width: 80%;
+  color: #666;
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import "../../Css/mobile_moudle/lib";
+@import "../mobile_moudle/moudle/_strategy_top";
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+.main_con{
+  margin-top: 10px;
+  height: 100%;
+  background: white;
+  div{
+    width: 80%;
+    margin: 0 auto 25px;
+    input{
+      border: none;
+      padding: 5px 5px;
+      font-size: 12px ;
+      height: 30px;
+      line-height:20px;
+      background: #f8f8f8;
+    }
+  }
+}
+.input_tel{
+  padding-top: 25px;
+    height: 30px;
+    .first_input{
+      color:#888 ;
+      margin-right: 10px;
+      width: 50%;
+    }
+  .last_input{
+     background: #093;
+     color: white;
+    font-size: 14px;
+  }
+}
+.input_yanzhengma{
+  span{
+    font-size: 14px;
+  }
+  input{
+    width: 63%;
+  }
+}
+
+//重设密码按钮
+.main_con .reset_pw{
+  width: 200px;
+  height: 40px;
+  background: #093;
+  margin: 10px auto;
+  a{
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    font-size: 16px ;
+    color:white ;
+    line-height:40px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "../fh/style";
+@import "../fh/moudle/list_sort";
+@import "../fh/moudle/_list";
+@import "../fh/moudle/foreman/case_ele";
+.l_main{
+  margin-bottom: 100px;
+}
+.m_content{
+  //padding-top: 10px;
+}
+.case_ele_content{
+  padding: 0 10px;
+  height: 60px;
+  background: #f8f8f8;
+}
+.case_title{
+  font-size: 14px;
+  color: #333;
+  line-height: 30px;
+  @include ell();
+}
+.case_detail{
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+}
+.case_detail span:nth-child(2){
+  float: right;
+  >span{
+    color: $activeColor;
+  }
+}

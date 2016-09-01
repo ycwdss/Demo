@@ -1,0 +1,36 @@
+@charset "UTF-8";
+//重写顶部
+.top_search{
+  background: none;
+}
+//导航
+.l_nav{
+  li{
+    float: left;
+    height: 45px;
+    line-height: 44px;
+    width: 1/4*100%;
+    text-align: center;
+    font-size: 0.9rem;
+    background: #FFFFFF;
+    a{
+      display: block;      
+      width: 50px;
+      max-width: 100%;
+      margin: 0 auto;
+      color: #333;
+    }
+  }
+}
+.l_nav .nav_current{
+  a{
+    color: #093;
+    border-bottom: 1px solid #093;
+  }
+}
+.no_paddingL{
+  padding-left: 0 !important;
+}
+.no_borderR{
+  border-right: none !important;
+}

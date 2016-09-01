@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@import "../../lib";
+/*网站头部*/
+.mall_header{
+  padding:25px 0;
+  height: 60px;
+}
+.mall_logo{
+  width: 343px;
+  height:60px;
+  overflow: hidden;
+}
+.mall_logo img{
+  display: inline-block;
+  width: 206px;
+  height: 60px;
+  float: left;
+}
+.mall_logo span{
+  float: right;
+  padding-left:20px;
+  margin-left:20px;
+  margin-top:7px;
+  border-left: 1px solid #ccc;
+  height: 45px;
+  line-height: 45px;
+  font-size: 24px;
+  color: #000;
+}
+.mall_right{
+  width: 560px;
+  height: 60px;
+}
+.mall_right .m_searchWrap {
+  position: relative;
+  width: 560px;
+  height: 46px;
+  margin-left: 0;
+  float: right;
+  background: #fff;
+}
+.mall_hot_query{
+  margin-top: 40px;
+  overflow: hidden;
+}
+.mall_hot_query li {
+  float: left;
+  border-right: 1px solid #ccc;
+  line-height:1.1;
+  padding: 0 12px;
+}
+.mall_hot_query li a{
+  color: #666;
+  font-size: 12px;
+  font-family: SimSun, serif;
+}
+.mall_hot_query li a:hover{
+  color:#f60;
+}
+//大导航
+.mall_nav{
+  height: 40px;
+  border-bottom: 1px solid #093;
+}
+.allclass{
+  width: 244px;
+  position: relative;
+}
+.allclass h3 a{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  background-color: #093;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.allclass h3 i{
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  margin:0 20px;
+  vertical-align: middle;
+  background: url(../../mall/Images/sprite_mall_nav_btn.png) no-repeat;
+}
+/*class_nav*/
+.class_nav{
+  padding-left: 14px;
+}
+.class_nav li{
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 90px;
+  margin-right: 25px;
+}
+.class_nav li a{
+  color: #333;
+  font-size: 16px;
+}
+.class_nav li a:hover{
+  color: #f60;
+}
+
+//导航开始
+.mall_list_nav_box{
+  width: 244px;
+  height: 401px;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0 1px 3px #d1d0d0;
+  background-color: rgba(42,42,42,.8);
+  background: #2a2a2a\0;
+  //filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7333333,endcolorstr=#7333333) Alpha(Opacity=80);
+}
+ul.list_nav>li{
+  width: 100%;
+  height: 40px;
+  line-height:40px;
+  //padding-left:87px;
+  font-size:14px;
+  &:hover{
+    background-color: #fff;
+    >a{
+      color: #093;
+    }
+    .list_subnav{
+      display: block!important;
+    }
+    em{
+      background: url(../../mall/Images/sprite_mall_nav_sj_hover.png)  no-repeat;
+    }
+  }
+  &:hover:before{
+    position: absolute;
+    top:0;
+    right: -3px;
+    content: "";
+    z-index: 1;
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background-color: #fff;
+  }
+  >a{
+    color: #fff;
+  }
+  i{
+    width: 22px;
+    margin-left:27px;
+    margin-right:36px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  em{
+    display: inline-block;
+    float:right;
+    margin-top:14px;
+    margin-right: 8px;
+    width: 6px;
+    height: 13px;
+    background: url(../../mall/Images/sprite_mall_nav_sj.png)  no-repeat;
+  }
+}
+.list6 .list_subnav{
+  width: 798px;
+  .list_title{
+    margin-left: 30px;
+  }
+  .list_title:first-child{
+    margin-left: 0;
+  }
+}
+ul.list_nav{
+  padding:20px 0;
+  li.list1{
+    i{
+      height: 19px;
+      background:url(../../mall/Images/sprite_mall_list_1.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_1_hover.png) no-repeat;
+    }
+  }
+  li.list2{
+    i{
+      height: 17px;
+      background:url(../../mall/Images/sprite_mall_list_2.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_2_hover.png) no-repeat;
+    }
+  }
+  li.list3{
+    i{
+      height: 21px;
+      background:url(../../mall/Images/sprite_mall_list_3.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_3_hover.png) no-repeat;
+    }
+  }
+  li.list4{
+    i{
+      height: 19px;
+      background:url(../../mall/Images/sprite_mall_list_4.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_4_hover.png) no-repeat;
+    }
+  }
+  li.list5{
+    i{
+      height: 19px;
+      background:url(../../mall/Images/sprite_mall_list_5.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_5_hover.png) no-repeat;
+    }
+  }
+  li.list6{
+    i{
+      height: 14px;
+      background:url(../../mall/Images/sprite_mall_list_6.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_6_hover.png) no-repeat;
+    }
+  }
+  li.list7{
+    i{
+      height: 15px;
+      background:url(../../mall/Images/sprite_mall_list_7.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_7_hover.png) no-repeat;
+    }
+  }
+  li.list8{
+    i{
+      height: 18px;
+      background:url(../../mall/Images/sprite_mall_list_8.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_8_hover.png) no-repeat;
+    }
+  }
+  li.list9{
+    i{
+      height: 8px;
+      background:url(../../mall/Images/sprite_mall_list_9.png) no-repeat;
+    }
+    &:hover i{
+      background:url(../../mall/Images/sprite_mall_list_9_hover.png) no-repeat;
+    }
+  }
+}
+
+//子导航
+.list_subnav{
+  position:absolute;
+  top:0;
+  left: 247px;
+  padding-right: 20px;
+  min-width: 300px;
+  height: 401px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 3px #d1d0d0;
+}
+.list_title{
+  h4{
+    padding-left: 36px;
+    a{
+      color: #093;
+      font-size: 14px;
+    }
+  }
+  >ul>li{
+    float: left;
+    padding-left: 36px;
+    a{
+      display: block;
+      font-size: 13px;
+      color: #000;
+      &:hover{
+        color: #093;
+      }
+    }
+  }
+}
+//推荐店铺
+.nav_hot_shop{
+  h4 a{
+    font-size: 14px;
+    color: #000;
+  }
+  >a{
+    margin: 5px 0;
+    display: block;
+    width: 100px;
+    height: 50px;
+    @include box-sizing();
+    border:1px solid #e4e4e4;
+    overflow: hidden;
+    img{
+      display: block;
+      width: 100px;
+      height: 50px;
+    }
+  }
+}

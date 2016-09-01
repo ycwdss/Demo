@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/refund";
+@import "../../module/recommend";
+@import "../../module/drop";
+
+.reason_content{
+  position: relative;
+  overflow: hidden;
+  background: #ffeff5;   
+  >div{
+    position: relative;
+    margin-top: 20px;
+  }
+  .reason_intro{
+    float: left;
+    width: 125px;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .drop_menu{
+    float: left;
+    width: 130px!important;
+    height: 35px!important;
+    line-height: 33px!important;
+    background: #FFFFFF;
+    .drop_list li{
+    }
+  }
+  textarea{
+    float: left;
+    width: 940px;
+    height: 182px;
+    border:1px solid #e4e4e4;
+    padding:4px 10px;
+    line-height: 30px;
+    font-size: 13px;
+    resize: none;
+    background: #FFFFFF;
+    outline-style:none;
+  }
+  .reason_tip{
+    position: absolute;
+    bottom: 5px;
+    right: 120px;
+    font-size: 14px;
+    color: #888;
+  }
+  .submit_reason{
+    margin-left: 125px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

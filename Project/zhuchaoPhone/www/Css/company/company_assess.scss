@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import "../mobile_moudle/moudle/xiaoguotu_zhuanti_top";
+@import "../mobile_moudle/moudle/moudle_text_box";
+
+//整体评价
+.product_assess_all {
+  padding: 15px 30px;
+  background-color: #fff;
+  display: flex;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.assess_left {
+  text-align: center;
+  flex: 1;
+  border-right: 1px solid #e4e4e4;
+}
+
+.assess_left p {
+  font-size: 36px;
+  color: #093;
+}
+
+.assess_right {
+  padding-left: 20px;
+  flex: 2;
+}
+.assess_right > div {
+  display: flex;
+  margin: 3px 0;
+}
+.assess_right .star{
+  margin: 0 8px;
+}
+.star b {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+.star .icon_star1 {
+  background: url(../../mall/Images/mobile/icon_star1.png) no-repeat;
+}
+.star .icon_star2 {
+  background: url(../../mall/Images/mobile/icon_star2.png) no-repeat;
+}
+//导航
+.goods_pingjia_nav {
+  display: -webkit-box;
+  height: 49px;
+  background-color: #fff;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.goods_pingjia_nav li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  position: relative;
+}
+
+.goods_pingjia_nav li a {
+  width: 100%;
+  height: 48px;
+  display: block;
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+}
+
+.goods_pingjia_nav li:before {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -19px;
+  content: "";
+  width: 1px;
+  height: 38px;
+  background-color: #e4e4e4;
+}
+
+.goods_pingjia_nav li.lastli:before {
+  display: none;
+}
+
+.goods_pingjia_nav li a span {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.goods_pingjia_nav li.current a {
+  color: #093;
+}
+
+//评价列表
+.goods_content_list {
+  padding-left: 10px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.goods_content_list dl{
+  //display: flex;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  padding: 17px 0;
+  border-bottom: solid 1px #e4e4e4;
+  overflow: initial;
+}
+.goods_content_list dl dd{
+  padding-right: 15px;
+}
+.goods_content_list dl dt{
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 10px;
+  overflow: initial;
+}
+.goods_content_list dl dt .user {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.goods_content_list dl dt .user img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.goods_content_list dl dt>span{
+  color: #fff;
+  background-color: #093;
+  padding: 0 3px;
+}
+.goods_content_list dl dd {
+  //flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  margin-top: 10px;
+}
+.goods_content_list dl dd .user_name{
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
+.goods_content_list dl .user_name .phone {
+  font-size: 17px;
+  color: #333;
+}
+.goods_content_list dl .user_name .time {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex:1;
+  -ms-box-flex:1;
+  text-align: right;
+  color: #aaa;
+  line-height: 22px;
+}
+.goods_content_list dl dd p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-box-orient: vertical;
+}
+.goods_content_list dl dd ul.goods_pingjia_img{
+  display: flex;
+  padding: 0 8px;
+}
+.goods_content_list dl dd ul li {
+  width: 4.375rem;
+  height: 2.925rem;
+  float: left;
+  margin: 0.5rem 0.5rem 0 0;
+}
+.goods_content_list dl dd ul li img {
+  width: 100%;
+  height: 100%;
+}
+.goods_content_list  .user_star{
+  height: 10px;
+}
+.goods_content_list  .star_sheji{
+  margin-right: 20px;
+}
+.goods_content_list  .user_star span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+.goods_content_list  .user_star span.icon_star1{
+  background: url(../../mall/Images/mobile/icon_star1.png) no-repeat center;
+}
+.goods_content_list  .user_star span.icon_star2{
+  background: url(../../mall/Images/mobile/icon_star2.png) no-repeat center;
+}

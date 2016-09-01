@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+
+//解决方案
+.l_case{
+  position: relative;
+  margin-top: 40px;
+}
+.case_title{
+  h3{
+    font-size: 24px;
+    text-align: center;
+    line-height: 55px;
+    color: #333;
+    border-bottom:1px solid #e4e4e4;
+  }
+  p{
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+  }
+}
+.case_box{
+  position: relative;
+  width: 1080px;
+  height: 350px;
+  margin:30px auto 0;
+  overflow: hidden;
+}
+.case_ele{
+  position: relative;
+  overflow: hidden;
+  margin:0 10px;
+  width:250px;
+  height: 350px;
+  background: #f8f8f8;
+  h4{
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+  }
+  p{
+    padding:0 25px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #666;
+  }
+}
+.case_logo{
+  margin: 30px auto;
+  text-align: center;
+  i{
+    font-size: 90px;
+  }
+}
+.case_logo1{
+  i{
+    color: #0a7fd4;
+  }
+
+}
+.case_logo2{
+  i{
+    color: #74d132;
+  }
+
+}
+.case_logo3{
+  i{
+    color: #ed82b0;
+  }
+
+}
+.case_logo4{
+  i{
+    color: #fab52c;
+  }
+
+}
+.case_arrow{
+  position: absolute;
+  height: 90px;
+  bottom: 130px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  i{
+    font-size:50px;
+    line-height: 90px;
+    color: #e4e4e4;
+  }
+  &:hover{
+    i{
+      color: #999;
+    }
+  }
+}
+.case_prev{
+  left: 10px;
+}
+.case_next{
+  right: 10px;
+}
+
+//为什么选择可乐云商
+.l_why{
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+  padding-top: 55px;
+  background: #f8f8f8;
+}
+.why_title{
+  h2{
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+  }
+}
+.why_title_btn{
+  margin-top: 35px;
+  margin-left: 110px;
+  text-align: center;
+  span{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    margin-right: 110px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 33px;
+    border:1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    @include transition();
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover{
+      background: $main;
+      border:1px solid $main;
+      color: #ffffff;
+    }
+  }
+  span.main_bg{
+    border-color: #0a7fd4 ;
+  }
+}
+.why_list{
+  position: relative;
+  overflow: hidden;
+  margin-top: 65px;
+}
+.why_ele{
+  float: left;
+  width:50%;
+  height: 130px;
+  margin-bottom: 70px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  i{
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    color: $main;
+    font-size: 55px;
+    margin:0 20px;
+    background: #ffffff;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+  }
+  h4{
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+  }
+  p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.why_logo2{
+  text-indent: 10px;
+}
+.why_logo3{
+  line-height: 105px!important;
+}
+.why_left{
+  padding: 0 50px 0 55px;
+}
+.why_right{
+  padding: 0 55px 0 50px;
+  text-align: right;
+}
+
+//研发动态
+.l_condition{
+  margin-top: 60px;
+}
+.condition_inner{
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+.condition_box{
+  margin-right: -100px;
+}
+.condition_ele{
+  float: left;
+  width: 550px;
+  margin-right: 100px;
+  margin-top: 30px;
+  h4{
+    height: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    @include ell(1);
+    i{
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin-right: 5px;
+      vertical-align: 3px;
+      background: #838383;
+      -webkit-border-radius:50%;
+      -moz-border-radius:50%;
+      border-radius:50%;
+    }
+    a{
+      color: #333;
+      &:hover{
+        color: $main;
+      }
+    }
+  }
+  p{
+    margin-top: 10px;
+    padding-left: 13px;
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+  }
+}
+.main_border{
+  border:1px solid $main!important;
+}

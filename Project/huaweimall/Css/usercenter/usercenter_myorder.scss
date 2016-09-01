@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+@import "../model/site_nav";
+@import "../model/usercenter";
+@import "../model/page_list";
+@import "../model/recommend_shps";
+//=============右侧区域内容===========
+.mr{
+  width: 940px;
+    .title{
+      font-size: 24px;
+     height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #dedede;
+    }
+  .order_step{
+    padding: 20px 0 30px 0;
+    li{
+      float: left;
+      margin: 0 20px;
+      font-size: 14px;
+      em{
+        padding: 0 2px;
+        color: #ca151e;
+      }
+    }
+    .current{
+      a{
+        color: #ca151e;
+      }
+    }
+  }
+}
+//=========订单======
+//全部订单
+.wait_pay,.wait_evaluate,.order_finished,.wait_receive,.order_cancel{
+  display: none;
+}
+
+.all_order,.wait_pay{
+  .order_control{
+    padding: 10px 0 10px 7px;
+    label{
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 20px;
+      input{
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      span{
+        font-size: 14px;
+        vertical-align: middle;
+      }
+    }
+    a {
+      width: 120px;
+      height: 28px;
+      line-height: 28px;
+      display: inline-block;
+      color: #fff;
+      background-color: #e01d20;
+      text-align: center;
+      vertical-align: middle;
+      &:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+      }
+    }
+  }
+}
+//============全部订单===========
+  //================
+.ge{
+  background-color: #f7f7f7;
+  .col{
+    padding: 8px 0;
+    float: left;
+    text-align: center;
+  }
+  .p_check{
+    width: 45px;
+    input{
+      vertical-align: middle;
+    }
+  }
+  .p_title{
+    width:500px;
+  }
+  .p_unit{
+    width: 112px;
+  }
+  .p_num{
+    width: 74px;
+  }
+  .p_total{
+    width: 110px;
+  }
+  .p_opration{
+    width: 140px;
+  }
+}
+//===============订单列表==========
+.order_bd{
+    .order_table{
+      display: table;
+      border-bottom:1px solid #dedede;
+      .order_row{
+        display: table-row;
+        background-color: #fff;
+        .col{
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0;
+          float: none;
+          border-top: 1px solid #dedede;
+        }
+        .p_info{
+          .p_wrap{
+            padding-left: 30px;
+            .p_title{
+              padding: 20px 0;
+              display: inline-block;
+              width: 470px;
+              .p_img{
+                width: 60px;
+                height: 60px;
+                a{
+                  display: block;
+                  img{
+                    width: 60px;
+                    height: 60px;
+                    display: block;
+                  }
+                }
+
+              }
+              .p_name{
+                line-height: normal;
+                margin-left: 80px;
+                text-align: left;
+                a{
+                  line-height: 16px;
+                  max-height: 32px;
+                  overflow: hidden;
+                  width: 530px;
+                  display: inline-block;
+                  &:hover{
+                    color:#333;
+                    text-decoration: underline;
+                  }
+                }
+                p{
+                  color: #999;
+                }
+              }
+            }
+          }
+          .free{
+            border-top: 1px dotted #dedede;
+            .p_title{
+              .p_name{
+                p{
+                  color: #e01d20;
+                }
+              }
+            }
+          }
+        }
+
+        .p_num{
+          border-left: 1px solid #f2f2f2;
+          .text{
+            width: 38px;
+            height: 18px;
+            border: 1px solid #f2f2f2;
+            text-align: center;
+          }
+          a{
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            line-height: 15px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            vertical-align: 1px;
+          }
+          .minus{
+
+          }
+        }
+        .p_total{
+          border-left: 1px solid #f2f2f2;
+        }
+        .p_opration{
+          border-left: 1px solid #f2f2f2;
+
+          a{
+            color: #36c;
+            display: block;
+            margin-bottom: 10px;
+            &:hover{
+              text-decoration:underline;
+            }
+          }
+          .pay,.return {
+            width: 120px;
+            height: 28px;
+            line-height: 28px;
+            display: inline-block;
+            color: #fff;
+            background-color: #e01d20;
+            text-align: center;
+            vertical-align: middle;
+            &:hover {
+              text-decoration: none;
+              opacity: 0.8;
+              filter: alpha(opacity=80);
+            }
+          }
+        }
+      }
+    }
+}
+
+//==========订单编号===============
+.order_code{
+  padding: 10px;
+  font-size: 14px;
+  input{
+    vertical-align: -1px;
+  }
+  em{
+
+    margin:0 10px 0 5px;
+    color: #888;
+  }
+  span{
+    color: #888;
+    a{
+      color: #36c;
+    }
+  }
+}
+
+//=======没有订单显示=============
+.no_order{
+  .order_row{
+    p{
+      display: table-cell;
+      width: 940px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      a{
+        color: #36c;
+      }
+    }
+  }
+}

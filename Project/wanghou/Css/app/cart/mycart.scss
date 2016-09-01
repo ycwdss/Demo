@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/recommend";
+@import "../../module/site";
+@import "../../module/_cart_head";
+
+
+
+.cart{
+  background-color: #fff;
+  padding: 0 20px;
+}
+.cart_title{
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  padding-left: 42px;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative;
+  i{
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 32px;
+    color: #888;
+    display: inline-block;
+  }
+}
+
+.cart_goods_list {
+  font-size: 14px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.cart_goods_list .list_head {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  color: #333;
+}
+
+.list_check {
+  width: 80px;
+  .icon_checkbox {
+    margin-right: 15px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    border: 1px solid #e4e4e4;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+    input{
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+  }
+  .current{
+    background-color: #666;
+    border: 1px solid transparent;
+  }
+  .checked{
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 14px;
+      height: 10px;
+      vertical-align: 2px;
+      background:url("../../../Images/sprite/sprite_icon_checked.png") no-repeat;
+    }
+  }
+}
+
+.list_name {
+  width: 340px;
+  text-align: center;
+  color: #333;
+}
+
+.list_sale,
+.list_promotion,
+.list_discount,
+.list_num,
+.list_total,
+.list_action{
+  width: 140px;
+  font-size: 14px;
+  text-align: center;
+}
+.list_items{
+  .list_sale,
+  .list_promotion,
+  .list_discount,
+  .list_num,
+  .list_total,
+  .list_action{
+    color: #666;
+  }
+}
+
+//购物车商品列表
+.list_content .list_items {
+  padding: 15px  0;
+  height: 80px;
+  line-height: 80px;
+  .list_name {
+    .list_good_img {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      _zoom: 1;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .list_good_text {
+      width: 240px;
+      padding-left: 10px;
+      line-height: normal;
+      .title {
+        display: inline-block;
+        width: 240px;
+        font-size: 14px;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      p {
+        font-size: 12px;
+        color: #9b9b9b;
+        line-height: 20px;
+        max-height: 40px;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  .list_num {
+    position: relative;
+    top:50%;
+    margin-top: -16px;
+    a{
+      width: 30px;
+      height:30px;
+      line-height:30px;
+      display: block;
+      border: 1px solid #e4e4e4;
+      font-size: 15px;
+      vertical-align: 1px;
+    }
+    .text{
+      width: 70px;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #e4e4e4;
+      border-right: 0;
+      border-left: 0;
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+
+  .list_action{
+    a{
+      font-size: 14px;
+    }
+    i{
+      color: #999;
+      padding: 0 10px;
+    }
+  }
+}
+//结算
+.total_money{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  .delete{
+    margin-top: 10px;
+    margin-left:18px;
+    display: inline-block;
+    i{
+      padding-right: 10px;
+      display: inline-block;
+    }
+  }
+}
+.account_list{
+  .list{
+    line-height: 32px;
+    color: #666;
+    font-size: 14px;
+    margin-right: 20px;
+    label{
+      width: 150px;
+      text-align: right;
+      display: inline-block;
+    }
+    .total{
+      font-size: 20px;
+    }
+    a{
+      font-size: 15px;
+      color: #fff;
+      width: 130px;
+      height: 35px;
+      line-height: 35px;
+      margin-top: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      text-align: center;
+      background-color: #666;
+      i{
+        font-family: \5b8b\4f53;
+        font-weight: 600;
+      }
+      &:hover{
+        opacity: 0.8;
+        filter: alpha(opacify=80);
+      }
+    }
+  }
+}
+

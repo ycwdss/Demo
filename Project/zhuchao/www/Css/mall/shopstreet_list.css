@@ -1,0 +1,342 @@
+@charset "UTF-8";
+.module_nav {
+  background: #009933; }
+
+.module_nav > ul > li {
+  float: left;
+  position: relative;
+  margin-right: 1px; }
+  .module_nav > ul > li:hover .icon_arrow {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .module_nav > ul > li:hover > a {
+    background-color: #018a2e; }
+  .module_nav > ul > li:hover .subnav {
+    display: block; }
+  .module_nav > ul > li > a {
+    display: block;
+    padding: 0 24px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+
+.module_nav > ul .current {
+  background-color: #018a2e; }
+
+.icon_arrow {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: 3px;
+  margin-left: 10px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  -moz-transition: 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
+.module_nav > ul > li .subnav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: #093;
+  font-size: 13px;
+  text-align: center;
+  z-index: 9999; }
+  .module_nav > ul > li .subnav li {
+    margin: 10px 0; }
+  .module_nav > ul > li .subnav li > a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .module_nav > ul > li .subnav li > a:hover {
+      background-color: #018a2e; }
+
+.page {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top: 30px\9;
+  margin-bottom: 40px; }
+
+.page a, .c_page_text, .c_page_btn {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 12px;
+  line-height: 30px;
+  border: 1px solid #e0e0e0;
+  color: #999;
+  margin-right: 5px;
+  cursor: pointer;
+  font-family: "SimSun";
+  -moz-transition: 0.1s ease-out;
+  /* Firefox 4 */
+  -webkit-transition: 0.1s ease-out;
+  /* Safari 和 Chrome */
+  -o-transition: 0.1s ease-out;
+  transition: 0.1s ease-out; }
+
+.page a.now_page:hover {
+  cursor: default;
+  color: #999; }
+
+.page a:hover {
+  color: #093;
+  background-color: #fff;
+  border-color: #093; }
+
+.page a.active {
+  background: #fff;
+  color: #e1e1e1; }
+
+.page a.current {
+  background: #093;
+  color: #fff;
+  border-color: #093;
+  cursor: default; }
+
+.page span {
+  padding-left: 25px; }
+
+.c_page_text {
+  width: 16px;
+  background: #fff; }
+
+.c_page_btn {
+  font-family: "Microsoft YaHei", serif; }
+
+.shopstreet_list {
+  padding-top: 30px;
+  margin: 0 -10px; }
+  .shopstreet_list li {
+    position: relative;
+    float: left;
+    width: 260px;
+    height: 300px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    background-color: #fff;
+    -moz-transition: 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease; }
+    .shopstreet_list li:hover {
+      -webkit-box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+      box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1);
+      -webkit-transform: translate3d(0, -2px, 0);
+      -moz-transform: translate3d(0, -2px, 0);
+           transform: translate3d(0, -2px, 0); }
+
+.shopstreet_logo {
+  margin-bottom: 10px;
+  display: block;
+  width: 260px;
+  height: 130px;
+  overflow: hidden; }
+  .shopstreet_logo img {
+    display: block;
+    width: 260px;
+    height: 130px; }
+
+.shop_list_title {
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #666; }
+  .shop_list_title h4 {
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden; }
+    .shop_list_title h4 a {
+      color: #333;
+      font-size: 18px; }
+      .shop_list_title h4 a:hover {
+        color: #f60; }
+  .shop_list_title p {
+    line-height: 2;
+    height: 2em;
+    overflow: hidden; }
+  .shop_list_title dl {
+    max-height: 75px;
+    overflow: hidden; }
+    .shop_list_title dl dt {
+      width: 37px;
+      text-align: right;
+      font-size: 16px; }
+    .shop_list_title dl dd {
+      padding-left: 10px;
+      width: 186px; }
+      .shop_list_title dl dd a {
+        float: left;
+        display: block;
+        margin-right: 10px;
+        color: #666;
+        line-height: 2; }
+        .shop_list_title dl dd a:hover {
+          color: #f60; }
+
+.shopstreet_erweima {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -moz-transition: 0.2s ease;
+  /* Firefox 4 */
+  -webkit-transition: 0.2s ease;
+  /* Safari 和 Chrome */
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+  .shopstreet_erweima img {
+    position: absolute;
+    display: block;
+    width: 145px;
+    height: 145px;
+    margin-top: 20px;
+    left: 50%;
+    margin-left: -72px; }
+
+.shopstreet_list li:hover .shopstreet_erweima {
+  bottom: 0; }
+
+.shopstreet_floor_top {
+  padding-top: 26px;
+  padding-bottom: 12px; }
+  .shopstreet_floor_top .more a {
+    font-size: 14px;
+    padding: 0 21px;
+    color: #666; }
+    .shopstreet_floor_top .more a:hover {
+      color: #f60; }
+
+.shopstreet_floor_top h3 {
+  display: inline-block; }
+  .shopstreet_floor_top h3 i {
+    display: inline-block;
+    padding-left: 5px;
+    width: 32px;
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    background: url(../../../Images/pc/mall/icon_shopstreet_floor.png) no-repeat; }
+  .shopstreet_floor_top h3 span {
+    font-size: 18px; }
+
+.shopstreet_floor_nav > li {
+  float: left; }
+
+.shopstreet_floor_nav > li.current a {
+  color: #093; }
+
+.shopstreet_floor_nav > li a {
+  display: inline-block;
+  padding: 0 21px;
+  color: #666;
+  font-size: 14px; }
+
+.shopstreet_floor_nav > li a:hover {
+  color: #f60; }
+
+.mall_list_nav_box {
+  display: none; }
+
+.allclass:hover .mall_list_nav_box {
+  display: block; }
+
+.routeInfo {
+  border-bottom: none; }
+
+.shopstreet_bg {
+  background-color: #f8f8f8; }
+
+.page {
+  padding: 48px 0;
+  margin-bottom: 0; }
+
+.shop_left_nav {
+  margin-top: 40px;
+  border-top: 1px solid #e4e4e4;
+  width: 100px; }
+  .shop_left_nav li {
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center; }
+    .shop_left_nav li .shop_h2 {
+      font-size: 16px; }
+  .shop_left_nav li a {
+    font-size: 14px;
+    color: #666;
+    line-height: 34px; }
+    .shop_left_nav li a:hover {
+      color: #f60; }
+    .shop_left_nav li a span {
+      color: #999;
+      font-size: 12px; }
+  .shop_left_nav a:hover span {
+    color: #f60; }
+
+.shop_left_nav .current a {
+  color: #093; }
+  .shop_left_nav .current a span {
+    color: #093; }
+
+.shop_right {
+  width: 1180px; }
+
+.shop_right_title h3 {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #093; }
+  .shop_right_title h3 span {
+    position: absolute;
+    left: 0;
+    padding-right: 10px;
+    display: inline-block;
+    font-size: 18px;
+    color: #333; }
+
+.shop_right_title .c_link {
+  position: absolute;
+  right: 0;
+  top: 7px; }
+  .shop_right_title .c_link a {
+    padding: 0 10px;
+    color: #888;
+    font-size: 14px; }
+    .shop_right_title .c_link a:hover {
+      color: #f60; }
+  .shop_right_title .c_link .current {
+    color: #093; }
+
+.shopstreet_list {
+  padding-top: 20px; }
+  .shopstreet_list li {
+    margin: 10px; }

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.recommend_shps{
+  margin: 35px 0 80px 0;
+  h2{
+    border-bottom: 1px solid #dedede;
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: normal;
+    em{
+      border-bottom: 1px solid #333;
+      line-height: inherit;
+      padding: 6px 15px;
+    }
+  }
+  ul{
+    margin: 20px 70px;
+    li{
+      float: left;
+      margin-left: 35px;
+      p{
+        width: 230px;
+        font-size: 14px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .p_img{
+        width: 230px;
+        height: 230px;
+        margin-bottom: 16px;
+        img{
+          display: inline-block;
+          width: 230px;
+          height: 230px;
+        }
+      }
+      .p_name{
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

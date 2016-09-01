@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import "../fh/style";
+@import "../fh/moudle/usercenter/rightsort";
+@import "../fh/moudle/usercenter/order_orderevaluate";
+.right_sort a{
+  color: #333;
+}
+.search{
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  input{
+    float: left;
+    width: 164px;
+    height: 20px;
+    border: 1px solid #e4e4e4;
+    padding:0 10px;
+    color: #666;
+  }
+}
+.search_button{
+  float: left;
+  background: #e4e4e4;
+  width: 40px;
+  height: 22px;
+  cursor: pointer;
+}
+.right_sort .search_img{
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin: 3px 12px;
+  background: url("../../usercenter/Images/sprite_usercenter_order1.png");
+}
+
+//订单商品样式重写
+.order_head{
+  padding:10px 0 ;
+}
+.one_goods{
+  .order_head{
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 18px;
+    a{
+     span{
+       font-size:14px;
+     }
+    }
+  }
+  .order_detail{
+    padding: 30px 0;
+    .count{
+      span{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+  .big_head{
+    margin-top: 20px;
+    height: 100px;
+    background: white;
+    border-bottom: 1px solid #e4e4e4;
+    .order_infor1{
+        height: 50px;
+      padding: 0 20px;
+        span{
+          font-size: 18px;
+          color: #333;
+          margin-right: 40px;
+          line-height: 40px;
+        }
+      em{
+        font-size: 12px;
+        color: #888;
+        line-height: 40px;
+      }
+    }
+    .order_infor2{
+      padding: 0 20px;
+      font-size: 14px;
+      color: #333;
+      line-height: 50px;
+      span{
+        margin-right: 100px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      a{
+        float: right;
+        cursor: default;
+        &:hover{
+          color: #333;
+        }
+      }
+    }
+  }
+  .more_goods{
+    margin-top: 0;
+    padding: 0;
+  .one_goods{
+    padding: 0;
+    margin-top: 0;
+    border-bottom: 1px solid #e4e4e4;
+    .order_head{
+      margin: 0 20px;
+      span{
+        font-size: 16px;
+      }
+
+    }
+    .order_detail{
+      margin: 0 20px;
+    }
+  }
+  }

@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import "../lib/mixin";
+
+$main: #0a7fd4;
+$main_hover: #2e93d7;
+$main_light: #00aaff;
+.items_wrap {
+  width: 230px;
+
+}
+
+.company_name {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #333;
+  line-height: 30px;
+
+}
+
+.company_honor {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  li {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//信用值
+.credit_values {
+  padding: 15px 0 20px;
+  border-bottom: 1px solid #e4e4e4;
+  h2 {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    padding-bottom: 8px;
+  }
+
+  p {
+    float: left;
+    margin-top: 34px;
+  }
+}
+
+#circle {
+  width: 50px;
+  height: 50px;
+  float: left;
+  position: relative;
+  strong {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+  }
+  em{
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: $main;
+  }
+}
+
+//基础评分
+.basic_score {
+
+  h2 {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    padding-top: 10px;
+  }
+  .score {
+    padding-bottom: 20px;
+    .line {
+      width: 110px;
+      height: 10px;
+      background-color: #e4e4e4;
+      position: relative;
+      .line_inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 10px;
+        background-color: #2e9bd7;
+      }
+      em {
+        position: absolute;
+        right: -32px;
+        top: -7px;
+        font-size: 18px;
+        color: #2e9bd7;
+      }
+    }
+  }
+}
+
+//右侧
+
+.company {
+  width: 970px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.company_info {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 5px;
+  background-color: #fff;
+  .company_img {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+.company_rank {
+  width: 425px;
+  margin-left: 30px;
+  text-align: left;
+  h1 {
+    font-size: 18px;
+    color: #333;
+    line-height: 36px;
+    padding-top: 10px;
+  }
+  p {
+    font-size: 16px;
+    color: #333;
+    span {
+      display: block;
+      line-height: 36px;
+    }
+    .rank_num {
+      font-size: 12px;
+      color: $main;
+    }
+  }
+}
+
+.company_pro {
+  p {
+    line-height: 50px;
+    span {
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+      font-size: 18px;
+      color: #333;
+    }
+    em {
+      font-size: 18px;
+      color: $main;
+      padding-left: 60px;
+    }
+  }
+  .putaway {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color:$main;
+    @include transition(opacity, 0.2s, ease);
+    &:hover {
+      @include opacity(85);
+    }
+  }
+  .question_link {
+    font-size: 12px;
+    color: #2e9bd7;
+    padding-left: 22px;
+  }
+}
+
+//基础分数
+.score_step {
+  background-color: #fff;
+  h2 {
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    color: #333;
+    em {
+      font-size: 12px;
+      color: #888;
+    }
+  }
+  ul {
+    padding: 20px 0 20px 50px;
+    li {
+      width: 195px;
+      float: left;
+      position: relative;
+      .step {
+        width: 80px;
+        position: relative;
+        .icon_circle {
+          width: 80px;
+          height: 80px;
+          border: 1px solid #e4e4e4;
+          border-radius: 50%;
+          text-align: center;
+          vertical-align: middle;
+        }
+        i {
+          margin-top: 15px;
+          font-size: 50px;
+          color: #e4e4e4;
+        }
+        .score_plus {
+          padding: 6px 0;
+          font-size: 18px;
+          color: #2e9bd7;
+        }
+        .score_name {
+          position: absolute;
+          top: 120px;
+          left: -38px;
+          width: 160px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          font-size: 18px;
+          color: #333;
+        }
+      }
+      .step_line {
+        position: absolute;
+        left: 80px;
+        top: 35px;
+        font-size: 0;
+        .line {
+          width: 75px;
+          height: 5px;
+          background-color: #e4e4e4;
+          display: inline-block;
+          vertical-align: 2px;
+        }
+        .circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #e4e4e4;
+          display: inline-block;
+          margin: 0 5px;
+        }
+      }
+    }
+    .tallage {
+      width: 80px;
+    }
+    .active {
+      .icon_circle {
+        border-color: $main !important;
+        i {
+          color: $main;
+        }
+      }
+      .step_line {
+        .circle {
+          background-color: $main;
+        }
+        .line {
+          background-color: $main;
+        }
+      }
+    }
+  }
+}
+
+//广告
+.company_ad {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #fff;
+  .long_ad {
+    margin: 30px 0 50px 46px;
+  }
+  .block_ad {
+    margin-right: -35px;
+    .ad {
+      margin-right: 35px;
+      margin-bottom: 30px;
+      a {
+        display: block;
+        width: 300px;
+        height: 200px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+

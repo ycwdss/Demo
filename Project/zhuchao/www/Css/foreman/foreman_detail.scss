@@ -1,0 +1,497 @@
+@charset "UTF-8";
+@import "moudle/moudle_right_list";
+.basic_info{
+  height: 200px;
+  padding: 6px 0 40px 0;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 40px;
+}
+.intro{
+  width:626px ;
+  border-right: 1px  dotted #e4e4e4;
+}
+.pic{
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  position: relative;
+  img{
+    @extend .pic;
+  }
+}
+.shade{
+  @extend .pic;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../foreman/Images/sprite_foreman_shade.png") no-repeat;
+}
+.txt{
+  width: 301px;
+  padding-right: 75px;
+  h2{
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+  p{
+    color: #555555;
+    span{
+      font-size:14px;
+      line-height:36px;
+    }
+  }
+  .title+p,.birth_place{
+    >span{
+      float: left;
+      width: 50%;
+    }
+  }
+}
+.title{
+  font-size: 18px;
+  line-height: 36px;
+}
+.birth_place{
+  word-spacing: 50px;
+}
+.eva_consult{
+  width: 608px;
+  padding-left: 65px;
+}
+.eva{
+  width:275px ;
+  padding-right: 65px;
+  border-right: 1px dotted #e4e4e4;
+  dt{
+    border-bottom: 1px dotted #e4e4e4;
+    word-spacing: 16px;
+    strong{
+      font-size: 18px;
+      line-height: 48px;
+      font-weight: normal;
+      color: #666666;
+    }
+    em{
+      color: #009933;
+      font-size: 30px;
+    }
+    span{
+      font-size: 14px;
+    }
+  }
+  dd{
+    span{
+      font-size:18px ;
+      line-height:48px;
+      color: #555555;
+      margin-right: 10px;
+    }
+    em{
+      font-size: 18px;
+      line-height: 50px;
+      color: #009933;
+    }
+  }
+}
+.star_green{
+  width:17px;
+  height:17px;
+  display: inline-block;
+  margin-right: 10px;
+  background: url("../../foreman/Images/sprite_foreman_wujiaoxing1.png") no-repeat;
+}
+.star_gray{
+  @extend  .star_green;
+  background: url("../../foreman/Images/sprite_foreman_wujiaoxing2.png") no-repeat;
+
+}
+.consult{
+  width:197px;
+  padding-left: 70px;
+  a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+    background: #e4e4e4;
+    text-align: center;
+    color:#555555;
+    font-size: 18px;
+    line-height: 50px;
+    @include transition();
+    &:hover{
+      background: #e0e0e0;
+    }
+  }
+  .active_green{
+    background: #009933;
+    color: white;
+    @include transition();
+    &:hover{
+      background: #048b31;
+    }
+  }
+}
+//ԤԼ��ѯ������
+.shade_consult{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width:100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  display: none;
+}
+.alert{
+  width:648px;
+  height: 635px;
+  background: white;
+  padding:15px 26px  25px 26px;
+  position: absolute;
+  top: 175px;
+  left: 50%;
+  z-index: 10001;
+  margin-left: -350px;
+  display: none;
+  h1{
+    color: #009933;
+    padding-left: 278px;
+    font-size:30px;
+    line-height: 65px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .cross{
+    width: 20px;
+    height: 20px;
+    display: block;
+    opacity: 0.5;
+    background: url("../../foreman/Images/sprite_cross.png");
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+}
+form{
+  padding-top: 20px;
+  padding-left: 155px;
+  div{
+   height: 40px;
+    margin-bottom: 30px;
+    .mi{
+      width: 9px;
+      height: 9px;
+      display:inline-block;
+      margin-right: 5px;
+      margin-bottom: 3px;
+      background: url("../../foreman/Images/sprite_mi.png");
+    }
+    .mi_null{
+      @extend .mi;
+      background: url("");
+    }
+    span{
+      font-size: 20px;
+      color: #666666;
+    }
+    input{
+      width: 188px;
+      height:38px;
+      padding-left: 10px;
+      font-size: 14px;
+      line-height: 38px;
+      border: 1px solid #e4e4e4;
+    }
+    select{
+      text-align: center;
+      outline: none;
+      width: 100px;
+      height: 38px;
+      padding-left: 5px;
+      border: 1px solid #e4e4e4;
+      background: #f8f8f8;
+      font-size: 16px;
+      font-family: "Microsoft YaHei", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti;
+      color: #888888;
+      margin-right:20px;
+    }
+  }
+}
+
+textarea{
+  width:187px;
+  height: 120px;
+  border: 1px solid #e4e4e4;
+  padding-left: 10px;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti;
+}
+.ps>span{
+  position: relative;
+  top: -100px;
+}
+form>input{
+  width: 200px;
+  height: 40px;
+  background: #009933;
+  color: white;
+  font-size:18px;
+  text-align: center;
+  margin-left: 87px;
+  margin-top: 90px;
+  cursor: pointer;
+  @include transition();
+  &:hover{
+    background: #048b31;
+  }
+}
+.area{
+  width:200px;
+  position: absolute;
+  bottom: 225px;
+  right: 200px;
+  span{
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    font-size: 22px;
+    color: #888888;
+  }
+}
+.wrong{
+  display: none;
+  font-size: 14px;
+  color: #f60;
+  margin-bottom: 10px;
+  margin-left:82px;
+  position: absolute;
+  bottom: 65px;
+}
+.main_con {
+  width: 1010px;
+}
+.main_con>ul{
+     width:101px;
+     margin-right: 18px;
+     li{
+       width: 101px;
+       height: 50px;
+       border-top: 1px solid #e4e4e4;
+     a{
+       display: block;
+       font-size: 18px;
+       line-height: 50px;
+       color:#666666;
+     }
+       .active{
+         color: #009933;
+       }
+     }
+   }
+.foreman_intro{
+  width: 890px;
+  padding-bottom: 40px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e4e4e4;
+ .intro_title{
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    color:#444444;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 26px;
+    color:#666666;
+  }
+}
+.last_foreman_intro{
+  border-bottom: none;
+}
+.last_case{
+  border-bottom: none;
+}
+.foreman_intro .experience{
+  padding-left: 30px;
+  font-size:14px;
+  line-height: 40px;
+  color:#666666;
+  background: #f8f8f8;
+  margin-bottom: 20px;
+  span{
+    margin-right: 10px;
+  }
+  em{
+    width: 735px;
+    float: right;
+  }
+
+}
+.icon_diamond{
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 20px;
+  background: url("../../foreman/Images/sprite_icon_diamond.png") no-repeat;
+}
+.list_text_infor{
+  margin-top: 15px;
+  color: #999;
+  div{
+    float: left;
+    margin-right: 20px;
+    em:hover{
+      color: #f60;
+    }
+  }
+}
+.right_list_text{
+  width: 540px;
+}
+.case_progress{
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width:540px;
+}
+.case_progress li {
+  float: left;
+  color: #666;
+  font-size: 14px;
+  width: 130px;
+  border-top:5px solid #e4e4e4;
+  text-align: center;
+}
+.case_progress .current {
+  color: #093;
+  border-top:5px solid #009933 ;
+}
+.progress_dot{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  top: -12px;
+  color: #666;
+  background-color: #e4e4e4;
+}
+.current .progress_dot{
+  color: #fff;
+  background-color: #093;
+}
+.right_list_text{
+  position: relative;
+}
+.case_btn a{
+  float: left;
+  display: block;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color:#093;
+  border:1px solid #093;
+  @include transition();
+  &:hover{
+    background-color: #f8f8f8;
+    color: #093;
+  }
+}
+.case_btn .current{
+  background-color: #093;
+  color: #fff;
+  @include transition();
+  &:hover{
+    background: #048b31;
+    color: #fff;
+  }
+}
+.recent_order{
+  width: 230px;
+  padding: 0 20px;
+  background: #f8f8f8;
+  margin-bottom: 30px;
+  h2{
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+}
+.deal_list{
+  padding: 20px 0;
+  border-bottom: 1px dashed #e4e4e4;
+  a{
+    display: block;
+  }
+  img{
+    width: 230px;
+    height: 142px;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+  p{
+    color:#666666 ;
+    strong{
+      display: block;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 28px;
+      transition: color 0.2ms;
+      &:hover{
+        color: #f60;
+      }
+    }
+    span{
+      display: inline-block;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+.more_foreman{
+  display: block;
+  text-align: center;
+  color: #009933;
+  font-size: 16px;
+  line-height: 50px;
+  &:hover{
+    color: #f60;
+  }
+}
+.similar{
+  padding: 20px 0;
+  border-bottom: 1px dashed #e4e4e4;
+  .head_pic{
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    @include border-radius(100px);
+  }
+  img{
+    width: 100px;
+    height: 100px;
+    @include border-radius(100px);
+    &:hover{
+      @include opacity(85);
+    }
+  }
+  p{
+    span{
+      font-size: 14px;
+      line-height: 35px;
+    }
+
+  }
+}

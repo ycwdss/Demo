@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="../../Css/app/style.css">
+    <link rel="stylesheet" href="../../Css/app/usercenter/my_address.css">
+</head>
+<body>
+<!--顶部状态-->
+<div class="top_bar deepbg">
+    <div class="con_width">
+        <a class="t_login">登录</a>
+        <span>|</span>
+        <a class="t_register">注册</a>
+        <a class="icon_cart" href="../cart/cart.html">
+            <i class="iconfont">&#xe614;</i>
+        </a>
+    </div>
+</div>
+<!--导航-->
+<div class="nav bgfff">
+    <div class="con_width nav_inner clearfix">
+        <a class="icon_logo fl" href="../mall/index.html">
+            <img src="../../Images/test/test_pro_img.jpg"/>
+        </a>
+        <ul class="nav_text fl clearfix deep">
+            <li class="current">
+                <a href="../mall/index.html">商城首页</a>
+            </li>
+            <li>
+                <a href="../mall/prolist.html">手机</a>
+            </li>
+            <li>
+                <a href="../mall/prolist.html">耳机</a>
+            </li>
+            <li>
+                <a href="../mall/newlist.html">关于我们</a>
+            </li>
+            <li>
+                <a href="../mall/newlist.html">店铺新闻</a>
+            </li>
+        </ul>
+        <!--搜索-->
+        <div class="search fr">
+            <form action="" class="search_form">
+                <input id="searchInput" class="search_input" type="text" required placeholder="5000000万代金券等您来领！"
+                       autocomplete="off"/><a
+                    class="search_btn"> <i class="iconfont">&#xe607;</i></a>
+            </form>
+            <!--建议搜索-->
+            <div id="searchSuggest" class="search_suggest hide">
+                <a href="">手机</a>
+                <a href="" class="current">电脑</a>
+                <a href="">门</a>
+                <a href="">门司机</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--站点指示-->
+<div class="con_width">
+    <div class="route">
+        <a href="../mall/index.html">首页</a>
+        <span>&gt;</span>
+        <a href="../usercenter/basic_info.html">个人中心</a>
+        <span>&gt;</span>
+        <a>我的地址</a>
+    </div>
+</div>
+
+<!--个人中心内容-->
+<div class="personal_center con_width clearfix">
+    <!--左侧导航-->
+    <div class="left_side fl">
+        <h1>个人中心</h1>
+        <ul>
+            <li><a href="my_coupons.html">优惠券</a></li>
+            <li><a href="my_collect.html">商品收藏</a></li>
+            <li><a href="my_evaluatelist.html">我的评价</a></li>
+        </ul>
+        <h1>订单</h1>
+        <ul>
+            <li><a href="my_order.html">我的订单</a></li>
+            <li><a href="apply_list.html">退货单</a></li>
+        </ul>
+        <h1>我的信息</h1>
+        <ul class="no_bb">
+            <li><a href="basic_info.html">基本信息</a></li>
+            <li><a class="main" href="my_address.html">我的地址</a></li>
+            <li><a href="change_password.html">修改密码</a></li>
+            <li><a href="message.html">我的消息</a></li>
+        </ul>
+    </div>
+    <!--右侧内容-->
+    <div class="right_side fr">
+        <div class="item_title basic_title">
+            <span>我的地址</span>
+            <a class="address_new mainbg_hover main_border_hover fr"><i class="address_plus"></i>添加新地址</a>
+        </div>
+        <!--地址信息内容-->
+        <div class="address_info">
+            <ul class="address_title clearfix">
+                <li class="address_name">姓名</li>
+                <li class="address_detail">详细地址</li>
+                <li class="address_tel">电话</li>
+                <li class="address_operate">操作</li>
+            </ul>
+            <div class="address_wrap">
+                <div class="address_name">王小丫</div>
+                <div class="address_detail">中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路 交叉口凤凰城北城</div>
+                <div class="address_tel"><em>13137774629</em><span>(默认地址）</span></div>
+                <div class="address_operate">
+                    <i class="iconfont address_edit main_hover">&#xe605;</i>
+                    <i class="iconfont address_del main_hover">&#xe608;</i>
+                </div>
+            </div>
+            <div class="address_wrap">
+                <div class="address_name">王小丫</div>
+                <div class="address_detail">中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路 交叉口凤凰城北城</div>
+                <div class="address_tel"><em>13137774629</em></div>
+                <div class="address_operate">
+                    <i class="iconfont address_edit main_hover">&#xe605;</i>
+                    <i class="iconfont address_del main_hover">&#xe608;</i>
+                </div>
+            </div>
+            <div class="address_wrap">
+                <div class="address_name">王小丫</div>
+                <div class="address_detail">中国 河南 郑州市 金水区 郑州市金水区郑汴路与玉凤路 交叉口凤凰城北城</div>
+                <div class="address_tel"><em>13137774629</em></div>
+                <div class="address_operate">
+                    <i class="iconfont address_edit main_hover">&#xe605;</i>
+                    <i class="iconfont address_del main_hover">&#xe608;</i>
+                </div>
+            </div>
+        </div>
+        <!--添加新地址弹窗-->
+        <div class="address_popup">
+            <div class="address_add_wrap">
+                <div class="address_add_inner">
+                    <div class="list">
+                        <label>收货人</label>
+                        <input class="main_focus" type="text" placeholder="收货人姓名">
+                        <p class="main tips">收货人姓名，做少2个最多20个中文字</p>
+                        <i class="iconfont del main">&#xe612;</i>
+                    </div>
+                    <div class="list">
+                        <label>联系电话</label>
+                        <input class="main_focus" type="text" placeholder="11位手机号">
+                        <p class="main tips">请输入正确的手机号</p>
+                        <i class="iconfont del main">&#xe612;</i>
+                    </div>
+                    <div class="list address_select clearfix">
+                        <label>所在地区：</label>
+                        <div class="select_address">
+                            <div class="drop_menu  main_border_hover">
+                                <div class="drop_show">省份</div>
+                                <div class="drop_arrow"></div>
+                                <ul class="drop_list">
+                                    <li>河南省</li>
+                                    <li>安徽省</li>
+                                    <li>山东省</li>
+                                    <li>江西省</li>
+                                    <li>广西省</li>
+                                    <li>广东省</li>
+                                    <li>福建省</li>
+                                    <li>上海市</li>
+                                    <li>上海市</li>
+                                    <li>上海市上海市上海市上海市上海市上海市上海市</li>
+                                    <li>上海市</li>
+                                    <li>上海市</li>
+                                    <li>上海市</li>
+                                </ul>
+                            </div>
+                            <div class="drop_menu  main_border_hover">
+                                <div class="drop_show">直辖市</div>
+                                <div class="drop_arrow"></div>
+                                <ul class="drop_list">
+                                    <li>郑州市</li>
+                                    <li>湘乡市</li>
+                                    <li>新乡市</li>
+                                    <li>新郑市</li>
+                                    <li>商丘市</li>
+                                    <li>南阳市上海市上海市上海市上海市上海市</li>
+                                    <li>信阳市</li>
+                                    <li>洛阳市</li>
+                                    <li>洛阳市</li>
+                                    <li>洛阳市</li>
+                                    <li>洛阳市</li>
+                                    <li>洛阳市</li>
+                                    <li>洛阳市</li>
+                                    <li>洛阳市</li>
+                                    <li>洛阳市</li>
+                                    <li>洛阳市</li>
+                                </ul>
+                            </div>
+                            <div class="drop_menu  main_border_hover">
+                                <div class="drop_show">区/县</div>
+                                <div class="drop_arrow"></div>
+                                <ul class="drop_list">
+                                    <li>金水区</li>
+                                    <li>管城区上海市上海市上海市上海市上海市</li>
+                                    <li>惠济区</li>
+                                    <li>新郑市</li>
+                                    <li>新郑市</li>
+                                    <li>新郑市</li>
+                                    <li>新郑市</li>
+                                    <li>新郑市</li>
+                                    <li>新郑市</li>
+                                    <li>新郑市</li>
+                                    <li>新郑市</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="main tips">请选择所在地区</p>
+                    </div>
+                    <div class="list">
+                        <label>详细地址</label>
+                        <input class="main_focus" type="text" placeholder="输入详细地址">
+                        <p class="main tips">请输入详细地址</p>
+                    </div>
+                    <div class="list">
+                        <a class="address_btn save_btn main_bg">保存信息</a>
+                        <a class="address_btn close_btn">取消</a>
+                    </div>
+                    <a id="OffBtn" class="offbtn mainbg_hover noselect">
+                        <i class="iconfont">&#xe612;</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--底部-->
+<div class="footer bgfff">
+    <div class="con_width clearfix">
+        <dl class="erweima fl">
+            <dt><img src="../../Images/test/test_erweima.png" alt=""/></dt>
+            <dd>微信扫一扫</dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>帮助中心</dt>
+            <dd>
+                <a href="../help/help.html">支付方式</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">配送方式</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">购物指南</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>服务支持</dt>
+            <dd>
+                <a href="../help/help.html">相关下载</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">售后政策</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">物流查询</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>关于我们</dt>
+            <dd>
+                <a href="../help/help.html">服务网点</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">品牌授权商</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">线下合作零售店</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>关于公司</dt>
+            <dd>
+                <a href="../help/help.html">加入我们</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">联系我们</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">了解神恩信息</a>
+            </dd>
+        </dl>
+        <div class="footer_contact fr">
+            <p>客服电话 <br/>
+                400-111-1111</p>
+            <a href="" class="btn main_bg kefu_btn">
+                <i class="iconfont">&#xe616;</i>
+                在线咨询
+            </a>
+        </div>
+    </div>
+</div>
+<div class="copy bgfff">
+    <div class="con_width">
+        <p>©2014-2015凤凰筑巢保留所有权利</p>
+
+        <p>Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc25</p>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="usercenter/my_address" id="require" src="../../Js/lib/require.js"></script>
+</body>
+</html>

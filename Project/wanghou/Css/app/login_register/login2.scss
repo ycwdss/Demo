@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "login.scss";
+
+$color:#fff;
+
+.l_main{
+  position: relative;
+  background: url("../../../Images/icon/icon_register2_bg.jpg?_nosprite")center;
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+.m_content{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background: rgba(255, 255, 255, 0.4);
+}
+.message_ele input{
+  border-color: rgba(255,255,255,0.4);
+}
+.confirm_btn{
+  color: $color;
+}
+.agreement{
+  span{
+    color: $color;
+  }
+  a{
+    color: $color;
+  }
+}
+.identify span,.default_login a,.default_login,.other_way,.container > div > i,.title{
+  color: $color;
+}
+
+input::-webkit-input-placeholder{
+  color: $color;
+}
+input:-ms-input-placeholder{
+  color: $color;
+}
+input:-moz-placeholder{
+  color: $color;
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/company/module_title";
+
+.zizhi_content{
+  margin:0 5px;
+  padding: 10px;
+  background: #ffffff;
+  img{
+    display: block !important;
+    max-width: 100% !important;
+    height: auto!important;
+    margin: 12px auto !important;
+  }
+  h4{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin:5px 20%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品内容</title>
+    <link rel="stylesheet" href="../../Css/app/style.css"/>
+    <link rel="stylesheet" href="../../Css/app/slick.css">
+    <link rel="stylesheet" href="../../Css/app/slick-theme.css"/>
+    <link rel="stylesheet" href="../../Css/app/mall/prodetail.css"/>
+    <link rel="stylesheet" href="../../Css/app/layer.css"/>
+</head>
+<body>
+<!--顶部状态-->
+<div class="top_bar deepbg">
+    <div class="con_width">
+        <a class="t_login">登录</a>
+        <span>|</span>
+        <a class="t_register">注册</a>
+        <a class="icon_cart" href="../cart/cart.html">
+            <i class="iconfont">&#xe614;</i>
+        </a>
+    </div>
+</div>
+<!--导航-->
+<div class="nav bgfff">
+    <div class="con_width nav_inner clearfix">
+        <a class="icon_logo fl" href="../mall/index.html">
+            <img src="../../Images/test/test_pro_img.jpg"/>
+        </a>
+        <ul class="nav_text fl clearfix deep">
+            <li class="current">
+                <a href="../mall/index.html">商城首页</a>
+            </li>
+            <li>
+                <a href="../mall/prolist.html">手机</a>
+            </li>
+            <li>
+                <a href="../mall/prolist.html">耳机</a>
+            </li>
+            <li>
+                <a href="../mall/newlist.html">关于我们</a>
+            </li>
+            <li>
+                <a href="../mall/newlist.html">店铺新闻</a>
+            </li>
+        </ul>
+        <!--搜索-->
+        <div class="search fr">
+            <form action="" class="search_form">
+                <input id="searchInput" class="search_input" type="text" required placeholder="5000000万代金券等您来领！"
+                       autocomplete="off"/><a
+                    class="search_btn"> <i class="iconfont">&#xe607;</i></a>
+            </form>
+            <!--建议搜索-->
+            <div id="searchSuggest" class="search_suggest hide">
+                <a href="">手机</a>
+                <a href="" class="current">电脑</a>
+                <a href="">门</a>
+                <a href="">门司机</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--路径导航 begin-->
+<div class="con_width">
+    <div class="route">
+        <a href="../mall/index.html">首页</a>
+        <span>&gt;</span>
+        <a href="../mall/prolist.html">商品推荐</a>
+        <span>&gt;</span>
+        <a>小米Note</a>
+    </div>
+</div>
+<!--路径导航 end-->
+<!--产品信息-->
+<div class="bgfff con_width clearfix pro_content">
+    <!--左侧图片-->
+    <div class="pro_img fl">
+        <!--产品中图片-->
+        <div id="preview" class="pro_img_big">
+            <div class="product-wrapper">
+                <div class="magnifier_wrapper"><img src="../../Images/test/test_pro_img.jpg"
+                                                    big-img="../../Images/test/test_pro_img.jpg"></div>
+            </div>
+        </div>
+        <!--产品小图片-->
+        <div class="pro_img_small clearfix noselect">
+            <a class="prev fl pro_img_small_btn mainbg_hover">&lt;</a>
+            <a class="next fr pro_img_small_btn mainbg_hover">&gt;</a>
+
+            <div class="pro_img_small_list fl">
+                <div id="proImgTab" class="pro_img_tab clearfix ">
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_pro_img.jpg"
+                                                                       src="../../Images/test/test_pro_img.jpg"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_pro_img.jpg"
+                                                                       src="../../Images/test/test_pro_img.jpg"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_banner1.png"
+                                                                       src="../../Images/test/test_banner1.png"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_icon_logo.png"
+                                                                       src="../../Images/test/test_icon_logo.png"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_banner2.png"
+                                                                       src="../../Images/test/test_banner2.png"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_pro_img.jpg"
+                                                                       src="../../Images/test/test_pro_img.jpg"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_pro_img.jpg"
+                                                                       src="../../Images/test/test_pro_img.jpg"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_banner1.png"
+                                                                       src="../../Images/test/test_banner1.png"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_icon_logo.png"
+                                                                       src="../../Images/test/test_icon_logo.png"></div>
+                    <div class="small_tab_list main_border_hover"><img alt="产品"
+                                                                       big-img="../../Images/test/test_banner2.png"
+                                                                       src="../../Images/test/test_banner2.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content_text fr">
+        <h3 class="pro_text_name">东芝存储卡（Class4）</h3>
+
+        <p class="pro_text_price main">&yen;<b>1799.00</b><span class="sale">6.5折</span><span
+                class="del">&yen;2100元</span></p>
+        <!--优惠-->
+        <div class="pro_coupon">
+            <div class="pro_coupon_line">
+                <span class="main_bg">劵</span>
+                领券下单，更多优惠等你拿
+                <a class="get_coupon main">立即领取 <i class="sanjiao"></i></a>
+            </div>
+            <div class="coupon_lsit_box hide">
+                <div class="coupon_lsit">
+                    <div class="clicked">
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="small_btn main mainbg_hover fr">已领取</a>
+                    </div>
+                    <div>
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="small_btn main mainbg_hover fr">领取</a>
+                    </div>
+                    <div>
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="small_btn main mainbg_hover fr">领取</a>
+                    </div>
+                    <div>
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="small_btn main mainbg_hover fr">领取</a>
+                    </div>
+                    <div>
+                        <span class="main_bg fl price">&yen;10元</span>
+
+                        <div class="fl coupon_text">
+                            <p>店内通用，满120元即可使用</p>
+                            <span>2016-01-22~2016-02-22</span>
+                        </div>
+                        <a class="small_btn main mainbg_hover fr">领取</a>
+                    </div>
+                </div>
+                <span class="sanjiao"></span>
+                <span class="sanjiao sanjiao_down"></span>
+            </div>
+        </div>
+        <div class="pro_text_list_box">
+            <dl class="pro_text_list pro_color">
+                <dt class="deep">颜色：</dt>
+                <dd>
+                    <ul>
+                        <li><img src="../../Images/test/test_pro_img.jpg" alt=""></li>
+                        <li><img src="../../Images/test/test_pro_img.jpg" alt=""></li>
+                        <li><img src="../../Images/test/test_pro_img.jpg" alt=""></li>
+                        <li><img src="../../Images/test/test_pro_img.jpg" alt=""></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="pro_text_list">
+                <dt class="deep">型号：</dt>
+                <dd>
+                    <ul>
+                        <li>增强版</li>
+                        <li>UEw-1</li>
+                        <li class="current">UEw-2</li>
+                        <li>增强版</li>
+                        <li>UEw-1</li>
+                        <li>UEw-2</li>
+                        <li class="without">增强版</li>
+                        <li>UEw-1</li>
+                        <li>UEw-2</li>
+                    </ul>
+                </dd>
+            </dl>
+            <!--数量-->
+            <dl class="pro_text_list">
+                <dt class="deep">数量：</dt>
+                <dd>
+                    <div class="pro_count clearfix fl">
+                        <span class="t_minus main_hover fl">-</span><span class="t_num">12</span><span class="t_add main_hover fr">+</span>
+                    </div>
+                    <span class="stock fl">库存15件</span>
+                </dd>
+            </dl>
+        </div>
+        <div class="like_share clearfix">
+            <div class="like fl"><i class="iconfont main">&#xe615;</i>收藏</div>
+            <div class="share fl"><span><i class="iconfont main ">&#xe613;</i>分享</span>
+                <div class="bdsharebuttonbox">
+                    <a href="#" class="bds_qzone" data-cmd="qzone"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina"></a>
+                    <a href="#" class="bds_tqq" data-cmd="tqq"></a>
+                    <a href="#" class="bds_renren" data-cmd="renren"></a>
+                    <a href="#" class="bds_weixin" data-cmd="weixin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--产品介绍-->
+<div class="pro_info con_width">
+    <ul id="proInfoNav" class="pro_info_nav bge4 clearfix">
+        <li class="main_border main_hover main_border_hover bgfff main">商品详情</li>
+        <li class="main_border_hover main_hover">评价(188)</li>
+    </ul>
+    <div class="pro_info_box">
+        <!--商品详情-->
+        <div class="pro_info_list">
+            <img src="../../Images/test/test_pro_info_img1.png" alt=""/>
+            <img src="../../Images/test/test_pro_info_img2.png" alt=""/>
+            <img src="../../Images/test/test_pro_info_img3.png" alt=""/>
+        </div>
+        <!--评价(188)-->
+        <div class="pro_info_list bgfff comment_box hide">
+            <ul class="comment_box_item">
+                <li>
+                    <p class="comment_text">大屏旗舰，HiFi 双卡双待 索尼 1300 万像素 骁龙810 64位八核心处理器5.5 英寸，4k/3840x2160分辨率, IPS
+                        显示屏约2300万像素，24mm广角镜头，索尼G
+                        镜头1/2.3英寸影像传感器，ISO 12800高感光度</p>
+
+                    <p class="writer">
+                        <span>ZZZZZZZZ</span> 发表于 <span class="time">2016-02-25  12：22</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="comment_text">大屏旗舰，HiFi 双卡双待 索尼 1300 万像素 骁龙810 64位八核心处理器5.5 英寸，4k/3840x2160分辨率, IPS
+                        显示屏约2300万像素，24mm广角镜头，索尼G
+                        镜头1/2.3英寸影像传感器，ISO 12800高感光度</p>
+
+                    <p class="writer">
+                        <span>ZZZZZZZZ</span> 发表于 <span class="time">2016-02-25  12：22</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="comment_text">大屏旗舰，HiFi 双卡双待 索尼 1300 万像素 骁龙810 64位八核心处理器5.5 英寸，4k/3840x2160分辨率, IPS
+                        显示屏约2300万像素，24mm广角镜头，索尼G
+                        镜头1/2.3英寸影像传感器，ISO 12800高感光度</p>
+
+                    <p class="writer">
+                        <span>ZZZZZZZZ</span> 发表于 <span class="time">2016-02-25  12：22</span>
+                    </p>
+                </li>
+            </ul>
+            <!--分页-->
+            <div class="page tr">
+                <a href="#">上一页</a>
+                <a class="current" href="#">1</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--购买栏-->
+<div class="buy_bar bgfff main_border clearfix">
+    <div class="con_width">
+        <dl class="fl">
+            <dt class="deep">小米Note</dt>
+            <dd>
+                销售价：<span class="main"><i>&yen;</i>1799</span>
+            </dd>
+        </dl>
+        <a href="../cart/buy.html" class="btn main_bg fr"><i class="iconfont">&yen;</i>现在购买</a>
+        <a href="../usercenter/my_order.html" class="btn main_bg fr"><i class="iconfont">&#xe614;</i>加入购物车</a>
+    </div>
+</div>
+<!--底部-->
+<!--底部-->
+<div class="footer bgfff">
+    <div class="con_width clearfix">
+        <dl class="erweima fl">
+            <dt><img src="../../Images/test/test_erweima.png" alt=""/></dt>
+            <dd>微信扫一扫</dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>帮助中心</dt>
+            <dd>
+                <a href="../help/help.html">支付方式</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">配送方式</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">购物指南</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>服务支持</dt>
+            <dd>
+                <a href="../help/help.html">相关下载</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">售后政策</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">物流查询</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>关于我们</dt>
+            <dd>
+                <a href="../help/help.html">服务网点</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">品牌授权商</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">线下合作零售店</a>
+            </dd>
+        </dl>
+        <dl class="footer_nav">
+            <dt>关于公司</dt>
+            <dd>
+                <a href="../help/help.html">加入我们</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">联系我们</a>
+            </dd>
+            <dd>
+                <a href="../help/help.html">了解神恩信息</a>
+            </dd>
+        </dl>
+        <div class="footer_contact fr">
+            <p>客服电话 <br/>
+                400-111-1111</p>
+            <a href="" class="btn main_bg kefu_btn">
+                <i class="iconfont">&#xe616;</i>
+                在线咨询
+            </a>
+        </div>
+    </div>
+</div>
+<div class="copy bgfff">
+    <div class="con_width">
+        <p>©2014-2015凤凰筑巢保留所有权利</p>
+
+        <p>Copyright © 2014- 2015 www.fhzc.com.All Rights. 豫ICP备14029737号 系统版本号：v0.0.1-rc25</p>
+    </div>
+</div>
+<script data-main="../../Js/requireenter" app="mall/prodetail" id="require" src="../../Js/lib/require.js"></script>
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdPic": "",
+        "bdStyle": "0",
+        "bdSize": "16"
+    },
+    "share": {},
+    "image": {
+        "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+    },
+    "selectShare": {
+        "bdContainerClass": null,
+        "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+    }
+};
+with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@import "../lib/reset";
+@import "../lib/commonclass";
+@import "../model/head";
+@import "../model/foot";
+@import "../model/totop";
+@import "../model/site_nav";
+@import "../model/usercenter";
+
+//=========右侧显示区域============
+.mr{
+  width: 940px;
+  .order_hd{
+    padding: 10px 0;
+    border-bottom: 1px solid #EDEDED;
+   .order_code{
+     display: inline-block;
+     font-size: 24px;
+     font-size: 24px;
+   }
+      .op_list{
+
+        a{
+          float: left;
+          margin-right: 7px;
+          width: 118px;
+          height: 28px;
+          line-height: 28px;
+          font-size: 14px;
+          text-align: center;
+          display: inline-block;
+          border: 1px solid #dedede;
+        }
+      }
+      .order_quit{
+        background-color: #fafafa;
+        &:hover{
+          color: #fff;
+          background-color:#333;
+        }
+      }
+    .order_pay{
+      background-color: #ca151e;
+      color: #fff;
+      display: inline-block;
+      &:hover{
+        opacity: 0.8;
+        filter:alpha(opacity=80);
+      }
+    }
+
+  }
+
+  //订单状态====
+  .order_status{
+    width: 816px;
+    margin: 0 auto;
+    padding: 32px 0 0;
+    ul{
+      margin-left: -184px;
+      width: 1000px;
+      li{
+        float: left;
+        position: relative;
+        width: 230px;
+        background: url("../../usercenter/Images/text_step_ing.png?_nosprite") 0 40px repeat-x;
+      .circle{
+        padding: 0 5px;
+        display: inline-block;
+        position: absolute;
+        right: -6px;
+        top: 32px;
+        z-index: 2;
+        background-color: #fff;
+        i{
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #ccc;
+
+          display: inline-block;
+        }
+      }
+
+        dl{
+          float: right;
+          width: 120px;
+          font-size: 14px;
+          text-align: center;
+          margin-right: -52px;
+          color: #ccc;
+          dt{
+            margin-bottom: 46px;
+          }
+          dd{
+            line-height: 18px;
+          }
+        }
+      }
+      .first{
+        background: none!important;
+      }
+      .completed{
+        background:url("../../usercenter/Images/text_step_ed.png?_nosprite") 0 40px repeat-x;
+        .circle{
+          i{
+            background-color: #000;
+          }
+        }
+        dl{
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+//===========物流信息=========
+.logistics_info{
+  margin-top: 50px;
+  .hd{
+    font-size: 16px;
+    padding: 10px 0;
+    span{
+      font-size: 14px;
+      color: #888;
+      em{
+        color: #333;
+      }
+    }
+  }
+  .bd{
+    .title{
+      width: 940px;
+      background-color: #fafafa;
+      padding: 10px 0;
+      span{
+        display: inline-block;
+        text-align: center;
+        color: #888;
+      }
+      .t1{
+        width: 20%;
+        border-right: 1px solid #dedede;
+      }
+      .t2{
+        width: 78%;
+      }
+    }
+    .detail{
+      li{
+        padding: 15px 0;
+        border-bottom: 1px solid #f2f2f2;
+        label{
+          width: 20%;
+          display: inline-block;
+          text-align: center;
+        }
+        em{
+          width:70%;
+          display: inline-block;
+          text-align: left;
+          color: #ca151e;
+          padding-left: 30px;
+
+        }
+      }
+    }
+  }
+}
+
+//==========收货信息=============
+.receive_info{
+  margin-top: 50px;
+  h2{
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 0;
+  }
+  ul{
+    padding: 20px;
+    border-bottom: 1px solid #f2f2f2;
+    li{
+      height: 28px;
+      line-height: 28px;
+      font-size: 14px;
+      label{
+        width: 80px;
+        display: inline-block;
+        text-align: right;
+        color: #888;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+//============商品清单===========
+.order_list{
+  width: 940px;
+  margin-top: 50px;
+  h2{
+    text-align: left;
+    padding: 10px 0;
+  }
+  .list_title{
+    padding: 10px 0;
+    background-color: #fafafa;
+    margin-right: -1px;
+     li{
+       float: left;
+       border-right: 1px solid #dedede;
+       text-align: center;
+     }
+  }
+  .list_wrap{
+    display: table;
+     .list_inner{
+      display: table-row;
+       margin-right: -1px;
+      .col{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        border-right: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        padding: 10px 0;
+      }
+       .p_name{
+         a{
+           padding: 0 10px;
+           width: 300px;
+           display: inline-block;
+         }
+       }
+    }
+  }
+  .p_info{
+    width: 447px;
+  }
+  .p_img{
+    width: 100px;
+    border-right: 0!important;
+  }
+  .p_name{
+    width: 349px;
+  }
+  .p_price{
+    width: 120px;
+  }
+  .p_num{
+    width: 90px;
+  }
+  .p_total{
+    width: 130px;
+  }
+  .p_status{
+    width: 150px;
+    border-right: 0!important;
+  }
+}
+
+//=========订单金额============
+//金额-----------
+.account_list {
+  text-align: right;
+  margin-top: 50px;
+  .list_wrap {
+    padding: 20px;
+  }
+  .list {
+    height: 28px;
+    line-height: 28px;
+    label {
+      width: 100px;
+      text-align: right;
+      display: inline-block;
+    }
+    em {
+      color: #e01d20;
+    }
+  }
+  .total {
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    label {
+      font-size: 14px;
+    }
+    em {
+      color: #e01d20;
+      font-weight: 400;
+      font-size: 30px;
+    }
+  }
+  .to_pay {
+    margin: 30px 0 50px 0;
+    a {
+      width: 120px;
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      color: #fff;
+      background-color: #e01d20;
+      text-align: center;
+      vertical-align: middle;
+      &:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+      }
+    }
+  }
+}

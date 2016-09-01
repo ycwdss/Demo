@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.pro_card_ele{
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+  background: #fff;
+  img{
+    display: block;
+    width: 260px!important;
+    height: 260px!important;
+  }
+  .pro_card_intro{
+    font-size: 14px;
+    line-height: 25px;
+    padding:10px 10px ;
+    height: 50px;
+    @include ell(2);
+    a{
+      color: #666;
+    }
+  }
+  .pro_card_price{
+    margin:0 10px 10px;
+    font-size: 24px;
+    line-height: 35px;
+    .buy_btn{
+      float: right;
+      font-size: 12px;
+      width: 65px;
+      height: 22px;
+      margin-top: 8px;
+      line-height: 22px;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+//<div class="pro_card_ele ">
+//<a href=""><img src="../../Images/test/test_pro1.png" alt=""></a>
+//<p class="pro_card_intro"><a href="" class="main_hover"> 雅诗兰黛为您诚现唇印服务服务服务雅诗兰黛为您诚现唇印服务服务服务</a></p>
+//<p class="pro_card_price clearfix">
+//<span>￥39.00</span>
+//<span class="buy_btn main_bg">立即购买</span>
+//</p>
+//</div>

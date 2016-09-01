@@ -1,0 +1,26 @@
+@charset "UTF-8";
+//站点
+.site{
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  li{
+    float: left;
+    color: #666;
+  }
+  .arrow{
+    line-height: 38px;
+    font-family: \5b8b\4f53,'Microsoft YaHei';
+    margin: 2px  5px 0;
+  }
+}   
+//<!--站点指示-->
+//<div class="site">
+//<ul class="  clearfix">
+//<li><a href="../mall/usercenter.html">首页</a></li>
+//<li class="arrow">&gt;</li>
+//<li><a href="usercenter.html">个人中心</a></li>
+//<li class="arrow">&gt;</li>
+//<li>基本信息</li>
+//</ul>
+//</div>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/pagelist";
+.refund_title{
+  height: 50px;
+  line-height: 50px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  color:#333;
+  .refund_good{
+    text-indent: 55px;
+  }
+}
+.refund_good{
+  width: 335px;
+  @include box-sizing();
+  .good_img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    > img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .good_test {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+    p{
+      width: 180px;
+    }
+  }
+}
+.refund_style{
+  width: 122px;
+  text-align: center;
+}
+.refund_status{
+  width: 155px;
+  text-align: center;
+}
+.refund_detail{
+  width: 195px;
+  text-align: center;
+}
+.refund_items{
+  padding:25px 0;
+  border-bottom: 1px dashed #e4e4e4;
+  font-size: 14px;
+  .refund_good{
+    padding-left: 20px;
+  }
+  .action_btn{
+    display: inline-block;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+  }
+}
+.refund_box .refund_items:nth-last-of-type(2){
+  border-bottom: 0;
+}

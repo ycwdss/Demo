@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import "../fh/style";
+.changeImg{
+  position: relative;
+  margin-top: 42px;
+}
+.changeImg_left{
+  float: left;
+  min-height:490px;
+  margin-left: 23px;
+}
+.choose_img{
+  height: 40px;
+  width: 255px;
+  border: 1px solid #e5e5e5;
+  background: #f8f8f8;
+  font-size: 14px;
+  cursor: pointer;
+}
+.choose_img:hover{
+  opacity: 0.8;
+}
+.choose_img img{
+  float: left;
+  margin-left: 47px;
+  margin-top: 10px;
+}
+.choose_img span{
+  float: left;
+  color: #666666;
+  margin-left: 13px;
+  line-height: 40px;
+}
+.choose_waring{
+  padding-top: 5px;
+  color: #888888;
+  font-size: 12px;
+  height: 35px;
+}
+.upload_img{
+  position: relative;
+  width: 502px;
+  height: 286px ;
+  background: #f8f8f8;
+}
+.head_img{
+  position: absolute;
+  overflow: hidden;
+  margin: 43px 150px;
+}
+.head_img img{
+  width: 202px;
+  height: 202px;
+  -webkit-border-radius: 101px 101px;
+  -moz-border-radius: 101px 101px;
+  border-radius: 101px 101px;
+  overflow: hidden;
+}
+.button input{
+  margin-top: 50px;
+  height: 40px;
+  width: 80px;
+  background: #009933;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  @include transition();
+  &:hover{
+    background: #048b31;
+    -webkit-box-shadow: 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+  }
+}
+.changeImg_right{
+  float: left;
+  height: 400px;
+  width: 400px;
+  padding: 0 20px;
+  margin-left: 20px;
+  border-left:1px solid #f8f8f8;
+}
+.changeImg_right h4 {
+  font-size: 16px;
+  color: #666666;
+  line-height: 50px;
+}
+.changeImg_right p{
+  line-height: 40px;
+  font-size: 12px;
+  color: #888888;
+}
+.preview{
+  margin: 30px 0;
+  width: 250px;
+}
+.preview span{
+  float: right;
+  font-size: 12px;
+  color: #888888;
+}
+.preview1{
+  float: left;
+  height: 140px;
+  width: 140px;
+  -webkit-border-radius: 70px 70px;
+  -moz-border-radius: 70px 70px;
+  border-radius: 70px 70px;
+  background: #e5e5e5;
+  overflow: hidden;
+}
+.preview2{
+  float: left;
+  margin-left: 45px;
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 25px 25px;
+  -moz-border-radius: 25px 25px;
+  border-radius: 25px 25px;
+  overflow: hidden;
+  background: #e5e5e5;
+}
+.preview1_text{
+  margin-top: 65px;
+}
+.preview2_text{
+  margin-top: 20px;
+}

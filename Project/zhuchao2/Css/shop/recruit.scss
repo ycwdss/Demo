@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import "../lib/lib";
+@import "../module/pagelist";
+.recruit{
+  padding: 50px 0;
+}
+.recruit_table{
+  width: 950px;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  a{
+    color: #999;
+    >div{
+      display: block;
+      overflow: hidden;
+      text-align: left;
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .rec_name{
+    width: 371px;
+    text-indent: 47px;
+  }
+  .rec_department{
+    width: 170px;
+    text-align: center;
+  }
+  .rec_num{
+    width: 243px;
+    text-align: center;
+  }
+  .rec_time{
+    width: 166px;
+    text-align: center;
+  }
+}
+.recruit_title {
+  margin-top:20px;
+  color: #333;
+  background-color: #F8F8F8;
+}
+.recruit_list {
+  padding-bottom: 30px;
+  .recruit_table{
+    border-bottom: 1px dashed #e4e4e4;
+    &:hover{
+      a{
+        color: #63bf82;
+      }
+    }
+    .rec_name{
+      text-indent: 60px;
+    }
+  }
+}

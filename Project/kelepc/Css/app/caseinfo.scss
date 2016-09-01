@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+@import "../module/site";
+body{
+  background-color: #fafafa;
+}
+.content{
+  padding: 20px;
+  background-color: #fff;
+  @include box-sizing();
+}
+
+.content_title {
+  h3 {
+    margin: 5px 0 20px;
+    font-size: 24px;
+    text-align: left;
+    color: #333;
+  }
+  .writer_info {
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    .read {
+      padding: 0 50px;
+    }
+    .share {
+      width: 171px;
+      > span {
+        display: inline-block;
+        float: left;
+      }
+    }
+  }
+}
+.module_content {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 2;
+  h4 {
+    font-size: 18px;
+    color: #333;
+  }
+  img {
+    display: block !important;
+    max-width: 100% !important;
+    height: auto!important;
+    margin: 40px auto !important;
+  }
+}
+//上下篇
+.up_down {
+  margin-top: 40px;
+  padding: 20px 0 40px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #888;
+  > div {
+    position: relative;
+    vertical-align: top;
+    margin: 5px 0;
+    a {
+      display: inline-block;
+      width: 566px;
+      height: 23px;
+      line-height: 23px;
+      vertical-align: -6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #666;
+    }
+    span.date {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+.footer{
+  margin-top: 0;
+}

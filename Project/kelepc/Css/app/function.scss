@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+//图片广告
+.ad{
+  a{
+    display: block;
+    img{
+      width: 100%;
+      height: 500px;
+    }
+  }
+}
+//头部
+.case_title{
+  margin:40px auto 20px;
+  h3{
+    font-size: 24px;
+    text-align: center;
+    line-height: 55px;
+    color: #333;
+    border-bottom:1px solid #e4e4e4;
+  }
+  p{
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+  }
+}
+
+//功能
+.function_ele{
+  position: relative;
+  height: 510px;
+}
+.function_first{
+  height: 595px;
+  .function_img{
+    height: 595px;
+  }
+}
+.img_left{
+  background: #f8f8f8;
+}
+.function_img{
+  display: table;
+  height: 510px;
+  width: 365px;
+  >div{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.function_detail{
+  width: 715px;
+  h2{
+    margin-top: 130px;
+    line-height:1em;   
+    font-size: 36px;
+    color: $main;
+  }
+  h4{
+    margin-top: 40px;
+    font-size: 24px;
+    color: #333;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+  p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+  }
+}
+
+.footer{
+  margin-top: 50px;
+}

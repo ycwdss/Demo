@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@mixin float($direction: left,$support-for-ie:false){
+  float: unquote($direction);
+  @if $support-for-ie{
+    *display: inline;
+  }
+}
+.fr {
+  @include float(right,ture);
+}
+
+.fl {
+  @include float(left,ture);
+}
+//省略号
+@mixin ell($line:1) {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  //-webkit-box-orient: vertical;
+}
+//固定行数行高
+@mixin strictEll($line-height:1,$lines:1) {
+  line-height: $line-height;
+  height:$line-height*$lines+em;
+  overflow: hidden;
+}
+//时间
+@mixin transition($element:all,$time:0.2s,$speed:ease){
+  -moz-transition:$element $time $speed; /* Firefox 4 */
+  -webkit-transition:$element $time $speed; /* Safari 和 Chrome */
+  -o-transition:$element $time $speed;
+  transition:$element $time $speed;
+}
+//盒子
+@mixin box-sizing ($sizing:border-box) {
+  -webkit-box-sizing:$sizing;
+  -moz-box-sizing:$sizing;
+  box-sizing:$sizing;
+}
+//箭头
+@mixin arrow($direction,
+$size,
+$color) {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-width: $size;
+  cursor: pointer;
+  @if $direction == top {
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent $color transparent;
+    border-top: none;
+  } @else if $direction == bottom {
+    border-style: solid dashed dashed dashed;
+    border-color: $color transparent transparent transparent;
+    border-bottom: none;
+  } @else if $direction == right {
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent $color;
+    border-right: none;
+  } @else if $direction == left {
+    border-style: dashed solid dashed dashed;
+    border-color: transparent $color transparent transparent;
+    border-left: none;
+  }
+}

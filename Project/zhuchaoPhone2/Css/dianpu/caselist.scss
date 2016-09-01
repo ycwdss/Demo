@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.case_list {
+  margin-top: 10px;
+  padding: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  .case_list_a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    h3{
+      margin: 10px 0 5px;
+      height: 20px;
+      overflow: hidden;
+      font-size: 16px;
+      color: #333;
+    }
+    .case_style{
+      font-size: 12px;
+      color: #666;
+      span{
+        display: inline-block;
+        width: 49%;
+        text-align: left;
+       @include strictEll(1.6,1);
+      }
+    }
+    .case_text{
+      font-size: 14px;
+      color: #666;
+      @include strictEll(1.6,2);
+    }
+
+  }
+}

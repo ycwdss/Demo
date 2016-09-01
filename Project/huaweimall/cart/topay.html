@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华为商城购物车</title>
+    <link rel="stylesheet" href="../Css/cart/topay.css">
+</head>
+<body>
+<!--顶部导航-->
+<div class="top">
+    <div class="top_center">
+        <ul class="fl">
+            <li class="l1"><a href="#">华为官网</a></li>
+            <li><a href="#">华为荣耀</a></li>
+            <li class="l3">
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="#">软件应用</a>
+                        <i></i>
+                    </div>
+                    <div class="bd">
+                        <p><a href="#">EMUI</a></p>
+                        <p><a href="#">应用市场</a></p>
+                        <p><a href="#">云服务</a></p>
+                        <p><a href="#">开发者联盟</a></p>
+                    </div>
+                </div>
+
+            </li>
+            <li><a href="#">花粉俱乐部</a></li>
+            <li><a href="#">Select Region</a></li>
+        </ul>
+        <ul class="fr">
+            <li class="r1">
+                <!--<a href="#">登录</a>-->
+                <!--<a href="#">注册</a>-->
+                <!--登录后信息-->
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="../usercenter/usercenter_index.html">小狗头</a>
+                        <em class="level_1"></em>
+                        <i ></i>
+                    </div>
+                    <div class="bd">
+                        <p>
+                            <a href="#">我的账号</a>
+                            <span>|</span>
+                            <a href="#">退出</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">V码(优购码)</a></li>
+            <li><a href="#">手机版</a></li>
+            <li class="r5">
+                <div class="drop_down">
+                    <div class="hd">
+                        <a href="#">网站导航</a>
+                        <i></i>
+                    </div>
+                    <div class="bd">
+                        <p><a href="#">帮助中心</a></p>
+                        <p><a href="#">PC软件</a></p>
+                        <p><a href="#">数字音乐</a></p>
+                        <p><a href="#">爱旅</a></p>
+                        <p><a href="#">华为网盘</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--头部-->
+<div class="head">
+    <div class="head_center clearfix">
+        <!--logo-->
+        <div class="logo fl">
+            <a href="#">
+                <img src="../index/Images/test_logo.png">
+            </a>
+        </div>
+        <!--购物支付流程进度-->
+        <ul class="cart_step fr">
+            <li class="mycart com"><em>1</em>我的购物车</li>
+            <li class="fill_order com"><em>2</em>填写核对订单</li>
+            <li class="submit_sucess"><em>3</em>成功提交订单</li>
+        </ul>
+    </div>
+</div>
+
+
+<!---主要内容区域--->
+<div class="content con_width">
+    <!--订单确认-->
+    <div class="order_confirm">
+        <div class="hd">
+            <i class="sucess"></i>
+            <h3>订单提交成功，请您尽快付款！</h3>
+            <p>
+                <label>订单号：</label><em>2360046541 </em>|
+                <label class="sure_pay">付款金额（元）：</label><em>2099.00  元</em>
+            </p>
+            <p>请您在<em class="last_paytime">  2015-12-17 23:25 </em>完成支付，否则订单将自动取消。</p>
+        </div>
+        <div class="bd">
+            <ul>
+                <li>
+                    <label>订单编号：</label>
+                    <em class="order_code">2360046541</em>
+                </li>
+                <li>
+                    <label>订单金额：	</label>
+                    <em >2099.00元</em>
+                </li>
+                <li>
+                    <label>收货信息：	</label>
+                    <em>河南省郑州市金水区金水路玉凤路马哈顿商业广场5号楼D单元3092室</em>
+                    <label class="receiver_name">王赞</label>
+                    <em>156489856</em>
+                </li>
+                <li>
+                    <label>购买日期：</label>
+                    <em>2015-12-16 23:25:43</em>
+                </li>
+                <li>
+                    <label>配送方式：</label>
+                    <em>由默认快递公司配送    </em>
+                    <label>运费</label>
+                    <em>￥0.00</em>
+                </li>
+                <li>
+                    <label>发票信息：</label>
+                    <em>个人</em>
+                </li>
+            </ul>
+        </div>
+        <div class="hs">
+            <a href="javascript:;">订单详情
+                <i class="arrow"></i>
+            </a>
+        </div>
+    </div>
+    <!---选择支付方式-->
+    <div class="pay_way">
+        <h3 class="choice_title">选择支付方式</h3>
+        <!--第三方平台支付--->
+        <div class="choice_way third_pay">
+            <h2>第三方支付平台</h2>
+            <ul class="clearfix">
+                <li>
+                    <input type="radio"id="first" name="radio">
+                    <label for="first"><img src="Images/icon_alipay_logo.png"></label>
+                </li>
+                <li>
+                    <input type="radio"id="second" name="radio">
+                    <label for="second"><img src="Images/icon_wechat_logo.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="third" name="radio">
+                    <label for="third"><img src="Images/icon_tenpay_logo.gif"></label>
+                </li>
+
+            </ul>
+        </div>
+        <!--网银支付--->
+        <div class="choice_way bank_pay">
+            <h2>银行网银<em>支持以下各银行储蓄卡及信用卡</em></h2>
+            <ul class="clearfix">
+                <li>
+                    <input type="radio"id="bank1" name="radio">
+                    <label for="bank1"><img src="Images/icon_boc.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank2" name="radio">
+                    <label for="bank2"><img src="Images/icon_ccb.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank3" name="radio">
+                    <label for="bank3"><img src="Images/icon_cib.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank4" name="radio">
+                    <label for="bank4"><img src="Images/icon_citic.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank5" name="radio">
+                    <label for="bank5"><img src="Images/icon_cmb.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank6" name="radio">
+                    <label for="bank6"><img src="Images/icon_comm.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank7" name="radio">
+                    <label for="bank7"><img src="Images/icon_icbc.gif"></label>
+                </li>
+                <li>
+                <input type="radio"id="bank8" name="radio">
+                <label for="bank8"><img src="Images/icon_spdb.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank9" name="radio">
+                    <label for="bank9"><img src="Images/icon_abc.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank10" name="radio">
+                    <label for="bank10"><img src="Images/icon_spabank.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank11" name="radio">
+                    <label for="bank11"><img src="Images/icon_ceb.gif"></label>
+                </li>
+                <li>
+                    <input type="radio"id="bank12" name="radio">
+                    <label for="bank12"><img src="Images/icon_gdb.gif"></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--确认支付-->
+    <div class="topay_link">
+        <a href="#">确认支付方式</a>
+    </div>
+</div>
+<!--规则强调--->
+<div class="quality">
+    <ul class="clearfix">
+        <li class="q1"><i></i>500强企业 品质保证</li>
+        <li class="q2"><i></i>7天退货 15天换货</li>
+        <li class="q3"><i></i>99元起免运费</li>
+        <li class="q4"><i></i>448家维修网点 全国联保</li>
+    </ul>
+</div>
+<!--服务支持-->
+<div class="service">
+    <dl class="s1">
+        <dt><i></i>帮助中心</dt>
+        <dd><a href="#">配送方式</a></dd>
+        <dd><a href="#">购物指南</a></dd>
+        <dd><a href="#">支付方式</a></dd>
+        <dd><a href="#">常见问题</a></dd>
+    </dl>
+    <dl class="s2">
+        <dt><i></i>售后服务</dt>
+        <dd><a href="#">保修政策</a></dd>
+        <dd><a href="#">退换货政策</a></dd>
+        <dd><a href="#">退换货流程</a></dd>
+        <dd><a href="#">手机寄修服务</a></dd>
+    </dl>
+    <dl class="s3">
+        <dt><i></i>技术支持</dt>
+        <dd><a href="#">售后网点</a></dd>
+        <dd><a href="#">常见问题</a></dd>
+        <dd><a href="#">产品手册</a></dd>
+        <dd><a href="#">软件下载</a></dd>
+    </dl>
+    <dl class="s4">
+        <dt><i></i>关于商城</dt>
+        <dd><a href="#">公司介绍</a></dd>
+        <dd><a href="#">华为商城简介</a></dd>
+        <dd><a href="#">联系客服</a></dd>
+    </dl>
+    <dl class="s5">
+        <dt><i></i>关注我们</dt>
+        <dd><a href="#">新浪微博</a></dd>
+        <dd><a href="#">腾讯微博</a></dd>
+        <dd><a href="#">花粉社区</a></dd>
+        <dd><a href="#">商城手机版</a></dd>
+    </dl>
+</div>
+<!--底部-->
+<div class="foot">
+    <p>Copyright © 2011-2015 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20130048号 | 苏ICP备09062682号-9</p>
+    <p><a href="#">网络文化经营许可证苏网文[2012]0401-019号</a></p>
+    <p class="foot_img">
+        <a href="#"><img src="../index/Images/test_foot1.png"></a>
+        <a href="#"><img src="../index/Images/test_foot2.png"></a>
+        <a href="#"><img src="../index/Images/test_foot3.png"></a>
+    </p>
+</div>
+<!--返回顶部-->
+<div class="totop">
+    <a href="#">
+        <img src="../index/Images/sprite_totop.png">
+    </a>
+</div>
+</body>
+<script data-main="../Js/main" id="require" app="topay" src="../Js/lib/require.js"></script>
+</html>

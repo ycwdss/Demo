@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import "../fh/lib";
+@import "../fh/reset";
+
+@import "../fh/commonclass";
+@import "../fh/moudle/footer";
+@import "../fh/moudle/totop";
+
+@import "../fh/moudle/component";
+
+@import "../fh/moudle/mall/productCard";
+@import "../fh/moudle/mall/nav";
+@import "../fh/moudle/new_top/search";
+@import "../fh/moudle/module_top";
+
+//商品分类
+.mall_list_nav_box{
+  display: none;
+}
+.allclass:hover .mall_list_nav_box{
+  display: block;
+}
+//配置项
+select{
+  background-color: #fff!important;
+}
+.no_marginR{
+  margin-right: 0!important;
+}
+
+//重写类
+.classlist_box{
+  display: none;
+}
+.allclass:hover .classlist_box{
+  display: block;
+}
+
+//结算页头部样式
+//购物流程
+.purchase_route{
+  width: 450px;
+  margin-top: 32px;
+  li{
+    float: left;
+    width:150px ;
+    text-align: center;
+    color: #666666;
+    border-top: 5px solid #e4e4e4;
+  }
+  .current{
+    color: #009933;
+    border-top: 5px solid #009933;
+    .progress_dot{
+      color: white;
+      background: #009933;
+    }
+  }
+  .last{
+    color: #66c285;
+    border-top: 5px solid #66c285;
+    .progress_dot{
+      color: #dff1e4;
+      background: #66c285;
+    }
+  }
+}
+.progress_dot{
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  top: -13px;
+  color: #666666;
+  background: #e4e4e4;
+}
+
+//分界线
+.border_line{
+  height: 10px;
+  border-bottom: 1px solid #009933;
+}
+
+//网站背景颜色
+.background_color{
+  padding-bottom: 30px;
+  background-color: #f8f8f8;
+}
+//网站主题内容标题
+.cart_title{
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  h3{
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+    i{
+      padding:0 4px;
+      color: #f60;
+    }
+  }
+}
+.cart_address{
+  .label{
+    font-size: 12px;
+    color: #666;
+  }
+}
+.address{
+  margin-top: 8px;
+  position: relative;
+  z-index: 3;
+  height: 25px;
+  cursor: default;
+}
+.address_blcok {
+  float: left;
+  position: relative;
+  top: 0;
+  height: 23px;
+  background: #fff;
+  border: 1px solid #CECBCE;
+  padding: 0 20px 0 4px;
+  line-height: 23px;
+  overflow: hidden;
+  i{
+    display: block;
+    position: absolute;
+    top:50%;
+    margin-top: -2px;
+    right:5px;
+    width:11px;
+    height: 5px;
+    background: url(../../cart/Images/sprite_cart_downbtn.png) no-repeat;
+    overflow: hidden;
+  }
+}
+.address_blcok_text{
+  color: #666;
+}

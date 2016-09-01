@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/product_list";
+@import "../mobile_moudle/moudle/_strategy_top";
+//可能还喜欢
+.suggest_top {
+  height: 48px;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+}
+.title_border{
+  float: left;
+  width: 47%;
+  height: 18px;
+  margin: 14px 3% ;
+  padding: 0 5px;
+  font-size:1.2rem;
+  overflow: visible;
+  border-left:2px solid #093;
+  h3{
+    display: block;
+    color: #333;
+    line-height: 20px;
+    margin-top: -1px;
+    margin-left: 2px;
+  }
+}
+/*
+*购物车空空如也
+*/
+
+.cart_empty{
+  margin: 10px 0;
+  height: 200px;
+  background: #FFFFFF;
+  overflow: hidden;  
+}
+.empty_img{
+  padding-left: 30px;
+  img{
+    display: block;
+    width: 150px !important;
+    height: 115px !important;
+    margin: 0 auto;
+  }
+}
+.empty_text{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;  
+  line-height: 30px;
+  a{
+    color: #093;
+    }
+}

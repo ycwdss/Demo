@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import "../lib/mixin";
+
+.content_wrap {
+  background-color: #fff;
+}
+
+.items_title {
+  a {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    @include transition(opacity, 0.2s, ease);
+    &:hover {
+      @include opacity(85);
+    }
+  }
+}
+
+.notice {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  margin: 20px 0 30px;
+  i {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+  }
+}
+
+.search_type {
+  margin-top: 30px;
+  border-bottom: 1px solid #e4e4e4;
+  a {
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #ccc;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+    @include transition(opacity, 0.2s, ease);
+    &:hover {
+      @include opacity(85);
+    }
+  }
+}
+
+.search_btn {
+  margin: 20px 0 30px;
+  height: 30px;
+  line-height: 30px;
+  .input_text {
+    position: relative;
+    width: 220px;
+    input {
+      width: 220px;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 10px;
+      border: 1px solid #e4e4e4;
+    }
+    i {
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      font-size: 18px;
+      color: #666;
+      cursor: pointer;
+    }
+  }
+  .input_btn {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 9px 20px;
+    margin: 0 20px;
+    @include transition(opacity, 0.2s, ease);
+    &:hover {
+      @include opacity(85);
+    }
+  }
+}
+
+//搜索后选择框
+.searched_wrap {
+  border: 1px solid #e6e6e6;
+  padding: 5px 20px;
+  height: 250px;
+  overflow-y: scroll;
+  ul > li {
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    .icon-shanchu{
+      float: right;
+      margin-right: 40px;
+      line-height: 30px;
+      font-size: 20px;
+      color: #999;
+      cursor: pointer;
+    }
+    label {
+      cursor: pointer;
+    }
+    input {
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    em {
+      font-size: 14px;
+      color: #666;
+    }
+    b {
+      padding: 0 3px;
+      font-size: 13px;
+      color: #666;
+    }
+  }
+}
+
+//选择
+.select_list {
+  float: left;
+  margin-right: 20px;
+  span {
+    display: inline-block;
+    width: 218px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #333;
+    @include box-sizing();
+  }
+  ul {
+    width: 218px;
+    height: 260px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    @include box-sizing();
+    background-color: #fff;
+    overflow-y: auto;
+    li {
+      padding-left: 20px;
+      line-height: 24px;
+      font-size: 12px;
+      color: #333;
+      cursor: pointer;
+      &:hover {
+        color: #2e9bd7;
+      }
+    }
+    .current {
+      color: #2e9bd7;
+    }
+  }
+}
+
+//已选择提示
+.selected_tips {
+  padding-left: 14px;
+  border: 1px solid #f9e1df;
+  background-color: #fff3f2;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px 0 30px;
+  p {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    em {
+      font-size: 14px;
+      color: #e64b47;
+      font-weight: 500;
+    }
+    b {
+      padding: 0 3px;
+      font-size: 13px;
+      color: #666;
+    }
+  }
+}
+//下一步
+.next_step {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 30px 0 40px;
+  a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 40px;
+    @include transition(opacity, 0.2s, ease);
+    &:hover {
+      @include opacity(85);
+    }
+  }
+}

@@ -1,0 +1,257 @@
+.content {
+  margin-bottom: 160px;
+  width: 100%; }
+
+.banner {
+  background: url("../../../Images/pc/jiazhuang/icon_insurance_banner.jpg?_nosprite") no-repeat top center;
+  height: 500px;
+  position: relative; }
+  .banner .order {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: 340px;
+    width: 310px;
+    height: 380px;
+    background-color: #fff;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .banner .order h3 {
+      font-size: 16px;
+      font-family: "Microsoft YaHei"; }
+    .banner .order form {
+      margin: 20px 0 10px 0; }
+      .banner .order form input, .banner .order form .location, .banner .order form .yz_message {
+        width: 100%;
+        margin-bottom: 20px; }
+      .banner .order form input {
+        border: 1px solid #e4e4e4;
+        height: 38px;
+        line-height: 38px; }
+      .banner .order form input, .banner .order form select {
+        padding-left: 10px; }
+      .banner .order form .location .province, .banner .order form .location .city {
+        width: 128px;
+        height: 40px;
+        line-height: 40px;
+        position: relative; }
+      .banner .order form .location select {
+        width: 100%;
+        height: 100%; }
+      .banner .order form .yz_message input {
+        margin-bottom: 0; }
+      .banner .order form .yz_message .yzm {
+        width: 155px; }
+      .banner .order form .yz_message .getyzm {
+        width: 98px;
+        cursor: pointer;
+        padding: 0;
+        background-color: #093;
+        color: #fff;
+        border: 0;
+        height: 40px;
+        line-height: 40px; }
+      .banner .order form .btn {
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 14px;
+        background-color: #009933;
+        color: #fff;
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px; }
+    .banner .order p {
+      width: 100%;
+      text-align: center;
+      color: #999999;
+      letter-spacing: 1px; }
+      .banner .order p span {
+        padding: 0 2px;
+        color: #ff7e59; }
+
+.fqa {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background: url("../../../Images/pc/jiazhuang/icon_insurance_bg.jpg?_nosprite") no-repeat top center; }
+  .fqa .question {
+    position: absolute;
+    top: 70px;
+    right: 50%;
+    margin-right: 40px; }
+    .fqa .question h1 {
+      font-size: 32px; }
+    .fqa .question .answer {
+      font-size: 18px;
+      margin-top: 55px; }
+      .fqa .question .answer p {
+        line-height: 36px; }
+
+.quality_test {
+  height: 850px; }
+  .quality_test .tester {
+    width: 100%;
+    height: 720px;
+    background-color: #3dd394; }
+    .quality_test .tester .hd {
+      text-align: center;
+      padding-top: 60px; }
+      .quality_test .tester .hd h1 {
+        font-size: 36px; }
+      .quality_test .tester .hd p {
+        padding-top: 25px;
+        padding-bottom: 52px;
+        font-size: 18px; }
+    .quality_test .tester .bd {
+      width: 1300px;
+      height: 305px;
+      margin: 0 auto; }
+      .quality_test .tester .bd .bd_box {
+        width: 1080px;
+        margin: 0 auto;
+        height: 305px;
+        position: relative; }
+      .quality_test .tester .bd .wrap {
+        margin: 0 -10px;
+        width: 1100px;
+        height: 305px;
+        overflow: hidden; }
+        .quality_test .tester .bd .wrap .box {
+          width: 200px;
+          margin: 0 10px;
+          overflow: hidden; }
+          .quality_test .tester .bd .wrap .box a {
+            display: block; }
+          .quality_test .tester .bd .wrap .box img {
+            width: 200px;
+            height: 200px; }
+          .quality_test .tester .bd .wrap .box .tester_info {
+            background-color: #fff;
+            margin-top: 5px;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+            .quality_test .tester .bd .wrap .box .tester_info h3 {
+              font-size: 18px;
+              color: #000; }
+            .quality_test .tester .bd .wrap .box .tester_info p {
+              font-size: 14px;
+              color: #888888;
+              padding-top: 20px; }
+      .quality_test .tester .bd .step {
+        margin-top: 30px; }
+        .quality_test .tester .bd .step h2 {
+          text-align: center;
+          font-size: 25px; }
+        .quality_test .tester .bd .step .step_info {
+          width: 1080px;
+          height: 250px;
+          background: url("../../../Images/pc/jiazhuang/icon_step_bg.png?_nosprite") no-repeat;
+          margin: 20px auto 0px; }
+          .quality_test .tester .bd .step .step_info .one, .quality_test .tester .bd .step .step_info .two, .quality_test .tester .bd .step .step_info .three {
+            width: 150px;
+            height: 150px;
+            padding: 55px 50px 0px;
+            color: #fff;
+            text-align: center; }
+            .quality_test .tester .bd .step .step_info .one h3, .quality_test .tester .bd .step .step_info .two h3, .quality_test .tester .bd .step .step_info .three h3 {
+              font-size: 18px;
+              padding-bottom: 47px; }
+            .quality_test .tester .bd .step .step_info .one p, .quality_test .tester .bd .step .step_info .two p, .quality_test .tester .bd .step .step_info .three p {
+              font-size: 14px; }
+          .quality_test .tester .bd .step .step_info .two, .quality_test .tester .bd .step .step_info .three {
+            margin-left: 165px; }
+          .quality_test .tester .bd .step .step_info .two h3 {
+            padding-bottom: 10px; }
+          .quality_test .tester .bd .step .step_info .two p {
+            line-height: 30px;
+            text-align: left; }
+
+.apply_range {
+  width: 1300px;
+  height: 1230px;
+  margin: 0 auto;
+  margin-top: 90px; }
+  .apply_range h1 {
+    text-align: center;
+    font-size: 36px; }
+  .apply_range p {
+    text-align: center;
+    font-size: 20px;
+    padding: 25px 0 52px 0; }
+  .apply_range thead tr th {
+    font-size: 18px !important;
+    font-weight: normal;
+    text-align: center !important;
+    color: #000 !important; }
+  .apply_range table .list_one {
+    width: 250px;
+    height: 100px;
+    border: 0.5px solid #fff;
+    background-color: #e7f4ea;
+    text-align: center;
+    font-size: 14px; }
+  .apply_range table .list_two {
+    width: 250px;
+    height: 100px;
+    border: 0.5px solid #fff;
+    background-color: #e5f5fd;
+    text-align: center;
+    font-size: 14px; }
+  .apply_range table .list_three {
+    width: 799px;
+    height: 100px;
+    border: 0.5px solid #fff;
+    background-color: #fcebec;
+    text-align: left;
+    padding: 0 53px 0 40px;
+    line-height: 30px;
+    color: #666;
+    font-size: 14px; }
+  .apply_range .declaration {
+    height: 150px;
+    background-color: #f8f8f8; }
+    .apply_range .declaration p {
+      font-size: 14px;
+      color: #666;
+      text-align: left;
+      padding-left: 50px;
+      line-height: 30px;
+      padding-top: 10px; }
+
+.left_btn {
+  display: block;
+  position: absolute;
+  left: -110px;
+  top: 0; }
+  .left_btn i {
+    width: 30px;
+    height: 51px;
+    display: block;
+    margin: 25px auto;
+    background: url("../../jiazhuang/Images/sprite_jiazhuang_left.png") no-repeat; }
+
+.right_btn {
+  display: block;
+  position: absolute;
+  right: -110px;
+  top: 0; }
+  .right_btn i {
+    display: block;
+    width: 30px;
+    height: 51px;
+    margin: 25px auto;
+    background: url("../../jiazhuang/Images/sprite_jiazhuang_right.png") no-repeat; }
+
+.left_btn, .right_btn {
+  background: #31c781;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }

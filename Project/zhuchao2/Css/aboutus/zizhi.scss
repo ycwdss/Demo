@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "../lib/lib";
+
+.zizhi_inner{
+  width: 100%;
+  overflow: hidden;
+}
+.zizhi_box{
+  margin-right: -20px;
+}
+.zizhi_ele{
+  float: left;
+  position: relative;
+  width: 310px;
+  height: 495px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  img{
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    cursor: pointer;
+  }
+  &:hover{
+    .zizhi_intro{
+     @include opacity(100);
+    }
+  }
+  .zizhi_intro{
+    position: absolute;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    line-height: 35px;
+    color: #ffffff;
+    text-align: center;
+    @include opacity(0);
+    @include bg(rgba(0,0,0,0.5));
+    @include transition();
+    >div{
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}

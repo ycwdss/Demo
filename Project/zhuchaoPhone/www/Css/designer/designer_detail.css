@@ -1,0 +1,347 @@
+.module_block {
+  margin: 10px 0; }
+  .module_block h2 {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    background: #fff;
+    font-size: 16px;
+    color: #000;
+    position: relative; }
+    .module_block h2 a {
+      color: #000; }
+    .module_block h2 span {
+      margin-right: 15px;
+      font-size: 12px;
+      color: #888; }
+  .module_block .icon_gt_link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px; }
+  .module_block .icon_gt_btn {
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    display: block; }
+
+.read_more {
+  margin: 10px 0;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff; }
+  .read_more a {
+    color: #888;
+    font-size: 12px; }
+
+.assess_box {
+  margin: 10px 0;
+  background-color: #fff; }
+
+.assess_user {
+  padding: 10px;
+  border-bottom: 1px solid #e4e4e4; }
+
+.assess_user_head {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  overflow: hidden; }
+  .assess_user_head img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: block; }
+
+.assess_user_name {
+  margin-left: 40px;
+  color: #888;
+  line-height: 30px; }
+  .assess_user_name a {
+    font-size: 14px;
+    color: #888; }
+
+.assess_text {
+  margin: 10px;
+  padding-bottom: 10px; }
+  .assess_text p {
+    color: #888;
+    font-size: 12px; }
+
+.assess_star_box span {
+  width: 10px;
+  height: 10px;
+  display: inline-block; }
+
+.assess_star_box .icon_star1 {
+  background: url(../../../Images/mobile/foreman/icon_star1.png) no-repeat;
+  background-size: 10px; }
+
+.assess_star_box .icon_star2 {
+  background: url(../../../Images/mobile/foreman/icon_star2.png) no-repeat;
+  background-size: 10px; }
+
+.assess_star_box .icon_star3 {
+  background: url(../../../Images/mobile/foreman/icon_star3.png) no-repeat;
+  background-size: 10px; }
+
+.module_block_nav {
+  margin: 10px 0;
+  line-height: 45px;
+  background-color: #fff; }
+  .module_block_nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 14px;
+    position: relative; }
+    .module_block_nav li a {
+      color: #333; }
+  .module_block_nav li:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: #e4e4e4; }
+  .module_block_nav li:last-child:after {
+    display: none; }
+  .module_block_nav .current a {
+    color: #093; }
+
+.moudle_top h1 {
+  line-height: 45px;
+  font-size: 18px;
+  color: #fff; }
+
+.icon_shoucang_link {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  padding: 13px; }
+  .icon_shoucang_link .icon_shoucang_btn {
+    height: 22px;
+    background-size: 25px; }
+
+.banner {
+  padding: 10px 0;
+  height: 180px;
+  overflow: hidden;
+  background: url(../../../Images/mobile/foreman/icon_foreman_banner_bg.png) no-repeat; }
+
+.user_head {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  overflow: hidden; }
+  .user_head img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%; }
+
+.user_name {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  max-width: 90%;
+  margin: 6px auto; }
+
+.user_infor {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1;
+  height: 1em; }
+  .user_infor span:after {
+    margin: 0 3px;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    vertical-align: -2px;
+    background-color: #fff; }
+  .user_infor span:last-child:after {
+    display: none; }
+
+.user_impression {
+  max-width: 90%;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin: 6px auto; }
+
+.user_btn {
+  width: 180px;
+  margin: 15px auto 0;
+  font-size: 14px; }
+  .user_btn a {
+    float: left;
+    width: 80px;
+    height: 25px;
+    margin: 0 5px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.detail_nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10%;
+  height: 45px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e4e4e4; }
+  .detail_nav li {
+    float: left;
+    width: 33.33333%;
+    line-height: 45px;
+    text-align: center;
+    position: relative; }
+    .detail_nav li a {
+      font-size: 16px;
+      color: #000; }
+  .detail_nav .current:before {
+    position: absolute;
+    content: "";
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #093; }
+  .detail_nav .current a {
+    color: #093; }
+
+.details_text_list {
+  margin: 10px 0;
+  padding: 0 10px;
+  background-color: #fff; }
+  .details_text_list li {
+    padding: 10px 3px;
+    font-size: 14px;
+    border-top: 1px solid #e4e4e4; }
+  .details_text_list li:first-child {
+    border-top: none; }
+  .details_text_list .item {
+    display: -webkit-box; }
+  .details_text_list .key {
+    width: 20%;
+    color: #888; }
+  .details_text_list .val {
+    width: 80%;
+    color: #000; }
+
+.module_block dl dt.title {
+  padding: 5px 3px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #000;
+  border-bottom: 1px solid #e4e4e4; }
+
+.module_block dl dd {
+  margin: 10px 3px;
+  font-size: 14px;
+  color: #888;
+  line-height: 1.6; }
+
+.module_block .assess_box {
+  padding: 0 15px; }
+
+.new_case_box {
+  margin-top: 10px; }
+
+.new_case_img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
+  .new_case_img img {
+    width: 100%;
+    height: 400px; }
+
+#case {
+  position: relative; }
+  #case .new_case_page {
+    padding: 6px 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 10;
+    color: #fff;
+    background-color: rgba(0, 153, 51, 0.7); }
+
+.new_case_text {
+  padding: 10px 10px 0;
+  background-color: #fff; }
+  .new_case_text h4 {
+    font-size: 14px;
+    line-height: 1.6;
+    height: 1.6em; }
+  .new_case_text .user_infor {
+    font-size: 12px;
+    text-align: left;
+    color: #888;
+    line-height: 1;
+    height: 1em; }
+    .new_case_text .user_infor span:after {
+      background-color: #888; }
+
+.user_state {
+  margin-top: 10px;
+  border-top: 1px solid #e4e4e4;
+  background-color: #fff; }
+  .user_state li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    color: #888;
+    position: relative; }
+    .user_state li i {
+      width: 15px;
+      height: 15px;
+      margin: -2px 10px;
+      display: inline-block; }
+  .user_state li:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+    width: 1px;
+    height: 20px;
+    background-color: #e4e4e4; }
+  .user_state li:last-child:after {
+    display: none; }
+  .user_state .icon_ping i {
+    background: url(../../../Images/mobile/foreman/icon_pinglun.png) no-repeat;
+    background-size: 15px; }
+  .user_state .icon_shoucang i {
+    background: url(../../../Images/mobile/foreman/icon_shoucang_star.png) no-repeat;
+    background-size: 15px; }
+  .user_state .icon_good i {
+    background: url(../../../Images/mobile/foreman/icon_good.png) no-repeat;
+    background-size: 15px; }
+
+.read_more {
+  margin: 10px 0;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff; }
+  .read_more a {
+    color: #888;
+    font-size: 12px; }

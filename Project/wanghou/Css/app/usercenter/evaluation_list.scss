@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/site";
+
+@import "../../module/pagelist";
+@import "../../module/recommend";
+@import "../../module/evaluation_ele";
+@import "../../module/no_order";
+
+.already_evaluation,.not_evaluation,.no_order{
+  min-height: 470px;
+}

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import "../../lib/_mixin";
+@import "../../module/routenav";
+@import "../../module/usercenter";
+@import "../../module/nohave";
+@import "../../module/page";
+@import "../../module/totop";
+//每项尺寸
+.pro_name {
+  width: 380px;
+}
+
+.pro_type,.pro_status,.pro_detail{
+  width: 126px;
+}
+
+//标题
+.pro_title {
+  padding: 10px 20px;
+  li {
+    font-size: 16px;
+    color: #666;
+    height: 50px;
+    line-height: 50px;
+  }
+  .pro_name{
+    text-align: left;
+    text-indent: 30px;
+  }
+}
+
+.pro_wrap {
+  display: table;
+  padding: 20px;
+  border-bottom: 1px dotted #e4e4e4;
+}
+
+.pro_inner {
+  display: table-row;
+}
+.pro_name,
+.pro_type,
+.pro_status,
+.pro_detail
+{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pro_name {
+  .pro_img {
+    display: inline-block;
+    width: 92px;
+    height: 92px;
+    overflow: hidden;
+    img {
+      width: 92px;
+      height: 92px;
+    }
+  }
+  .pro_text {
+    padding: 10px 10px 0;
+    text-align: left;
+    width: 150px;
+    a {
+      display: inline-block;
+      width: 150px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 14px;
+      color: #333;
+    }
+    p {
+      font-size: 12px;
+      width: 150px;
+      max-height: 36px;
+      overflow: hidden;
+      @include line(2);
+    }
+  }
+}
+
+//内容字体大小
+.pro_wrap{
+  .pro_type,
+  .pro_status,
+  .pro_detail{
+    font-size: 14px;
+  }
+
+}
+//查看详情
+.look_detail{
+  display: inline-block;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  @include transition();
+  font-size: 12px;
+  text-align: center;
+}
+

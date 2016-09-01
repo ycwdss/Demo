@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@mixin background_white{
+  background: #FFFFFF;
+}
+@mixin background_black{
+  background: #f8f8f8;
+}
+$border_color:#e4e4e4;
+/*商品*/
+.m_pro{
+  margin-bottom: 50px;
+}
+.c_pro{
+  float: left;
+  padding: 15px 15px 25px;
+  width: 225px;
+  margin-right: 20px;
+  margin-top: 20px;
+  @include background_white;
+  @include transition;
+  img{
+    width: 225px!important;
+    height: 140px!important;
+    display: block;
+  }
+}
+.c_pro:hover{
+  margin-top: 18px;
+  margin-bottom: 2px;
+  @include box-shadow(0 15px 50px rgba(0,0,0,0.1))
+}
+.pro_price{
+  color: $activeColor;
+  font-size: 16px;
+  line-height: 35px;
+  white-space: normal;
+  @include ell();
+  span{
+    font-size: 12px;
+  }
+}
+.pro_detail{
+  white-space: normal;
+  @include ell(2);
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  height: 38px;
+}
+.clear_right{
+  margin-right: 0;
+}
+.right_sort .clear_border{
+  border: 0;
+}

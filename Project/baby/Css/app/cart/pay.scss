@@ -1,0 +1,393 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/cart_style";
+
+
+//订单提交成功
+.submit_success {
+  padding:0 45px;
+  background-color: #fff;
+}
+
+.submit_title {
+  position: relative;
+  padding: 50px 0 20px 0;
+  line-height: 40px;
+  border-bottom: 1px solid #e4e4e4;
+  .icon_success {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    font-size: 60px;
+  }
+  .tips {
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #333;
+    padding-left: 90px;
+    b {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+  .sum {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 90px;
+    span {
+      font-size: 16px;
+      margin-right: 70px;
+    }
+    em {
+      font-size: 24px;
+    }
+  }
+}
+
+.submit_info {
+  padding: 20px 0 30px 0;
+  li {
+    font-size: 15px;
+    color: #666;
+    label {
+      min-width: 80px;
+      text-align: left;
+      display: inline-block;
+      line-height: 36px;
+    }
+  }
+}
+//选择支付方式
+
+.pay_box{
+  position: relative;
+  overflow: hidden;
+  margin-top:20px;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  >h3{
+    font-size: 18px;
+    padding:0 25px;
+    line-height: 50px;
+    color: #333;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .good_bar{
+    border-top: 0;
+  }
+}
+.pay_way_box{
+  margin:15px 28px 30px;
+  min-height: 300px;
+}
+.pay_way_nav{
+  border-left: 1px solid #e4e4e4;
+  a{
+    float: left;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    position: relative;
+  }
+  a:hover{
+    background-color: darken(#f5f5f5,2%);
+  }
+  a.current{
+    background-color: #fff;
+    border-bottom-color: #fff;
+    &:before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+}
+.pay_way_ele{
+  border: 1px solid #e4e4e4;
+}
+.pay_way_item{
+  ul{
+    padding: 30px 40px 30px;
+  }
+  li{
+    float: left;
+    margin: 0 5px 10px;
+    width: 148px;
+    height: 38px;
+    cursor: pointer;
+    border: 1px solid #f5f5f5;
+    @include transition(border-color,0.2s,ease)
+  }
+  li span{
+    display: block;
+    width: 104px;
+    height:24px;
+    line-height:24px;
+    margin:7px 27px;
+    @include transition();
+    font-size: 0;
+  }
+}
+
+//支付宝
+.pay_icon1{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zfb.png) no-repeat;
+}
+//微信
+.pay_icon2{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_wx.png) no-repeat;
+}
+//中国银行
+.pay_icon3{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zhongguo.png) no-repeat;
+}
+//中国工商银行
+.pay_icon4{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_gs.png) no-repeat;
+}
+//招商银行
+.pay_icon5{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_zs.png) no-repeat;
+}
+//中国农业银行
+.pay_icon6{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_nongye.png) no-repeat;
+}
+//中国建设银行
+.pay_icon7{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_jianshe.png) no-repeat;
+}
+//平安银行
+.pay_icon8{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_pingan.png) no-repeat;
+}
+//中国邮政储蓄银行
+.pay_icon9{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_youzheng.png) no-repeat;
+}
+//浦发银行
+.pay_icon10{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_pufa.png) no-repeat;
+}
+//兴业银行
+.pay_icon11{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_xingye.png) no-repeat;
+}
+//广发银行
+.pay_icon12{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_guangfa.png) no-repeat;
+}
+//富滇银行
+.pay_icon13{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_fudian.png) no-repeat;
+}
+//杭州银行
+.pay_icon14{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_hangzhou.png) no-repeat;
+}
+//上海银行
+.pay_icon15{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_shanghai.png) no-repeat;
+}
+//宁波银行
+.pay_icon16{
+  background: url(../../../Images/sprite/cart/sprite_pay_icon_ningbo.png) no-repeat;
+}
+
+//微信支付
+.weixin{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+}
+.weixin_content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  margin:auto;
+  width: 600px;
+  height: 440px;
+  background: #FFFFFF;
+  h3{
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    line-height: 50px;
+    border-bottom:1px solid #e4e4e4;
+  }
+  img{
+    display: block;
+    width: 280px;
+    height: 280px;
+    margin:20px auto;
+    border:1px solid #e4e4e4;
+  }
+}
+.weixin_bottom{
+  margin:0 auto;
+  width: 282px;
+  height: 50px;
+  .icon-saomiao{
+    margin-left: 60px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  p{
+    margin-top:5px;
+    margin-left: 20px;
+    line-height: 20px;
+  }
+}
+.weixin_close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  i{
+    display: block;
+    margin:0 auto;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    transform: scale(.3)
+  }
+  //70% {
+  //  opacity: 1;
+  //  -webkit-transform: scale(1.05);
+  //  transform: scale(1.05)
+  //}
+  //85% {
+  //  -webkit-transform: scale(.9);
+  //  transform: scale(.9)
+  //}
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3)
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+.bounceIn {
+  -webkit-animation:bounceIn 0.5s;
+  -o-animation:bounceIn 0.5s;
+  animation:bounceIn 0.5s;
+}
+
+//网银支付
+.wangyin{
+  @extend .weixin;
+}
+.wangyin_content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  margin:auto;
+  width: 600px;
+  height: 250px;
+  background: #FFFFFF;
+  h3{
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    line-height: 50px;
+    border-bottom:1px solid #e4e4e4;
+  }
+  >p{
+    font-size: 16px;
+    line-height: 70px;
+    text-align: center;
+    color: #666;
+  }
+}
+.wangyin_container{
+  >div{
+    width: 50%;
+  }
+}
+.wangyin_left{
+  .wangyin_btn{
+    margin-left: 90px;
+  }
+  .wangyin_link{
+    margin-left: 130px;
+  }
+}
+.wangyin_right{
+  .wangyin_btn{
+    margin-left: 20px;
+  }
+  .wangyin_link{
+    margin-left: 60px;
+  }
+}
+.wangyin_btn{
+  display: block;
+  width: 200px;
+  height: 50px;
+  color: #666;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  border:1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wangyin_link{
+  display: block;
+  margin-top: 20px;
+}
+.wangyin_close{
+  @extend .weixin_close;
+}

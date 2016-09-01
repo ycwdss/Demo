@@ -1,0 +1,150 @@
+@charset "UTF-8";
+//三角符号
+@mixin arrow($direction,
+$size,
+$color) {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;   
+  overflow: hidden;
+  border-width: $size;
+  cursor: pointer;
+  @if $direction == top {
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent $color transparent;
+    border-top: none;
+  } @else if $direction == bottom {
+    border-style: solid dashed dashed dashed;
+    border-color: $color transparent transparent transparent;
+    border-bottom: none;
+  } @else if $direction == right {
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent $color;
+    border-right: none;
+  } @else if $direction == left {
+    border-style: dashed solid dashed dashed;
+    border-color: transparent $color transparent transparent;
+    border-left: none;
+  }
+}
+
+
+//透明度
+@mixin opacity($value) {
+  filter: alpha(opacity=$value); /* IE */
+  -moz-opacity: $value/100; /* 老版Mozilla */
+  -khtml-opacity: $value/100; /* 老版Safari */
+  opacity: $value/100; /* 支持opacity的浏览器*/
+}
+
+//时间
+@mixin transition($element:all,$time:0.2s,$speed:ease){
+  -moz-transition:$element $time $speed; /* Firefox 4 */
+  -webkit-transition:$element $time $speed; /* Safari 和 Chrome */
+  -o-transition:$element $time $speed;
+  transition:$element $time $speed;
+}
+//最小高度
+@mixin minHeight($min-height) {
+  min-height: $min-height;
+  height: auto !important;
+  height: $min-height;
+}
+
+//省略号
+
+@mixin ell($line:1) {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+//固定行数行高
+@mixin strictEll($line-height:1,$lines:1) {
+  line-height: $line-height;
+  height:$line-height*$lines+em;
+  overflow: hidden;
+}
+
+//inline-block触发ie6,ie7 Layout
+@mixin dib() {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+//清除浮动
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+  }
+  *height: 1%;
+}
+$legacy-support-for-ie:true;
+//浮动
+@mixin float($side: left) {
+  float: unquote($side);
+  @if $legacy-support-for-ie {
+    _display: inline;
+  }
+}
+
+//占位符左浮动，右浮动，只需要继承即可@extend pull-left
+%pull-left {
+  @include float(left);
+}
+
+%pull-right {
+  @include float(right);
+}
+
+//不可选择样式
+@mixin disabled($bgColor: #e6e6e6, $textColor: #ababab) {
+  background-color: $bgColor !important;
+  color: $textColor !important;
+  cursor: not-allowed !important;
+}
+
+//圆角
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//阴影
+@mixin box-shadow($shadow...){
+  -webkit-box-shadow:$shadow;
+  -moz-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+
+//box-sizing
+//webkit moz 和标准
+@mixin box-sizing($type:border-box) {
+  // border-box | padding-box | content-box
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+//缩放
+//webkit moz o 和标准
+@mixin transform($deg:180deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+

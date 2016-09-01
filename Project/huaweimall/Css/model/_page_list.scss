@@ -1,0 +1,56 @@
+
+//分页--------
+.page_list{
+  text-align: right;
+  margin:20px 0 50px 0;
+  ul{
+    li{
+      float: left;
+      cursor: pointer;
+      margin-left: 10px;
+      height: 30px;
+      line-height: 30px;
+      a{
+        color: #666;
+        &:hover{
+          color: #ca151e;
+        }
+      }
+    }
+    .current{
+      a{
+        color: #ca151e;
+      }
+    }
+    .ge{
+      width: 29px;
+      height: 29px;
+      border: 1px solid #dddcdb;
+      overflow: hidden;
+    }
+    .go_first{
+      background:#fafafa url("../../products/Images/sprite_to_first.png") no-repeat center;
+      //&:hover{
+      //  background:#444 url("../../products/Images/sprite_to_first_white.png") no-repeat center;
+      //}
+    }
+    .go_prev{
+      background:#fafafa url("../../products/Images/sprite_to_prev.png") no-repeat center;
+      //&:hover{
+      //  background:#444 url("../../products/Images/sprite_to_prev_white.png") no-repeat center;
+      //}
+    }
+    .go_next{
+      background:#fafafa url("../../products/Images/sprite_to_next.png") no-repeat center;
+      &:hover{
+        background:#444 url("../../products/Images/sprite_to_next_white.png") no-repeat center;
+      }
+    }
+    .go_last{
+      background:#fafafa url("../../products/Images/sprite_to_last.png") no-repeat center;
+      &:hover{
+        background:#444 url("../../products/Images/sprite_to_last_white.png") no-repeat center;
+      }
+    }
+  }
+}

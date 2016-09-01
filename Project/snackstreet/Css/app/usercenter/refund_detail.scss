@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter";
+@import "../../module/order_ele";
+
+.right_content{
+  background: none;
+  >h2{
+    font-size: 16px;
+    color: #666;
+    line-height: 50px;
+    padding:0 20px;
+    background: #FFFFFF;
+    span{
+      display: block;
+      border-bottom:1px solid #e4e4e4;
+    }  
+    i{
+      color: #000;
+    }
+  }
+}
+//申请信息
+.order_detail{
+  padding: 0 20px;
+  h3{
+    height: 50px;
+    line-height: 50px;
+  }
+  p{
+    font-size: 12px;
+    line-height: 24px;
+    color: #626262;
+    span.fr{
+      font-size: 14px;
+      em{
+        font-size: 18px;
+      }
+    }
+  }
+}
+//申请退款
+.m_refund{
+  margin-top: 20px;
+  padding: 10px 20px 0;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.refund_container{
+  padding-bottom: 20px;
+  >div{
+    width:300px;
+    float: left;
+    margin-right: 70px;
+    >h3{
+      font-size: 14px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      border-bottom:1px solid #e4e4e4;
+    }
+    p{
+      line-height: 25px;
+      color: #666;
+      i{
+        color: #333;
+      }
+    }
+  }
+}
+.list_hd .order_info{
+  text-align: center;
+}
+.order_list{
+  padding:0 0 50px;
+  background: #FFFFFF;
+  border-top:1px solid #e4e4e4;
+}
+//重置样式
+.order_money,
+.order_status {
+  width: 295px;
+}
+.list_bd .money_wrap{
+  width: 295px!important;
+}

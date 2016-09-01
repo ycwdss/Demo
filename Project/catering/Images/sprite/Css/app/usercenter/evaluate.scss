@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+@import "../../module/usercenter_style";
+@import "../../module/pagelist";
+
+.right_content {
+  background-color: #fff;
+}
+
+.evaluate_title {
+  line-height: 50px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  color: #333;
+}
+
+.eva_good {
+  width: 200px;
+  text-indent: 35px;
+}
+
+.eva_text {
+  width: 328px;
+  padding: 0 86px;
+  text-align: center;
+}
+
+.eva_num {
+  width: 100px;
+  text-align: center;
+  a{
+    display: block;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    }
+}
+
+.evaluate_items {
+  padding: 20px 0;
+  border-bottom: 1px dashed #e4e4e4;
+  .eva_good {
+    padding-left: 10px;
+    text-indent: 0;
+    .eva_good_img {
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      > img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .good_test {
+      padding-left: 10px;
+      font-size: 14px;
+      color: #333;
+      p{
+        width: 100px;
+      }
+    }
+  }
+  .eva_text p{
+    width:300px;
+    text-align: center;
+  }
+}
+div.evaluate_items:nth-last-of-type(2){
+  border-bottom: 0;
+}
+
+

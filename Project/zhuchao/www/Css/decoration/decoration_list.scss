@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import "../fh/style";
+
+@import "../fh/moudle/page";
+@import "../fh/moudle/module_top";
+@import "../fh/moudle/new_top/search";
+@import "../fh/moudle/module_nav";
+@import "../fh/moudle/list";
+@import "../fh/moudle/list_sort";
+//重写导航栏
+.nav_current{
+  background: $normalColor;
+}
+.current{
+  background: none;
+}
+.l_main{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+//列表
+.m_left{
+  width: 1013px;
+}
+.list{
+  width: 1013px;
+}
+.lis_choice{
+  width: 800px;
+}
+//装修公司列表
+.company_list{
+  border-top: 1px solid #e4e4e4;
+  margin-bottom: 50px;
+}
+.company{
+  height: 196px;   
+  border-bottom: 1px solid #e4e4e4;
+}
+.com_left{
+  padding: 20px 0;
+  width: 750px;    
+  img{
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin: 15px 18px 0 0;
+    border: 1px solid #e4e4e4;
+  }
+}
+.com_detail{
+  width: 580px;
+  @include box-sizing();
+  border-right: 1px solid #e4e4e4;
+}
+.com_title{
+  line-height: 40px;
+  font-size: 18px;
+  color: #000;
+  @include ell();
+  &:hover{
+    color: $activeColor;
+  }
+}
+.info{
+  margin: 5px 0 5px;
+  ul{
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    li{
+      float: left;
+      margin-right: 5px;
+      text-align: center;
+    }
+  }
+}
+%info_child{
+  width: 20px;
+  height: 20px;
+}
+.ying{
+  @extend %info_child;
+  background: #60bb85;
+  color: #fff;
+}
+.hui{
+  @extend %info_child;
+  background: #ff6633;
+  color: #fff;
+}
+.jin{
+  @extend %info_child;
+  background: #cfa972;
+  color: #fff;
+}
+.she{
+  @extend %info_child;
+  background: #d6e275;
+  color: #fff;
+}
+.gong{
+  @extend %info_child;
+  background: #f8bef9;
+  color: #fff;
+}
+.ping{
+  @extend %info_child;
+  background:#75d6e2;
+  color: #fff;
+}
+.intro{
+  position: relative;
+  font-size: 14px;
+  line-height: 30px;
+  padding-right: 20px;
+  color: #888888;
+  span{
+    float: left;
+    width: 500px;
+    text-indent: 20px;
+    height: 24px;
+    @include ell(1);
+  }
+  a{
+    float: left;
+    color: #888888;
+  }
+  a:hover{
+    color: $activeColor;
+  }
+}
+.tel,.address{
+  font-size: 14px;
+  line-height: 28px;
+  color: #888;
+  span{
+    float: left;
+  }
+}
+.tel_img{
+  margin-top: 3px;
+  height: 20px;
+  width: 20px;
+  background: url("../../_pass_decoration/Images/sprite_decoration_tel.png");
+}
+.address_img{
+  margin-top: 3px;
+  @extend .tel_img;
+  background: url("../../_pass_decoration/Images/sprite_decoration_address.png");
+}
+.com_right{
+  margin: 0;
+  width: 260px;
+  padding-top: 20px;
+}
+.haoping{
+  font-size:12px;
+  color: #666;
+  line-height: 60px;
+  padding:0 0 0 15px;
+  border-bottom: 1px dashed #e4e4e4;
+  span{
+    float: left;
+  }
+}
+.haoping_text{
+  font-size: 16px;
+  color: #333333;
+  margin-right:10px ;
+}
+.percent{
+  margin-left: 10px;
+  color: #093;
+  font-size: 26px;
+}
+.star{
+  float: left;
+  margin: 22px  2px 0;
+  display: block;
+  height: 16px;
+  width:16px;
+  background: url("../../decoration/Images/sprite_decorationlist1.png");
+}
+.shouhou{
+  padding: 5px 0;
+  color: #888;
+  font-size: 13px;
+  span{
+    float: left;
+  }
+  .shouhou_text{
+    width:80px;
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+}
+.haoping_detail{
+  margin-top: 10px;
+  >div{
+    float: left;
+    text-align: center;
+    width: 130px;
+    line-height: 35px;   
+    color: #666;
+    font-size: 12px;
+    span{
+      font-size: 16px;
+      color: $normalColor;
+    }
+  }
+}
+//右边  我们能做的
+.m_right{
+  width: 260px;
+}
+.wecando{
+  width: 100%;
+  a{
+    color: #888888;
+  }
+  a:hover{
+    color: $activeColor;
+    h3{
+      color: #093;
+    }
+  }
+}
+.wecando_top{
+  display: block;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #093;
+  text-align: center;
+  line-height: 50px;
+}
+.free{
+  padding: 25px 0 ;
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+  .free_img1{
+    margin: 0 10px 0 25px;
+    width: 55px;
+    height: 55px;
+    background: url("../../_pass_decoration/Images/sprite_decoration_right1.png");
+  }
+  .free_img2{
+    @extend .free_img1;
+    background: url("../../_pass_decoration/Images/sprite_decoration_right2.png");
+  }
+  .free_img3{
+    @extend .free_img1;
+    background: url("../../_pass_decoration/Images/sprite_decoration_right3.png");
+  }
+  .free_img4{
+    @extend .free_img1;
+    background: url("../../_pass_decoration/Images/sprite_decoration_right4.png");
+  }
+  .free_text{
+    width: 150px;
+    font-size: 13px;
+    h3{
+      font-size: 15px;
+      color: #000;
+    }
+    p{
+      @include ell(2);
+    }
+  }
+}
+//右边  效果图展示
+.xiaoguotu{
+  h3{
+    margin: 20px 0 0;
+    @extend .wecando_top
+  }
+}
+.xgt_ele{
+  margin-top: 20px;
+  img{
+    display: block;
+    width: 260px;
+    height: 157px;
+    z-index: 1;
+    @include transition();
+  }
+}
+.xgt_ele:hover img{
+  @include opacity(85);
+}
+
+.xgt_text:after{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: #000;
+  @include opacity(45);
+  @include transition();
+}
+.xgt_text{
+  position: relative;
+  z-index: 3;
+  margin-top: -30px;
+  font-size: 13px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  @include ell(1);
+  @include transition();
+  overflow: hidden;
+  &:hover{
+    color: $activeColor;
+  }
+}

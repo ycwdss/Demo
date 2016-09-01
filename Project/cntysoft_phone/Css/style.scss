@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import "lib/lib";
+@import "lib/commonclass";
+@import "lib/reset";
+
+//头部
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 640px;
+  height: 40px;
+  line-height: 40px;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 10px 10px rgba(100, 100, 100, 0.1);
+  box-shadow: 0px 10px 10px rgba(100, 100, 100, 0.1);
+}
+
+.header_link {
+  display: block;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  padding-left: 15px;
+  img {
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.nav_btn {
+  display: block;
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  float: right;
+  outline: none;
+  img {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+//导航
+.nav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+  li{
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+  }
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+  }
+}
+
+//底部
+.footer {
+  width: 100%;
+  height: 450px;
+  background: url("../Images/icon/icon_footer_bg.jpg?_nosprite") no-repeat;
+  background-size: cover;
+}
+
+.erweima {
+ padding-top: 30px;
+  text-align: center;
+  > div {
+    width: 80px;
+    height: 100px;
+    margin: 0 25px;
+    display: inline-block;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    p {
+      font-size: 1rem;
+      color: #fff;
+    }
+  }
+}
+
+.company, .product {
+  .title {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+  }
+  .items {
+    font-size: 1rem;
+    color: #b9b8c5;
+    text-align: center;
+    padding-top:15px;
+    a {
+      font-size: 1rem;
+      color: #b9b8c5;
+    }
+    span {
+      padding: 0 3px;
+    }
+  }
+}
+
+.product,.company {
+  padding-top: 15px;
+}
+
+.contact {
+  padding-top: 15px;
+  .title {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  p {
+    text-align: center;
+    font-size: 1rem;
+    color: #b9b8c5;
+    padding: 7px 0;
+  }
+}
+
+.contact .tel i {
+  display: inline-block;
+  width: 15px;
+  height: 18px;
+  background: url("../Images/sprite/sprite_tel.png") no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.contact .weixin i {
+  display: inline-block;
+  width: 23px;
+  height: 17px;
+  background: url("../Images/sprite/sprite_weixin.png") no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.contact .email i {
+  display: inline-block;
+  width: 18px;
+  height: 13px;
+  background: url("../Images/sprite/sprite_email.png") no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+

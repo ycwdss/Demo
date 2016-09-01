@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import "../fh/moudle/module_nav";
+@import "../fh/lib";
+@import "../fh/moudle/page";
+@import "module/shopstreet_list";
+//商品分类
+.mall_list_nav_box{
+  display: none;
+}
+.allclass:hover .mall_list_nav_box{
+  display: block;
+}
+.routeInfo{
+  border-bottom: none;
+}
+.shopstreet_bg{
+  background-color: #f8f8f8;
+}
+.page{
+  padding:48px 0;
+  margin-bottom: 0;
+}
+//左侧导航
+.shop_left_nav{
+  margin-top:40px;
+  border-top: 1px solid #e4e4e4;
+  width: 100px;
+  li{
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    .shop_h2{
+      font-size: 16px;
+    }
+  }
+  li a{
+    font-size: 14px;
+    color: #666;
+    line-height: 34px;
+    &:hover{
+      color: #f60;
+    }
+    span{
+      color: #999;
+      font-size: 12px;
+    }
+  }
+  a:hover span{
+    color: #f60;
+  }
+}
+.shop_left_nav .current a{
+  color: #093;
+  span{
+    color: #093;
+  }
+}
+
+
+//右侧内容
+.shop_right{
+  width: 1180px;
+}
+//右侧顶部
+.shop_right_title{
+  h3 {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #093;
+    span {
+      position: absolute;
+      left: 0;
+      padding-right: 10px;
+      display: inline-block;
+      font-size: 18px;
+      color: #333;
+    }
+  }
+  .c_link {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    a {
+      padding: 0 10px;
+      color: #888;
+      font-size: 14px;
+      &:hover{
+        color: #f60;
+      }
+    }
+    .current{
+      color: #093;
+    }
+  }
+}
+//右侧列表
+.shopstreet_list{
+  padding-top: 20px;
+  li{
+    margin:10px;
+  }
+}

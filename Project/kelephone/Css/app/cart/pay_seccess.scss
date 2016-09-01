@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import "../../lib/module/nav";
+@import "../../lib/module/module_title";
+.pay_seccess {
+  background-color: #fff;
+  padding: 25px 0;
+  .pay_seccess_icon {
+    width: 60px;
+    height: 73px;
+    margin: 0 auto 25px;
+    i{
+      font-size: 73px;
+      line-height: 1;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .pay_money {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 14px;
+  }
+}
+
+
+
+

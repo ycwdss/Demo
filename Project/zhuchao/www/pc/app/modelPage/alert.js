@@ -1,0 +1,42 @@
+/**
+ * Created by liu on 15-10-12.
+ */
+define(['jquery','fhlib/alert'],function(){
+
+$('#show1').click(function(){
+    $.showAlert(
+        {
+            color:$('#color').val(),
+            title:$('#title').val(),
+            type:$('#type').val(),
+            content:$('#content').val(),
+            showtime:$('#time').val()
+        }
+    );
+    });
+    $('#show2').click(function(){
+        $.showPrompt(
+            {
+                color:$('#color').val(),
+                title:$('#title').val(),
+                type:$('#type').val(),
+                content:$('#content').val(),
+                showtime:$('#time').val(),
+                callback:function(value){
+                    alert(value);
+                }
+            }
+        );
+    });
+    $('#show3').click(function(){
+        $.showConfirm(
+            {
+                color:$('#color').val(),
+                title:$('#title').val(),
+                type:$('#type').val(),
+                showtime:$('#time').val(),
+                content:$('#content').val()
+            }
+        );
+    });
+});

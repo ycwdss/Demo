@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.m_case {
+  margin-bottom: 50px; }
+
+.c_case {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e4e4e4; }
+  .c_case img {
+    float: left;
+    width: 283px !important;
+    height: 177px !important;
+    margin-right: 20px; }
+  .c_case input {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    font: 12px "SimSun", serif;
+    line-height: 25px;
+    background: #093;
+    color: #FFFFFF;
+    cursor: pointer;
+    -moz-transition: 0.2s ease;
+    /* Firefox 4 */
+    -webkit-transition: 0.2s ease;
+    /* Safari 和 Chrome */
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease; }
+    .c_case input:hover {
+      background: #048b31;
+      -webkit-box-shadow: 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px #ccc; }
+
+.case_detail {
+  float: left; }
+  .case_detail a {
+    color: #333; }
+  .case_detail h4 {
+    font-size: 16px;
+    line-height: 30px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
+  .case_detail > p {
+    font: 12px "SimSun", serif;
+    line-height: 25px;
+    color: #888; }
+    .case_detail > p > span {
+      color: #333; }
+
+.del {
+  top: 0;
+  right: 0; }
+
+.case_edit {
+  top: 0;
+  right: 70px; }

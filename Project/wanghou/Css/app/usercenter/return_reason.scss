@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import "../../lib/lib";
+
+@import "../../module/usercenter_style";
+@import "../../module/site";
+
+@import "../../module/return_ele";
+@import "../../module/recommend";
+@import "../../module/select_btn";
+
+.m_return_pro{
+  position: relative;
+  overflow: hidden;
+}
+.evaluation_detail{
+  margin-bottom: 20px;
+  background: #fff4e5;
+  >div{
+    padding-top: 30px;
+  }
+}
+.evaluation_intro{
+  float: left;
+  font-size: 15px;
+  width: 120px;
+  line-height: 25px;
+  text-align: right;
+  padding-right: 5px;
+  color: #333;
+}
+.m_score{
+  select{
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+.evaluation_text{
+  position: relative;
+  textarea{
+    width: 850px;
+    height: 320px;
+    padding:10px 10px 20px;
+    border:1px solid #e4e4e4;
+    resize: none;
+    outline-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+.text_count{
+  position: absolute;
+  bottom: 12px;
+  right: 77px;;
+  color: #888;
+}
+.submit_evaluation{
+  margin:20px 0 20px 125px;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

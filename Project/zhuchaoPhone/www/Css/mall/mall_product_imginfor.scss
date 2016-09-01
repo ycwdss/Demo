@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import "../mobile_moudle/lib";
+@import "../mobile_moudle/moudle/xiaoguotu_zhuanti_top";
+@import "../mobile_moudle/moudle/moudle_text_box";
+.mall_product_intro{
+  padding:10px;
+}
+.moudle_text_box{
+  padding:10px 0;
+}
+.moudle_text_box p{
+  width:80%;
+  margin:3px auto 0;
+  font-size: 14px;
+  line-height: 1.6;
+  height: auto;
+  overflow: hidden;
+  color: #666;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-box-orient: vertical;
+}
+//产品细节
+.pro_details>div{
+  width: 97%;
+  margin:10px auto;
+}
+.pro_details .pro_details_title{
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  border-top:1px solid #e4e4e4;
+  border-bottom:1px solid #e4e4e4;
+}
+.pro_details_title h3{
+  padding-left: 10px;
+  color: #333;
+  font-size: 18px;
+}
+.pro_details_img>img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.l_content{margin-bottom: 100px;}
