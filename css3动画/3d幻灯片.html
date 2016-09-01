@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3d幻灯片</title>
+</head>
+<style>
+    body, ul, ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+    .wrap {
+        width: 800px;
+        margin: 100px auto 0;
+    }
+
+    #picList {
+        width: 800px;
+        height: 360px;
+        -webkit-perspective: 800px;
+    }
+</style>
+<body>
+<div class="wrap">
+    <ul id="picList">
+        <li><a><img src="1.jpg"></a></li>
+        <li><a><img src="2.jpg"></a></li>
+        <li><a><img src="3.jpg"></a></li>
+        <li><a><img src="4.jpg"></a></li>
+        <li><a><img src="5.jpg"></a></li>
+        <li><a><img src="6.jpg"></a></li>
+    </ul>
+    <ol id="btns">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表盘示例</title>
+    <style>
+        #wrap {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        #circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        #circle span {
+            position: absolute;
+            left: 100px;
+            top: 0;
+            width: 2px;
+            height: 6px;
+            background: #666;
+            -webkit-transform-origin: 0 100px;
+        }
+
+        #circle span:nth-of-type(5n+1) {
+            height: 10px;
+            background: #000;
+        }
+
+        #hand {
+            position: absolute;
+            top: 95px;
+            left: 95px;
+            width: 10px;
+            height: 10px;
+        }
+
+        #center {
+            height: 10px;
+            background-color: #000;
+            border-radius: 10px;
+        }
+
+        #hour {
+            position: absolute;
+            left: 3px;
+            bottom: 5px;
+            width: 4px;
+            height: 45px;
+            background: #000;
+            -webkit-transform-origin: bottom;
+        }
+
+        #min {
+            position: absolute;
+            left: 4px;
+            bottom: 5px;
+            width: 2px;
+            height: 60px;
+            background: #666;
+            -webkit-transform-origin: bottom;
+        }
+
+        #sec {
+            position: absolute;
+            left: 4px;
+            bottom: 5px;
+            width: 2px;
+            height: 80px;
+            background: red;
+            -webkit-transform-origin: bottom;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="circle"></div>
+    <div id="hand">
+        <div id="hour"></div>
+        <div id="min"></div>
+        <div id="sec"></div>
+        <div id="center"></div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var oCircle = document.getElementById('circle');
+        var oHour = document.getElementById('hour');
+        var oMin = document.getElementById('min');
+        var oSec = document.getElementById('sec');
+        toCircle(oCircle);
+
+        setInterval(function(){
+            toTime();
+        },1000)
+        /*走起*/
+        function toTime() {
+            var oDate = new Date();
+            var iSec=oDate.getSeconds();
+            var iMin=oDate.getMinutes()+iSec/60;
+            var iHour=oDate.getHours()+iMin/60;
+            oSec.style.WebkitTransform="rotate("+(iSec*6)+"deg)";
+            oMin.style.WebkitTransform="rotate("+(iMin*6)+"deg)";
+            oHour.style.WebkitTransform="rotate("+(iHour*30)+"deg)";
+        }
+
+        /*刻度*/
+        function toCircle(obj) {
+            var sHtml = '';
+            var sNum = 6;
+            for (var i = 0; i < 60; i++) {
+                sHtml += "<span style='-webkit-transform:rotate(" + sNum * i + "deg)'></span>"
+            }
+            obj.innerHTML = sHtml;
+        }
+    }
+</script>
+</body>
+</html>
