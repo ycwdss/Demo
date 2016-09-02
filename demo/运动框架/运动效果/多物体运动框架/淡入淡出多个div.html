@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{width: 100px;height: 100px;background: red;margin: 10px;opacity:0.3;filter: alpha(opacity:30);}
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<script>
+//    var timer=null;
+//var alpha=30; 所有的东西都不能共用的，属性和运动对象绑定 速度 其他属性值（如透明度）
+    function startMove(obj,target){
+        clearInterval(obj.timer);
+        obj.timer=setInterval(function () {
+            var speed=(target-obj.alpha)/8;
+            speed=speed>0?Math.ceil(speed):Math.floor(speed);
+            if(obj.alpha==target){
+                clearInterval(obj.timer)
+            }else{
+                obj.alpha+=speed;
+                obj.style.fliter='alpha(opacity:'+obj.alpha+')';
+                obj.style.opacity=obj.alpha/100;
+            }
+        },30);
+    }
+    window.onload=function(){
+        var aDiv=document.getElementsByTagName('div');
+        i=0;
+
+        for(var i=0;i<aDiv.length;i++){
+            aDiv[i].alpha=30;
+            aDiv[i].onmouseover= function () {
+                startMove(this,100);
+            }
+            aDiv[i].onmouseout= function () {
+                startMove(this,30);
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{width: 100px;height: 200px;background: #ccc;position: absolute;left:-100px;top:50px;}
+        #div1 span{display:inline-block;position:absolute;width: 20px;height:60px;line-height: 20px;text-align: center;left: 100px;top:70px;background: yellow}
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <span>分享到</span>
+    </div>
+<script>
+    var timer=null;
+    function starMove(Target){
+        var oDiv=document.getElementById('div1');
+        clearInterval(timer);
+        timer=setInterval(function () {
+            var speed=0;
+            if(oDiv.offsetLeft<Target){
+                speed=10;
+            }
+            else{
+                speed=-10;
+            }
+            if(oDiv.offsetLeft==Target){
+                clearInterval(timer);
+            }else{
+                oDiv.style.left=oDiv.offsetLeft+speed+'px';
+            }
+        },30);
+    }
+    window.onload= function () {
+        var oDiv=document.getElementById('div1');
+        oDiv.onmouseover=function(){
+            starMove(0);
+        }
+        oDiv.onmouseout=function(){
+            starMove(-100);
+        }
+    }
+</script>
+</body>
+</html>

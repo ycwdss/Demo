@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{width: 0px;height: 0px;background:red;}
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="开始运动">
+<div id="div1"></div>
+<!--数组可以用for循环 也可以用for in循环  -->
+<!--json 只能用for in 循环-->
+<script>
+//    function setstyle(obj,attr,value){
+//        obj.style[attr]=value;
+//    }
+//一次设置多个样式的话
+    function setstyle(obj,json){
+//        obj.style[attr]=value;
+        for(attr in json){
+            obj.style[attr]=json[attr];
+        }
+    }
+    //一次设置多个样式的话
+    window.onload= function () {
+        var oDiv=document.getElementById('div1')
+//        setstyle(oDiv,'width','200px;');
+//        setstyle(oDiv,'height','200px;');
+//        setstyle(oDiv,'background','green');
+        setstyle(oDiv,{width:'200px',height:'200px',background:'green'})
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #img1{
+            opacity: 0.3;
+            filter: alpha(opacity:30);
+        }
+    </style>
+</head>
+<body>
+    <img id="img1" src="../Images/list_1.jpg">
+<script>
+    window.onload= function () {
+        var oImg=document.getElementById('img1');
+        oImg.onmouseover= function () {
+            startMove(100)
+        }
+        oImg.onmouseout= function () {
+            startMove(30)
+        }
+    }
+    var timer=null;
+    var alpha=30;
+    function startMove(Target){
+    var oImg=document.getElementById('img1')
+        clearInterval(timer);
+        timer=setInterval(function(){
+            var speed;
+            if(alpha<Target){
+                speed=10;
+            }else{
+                speed=-10;
+            }
+            if(alpha==Target){
+                clearInterval(timer);
+            }else{
+                alpha+=speed;
+                oImg.style.fliter='alpha(opacity:'+alpha+')';
+                oImg.style.opacity=alpha/100;
+                document.title=alpha;
+            }
+        },30)
+    }
+</script>
+</body>
+</html>

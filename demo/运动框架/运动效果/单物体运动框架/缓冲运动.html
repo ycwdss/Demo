@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{width: 100px;height: 100px;background:red;position: absolute;left:0px;top:50px;}
+        .line{position: absolute;left: 300px;height: 100px;width: 1px;background: #000;}
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="开始运动">
+<div class="line"></div>
+<div id="div1"></div>
+<script>
+    var timer=null;
+    function starMove(Target){
+        var oDiv=document.getElementById('div1');
+        clearInterval(timer);
+        timer=setInterval(function () {
+            var speed=(Target-oDiv.offsetLeft)/8;//越来越慢- 速度要取整---Math.ceil(1.2)向上取整 取2 Math.floor(8.999)向下取整 8
+//            if(speed>0){
+//                speed=Math.ceil(speed) //向上取整
+//            }
+//            else{
+//                speed=Math.floor(speed) //向上取整
+//            }这句话可以简化为下面的
+            speed=speed>0?Math.ceil(speed):Math.floor(speed) //向
+            if(oDiv.offsetLeft==Target){
+                clearInterval(timer);
+            }else{
+                oDiv.style.left=oDiv.offsetLeft+speed+'px';
+            }
+            document.title=oDiv.offsetLeft;
+        },30);
+    }
+    window.onload= function () {
+       var oBtn=document.getElementById('btn');
+        oBtn.onclick= function () {
+            starMove(300)
+        }
+    }
+</script>
+</body>
+</html>

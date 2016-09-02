@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+<div id="popup" class="gradient">
+    <h2>
+        <strong>最新开班信息</strong>
+        <a class="close" href="javascript:;" title="关闭 - close"></a>
+    </h2>
+    <ul>
+        <li>
+            <p>
+                <strong>零基础课程</strong>
+                <span>全日制班</span>
+                <em>2014-02-18</em>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>零基础课程</strong>
+                <span>周六日班</span>
+                <em>2014-02-18</em>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>JavaScript</strong>
+                <span>全日制班</span>
+                <em>2014-02-18</em>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>JavaScript</strong>
+                <span>周六日班</span>
+                <em>2014-02-18</em>
+            </p>
+        </li>
+    </ul>
+
+    <div class="contact">
+        <h3>报名\试听\咨询：小美</h3>
+        <h4>QQ : 1146531423</h4>
+        <h4>手机：<span>18810588941</span></h4>
+        <a href="javascript:;">返回开班信息</a>
+    </div>
+
+</div>
+<script type="text/javascript">
+    window.onload = function () {
+        var oPopup = document.getElementById('popup');
+        var oUl = oPopup.getElementsByTagName('ul')[0];
+        var aLi = oUl.children;
+        var oContact=document.getElementsByClassName('contact')[0];
+        var oBack=oContact.getElementsByTagName("a")[0];
+        var oClose=oPopup.getElementsByClassName("close")[0];
+
+        oPopup.style.opacity = 1;
+        oPopup.addEventListener("webkitTransitionEnd", end, false);
+        oUl.style.transition = '0.5s 600ms linear';
+        function end() {
+            this.removeEventListener("webkitTransitionEnd", end, false);
+
+            oUl.style.top = 0;
+            oPopup.style.height = '230px';
+            oPopup.style.top = '190px';
+            for (var i = 0; i < aLi.length; i++) {
+                aLi[i].style.transition = '0.5s ' + (300 + i * 200) + 'ms';
+                aLi[i].style.opacity = 1;
+                aLi[i].style.WebkitTransform = 'rotate(0deg)';
+                aLi[i].off = true;
+                aLi[i].index=i;
+                aLi[i].onmouseover = over;
+                aLi[i].onmouseout = function () {
+                    if (this.off) {
+                        this.style.WebkitTransform = "rotateY(0deg)";
+                    }
+                };
+                aLi[i].onclick=fnClick;
+
+            }
+        };
+
+        function over(ev) {
+            if (this.off) {
+                var iX = ev.clientX - oPopup.offsetLeft;
+                this.style.transition="0.5s";
+                if (iX > this.offsetWidth/2) {
+                    this.style.WebkitTransform = 'rotateY(30deg)';
+                } else {
+                    this.style.WebkitTransform = 'rotateY(-30deg)';
+                }
+            }
+
+        };
+        function fnClick(ev){
+            var iX = ev.clientX - oPopup.offsetLeft;
+            var iDeg=iX>this.offsetWidth/2?-180:180;
+            var iMax=0;
+            var iNow=0;
+
+            oContact.style.display="block";
+
+
+            for (var i=0;i< aLi.length;i++){
+                if(iMax<Math.abs(i-this.index))
+                {
+                    iMax=Math.abs(i-this.index);
+                    iNow=i;
+                }
+                aLi[i].off=false;
+                aLi[i].style.transition="0.5s "+Math.abs(i-this.index)*100+"ms cubic-bezier(0.115, -0.195, 0.255, -0.280)";
+                aLi[i].style.WebkitTransform="rotateY("+iDeg+"deg)";
+                aLi[i].style.opacity=0.1;
+
+
+            }
+            aLi[iNow].addEventListener("webkitTransitionEnd",end,false);
+            function end()
+            {
+                this.removeEventListener("webkitTransitionEnd",end,false);
+                oContact.style.opacity=1;
+            }
+
+        };
+        oBack.onclick=function()
+        {
+            oContact.style.opacity=0;
+
+            oContact.addEventListener("webkitTransitionEnd",end,false);
+            function end()
+            {
+                this.removeEventListener("webkitTransitionEnd",end,false);
+                for(var i=0;i<aLi.length;i++)
+                {
+                    aLi[i].off=true;
+                    aLi[i].style.transition="0.5s "+(aLi.length-i-1)*100+"ms";
+                    aLi[i].style.WebkitTransform="rotateY(0deg)";
+                    aLi[i].style.opacity=1;
+                }
+                oContact.style.display='none';
+            }
+        };
+        oClose.onclick=function()
+        {
+            oPopup.style.transition=".8s height,.6s top,0.4s opacity .2s";
+            oPopup.style.height="40px";
+            oPopup.style.top="320px";
+            oPopup.style.opacity=0;
+        };
+
+
+    }
+</script>
+</body>
+</html>

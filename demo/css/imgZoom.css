@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background: #e8d0ca; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+#picTab {
+  width: 400px;
+  margin: 100px auto 0;
+  position: relative; }
+
+#picList {
+  width: 370px;
+  height: 80px;
+  position: relative; }
+  #picList .hide {
+    opacity: 0;
+    left: 40px;
+    top: 0; }
+
+#picList li {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  transition: 0.5s;
+  opacity: 0; }
+
+#picList .active {
+  top: 0;
+  opacity: 1; }
+
+#textList {
+  width: 380px;
+  height: 50px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden; }
+  #textList .hide {
+    left: 0;
+    top: 50px; }
+
+#textList li {
+  position: absolute;
+  left: 380px;
+  top: 0; }
+
+#textList .active {
+  left: 0; }
+
+#btns {
+  float: right;
+  margin-top: 20px; }
+
+#btns li {
+  float: left;
+  width: 20px;
+  height: 21px;
+  background: url(../img/iCourseTabBtnShadow.png) no-repeat;
+  margin: 0 10px; }
+
+#btns span {
+  display: block;
+  height: 21px;
+  background: url(../img/iCourseIco.png) no-repeat center 4px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  transition: 0.3s; }
+
+#btns .active span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1); }
+
+#zoom {
+  transition: 0.5s;
+  width: 144px;
+  height: 172px;
+  background: url(../img/iZoom.png) no-repeat;
+  position: absolute;
+  top: -13px;
+  left: -92px;
+  -webkit-transform-origin: 5px 165px; }
+
+#zoomPic {
+  transition: 0.5s;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 98px;
+  height: 98px;
+  background: #e8d0ca;
+  border-radius: 50%;
+  overflow: hidden; }
+
+#zoomPic .pic {
+  width: 98px;
+  height: 98px;
+  background: url(../img/iBannerTextBig.png) no-repeat 48px 0;
+  border-radius: 50%;
+  -webkit-transform-origin: -39px 163px; }
+
+#zoomPic .mask {
+  width: 98px;
+  height: 98px;
+  background: url(../img/iZoomGlass.png) no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+#move {
+  width: 365px;
+  position: relative;
+  z-index: 2; }
+
+/*# sourceMappingURL=imgZoom.css.map */

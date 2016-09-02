@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation:move 2s linear;
+        }
+        @keyframes move {
+            from{
+                left:0;}
+            to{
+                left:100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="div"></div>
+<button>试一试</button>
+<script>
+    window.onload = function(){
+        var div = document.getElementById("div")
+        var btn = document.getElementsByTagName("button")[0]
+        btn.onclick = function(){
+            div.style.animationFillMode = "both"
+        }
+        //把动画状态恢复到最后一帧的状态
+    }
+</script>
+</body>
+</html>

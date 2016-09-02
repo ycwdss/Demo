@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{width: 100px;height: 100px;background:red;position: absolute;left:500px;top:50px;}
+        .line{position: absolute;left: 300px;height: 100px;width: 1px;background: #000;}
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="开始运动">
+<div class="line"></div>
+<div id="div1"></div>
+<script>
+    var timer=null;
+    function starMove(Target){
+        var oDiv=document.getElementById('div1');
+        clearInterval(timer);
+        timer=setInterval(function () {
+            var speed=0;
+            if(oDiv.offsetLeft<Target){
+                speed=5;
+            }else{
+               speed=-5;
+            }
+            if(Math.abs(oDiv.offsetLeft-Target)<5){ //距离足够近，不够7让他直接点等于目标
+                clearInterval(timer);
+                oDiv.style.left=Target+'px';
+            }else{
+                oDiv.style.left=oDiv.offsetLeft+speed+'px';
+            }
+        },30);
+    }
+    window.onload= function () {
+        var oBtn=document.getElementById('btn');
+        oBtn.onclick= function () {
+            starMove(300)
+        }
+    }
+</script>
+</body>
+</html>

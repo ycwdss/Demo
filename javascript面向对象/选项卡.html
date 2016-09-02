@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象编程实例选项卡</title>
+    <style>
+        #box div {
+            width: 200px;
+            height: 200px;
+            border: 1px #000 solid;
+            display: none;
+        }
+
+        .active {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <input class="active" type="button" value="1">
+    <input type="button" value="2">
+    <input type="button" value="3">
+    <div style="display:block">11111</div>
+    <div>22222</div>
+    <div>33333</div>
+</div>
+<script>
+    //要想实现面向对象写法，先写普通方法，在改写成面向对象
+    /*   window.onload=function () {
+     var oBox=document.getElementById("box");
+     var aInput=oBox.getElementsByTagName("input");
+     var aDiv=oBox.getElementsByTagName("div");
+
+     for (var i=0;i<aInput.length;i++){
+     aInput[i].index = i;
+     aInput[i].onclick=function () {
+
+     for (var i=0;i<aInput.length;i++){
+     aInput[i].className=" ";
+     aDiv[i].style.display="none";
+     }
+     this.className="active";
+     aDiv[this.index].style.display = 'block';
+     };
+     }
+     };*/
+
+    //先变型:
+    //尽量不要出现函数嵌套函数
+    //可以有全局变量
+    //把onload中不是赋值的语句放到单独函数中
+
+    var oBox = null;
+    var aInput = null;
+    var aDiv = null;
+
+    window.onload = function () {
+        oBox = document.getElementById("box");
+         aInput = oBox.getElementsByTagName("input");
+         aDiv = oBox.getElementsByTagName("div");
+
+       init();
+    };
+    function init(){
+        for (var i = 0; i < aInput.length; i++) {
+            aInput[i].index = i;
+            aInput[i].onclick = change;
+        }
+    }
+
+    function change(){
+            for (var i = 0; i < aInput.length; i++) {
+                aInput[i].className = " ";
+                aDiv[i].style.display = "none";
+            }
+            this.className = "active";
+            aDiv[this.index].style.display = 'block';
+    }
+
+
+    //改成面向对象:
+    //全局变量就是属性
+    //函数就是方法
+    //Onload中创建对象
+
+</script>
+</body>
+</html>

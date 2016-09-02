@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin:0;padding:0}
+        #div1{width:300px;height:300px;border:1px solid #000;margin: 0 auto;}
+        #div1 div{overflow:hidden;border-bottom: 1px dotted #999;list-style: none;padding:2px;
+            filter:alpha(opacity=30);
+            opacity: 0.3;
+        }
+    </style>
+    <script src="starMove.js"></script>
+</head>
+<body>
+<textarea id="txt1" rows="10" cols="40"></textarea><br>
+<input id="btn1" type="button" value="发布">
+<div id="div1">
+</div>
+<!--//ie7下有问题，不要用ul li  用div就可以了-->
+<script>
+    window.onload= function () {
+        var oTxt=document.getElementById('txt1');
+        var oBtn=document.getElementById('btn1');
+        var oDivWrap=document.getElementById('div1');
+        oBtn.onclick= function () {
+            var oDiv=document.createElement('div');
+            var aDiv=oDivWrap.getElementsByTagName('div');
+            oDiv.innerHTML=oTxt.value;
+            oTxt.value='';
+            if(aDiv.length){
+                oDivWrap.insertBefore(oDiv,aDiv[0]);
+            }else{
+                oDivWrap.appendChild(oDiv);
+            }
+//            oUl.appendChild(oLi);
+            //存起来li的高度
+            var iheight=oDiv.offsetHeight;
+            oDiv.style.height=0;
+            starMove(oDiv,{height:iheight}, function () {
+                starMove(oDiv,{opacity:100})
+            })
+        }
+    }
+</script>
+</body>
+</html>

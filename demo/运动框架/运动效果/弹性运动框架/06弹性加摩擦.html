@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .line{position: absolute;left: 300px;height: 100px;width: 1px;background: #000;}
+        #div1{width: 100px;height: 100px;background:red;position: absolute;left:0;top:50px;}
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="开始运动">
+<div id="div1"></div>
+<div class="line"></div>
+
+<script>
+    var ispeed=20; //速度
+    var oDiv=document.getElementById('div1');
+    var oBtn=document.getElementById('btn');
+    oBtn.onclick= function () {
+        clearInterval(oDiv.timer);
+        oDiv.timer=setInterval(function(){
+            ispeed-=(oDiv.offsetLeft-300)/5;
+            ispeed*=0.7;
+            oDiv.style.left=oDiv.offsetLeft+ispeed+'px';
+        },30);
+    }
+
+</script>
+</body>
+</html>

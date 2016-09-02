@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>无标题文档</title>
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp',[]);
+
+
+
+        m1.controller('Aaa',['$scope',function($scope){
+
+
+
+
+
+
+
+            $scope.name = [
+             {color:"red",age:"20"},
+             {color:"yellow",age:"30"},
+             {color:"blue",age:"40"},
+             {color:"green",age:"10"}
+             ];
+
+            //$scope.name = $filter('uppercase')('hello');
+            //$scope.name = $filter('number')('236478234.3647348',1);
+            //$scope.name = $filter('date')('236478234','hh');
+
+            //$scope.name = 'hello';
+
+
+
+
+        }]);
+
+
+
+    </script>
+</head>
+
+<body>
+<div ng-controller="Aaa">
+
+
+
+
+
+
+
+
+    <p>{{ name | limitTo : 2 | uppercase }}</p>
+    <!--<p>{{ name | firstUpper : 2 }}</p>-->
+    <!--{{ name }}</p>--><p>
+</div>
+</body>
+</html>

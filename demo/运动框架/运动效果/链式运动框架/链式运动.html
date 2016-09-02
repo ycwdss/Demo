@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{width: 100px;height: 100px;background:red;opacity:0.3;filter: alpha(opacity:30);}
+    </style>
+    <script src="starMove.js"></script>
+</head>
+<body>
+
+    <div id="div1"></div>
+<script>
+    window.onload=function(){
+        var oDiv=document.getElementById('div1');
+        oDiv.onmouseover= function () {
+            starMove(oDiv,'width',300,function(){
+                starMove(oDiv,'height',300, function () {
+                    starMove(oDiv,'opacity',100)
+                })
+            })
+        }
+        oDiv.onmouseout= function () {
+            starMove(oDiv,'opacity',30,function(){
+                starMove(oDiv,'height',100, function () {
+                    starMove(oDiv,'width',100)
+                })
+            })
+        }
+    }
+</script>
+</body>
+</html>

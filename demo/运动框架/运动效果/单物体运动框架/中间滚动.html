@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{height: 2000px;}
+        #div1{width: 100px;height: 100px;position:absolute;right: 0;background: red; }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<script>
+    window.onscroll= function () {
+
+        var  oDiv=document.getElementById('div1');
+        var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+        var t=scrollTop+(document.documentElement.clientHeight-oDiv.offsetHeight)/2;
+//        t=Math.ceil(t);
+        t=parseInt(t)
+        starMove(t);
+
+    }
+    var timer=null;
+    function starMove(Target){
+        var oDiv=document.getElementById('div1');
+        clearInterval(timer)
+        timer=setInterval(function () {
+            var speed=(Target-oDiv.offsetTop)/8;
+            speed=speed>0?Math.ceil(speed):Math.floor(speed) //取整
+            if(oDiv.offsetTop==Target){
+                clearInterval(timer);
+            }else{
+                oDiv.style.top=oDiv.offsetTop+speed+'px';
+            }
+        },30);
+    }
+</script>
+</body>
+</html>

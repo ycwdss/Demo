@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{position: relative;border: 1px solid #000;width:680px;height: 132px;
+    margin: 0 auto;overflow:hidden;
+        }
+        #div1 ul{position: absolute;}
+        #div1 ul li{list-style: none;float: left;width: 150px;height: 112px;padding: 10px;}
+        #div1 ul li img{width: 150px;}
+        *{margin:0;padding:0}
+    </style>
+    <script src="starMove.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <ul>
+            <li><img src="img/1.jpg" alt=""/></li>
+            <li><img src="img/2.jpg" alt=""/></li>
+            <li><img src="img/3.jpg" alt=""/></li>
+            <li><img src="img/4.jpg" alt=""/></li>
+        </ul>
+    </div>
+<script>
+    window.onload= function () {
+        var oDiv=document.getElementById('div1');
+        var oUl=oDiv.getElementsByTagName('ul')[0];
+        var aLi=oUl.getElementsByTagName('li');
+        //复制一份ul
+        oUl.innerHTML+=oUl.innerHTML;
+        //ul宽度不够，让ul的宽度等于所有的li的宽度
+        oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';
+        timer=setInterval(function () {
+            if(oUl.offsetLeft<-oUl.offsetWidth/2){
+                oUl.style.left=0;
+            }
+            oUl.style.left=oUl.offsetLeft-1+'px';
+        },30)
+    }
+</script>
+</body>
+</html>

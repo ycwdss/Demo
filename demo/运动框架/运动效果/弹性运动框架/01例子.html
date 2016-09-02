@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{width: 100px;height: 100px;background:red;position: absolute;left:0;top:50px;}
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="开始运动">
+<div id="div1"></div>
+<script>
+    var ispeed=1; //速度
+    var oDiv=document.getElementById('div1');
+    var oBtn=document.getElementById('btn');
+    oBtn.onclick= function () {
+        clearInterval(oDiv.timer);
+        oDiv.timer=setInterval(function(){
+
+//            ispeed++;//加速运动
+            ispeed--;//减速运动
+            if(oDiv.offsetLeft>=300){ //判断运动是否到达终点的
+                clearInterval(timer);  //到达终点
+            }else{
+                oDiv.style.left=oDiv.offsetLeft+ispeed+'px'; //offsetLeft当前所处的位置 到达终点前要做的
+            }
+        },30);
+    }
+
+</script>
+</body>
+</html>

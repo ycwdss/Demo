@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/imgZoom.css">
+</head>
+<body>
+<div id="picTab">
+    <div id="move">
+        <ul id="picList">
+            <li class="active">
+                <img src="img/iBannerText.png"/>
+            </li>
+            <li>
+                <img src="img/iBannerText2.png"/>
+            </li>
+            <li>
+                <img src="img/iBannerText3.png"/>
+            </li>
+        </ul>
+        <div id="zoom">
+            <div id="zoomPic">
+                <div class="pic"></div>
+                <div class="mask"></div>
+            </div>
+        </div>
+    </div>
+
+    <ul id="textList">
+        <li class="active"><img src="img/iCourseTabText.png"/></li>
+        <li><img src="img/iCourseTabText2.png"/></li>
+        <li><img src="img/iCourseTabText3.png"/></li>
+    </ul>
+    <ul id="btns">
+        <li class="active"><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+
+</div>
+<script>
+    window.onload = function () {
+        var oPic = document.getElementById('picList');
+        var aPic = oPic.children;
+        var oText = document.getElementById('textList');
+        var aText = oText.children;
+        var oBtns = document.getElementById('btns');
+        var aBtns = oBtns.children;
+        var oZoom = document.getElementById('zoom');
+        var oZoomPic = oZoom.children[0].children[0];
+        var oMove = document.getElementById('move');
+        var aPicSrc = ["img/iBannerTextBig.png", "img/iBannerTextBig2.png", "img/iBannerTextBig3.png"];
+
+        var oTimer = null;
+        var iNow = 0;
+        var iScale = 424 / 363;
+        iScale = iScale.toFixed(2);
+        toZoom(0);
+        oMove.onmousemove = function (ev) {
+            var iX = ev.clientX - getLeft(this);
+            var iY = ev.clientY - getTop(this);
+
+            if ((ev.clientX > getLeft(this) && ev.clientX < (getLeft(this) + this.offsetWidth)) && (iY>0 && iY<80)) {
+                clearTimeout(oTimer);
+                oTimer = null;
+                toZoom(iX);
+            } else {
+                if(!oTimer){
+                    oTimer = setTimeout(function () {
+                        toZoom(0);
+                        oTimer = null;
+                    }, 100);
+                }
+
+            }
+        }
+        for (var i = 0; i < aBtns.length; i++) {
+            aBtns[i].index = i;
+            aBtns[i].onclick = function () {
+                aBtns[iNow].className = '';
+                //aText[iNow].className='';
+                zoomHide(iNow);
+                iNow = this.index;
+                aBtns[iNow].className = 'active';
+            }
+        }
+        ;
+        function zoomHide(num) {
+            oZoomPic.style.transition = 500 + 'ms';
+            oZoom.style.transition = 500 + 'ms';
+            oZoom.style.WebkitTransform = 'rotate(-30deg)';
+            oZoomPic.style.WebkitTransform = 'rotate(30deg)';
+            oZoom.addEventListener('webkitTransitionEnd', end, false);
+            function end() {
+                oZoomPic.style.backgroundImage = 'url(' + aPicSrc[iNow] + ')';
+                this.removeEventListener('webkitTransitionEnd', end, false);
+                toHide(num);
+            }
+        };
+        function toHide(num) {
+            aPic[num].style.transition = '0.3s';
+            aText[num].style.transition = '0.3s';
+            aPic[num].addEventListener('webkitTransitionEnd', picShow, false);
+            aText[num].addEventListener('webkitTransitionEnd', textShow, false);
+            aPic[num].className = 'hide';
+            aText[num].className = 'hide';
+        };
+        function picShow() {
+            this.removeEventListener('webkitTransitionEnd', picShow, false);
+            this.style.transition = '0s';
+            this.className = '';
+            aPic[iNow].className = 'active';
+            aPic[iNow].style.transition = '0.5s';
+            aPic[iNow].addEventListener('webkitTransitionEnd', end, false);
+            function end() {
+                this.removeEventListener('webkitTransitionEnd', end, false);
+                oZoom.style.WebkitTransform = 'rotate(0deg)';
+                oZoomPic.style.WebkitTransform = 'rotate(0deg)';
+                oZoomPic.style.transition = 500 + 'ms';
+                oZoom.style.transition = 500 + 'ms';
+            }
+        };
+        function textShow() {
+            this.removeEventListener('webkitTransitionEnd', textShow, false);
+            this.style.transition = '0s';
+            this.className = '';
+            aText[iNow].className = 'active';
+            aText[iNow].style.transition = '0.5s';
+        };
+        function toZoom(iX) {
+            var iLeft = Math.ceil(iX * iScale - oZoomPic.offsetWidth / 2);
+
+            var iTime = Math.abs(oZoom.offsetLeft - (iX - 92));
+            iTime = iTime < 30 ? 0 : iTime;
+            oZoomPic.style.backgroundPosition = -iLeft + 'px 0px'
+            oZoomPic.style.transition = iTime + 'ms';
+            oZoom.style.transition = iTime + 'ms';
+            oZoom.style.left = iX - 92 + 'px';
+        };
+        function getLeft(obj) {
+            var iLeft = 0;
+            while (obj) {
+                iLeft += obj.offsetLeft;
+                obj = obj.offsetParent;
+            }
+            return iLeft;
+
+        };
+        function getTop(obj) {
+            var iTop = 0;
+            while (obj) {
+                iTop += obj.offsetTop;
+                obj = obj.offsetParent;
+            }
+            return iTop;
+
+        }
+    }
+</script>
+</body>
+</html>

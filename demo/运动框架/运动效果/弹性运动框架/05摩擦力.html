@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{width: 100px;height: 100px;background:red;position: absolute;left:0;top:50px;}
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="开始运动">
+<div id="div1"></div>
+<textarea id="txt1" rows="10" cols="40"></textarea>
+<script>
+    var ispeed=20; //速度
+    var oDiv=document.getElementById('div1');
+    var oBtn=document.getElementById('btn');
+    oBtn.onclick= function () {
+  setInterval(function(){
+      ispeed*=0.95;//摩擦力
+                oDiv.style.left=oDiv.offsetLeft+ispeed+'px';
+                document.getElementById('txt1').value+=ispeed+'\n';
+        },30);
+    }
+
+</script>
+</body>
+</html>

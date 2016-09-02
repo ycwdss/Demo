@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #ul1{width: 366px;margin:  0 auto;position: relative;}
+        #ul1 li{list-style: none;width:100px;height: 100px;
+            background: #ccc;  border: 1px solid #000;
+            float: left;margin: 10px;}
+    </style>
+    <script src="starMove.js"></script>
+</head>
+<body>
+<!--js要采取绝对定位-->
+<!--css 浮动-->
+<!--转化为绝对定位-->
+<ul id="ul1">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+    window.onload= function () {
+        var oUl=document.getElementById('ul1');
+        var aLi=document.getElementsByTagName('li');
+        var minZindex=2;
+        for(var i=0;i<aLi.length;i++){
+//            aLi[i].innerHTML='left:'+aLi[i].offsetLeft+',top:'+aLi[i].offsetTop;
+            aLi[i].style.left=aLi[i].offsetLeft+'px';
+            aLi[i].style.top=aLi[i].offsetTop+'px';
+        }
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].style.position='absolute';
+            aLi[i].style.margin='0';
+        }
+        //加事件
+        for(i=0;i<aLi.length;i++){
+            aLi[i].onmouseover= function () {
+                this.style.zIndex=minZindex++
+                starMove(this,{width:200,height:200,marginLeft:-50,marginTop:-50})
+            }
+            aLi[i].onmouseout= function () {
+                starMove(this,{width:100,height:100,marginLeft:0,marginTop:0})
+            }
+        }
+    }
+</script>
+</body>
+</html>

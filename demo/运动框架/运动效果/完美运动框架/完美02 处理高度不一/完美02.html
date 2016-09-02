@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{width: 10px;height: 10px;background:red;}
+    </style>
+    <script src="starMove.js"></script>
+</head>
+<body>
+<!--setStyle(attr,value)-&ndash;&gt;setStyle(json)-->
+<!--starMove(attr,target)-&ndash;&gt;starMove(json)-->
+<input type="button" id="btn" value="开始运动">
+<div id="div1"></div>
+<script>
+    window.onload= function () {
+        var oDiv=document.getElementById('div1');
+        var oBtn=document.getElementById('btn')
+        oBtn.onclick= function () {
+            starMove(oDiv,{width:105,height:200})
+        }
+    }
+</script>
+</body>
+</html>
