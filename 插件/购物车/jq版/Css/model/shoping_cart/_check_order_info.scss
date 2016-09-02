@@ -1,0 +1,514 @@
+@charset "UTF-8";
+//颜色------------
+.cart_wrap{background-color: #f4f4f4}
+.btn{
+  background-color: #6f7a82;
+}
+.same_bg{
+  background: #eee;
+}
+input{
+  background-color: #fff;
+}
+//--------------------
+.cart_wrap{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  .cart_box{
+    width: 1300px;
+    background-color: #fff;
+    margin: 0 auto;
+    .cart_inner{
+      width: 960px;
+      padding: 20px;
+      margin: 0 auto;
+      background: #fff;
+      .cart_hd{
+        width: 100%;
+        height: 65px;
+        margin: 0 auto;
+        padding: 20px 0 40px 0;
+        h2{
+          margin-left: 20px;
+          padding-left: 20px;
+          height: 65px;
+          line-height: 65px;
+          font-size: 28px;
+          font-weight: normal;
+          padding-left: 100px;
+          background: url(../../Images/shoping_cart/sprite_shoping_cart.png?_nosprite) no-repeat left center;
+        }
+        .cart_step{
+          margin-top:30px;
+          li{
+            float: left;
+            margin-right: -2px;
+            .step_bar{
+              width: 150px;
+              height: 5px;
+              background-color:#D9D9D9;
+              border-radius: 5px;
+              position: relative;
+
+              .step_num{
+                position: absolute;
+                left: 50%;
+                top: -12px;
+                margin-left: -11px;
+                width: 22px;
+                height: 24px;
+                line-height: 24px;
+                border-radius: 24px;
+                color: #222;
+                font-weight: 700;
+                text-align: center;
+                background-color:#D9D9D9;
+              }
+            }
+            .step_tips{
+              text-align: center;
+              margin-top: 10px;
+              color: #a8a8a8;
+            }
+          }
+          .current{
+            .step_bar{
+              background-color: #7f7f7f;
+              z-index: 5;
+            }
+            .step_num{
+              background-color:#e5004f!important;
+              color: #fff!important;
+            }
+            .step_tips{
+              color:#222;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//收货信息
+.address_info,
+.ticket_box ,
+.mark{
+  width: 938px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  h2{
+    font-size:14px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 30px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .new_address{
+    margin: 20px 80px 15px 40px;
+    display: none;
+    border: 1px solid #E2E2E2;
+    .hd{
+      height: 32px;
+      line-height: 32px;
+      text-align: left;
+      padding-left: 20px;
+      border-bottom: 1px solid #E2E2E2;
+      position: relative;
+      em{
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        background: url("../../Images/shoping_cart/sprite_btn_close.png") no-repeat;
+        position: absolute;
+        top:5px;
+        right: 10px;
+      }
+    }
+  }
+  .bd{
+    ul{
+      padding: 10px 0;
+      li{
+        padding-bottom: 10px;
+        float: none;
+        text-align: left;
+        label{
+          display: inline-block;
+          width: 96px;
+          text-align: right;
+          i{
+            color: red;
+          }
+        }
+        input{
+          width: 116px;
+          height: 20px;
+          line-height: 20px;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+          padding-left: 4px;
+          vertical-align: middle;
+          background-color: #fff;
+        }
+        .msg{
+          margin-left: 5px;
+          color: red;
+          font-size: 12px;
+          width: auto;
+          display: none;
+        }
+        .select_address{
+          display: inline-block;
+          select{
+            height: 22px;
+            line-height: 22px;
+            padding: 0 16px 0 5px;
+            vertical-align: middle;
+            margin: 0px 5px 0px 0px;
+            color: #666;
+            font-size: 12px;
+          }
+        }
+        .fill_street{
+          width: 288px;
+          height: 20px;
+          line-height: 20px;
+          vertical-align: middle;
+          margin-left: 98px;
+          padding-left: 4px;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+  .sure_btn{
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-top: 1px solid #E2E2E2;
+    input{
+      color: #fff;
+      font-size: 14px;
+      line-height: 1;
+      cursor: pointer;
+      overflow: visible;
+      padding: 6px 15px 8px;
+      display: inline-block;
+
+    }
+  }
+}
+.address_info{
+  display: block;
+  border-bottom: 0;
+}
+
+.address_info,.ticket_box{
+  .change{
+    position: absolute;
+    right: 70px;
+    top:0;
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  p{
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 10px 0;
+    span{
+      padding-right: 30px;
+      display: inline-block;
+    }
+    //.name{
+    //width: 100px;
+    //}
+    //.tel{
+    //  width: 120px;
+    //}
+    //.address{
+    //  width: 450px;
+    //}
+    .defalut{
+      color: red;
+      border: 1px solid red;
+      text-align: center;
+      padding: 3px 5px;
+      margin-right: 20px;
+    }
+    .edit{
+      cursor: pointer;
+    }
+    .set_defalut,.edit,.delete{
+      display: none;
+      cursor: pointer;
+    }
+  }
+}
+//发票信息
+.ticket_box{
+  margin-bottom: 15px;
+
+  .need{
+    display: none;
+    margin: 20px 80px 15px 40px;
+    border: 1px solid #E2E2E2;
+    ul{
+      li{
+        padding-left: 20px;
+        height: 32px;
+        line-height: 32px;
+        margin-bottom: 15px;
+        position: relative;
+        .choose{
+          color: red;
+          display: none;
+        }
+        em{
+          display: inline-block;
+          width: 21px;
+          height: 21px;
+          background: url("../../Images/shoping_cart/sprite_btn_close.png") no-repeat;
+          position: absolute;
+          top:5px;
+          right: 10px;
+        }
+        span{
+          padding: 0 15px 0 5px;
+        }
+        .btn{
+          font-size: 14px;
+          cursor: pointer;
+          padding: 6px 15px;
+          display: inline-block;
+
+          color: #fff;
+        }
+      }
+      li:first-child{
+        border-bottom: 1px solid #E2E2E2;
+      }
+
+      .same{
+        input{
+          height: 30px;
+          line-height:30px;
+          color: #999;
+          border: 1px solid #ddd;
+          font-size: 12px;
+          padding: 0px 12px;
+          float: left;
+        }
+
+        span{
+          color: red;
+          display: none;
+        }
+      }
+    }
+  }
+}
+//商品清单
+.goods_box{
+  border: 1px solid #E2E2E2;
+  padding: 10px;
+  margin-bottom: 15px;
+  h2{
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    height: 30px;
+    background: #666;
+    line-height: 30px;
+  }
+  ul{
+    border: 1px solid #E2E2E2;
+    border-top: 0;
+    border-bottom: 0;
+    li{
+      float: left;
+      line-height: 30px;
+      padding-left: 10px;
+      text-align: left;
+      color: #999;
+    }
+  }
+  .column{
+    float: left;
+    padding: 10px 0px 10px 10px;
+  }
+  .column1{
+    width: 100px;
+  }
+  .column2{
+    width: 386px;
+  }
+  .column3{
+    width: 110px;
+  }
+  .column4{
+    width: 102px;
+  }
+  .column5{
+    width: 168px;
+  }
+  .pt30{
+    padding-top: 30px;
+  }
+  .font_w700{
+    font-weight: 700;
+  }
+  .set_color{
+    color: red;
+    p{
+      span{
+        display: inline-block;
+        width: 36px;
+        height: 20px;
+        margin-top: 3px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+      }
+    }
+  }
+  .agoods{
+    width: 936px;
+    border: 1px solid #E2E2E2;
+    border-top: 0;
+  }
+  .lists_shopings{
+    width: 336px;
+    .shopings_box{
+      margin-bottom: 10px;
+      width: 425px;
+      text-align: left;
+      .shopings_img{
+        background-color: #fff;
+        border: 1px solid #efefef;
+        float: left;
+        height: 60px;
+        margin-right: 10px;
+        overflow: hidden;
+        width: 60px;
+        a{
+          display: inline-block;
+          &:hover{
+            color: #666666;
+
+          }
+          img{
+            height: 60px;
+            vertical-align: top;
+            width: 60px;
+          }
+        }
+
+      }
+      .shopings_title{
+        float: left;
+        width: 250px;
+        a{
+          height: 20px;
+          display: block;
+          margin-top: 5px;
+          color: #666666;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &:hover{
+            color: red;
+          }
+        }
+      }
+      .shopings_type{
+        float: left;
+        width: 328px;
+        height: 22px;
+        line-height: 22px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #999;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+//备注
+.mark{
+  padding: 10px;
+  margin-bottom: 15px;
+  .mark_note{
+    textarea{
+      width: 300px;
+      height: 50px;
+      border: 1px solid #ddd;
+      resize: none;
+    }
+  }
+}
+
+//提交订单
+.submit_order{
+
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  ul{
+    margin: 0px 10px;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+    li{
+      text-align: right;
+      height: 24px;
+      line-height: 24px;
+      span{
+        display:inline-block;
+        text-align: left;
+        width: 100px;
+      }
+      label{
+        margin-right: 20px;
+        text-align: right;
+        span{
+          width: auto;
+          padding-left:10px;
+          em{
+            color: red;
+            padding: 0 3px;
+          }
+        }
+      }
+    }
+    li:last-child{
+      font-size: 16px;
+      color: #222;
+      font-weight: 600;
+      span{
+        color: red;
+      }
+    }
+  }
+  .tobtn{
+    padding: 10px 20px;
+    input{
+      display: block;
+      float: right;
+      width: 147px;
+      height: 43px;
+      line-height: 43px;
+      cursor: pointer;
+      text-align: center;
+      color: #fff;
+      margin-right: 30px;
+    }
+  }
+}

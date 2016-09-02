@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>浪漫七夕，相约现代—法国文化浪漫体验会</title>
+	<meta name="description" content="浪漫七夕，相约现代-法国文化浪漫体验会是现代教育在中国传统情人节七夕节当天举办的免费法国文化体验课程，体验课为学生免费讲解法国浪漫文化，法语学习等相关知识，还为到场的同学提供美味下午茶和玫瑰花，让你过一个特别浪漫的情人节" />
+	<meta name="keywords"  content="情人节,七夕节,传统情人节,免费下午茶,免费情人节玫瑰,法国浪漫文化体验会,免费公开课,法语学习,现代教育 " />	
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<style>
+/* Style for our header texts 
+	* --------------------------------------- */
+
+h1 {
+	font-size: 5em;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+/* Centered texts in each section 
+	* --------------------------------------- */
+.section {
+	text-align: center;
+}
+/* Backgrounds will cover all the section
+	* --------------------------------------- */
+#section0,  #section1,  #section2,  #section3,  #section4 {
+	background-size: cover;
+}
+/* Defining each sectino background and styles 
+	* --------------------------------------- */
+#section1 {
+	background: url(imgs/two-bg.jpg) no-repeat center top;
+	background-size: auto 100%;
+	padding: 30% 0 0 0;
+}
+#section2 {
+	background: url(imgs/three-bg.jpg) no-repeat center top;
+	background-size: auto 100%;
+	padding: 6% 0 0 0;
+}
+#section3 {
+	background: url(imgs/four-bg.jpg) no-repeat center top;
+	background-size: auto 100%;
+	padding: 6% 0 0 0;
+}
+#section3 h1 {
+	color: #000;
+}
+#section4 {
+	background: url(imgs/nine-bg.jpg) no-repeat center top;
+	background-size: auto 100%;
+	padding: 6% 0 0 0;
+}
+#section5 {
+	background: url(imgs/seven-bg.jpg) no-repeat center top;
+	background-size: auto 100%;
+	padding: 6% 0 0 0;
+}
+#section6 {
+	background: url(imgs/five-bg.jpg) no-repeat center top;
+	background-size: auto 100%;
+	padding: 6% 0 0 0;
+}
+#section7 {
+	background: url(imgs/six-bg.jpg) no-repeat center top;
+	background-size: auto 100%;
+	padding: 6% 0 0 0;
+}
+/*Adding background for the slides
+	* --------------------------------------- */
+#slide1 {
+	background: url(imgs/one-01.jpg) no-repeat center top;
+	background-size: auto 80%;
+	padding: 6% 0 0 0;
+}
+#slide2 {
+	background: url(imgs/one-02.jpg) no-repeat center top;
+	background-size: auto 80%;
+	padding: 6% 0 0 0;
+}
+#slide3 {
+	background: url(imgs/one-03.jpg) no-repeat center top;
+	background-size: auto 80%;
+	padding: 6% 0 0 0;
+}
+/* Bottom menu
+	* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}
+</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+    <script src="js/jquery.min.js"></script>
+
+
+	
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				resize : true,
+				verticalCentered: false,
+				//sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstpage', 'onepage', 'twopage', 'threepage', 'fourpage', 'fivepage','sixpage', 'lastpage'],
+				menu: '#menu',
+				onLeave: function(anchorLink, index){
+					//section1
+					if(index == 1){
+							//moving the image
+							$('#section0 #slide2').find('p').delay(500).animate({
+								top: '0%'
+							}, 1500, 'easeInQuart');
+
+							
+
+						}
+				},
+				afterLoad: function(anchorLink, index){
+				
+
+					//section 2
+					if(index == 2){
+						//moving the image
+						$('#section1').find('img').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+
+						$('#section1').find('p').first().fadeIn(1800, function(){
+							$('#section1').find('p').last().fadeIn(1800);
+						});
+
+					}
+
+					//section 3
+					if(anchorLink == 'twopage'){
+						//moving the image
+						$('#section2').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+						//moving the image
+						$('#section2').find('img').delay(500).animate({
+							top: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					//section 4
+					if(anchorLink == 'threepage'){
+						
+						$('#section3').find('.love-text').delay(500).animate({
+							top: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					//section 5
+					if(anchorLink == 'fivepage'){					
+						
+						$('#section5 .lizhao-list').find('dd').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					//section 6
+					if(anchorLink == 'sixpage'){				
+						
+						$('#section6').find('div.youhui').delay(500).animate({
+							top: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					
+				}
+			});
+
+		});
+	</script>
+    <script	type="text/javascript" src="http://xdjy369.com/statics/rihanyu/js/jquery.kinMaxShow-1.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#kinMaxShow").kinMaxShow({
+			//设置焦点图高度(单位:像素) 必须设置 否则使用默认值 500
+			height:469,
+			button:{
+			    //设置按钮上面不显示数字索引(默认也是不显示索引)
+                showIndex:false,
+			    //按钮常规下 样式设置 ，css写法，类似jQuery的 $('xxx').css({key:value,……})中css写法。            
+			    //【友情提示：可以设置透明度哦 不用区分浏览器 统一为 opacity，CSS3属性也支持哦 如：设置按钮圆角、投影等，只不过IE8及以下不支持】            
+                normal:{background:'url(/statics/rihanyu/images/button.png) no-repeat -14px 0',marginRight:'8px',border:'0',right:'44%',bottom:'20px'},
+               		   //当前焦点图按钮样式 设置，写法同上
+                       focus:{background:'url(/statics/rihanyu/images/button.png) no-repeat 0 0',border:'0'}
+			},
+			intervalTime:2
+		});		 
+        
+	}); 
+</script>
+<style>		
+		#section2 .intro{
+			left: -130%;
+			position:relative;
+		}
+		#section2 img{ top:-100%;position:relative;}
+		#section0 #slide2 div{ top:-100%;position:relative;}
+		#seciton3 .love-text{ top:200%; position:relative;}
+		#section5 .lizhao-list dd{left:214%;position:relative; }
+		#section6 div.youhui{ top:200%;position:relative;}
+		
+	</style>
+
+<style>
+#section1 img {
+	left: 130%;
+	position: relative;
+}
+#section1 p {
+	visibility: hidden;
+}
+
+#slide1 h1 {
+	width: 670px;
+	height: 166px;
+	background: url(imgs/lmqx-img.png) no-repeat left top;
+	margin: -8% auto 0 auto;
+}
+#slide1 p {
+	width: 613px;
+	height: 30px;
+	font-size:14px; line-height:25px; color:#fff;
+	margin: 50px auto 0 auto;
+}
+#slide1 div {
+	width: 954px;
+	height: 150px;
+	background: url(imgs/liucheng.png) no-repeat left top;
+	margin: 6% auto 0 auto;
+}
+#slide2 h1 {
+	width: 907px;
+	height: 168px;
+	background: url(imgs/qingrenjie.png) no-repeat left top;
+	margin: -8% auto 0 auto;
+}
+#slide2 p {
+	width: 420px;
+	height: 174px;
+	background: url(imgs/tianmihuiyi.png) no-repeat left top;
+	margin: 6% auto 0 auto;
+}
+#section1, #section2, #section3,#section4, #section5,#section6, #section7{
+	padding: 50px 0;
+	font-family: "microsoft yahei";
+}
+#section1 h1, #section2 h1, #section3 h1, #section4 h1, #section5 h1, #section6 h1, #section7 h1{
+	font-size: 36px;
+	width:1200px; margin:0 auto;
+}
+
+#section1 p.intro, #section2 p.intro, #section3 p.intro, #section4 p.intro, #section5 p.intro, #section6 p.intro,  #section7 p.intro{
+	visibility: inherit;
+	font-size: 14px;
+	width: 1200px;
+	margin: 15px auto;
+	color: #fff;
+}
+.dl-list {
+	width: 1200px;
+	margin: 0 auto;
+}
+.dl-list .inbox {
+	margin: 0 -38px;
+	zoom: 1;
+}
+.dl-list dl {
+	width: 560px;
+	height: 212px;
+	overflow: hidden;
+	margin: 38px;
+	float: left;
+}
+.dl-list dl dt {
+	width: 224px;
+	float: left;
+}
+.dl-list dl dd {
+	width: 336px;
+	float: left;
+	height: 212px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.dl-list dl dd h2 {
+	font-size: 24px;
+	color: #fff;
+	margin: 10px auto;
+}
+#section1 .dl-list dl dd p {
+	font-size: 12px!important;
+	font-family: "宋体";
+	width: auto;
+	visibility: inherit;
+	padding: 0 15px;
+	text-align: left;
+	color: #fff;
+	line-height: 160%;
+}
+.dl-list dl.one dd {
+	background: #6a9700;
+}
+.dl-list dl.two dd {
+	background: #cc3a3a;
+}
+.dl-list dl.three dd {
+	background: #e8a100;
+}
+.dl-list dl.four dd {
+	background: #4397ff;
+}
+
+#section2 .dl-list dl {
+	margin: 0 38px;
+	height: 232px;
+	background:#fff;
+}
+#section2 .dl-list dl.one dt {
+	width: 563px;
+	height: 232px;
+}
+#section2 .dl-list dl.two dd, #section2 .dl-list dl.three dd {
+	width: 280px;
+	height: 232px;
+	float: left;
+}
+#section2 p.intro{ margin-bottom:3%;}
+ #section3 h1{ color:#fff;}
+ 
+ .sec3-con{ width:1200px; margin:0 auto; position:relative;}
+.love-text{ width:512px; height:355px; background:url(imgs/ilove-text.png) no-repeat left top; padding-top:190px; margin-top:5%;}
+.love-text p{ font-size:18px; font-family:"microsoft yahei"; text-align:left; padding:0 30px; line-height:180%; color:#fff;}
+#section4 div{ margin-top:3%;}
+#section5 div.lizhao-box{ width:1200px; margin:3% auto 0 auto;}
+.lizhao{ width:562px; height:469px; float:left;}
+.lizhao dt{ width:33px; background:url(imgs/lizhao-title.jpg) repeat left top; height:269px; float:left; font-size:24px; padding:100px 25px; line-height:30px;}
+.lizhao dd{ float:left; width:479px; height:469px; background:#fff;}
+.lizhao-list{ width:561px; float:right;}
+.lizhao-list dd{ height:114px; color:#fff; padding:15px; margin-bottom:19px;}
+.lizhao-list dd h6{ font-size:18px; color:#fff; margin-bottom:15px;}
+.lizhao-list dd p{ font-size:12px; text-align:left; line-height:170%;}
+.lizhao-list dd.one{ background:#12bc6e;}
+.lizhao-list dd.two{ background:#0084ff;}
+.lizhao-list dd.three{ background:#e8a900;}
+#section6 div.youhui{width:1200px; margin:6% auto 0 auto;}
+#section6 div.youhui dl{ margin:0 -29px;}
+#section6 div.youhui dl dd{ float:left; margin:0 29px; width:361px; height:261px;}
+#section7 div.canjia{width:1200px; margin:3% auto 0 auto;}
+.yuyue{ width:562px; height:437px; background:#eee; float:left;}
+.yuyue dd, .concact dd{ width:439px; height:251px; background:url(imgs/heart.jpg) no-repeat center top; margin:40px auto 0 auto; padding-top:50px;}
+.concact dd{background:url(imgs/heart1.jpg) no-repeat center top;}
+.concact{width:562px; height:437px; background:#eee; float:right; position:relative;}
+.yuyue dt, .concact dt{ font-size:24px; color:#333; margin:20px;}
+.yuyue dd table{ border-collapse:collapse; margin:0 auto;}
+.yuyue dd table td{ padding:8px;}
+.inputtext{ height:26px; line-height:26px; background:#fff; border:none; width:240px; padding:0 3px; color:#333;}
+.inputbtn{ width:79px; height:79px; background:url(imgs/ljbm-btn.jpg) no-repeat left top; border:none; cursor:pointer; margin-top:5px;}
+.concact a{ display:block; width:173px; height:48px; position:absolute;  left:208px; top:252px;}
+#kinMaxShow div img{ width:479px; height:469px; overflow:hidden;}
+</style>
+	</head>
+	<body>
+<ul id="menu">
+      <li data-menuanchor="firstpage" class="active"><a href="#firstpage" class="firstpage"><span>浪漫<br/>七夕</span></a></li>
+      <li data-menuanchor="onepage" ><a href="#onepage" class="onepage"><span>文化<br/>之旅</span></a></li>
+      <li data-menuanchor="twopage" class=""><a href="#twopage" class="twopage"><span>美味</br>下午茶</span></a></li>
+      <li data-menuanchor="threepage" class=""><a href="#threepage" class="threepage"><span>爱情</br>玫瑰</span></a></li>
+      <li data-menuanchor="fourpage" class=""><a href="#fourpage" class="fourpage"><span>法国</br>情歌</span></a></li>
+      <li data-menuanchor="fivepage" class=""><a href="#fivepage" class="fivepage"><span>女神</br>老师</span></a></li>
+      <li data-menuanchor="sixpage" class=""><a href="#sixpage" class="sixpage"><span>课程</br>优惠劵</span></a></li>
+       <li data-menuanchor="lastpage" class=""><a href="#lastpage" class="lastpage"><span>报名</br>参加</span></a></li>
+    </ul>
+<div id="fullpage">
+      <div class="section" id="section0">
+    <div class="slide" id="slide1">
+          <h1></h1>
+          <p>活动时间：8月2日七夕节下午15:00-17:00<br/>
+活动地点：西安市长安南路小寨嘉汇大厦16楼5教室
+</p>
+          <div></div>
+        </div>
+    <div class="slide" id="slide2">
+          <h1></h1>
+          <p></p>
+        </div>
+    <div class="slide" id="slide3">
+          <h1><img src="imgs/one-03-img.png" width="1124" height="245"></h1>
+        </div>
+  </div>
+      <div class="section " id="section1">
+    <h1>法国浪漫文化之旅</h1>
+    <p class="intro">浪漫主义（Romanticism）是十八世纪晚期，十九世纪前半期盛行于法国，他是一个全欧洲性的内容广泛的思想文化运动，但直到20世纪仍余韵不散。法国浪漫主义主要体现在绘画、雕刻、小说和戏剧领域；英国浪漫主义主要体现于诗歌、历史画和风景画领域；德国浪漫主义则在音乐、诗歌和绘画领域皆有体现。</p>
+    <div class="dl-list">
+          <div class="inbox">
+        <dl class="one">
+              <Dt><img src="imgs/xiangshui-img.jpg" width="224" height="212" alt="法国香水"></Dt>
+              <dd>
+            <h2>法国香水</h2>
+            <p>法国香水驰名世界，其中不乏价格惊人的上品。在法国香水：法国，你大致可以凭着香水气味的雅俗判断一位先生或女士的身份。然而你可能不知道，香水的起源和恶臭有着密切关系。</p>
+          </dd>
+            </dl>
+        <dl class="two">
+              <Dt><img src="imgs/hongjiu-img.jpg" width="224" height="212" alt="法国香水"></Dt>
+              <dd>
+            <h2>法国红酒</h2>
+            <p>法国红酒世界闻名，法国不但是全世界酿造最多种葡萄酒的国家，也出产无数闻名于世的高级葡萄酒，其口味种类极富变化，法国生产的红酒有六大生产地包括波尔多(Bordeaux)、勃艮第(Burgundy)...</p>
+          </dd>
+            </dl>
+        <dl class="three">
+              <Dt><img src="imgs/xiangsong-img.jpg" width="224" height="212" alt="法国香水"></Dt>
+              <dd>
+            <h2>法国香颂</h2>
+            <p>香颂来自法语“chanson”一词，本意为歌曲。它是法国世俗歌曲和情爱流行歌曲的泛称，以甜美浪漫的歌词著称于世。它们就像一樽美酒，一杯咖啡，或一张张泛黄的老照片，无可抗拒地带出人们对...</p>
+          </dd>
+            </dl>
+        <dl class="four">
+              <Dt><img src="imgs/dacan-img.jpg" width="224" height="212" alt="法国香水"></Dt>
+              <dd>
+            <h2>法式大餐</h2>
+            <p>法国人一向以善于吃并精于吃而闻名，法式大餐至今仍名列世界西菜之首。法式菜肴的特点是选料广泛（如蜗牛、鹅肝都是法式菜肴中的美味）；加工精细；烹调考究，滋味有浓有淡，花色品种多。</p>
+          </dd>
+            </dl>
+      </div>
+        </div>
+  </div>
+      <div class="section" id="section2">
+    <h1>美味下午茶</h1>
+    <p class="intro">双人下午茶，在悠闲的氛围中，细品各国精致甜点，倾听彼此心灵对话</p>
+    <div class="dl-list">
+          <div class="inbox">
+        <dl class="one">
+              <Dt><img src="imgs/meishi-01.jpg" width="563" height="232" alt="法国香水"></Dt>
+            </dl>
+        <dl class="two">
+              <dd> <img src="imgs/meishi-04.jpg" width="281" height="232"> </dd>
+              <dd><img src="imgs/meishi-05.jpg" width="282" height="232"></dd>
+            </dl>
+        <dl class="three">
+              <dd> <img src="imgs/meishi-02.jpg" width="281" height="232"> </dd>
+              <dd><img src="imgs/meishi-03.jpg" width="282" height="232"></dd>
+            </dl>
+        <dl class="four">
+              <Dt><img src="imgs/meishi-06.jpg" width="563" height="232" alt="法国香水"></Dt>
+            </dl>
+      </div>
+        </div>
+  </div>
+      <div class="section" id="section3">
+    <h1>昆明卡罗拉玫瑰，送给最爱的你</h1>
+    <p class="intro">法国被称为世界上最浪漫的国度，情人节是法国人最重要的节日之一。法国人过情人节，注重情调，忽略物质。只在那一天、那一刻，一对情侣在玫瑰花香、温馨烛光之中流波缱绻，互诉衷肠，便胜却人间无数。这一刻，就是幸福。</p>
+    <div class="sec3-con">
+    	<div class="love-text">
+        	<p>中国：我爱你<br/>
+                英国:i love you；<br/>
+                法国:je t'aime, je t'adore；<br/>
+                德国:ich liebe dich；<br/>
+                意大利:tiamog；<br/>
+                西班牙:te amo；<br/>
+                日本:あいしてる；<br/>
+                韩国:사랑해요；<br/>
+                俄罗斯:YavasIyublyu,YaTibiaLyublyu
+            </p>
+        </div>
+    </div>
+  </div>
+      <div class="section" id="section4">
+    <h1>法国情歌-我希望</h1>
+    <p class="intro">我全速发了一封e-mail（给你），你回应我：一会儿见，你羞红了脸，我放下了心，我希望，哦，我希望...</p>
+    <div>
+    	<embed src="http://player.video.qiyi.com/316a2c3d6cf1584906357785469a2636/0/0/w_19rqyenn05.swf-albumId=1211608409-tvId=1211608409-isPurchase=0-cnId=5" allowFullScreen="true" quality="high" width="680" height="496" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+    </div>
+  </div>
+      <div class="section" id="section5">
+    <h1>体验课老师-李曌老师</h1>
+    <p class="intro">女神级的法语老师 </p>
+    <div class="lizhao-box">
+    	<dl class="lizhao">
+        	<dt>女神教你学法语</dt>
+            <dd>
+                <div id="kinMaxShow">
+                    <div><a href="#"><img src="imgs/lizhao01.jpg" /></a></div>
+                    <div><a href="#"><img src="imgs/lizhao02.jpg" /></a></div>
+                    <div><a href="#"><img src="imgs/lizhao03.jpg" /></a></div>                    
+                </div>
+
+            </dd>
+        </dl>
+        <dl class="lizhao-list">
+        	<dd class="one">
+            	<h6>学习法语历程</h6>
+                <p>法语对于大多数人来说，意味着浪漫，而真正要学习她的时候，大家往往望而生畏。其实，摆正心态对于法语学习来说相当重要。初识法语，我也曾有一样的困惑。在经历了反复练习，大胆张口说，不怕出错的过程之后，回头再看来时之路，便可以笑着对自说：“一切都是值得的”。
+</p>
+            </dd>
+            <dd class="two">
+            	<h6>法国留学之路</h6>
+                <p>近7年的留法生活教给我许多，有苦有乐，有喜有忧，每天都充满了挑战和惊喜。在这个多元文化的环境中，能明显感觉到自己的成长，游览了欧洲国家，认识了许多人，增长了见识。当然这些美好的回忆是奠定在扎实的语言基础之上，希望同学们能够努力学习法语，相信法国还是有许多值得体验的事物等着大家去发掘！
+</p>
+            </dd>
+            <dd class="three">
+            	<h6>执教现代教育</h6>
+                <p>回国后便担任现代教育专业法语老师，善于将留法期间对法国文化及法语学习的理解融入课堂，形成了一套独特的教学理念。我相信，每一位法语学习者都是一只等待破茧而出的蝴蝶，让我们一起努力，舞出精彩篇章。</p>
+            </dd>
+        </dl>
+    </div>
+  </div>
+      <div class="section" id="section6">
+    <h1>让爱情保鲜，愿真心永远</h1>
+    <p class="intro">活动现场赠送现代教育小语种课程99元代金券,在8月2日当天报名法语课程者，99元代金劵更能双倍使用，若双人一起报名，再享立减100元。</p>
+    <div class="youhui">
+    <dl>
+    	<dd><a href="#"><img src="imgs/fa-class1.jpg" width="361" height="261"></a></dd>
+        <dd><a href="#"><img src="imgs/fa-class2.jpg" width="361" height="261"></a></dd>
+        <dd><a href="#"><img src="imgs/fa-class3.jpg" width="361" height="261"></a></dd>
+    </dl>
+    </dl>
+    </div>
+  </div>
+  <div class="section" id="section7">
+    <h1>我要参加</h1>
+    <p class="intro">如果你想参加我们的活动，请在下方窗口预约，或者电话咨询报名：400-686-1223 029-85393405</p>
+    <div class="canjia">
+    	<dl class="yuyue">
+        	<dt>报名参加</dt>
+            <dd>
+            <table width="0" border="0">
+  <tr>
+    <td><input type="text" value="请输入姓名" name="name" class="inputtext"/></td>
+  </tr>
+  <tr>
+    <td><input type="text" value="请输入手机号码" name="shouji" class="inputtext"/></td>
+  </tr>
+  <tr>
+    <td><input type="text" value="请输入参加人数" name="renshu" class="inputtext"/></td>
+  </tr>
+  <tr>
+    <td><input name="" type="button" class="inputbtn"></td>
+  </tr>
+</table>
+
+            </dd>
+        </dl>
+		<script type="text/javascript">
+	$(document).ready(function() {
+       // var array=new Array('593599421','1050636634','1050636634','2813855543','1150820666');
+    	//var max = array.length-1; // 获得array数组的长度
+		//var index = Math.round(Math.random() * max); // 生成0~array数组长度之间的随机数(包括0,不包括max)
+		//var qq=array[index];
+		$("#qqkf").click(function(){
+			//window.open("http://wpa.qq.com/msgrd?v=3&uin="+qq+"&site=日韩语培训&menu=yes");
+			window.open('http://chat.53kf.com/webCompany.php?arg=029chenpeng&style=1','newwindow','height=500,width=700,top=300,left=500,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no');
+			return false;
+			
+		});	
+		
+    });
+		
+    </script>
+        <dl class="concact">
+        	<dt>联系方式</dt>
+        	<dd><a href="" id="qqkf"></a></dd>
+        </dl>
+    </div>
+  </div>
+    </div>
+</body>
+</html>

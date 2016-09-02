@@ -1,0 +1,71 @@
+.l_footer {
+  width: 100%;
+  height: 125px;
+  padding: 10px 0 15px;
+  background: #FFFFFF; }
+
+.m_footerInner {
+  position: relative; }
+
+.l_footer p {
+  text-align: center; }
+
+.footer_nav {
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+  padding-top: 8px; }
+
+.l_footer .footer_company {
+  font-size: 14px;
+  margin-bottom: 5px; }
+
+.l_footer a {
+  color: #333; }
+
+.l_footer .link {
+  height: 126px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  overflow: hidden; }
+  .l_footer .link .link_head {
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 0; }
+
+.l_footer .link a {
+  text-align: center;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.c_copy {
+  line-height: 26px;
+  text-align: center; }
+
+.c_rz {
+  width: 176px;
+  height: 30px;
+  margin: 13px auto 0; }
+
+.icon_erweima {
+  position: absolute;
+  right: 215px;
+  top: -10px;
+  width: 145px;
+  height: 145px;
+  overflow: hidden; }
+
+.icon_erweima img {
+  display: block;
+  width: 145px;
+  height: 145px; }
+
+/*# sourceMappingURL=footer.css.map */

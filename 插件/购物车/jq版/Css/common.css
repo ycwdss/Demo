@@ -1,0 +1,142 @@
+html {
+  width: 100%;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font: 12px "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  min-width: 1300px;
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch; }
+
+* {
+  word-break: break-all; }
+
+pre, html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, textarea, p, span, table, th, td, form, img, div {
+  margin: 0;
+  padding: 0;
+  word-break: break-all; }
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word; }
+
+.fontsong {
+  font-size: 12px;
+  font-family: "SimSun",serif; }
+
+img, a, input, button {
+  border: none;
+  outline: none;
+  background: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, b {
+  font-weight: normal;
+  cursor: hand; }
+
+em, i, b {
+  font-style: normal; }
+
+ul, ol {
+  list-style: none; }
+
+input {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+
+input:-ms-clear {
+  display: none; }
+
+input {
+  font-family: "Microsoft YaHei"; }
+
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+.ar {
+  text-align: right; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.noselect * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.hide {
+  display: none; }
+
+.conWidth {
+  width: 1300px;
+  margin: 0 auto; }
+
+.con_width {
+  width: 1300px;
+  margin: 0 auto; }
+
+.no_before:before {
+  display: none !important; }
+
+.no_after:after {
+  display: none !important; }
+
+.no_marginR {
+  margin-right: 0 !important; }
+
+.no_marginB {
+  margin-bottom: 0 !important; }
+
+.no_marginL {
+  margin-left: 0 !important; }
+
+.no_borderB {
+  border-bottom: 0 !important; }
+
+.no_borderT {
+  border-top: 0 !important; }
+
+.no_borderL {
+  border-left: 0 !important; }
+
+.no_borderR {
+  border-right: 0 !important; }
+
+/*# sourceMappingURL=common.css.map */

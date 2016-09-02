@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="react-with-addons.js"></script>
+    <script src="react-dom.js"></script>
+    <script src="browser.min.js"></script>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/babel">
+    var MyComponent = React.createClass({
+        mixins:[React.addons.LinkedStateMixin],
+        getInitialState:function () {
+            return {
+                mes:this.props.value
+            }
+        },
+        render: function () {
+            return (
+                    <div>
+                        <h1>{this.props.title}</h1>
+                        <input type="text" valueLink={this.linkState('mes')}/>
+
+                        <input type="button" value={this.props.send}/>
+                        <p>{this.state.mes}</p>
+                    </div>
+            )
+        },
+        /*changeHandle:function (ev) {
+            this.setState({mes:ev.target.value})
+        }*/
+        //使用react-with-addons.js 不用设置change
+    });
+    /*var title="下雨啦";
+     var send="提交";*/
+    var obj = {
+        title: "下雨啦",
+        send: '提交',
+        value:'请输入留言'
+    }
+    ReactDOM.render(
+            <MyComponent {...obj}/>,
+            document.getElementById('demo'),
+            function () {
+                console.log('页面渲染完成了！')
+            }
+    );
+</script>
+</body>
+</html>

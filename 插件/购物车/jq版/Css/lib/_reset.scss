@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import "base";
+@import "lib";
+// fenghuang项目reset文件
+html {
+    width: 100%;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    font: $font;
+    -webkit-tap-highlight-color: transparent; }
+
+body {
+    min-width: 1300px;
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+}
+*{
+    word-break: break-all;
+}
+pre,html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, textarea, p, span, table, th, td, form, img,div {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+}
+pre{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.fontsong{
+    font-size: 12px;
+    font-family: "SimSun",serif;
+}
+img, a, input, button {
+    border: none;
+    outline: none;
+    background: none; }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6,b{
+    font-weight: normal;
+    cursor: hand; }
+
+em,i,b{
+    font-style: normal;
+}
+ul, ol {
+  list-style: none; }
+input{
+    -webkit-transition: 0.2s ;
+    -moz-transition: 0.2s ;
+    -ms-transition: 0.2s ;
+    -o-transition: 0.2s ;
+    transition: 0.2s ;
+}input:-ms-clear{display:none;}

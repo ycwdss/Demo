@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <link rel="stylesheet" href="../Css/demo/side_colpick.css"/>
+    <link href="../Css/plugin/colpick.css" rel="stylesheet">
+</head>
+<body>
+<div class="side_color">
+    <div class="color_btn">
+        <a href="javascript:;">重置</a>
+        <a href="javascript:;">保存</a>
+    </div>
+    <ul class="color_block clearfix" id="default_theme_color">
+        <li style="background: #222222;"></li>
+        <li style="background: #78a000;"></li>
+        <li style="background: #b1191a;"></li>
+        <li style="background: #0165bb;"></li>
+        <li style="background: #ff9c00;"></li>
+    </ul>
+    <div class="color_content">
+        <div class="color_select_list">
+            <h5 class="select_title">背景颜色</h5>
+            <ul>
+                <li><span id="head_status_bg_color" class="colpickbutton"></span>
+                    顶部状态栏背景颜色
+                    <div class="css_text">
+                        #top{background:***;}
+                    </div>
+                </li>
+                <li><span id="head_bg_color" class="colpickbutton"></span>
+                    头部背景颜色
+                    <div class="css_text">
+                        #header_search{background:***;}
+                    </div>
+                </li>
+                <li><span id="nav_bg_color" class="colpickbutton"></span>
+                    导航购物车搜索框背景颜色
+                    <div class="css_text">
+                        #l_nav,#search .search_button,#top_cart,#cart_right,#cart_right .com_logo,#top_cart
+                        .cart_jiesuan span{background:***;}
+                        #search input{border: 2px solid ***;}
+                    </div>
+                </li>
+                <li><span id="nav_current_bg_color" class="colpickbutton"></span>
+                    导航购物车轮播图当前状态背景颜色
+                    <div class="css_text">
+                        .btn_dots li.slick-active button,#l_nav .nav_current,#l_nav li:hover{background-color: ***;}
+                    </div>
+                </li>
+                <li><span id="footer_bg_color" class="colpickbutton"></span>
+                    底部背景颜色
+                    <div class="css_text">
+                        #top{background:***;}
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="color_select_list">
+            <h5 class="select_title">字体颜色</h5>
+            <ul>
+                <li>
+                    <span class="colpickbutton" id="default_a_color"></span>
+                    网站链接默认颜色
+                    <div class="css_text">
+                        a{color: ***;}
+                    </div>
+                </li>
+                <li>
+                    <span class="colpickbutton" id="default_a_hover_color"></span>
+                    网站链接默认颜色
+                    <div class="css_text">
+                        a:hover{color: ***;}
+                    </div>
+                </li>
+                <li>
+                    <span class="colpickbutton" id="tab_nav_color"></span>
+                    商品分类当前颜色
+                    <div class="css_text">
+                        .pro_tab > li.current{border-bottom-color:***;}.pro_tab > li.current a{color:***;}
+                    </div>
+                </li>
+                <li>
+                    <span class="colpickbutton" id="product_link_hover_color"></span>
+                    商品链接选中颜色
+                    <div class="css_text">
+                        .pro_name a:hover{color: ***;}
+                    </div>
+                </li>
+                <li>
+                    <span class="colpickbutton" id="product_a_color"></span>
+                    商品链接默认颜色
+                    <div class="css_text">
+                        .pro_name a{color: ***;}
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script data-main="../Js/requireenter" app="index" src="../Js/lib/require.js" id="require"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import "../lib/lib";
+//分页
+.page{
+  text-align:center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top:30px\9;
+  margin: 10px auto 20px;
+}
+.page a,.c_page_text,.c_page_btn{
+  display:inline-block;
+  font-size: 12px;
+  padding:0 12px;
+  line-height: 30px;
+  border:1px solid #e0e0e0;
+  color:#999;
+  margin-right:5px;
+  cursor: pointer;
+  font-family:"SimSun";
+  @include transition($time:0.1s,$speed:ease-out)
+}
+
+.page a.now_page:hover{
+  cursor:default;
+  color:#999;
+}
+
+.page a:hover {
+  color:#093;
+  background-color: #fff;
+  border-color: #093;
+}
+.page a.active {
+  background: #fff;
+  color:#e1e1e1;
+}
+.page a.current{
+  background: #093;
+  color: #fff;
+  border-color: #093;
+  cursor: default;
+}
+.page span{
+  padding-left: 25px;
+}
+.c_page_text{
+  width: 16px;
+  background: #fff;
+}
+
+.c_page_btn{
+  font-family: "Microsoft YaHei", serif;
+}
+
+//<!--分页布局-->
+//<div class="page">
+//<a page="1">首页</a>
+//<a href="/category/9/page/1.html">&lt; 上一页</a>
+//<a class="current" href="/category/9/page/1.html">1</a>
+//<a class="" href="/category/9/page/3.html">3</a>
+//<a class="" href="/category/9/page/4.html">4</a>
+//<a class="" href="/category/9/page/5.html">5</a>
+//<a class="" href="/category/9/page/6.html">6</a>
+//<a href="/category/9/page/2.html">下一页 &gt;</a>
+//<a page="1">尾页</a>
+//</div>

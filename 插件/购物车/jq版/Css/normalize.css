@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE5"
+        on line 6 of normalize.scss
+
+1: /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css *\/
+2: 
+3: /**
+4:  * @file:      normalize-zh.css v3.0.3
+5:  * @author:    alsiso
+6:  * @update:    2015年7月24日 08:25:13;
+7:  * @copyright: 基于 normalize.css 源码解读与注释翻译 | MIT License
+8: *\/
+9: /**
+10:  * 1. 设置所有的字体为'sans-serif'
+11:  * 2. 防止 iOS 横屏字号放大，同时保证在PC上 zoom 功能正常
+
+Backtrace:
+normalize.scss:6
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1296:in `rescue in block in find_encoding_error'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1293:in `block in find_encoding_error'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1292:in `each'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1292:in `each_with_index'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1292:in `find_encoding_error'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:901:in `check_sass_encoding'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:433:in `check_encoding!'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:389:in `_to_tree'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+D:/software/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/scss:13:in `<top (required)>'
+D:/software/Ruby22/bin/scss:23:in `load'
+D:/software/Ruby22/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE5\"\A         on line 6 of normalize.scss\A \A 1: /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\A 2: \A 3: /**\A 4:  * @file:      normalize-zh.css v3.0.3\A 5:  * @author:    alsiso\A 6:  * @update:    2015年7月24日 08:25:13;\A 7:  * @copyright: 基于 normalize.css 源码解读与注释翻译 | MIT License\A 8: */\A 9: /**\A 10:  * 1. 设置所有的字体为'sans-serif'\A 11:  * 2. 防止 iOS 横屏字号放大，同时保证在PC上 zoom 功能正常"; }

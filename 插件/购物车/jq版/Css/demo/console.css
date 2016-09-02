@@ -1,0 +1,28 @@
+.slidebar {
+  position: fixed;
+  top: 50px;
+  min-height: 100%; }
+  .slidebar ul.page-sidebar-menu {
+    width: 200px;
+    padding: 0;
+    background: #3d3d3d; }
+    .slidebar ul.page-sidebar-menu li {
+      list-style-type: none;
+      line-height: 30px;
+      border-top: 1px solid #666; }
+      .slidebar ul.page-sidebar-menu li a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: white; }
+        .slidebar ul.page-sidebar-menu li a span {
+          margin-right: 5px; }
+        .slidebar ul.page-sidebar-menu li a:hover {
+          text-decoration: none; }
+
+.page-content {
+  margin-left: 250px;
+  background: greenyellow;
+  height: 2000px; }
+
+/*# sourceMappingURL=console.css.map */

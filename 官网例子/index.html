@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="header_nav">
+        <img src="img/logo.png">
+        <ul class="clearfix">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">解决方案</a></li>
+            <li><a href="#">产品</a></li>
+            <li><a href="#">招聘</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+<div id="container">
+    <div class="section section1">
+        <img class="computer" src="img/comphone.png">
+        <div class="company_info">
+            <h1>神恩信息</h1>
+            <p class="tips">移动互联时代电子商务平台服务商</p>
+            <h2>PC  <span>.</span>  平板  <span>.</span>  手机  </h2>
+            <p>多重解决方案，实现全平台式覆盖</p>
+            <p>一站式解决方案，快速搭建专属电子商务平台</p>
+        </div>
+    </div>
+    <div class="section section2">
+        <div class="items">
+            <img class="img_bg" src="img/33.png">
+            <img class="img_show" src="img/sousuo.png">
+            <img class="img_hand" src="img/hand.png">
+            <div class="B2C">
+                <h1>B2C</h1>
+                <h2>快读、安全、稳定</h2>
+                <p>多用户电子商务系统，<br/>缓存更新处理机制</p>
+            </div>
+        </div>
+    </div>
+    <div class="section section3">
+        <div class="C2C">
+            <h1>C2C</h1>
+            <h2>独立建站、自主优化、<br/>多种在线应用程序、<br/>多种解决方案</h2>
+            <p>在线交易、交互式销售渠道、全天跟踪服务、<br/>通讯速度快、潜在开支小</p>
+        </div>
+        <div class="C2C_img">
+            <img class="img_air" src="img/c2c.png">
+            <img class="img_shadow" src="img/c2cbg.png">
+        </div>
+    </div>
+    <div class="section section4 ">
+        <div class="img_wrap">
+            <img class="one" src="img/last_bg.png">
+            <img class="two" src="img/guang.png">
+            <img class="three" src="img/two_hand.png">
+            <div class="kele_txt">
+                <h1>KELECMS</h1>
+                <p>基于php+mysql+EXTjs的WEB开发管理系统,集成现代web开发管理技术，为电商管理平台提供更加完美的体验服务。</p>
+            </div>
+        </div>
+    </div>
+    <div class="section section5 fp-auto-height">
+        <div class="cnty_info">
+            <div class="cnty_intro fl">
+                <ul class="clearfix">
+                    <li><a href="#">网站首页</a>|</li>
+                    <li><a href="#">解决方案</a>|</li>
+                    <li><a href="#">产品中心</a>|</li>
+                    <li><a href="#">联系我们</a>|</li>
+                    <li><a href="#">凤凰筑巢</a></li>
+                </ul>
+                <p>神恩信息科技有限公司<br>成立于2014年，是一家以Web OS应用开发、销售为主的研发型高新科技公司<br>公司坚持“一个中心，两个基
+                点”的思想，即：以客户为中心，坚持科技创新，坚持优质服务。</p>
+            </div>
+            <div class="contact fr">
+                <img src="img/erweima.png">
+                <div class="contact_style fr">
+                    <h2>神恩信息</h2>
+                    <div class="tel">
+                        <img src="img/te.png">
+                        <span>0371-55221883</span>
+                    </div>
+                    <div class="eamil">
+                        <img src="img/email.png">
+                        <span>cntysoft@163.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy_right">Copyright © 2011- 2014 Cntysoft.All Rights</div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#container').fullpage({
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            fixedElements: "#header",
+            fixedElements:'#footer',
+            navigation:true,
+            navigationPosition:'right',
+            navigationTooltips:['首页', 'B2C', 'C2C', 'KELECMS'],
+            navigationColor:'red',
+            showActiveTooltip:true,
+
+            afterRender: function(link, index){
+                if(index == 1){
+                    move('.company_info').set('top','32%').end();
+                    move('.computer').scale(1.2).end();
+                }
+                if(index==2){
+                    move('.img_hand').set('bottom','0').duration(1000).end();
+                    $('.img_show').show().addClass('animated bounceIn'),
+                            $('.img_bg').show().addClass('animated fadeIn'),
+                            $('.B2C').show().addClass('animated slideInRight')
+                }
+                if(index==3){
+                    $('.C2C').show().addClass('animated slideInLeft')
+                    move('.img_air').scale(0).end();
+                    $('.img_shadow').show().addClass('animated fadeInUp')
+                }
+                if(index==4){
+                    move('.three').set('bottom','0').duration(1000).end(function () {
+                        move('.two').scale(1.3).duration('1.5s').end();
+                    });
+                    $('.one').show().addClass('animated slideInRight');
+                    $('.kele_txt').show().addClass('animated slideInRight');
+
+                }
+            },
+            afterLoad: function(link, index){
+                if(index == 1){
+                    move('.company_info').set('bottom','32%').end();
+                    move('.computer').scale(1.2).end();
+                }
+                if(index==2){
+                    move('.img_hand').set('bottom','0').duration(1000).end();
+                    $('.img_show').show().addClass('animated bounceIn'),
+                    $('.img_bg').show().addClass('animated fadeIn'),
+                    $('.B2C').show().addClass('animated slideInRight')
+                }
+                if(index==3){
+                    $('.C2C').show().addClass('animated slideInLeft');
+                    move('.img_air').scale(1).duration('1.2s').end();
+                    $('.img_shadow').show().addClass('animated fadeInUp')
+                }
+                if(index==4){
+                    $('.two').show();
+                    move('.three').set('bottom','0').duration(1000).end(function () {
+                        move('.two').scale(1.3).duration('1.5s').end();
+                    });
+                    $('.one').show().addClass('animated slideInRight');
+                    $('.kele_txt').show().addClass('animated slideInRight');
+                }
+            },
+            onLeave: function(link, index){
+                if(index == 1){
+                    move('.company_info').set('bottom', '28%').end();
+                    move('.computer').scale(1).end();
+                }
+                if(index==2){
+                    move('.img_hand').set('bottom','-300%').duration(1000).end();
+                    $('.img_show').hide(),
+                    $('.img_bg').hide(),
+                    $('.B2C').hide()
+                }
+                if(index==3){
+                    $('.C2C').hide();
+                    move('.img_air').scale(0).end();
+                    $('.img_shadow').hide();
+                }
+                if(index==4){
+                    $('.one').hide();
+                    move('.three').set('bottom','-300%').end();
+                    $('.two').hide();
+                    move('.two').scale(0).end();
+                    $('.kele_txt').hide();
+                }
+            }
+
+        });
+    });
+</script>
+
+<script src="js/move.min.js"></script>
+</body>
+</html>

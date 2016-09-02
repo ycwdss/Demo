@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../Css/style.css" rel="stylesheet">
+    <link href="../Css/plugin/colpick.css" rel="stylesheet">
+    <style rel="stylesheet" type="text/css">
+        .css_text {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+修改banner,购物车，搜索框颜色
+<div style="width: 100px;height: 100px;background: red;" id="nav-bg-color" class="colpickbutton">
+    <div class="css_text">
+        #l_nav,#search .search_button,#top_cart,#cart_right,#cart_right .com_logo{background:***;}
+        #search input{border: 2px solid ***;}
+    </div>
+</div>
+
+改变头部背景颜色
+<div style="width: 100px;height: 100px;background: red;" id="head-bg-color" class="colpickbutton">
+    <div class="css_text">
+        .l_head{background:***;}
+    </div>
+</div>
+
+修改导航当前，轮播图当前颜色
+<div style="width: 100px;height: 100px;background: red;" id="nav-current-bg-color" class="colpickbutton">
+    <div class="css_text">
+        .btn_dots li.slick-active button,#l_nav .nav_current,#l_nav li:hover{background-color: ***;}
+    </div>
+</div>
+
+修改商品分类当前颜色
+<div style="width: 100px;height: 100px;background: red;" class="colpickbutton" id="tab-nav-color">
+    <div class="css_text">
+        .pro_tab > li.current{border-bottom-color:***;}.pro_tab > li.current a{color:***;}
+    </div>
+</div>
+//商品链接选中颜色
+<div style="width: 100px;height: 100px;background: red;" class="colpickbutton" id="product-link-hover-color">
+    <div class="css_text">
+        .pro_name a:hover{color: ***;}
+    </div>
+</div>
+//链接默认颜色
+<div style="width: 100px;height: 100px;background: red;" class="colpickbutton" id="product-link-color">
+    <div class="css_text">
+        a{color: ***;}
+    </div>
+</div>
+<script data-main="../Js/requireenter" app="index" src="../Js/lib/require.js" id="require"></script>
+</body>
+</html>

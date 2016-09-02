@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/charCount.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){	
+		//default usage
+		$("#message1").charCount();
+		//custom usage
+		$("#message2").charCount({
+			allowed: 30,		
+			warning: 10,
+			counterText: '剩余字数: '	
+		});
+	});
+</script>
+<style>
+body { margin:0; padding:20px 40px; background:#fff; font:80% Arial, Helvetica, sans-serif; color:#555; line-height:180%; }
+
+.clear { clear:both; }
+
+/* Character Count styles */	
+
+form { width:500px; }
+
+label { display:block; font-size:14px; }
+
+textarea { width:490px; height:60px; padding:3px; color:#555; font:16px Arial, Helvetica, sans-serif; }
+
+form div { position:relative; margin:1em 0; }
+
+form .counter { position:absolute; right:0; top:0; font-size:20px; font-weight:bold; color:#ccc; }
+
+form .warning { color:#600; }
+
+form .exceeded { color:#e00; }
+</style>
+</head>
+<body>
+<h1>jQuery plugin</h1>
+<form id="form" method="post" action="">
+  <h2>Default Usage</h2>
+  <div>
+    <label for="message">Type your message</label>
+    <textarea id="message1" name="message1"></textarea>
+  </div>
+  <h2>Custom Usage</h2>
+  <div>
+    <label for="message">Another message (limited to 30, warning at 10)</label>
+    <textarea id="message2" name="message2"></textarea>
+  </div>
+</form>
+</body>
+</html>

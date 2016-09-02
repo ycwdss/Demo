@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        window.onload= function () {
+            function fnTime(){
+                var myDate=new Date();
+                var myYear=myDate.getFullYear(); //年
+                var myMonth=myDate.getMonth()+1; //月
+                var myDat=myDate.getDate();  //日
+                var myWeek=myDate.getDay(); //星期
+                var myHours=myDate.getHours(); //小时
+                var myMin=myDate.getMinutes(); //分
+                var mysec=myDate.getSeconds(); //秒
+                var str='';
+                if(myWeek==0) myWeek='星期日';
+                if(myWeek==1) myWeek='星期一';
+                if(myWeek==2) myWeek='星期二';
+                if(myWeek==3) myWeek='星期三';
+                if(myWeek==4) myWeek='星期四';
+                if(myWeek==5) myWeek='星期五';
+                if(myWeek==6) myWeek='星期六';
+
+                str=myYear+'年'+myMonth+'月'+myDat+'日'+myWeek+''+toTwo(myHours)+':'+toTwo(myMin)+':'+toTwo(mysec);
+                document.body.innerHTML=str;
+            }
+            fnTime();
+            setInterval(fnTime,1000);
+            //当到0 的时候 时分秒会变成单个0 ，下面处理一下
+            function toTwo(n){
+                if(n<10){
+                    return '0'+n;
+                }else{
+                    return n;
+                }
+                //也可以写成
+                //return n < 10 ?  '0' + n : '' + n;
+
+            }
+        }
+    </script>
+</body>
+</html>

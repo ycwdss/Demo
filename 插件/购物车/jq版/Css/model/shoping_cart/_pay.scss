@@ -1,0 +1,147 @@
+@charset "UTF-8";
+//颜色------------
+.cart_wrap{background-color: #f4f4f4}
+.pay_now{ background-color: #6f7a82;}
+
+//--------------------
+.cart_wrap{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  .cart_box{
+    width: 1300px;
+    background-color: #fff;
+    margin: 0 auto;
+    .cart_inner{
+      width: 960px;
+      padding: 20px;
+      margin: 0 auto;
+      background: #fff;
+      .cart_hd{
+        width: 100%;
+        height: 65px;
+        margin: 0 auto;
+        padding: 20px 0 40px 0;
+        h2{
+          margin-left: 20px;
+          padding-left: 20px;
+          height: 65px;
+          line-height: 65px;
+          font-size: 28px;
+          font-weight: normal;
+          padding-left: 100px;
+          background: url(../../Images/shoping_cart/sprite_shoping_cart.png?_nosprite) no-repeat left center;
+        }
+        .cart_step{
+          margin-top:30px;
+          li{
+            float: left;
+            margin-right: -2px;
+            .step_bar{
+              width: 150px;
+              height: 5px;
+              background-color:#D9D9D9;
+              border-radius: 5px;
+              position: relative;
+
+              .step_num{
+                position: absolute;
+                left: 50%;
+                top: -12px;
+                margin-left: -11px;
+                width: 22px;
+                height: 24px;
+                line-height: 24px;
+                border-radius: 24px;
+                color: #222;
+                font-weight: 700;
+                text-align: center;
+                background-color:#D9D9D9;
+              }
+            }
+            .step_tips{
+              text-align: center;
+              margin-top: 10px;
+              color: #a8a8a8;
+            }
+          }
+          .current{
+            .step_bar{
+              background-color: #7f7f7f;
+              z-index: 5;
+            }
+            .step_num{
+              background-color:#e5004f!important;
+              color: #fff!important;
+            }
+            .step_tips{
+              color:#222;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//支付
+.topay{
+  padding-top: 20px;
+  .pay_img{
+    margin-right: 30px;
+  }
+  .pay_info{
+    h1{
+      height: 30px;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 700;
+      color: #333;
+      padding-bottom: 8px;
+    }
+    ul{
+      li{
+        height: 28px;
+        font-size: 16px;
+        color: #333;
+        line-height: 28px;
+        font-weight: normal;
+        padding: 10px 0px 10px;
+        .order_num{
+          display: inline-block;
+        }
+        .order_money{
+          display: inline-block;
+          padding-left: 100px;
+          span{
+            font-size: 30px;
+            color: red;
+          }
+        }
+        .receiver_name{
+          display: inline-block;
+
+        }
+        .receiver_tel{
+          display: inline-block;
+          padding-left: 30px;
+        }
+        img{
+          vertical-align: middle;
+        }
+        .pay_now{
+          font-weight: 700;
+          width: 124px;
+          height: 36px;
+          line-height: 36px;
+          font-size: 14px;
+          overflow: hidden;
+          text-align: center;
+
+          display: inline-block;
+          color:#fff;
+        }
+      }
+    }
+  }
+}

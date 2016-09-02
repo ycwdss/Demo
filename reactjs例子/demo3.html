@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <script src="browser.min.js"></script>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/babel">
+    var MyComponent = React.createClass({
+        render: function () {
+            return (
+                    <div>
+                        <h1>{this.props.title}</h1>
+                        <input type="text"/>
+                        <input type="button" value={this.props.send}/>
+                    </div>
+            )
+        }
+    });
+    /*var title="下雨啦";
+     var send="提交";*/
+    var obj = {
+        title: "下雨啦",
+        send: '提交'
+    }
+    ReactDOM.render(
+           /* <MyComponent title={obj.title} send={obj.send}/>,*/
+            //或者下面的形式
+             <MyComponent {...obj}/>,
+            document.getElementById('demo'),
+            function () {
+                console.log('页面渲染完成了！')
+            }
+    );
+</script>
+</body>
+</html>
