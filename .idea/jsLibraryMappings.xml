@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://E:/dev/gulp/gulp-demo3" libraries="{dev/gulp/gulp-demo3/node_modules}" />
+    <file url="file://E:/hexo" libraries="{hexo/node_modules}" />
+  </component>
+</project>

@@ -3,15 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script>
-function fn(data) {
-	alert(data);
-}
-</script>
-    <script src="a.txt"></script>
-    <script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: red;
+            margin: 100px;
+        }
+    </style>
 </head>
 <body>
+<div>200X200</div>
+<script>
+    window.onload=function () {
+        var div=document.getElementsByTagName('div')[0];
+        console.log(div.getClientRects());
 
+        /*console.log('top '+div.getBoundingClientRect().top);
+        console.log('bottom '+div.getBoundingClientRect().bottom);
+        console.log('left '+div.getBoundingClientRect().left);
+        console.log('right '+div.getBoundingClientRect().right);
+        console.log('width '+(div.getBoundingClientRect().right-div.getBoundingClientRect().left));
+        console.log('height '+(div.getBoundingClientRect().bottom-div.getBoundingClientRect().top));*/
+    }
+</script>
 </body>
 </html>

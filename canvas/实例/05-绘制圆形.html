@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>填充矩形</title>
+</head>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+</div>
+
+<script>
+    (function(){
+        var canvas = document.querySelector('#cavsElem');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = 900;
+        canvas.height = 600;
+        canvas.style.border = "1px solid #000";
+        ctx.beginPath();
+        ctx.moveTo(300,200);
+        ctx.arc(200,200,100,0*Math.PI/180,360*Math.PI/180,true);
+        //ctx.fill();
+        ctx.stroke();
+    }());
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/Sprite.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+    <button id="btn-dir-left">左</button>
+    <button id="btn-dir-right">右</button>
+    <button id="btn-dir-up">上</button>
+    <button id="btn-dir-down">下</button>
+</div>
+<script>
+    (function () {
+        var canvas = document.getElementById('cavsElem');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = 600;
+        canvas.height = 600;
+        canvas.style.border = '1px solid green';
+
+        // 封装一个对象出来：
+        // 属性： width . height  imgSr  speed  dir
+        // 行为： render  changeDir
+        var s=new Sprite({
+            x:300,
+            y:300,
+            w:80,
+            h:65*2,
+            fps:4,
+            imgSrc:'img/DMMban.png',
+            originWidth:40,
+            originHeight:65
+        })
+        s.render(ctx);
+        //绑定按钮的点击事件
+        var btnLeft = document.getElementById('btn-dir-left');
+        btnLeft.onclick = function() {
+            //小哥哥朝着左方向
+            // dirIndex = 1;
+            s.changeDir('left');
+        };
+
+        var btnRight = document.getElementById('btn-dir-right');
+        btnRight.onclick = function() {
+            //小哥哥朝着方向
+            // dirIndex = 2;
+            s.changeDir('right');
+
+        };
+
+        var btnUp = document.getElementById("btn-dir-up");
+        btnUp.onclick = function() {
+            //小哥哥朝着左方向
+            // dirIndex = 3;
+            s.changeDir('up');
+
+        };
+
+        var btnDown = document.getElementById('btn-dir-down');
+        btnDown.onclick = function() {
+            //小哥哥朝着左方向
+            // dirIndex = 0;
+            s.changeDir('down');
+
+        };
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+    <img src="" id="imgDemo">
+</div>
+<script>
+    (function () {
+        var canvas = document.getElementById('cavsElem');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = 600;
+        canvas.height = 600;
+        canvas.style.border = '1px solid green';
+        //第一步创建图片的Dom对象
+        var img=new Image();
+        //var img2=document.getElementById('imgDemo'); 与上面创建img对象一样
+        img.src='img/a.jpg';//只要设置了src属性，当前img对象立即去加载图片。
+        
+        img.onload=function () {
+            //图片加载完成后，把图片绘制到canvas上
+            //ctx.drawImage(img,100,100);
+            //绘制10张图片
+           /* for(var i=0;i<10;i++){
+                ctx.drawImage(img,100+20*i,100+20*i);
+            }*/
+           //保持图片的宽高伸缩比例
+            var ow=img.width;
+            var oh=img.height;
+            //绘制指定宽高比例的图片 高=oh*set/ow
+
+            ctx.drawImage(img,100,100,400,400*oh/ow);
+        }
+    })();
+</script>
+</body>
+</html>

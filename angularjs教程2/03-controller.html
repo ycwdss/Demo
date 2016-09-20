@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular controller</title>
+</head>
+<body>
+<div ng-app="myModule" ng-controller="HelloContrl"></div>
+<script src="angular.js"></script>
+<script>
+    var module = angular.module('myModule', []);//返回的就是模块对象
+    //控制器是必须在某个模块下的，想创建一个控制器就必须先创建模块
+    //angular在执行控制器函数时，会根据参数的名字（$scope）去自动的注入对象，根据参数名称传递对应对象
+    //所以必须要写正确的参数名称
+    module.controller('HelloContrl', function ($scope) {
+        console.log($scope);
+    });
+    // 由于压缩代码会改变参数名称，注册控制的标准方式就是通过第二个参数传递数组的方式
+    // （数组的成员最后一个就是原本的控制器函数，前面的成员都是需要注入的对象名称）
+    //$scope-->a
+    //$http -->b
+    module.controller('HelloController', ['$scope', '$http', function (a, b) {
+        console.log(a);
+    }]);
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        margin: 20px;
+    }
+</style>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+</div>
+<script>
+    (function () {
+        var canvas=document.getElementById('cavsElem');
+        var ctx=canvas.getContext('2d');
+
+        canvas.width=600;
+        canvas.height=600;
+        canvas.style.border='1px solid green';
+
+       canvas.onmousedown=function (e) {
+
+           var x=e.clientX- canvas.getBoundingClientRect().left;
+           var y=e.clientY- canvas.getBoundingClientRect().top;
+           ctx.beginPath();
+           ctx.moveTo(x,y);
+
+           canvas.onmousemove=function (event) {
+               var x=event.clientX- canvas.getBoundingClientRect().left;
+               var y=event.clientY- canvas.getBoundingClientRect().top;
+               ctx.lineTo(x,y);
+               ctx.stroke();
+           };
+           canvas.onmouseup=function () {
+               canvas.onmousemove=null;
+               canvas.onmouseup=null;
+           };
+       };
+
+    })();
+</script>
+</body>
+</html>

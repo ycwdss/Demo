@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+</div>
+<script>
+    (function () {
+        var canvas=document.getElementById('cavsElem');
+        var ctx=canvas.getContext('2d');
+
+        canvas.width=600;
+        canvas.height=600;
+        canvas.style.border='1px solid green';
+
+        var rectH=10;
+        var rectW=10;
+        ctx.width=.5;
+
+        for (var i=0;i<canvas.width;i++){
+            //绘制横线
+            ctx.moveTo(0,i*rectH);
+            ctx.lineTo(canvas.width,i*rectW);
+            //绘制竖线
+            ctx.moveTo(i*rectW,0);
+            ctx.lineTo(i*rectW,canvas.height);
+        }
+        ctx.stroke();
+    })();
+</script>
+</body>
+</html>

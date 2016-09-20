@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-app="myApp" ng-init="username='<h1>擦</h1>'">
+<strong ng-bind-html="username"></strong>
+<script src="angular.js"></script>
+<script src="angular-sanitize.js"></script>
+<script>
+    // 使用自定义的模块才可以依赖别的包里面定义模块，angular定义的默认模块没有依赖任何
+    angular.module('myApp',['ngSanitize']);
+</script>
+</body>
+</html>

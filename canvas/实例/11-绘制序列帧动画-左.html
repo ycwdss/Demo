@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+    <button id="btn-dir-left">左</button>
+    <button id="btn-dir-right">右</button>
+    <button id="btn-dir-up">上</button>
+    <button id="btn-dir-down">下</button>
+</div>
+<script>
+    (function () {
+        var canvas = document.getElementById('cavsElem');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = 600;
+        canvas.height = 600;
+        canvas.style.border = '1px solid green';
+        var direction = 0; // 设置方向
+
+        var img = new Image();
+        img.src = 'img/DMMban.png';
+        img.onload = function () {
+            var frameIndex = 0;
+            setInterval(function () {
+                //清除之前的图片
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                //方法二 重新设置canvas的宽或者高 画布里面的内容都被清空
+                //canvas.width=canvas.width;
+
+                ctx.drawImage(
+                        img,
+                        frameIndex * 40,  //截取原始图片的 x坐标
+                        65*direction,                //截取原始图片的 y坐标
+                        40,               //截取原始图片的 宽度
+                        65,               //截取原始图片的 高度
+                        300,              //图片在canvas画布上的 x坐标
+                        300,              //图片在canvas画布上的 y坐标
+                        80,               //绘制图片的宽度
+                        65 * 2             //绘制图片的高度
+                );
+                frameIndex++;       //添加到下一帧
+                frameIndex %= 4;    //4%4=0
+            }, 1000 / 10);          //100毫秒绘制一个动作
+        };
+        /*绑定按钮的点击事件*/
+        var btnLeft=document.getElementById('btn-dir-left');
+        btnLeft.onclick=function () {
+            direction=1;
+        };
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .green{
+            background-color: #093;
+        }
+        .orangered{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+<input type="text" ng-model="lastname">
+<ul ng-controller="Listcontrl">
+    <li ng-repeat="name in students track by $index" ng-class="{green:lastname!=''&&name.startsWith(lastname)}">{{name}}</li>
+</ul>
+<script src="angular.js"></script>
+<script >
+
+    var app=angular.module('myApp',[]);
+
+    app.controller('Listcontrl',['$scope',function ($scope) {
+        $scope.students=['张三','王五','赵四'];
+
+    }]);
+</script>
+</body>
+</html>

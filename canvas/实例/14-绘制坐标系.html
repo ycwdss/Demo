@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+</div>
+<script>
+    (function () {
+        var canvas = document.getElementById('cavsElem');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = 600;
+        canvas.height = 600;
+        canvas.style.border = '1px solid green';
+
+        //设置箭头大小
+        var arrowWidth=10;
+        //轴长
+        var maxHeight = 300;
+        var maxWidth = 300;
+
+        //绘制x轴
+        ctx.beginPath();
+        ctx.moveTo(100,400);
+        ctx.lineTo(400,400);
+        ctx.lineTo(400-arrowWidth,400-arrowWidth);
+        ctx.moveTo(400,400);
+        ctx.lineTo(400-arrowWidth,400+arrowWidth);
+        ctx.strokeStyle='green';
+        ctx.stroke();
+
+        //绘制y轴坐标
+        ctx.beginPath();
+        ctx.moveTo(100,400);
+        ctx.lineTo(100,100);
+        ctx.lineTo(100-arrowWidth,100+arrowWidth);
+        ctx.moveTo(100,100);
+        ctx.lineTo(100+arrowWidth,100+arrowWidth);
+        ctx.strokeStyle='green';
+        ctx.stroke();
+
+        //绘制点
+        var data=[0.3,0.8,0.7,0.4,0.9];
+        //每个点之间的距离
+        var widthSpace=maxWidth/(data.length+1);
+        ctx.beginPath();
+
+        for(var i=0;i<=data.length;i++){
+            ctx.lineTo(100+(i+1)*widthSpace,400-data[i]*maxHeight);
+        }
+        ctx.strokeStyle='red';
+        ctx.stroke();
+    })();
+</script>
+</body>
+</html>

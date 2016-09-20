@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缓动动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #box{
+            width: 200px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin: 100px;
+            padding: 8px;
+        }
+        #div{
+            position: relative;
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+        }
+        #box ul{
+            height: 100px;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        #box ul li{
+            width: 200px;
+            height: 100%;
+            float: left;
+            text-align: center;
+            line-height: 100px;
+
+        }
+        #box ul li:first-child{
+            background-color: palegreen;
+        }
+        #box ul li:nth-of-type(2){
+            background-color: #f0b8cd;
+        }
+        #box ul li:nth-of-type(3){
+            background-color: #f2d6b5;
+        }
+        #box ul li:last-of-type{
+            background-color: #f0e68c;
+        }
+        #box ol{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -50px;
+        }
+        #box ol li{
+            float: left;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 2px;
+            background-color: #f0ad4e;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        #box ol li.current{
+            background-color: #f0e0ca;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var oBox = document.getElementById("box");
+            var oDiv = oBox.children[0];
+            var oUl = oDiv.children[0];
+            var aLis = oUl.children;
+            var oOl = oBox.children[1];
+            var aOlis = oOl.children;
+            var leader = 0;
+            var target  = 0;
+            oUl.style.width = aLis[0].offsetWidth*aLis.length+"px";
+            for(var i=0;i<aOlis.length;i++){
+                aOlis[i].index = i;
+                aOlis[i].onclick = function(){
+                    for(var j=0;j<aOlis.length;j++)
+                    {
+                        aOlis[j].className = "";
+                    }
+                    this.className = "current";
+                    target = aLis[0].offsetWidth*this.index;
+                }
+            }
+            setInterval(function(){
+                leader = leader + (target-leader)/10;
+                oUl.style.left = -leader +"px";
+            },10)
+        }
+    </script>
+</head>
+<body>
+<div id="box">
+    <div id="div">
+        <ul>
+            <li><img src="" alt="">第一张图片</li>
+            <li><img src="" alt="">第二张图片</li>
+            <li><img src="" alt="">第三张图片</li>
+            <li><img src="" alt="">第四张图片</li>
+        </ul>
+    </div>
+    <ol>
+        <li class="current">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+</div>
+</body>
+</html>

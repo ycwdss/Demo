@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .green{
+            background-color: #093;
+        }
+        .orangered{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+<ul ng-controller="Listcontrl">
+    <!--各行换色-->
+    <!--<li ng-repeat="item in test" class="{{$even?'green':'orangered'}}"  data-id="{{item.id}}">-->
+    <li ng-repeat="item in test" ng-class="{orangered:$even,green:$odd}"  data-id="{{item.id}}">
+        <span>{{item.name}}</span>
+        <span>{{item.age}}</span>
+    </li>
+</ul>
+<script src="angular.js"></script>
+<script >
+
+    var app=angular.module('myApp',[]);
+
+    app.controller('Listcontrl',['$scope',function ($scope) {
+        $scope.test=[];
+        for(var i=1;i<10;i++){
+            $scope.test[$scope.test.length]={
+                id:i,
+                name:'韩国'+i,
+                age:20+i
+            };
+        }
+    }]);
+</script>
+</body>
+</html>

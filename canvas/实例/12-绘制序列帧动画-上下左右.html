@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="container">
+    <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+    </canvas>
+    <button dir="2" id="btn-dir-up">上</button>
+    <button dir="6" id="btn-dir-down">下</button>
+    <button dir="0" id="btn-dir-left">左</button>
+    <button dir="4" id="btn-dir-right">右</button>
+</div>
+<script>
+    (function () {
+        var canvas = document.getElementById('cavsElem');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = 600;
+        canvas.height = 600;
+        canvas.style.border = '1px solid green';
+
+        var delayTime = 200; // 设置帧的时间间隔 毫秒
+        var spriteSize = 256; //设置动画的大小
+        var direction = 0;
+
+        var img = new Image();
+        img.src = 'img/1.png';
+        img.onload = function () {
+            var frameIndex = 0;
+            setInterval(function () {
+                //清除之前的图片
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                //方法二 重新设置canvas的宽或者高 画布里面的内容都被清空
+                //canvas.width=canvas.width;
+
+                ctx.drawImage(
+                        img,
+                        frameIndex * spriteSize,  //截取原始图片的 x坐标
+                        spriteSize * direction,                //截取原始图片的 y坐标
+                        256,               //截取原始图片的 宽度
+                        256,               //截取原始图片的 高度
+                        300,              //图片在canvas画布上的 x坐标
+                        300,              //图片在canvas画布上的 y坐标
+                        256,               //绘制图片的宽度
+                        256            //绘制图片的高度
+                );
+                frameIndex++;       //添加到下一帧
+                frameIndex %= 8;    //8%8=0
+            }, delayTime);
+        };
+        /*绑定按钮的点击事件*/
+        var btnList = document.querySelectorAll('button');
+        for (var j = 0; j < btnList.length; j++) {
+            btnList[j].onclick = function () {
+                var dir = this.getAttribute("dir");
+                direction = dir;
+            };
+        }
+    })();
+</script>
+</body>
+</html>
