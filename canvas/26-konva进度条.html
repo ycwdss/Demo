@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+    </style>
+    <script src="js/konva.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+<script>
+    //创建舞台
+    var stage= new Konva.Stage({
+        container:'container',
+        width:window.innerWidth,
+        height:window.innerHeight
+    });
+    //创建层
+    var layer= new Konva.Layer();
+    stage.add(layer);
+
+    //中心点坐标
+    var cenX=stage.width()/2;//注意Konva获取数据都是用方法获取值
+    var cenY=stage.height()/2;
+
+    var x=1/8*stage.width();
+    var y=cenY;
+    var height=1/12*stage.height();
+    var maxWidth=3/4*stage.width();
+
+    //绘制一个进度条
+    var innerRect= new Konva.Rect({
+        x:x,
+        y:y,
+        width:100,
+        height:height,
+        opacity:0.7,
+        fill:'orange',
+        cornerRadius:height/2
+    });
+    //把矩形放到layer中去
+    layer.add(innerRect);
+
+    //创建外层的矩形
+    var outRect= new Konva.Rect({
+        x: x,	//矩形的x的坐标
+        y: y,	//矩形的y坐标
+        width: maxWidth, // 矩形的宽度
+        height: height,	// 矩形的高度
+        stroke: 'blue', // 如果设置了stroke，那么就进行描边
+        strokeWidth: 4, //描边的宽度
+        // fill: 'green', // 如果设置了fill的样式，那么进行填充
+        cornerRadius: height / 2 // 设置圆角的半径
+    });
+    layer.add(outRect);
+    layer.draw();
+    //konva动画
+    innerRect.to({
+        width:maxWidth,
+        duration:1.4,
+        easing:Konva.Easings.EaseInOut()
+    });
+</script>
+</body>
+</html>
