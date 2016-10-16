@@ -2,138 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf43e5e0-a2e1-4b0f-8a91-cf2b9d861454" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularjs教程2/moviecat" afterPath="$PROJECT_DIR$/angularjs教程2/moviecat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularjs教程2/todomvc-app-template" afterPath="$PROJECT_DIR$/angularjs教程2/todomvc-app-template" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/02-绘制表格.html" afterPath="$PROJECT_DIR$/canvas画布/02-绘制表格.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/03-画画板.html" afterPath="$PROJECT_DIR$/canvas画布/03-画画板.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/04-填充矩形.html" afterPath="$PROJECT_DIR$/canvas画布/04-填充矩形.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/05-绘制圆形.html" afterPath="$PROJECT_DIR$/canvas画布/05-绘制圆形.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/06-绘制饼状图.html" afterPath="$PROJECT_DIR$/canvas画布/06-绘制饼状图.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/07-绘制文字.html" afterPath="$PROJECT_DIR$/canvas画布/07-绘制文字.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/08-图片绘制.html" afterPath="$PROJECT_DIR$/canvas画布/08-图片绘制.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/09-绘制图片裁切.html" afterPath="$PROJECT_DIR$/canvas画布/09-绘制图片裁切.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas1.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas10.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas10.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas11.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas11.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas2.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas3.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas4.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas5.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas6.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas7.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas7.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas8.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas8.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/canvas9.html" afterPath="$PROJECT_DIR$/canvas画布/1/canvas9.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/1/index.html" afterPath="$PROJECT_DIR$/canvas画布/1/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/10-绘制序列帧动画.html" afterPath="$PROJECT_DIR$/canvas画布/10-绘制序列帧动画.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/11-绘制序列帧动画-左.html" afterPath="$PROJECT_DIR$/canvas画布/11-绘制序列帧动画-左.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/12-绘制序列帧动画-上下左右.html" afterPath="$PROJECT_DIR$/canvas画布/12-绘制序列帧动画-上下左右.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/13-面向对象版的精灵图.html" afterPath="$PROJECT_DIR$/canvas画布/13-面向对象版的精灵图.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/14-绘制坐标系.html" afterPath="$PROJECT_DIR$/canvas画布/14-绘制坐标系.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/15-面向对象版的精灵图键盘控制.html" afterPath="$PROJECT_DIR$/canvas画布/15-面向对象版的精灵图键盘控制.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/16-box盒子阴影.html" afterPath="$PROJECT_DIR$/canvas画布/16-box盒子阴影.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/17-线性渐变.html" afterPath="$PROJECT_DIR$/canvas画布/17-线性渐变.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/18-圆形渐变.html" afterPath="$PROJECT_DIR$/canvas画布/18-圆形渐变.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/19-背景图填充.html" afterPath="$PROJECT_DIR$/canvas画布/19-背景图填充.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/2/canvas1.html" afterPath="$PROJECT_DIR$/canvas画布/2/canvas1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/2/canvas2.html" afterPath="$PROJECT_DIR$/canvas画布/2/canvas2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/2/canvas3.html" afterPath="$PROJECT_DIR$/canvas画布/2/canvas3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/2/canvas4.html" afterPath="$PROJECT_DIR$/canvas画布/2/canvas4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/2/canvas5.html" afterPath="$PROJECT_DIR$/canvas画布/2/canvas5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/2/canvas6.html" afterPath="$PROJECT_DIR$/canvas画布/2/canvas6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/20-缩放案例.html" afterPath="$PROJECT_DIR$/canvas画布/20-缩放案例.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/21-位移画布.html" afterPath="$PROJECT_DIR$/canvas画布/21-位移画布.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/22-旋转画布.html" afterPath="$PROJECT_DIR$/canvas画布/22-旋转画布.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/23-矩形旋转.html" afterPath="$PROJECT_DIR$/canvas画布/23-矩形旋转.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/24-面向对象版的矩形.html" afterPath="$PROJECT_DIR$/canvas画布/24-面向对象版的矩形.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/2.png" afterPath="$PROJECT_DIR$/canvas画布/3/2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/canvas1.html" afterPath="$PROJECT_DIR$/canvas画布/3/canvas1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/canvas2.html" afterPath="$PROJECT_DIR$/canvas画布/3/canvas2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/canvas3.html" afterPath="$PROJECT_DIR$/canvas画布/3/canvas3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/canvas4.html" afterPath="$PROJECT_DIR$/canvas画布/3/canvas4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/canvas5.html" afterPath="$PROJECT_DIR$/canvas画布/3/canvas5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/canvas6.html" afterPath="$PROJECT_DIR$/canvas画布/3/canvas6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/canvas7.html" afterPath="$PROJECT_DIR$/canvas画布/3/canvas7.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/3/canvas8.html" afterPath="$PROJECT_DIR$/canvas画布/3/canvas8.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/2.jpg" afterPath="$PROJECT_DIR$/canvas画布/4/2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/2.png" afterPath="$PROJECT_DIR$/canvas画布/4/2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas1.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas2.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas3.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas4.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas5.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas6.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas7.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas7.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas8.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas8.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/4/canvas9.html" afterPath="$PROJECT_DIR$/canvas画布/4/canvas9.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas1.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas10.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas10.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas2.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas3.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas4.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas5.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas6.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas7.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas7.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas8.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas8.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/canvas9.html" afterPath="$PROJECT_DIR$/canvas画布/5/canvas9.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/5/jCanvaScript.1.5.18.min.js" afterPath="$PROJECT_DIR$/canvas画布/5/jCanvaScript.1.5.18.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/1.png" afterPath="$PROJECT_DIR$/canvas画布/img/1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/DMMban.png" afterPath="$PROJECT_DIR$/canvas画布/img/DMMban.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/a.jpg" afterPath="$PROJECT_DIR$/canvas画布/img/a.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/b.jpg" afterPath="$PROJECT_DIR$/canvas画布/img/b.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/bb.png" afterPath="$PROJECT_DIR$/canvas画布/img/bb.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/bg.jpg" afterPath="$PROJECT_DIR$/canvas画布/img/bg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/bh.png" afterPath="$PROJECT_DIR$/canvas画布/img/bh.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMKasim.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMKasim.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMScoutNPC.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMScoutNPC.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMban.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMban.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMbanScout.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMbanScout.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMbshuai.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMbshuai.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMbshuaiScout.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMbshuaiScout.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMoldofficer.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMoldofficer.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMoldoman.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMoldoman.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMoprator.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMoprator.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMMoprator2.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMMoprator2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DMRredwolf.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DMRredwolf.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DTGF-Psmusic.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DTGF-Psmusic.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DTGF-Serenade.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DTGF-Serenade.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DTGF-parasol.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DTGF-parasol.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/DTGF-parasolScout2.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/DTGF-parasolScout2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC-edekillangle.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC-edekillangle.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC-hunter_F-1.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC-hunter_F-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC-hunter_M-1.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC-hunter_M-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC-hunter_M-2.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC-hunter_M-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC1.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC2.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC3.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC4.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPC5.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPC5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPCrabbitbaby-2.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPCrabbitbaby-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/NPCrabbitbaby.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/NPCrabbitbaby.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/TANK-G14D.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/TANK-G14D.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/TANK-IFV.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/TANK-IFV.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/TANK-M1_2.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/TANK-M1_2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/TANK-SDDR_2.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/TANK-SDDR_2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/TANK-landrover.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/TANK-landrover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/hg-armystandardcamo.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/hg-armystandardcamo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/士兵(1).png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/士兵(1).png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/士兵.png" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/士兵.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/梦金属混音-角色人物-素材说明.txt" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/梦金属混音-角色人物-素材说明.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/gameImgs/爱给网 - 专业游戏素材下载网站.txt" afterPath="$PROJECT_DIR$/canvas画布/img/gameImgs/爱给网 - 专业游戏素材下载网站.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/html5.png" afterPath="$PROJECT_DIR$/canvas画布/img/html5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/lbg.jpg" afterPath="$PROJECT_DIR$/canvas画布/img/lbg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/lightb.png" afterPath="$PROJECT_DIR$/canvas画布/img/lightb.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/lightr.png" afterPath="$PROJECT_DIR$/canvas画布/img/lightr.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/logo.gif" afterPath="$PROJECT_DIR$/canvas画布/img/logo.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/magnifier.png" afterPath="$PROJECT_DIR$/canvas画布/img/magnifier.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/mw.png" afterPath="$PROJECT_DIR$/canvas画布/img/mw.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/nom.png" afterPath="$PROJECT_DIR$/canvas画布/img/nom.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/sherlock.jpg" afterPath="$PROJECT_DIR$/canvas画布/img/sherlock.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/tb.png" afterPath="$PROJECT_DIR$/canvas画布/img/tb.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/th.png" afterPath="$PROJECT_DIR$/canvas画布/img/th.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/img/yesm.png" afterPath="$PROJECT_DIR$/canvas画布/img/yesm.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/js/Sprite.js" afterPath="$PROJECT_DIR$/canvas画布/js/Sprite.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/canvas/js/rect.js" afterPath="$PROJECT_DIR$/canvas画布/js/rect.js" />
     </list>
     <ignored path="demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,100 +24,7 @@
     <favorites_list name="demo" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://E:/hexo/source/user/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="2" column="12" selection-start-line="1" selection-start-column="6" selection-end-line="2" selection-end-column="12" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03-controller.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angularjs教程2/03-controller.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/canvas画布/1/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://E:/hexo/source/link/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://E:/hexo/source/tags/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://E:/传智播客web/11.主流框架/03 流行框架第3天 01-29/2016-01-29/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://E:/传智播客web/11.主流框架/03 流行框架第3天 01-29/2016-01-29/code/01-hash/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://E:/hexo/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="56" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -296,9 +72,9 @@
     <handled-path value="E:/hexo/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="x" value="174" />
+    <option name="y" value="60" />
+    <option name="width" value="1924" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -326,10 +102,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files" />
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -345,7 +121,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="E:/dev" />
+    <property name="last_opened_file_path" value="E:/hexo" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\node.exe" />
@@ -436,26 +212,34 @@
       <workItem from="1473410351026" duration="82000" />
       <workItem from="1474418271154" duration="394000" />
       <workItem from="1474418890313" duration="119000" />
+      <workItem from="1476626243041" duration="338000" />
+      <workItem from="1476660822079" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19807000" />
+    <option name="totallyTimeSpent" value="20159000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="174" y="60" width="1924" height="1048" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16614583" sideWeight="0.64873767" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16579224" sideWeight="0.64873767" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16666667" sideWeight="0.35126236" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16666667" sideWeight="0.35126236" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -488,39 +272,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/dev/gulp-demo/README.md" />
     <entry file="file://E:/dev/gulp-demo/src/scripts/app.js" />
     <entry file="file://E:/dev/gulp-demo/src/scripts/demo.js" />
     <entry file="file://E:/dev/gulp-demo/src/styles/app.less" />
     <entry file="file://E:/dev/gulp-demo/src/styles/_demo.less" />
     <entry file="file://E:/dev/gulp-demo/dist/styles/_demo.css" />
     <entry file="file://E:/dev/gulp-demo/dist/styles/app.css" />
-    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/gulp-demo/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2049">
-          <caret line="82" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/README.md" />
+    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/gulp-demo/gulpfile.js" />
     <entry file="file://E:/dev/gulp-demo/src/index.html" />
     <entry file="file://E:/dev/gulp-demo/gulpfile.js" />
-    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/gulp-demo1/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/gulp-demo1/package.json" />
     <entry file="file://E:/hexo/themes/indigo/source/css/_partial/loading.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -535,13 +297,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/gulp-demo/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/gulp-demo/package.json" />
     <entry file="file://E:/dev/gulp/gulp-demo3/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -691,16 +447,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/git/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-863">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/传智播客web/11.主流框架/02 第二天git的介绍及使用 01-27/2016-01-27/git/README.md" />
     <entry file="file://E:/hexo/themes/indigo/layout/_partial/head.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-721">
@@ -736,18 +483,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/hexo/public/user/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/hexo/public/user/index.html" />
     <entry file="file://E:/hexo/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="56" />
-          <folding />
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -756,7 +496,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="90">
             <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -767,31 +506,13 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/传智播客web/11.主流框架/03 流行框架第3天 01-29/2016-01-29/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/传智播客web/11.主流框架/03 流行框架第3天 01-29/2016-01-29/code/01-hash/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/传智播客web/11.主流框架/03 流行框架第3天 01-29/2016-01-29/README.md" />
+    <entry file="file://E:/传智播客web/11.主流框架/03 流行框架第3天 01-29/2016-01-29/code/01-hash/index.html" />
     <entry file="file://E:/dev/ng/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -799,30 +520,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/hexo/source/user/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="2" column="12" selection-start-line="1" selection-start-column="6" selection-end-line="2" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/hexo/source/user/index.md" />
     <entry file="file://$PROJECT_DIR$/angularjs教程2/03-controller.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas画布/1/index.html">
+    <entry file="file://$PROJECT_DIR$/canvas画布/1/index.html" />
+    <entry file="file://$PROJECT_DIR$/CSS3-实现下拉选择框动画特效/下拉选择-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
