@@ -1,0 +1,150 @@
+body{
+	margin:0;
+	background-color: #c91429;
+	font-family: "微软雅黑";
+	letter-spacing:0px;
+   color: #fff;
+   font-size: 22px;
+}
+ul,li,a,h1,h2,h3,h4,h5,h6,p,input,textarea,span{font-weight: normal; margin: 0;padding: 0;list-style:none;text-decoration: none;box-sizing:content-box;   }
+/*global*/
+.fixed{ 
+   *zoom:1;
+}
+
+.fixed:after{
+   content: ".";
+   height:0;
+   clear:both;
+   overflow: hidden;
+   display: block;
+}
+
+/*共用样式*/
+.hide{display: none;}
+.center{left: 0;right: 0;margin: auto;position: absolute;}
+.yCenter{left: 0;right: 0;top: 0;bottom: 0; margin: auto;position: fixed;}
+.zhegai{width: 640px;height: 100%;background: rgba(0,0,0,0.7);display: none;position: fixed;}
+.ceng{width: 640px;height: 100%;position: fixed;}
+.hengfu{width: 640px;height: 167px;top: 10px;}
+.hengfu img{width: 640px;height: 167px;}
+ /*加载页*/
+.loading{width: 640px;height: 100%;}
+.loadingPic{width: 134px;height: 132px;top: 300px;background: url(../images/loading.png) no-repeat;}
+.loadingBar{width: 330px;top: 440px;position: absolute;left: 70px; }
+.loadingBar .barBg{float: left;width: 240px;height: 4px;margin-top: 20px; background: #9d0214;border-radius: 2px;}
+.loadingBar .barBg .bar{width: 0;height: 4px;background: #fff;border-radius: 2px;}
+.loadingBar .barSpan{float: right;width: 80px;font-size: 28px;color: #fff;}
+
+/*首页*/
+.index{width: 640px;height: 100%;background: url(../images/bg1.png) no-repeat;}
+.indexPic{width: 640px;height: 583px;top: 160px;}
+.indexPic img{width: 640px;height: 583px;}
+.indexNlb{width: 274px;height: 53px;top: 765px;}
+.indexNlb img{float: left;margin-right: 15px;}
+.indexNlb .nlbBt{width: 79px;height: 53px;}
+.indexNlb .nlb{width: 21px;height: 53px;}
+.indexBtn1{width: 397px;height: 74px;display: block;top: 830px;}
+.indexBtn1 img{width: 397px;height: 74px;}
+.indexBtns{width: 414px;top: 915px;margin-bottom: 50px;}
+.indexBtns a{width: 193px;height: 74px;display: block;margin: 0 7px;float: left;}
+.indexBtns a img{width: 193px;height: 74px;}
+
+
+/*规则页*/
+.guize{width: 640px;background: url(../images/bg2.png);}
+.guizeTop{width: 640px;height: 425px;background: url(../images/guizeTop.png) no-repeat;}
+.guizeBg{width: 480px;padding: 0 80px 20px;min-height: 600px;background: url(../images/guizeBg.png);}
+.guizeBg h3{font-size: 30px;line-height: 50px;}
+.guizeBg h4{font-size: 24px;line-height: 50px;}
+.guizeBg p{font-size: 26px;line-height: 40px;color: #ffee5c;}
+.guizeBtn{width: 295px;height: 75px;display: block;margin: 30px auto;}
+.guizeBtn img{width: 295px;height: 75px;}
+
+
+/*弹窗*/
+.win{width: 445px;height: 300px;padding: 30px 50px; background: url(../images/winBg.png) no-repeat;}
+.win h3{width: 445px;text-align: center;font-size: 50px;line-height: 80px;}
+.win p{width: 390px;font-size: 26px;line-height: 40px;margin: 0 auto;}
+.winBtn{width: 195px;height: 65px;display: block;margin: 30px auto 0;}
+.winBtn img{width: 195px;height: 65px;}
+
+/*提示*/
+.tips{width: 640px;height: 374px;top: 20px;}
+.tips img{width: 640px;height: 374px;}
+
+/*游戏页*/
+.game{width: 640px;height: 1050px;background: url(../images/bg2.png) no-repeat;}
+.gameBox{width: 590px;height: 910px;border: 3px solid #000;background: #cd394a;top: 100px;}
+.gameTop{width: 540px;height: 515px;background: #369393;border: 3px solid #000;}
+.gamePic{width: 490px;height: 300px;border: 3px solid #000;border-radius: 5px;top: 70px;}
+.gameTips,.gameJs{width: 450px;height: 85px;padding: 15px 20px; background: #444;color: #fadf4f; top: 385px;border: 3px solid #000;border-radius: 5px;}
+.gameBottom{width: 540px;height: 360px;top: 530px;}
+.gameQ{width: 448px;margin: 0 auto;}
+.gameQ span{display: block;float: left;width: 90px;height: 70px;border: 3px solid #000;border-radius: 5px;margin: 0 8px;text-align: center;line-height: 70px;font-size: 42px;color: #000;background: #fadf4f;}
+.gameQ .delete{background-color:#049191;background-image: url(../images/delete.png);background-repeat: no-repeat;background-position: center;}
+.gameS{width: 510px;margin: 20px auto 0;}
+.gameS span,.gameS a{display: block;float: left;width: 80px;height: 70px;border: 3px solid #000;border-radius: 5px;margin: 3px 8px;text-align: center;line-height: 70px;font-size: 42px;color: #000;background: #049191;}
+.gameS a{width: 182px;background: #fadf4f;}
+.caituTips{width: 545px;height: 212px;margin: 10px auto 30px;}
+.caituTips img{width: 545px;height: 212px;}
+.caituBtn{width: 295px;height: 73px;display: block;margin: 0 auto;}
+.caituBtn img{width: 295px;height: 73px;}
+
+
+/*抽奖页*/
+.choujiang{width: 640px;height: 100%;background: url(../images/bg3.png) no-repeat;}
+.choujiangTips{width: 255px;height: 62px;top: 220px;-webkit-animation: choujiangTips 1s linear infinite;}
+@-webkit-keyframes choujiangTips{
+   0%{top: 220px;}
+   50%{top: 240px;}
+}
+.choujiangTips img{width: 255px;height: 62px;}
+.choujiangPic{width: 640px;height: 527px;top: 340px;}
+
+/*中奖页*/
+.zhongjiang{width: 640px;height: 100%;background: url(../images/bg3.png) no-repeat;}
+.fudai{width: 640px;height: 676px;top: 190px;}
+.fudai img{width: 640px;height: 676px;}
+.fudaiBtn{width: 295px;height: 73px;display: block;top: 900px;}
+.fudaiBtn{width: 295px;height: 73px;}
+
+
+/*提交信息页*/
+.tijiao{width: 640px;height: 100%;background: url(../images/bg2.png) no-repeat;}
+.tijiaoPic{width: 640px;height: 246px;top: 80px;}
+.tijiaoForm{width: 405px;top: 400px;}
+.tijiaoForm input{width: 285px;height: 75px;font-size: 40px;line-height: 75px; margin-bottom: 20px;padding: 0 20px 0 100px;border: none;background: url(../images/nameTxt.png) no-repeat;}
+.tijiaoForm .nameTxt{background: url(../images/nameTxt.png) no-repeat;}
+.tijiaoForm .telTxt{background: url(../images/telTxt.png) no-repeat;}
+.tijiaoTips{width: 397px;top: 580px;font-size: 22px;color: #ffc939;line-height: 30px;}
+.tijiaoBtn{width: 397px;height: 73px;top: 700px;}
+.tijiaoBtn img{width: 397px;height: 73px;}
+
+
+/*助力页*/
+.help{width: 640px;height: 100%;background: url(../images/bg4.png) no-repeat;}
+.helpPic{width: 640px;height: 583px;top: 230px;}
+.helpPic img{width: 640px;height: 583px;}
+.helpBottom{width: 444px;top: 860px;}
+.helpBtn{margin: 0 15px;width: 192px;height: 73px;float: left;}
+.helpBtn img{width: 192px;height: 73px;}
+
+
+/*我的奖品页*/
+.jiangpin{width: 640px;height: 100%;background: url(../images/bg2.png) no-repeat;}
+.jiangpinBox{width: 530px;height: 650px;padding: 50px 30px; top: 200px;background: url(../images/jiangpinBox.png);}
+.jiangpinTips{width: 450px;font-size: 20px;padding-left: 50px;}
+.jiangpinUl{width: 525px;height: 590px; margin: 15px auto 0;overflow: auto;}
+.jiangpinLi{width: 445px;height:95px;padding: 20px 40px; margin: 0 auto 15px;background: url(../images/jiangpinLi.png) no-repeat;}
+.jiangpinLi div{float: left;width: 90px;height: 95px;}
+.jiangpinLi div .sp1{height: 40px;font-size: 22px;line-height: 40px;font-weight: 800;}
+.jiangpinLi div .sp2{height: 55px;line-height: 55px;font-weight: 800;}
+.jiangpinLi .div1 .sp1{color: #fadf4f;}
+.jiangpinLi .div2{width: 215px;}
+.jiangpinLi .div2 .sp1{width: 215px;text-align: center;}
+.jiangpinLi .div2 .sp2{width: 215px;height: 55px;line-height: 55px; background: #c0c0c0;text-align: center;color: #000;text-align: center;font-weight: normal;}
+.jiangpinLi .div3{width: 140px;height: 90px;}
+.jiangpinBtn{display: none;width: 115px;height: 50px;margin: 25px 0 0 25px;}
+.jiangpinBtn img{width: 115px;height: 50px;}
+

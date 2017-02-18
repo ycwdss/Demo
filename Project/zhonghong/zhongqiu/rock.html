@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>花好月圆 礼遇中秋</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<audio id="music">
+		<source src="images/music.mp3" type="audio/mpeg">
+	</audio>
+	<section class="bg3 ycenter"></section>
+	<section class="rock center">
+		<div class="rockDiv center">
+			<div class="rockTuzi"><img src="images/tuzi.png" /></div>
+			<div class="rockPic"><img class="rockImg" src="images/rock.png" /></div>
+			<p class="rockP">摇一摇抽奖</p>
+		</div>
+	</section>
+	<input id="num" type="text" value="0" style="display:none;" />
+	<script type="text/javascript">
+		var isRock=0;//是否已经抽奖，0为未抽奖 1为已抽奖 
+		var num=parseInt($("#num").val());//用于区分摇了几次	
+		$(function(){
+			if(window.DeviceMotionEvent) {
+				var speed = 25;
+				var x = y = z = lastX = lastY = lastZ = 0;
+				window.addEventListener('devicemotion', function(){
+					var acceleration =event.accelerationIncludingGravity;
+					x = acceleration.x;
+					y = acceleration.y;
+					if(Math.abs(x-lastX) > speed || Math.abs(y-lastY) > speed) {
+						if (num==0) {//第一次摇奖
+							$("#music")[0].play();
+							$(".rockImg").css({"animation-name":"rock"});
+							setTimeout(function(){
+								if(isRock==0){
+									setTimeout(function(){
+										window.location.href="prize.html";
+									},500);
+								}else{
+									alert("您已经抽过奖咯！");
+								}
+							},1500);
+							
+							
+								num=1;
+								$("#num").val(num);						
+						}else{			
+
+						}
+						
+					}
+					lastX = x;
+					lastY = y;
+				}, false);
+			}
+		});
+		//返回首页
+		$(".luckBtn1,.luckBtn2").click(function(){
+			window.location.href="index.html";
+		});
+	</script>
+</body>
+</html>

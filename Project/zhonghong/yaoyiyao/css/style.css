@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: "微软雅黑";
+    letter-spacing: 0px;
+    color: #000;
+    font-size: 22px;
+}
+
+ul, li, a, h1, h2, h3, h4, h5, h6, p, input, textarea, span {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+
+/*global*/
+.fixed {
+    *zoom: 1;
+}
+
+.fixed:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    display: block;
+}
+
+/*共用样式*/
+.center {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.ycenter {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+}
+
+.shade {
+    width: 750px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: fixed;
+}
+
+/*index*/
+.index {
+    width: 750px;
+    height: 1207px;
+    background: url(../images/indexBg.jpg) no-repeat;
+}
+
+.indexBtn, .rockblessBtn {
+    width: 332px;
+    height: 118px;
+    top: 800px;
+}
+
+.indexBtn {
+    background: url(../images/indexBtn.png) no-repeat;
+}
+
+.rockblessBtn {
+    background: url("../images/rockblessBtn.png") no-repeat;
+}
+
+.rock {
+    width: 750px;
+    height: 1207px;
+    background: url(../images/rock.jpg) no-repeat;
+}
+
+.phone {
+    width: 306px;
+    height: 315px;
+    background: url(../images/phone.png) no-repeat;
+    top: 460px;
+}
+
+.phone.round {
+    -webkit-animation: round .5s infinite linear;
+    -webkit-transform-origin: center;
+    -webkit-animation-iteration-count: 3;
+}
+
+@-webkit-keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.win {
+    width: 600px;
+    height: 500px;
+    background: #eb4a7f;
+    border-radius: 100px;
+    display: none;
+}
+
+.win1 p {
+    font-size: 44px;
+    width: 500px;
+    text-align: center;
+    margin: 100px auto;
+    color: #fff;
+}
+
+.winBtn {
+    width: 303px;
+    height: 79px;
+    background: url(../images/winBtn.png) no-repeat;
+    margin: 0 auto;
+    display: block;
+}
+
+.win2 h3 {
+    width: 500px;
+    font-size: 60px;
+    color: #fcf305;
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+.win2 .sub1 {
+    width: 500px;
+    font-size: 47px;
+    color: #fcf305;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.win2 .sub2 {
+    width: 500px;
+    font-size: 30px;
+    color: #fff;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+/*祝福语*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.blessBg, .bless-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: 1334px;
+    background: url("../images/blessBg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bless-content {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    margin-left: -210px;
+    width: 432px;
+    height: 520px;
+    line-height: 50px;
+    font-size: 36px;
+    color: #52360d;
+    text-indent: 50px;
+
+}
+
+textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    line-height: 50px;
+    font-size: 36px;
+    color: #52360d;
+    text-indent: 50px;
+    overflow: auto;
+}
+
+.bless-btn {
+    position: absolute;
+    top: 1158px;
+    right: 98px;
+    width: 70px;
+    height: 70px;
+    background: url("../images/Btn.png") no-repeat;
+}
+
+.author-title {
+    margin: 80px auto 70px;
+    text-align: center;
+}
+
+.author-name {
+    text-align: center;
+}
+
+.author-name input {
+    width: 515px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 0;
+    text-indent: 60px;
+    font-size: 32px;
+    color: #52360d;
+}
+.bless-author{
+    display: none;
+}
+.author-tips {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 32px;
+    color: #52360d;
+    visibility: hidden;
+}
+
+.author-sure {
+    margin: 0 auto;
+    width: 342px;
+    height: 128px;
+    background: url("../images/author.png") no-repeat;
+    background-size: cover;
+}
+
+.popup-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+    width: 600px;
+    height: 580px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAF3D9), to(#F3D499), color-stop(0.5, #f6e1b3));
+    border-radius: 24px;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.popup:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-scale {
+    -webkit-animation: popup 0.2s;
+    -o-animation: popup 0.3s;
+    animation: popup 0.2s;
+}
+
+@-webkit-keyframes popup {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}

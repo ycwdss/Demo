@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>好时</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/simArr.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/layer.js"></script>
+<body>
+<!--我的作品 模板-->
+<section id="works-tpl">
+    <div class="tab-head">
+        <img src="images/logo-horiz.png">
+        <div class="tab-inner">
+            <a>我的作品</a>
+            <a>模板</a>
+        </div>
+    </div>
+    <div class="works mark  ">
+        <!--没有拼图作品-->
+        <div class="no-works hide">
+            <div class="no-works-title">
+                <p>您还没有创建过好时KISSES拼图作品哦！</p>
+                <p> 赶紧<em>自己动手</em>，</p>
+                <p> 拼搭好时趣味吧，人人都会是好时拼图大师哟~ </p>
+            </div>
+            <div class="no-works-content">
+                <img src="images/noworks.png">
+            </div>
+            <a class="no-works-bottom">创作好时KISSES趣味拼图</a>
+        </div>
+        <!--有作品显示-->
+        <div class="yes-works">
+            <div class="yes-works-title">我的好时KISSES拼图超甜蜜作品集</div>
+            <div class="yes-works-content">
+                <ul></ul>
+            </div>
+            <div class="yes-works-bottom">
+                <p>每袋好时KISSES 500g产品内含约105-110颗巧克力，每袋仅有一种颜色。<span> 请根据您所用巧克力颜色和数量来购买相应颜色KISSES 500g产品的袋数哦！</span></p>
+                <a>创作好时KISSES趣味拼图</a>
+            </div>
+        </div>
+    </div>
+    <div class="tpl mark hide">
+        <div class="tpl-tab ">
+            <div class="tab-item active">激萌小动物</div>
+            <div class="tab-item">星座物语</div>
+            <div class="tab-item">重要的日子</div>
+            <div class="tab-item">字母心意</div>
+            <div class="tab-item ">玩乐天地</div>
+        </div>
+        <div class="tpl-content">
+            <div class="content-list">
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list1-1.png"></div>
+                    <div class="list-go fl">
+                        <p>京东JOY</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list1-2.png"></div>
+                    <div class="list-go fl">
+                        <p>喵星人</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list1-3.png"></div>
+                    <div class="list-go fl">
+                        <p>汪星人</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list1-4.png"></div>
+                    <div class="list-go fl">
+                        <p>章鱼哥</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-list hide">
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list2-1.png"></div>
+                    <div class="list-go fl">
+                        <p>金牛座</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list2-2.png"></div>
+                    <div class="list-go fl">
+                        <p>双子座</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list2-3.png"></div>
+                    <div class="list-go fl">
+                        <p>水瓶座</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-list hide">
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list3-1.png"></div>
+                    <div class="list-go fl">
+                        <p>2017 HAPPY NEW YEAR</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list3-2.png"></div>
+                    <div class="list-go fl">
+                        <p>饥饿的南瓜</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list3-3.png"></div>
+                    <div class="list-go fl">
+                        <p>520</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list3-4.png"></div>
+                    <div class="list-go fl">
+                        <p>生日快乐</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-list hide">
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list4-1.png"></div>
+                    <div class="list-go fl">
+                        <p>HAPPY</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list4-2.png"></div>
+                    <div class="list-go fl">
+                        <p>I DO</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list4-3.png"></div>
+                    <div class="list-go fl">
+                        <p>LOVE</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-list hide">
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list5-1.png"></div>
+                    <div class="list-go fl">
+                        <p>船锚</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list5-2.png"></div>
+                    <div class="list-go fl">
+                        <p>飞机</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list5-3.png"></div>
+                    <div class="list-go fl">
+                        <p>挖掘机</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list5-4.png"></div>
+                    <div class="list-go fl">
+                        <p>小汽车</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+                <div class="tpl-list clearfix">
+                    <div class="list-img fl"><img src="images/list5-5.png"></div>
+                    <div class="list-go fl">
+                        <p>游戏手柄</p>
+                        <a href="http://m.jd.com/product/4143628.html">一键购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tpl-bottom">
+            <p>每袋好时KISSES 500g产品内含约105-110颗巧克力，每袋仅有一种颜色。<span> 请根据您所用巧克力颜色和数量来购买相应颜色KISSES 500g产品的袋数哦！</span></p>
+            <a class="tpl-back">返回拼图制作</a>
+        </div>
+    </div>
+    <!--分享弹框-->
+    <div class="end-share popup hide">
+        <img class="popup-scale" src="images/end-share.png">
+    </div>
+    <!--成功分享后去京东-->
+    <div class="go-jd popup hide">
+        <div class="popup-inner popup-scale">
+            <div class="popup-close"></div>
+            <div class="go-jd-content ">
+                <img src="images/jd.png">
+                好时缤纷专场的大门已经开启
+            </div>
+            <a class="popup-sure" href="https://shop.m.jd.com/?shopId=1000075682">即刻点击前往</a>
+        </div>
+    </div>
+</section>
+
+<script src="js/sha1.js"></script>
+<script src="js/wx3Tool.js"></script>
+<script src="js/wxshare.js"></script>
+<script src="js/works.js"></script>
+<script src="js/wxSH.js"></script>
+</body>
+</html>

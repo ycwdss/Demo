@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>好信萌萌乐</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<section class="box center">
+		<div class="indexTheme cneter"></div>
+		<div class="logo center"></div>
+		<a href="game.html" class="indexBtn center"><img src="images/indexBtn.png" /></a>
+		<a href="javascript:;" class="indexBtn2 center"><img src="images/indexBtn2.png" /></a>
+		<a href="javascript:;" class="indexRule center">游戏规则</a>
+	</section>
+	<section class="shade"></section>
+	<section class="rule center">
+		<h3>游戏规则</h3>
+		<div class="content">
+			<p>1.所有前海征信官方微信关注用户均可参与此次《好信萌萌乐》活动；</p>
+			<p>2.每位用户每天可玩3次，呼唤小伙伴可增加2次机会，每天最多可玩5次；</p>
+			<p>3.点击3个以上相连的同色魔法石可消除（含猫猴鹰）成功消除5个猫猴鹰，点击上方【领取奖励】就有机会获得奖励；</p>
+			<p>4.一等奖：猫猴鹰订制手机壳；二等奖：猫猴鹰订制U盘；三等奖：流量包；参与奖猫猴鹰精美壁纸；</p>
+			<p>5.获得实物礼品，礼品将在整个活动结束后的3个工作日内，通过快递的方式寄送到用户手中；获得流量3个工作日充值至您的手机；</p>
+			<p>6.用户领取1次奖励后不能领取其他奖励；</p>
+			<p>7.活动时间：2016年年3月9日-3月15日；</p>
+			<p>8.活动最终解释权归深圳前海征信中心所有。</p>
+		</div>
+		<a class="close" href="javascript:;"></a>
+	</section>
+	<section class="indexWin center">
+		<div class="title"><img src="images/winTit4.png" /></div>
+		<div class="mty"><img src="images/indexMty.png" /></div>
+		<p class="font">您还没有获得奖励<br />快去赢取你的奖励吧！</p>
+		<a href="javascript:;" class="winBtn"><img src="images/winBtn1.png" /></a>
+		<a class="close" href="javascript:;"></a>
+	</section>
+	<div class="bizhi">
+		<img src="images/bizhi.jpg" />
+		<p>长按壁纸进行保存！</p>
+	</div>
+
+	<!-- 奖品已经领取分享开始 -->
+	<section class="share share4 center">
+		<img src="images/share4.png" />
+		<a href="game.html" class="shareBtn"></a>
+	</section>
+	
+	  <!--加载页-->
+	<div class="center" id="loading" style="display:block;">  
+          <div class="loadIcon center">
+              <img src="images/loading.gif" class="loadZ" alt=""/>
+          </div>   
+    </div>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/loading.js"></script>
+    <script type="text/javascript">
+    	var prize=0;//后台传值，1为手机壳，2为U盘，3为流量包，4为壁纸 0为未中将
+    	var isUse=1;//后台传值，0为奖品未领取，1为已领取
+
+    	//游戏规则
+		$(".indexRule").click(function(){
+			$(".shade").fadeIn(500);
+			$(".rule").fadeIn(500);
+		});
+
+		//我的奖品
+		$(".indexBtn2").click(function(){
+			$(".shade").fadeIn(500);
+			$(".indexWin").fadeIn(500);
+			switch(prize){
+				case 0:$(".indexWin>.font").html("您还没有获得奖励<br />赢取你的奖励吧！");$(".indexWin>.winBtn").hide();
+				break;
+				case 1:$(".indexWin>.font").html("您已获得<br />猫猴鹰订制版手机壳<br />坐等礼物上门吧！");
+				break;
+				case 2:$(".indexWin>.font").html("您已获得<br />猫猴鹰订制版U盘<<br />坐等礼物上门吧！");
+				break;
+				case 3:$(".indexWin>.font").html("您已获得流量包哦<br />我们将在三日内为您充值！");
+				break;
+				case 4:$(".indexWin>.font").html("您已获得<br />猫猴鹰精美壁纸哦<br />快领取并保存吧！");
+				break;
+			}
+		});
+
+		//领取奖品
+		$(".winBtn").click(function(){
+			if(prize==4){//如果奖品为壁纸
+					$(".bizhi").fadeIn(500);
+			}else{//如果奖品不是壁纸
+				if(isUse==0){
+					$(".shade").fadeIn(500);
+					$(".share4").fadeIn(500);
+					$(".indexWin").fadeOut(500);
+				}else{
+					window.location.href="form.html";
+				}
+			}
+			
+		});
+
+		//关闭当前弹窗
+		$(".close").click(function(){
+			$(".shade").fadeOut(500);
+			$(this).parent().fadeOut(500);
+		});
+
+		//点击壁纸返回首页
+		$(".bizhi").click(function(){
+			window.location.href="index.html";
+		});
+	</script>
+</body>
+</html>

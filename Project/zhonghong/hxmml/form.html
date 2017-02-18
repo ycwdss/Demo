@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>好信萌萌乐</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="formBg center">
+		
+	</section>
+	<section class="shade shade1" style="display:block;"></section>
+	<section class="form center">
+		<div class="formFont"></div>
+		<input class="formInput name" placeholder="姓名：中文名字哦" maxlength="8" />
+		<input class="formInput tel" placeholder="电话：要正确的手机号码呦" maxlength="11" />
+		<textarea class="formTxt adr" placeholder="收货地址：只能输入60个字符哦" maxlength="60" ></textarea>
+		<p class="formTips">注：猫猴鹰订制手机壳仅支持iPhone6/6s。</p>
+		<a href="javascript:;" class="formBtn"><img src="images/formBtn.png" /></a>
+	</section>
+	<section class="shade shade2"></section>
+	<section class="formWin">
+		<p class="tips"></p>
+		<a class="winBtn4" href="javascript:;"><img src="images/winBtn4.png" /></a>
+	</section>
+	<section class="share share3 center">
+		<img src="images/share3.png" />
+	</section>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+    	var prize=3;//后台传值，1为手机壳，2为U盘，3为流量包，4为壁纸 0为未中将
+    	var isUse;//0为奖品未领取，1为已领取
+    	$(window).load(function(){
+    		if(prize==3){
+    			$(".formTxt").hide();
+    			$(".formTips").hide();
+    		}else if(prize==2){
+    			$(".formTips").hide();
+    		}
+    	});
+		$(".formBtn").click(function(){
+			var name=$(".name").val();
+			var tel=$(".tel").val();
+			var adr=$(".adr").val();
+			var telReg = !!tel.match(/^\d{11}$/);
+			if(name==""||tel==""){
+				$(".shade2").fadeIn(500);
+				$(".formWin").fadeIn(500);
+				$(".formWin>.tips").html("信息填写不完整，请重新输入！");
+			}else{
+				if(prize!=3&&adr==""){
+					$(".shade2").fadeIn(500);
+					$(".formWin").fadeIn(500);
+					$(".formWin>.tips").html("信息填写不完整，请重新输入！");
+				}else if(telReg==false){
+					$(".shade2").fadeIn(500);
+					$(".formWin").fadeIn(500);
+					$(".formWin>.tips").html("手机号码输入不正确，<br />请重新输入！");
+				}else{
+					$(".form").fadeOut(500);
+					$(".share3").fadeIn(500);
+					isUse=1;//须传入数据库
+					//此处须把name tel adr值传入数据库
+				}
+			}
+			
+		});
+		$(".winBtn4").click(function(){
+			$(".shade2").fadeOut(500);
+			$(".formWin").fadeOut(500);
+		});
+	</script>
+</body>
+</html>

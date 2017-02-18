@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+	<title>中国银联95516</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script>
+</head>
+<body>
+	<!-- 页面 -->
+  <section class="loading center">
+      <div class="phone ycenter"></div>
+  </section>
+  <section class="loading2 center">
+      <div class="photo1 absolute"></div>
+      <div class="font1 absolute"></div>
+      <div class="photo2 absolute"></div>
+      <div class="font2 absolute"></div>
+  </section>
+  <section class="loading3 center">
+      <img class="upm absolute" src="images/upm1.png" />
+      <img class="upmF absolute" src="images/upmF1.png" />
+      <img class="upd absolute" src="images/upd1.png" />
+      <img class="updF absolute" src="images/updF1.png" />
+  </section>
+	<section class="index center">
+    <div class="indexBtn center fixed">
+      <a href="javascript:;" class="indexBtn2"><img src="images/indexBtn2.png" /></a>
+      <a href="javascript:;" class="indexBtn1"><img src="images/indexBtn1.png" /></a>
+      <a href="javascript:;" class="indexBtn3"><img src="images/indexBtn3.png" /></a>
+    </div>
+    <a href="javascript:;" class="indexBtn4 center">活动规则</a>
+	</section>
+	<!-- 遮盖层 -->
+
+	<section class="shade"></section>
+  <section class="shade2"></section>
+  <section class="rule center">
+    <h1 class="ruleTit">活动说明</h1>
+    <div class="ruleCon">
+      <h3>活动时间</h3>
+            <p>即日起至2017年1月26日</p>
+            <div class="ruleGe"></div>
+            <h3>活动内容</h3>
+            <p>1、【中国银联95516】微信公众号用户点击菜单【查】-【新家欢“银”你】参与活动。</p>
+            <p>2、活动期间，根据剧情提示，找齐三个线索，即可获得抽奖机会，输入手机号即可抽奖。</p>
+            <p>3、活动奖品：500M和150M流量。</p>
+            <p>4、本游戏找齐三个线索即可通关并获得抽奖机会，每天最多可获得3次抽奖机会。</p>
+            <p>5、抽奖机会当天24时清零，不与第二天的抽奖机会叠加。</p>
+            <p>6、活动结束后15个工作日内公布中奖名单并发奖。</p>
+            <div class="ruleGe"></div>
+            <h3>活动细则</h3>
+            <p>1、用户参与活动所形成的流量支出由用户本人负责。</p>
+            <p>2、活动期间，若有用户通过违法违规方式参与本次活动，主办方有权取消该用户参与资格。</p>
+            <p>3、因获奖用户个人原因（如信息填写不完整、不准确）未能领到奖品，主办方不承担任何相应责任。</p>
+            <p>4、在活动期间，如发生不可抗力事件或脱离主办方控制情况致使游戏无法正常进行时，活动主办方有权取消、暂停、修改或终止本活动。</p>
+    </div>
+    <a href="javascript:;" class="ruleBtn btn">返回</a>
+  </section>
+	<section class="share center">
+		<img src="images/share.png" />
+	</section>
+	
+
+    <script type="text/javascript">
+    	var ut;
+      var playNum=0;//剩余抽奖次数
+      var helpCount=0;//助力次数
+      var openId;
+    	$(function(){
+  			ut=GetQueryString("ut");
+        wxshare(ut);
+        addAccess(ut,"index");
+        animate1();
+    	});
+
+      // 动画
+      function animate1(){
+        setTimeout(function(){
+          $(".loading").fadeOut(300);
+          $(".loading2").fadeIn(300);
+          setTimeout(function(){
+            $(".photo1").fadeIn(500);
+          },500);
+          setTimeout(function(){
+            $(".font1").fadeIn(500);
+          },1200);
+          setTimeout(function(){
+            $(".photo2").fadeIn(500);
+          },2200);
+          setTimeout(function(){
+            $(".font2").fadeIn(500);
+          },2900);
+          setTimeout(function(){
+            $(".loading").fadeOut();
+            $(".loading2").fadeOut();
+            $(".loading3").fadeIn();
+            $(".upd,.upm").fadeIn();
+            setTimeout(function(){
+              $(".upmF").css("top","500px").fadeIn(300);
+            },800);
+            setTimeout(function(){
+              $(".upmF").fadeOut();
+              $(".updF").css("top","470px").fadeIn(300);
+            },2500);
+            setTimeout(function(){
+              $(".updF").fadeOut();
+              $(".upm").attr("src","images/upm2.png");
+              $(".upmF").attr("src","images/upmF2.png").css("top","450px").fadeIn(300);
+            },4300);
+            setTimeout(function(){
+              $(".shade2").fadeIn(1000).fadeOut(1000);
+            },6500);
+            setTimeout(function(){
+              $(".loading3").fadeOut();
+              $(".index").fadeIn();
+            },7500);
+          },4000);
+        },2000);
+      }
+
+    	// 找线索
+    	$(".indexBtn1").on("click",function(){
+  			window.location.href="game.html?ut="+ut;
+  		});
+      // 抽奖
+      $(".indexBtn2").on("click",function(){
+        window.location.href="luck.html?ut="+ut;
+      });
+
+  		//分享
+    	$(".indexBtn3").on("click",function(){
+        $(".win").fadeOut(300);
+  			$(".shade").fadeIn(300);
+        $(".share").fadeIn(300);
+  		});
+      $(".share").on("click",function(){
+        $(".win").fadeOut(300);
+        $(".shade").fadeOut(300);
+        $(".share").fadeOut(300);
+      });
+  		//活动规则
+  		$(".indexBtn4").on("click",function(){
+  			$(".shade").fadeIn(300);
+  			$(".rule").fadeIn(300);
+  		});
+      $(".ruleBtn").on("click",function(){
+        $(".shade").fadeOut(300);
+        $(".rule").fadeOut(300);
+      });
+
+
+	</script>
+</body>
+</html>

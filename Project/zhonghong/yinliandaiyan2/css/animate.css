@@ -1,0 +1,162 @@
+/*
+<div id="loading" >
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    */
+#loading {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -30px; }
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: relative; }
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #67CF22;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out; }
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1); } }
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+@keyframes neon {
+  0% {
+    background: url("../images/page1-neon1.png") no-repeat; }
+  100% {
+    background: url("../images/page1-neon2.png") no-repeat; } }
+@-webkit-keyframes neon {
+  0% {
+    background: url("../images/page1-neon1.png") no-repeat; }
+  100% {
+    background: url("../images/page1-neon2.png") no-repeat; } }
+@keyframes solgan-text {
+  0% {
+    transform: scale(1.4); }
+  100% {
+    transform: scale(1); } }
+@-webkit-keyframes solgan-text {
+  0% {
+    -webkit-transform: scale(1.4); }
+  100% {
+    -webkit-transform: scale(1); } }
+@keyframes unionpay01 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    left: 160px; }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    left: 60px; } }
+@-webkit-keyframes unionpay01 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    left: 160px; }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    left: 60px; } }
+@keyframes unionpay02 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    right: 120px; }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    right: 30px; } }
+@-webkit-keyframes unionpay02 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    right: 120px; }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    right: 30px; } }
+@-webkit-keyframes popup {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes popup {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px); } }
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px); } }
+@-webkit-keyframes solgan-text {
+  0% {
+    background: url("../images/page1-solgan-text.png") no-repeat; }
+  100% {
+    background: url("../images/page1-solgan-text2.png") no-repeat; } }
+@keyframes solgan-text {
+  0% {
+    background: url("../images/page1-solgan-text.png") no-repeat; }
+  100% {
+    background: url("../images/page1-solgan-text2.png") no-repeat; } }
+
+/*# sourceMappingURL=animate.css.map */

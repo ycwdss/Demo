@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>绿色账户-吾家有花初长成</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 种子列表开始 -->
+	<section class="seed center">
+		<ul class="seedUl center">
+			<li class="seedLi seedLi1 center">
+				<div class="seedBox">
+					<div class="seedSp seedSp1">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed1.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide1.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+					<div class="seedSp seedSp2">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed2.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide1.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+					<div class="seedSp seedSp3">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed3.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide1.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+				</div>
+				<div class="new hide"></div>
+				<div class="seedTips center"><img src="images/seedTips1.png" /></div>
+			</li>
+			<li class="seedLi seedLi2 center">
+				<div class="seedBox">
+					<div class="seedSp seedSp4">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed4.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide2.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+					<div class="seedSp seedSp5">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed5.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide2.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+					<div class="seedSp seedSp6">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed6.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide2.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+				</div>
+				<div class="new hide"></div>
+				<div class="seedTips center"><img src="images/seedTips2.png" /></div>
+			</li>
+			<li class="seedLi seedLi3 center">
+				<div class="seedBox">
+					<div class="seedSp seedSp7">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed7.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide3.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+					<div class="seedSp seedSp8">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed8.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide3.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+					<div class="seedSp seedSp9">
+						<div class="seedShadow"></div>
+						<a class="seedImg hide" href="javascript:;"><img src="images/seed9.png" /></a>
+						<div class="seedHide seedHide1"><img src="images/seedHide3.png" /></div>
+						<div class="seedDoubt"></div>
+						<div class="seedSeal hide"></div>
+					</div>
+				</div>
+				<div class="new hide"></div>
+				<div class="seedTips center"><img src="images/seedTips3.png" /></div>
+			</li>
+		</ul>
+		<a href="index.html" class="seedBtn center"></a>
+	</section>
+	<!-- 种子列表结束 -->
+
+	<!-- 遮盖开始 -->
+	<section class="shade"></section>
+	<!-- 遮盖结束 -->
+
+	<!-- 弹窗开始 -->
+	<section class="seedWin hide yCenter">
+		<div class="seedWinBg"></div>
+		<a class="seedWinBtn" href="javascript:;"><img src="images/seedWinBtn.png" /></a>
+	</section>
+	<!-- 弹窗结束 -->
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		var arrSeed=[2,1,3];//已领取种子 数据库传值
+		var lv;//用户所在等级，1为初级，2为中级，3为高级 数据库传值
+		var isFull=0;//花室是否有花在种植 0为没有，1为有 数据库传值
+		$(window).load(function(){
+			var l=arrSeed.length;
+			if(l<3){
+				lv=1;
+				$(".seedLi>.new").hide();
+				$(".seedLi1>.new").show();
+			}else if(l>=3&&l<6){
+				lv=2;
+				$(".seedLi>.new").hide();
+				$(".seedLi2>.new").show();
+			}else{
+				lv=3;
+				$(".seedLi>.new").hide();
+				$(".seedLi3>.new").show();
+			}
+			for(var i=1;i<=lv;i++){
+				$(".seedLi"+i+">.seedBox>.seedSp>.seedImg").show();
+				$(".seedLi"+i+">.seedBox>.seedSp>.seedHide").hide();
+				$(".seedLi"+i+">.seedBox>.seedSp>.seedDoubt").hide();
+			}
+			for(var j=0;j<l;j++){
+				$(".seedSp"+arrSeed[j]+">.seedSeal").show();
+			}
+		});
+		$(".seedImg").on("click",function(){
+			var flowerNo=$(this).parent(".seedSp").index(".seedSp")+1;//当前花的编号
+			if(isFull==0){
+				arrSeed.push(flowerNo);//入库
+				window.location.href="room.html";
+			}else{
+				$(".shade").fadeIn(300);
+				$(".seedWin").fadeIn(300);
+			}
+			
+		});
+		$(".seedWinBtn").on("click",function(){
+			$(".shade").fadeOut(300);
+			$(".seedWin").fadeOut(300);
+		});
+	</script>
+</body>
+</html>

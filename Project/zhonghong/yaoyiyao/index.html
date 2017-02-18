@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/cyTool.js"></script>
+    <script type="text/javascript" src="js/sha1.js"></script>
+    <script type="text/javascript" src="js/wx3Tool.js"></script>
+    <script type="text/javascript">
+        var domain = window.location.host;
+        var appId = "wx2f9b5feaa383c3b7";
+        var wx3Tool = new Wx3Tool(wx);
+        var timestamp = wx3Tool.getCurrentSeconts();
+        var nonceStr = wx3Tool.getNonceStr();
+        var ticket = _data.getJsApiTicket;
+        var signature = wx3Tool.getSignature(ticket, nonceStr, timestamp);
+        var jsApiList = [
+            'hideOptionMenu',
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'showOptionMenu',
+            'hideMenuItems'];
+        wx3Tool.wxConfig(false, appId, timestamp, nonceStr, signature, jsApiList);
+        wx.ready(function () {
+            wx3Tool.hideMenu();
+        });
+
+    </script>
+</head>
+<body>
+<section class="index center">
+    <a href="javascript:;" class="indexBtn center"></a>
+</section>
+<script type="text/javascript">
+    var ut;
+    $(function () {
+        ut = GetQueryString("ut");
+        //添加页面访问记录
+        addAccess(ut,'index');
+        //页面分享
+        wxshare2(ut);
+    });
+    $(".indexBtn").on("click", function () {
+        window.location.href = "rock.html?ut=" + ut;
+    });
+</script>
+</body>
+</html>

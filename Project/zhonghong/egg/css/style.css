@@ -1,0 +1,699 @@
+@charset "UTF-8";
+@import url(popup.css);
+html {
+  width: 100%;
+  height: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /*2*/
+  -webkit-text-size-adjust: 100%;
+  /*2*/
+  text-size-adjust: 100%;
+  /*2*/ }
+
+a, abbr, acronym, div, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none; }
+
+body {
+  width: 750px;
+  margin: auto;
+  height: 100%;
+  font-family: Hiragino Sans GB, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+em {
+  font-style: normal; }
+
+ul li {
+  list-style: none; }
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.index {
+  position: relative;
+  width: 750px;
+  height: 1334px;
+  overflow: hidden;
+  background: url(../images/indexbg.gif) center center no-repeat;
+  background-size: cover; }
+
+.index-newyear {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 635px;
+  height: 421px;
+  margin-left: -317.5px; }
+
+.index-egg {
+  position: absolute;
+  top: 590px;
+  width: 750px;
+  height: 310px; }
+
+.index-egif {
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px; }
+
+.index-power {
+  height: 70px;
+  line-height: 70px;
+  padding-top: 883px;
+  text-align: center;
+  font-size: 30px;
+  color: #52360d; }
+  .index-power img {
+    vertical-align: middle;
+    margin-right: 8px; }
+
+.index-btn {
+  display: block;
+  width: 364px;
+  height: 114px;
+  margin: 8px auto;
+  background: url("../images/index-begin.png") no-repeat;
+  background-size: cover; }
+
+.index-score {
+  display: block;
+  width: 364px;
+  height: 52px;
+  margin: 0 auto 15px;
+  background: url("../images/myscore.png") no-repeat;
+  background-size: cover; }
+
+.index-rule {
+  display: block;
+  width: 364px;
+  height: 52px;
+  margin: auto;
+  background: url("../images/game-rule.png") top center no-repeat;
+  padding-bottom: 60px; }
+
+/*游戏规则*/
+.rule {
+  width: 750px;
+  height: 100%;
+  background: url("../images/rule-bg.png") no-repeat;
+  background-size: cover; }
+
+.rule-title {
+  padding: 50px 0 30px 0;
+  font-size: 48px;
+  color: #fff;
+  text-align: center; }
+
+.rule-text, .state-text {
+  width: 660px;
+  height: 800px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  font-size: 28px;
+  color: #fff; }
+  .rule-text dl dt, .state-text dl dt {
+    font-size: 32px;
+    color: #fff;
+    padding: 10px 0; }
+  .rule-text dl dd, .state-text dl dd {
+    text-align: justify;
+    font-size: 26px; }
+    .rule-text dl dd ul li, .state-text dl dd ul li {
+      padding-bottom: 10px; }
+      .rule-text dl dd ul li em, .state-text dl dd ul li em {
+        display: block;
+        width: 35px;
+        float: left; }
+      .rule-text dl dd ul li span, .state-text dl dd ul li span {
+        display: block;
+        width: 615px;
+        float: left; }
+        .rule-text dl dd ul li span img, .state-text dl dd ul li span img {
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          margin: 0 10px;
+          vertical-align: middle; }
+
+.state-text ul li:first-child em {
+  margin-top: 15px; }
+
+.rule-back {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -127px;
+  width: 254px;
+  height: 81px;
+  background: url("../images/rule-back.png") no-repeat; }
+
+/*游戏*/
+.game {
+  position: relative;
+  width: 750px;
+  height: 1280px;
+  overflow: hidden;
+  background-color: #ffa506; }
+
+.state-content {
+  width: 660px;
+  height: 580px; }
+
+.state-text {
+  overflow: auto;
+  height: auto; }
+
+.state-begin {
+  width: 205px;
+  height: 66px;
+  margin: 20px auto 0;
+  background: url("../images/state-begin.png") no-repeat;
+  background-size: cover; }
+
+.game-wrap {
+  position: absolute;
+  top: 160px;
+  width: 684px;
+  left: 50%;
+  margin-left: -342px; }
+
+.game-collect {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 660px;
+  height: 100px;
+  line-height: 100px;
+  border: 5px solid #bc7222;
+  border-radius: 50px;
+  background-color: #f9e9b9;
+  margin-left: -330px;
+  text-align: center; }
+  .game-collect li {
+    display: inline-block;
+    width: 25%;
+    float: left; }
+    .game-collect li img {
+      display: inline-block;
+      width: 72px;
+      height: 72px;
+      vertical-align: -15px; }
+    .game-collect li span {
+      font-size: 50px;
+      color: #e23b09;
+      padding-left: 10px; }
+
+.score-content {
+  position: absolute;
+  width: 254px;
+  height: 81px; }
+
+.helpShare-content {
+  width: 640px;
+  height: 430px;
+  background: url("../images/helpShare.png") no-repeat; }
+
+.score-btn {
+  width: 254px;
+  height: 81px;
+  background: url("../images/rule-back.png") no-repeat;
+  background-size: cover; }
+
+.game-area {
+  position: relative;
+  width: 684px;
+  height: 834px;
+  margin: auto;
+  background: url("../images/game-area.png") no-repeat;
+  background-size: cover; }
+
+.game-target {
+  position: absolute;
+  top: 50px;
+  left: 252px;
+  width: 178px; }
+  .game-target .target-hd {
+    width: 140px;
+    height: 62px;
+    margin: auto;
+    background: url("../images/target-hd.png") no-repeat;
+    background-size: cover; }
+  .game-target .target-bd {
+    width: 15px;
+    height: 30px;
+    margin: auto;
+    background-color: #ce9257;
+    border: 1px solid #150c08; }
+  .game-target .target-ft {
+    position: absolute;
+    left: 4px;
+    margin-top: -5px;
+    width: 178px;
+    height: 251px;
+    background: url("../images/target-ft.png") no-repeat;
+    background-size: cover; }
+  .game-target .target-ft1 {
+    background: url("../images/target-ft1.png") no-repeat; }
+  .game-target .target-ft2 {
+    background: url("../images/target-ft2.png") no-repeat; }
+  .game-target .target-ft3 {
+    background: url("../images/target-ft3.png") no-repeat; }
+  .game-target .target-ft4 {
+    background: url("../images/target-ft4.png") no-repeat; }
+
+.game-time {
+  width: 580px;
+  margin: auto;
+  padding: 5px 0;
+  text-align: center;
+  overflow: hidden; }
+  .game-time > div {
+    float: left; }
+  .game-time .game-left {
+    display: block;
+    width: 124px;
+    height: 124px;
+    background: url("../images/game-left.png") no-repeat;
+    background-size: cover; }
+  .game-time .game-timer {
+    display: block;
+    width: 276px;
+    height: 90px;
+    margin: 20px;
+    background: url("../images/go.png") no-repeat; }
+  .game-time .game-right {
+    display: block;
+    width: 124px;
+    height: 124px;
+    background: url("../images/game-right.png") no-repeat;
+    background-size: cover; }
+
+.game-tpl {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 588px;
+  height: 819px;
+  background: url("../images/game-tpl.png") no-repeat;
+  background-size: cover; }
+
+.game-count {
+  font-size: 30px;
+  color: #6a3c1c;
+  text-align: center; }
+
+.zi-content {
+  width: 665px;
+  height: 598px;
+  background-size: cover; }
+
+.zi1 {
+  background: url("../images/zi1.png") no-repeat; }
+
+.zi2 {
+  background: url("../images/zi2.png") no-repeat; }
+
+.zi3 {
+  background: url("../images/zi3.png") no-repeat; }
+
+.zi4 {
+  background: url("../images/zi4.png") no-repeat; }
+
+.zi-again, .zi-reward, .helpShare-again, .helpShare-reward {
+  display: inline-block;
+  width: 205px;
+  height: 66px;
+  text-align: center;
+  margin: 0 30px; }
+
+.zi-again {
+  background: url("../images/game-again.png") no-repeat;
+  background-size: cover; }
+
+.zi-reward {
+  background: url("../images/game-reward.png") no-repeat;
+  background-size: cover; }
+
+.helpShare-again {
+  background: url("../images/share-btn.png") no-repeat;
+  background-size: cover; }
+
+.helpShare-reward {
+  background: url("../images/rule-back.png") no-repeat;
+  background-size: cover; }
+
+.zi-wrap, .helpShare-wrap {
+  width: 100%;
+  padding-top: 480px;
+  text-align: center; }
+
+.helpShare-wrap {
+  padding-top: 320px; }
+
+.notip-content {
+  width: 640px;
+  height: 430px;
+  background: url("../images/notip.png") no-repeat;
+  background-size: cover; }
+
+.notip-btn {
+  position: absolute;
+  width: 220px;
+  height: 75px;
+  background: url(../images/play-again.png) no-repeat;
+  background-size: 100% 100%;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -110px; }
+
+.share-content {
+  width: 640px;
+  height: 430px;
+  background: url("../images/share.png") no-repeat;
+  background-size: cover; }
+
+.share-btn {
+  width: 277px;
+  height: 88px;
+  margin: 310px auto 0;
+  background: url("../images/share-btn.png") no-repeat;
+  background-size: cover; }
+
+.share-text img {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 99; }
+
+/*9次机会都用完了，明天再来*/
+.over-content {
+  width: 640px;
+  height: 430px;
+  background: url("../images/over.png") no-repeat;
+  background-size: cover; }
+
+.over-btn {
+  width: 277px;
+  height: 88px;
+  margin: 310px auto 0;
+  background: url("../images/sure-btn.png") no-repeat;
+  background-size: cover; }
+
+/*用户输入手机号，点击去抽奖*/
+.tel {
+  position: relative;
+  width: 750px;
+  height: 1300px;
+  background: url("../images/rule-bg.png") no-repeat;
+  background-size: cover; }
+  .tel .tel-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: 848px;
+    background: url("../images/tel-card.png") no-repeat;
+    background-size: cover; }
+
+.tel-headset {
+  position: relative;
+  width: 740px;
+  height: 566px;
+  margin: auto;
+  padding-top: 200px;
+  background: url("../images/tel-wan.png") bottom center no-repeat; }
+  .tel-headset p {
+    width: 630px;
+    margin: auto;
+    padding-top: 50px;
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 8px 8px 8px #ff521e; }
+
+.tel-num {
+  padding-top: 80px; }
+  .tel-num p {
+    font-size: 32px;
+    color: #fff;
+    text-align: center; }
+  .tel-num input {
+    display: block;
+    width: 520px;
+    height: 75px;
+    margin: 25px auto 0;
+    line-height: 75px;
+    font-size: 32px;
+    color: #ff521e;
+    border-radius: 20px;
+    text-indent: 20px; }
+
+.tel-reward {
+  display: block;
+  width: 364px;
+  height: 114px;
+  margin: 80px auto 0;
+  background: url("../images/tel-reward.png") top center no-repeat;
+  padding-bottom: 60px; }
+
+.play-again {
+  background: url(../images/play-again.png) no-repeat; }
+
+/*抽奖*/
+.reward {
+  position: relative;
+  width: 750px;
+  height: 100%;
+  background: url("../images/rule-bg.png") no-repeat;
+  background-size: cover; }
+  .reward .reward-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 727px;
+    height: 848px;
+    background: url("../images/tel-card.png") no-repeat;
+    background-size: cover; }
+
+.reward-wan {
+  position: absolute;
+  top: 350px;
+  left: 9.5px;
+  width: 739px;
+  height: 566px;
+  margin: auto;
+  background: url("../images/reward-wan.png") no-repeat;
+  background-size: cover; }
+  .reward-wan p {
+    width: 630px;
+    margin: auto;
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 8px 8px 8px #ff521e; }
+
+.reward-again {
+  display: block;
+  position: absolute;
+  top: 980px;
+  left: 50%;
+  margin-left: -182px;
+  width: 364px;
+  height: 114px;
+  background: url("../images/play-again.png") no-repeat;
+  background-size: cover; }
+
+.reward-shareimg img {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 99; }
+
+/*助力*/
+.help {
+  position: relative;
+  width: 750px;
+  height: 1228px;
+  overflow: hidden; }
+
+.help-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1228px; }
+
+.help-btn {
+  position: absolute;
+  top: 790px;
+  width: 100%;
+  text-align: center; }
+  .help-btn > a {
+    display: inline-block;
+    width: 279px;
+    height: 88px;
+    background-size: cover;
+    margin: 0 35px; }
+  .help-btn .help-btn1 {
+    background: url("../images/help-btn1.png") no-repeat; }
+  .help-btn .help-btn2 {
+    background: url("../images/help-btn2.png") no-repeat; }
+
+.help-content, .get-content {
+  width: 640px;
+  height: 430px;
+  background: url("../images/popup-common.png") no-repeat;
+  background-size: cover; }
+  .help-content p, .get-content p {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    padding-top: 120px;
+    line-height: 50px; }
+
+.helpsure-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -138px;
+  width: 277px;
+  height: 88px;
+  background: url(../images/sure-btn.png) no-repeat;
+  background-size: cover; }
+
+.get-content p {
+  padding-top: 100px; }
+
+.get-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -138px;
+  width: 277px;
+  height: 88px;
+  background: url(../images/play-again.png) no-repeat;
+  background-size: 100% 100%; }
+
+.index-music {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  width: 66px;
+  height: 66px;
+  background: url("../images/music.png") no-repeat;
+  -webkit-animation: music 5s linear infinite;
+  animation: music 5s linear infinite; }
+
+.index-music-pause {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  width: 66px;
+  height: 66px;
+  background: url("../images/music0.png") no-repeat; }
+
+@keyframes music {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes music {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+/*奖品管理*/
+.pc {
+  width: 960px;
+  margin: 30px auto;
+  color: #333;
+  font-size: 18px; }
+
+.pcTit {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 50px;
+  border-bottom: 1px solid #aaa; }
+
+.pcUl {
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 30px; }
+
+.pcLi {
+  width: 100%;
+  padding: 10px 0; }
+
+.pcLi .sub {
+  width: 140px;
+  float: left;
+  margin: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center; }
+
+.pcLiTit {
+  border-bottom: 1px solid #aaa; }
+
+.pcLiCon .sub4, .pcLiCon .sub5 {
+  width: 135px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px; }
+
+.pcData {
+  width: 100%;
+  border-bottom: 1px solid #aaa; }
+
+.pcData p {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center; }
+
+.pcData p span {
+  margin-right: 40px; }
+
+.export {
+  display: block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #333;
+  background: #ccc;
+  margin: 30px auto; }
+
+/*# sourceMappingURL=style.css.map */

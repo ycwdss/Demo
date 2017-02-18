@@ -1,0 +1,245 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+    <meta charset="utf-8" />  
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />  
+    <meta name="format-detection" content="email=no" /> 
+    <title>和教授粉丝信用卡</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <style>  
+      canvas {  
+      }  
+      img{
+        width: 22px;
+        height: 36px;
+      }
+    </style>  
+    <body>  
+
+  <section class="section6">
+      
+      <!-- canvas start -->
+      <canvas id="canvas" width="750" height="511" style="display:none;"></canvas>  
+      <div style="width:100%;">
+        <img src="" alt="" id="imgCanvas"  style="width:100%;height:100%">
+      </div>
+      <!-- canvas end -->
+
+      <!-- 卡信息 start -->
+      <div class="carInfo">
+       <div class="carInfo_inner">
+           <p>尊敬的<span id="userName"></span></p>
+           <p>您定制的和教授粉丝信用卡已经申请成功。</p>
+           <p>卡号：<span id="carNo"></span></p>
+           <p>额度：￥<span id="carEd"></span></p>
+       </div>
+      </div>
+      <!-- 卡信息 end -->
+
+      <!-- 一卡在手，天下我有！ start -->
+      <div class="carInfo2" >
+       <!--  一卡在手，天下我有！<br />
+        点击图片保存，并向小伙伴炫富吧！ -->
+          一卡在手，天下我有！<br>
+          长按保存图片，并向小伙伴炫富吧！
+      </div>
+      <!-- 一卡在手，天下我有！ end -->
+
+      <!-- btn start -->
+      <div class="btnCss3">
+        <a href="bigWheelAnd.html" class="btn2 inblock">炫完了，抽奖去</a>
+        <a href="andCar.html" class="btn2 inblock">重新生成</a>
+      </div>
+      <!-- btn end -->
+
+  </section>
+
+
+      <!--model start-->
+    <div id="mask" class="mask" onclick="hideAll('#model')"></div>  
+    <div id="model" class="model" ></div>
+    
+    <div id="modal-box" style="display:none;">
+        <div class="modalboxImg">
+            
+        </div>
+    </div>
+      <!--model end-->
+
+<script type="text/javascript" src="js/popup.js"></script>
+
+  <script>  
+
+    function drawBeauty(beauty,carNo,carNo1,carNo2,carNo41,carNo42,carNo43,carNo44){
+      var canvas = document.getElementById("canvas");  
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(beauty, 0, 0);
+
+      var r = 180;
+
+      var py2=getUrlParam("py");
+      $("#userName").html(py2);
+
+      var ed=getUrlParam("ed");
+      $("#carEd").html(formatNum(ed));
+
+      ctx.globalCompositeOperation = "source-over";  
+      ctx.font = "20px arial";  
+      ctx.textAlign = "left";  
+      ctx.fillStyle = "#000000";  
+      ctx.fillText(carNo.substr(0,2)+"********"+carNo.substr(carNo.length-4,4), r, 85);
+      ctx.fillText(formatNum(ed), r, 125);
+      ctx.fillText(formatNum(ed), r, 165);
+
+      ctx.fillStyle = "#fff";  
+      ctx.font = "30px Arial";  
+
+      /*卡号及用户名 旋转角度 start*/
+      var angle = -11 * Math.PI / 180; // angle of rotation in radians
+      var rx = 300, ry = 200; // the rotation x and y
+      var px = 300, py = 50; // the objects center x and y
+      var radius = ry - py; // the difference in y positions or the radius
+      var dx = rx + radius * Math.sin(angle); // the draw x 
+      var dy = ry - radius * Math.cos(angle); // the draw y
+      ctx.save();
+      ctx.translate(dx, dy);
+      ctx.rotate(angle);
+      ctx.translate(-dx, -dy);
+      /*卡号及用户名 旋转角度 end*/
+
+      ctx.drawImage(carNo1, r-135, 340,22,36); //第一位
+      ctx.drawImage(carNo2, r-113 , 340,22,36);//第二位
+
+      ctx.drawImage(carNo41, r+145, 335,22,36); //倒数第四位
+      ctx.drawImage(carNo42, r+167, 335,22,36); //倒数第三位
+      ctx.drawImage(carNo43, r+189, 335,22,36); //倒数第二位
+      ctx.drawImage(carNo44, r+211, 335,22,36); //倒数第一位
+
+      ctx.font = "22px Arial";  
+      ctx.fillText(py2, r-150, 460);
+
+      ctx.restore();
+
+      return canvas;
+    }
+
+
+    function load(){
+      var beauty = new Image();  
+      beauty.src = "images/andCar2.png"; 
+
+      var carNo="6222222222229678";//随机出的卡号
+      $("#carNo").html(carNo.replace(/(.{4})/g,"$1 "));
+
+      var carNo1 = new Image(); 
+      var carNo2 = new Image();
+
+      var carNo41 = new Image(); 
+      var carNo42 = new Image(); 
+      var carNo43 = new Image();  
+      var carNo44 = new Image();  
+
+      carNo1.src = "images/and"+carNo.substr(0,1)+".png"; 
+      carNo2.src = "images/and"+carNo.substr(1,1)+".png"; 
+
+      carNo41.src = "images/and"+carNo.substr(carNo.length-4,1)+".png";
+      carNo42.src = "images/and"+carNo.substr(carNo.length-3,1)+".png";
+      carNo43.src = "images/and"+carNo.substr(carNo.length-2,1)+".png";
+      carNo44.src = "images/and"+carNo.substr(carNo.length-1,1)+".png";
+
+      if(beauty.complete){
+          var mycanvas = drawBeauty(beauty,carNo,carNo1,carNo2,carNo41,carNo42,carNo43,carNo44);; 
+
+          var image = mycanvas.toDataURL("image/png");  
+
+          if(image!=""){
+            $("#imgCanvas").attr("src",image);
+          }
+          else{
+            window.location.reload();
+          }
+
+      }else{
+        beauty.onload = function(){
+
+          var mycanvas = drawBeauty(beauty,carNo,carNo1,carNo2,carNo41,carNo42,carNo43,carNo44);; 
+
+          var image = mycanvas.toDataURL("image/png");  
+          
+          if(image!=""){
+            $("#imgCanvas").attr("src",image);
+          }
+          else{
+            window.location.reload();
+          }
+
+        };
+
+        beauty.onerror = function(){
+          window.alert('加载失败，请重试');
+        };
+      };   
+    }
+    //load
+    if (document.all) {
+      window.attachEvent('onload', load);  
+    }else {  
+      window.addEventListener('load', load, false);
+    }
+
+
+// Converts canvas to an image
+    function convertCanvasToImage(canvas) {
+      var image = new Image();
+      image.src = canvas.toDataURL("image/png");
+      return image;
+    }
+
+    //三位数字加一个逗号，保留小数点后两位
+    function formatNum(str){
+      var newStr = "";
+      var count = 0;
+       
+      if(str.indexOf(".")==-1){
+        for(var i=str.length-1;i>=0;i--){
+          if(count % 3 == 0 && count != 0){
+            newStr = str.charAt(i) + "," + newStr;
+          }else{
+            newStr = str.charAt(i) + newStr;
+          }
+          count++;
+        }
+        str = newStr + ".00"; //自动补小数点后两位
+      }
+      else
+      {
+        for(var i = str.indexOf(".")-1;i>=0;i--){
+          if(count % 3 == 0 && count != 0){
+            newStr = str.charAt(i) + "," + newStr;
+          }else{
+            newStr = str.charAt(i) + newStr; //逐个字符相接起来
+          }
+          count++;
+        }
+        str = newStr + (str + "00").substr((str + "00").indexOf("."),3);
+      }
+
+      return str;
+    }
+
+    //获取url参数
+    function getUrlParam(name) {
+        //构造一个含有目标参数的正则表达式对象  
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        //匹配目标参数  
+        var r = window.location.search.substr(1).match(reg);
+        //返回参数值  
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+  </script>  
+</body>  
+</html>  

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+	<title>中国银联95516</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script>
+</head>
+<body>
+	<!-- 页面 -->
+	<section class="loading center">
+    	<div class="phone ycenter"></div>
+	</section>
+	<section class="loading2 center">
+    	<div class="photo1 absolute"></div>
+    	<div class="font1 absolute"></div>
+    	<div class="photo2 absolute"></div>
+    	<div class="font2 absolute"></div>
+	</section>
+	<!-- 遮盖层 -->
+
+	<section class="shade"></section>
+  
+    <script type="text/javascript">
+    	var ut;
+    	$(function(){
+  			ut=GetQueryString("ut");
+  			loading2();
+    	});
+
+    	
+
+
+	</script>
+</body>
+</html>

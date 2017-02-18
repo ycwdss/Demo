@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>绿色账户-吾家有花初长成</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="room center">
+		<div class="roomTool">
+			<div class="tool tool1">
+				<a class="toolImg hide" href="javascript:;"><img src="images/tool1.png" /></a>
+				<div class="toolImg2"><img src="images/tool1-0.png" /></div>
+			</div>
+			<div class="tool tool2">
+				<a class="toolImg hide" href="javascript:;"><img src="images/tool2.png" /></a>
+				<div class="toolImg2"><img src="images/tool2-0.png" /></div>
+			</div>
+			<div class="tool tool3">
+				<a class="toolImg hide" href="javascript:;"><img src="images/tool3.png" /></a>
+				<div class="toolImg2"><img src="images/tool3-0.png" /></div>
+			</div>
+			<div class="tool tool4">
+				<a class="toolImg hide" href="javascript:;"><img src="images/tool4.png" /></a>
+				<div class="toolImg2"><img src="images/tool4-0.png" /></div>
+			</div>
+		</div>
+		<div class="flowerShadow center"></div>
+
+		<div class="flower center">
+			<img src="images/flower1-8.png" />
+		</div>
+
+		<!-- 进度条 -->
+		<div class="energy center hide">
+			<div class="progressBox">
+				<img class="progress" src="images/progress.png" />
+			</div>
+			<span class="energyNum">0</span>
+		</div>
+
+
+		<div class="helpTips center"></div>
+		<a class="roomBtn3 center" href="javascript:;"><img src="images/helpBtn.png" /></a>
+
+		<!-- 浇水 -->
+		<div class="jug"></div>
+		<div class="water hide"></div>
+
+		<!-- 除草 -->
+		<div class="sickle hide"></div>
+		<div class="star hide"></div>
+
+		<!-- 施肥 -->
+		<div class="npk hide"></div>
+
+		<!-- 阳光 -->
+		<div class="sun hide"></div>
+	</section>
+	<section class="layer center"></section>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/room.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+			funShape();
+			funNlz();
+			if(lv==1){
+				$(".tool2>.toolImg").show();
+				$(".tool2>.toolImg2").hide();
+				return;
+			}
+			if(lv==2){
+				$(".tool2>.toolImg").show();
+				$(".tool2>.toolImg2").hide();
+				$(".tool3>.toolImg").show();
+				$(".tool3>.toolImg2").hide();
+				return;
+			}
+			if(lv==3){
+				$(".tool2>.toolImg").show();
+				$(".tool2>.toolImg2").hide();
+				$(".tool3>.toolImg").show();
+				$(".tool3>.toolImg2").hide();
+				$(".tool4>.toolImg").show();
+				$(".tool4>.toolImg2").hide();
+				return;
+			}
+		});
+		$(".roomBtn3").on("click",function(){
+			window.location.href="index.html";
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="share-text"></div>
+<div class="star" style="top:392px;"></div>
+<div class="share-img"></div>
+<div class="share-help"></div>
+<a class="share-wolai" href="index.html"></a>
+<!--他的能量已满-->
+<div class="recover popup hide">
+    <div class="popup-inner">
+        <div class="popup-content recover-content ">TA能量已满<br/>不如您也来挑战吧！</div>
+        <a class="popup-sure recover-sure " href="index.html"></a>
+    </div>
+</div>
+<!--已经拯救过一次了-->
+<div class="recovered popup hide ">
+    <div class="popup-inner">
+        <div class="popup-content recovered-content ">您已经救过TA一次了<br>剩下的就只能看TA的造化了<br>不如您也来挑战吧！</div>
+        <a class="popup-sure recovered-sure " href="index.html"></a>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.share-help').click(function () {
+
+            $('.recover').show();
+            $('.popup-inner').addClass('popup-scale');
+        });
+    });
+</script>
+</body>
+</html>

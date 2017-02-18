@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>前海征信</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/meta.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script>
+</head>
+<body>
+<!--点击抽奖-->
+<section class="help">
+    <img class="help-img" src="images/help-bg.jpg">
+    <div class="help-btn">
+        <a class="help-btn1"></a>
+        <a class="help-btn2"></a>
+    </div>
+    <!--助力弹窗-->
+    <div class="help-popup popup hide">
+        <div class="help-content popup-content popup-scale ">
+            <p></p>
+            <div class="helpsure-btn"></div>
+        </div>
+    </div>
+    <!--再助力-->
+    <div class="helpShare-popup popup hide">
+        <div class="helpShare-content popup-content popup-scale ">
+            <div class="helpShare-wrap">
+                <a class="helpShare-again"></a>
+                <a class="helpShare-reward"></a>
+            </div>
+        </div>
+    </div>
+    <div class="share-text popup hide">
+        <img class="popup-scale" src="images/share-text.png">
+    </div>
+</section>
+
+<script>
+    $(function () {
+        var ut1 = GetUT('ut1'); //助力人
+        var ut2 = GetUT('ut2'); //分享人
+
+        addAccess(ut1, "help"); //添加页面访问记录
+        wxshare2(ut2);//普通分享
+
+        //助力
+        $('.help-btn1').on('click', function () {
+            $.ajax({
+                url:_data.addHelpRecord,
+                data: {
+                    ut1:ut1,
+                    ut2:ut2
+                },
+                type: "POST",
+                dataType: "json",
+                async: false,
+                success: function (data) {
+                    console.log(data);
+                    if(data.code>=100){
+                        helpCount=data.helpCount;
+
+                        if(helpCount==3){
+                            $('.help-popup').show();
+                            $(".help-content p").css({
+                                paddingTop: 90+'px'
+                            }).html("啊呀，今天的助力次数已满，<br />明天记得继续邀请小伙伴一起助力，<br/>获取更多机会。");
+                            return;
+                        }
+                        if(helpCount==2){
+                            $('.helpShare-popup').show();
+                            return;
+                        }
+                        if(helpCount==1){
+                            $('.help-popup').show();
+                            $(".help-content p").css({
+                                paddingTop: 80+'px'
+                            }).html("助力成功！<br /><br />扫描下方二维码，关注[前海征信中心]<br/>更多专业资讯、更多机会等着你！");
+                            return;
+                        }
+
+                    }else{
+                        $(".help-content p").html("助力失败，<br />请稍后再试！");
+                        return;
+                    }
+                },
+                error: function () {
+                    alert("网络异常");
+                }
+            });
+        });
+        $('.help-btn2').on('click',function () {
+            window.location.href =_data.authIndex;
+        });
+        $('.helpsure-btn').on('click',function () {
+            $('.help-popup').hide();
+        })
+        //分享
+        $('.helpShare-again').on('click',function () {
+            $('.helpShare-popup').hide();
+            $('.share-text').show();
+            wxshare(openId,ut2);
+        });
+        $('.helpShare-reward').on('click',function () {
+            $('.helpShare-popup').hide();
+
+        });
+        $('.share-text').on('click',function () {
+            $(this).hide();
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>猜年俗赢福袋</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 游戏页开始 -->
+	<section class="game center">
+		<div class="gameBox center">
+			<div class="gameTop center">
+				<img class="gamePic center" src="images/gamePic1.png" />
+				<p class="gameTips center">Tips：团圆 思念</p>
+				<p class="gameJs center hide">在正月十五元宵节吃元宵是一个古老的汉族传统节日习俗，意喻团团圆圆、平平安安。</p>
+			</div>
+			<div class="gameBottom gameDati center">
+				<div class="gameQ fixed">
+					<span class="q1 q"></span>
+					<span class="q2 q"></span>
+					<span class="q3 q"></span>
+					<span class="delete"></span>
+				</div>
+				<div class="gameS fixed">
+					<span class="s s1"></span>
+					<span class="s s2"></span>
+					<span class="s s3"></span>
+					<span class="s s4"></span>
+					<span class="s s5"></span>
+					<span class="s s6"></span>
+					<span class="s s7"></span>
+					<span class="s s8"></span>
+					<span class="s s9"></span>
+					<span class="s s10"></span>
+					<span class="s s11"></span>
+					<span class="s s12"></span>
+					<span class="s s13"></span>
+					<a class="gamesBtn" href="javascript:;">确定</a>
+				</div>
+			</div>
+			<div class="gameBottom gameRight center hide">
+				<div class="caituTips"><img src="images/right.png" /></div>
+				<a href="javascript:;" class="caituBtn caituBtn1"><img src="images/caitiBtn1.png" /></a>
+			</div>
+			<div class="gameBottom gameOver center hide">
+				<div class="caituTips"><img src="images/allRight.png" /></div>
+				<a href="javascript:;" class="caituBtn caituBtn2"><img src="images/caitiBtn2.png" /></a>
+			</div>
+			<div class="gameBottom gameWrong center hide">
+				<div class="caituTips"><img src="images/wrong.png" /></div>
+				<a href="javascript:;" class="caituBtn caituBtn3"><img src="images/caitiBtn3.png" /></a>
+			</div>
+		</div>
+		<div class="hengfu center"><img src="images/hengfu5.png" /></div>
+	</section>
+	<!-- 游戏页结束 -->
+
+	<input type="text" value="0" class="s sClick" style="display:none;" /><!-- 用于判断第几次点击文字 -->
+	<input type="text" value="0" class="rightQ"  style="display:none;" /><!-- 用于存放正确答案 -->
+	<input type="text" value="0" class="rightNum"  style="display:none;" /><!-- 用于判断答对第几道题 -->
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+	
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

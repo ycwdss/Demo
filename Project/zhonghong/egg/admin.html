@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <title>前海抓鸡活动数据管理</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script src="js/tool.js"></script>
+</head>
+<body>
+<!-- 页面 -->
+<div class="pc">
+    <h3 class="pcTit">奖品管理</h3>
+    <ul class="pcUl">
+        <li class="pcLi pcLiTit clearfix">
+            <span class="sub sub1">奖品编号</span>
+            <span class="sub sub2">运营商</span>
+            <span class="sub sub3">奖品名称</span>
+            <span class="sub sub4">奖品数量</span>
+            <span class="sub sub5">奖品概率</span>
+            <span class="sub sub6">操作</span>
+        </li>
+    </ul>
+    <h3 class="pcTit">活动数据</h3>
+    <div class="pcData clearfix">
+        <p>访问次数：<span class="accessCount"></span>分享次数：<span class="shareCount"></span>抽奖次数：<span class="playCount"></span>参与用户人数：<span class="userCount"></span></p>
+    </div>
+    <a href="javascript:;" class="export">导出中奖用户数据</a>
+</div>
+
+
+<script type="text/javascript">
+    $(function(){
+        getPrizeInfo();
+        getActInfo();
+    });
+    // 修改奖品信息
+    $(".pcUl").on("click",".edit",function(){
+        var id=$(this).parent().parent().find(".sub1").text();
+        var num=$(this).parent().parent().find(".sub4").val();
+        var pro=$(this).parent().parent().find(".sub5").val();
+        updatePrizeNumAndPro(id,num,pro);
+    });
+
+    // 导出中奖用户数据
+    $(".export").on("click",function(){
+        window.location.href=_data.exportWinUser;
+    });
+
+    // 获取奖品信息
+    function getPrizeInfo(){
+        $.ajax({
+            url:_data.getPrizeInfo,
+            dataType: 'json', //服务器返回json格式数据
+            type: "POST",
+            async: false,
+            success: function (data) {
+                console.log(eval(data))
+                // var data = JSON.parse(data);
+                var dataL=data.length;
+                $.each(eval(data),function(i,a){
+                    // each方法~参数1，要遍历的变量~参数2遍历方法~function(键,值)
+                    $(".pcUl").append('<li class="pcLi pcLiCon clearfix">'
+                        +'<span class="sub sub1">'+a.id+'</span>'
+                        +'<span class="sub sub2">'+a.operators+'</span>'
+                        +'<span class="sub sub3">'+a.name+'</span>'
+                        +'<input class="sub sub4" type="text" value="'+a.num+'" />'
+                        +'<input class="sub sub5" type="text" value="'+a.pro+'" />'
+                        +'<span class="sub sub6"><a href="javascript:;" class="edit">修改</a></span>'
+                        +'</li>');
+                });
+            },
+            error: function () {
+                alert("网络异常，请稍后再试");
+            }
+        });
+    }
+
+    // 修改奖品信息
+    function updatePrizeNumAndPro(id,num,pro){
+        $.ajax({
+            url:_data.updatePrizeNumAndPro,
+            dataType: 'json', //服务器返回json格式数据
+            data:{
+                id:id,
+                num:num,
+                pro:pro
+            },
+            type: "POST",
+            async: false,
+            success: function (data) {
+                console.log(eval(data))
+                if(data==1){
+                    alert("修改成功");
+                }else{
+                    alert("修改失败");
+                }
+
+            },
+            error: function () {
+                alert("网络异常，请稍后再试");
+            }
+        });
+    }
+
+    // 获取活动数据
+    function getActInfo(){
+        $.ajax({
+            url:_data.getActInfo,
+            dataType: 'json', //服务器返回json格式数据
+            type: "POST",
+            async: false,
+            success: function (data) {
+                console.log(JSON.stringify(data))
+                $(".accessCount").text(data.accessCount);
+                $(".shareCount").text(data.shareCount);
+                $(".playCount").text(data.playCount);
+                $(".userCount").text(data.userCount);
+
+            },
+            error: function () {
+                alert("网络异常，请稍后再试");
+            }
+        });
+    }
+
+
+</script>
+</body>
+</html>

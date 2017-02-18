@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>花好月圆 礼遇中秋</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background:#b9ca40;">
+	<section class="bg2 center"></section>
+	<section class="game center">
+		<div class="gameTop center fixed">
+			<p class="time">时间：<span id="time">30</span>S</p>
+			<p class="score">得分：<span id="score">0</span></p>
+			
+		</div>
+
+		<div class="gameKeg center">
+			<img id="target" class="target" src="images/tuzi.png" alt="" />
+		</div>
+		<!-- <img src="images/icon4.png" class="icon rtest" style="top:400px;left:260px;"  /> -->
+		<div class="gameCon">
+
+		</div>
+	</section>
+	<span class="gameIcon">0</span>
+	<section class="layer center" style="display:block;"></section>
+	<section class="shade center"></section>
+	<section class="gameStart ycenter">
+		<div class="gameStartDiv">
+			<p>萌萌哒小兔子想吃月饼呢</p>
+			<p>拖动小兔子</p>
+			<p>吃到月饼<img src="images/icon1.png" /><span class="red">+50分</span></p>
+			<p>碰到蟾蜍<img src="images/icon2.png" /><span class="green">-20分</span></p>
+			<p>满600分就能拿到大礼包啦</p>
+		</div>
+		<a href="javascript:;" id="gameStart" class="gameStartBtn"><img src="images/gameWinBtn1.png" /></a>
+	</section>
+	<section class="gameEnd gameEnd1 ycenter">
+		<div class="gameEndDiv">
+			<p>恭喜您，游戏总分超过600分，您将获得一次抽奖机会</p>
+			<div class="gameForm">
+				<input type="tel" class="tel" maxlength="11" placeholder="请输入您的手机号码" />
+				<div class="sub2 fixed">
+					<input type="text" class="code" maxlength="6" />
+					<a href="javascript:;" id="codeBtn" class="codeBtn codeBtn1">发送验证码</a>
+					<a href="javascript:;" class="codeBtn codeBtn2"><span>60</span>S后再试</a>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:;" id="gameEnd" class="gameEndBtn gameEndBtn1"><img src="images/gameWinBtn2.png" /></a>
+	</section>
+	<section class="gameEnd gameEnd2 ycenter">
+		<div class="gameEndDiv">
+			<p>很遗憾，游戏总分没有超过600分，再玩一次吧</p>
+		</div>
+		<a href="index.html" id="gameEnd" class="gameEndBtn gameEndBtn2"><img src="images/gameWinBtn3.png" /></a>
+	</section>
+	<span class="num" style="display:none;">0</span>
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/game.js"></script>
+	<script type="text/javascript">
+		var isTel=false;//是否已经提交过手机号
+		$(function(){
+			if(isTel==true){
+				$(".gameForm").hide();
+				$(".gameEndDiv").css({"height":"180px","padding-top":"50px"})
+			}
+		});
+		//发送验证码
+		$(".codeBtn1").on("touchstart",function(){
+			var tel=$(".tel").val();
+			var telReg = !!tel.match(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/);
+			if(tel==""){
+				alert("请填写手机号码！");
+				return;
+			}
+			if(!telReg){
+				alert("手机号码输入有误！");
+				return;
+			}
+			$(".codeBtn1").hide();
+			$(".codeBtn2").show();
+			var codeTime=parseInt($(".codeBtn2 span").text());
+			var ct= setInterval(function(){
+				codeTime--;
+				if(codeTime<=0){
+					$(".codeBtn1").show();
+					$(".codeBtn2").hide();
+					clearInterval(ct);
+					codeTime=60;
+				}
+				$(".codeBtn2 span").text(codeTime);
+			},1000);
+
+		});
+
+		//提交验证码
+		$(".gameEndBtn1").on("touchstart",function(){
+			if(isTel==false){
+				var code=$(".code").val();
+				var tel=$(".tel").val();
+				var telReg = !!tel.match(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/);
+				if(code==""){
+					alert("请输入验证码！");
+					return;
+				}
+				if(tel==""){
+					alert("请填写手机号码！");
+					return;
+				}
+				if(!telReg){
+					alert("手机号码输入有误！");
+					return;
+				}
+			}
+			window.location.href="rock.html";
+		});
+
+	</script>
+	<script type="text/javascript" src="https://upa.unionpaysecure.com/sampler/ubass.js?sysId=up_wallet_mb"></script>
+</body>
+</html>

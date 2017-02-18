@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>碧悠</title>
+	<link rel="stylesheet" href="css/up.css">
+</head>
+<body>
+	<audio id="music" loop="loop">
+		<source src="images/music.mp3" type="audio/mpeg" />
+	</audio>
+<div class='all' id='box'>	
+		<div class="musicIcon round"></div>
+	      <section class='page loading'>
+	      	     <div class='loadingbox'>
+                      <img src="images/loading.gif" />
+	      	     </div>
+	      </section>
+	      <section class='page page1 youpage hide'>
+	      		<div class="logo"></div>
+	      	     <div class='page1_sp1'></div>
+	      	     <div class='page1_sp2'></div>
+	      	     <div class='page1_sp3'></div>
+	      	     <div class='page1_sp5'></div>
+	      	     <div class='page1_sp4'></div>
+	      	     <div class='page1_sp6'></div>
+	      </section>
+	      <section class='page page2 youpage hide'>
+	      		<div class="logo"></div>
+	      	     <div class='page2_sp1'></div>
+	      	     <div class='page2_sp2'></div>
+	      	     <div class='page2_sp5'></div>
+	      	     <div class='page2_sp3'></div>
+	      	     <div class='page2_sp4'></div>
+	      	     <div class='page2_sp6'></div>
+	      </section>
+	      <section class='page page3 youpage hide'>   
+	      		<div class="logo"></div>
+	      	     <div class='page3_sp1'></div>
+	      	     <div class='page3_sp2'></div>
+	      	     <div class='page3_sp3'></div>
+	      	     <div class='page3_sp5'></div>
+	      	     <div class='page3_sp4'></div>
+	      	     <div class='page3_sp6'></div>
+	      </section>
+	      <section class='page page4 youpage hide'>
+	      	     <div class='page4_sp1'></div>
+	      	     <div class='page4_sp2'></div>
+	      	     <div class='page4_sp3'></div>
+	      	     <a class='page4_sp4' href="../20161129/coupon.html"></a>
+	      	     <div class='page4_sp5'></div>
+	      </section>
+	      <img src="images/xx.png" alt="" class='jt hide' id='aab'>
+</div>
+      <script src='js/jquery.1.10.1.min.js'></script>
+      <script src='js/up.js'></script>
+      <script>
+            $(function(){
+            	 up.init();
+            });
+            //点击音乐按钮
+	    	$(".musicIcon").on("click",function(){
+	    		if($(this).hasClass("round")){
+	    			$(".musicIcon").css("background","url(images/music0.png) no-repeat");
+	    			$(".musicIcon").removeClass("round");
+	    			$("#music")[0].pause();
+	    		}else{
+	    			$(".musicIcon").css("background","url(images/music.png) no-repeat");
+	    			$(".musicIcon").addClass("round");
+	    			$("#music")[0].play();
+	    		}
+	    		
+	    	});
+      </script>
+</body>
+</html>

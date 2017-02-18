@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layer.js"></script>
+</head>
+<body>
+<div class="rewards-star1"></div>
+<div class="rewards-star2"></div>
+<div class="rewards-img1"></div>
+<div class="rewards-img2"></div>
+<!--转盘-->
+<div class="rewards-zhuanpan">
+    <div class="rewards-arrow"></div>
+</div>
+<!--抽奖机会-->
+<div class="rewards-cjjh">抽奖机会<em>0</em>次</div>
+<!--中奖-->
+<div class="rewards-fail popup hide">
+    <div class="popup-inner">
+        <div class="popup-title">再接再厉</div>
+        <div class="popup-content rewards-fail-content ">游戏如人生，<br>哪里跌倒，哪里爬起<br>继续过五关斩六将！</div>
+        <a class="popup-sure  rewards-fail-sure" href="index.html"></a>
+    </div>
+</div>
+<!--填写手机号-->
+<div class="rewards-tel popup hide">
+    <div class="tel-inner">
+        <div class="tel-title">恭喜获得<br><em>500元购物卡</em></div>
+        <div class="tel-content ">
+            <div class="tel-ower">
+                <em>姓名：</em>
+                <input type="text">
+            </div>
+            <div class="tel-num">
+                <em>电话：</em>
+                <input type="tel">
+            </div>
+            <p>请准确填写信息，否则将影响奖品发放</p>
+        </div>
+        <input class="tel-sure" type="submit">
+    </div>
+</div>
+<!--手机号提交成功-->
+<div class="submit-tel popup hide">
+    <div class="popup-inner">
+        <div class="popup-title">提交成功</div>
+        <div class="popup-content submit-tel-content ">奖品将在活动结束后<br>15个工作日内发放。</div>
+        <a class="popup-sure  submit-tel-sure" href="index.html"></a>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var cjjh=0;
+        var status = 1;//0未开始1正常2已结束
+        var time = 1;//可抽奖次数
+
+        var prize = 180; //5为未中奖角度设置
+        var prized=0;
+        var num = 4;//0为500元购物卡，1为100元购物卡，2为50元话费，3为10元话费,4,5为未中奖
+        var prize1 = "500元购物卡";//一等奖名称
+        var prize2 = "100元购物卡";//二等奖名称
+        var prize3 = "50元话费";//三等奖名称
+        var prize4 = "10元话费";//四等奖名称
+        if (status == 0) {
+            layer.open({
+                content: '本次活动还未开始,请耐心等待!'
+                ,shade: false
+                ,style: 'background-color: rgba(0,0,0,.8);font-size:24px; color:#fff; border:none;width:70%;' //自定风格
+                ,time: 3
+            });
+        }else if (status == 2) {
+            layer.open({
+                content: '本次活动已经结束了！'
+                ,shade: false
+                ,style: 'background-color: rgba(0,0,0,.8);font-size:24px; color:#fff; border:none;width:70%;' //自定风格
+                ,time: 3
+            });
+        }else {
+            $(".rewards-arrow").one('click',function () {//抽奖方法
+                if (time > 0) {
+                    num = parseInt(Math.random() * 6);//随机数
+                    switch (num) {
+                        case 0:
+                            prize = 300;
+                            break;
+                        case 1:
+                            prize = 60;
+                            break;
+                        case 2:
+                            prize = 120;
+                            break;
+                        case 3:
+                            prize = 240;
+                            break;
+                        case 4:
+                            prize = 180;
+                            break;
+                        case 5:
+                            prize = 360;
+                            break;
+                    }
+                    prized=prized+2880;
+                    prize = prize + prized;
+                    $(".rewards-arrow").css({
+                        "-webkit-transform": "rotate(" + prize + "deg)",
+                        "-webkit-transition": "-webkit-transform 5s",
+                    });
+                    setTimeout(function () {
+                        $(".shade").hide();
+                        if (num <= 3) {
+                            if (num == 0) {
+                                $('.tel-title em').html(prize1);
+                            } else if (num == 1) {
+                                $('.tel-title em').html(prize2);
+                            } else if (num == 2) {
+                                $('.tel-title em').html(prize3);
+                            }else if (num == 3) {
+                                $('.tel-title em').html(prize4);
+                            }
+                            //获得奖品
+                            $('.rewards-tel').show();
+                            $('.tel-sure').click(function () {
+                                var name=$('.tel-ower input').val();
+                                var phone = $('.tel-num input').val();
+                                var myreg = /(^1[3|4|5|7|8][0-9]{9}$)/;
+                                if (!myreg.test(phone)) {
+                                    $('.tel-content p').html('请输入有效的手机号码！').addClass('active');
+                                } else {
+                                    $('.rewards-tel').hide();
+                                    $('.submit-tel').show();
+                                    /*验证手机号成功*/
+                                    alert('成功');
+                                }
+                                if(name==''){
+                                    $('.tel-content p').html('请输入姓名！').addClass('active');
+                                }
+                            });
+                        }
+                        else {
+                            $('.rewards-fail').show();
+                        }
+                    }, 5500);
+                    time--;
+                    $('.rewards-fail-sure').click(function () {
+                        $('.rewards-fail').hide();
+                        $(".rewards-arrow").css({
+                            "-webkit-transform": "rotate(0deg)",
+                            "-webkit-transition": "-webkit-transform 0s",
+                        });
+
+                    });
+                    prize=0;
+                    prized=0;
+
+                } else {
+                    layer.open({
+                        content: '您的抽奖次数已经用完！'
+                        ,shade: false
+                        ,style: 'background-color: rgba(0,0,0,.8);font-size:24px; color:#fff; border:none;width:70%;' //自定风格
+                        ,time: 3
+                    });
+                }
+
+            });
+        }
+
+
+
+    });
+</script>
+</body>
+</html>

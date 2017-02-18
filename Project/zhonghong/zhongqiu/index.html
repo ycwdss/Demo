@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>花好月圆 礼遇中秋</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<section class="bg1 ycenter"></section>
+	<section class="index center">
+		<div class="indexTop">
+			<div class="logo"></div>
+			<div class="pic center"></div>
+		</div>
+		<a href="game.html" id="indexStart" class="indexBtn1 center">
+			<img src="images/indexBtn1.png" />
+		</a>
+		<a href="javascript:;" id="indexRule" class="indexBtn2 center">
+			<img src="images/indexBtn2.png" />
+		</a>
+	</section>
+	<section class="shade center"></section>
+	<section class="rule ycenter">
+		<h3 class="ruleTit">游戏攻略</h3>
+		<div class="ruleInfo">
+			<p>1.活动时间：9月14日至9月18日；</p>
+			<p>2.关注“银联钱包”微信公众号参与互动游戏，游戏时间30秒，吃到月饼加50分，吃到小蛤蟆减20分；</p>
+			<p>3.30秒内获得600分即有机会抽奖，奖品随机为立减包或优惠券，<span class="red">每人最多有3次抽奖机会；</span></p>
+			<p>4.为保证公平，抽奖前需输入手机号码，通过短信验证后才可以领取大礼包；</p>
+			<p>5.奖品将发放至领奖手机号对应钱包账户中，优惠券于2天内发放，立减包于活动结束后10个工作日统一发放。</p>
+			<p>6.使用优惠券或立减包，需注册银联钱包APP，并完成绑卡及实名认证。</p>
+		</div>
+		<a href="javascript:;" id="ruleBtn" class="ruleBtn">
+			<img src="images/ruleBtn.png" />
+		</a>
+	</section>
+	<script type="text/javascript">
+		$(function(){
+			$(".pic").css({"background-size":"100% 100%"});
+		});
+		//显示游戏攻略
+		$(".indexBtn2").on("touchstart",function(){
+			$(".shade").fadeIn(300);
+			$(".rule").fadeIn(300);
+		});
+		//隐藏游戏攻略
+		$(".ruleBtn").on("touchstart",function(){
+			$(".shade").fadeOut(300);
+			$(".rule").fadeOut(300);
+		});
+	</script>
+	<script type="text/javascript" src="https://upa.unionpaysecure.com/sampler/ubass.js?sysId=up_wallet_mb"></script>
+</body>
+</html>

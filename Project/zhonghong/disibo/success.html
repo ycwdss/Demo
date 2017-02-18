@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+	<title>中国银联95516</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script>
+</head>
+<body>
+	<!-- 页面 -->
+	<section class="success center">
+      <a href="javascript:;" class="btn center successBtn1">去埃及</a>
+      <a href="javascript:;" class="btn center successBtn2">去抽奖</a>
+	</section>
+  <!-- 页面 -->
+  <section class="success2 center">
+      <img class="upd absolute" src="images/upd2.png" />
+      <img class="upm absolute" src="images/upm2.png" />
+      <img class="updF absolute" src="images/updF2.png" />
+      <img class="upmF absolute" src="images/upmF3.png" />
+  </section>
+	<!-- 遮盖层 -->
+
+  <section class="shade"></section>
+	<section class="shade2"></section>
+  
+    <script type="text/javascript">
+    	var ut;
+    	$(function(){
+  			ut=GetQueryString("ut"); 
+        wxshare(ut);
+        addAccess(ut,"success");
+        animate2();
+    	});
+
+      // 去埃及
+      $(".successBtn1").on("click",function(){
+        window.location.href="http://tour.9588.com/unionhotel/index.html?link=1&ran=1&from=singlemessage";
+
+      });
+      // 去抽奖
+      $(".successBtn2").on("click",function(){
+        window.location.href="luck.html?ut="+ut;
+      });
+      
+      // 动画
+      function animate2(){
+        $(".upd,.upm").fadeIn();
+        setTimeout(function(){
+          $(".updF").css("top","400px").fadeIn(300);
+        },1000);
+        setTimeout(function(){
+          $(".updF").fadeOut();
+          $(".upmF").css("top","360px").fadeIn(300);
+        },3000);
+        // setTimeout(function(){
+        //   $(".shade2").fadeIn(1000).fadeOut(1000);
+        // },5000);
+        // setTimeout(function(){
+        //   $(".updF").fadeOut();
+        //   $(".upm").attr("src","images/upm3.png").fadeIn();
+        //   $(".upd").attr("src","images/upd4.png").fadeIn();
+        // },6000);
+        // setTimeout(function(){
+        //   $(".upmF").attr("src","images/upmF3.png").css("top","480px").fadeIn(300);
+        // },7500);
+        // setTimeout(function(){
+        //   $(".upmF").fadeOut();
+        //   $(".updF").attr("src","images/updF4.png").css("top","420px").fadeIn(300);
+        // },9000);
+        // setTimeout(function(){
+        //   $(".updF").fadeOut();
+        //   $(".upm").attr("src","images/upm4.png").fadeIn();
+        //   setInterval(function(){
+        //     var upmSrc=$(".upm").attr("src");
+        //     if(upmSrc=="images/upm4.png"){
+        //       $(".upm").attr("src","images/upm5.png");
+        //     }else{
+        //       $(".upm").attr("src","images/upm4.png");
+        //     }
+        //   },500);
+        //   $(".upmF").attr("src","images/upmF4.png").css("top","400px").fadeIn(300);
+        // },5000);
+        setTimeout(function(){
+          $(".success2").fadeOut(300);
+        },6000);
+      }
+	</script>
+</body>
+</html>

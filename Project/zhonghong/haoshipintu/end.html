@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>好时</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/simArr.js"></script>
+    <script src="js/layer.js"></script>
+</head>
+<body>
+<!--拼图完成-->
+<section id="end">
+    <div class="tab-head">
+        <img src="images/logo-horiz.png">
+        <div class="tab-inner">
+            <a>我的作品</a>
+            <a>模板</a>
+        </div>
+    </div>
+    <img class="end-tips" src="images/over-tips.png">
+    <div class="end-wrap">
+        <div class="end-show clearfix">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="end-explain">每袋好时KISSES 500g产品内含约105-110颗巧克力，每袋仅有一种颜色。<span> 请根据您所用巧克力颜色和数量来购买相应颜色KISSES 500g产品的袋数哦！</span></div>
+    <!--所用巧克力-->
+    <dl class="end-num new-end-num clearfix">
+        <dt>您所用的巧克力</dt>
+        <dd>
+            <ul class="choco-class clearfix">
+            </ul>
+        </dd>
+    </dl>
+    <dl class="end-state">
+        <dt><img src="images/circle.png"></dt>
+        <dd>
+            马上将自己的拼图分享给朋友，<br>
+            即可开启<img src="images/jd.png">好时缤纷专场
+        </dd>
+
+    </dl>
+    <div class="end-sharebtn">
+        <a href="#">分享给朋友</a>
+        <a href="http://chaoshi.jd.com">京东超市</a>
+    </div>
+    <!--分享弹框-->
+    <div class="end-share popup hide">
+        <img class="popup-scale" src="images/end-share.png">
+    </div>
+    <!--成功分享后去京东-->
+    <div class="go-jd popup hide">
+        <div class="popup-inner popup-scale">
+            <div class="popup-close"></div>
+            <div class="go-jd-content ">
+                <img src="images/jd.png">
+                好时缤纷专场的大门已经开启
+            </div>
+            <a class="popup-sure" href="https://shop.m.jd.com/?shopId=1000075682">即刻点击前往</a>
+        </div>
+    </div>
+</section>
+<script src="js/sha1.js"></script>
+<script src="js/wx3Tool.js"></script>
+<script src="js/wxshare.js"></script>
+<script src="js/end.js"></script>
+<script src="js/wxSH.js"></script>
+</body>
+</html>

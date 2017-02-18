@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>绿色账户-吾家有花初长成</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="room center">
+		<a href="index.html" class="roomBtn"></a>
+		<div class="roomTool">
+			<div class="tool tool1">
+				<a class="toolImg hide" href="javascript:;"><img src="images/tool1.png" /></a>
+				<div class="toolImg2"><img src="images/tool1-0.png" /></div>
+			</div>
+			<div class="tool tool2">
+				<a class="toolImg hide" href="javascript:;"><img src="images/tool2.png" /></a>
+				<div class="toolImg2"><img src="images/tool2-0.png" /></div>
+			</div>
+			<div class="tool tool3">
+				<a class="toolImg hide" href="javascript:;"><img src="images/tool3.png" /></a>
+				<div class="toolImg2"><img src="images/tool3-0.png" /></div>
+			</div>
+			<div class="tool tool4">
+				<a class="toolImg hide" href="javascript:;"><img src="images/tool4.png" /></a>
+				<div class="toolImg2"><img src="images/tool4-0.png" /></div>
+			</div>
+		</div>
+		<div class="flowerShadow center"></div>
+
+		<div class="flower center">
+			<img src="images/flower1-8.png" />
+		</div>
+
+		<!-- 进度条 -->
+		<div class="energy center">
+			<div class="progressBox">
+				<img class="progress" src="images/progress.png" />
+			</div>
+			<span class="energyNum">0</span>
+		</div>
+
+		<a class="roomBtn2 center" href="javascript:;"><img src="images/roomBtn2.png" /></a>
+
+		<!-- 浇水 -->
+		<div class="jug"></div>
+		<div class="water hide"></div>
+
+		<!-- 除草 -->
+		<div class="sickle hide"></div>
+		<div class="star hide"></div>
+
+		<!-- 施肥 -->
+		<div class="npk hide"></div>
+
+		<!-- 阳光 -->
+		<div class="sun hide"></div>
+	</section>
+
+	<section class="shade"></section>
+	<section class="share center hide"></section>
+	<section class="prizeWin prizeWin1 yCenter hide">
+		<h3>恭喜获得奖品</h3>
+		<p>上海电信流量包50M一份</p>
+		<a class="prizeWinBtn prizeWinBtn1" href="javascript:;"><img src="images/prizeWinBtn.png" /></a>
+	</section>
+	<section class="prizeWin prizeWin2 yCenter hide">
+		<h3>恭喜获得奖品</h3>
+		<p>上海电信流量包50M一份</p>
+		<a class="prizeWinBtn prizeWinBtn2" href="javascript:;"><img src="images/formWinBtn.png" /></a>
+	</section>
+	<section class="formWin yCenter hide">
+		<div class="formWinBg">
+			<input class="name" type="text" placeholder="请输入您的姓名" />
+			<input class="tel" type="text" placeholder="请输入您的手机号码" maxLength=11 />
+			<p class="formTips">*手机号只用于领取奖品，我们将对您的信息进行保密。</p>
+		</div>
+		<a class="formWinBtn" href="javascript:;"><img src="images/prizeWinBtn.png" /></a>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/room.js"></script>
+	<script type="text/javascript">
+		var isFull=0;//花室是否有花在种植 0为没有，1为有 数据库传值
+		var isTel=1;//是否已经填写信息 0为未填写 1为已填写
+		$(window).load(function(){
+			isFull=1;//入库
+			if(isTool1==0){
+				$(".tool1>.toolImg").show();
+				$(".tool1>.toolImg2").hide();
+			}
+			funShape();
+			funNlz();
+			if(flowerShape==3){
+				$(".tool>.toolImg").hide();
+				$(".tool>.toolImg2").show();
+			}
+		});
+
+		$(".roomBtn2").on("click",function(){
+			$(".shade").fadeIn(300);
+			if(isTel==0){
+				$(".prizeWin1").fadeIn(300);
+			}else{
+				$(".prizeWin2").fadeIn(300);
+			}
+			
+			
+		});
+		$(".prizeWinBtn1").on("click",function(){
+			$(".prizeWin").fadeOut(300);
+			$(".formWin").fadeIn(300);
+		});
+
+		$(".prizeWinBtn2").on("click",function(){
+			isFull=0;//清空花室 入库
+			window.location.href="fruit.html";
+		});
+
+		$(".formWinBtn").on("click",function(){
+			var name=$(".name").val();
+			var tel=$(".tel").val();
+			var telReg = !!tel.match(/^\d{11}$/);
+			if(name==""||tel==""){
+				alert("信息输入不完整，请重新输入！");
+			}else if(telReg==false){
+				alert("手机号码输入不正确，请重新输入！");
+				$(".tel").val("");
+			}else{
+				//此处须把name tel值传入数据库
+				isFull=0;//清空花室 入库
+				window.location.href="fruit.html";
+			}
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/cyTool.js"></script>
+        <script type="text/javascript" src="js/sha1.js"></script>
+        <script type="text/javascript" src="js/wx3Tool.js"></script>
+    <script type="text/javascript">
+        var domain = window.location.host;
+        var appId = "wx2f9b5feaa383c3b7";
+        var wx3Tool = new Wx3Tool(wx);
+        var timestamp = wx3Tool.getCurrentSeconts();
+        var nonceStr = wx3Tool.getNonceStr();
+        var ticket = _data.getJsApiTicket;
+        var signature = wx3Tool.getSignature(ticket, nonceStr, timestamp);
+        var jsApiList = [
+            'hideOptionMenu',
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'showOptionMenu',
+            'hideMenuItems'];
+        wx3Tool.wxConfig(false, appId, timestamp, nonceStr, signature, jsApiList);
+        wx.ready(function () {
+            wx3Tool.hideMenu();
+        });
+
+    </script>
+</head>
+<body>
+<div class="blessBg"></div>
+<div class="bless-content">
+    <textarea autofocus></textarea>
+</div>
+<div class="bless-btn"></div>
+<!--弹框输入姓名-->
+<div class="bless-author popup">
+    <div class="popup-inner popup-scale">
+        <p class="author-title"><img src="images/bless-author.png"></p>
+        <p class="author-name"><input type="text"></p>
+        <p class="author-tips">您忘记输入姓名啦~</p>
+        <div class="author-sure"></div>
+    </div>
+</div>
+<!--隐藏数据-->
+<input class="author-hidden" type="hidden">
+<script type="text/javascript">
+
+    $(function () {
+        ut = GetQueryString("ut");
+        //添加页面访问记录
+        addAccess(ut, 'bless');
+        //页面分享
+        wxshare1(ut);
+
+
+        setTimeout(function () {
+            $('.bless-author ').show();
+        }, 300);
+        //输入姓名
+        $('.author-name input').keyup(function () {
+            var nameVal = $('.author-name input').val();
+            if (nameVal == '') {
+                $('.author-tips').css('visibility', 'visible');
+            } else {
+                $('.author-tips').css('visibility', 'hidden');
+            }
+        });
+        $('.author-sure').on('click', function () {
+            var nameVal = $('.author-name input').val();
+            if (nameVal == '') {
+                $('.author-tips').css('visibility', 'visible');
+            } else {
+                $('.author-tips').css('visibility', 'hidden');
+                $('.bless-author ').hide();
+                $('.author-hidden').val(nameVal);
+            }
+
+        });
+        $('.bless-content textarea').focus();
+
+        $('.bless-btn').on('click', function () {
+            var blessing = $('textarea').val();
+            var sendName = $('.author-hidden').val();
+
+            if (blessing == '') {
+                alert('您还没给小伙送祝福呢，不能提交哦~')
+            } else {
+                $.ajax({
+                    url: http + _data.addPlayRecord,
+                    data: {
+                        ut: ut,
+                        blessing: blessing,
+                        name:sendName
+                    },
+                    type: "POST",
+                    async: false,
+                    success: function (data) {
+                        window.location.href = "rockbless.html?ut=" + ut;
+                    },
+                    error: function () {
+
+                    }
+                });
+                $('.bless-content textarea').focusout();
+                $('.bless-content textarea').attr('readonly', 'readonly');
+            }
+
+        })
+
+
+    })
+</script>
+</body>
+</html>

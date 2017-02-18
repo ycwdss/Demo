@@ -1,0 +1,302 @@
+body{
+	margin:0;
+	background-color: #fff;
+	font-family: "微软雅黑";
+	letter-spacing:0px;
+   color: #555;
+   font-size: 26px;
+}
+ul,li,a,h1,h2,h3,h4,h5,h6,p,input,textarea,span{margin: 0;padding: 0;list-style:none;text-decoration: none;box-sizing:content-box;   }
+img{display: block;}
+/*global*/
+.fixed{ 
+   *zoom:1;
+}
+
+.fixed:after{
+   content: ".";
+   height:0;
+   clear:both;
+   overflow: hidden;
+   display: block;
+}
+/*定位居中*/
+.center{left: 0;right: 0;margin: auto;position: absolute;}
+
+#loading{background:#fff;width: 640px;height: 100%; position: fixed;}
+.loadIcon{
+    width:124px;
+    height:124px;
+    left:0;top:0;right:0;bottom:0;
+    margin:auto;
+}
+
+/*公用*/
+.box{width: 640px;height: 1040px;background: url(../images/bg.png) no-repeat;position: absolute;}
+.shade{width: 640px;height: 100%;background: rgba(0,0,0,0.7);display: none;position: fixed;}
+/*首页*/
+.logo{width: 640px;height: 74px;top: 20px;background: url(../images/logo.png) no-repeat;}
+.indexTheme{width: 640px;height: 1040px;background: url(../images/indexTheme.png) no-repeat;}
+.indexBtn{width: 250px;height: 78px;top: 760px;}
+.indexBtn img{width: 250px;height: 78px;}
+.indexBtn2{width: 250px;height: 78px;top: 850px;}
+.indexBtn2 img{width: 250px;height: 78px;}
+.indexRule{width: 150px;height: 60px;top: 930px;font-size: 28px;text-align: center; display: block;border-bottom: 3px solid #723b14;color: #723b14;line-height: 60px;}
+.rule{width: 480px; height: 750px;display: none; padding: 20px;position: fixed; top: 0;bottom: 0;left: 0;right: 0;margin: auto;background: #f1e3c0;border: 5px solid #fff;border-radius: 40px;}
+.rule h3{width: 480px;text-align: center;font-size: 35px;font-weight: 800;margin: 30px auto;}
+.rule .content{width: 460px;height: 600px; overflow: auto;padding: 0 10px;}
+.rule .content p{font-size: 24px;text-align: justify;line-height: 40px;}
+.rule .close{display: block;width: 70px;height: 70px;background: url(../images/close.png) no-repeat;position: absolute;top: -20px;right: -20px;}
+.indexWin{display: none; width: 466px;height: 600px;background: url(../images/winBg1.png) no-repeat;background-size: 100% 600px; position: fixed;top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
+.indexWin .title{width: 420px;height: 110px;margin: 15px auto 0;}
+.indexWin .title img{width: 420px;height: 110px;}
+.indexWin .mty{width: 180px;height: 270px;margin: -30px auto 20px;}
+.indexWin .mty img{width: 180px;height: 270px;}
+.indexWin .font{width: 466px;font-size: 25px;color: #3a230a;text-align: center;}
+.indexWin .winBtn{width: 181px;height: 63px;display: block; margin: 15px auto;}
+.indexWin .winBtn img{width: 181px;height: 63px;}
+.indexWin .close{display: block;width: 70px;height: 70px;background: url(../images/close.png) no-repeat;position: absolute;top: 50px;right: -20px;}
+/*游戏页*/
+.gameTop{width: 640px;height: 155px;background: url(../images/gameTop.png) no-repeat;}
+.gameTime{width: 135px;height: 110px;float: left;text-align: center;font-size: 80px;font-weight: 800;color: #faeb13;line-height: 110px;}
+.gameNlb{width: 400px;height: 37px;margin: 15px 0 0 65px;float: left;}
+.gameNlb img{width: 42px;height: 37px;float: left;margin: 0 3px;}
+.gameBtn{width: 508px;height: 85px;top: 150px;}
+.gameBtn a{display: block;float: left;margin: 0 10px;}
+.gameBtn a img{width: 234px;height: 85px;}
+.gameBtn .gameBtn1{display: none;-webkit-animation: gameBtn1 0.5s infinite linear;}
+@-webkit-keyframes gameBtn1
+{
+   0%{-webkit-transform:translateY(0px)}
+   25%{-webkit-transform:translateY(8px);}
+   50%{-webkit-transform:translateY(0px);}
+   75%{-webkit-transform:translateY(-8px);}
+   100%{-webkit-transform:translateY(0px)}
+}
+
+.gameMty{width: 625px;top: 235px;}
+.gameMty img{width: 121px;height: 112px;float: left;margin: 0 2px;}
+.gameBg{width: 564px;height: 564px;padding: 25px; top: 350px; background: url(../images/gameBg.png) no-repeat;}
+.gameShade{display: none; width: 564px;height: 564px;padding: 25px; top: 350px;}
+.gameStart{width: 564px;height: 564px;position: relative;}
+.gameStart .color{width: 56px;height: 56px;position: absolute;}
+.gameStart .c1{background:url(../images/col1.png) no-repeat;}
+.gameStart .c2{background:url(../images/col2.png) no-repeat;}
+.gameStart .c3{background:url(../images/col3.png) no-repeat;}
+.gameStart .c4{background:url(../images/col4.png) no-repeat;}
+.gameStart .c5{background:url(../images/col5.png) no-repeat;}
+.gameStart .c1_1{background:url(../images/col1-1.png) no-repeat;}
+.gameStart .c2_1{background:url(../images/col2-1.png) no-repeat;}
+.gameStart .c3_1{background:url(../images/col3-1.png) no-repeat;}
+.gameStart .c4_1{background:url(../images/col4-1.png) no-repeat;}
+.gameStart .c5_1{background:url(../images/col5-1.png) no-repeat;}
+.gameStart .rotate{
+    display: inline-block;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-name: shake-rotate;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes shake-rotate {
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg)
+    }
+    2% {
+        -webkit-transform: translate(0px, 0px) rotate(-5.5deg)
+    }
+    4% {
+        -webkit-transform: translate(0px, 0px) rotate(1.5deg)
+    }
+    6% {
+        -webkit-transform: translate(0px, 0px) rotate(-7.5deg)
+    }
+    8% {
+        -webkit-transform: translate(0px, 0px) rotate(-7.5deg)
+    }
+    10% {
+        -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
+    }
+    12% {
+        -webkit-transform: translate(0px, 0px) rotate(-5.5deg)
+    }
+    14% {
+        -webkit-transform: translate(0px, 0px) rotate(-4.5deg)
+    }
+    16% {
+        -webkit-transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    18% {
+        -webkit-transform: translate(0px, 0px) rotate(3.5deg)
+    }
+    20% {
+        -webkit-transform: translate(0px, 0px) rotate(-6.5deg)
+    }
+    22% {
+        -webkit-transform: translate(0px, 0px) rotate(-5.5deg)
+    }
+    24% {
+        -webkit-transform: translate(0px, 0px) rotate(3.5deg)
+    }
+    26% {
+        -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
+    }
+    28% {
+        -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
+    }
+    30% {
+        -webkit-transform: translate(0px, 0px) rotate(5.5deg)
+    }
+    32% {
+        -webkit-transform: translate(0px, 0px) rotate(3.5deg)
+    }
+    34% {
+        -webkit-transform: translate(0px, 0px) rotate(-5.5deg)
+    }
+    36% {
+        -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
+    }
+    38% {
+        -webkit-transform: translate(0px, 0px) rotate(-1.5deg)
+    }
+    40% {
+        -webkit-transform: translate(0px, 0px) rotate(4.5deg)
+    }
+    42% {
+        -webkit-transform: translate(0px, 0px) rotate(6.5deg)
+    }
+    44% {
+        -webkit-transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    46% {
+        -webkit-transform: translate(0px, 0px) rotate(4.5deg)
+    }
+    48% {
+        -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
+    }
+    50% {
+        -webkit-transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    52% {
+        -webkit-transform: translate(0px, 0px) rotate(-7.5deg)
+    }
+    54% {
+        -webkit-transform: translate(0px, 0px) rotate(-1.5deg)
+    }
+    56% {
+        -webkit-transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    58% {
+        -webkit-transform: translate(0px, 0px) rotate(6.5deg)
+    }
+    60% {
+        -webkit-transform: translate(0px, 0px) rotate(-3.5deg)
+    }
+    62% {
+        -webkit-transform: translate(0px, 0px) rotate(-6.5deg)
+    }
+    64% {
+        -webkit-transform: translate(0px, 0px) rotate(1.5deg)
+    }
+    66% {
+        -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
+    }
+    68% {
+        -webkit-transform: translate(0px, 0px) rotate(2.5deg)
+    }
+    70% {
+        -webkit-transform: translate(0px, 0px) rotate(-4.5deg)
+    }
+    72% {
+        -webkit-transform: translate(0px, 0px) rotate(-1.5deg)
+    }
+    74% {
+        -webkit-transform: translate(0px, 0px) rotate(-6.5deg)
+    }
+    76% {
+        -webkit-transform: translate(0px, 0px) rotate(3.5deg)
+    }
+    78% {
+        -webkit-transform: translate(0px, 0px) rotate(-5.5deg)
+    }
+    80% {
+        -webkit-transform: translate(0px, 0px) rotate(1.5deg)
+    }
+    82% {
+        -webkit-transform: translate(0px, 0px) rotate(4.5deg)
+    }
+    84% {
+        -webkit-transform: translate(0px, 0px) rotate(-1.5deg)
+    }
+    86% {
+        -webkit-transform: translate(0px, 0px) rotate(-2.5deg)
+    }
+    88% {
+        -webkit-transform: translate(0px, 0px) rotate(-3.5deg)
+    }
+    90% {
+        -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
+    }
+    92% {
+        -webkit-transform: translate(0px, 0px) rotate(-0.5deg)
+    }
+    94% {
+        -webkit-transform: translate(0px, 0px) rotate(-6.5deg)
+    }
+    96% {
+        -webkit-transform: translate(0px, 0px) rotate(-7.5deg)
+    }
+    98% {
+        -webkit-transform: translate(0px, 0px) rotate(6.5deg)
+    }
+}
+.share{width: 640px;height: 800px;top: 0;display: none;position: fixed;top: 0;}
+.shareBtn{display: block; width: 181px;height: 63px;background: url(../images/winBtn2.png) no-repeat;position: absolute;top: 730px;left: 0;right: 0;margin: auto;}
+.gameSuc{display: none; width: 466px;height: 520px;background: url(../images/winBg1.png) no-repeat;position: fixed;top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
+.gameSuc .title{width: 420px;height: 110px;margin: 0 auto;}
+.gameSuc .title img{width: 420px;height: 110px;}
+.gameSuc .font{width: 400px;height: 120px;margin: 20px auto;}
+.gameSuc .winBtn{width: 181px;margin: 0 auto;}
+.gameSuc .winBtn a{width: 181px;height: 63px;display: block; margin-bottom: 15px;}
+.gameSuc .winBtn a img{width: 181px;height: 63px;}
+.gameSuc .tips{width: 466px;text-align: center;font-size: 26px;}
+.gameOver{display: none; width: 400px;height: 300px;background: #f1e3c0;border: 8px solid #fff;border-radius: 30px;position: fixed;top: 0;right: 0;left: 0;bottom: 0;margin: auto;}
+.gameOver .font{width: 340px;height: 100px;margin: 30px auto 20px;}
+.gameOver .font img{width: 340px;height: 100px;}
+.gameOver .tips{width: 400px;text-align: center;font-size: 24px;}
+.gameOver .tips span{font-size: 32px;color: #ca0a0a;}
+.gameOver a{width: 181px;height: 63px;display: block;margin: 20px auto;}
+.gameOver a img{width: 181px;height: 63px;}
+.gameBefore{width: 540px;margin: auto;top: 260px;display: none;}
+.gameBefore .icon{width: 306px;height: 100px; margin: 0 auto;}
+.gameBefore .icon img{width: 306px;height: 100px;}
+.gameBefore .tips{margin: 30px auto;width: 540px;height: 130px;}
+.gameBefore .tips img{width: 540px;height: 130px;}
+.gameBefore .btn{width: 250px;height: 79px;margin: 0 auto;display: block;}
+.gameBefore .btn img{width: 250px;height: 79px;}
+.bizhi{width: 640px;height: 100%;display: none;position: fixed;}
+.bizhi img{width: 640px;height: 100%;}
+.bizhi p{width: 640px;padding: 30px 0;background: rgba(0,0,0,0.7); text-align: center;font-size: 24px;position: fixed;bottom: 0;color: #fff;}
+
+
+
+
+/*表单页*/
+.formBg{width: 640px;height: 100%;background: url(../images/bg2.png) no-repeat;position: absolute;}
+.form{top: 150px;width: 500px;}
+.formFont{width: 500px;height: 43px;margin-bottom: 40px;background: url(../images/formFont.png) no-repeat;}
+.formInput{width: 460px;height: 70px;padding: 0 20px;background: #fff;font-size: 25px;line-height: 70px;margin-bottom: 30px;border: none;border-radius: 10px;}
+.formTxt{width: 460px;height: 140px;padding: 10px 20px;background: #fff;font-size: 25px;line-height: 35px;margin-bottom: 30px;border: none;border-radius: 10px;}
+.formTips{color: #fff;width: 500px;margin: -20px auto 0;font-size: 22px;}
+.formBtn{width: 288px;height: 77px;display: block;margin: 40px auto;}
+.formBtn img{width: 288px;height: 77px;}
+.formWin{display: none; width: 400px;height: 180px;padding: 50px 0 20px; background: #f1e3c0;border: 8px solid #fff;border-radius: 30px;position: fixed;top: 0;right: 0;left: 0;bottom: 0;margin: auto;}
+.formWin .tips{width: 400px;text-align: center;font-size: 26px;line-height: 40px;}
+.formWin a{width: 181px;height: 63px;display: block;margin: 40px auto 0;}
+.formWin a img{width: 181px;height: 63px;}
+

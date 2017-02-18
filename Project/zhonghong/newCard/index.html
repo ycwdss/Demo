@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" href="css/newStyle.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="index-bg"></div>
+    <section class="index">
+        <!--loading-->
+        <div id="loading-wrap">
+            <div id="loading">
+                <div class="dot white"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <img class="index-logo" src="images/index3.png">
+        <div class="index-title"></div>
+        <div class="index-man"><img src="images/index1.png"></div>
+        <div class="index-btn">
+            <a class="btn" href="andCar.html" >生成卡片</a>
+            <a class="btn" href="bigWheelAnd.html">我要抽奖</a>
+            <a class="btn">昭告天下</a>
+            <a class="index-state">游戏规则</a>
+        </div>
+        <!--活动说明弹窗-->
+
+        <div class="rule-popup hide">
+                <div class="rule-title">游戏规则</div>
+                <div class="rule-text">
+                    <dl class="clearfix">
+                        <dt>活动时间</dt>
+                        <dd>即日起至2016年12月21日</dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>活动对象</dt>
+                        <dd>上海移动用户</dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>活动内容</dt>
+                        <dd>
+                            <ul>
+                                <li class="clearfix"><em>1、</em><span>【中国银联95516】微信用户点击菜单【查】-【银联和粉卡】参与游戏。</span></li>
+                                <li class="clearfix"><em>2、</em><span>点击“我要办卡”，提交姓名、生日、额度（上限为62亿）生成银联和教授粉丝卡，生成后请及时点击图片，并长按保存，否则需重新生成。每位用户活动期间可生成卡片次数不限。卡片为虚拟卡，不具实际消费功能。</span></li>
+                                <li class="clearfix"><em>3、</em><span>成功生成卡片即可进入抽奖，有机会获得100M上海移动超套本地数据流量，每位用户每天有一次抽奖机会，且每日抽奖机会仅限当日使用，不累计到次日。中奖后，用户需到和教授微信公众号（微信号：doctorand）上进行兑换。</span></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>活动细则</dt>
+                        <dd>
+                            <ul>
+                                <li class="clearfix"><em>1、</em><span>活动期间，每个微信号仅限中奖一次，中奖后请到和教授微信公众号（微信号：doctorand）上进行兑换，<strong>流量将在兑换后24小时内到账。</strong></span></li>
+                                <li class="clearfix"><em>2、</em><span>用户参与活动所形成的流量支出由用户本人负责。</span></li>
+                                <li class="clearfix"><em>3、</em><span>在活动期间，若有用户通过违法违规方式参与本次活动，主办方有权取消该用户参与资格。</span></li>
+                                <li class="clearfix"><em>4、</em><span>在活动期间，如发生不可抗力事件或脱离主办方控制情况致使游戏无法正常进行时，活动主办方有权取消、暂停、修改或终止本活动。</span></li>
+                                <li class="clearfix"><em>5、</em><span>如用户对于本活动有任何问题请于2017年1月10日之前提出，如未在上述期限内提出，后续不再进行处理。用户可致电中国银联客服热线95516进行咨询，<strong>流量兑换问题可致电上海移动客服热线10086进行咨询。</strong></span></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="rule-back">返回</div>
+            </div>
+
+        <!--分享-->
+        <div class="share-popup popup hide">
+            <img src="images/index4.png">
+        </div>
+
+    </section>
+<script>
+    $(function () {
+        $('.index-btn a:nth-of-type(3)').click(function () {
+            $('.share-popup').show();
+            $('.share-popup img').addClass('popup-scale').show();
+        });
+        $('.index-state').click(function () {
+            $('.rule-popup').show();
+        });
+        $('.rule-back').click(function () {
+            $('.rule-popup').hide();
+        });
+        $('.index-btn a:nth-of-type(1)').click(function () {
+            $('.tips-popup').show();
+            $('.tips-popup .popup-inner').addClass('popup-scale').show();
+        });
+        $('.share-popup').click(function () {
+            $(this).hide();
+        });
+        //loading
+        document.onreadystatechange = loading;
+        function loading() {
+            if (document.readyState == "complete") {
+                $("#loading-wrap").hide();
+            }
+        }
+    })
+</script>
+</body>
+</html>

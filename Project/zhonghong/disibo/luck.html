@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+	<title>中国银联95516</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script></head>
+<body>
+	<!-- 页面 -->
+	<section class="bg2 center"></section>
+	<section class="luck center">
+    <div class="dishBg">
+      <div class="dish center"></div>
+      <a href="javascript:;" class="dishStart center"></a>
+    </div>
+    <div class="luckTime fixed"><label>剩余次数</label><span class="luckNum">0</span></div>
+    <a href="javascript:;" class="luckBtn btn">返回</a>
+	</section>
+	<!-- 遮盖层 -->
+
+	<section class="shade"></section>
+  <!-- 助力成功 -->
+  <section class="win formWin ycenter">
+      <h3>输入信息抽奖咯</h3>
+      <div class="formWinDiv fixed">
+        <label>姓名</label>
+        <input type="text" class="name" maxlength='11' />
+      </div>
+      <div class="formWinDiv fixed">
+        <label>电话</label>
+        <input type="tel" class="tel" maxlength='11' />
+      </div>
+      <p class="formWinTips">请准确填写信息，否则将影响奖品发放</p>
+      <a href="javascript:;" class="winBtn btn formWinBtn">确定</a>
+  </section>
+  <section class="win luckSucWin ycenter">
+    <h3>恭喜您<br />获得<span class="prize"></span>流量大奖</h3>
+    <p>奖品将在活动结束后<br />15个工作日内发放。</p>
+    <a href="javascript:;" class="winBtn btn luckSucWinBtn1">确定</a>
+  </section>
+
+  <section class="win luckFailWin ycenter">
+    <h2></h2>
+    <a href="javascript:;" class="winBtn btn luckFailWinBtn">确定</a>
+  </section>
+  <section class="share center">
+    <img src="images/share.png" />
+  </section>
+    <script type="text/javascript">
+      var plCount=0;//找齐线索次数
+      var playNum=0;//剩余抽奖次数
+      var isTel=null;//是否已经填写手机号
+      var openId;
+      var point=0;//转盘转动角度
+      var prize;//奖品
+      var ut;
+      $(function(){
+        ut=GetQueryString("ut");
+        wxshare(ut);
+        GetUserInfo(ut);
+        addAccess(ut,"luck");
+        $(".luckNum").text(playNum);
+        if(isTel==null){
+          $(".shade").show();
+          $(".formWin").show();
+        }
+      });
+
+
+      //抽奖
+      var sub=false;//防止重复点击
+      $(".dishStart").on("click",function(){
+        if(sub==true){return false;}
+        if(sub==false){
+          sub=true;
+          if(playNum<=0){
+            if(plCount<=0){
+              $(".luckFailWin h2").css("font-size","50px").html("你还没有开始找线索<br />集齐线索再来抽奖哦～");
+            }else if(plCount<3){
+              $(".luckFailWin h2").css("font-size","50px").html("抽奖机会用完啦<br />快来帮up妹找找线索吧");
+            }else{
+              $(".luckFailWin h2").html("抽奖机会用完啦<br />明天再来吧");
+            }
+            $(".shade").fadeIn(300);
+            $(".luckFailWin").fadeIn(300);
+            sub=false;
+          }else{
+            playNum--;
+            $(".luckNum").text(playNum);
+            // prize=0;
+            lottyPrize(ut);
+            sub=false;
+          }
+        }
+          
+      });
+    	//抽奖
+    	$(".formWinBtn").on("click",function(){
+        var name=$(".name").val();
+        var tel=$(".tel").val();
+        var telReg = !!tel.match(/^\d{11}$/);
+        if(name==""||tel==""){
+          alert("信息输入不完整！");
+        }else if(telReg==false){
+          alert("手机号码输入不正确，请重新输入！");
+        }else{
+          $(".shade").fadeOut(300);
+          $(".formWin").fadeOut(300);
+          $.ajax({
+                async:false,
+               type: "get",
+               url: 'http://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel='+tel,
+               dataType: "jsonp",
+               jsonp: "callback",
+               success: function(data){
+                  console.log(data);
+                  $('.error').css('display','none');
+                  var province = data.province,//省份
+                      num = data.telString;//手机号码
+                      operators = data.catName;//手机号类型
+                      updateUserTel(ut,name,tel,operators);
+               },
+               error:function (){    
+                  alert("手机号有误");        
+               }
+           });
+        }
+  		});
+
+      // 奔走相告
+      $(".luckSucWinBtn2").on("click",function(){
+        wxshare3(ut,prize);
+        $(".luckSucWin").fadeOut(300);
+        $(".share").fadeIn(300);
+      });
+
+      //确定
+      $(".luckSucWinBtn1,.luckFailWinBtn").on("click",function(){
+        $(".shade").fadeOut(300);
+        $(".win").fadeOut(300);
+      });
+
+      //返回
+      $(".luckBtn").on("click",function(){
+        window.location.href=http+_data.authIndex;
+      });
+
+      // 填写手机号
+      function updateUserTel(ut,name,tel,operators){
+        $.ajax({
+            url: http+_data.updateUserTel,
+            data: {
+                ut:ut,
+                name:name,
+                tel:tel,
+                operators:operators
+            },
+            type: "POST",
+            dataType: "json",
+            async: false,
+            success: function (data) {
+                console.log(data);
+                if(data.code>=100){
+                    
+                }else{
+                }
+            },
+            error: function () {
+              alert("网络异常");
+            }
+        });
+      }
+
+      // 抽奖
+      function lottyPrize(ut){
+        $.ajax({
+            url: http+_data.lottyPrize,
+            data: {
+                ut:ut
+            },
+            type: "POST",
+            dataType: "json",
+            async: false,
+            success: function (data) {
+                console.log(data);
+                if(data.code>=100){
+                  prize=parseInt(data.flow);//0未中奖 1为150M流量,2为500M流量
+                  luck(prize);
+
+                  point+=3600;
+                  $(".dish").css({"-webkit-transform":"rotate("+point+"deg)"});
+                  setTimeout(function(){
+                    if(prize>=1){
+                      $(".shade").fadeIn(300);
+                      $(".luckSucWin").fadeIn(300);
+                      return;
+                    }else{
+                      $(".luckFailWin h2").html("哎呀，<br />奖品溜走了……");
+                      $(".shade").fadeIn(300);
+                      $(".luckFailWin").fadeIn(300);
+                      return;
+                    }
+                    sub=false;
+                  },6000);
+                }else{
+                  alert(data.msg);
+                }
+            },
+            error: function () {
+              alert("网络异常");
+            }
+        });
+      }
+
+      function luck(x){
+        switch(x){
+          case 0:point+=0;
+          break;
+          case 150:point+=-36;$(".prize").text("150M流量");
+          break;
+          case 500:point+=36;$(".prize").text("500M流量");
+          break;
+        }
+      }
+	</script>
+</body>
+</html>

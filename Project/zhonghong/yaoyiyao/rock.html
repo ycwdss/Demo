@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/cyTool.js"></script>
+    <script type="text/javascript" src="js/sha1.js"></script>
+    <script type="text/javascript" src="js/wx3Tool.js"></script>
+    <script type="text/javascript">
+        var domain = window.location.host;
+        var appId = "wx2f9b5feaa383c3b7";
+        var wx3Tool = new Wx3Tool(wx);
+        var timestamp = wx3Tool.getCurrentSeconts();
+        var nonceStr = wx3Tool.getNonceStr();
+        var ticket = _data.getJsApiTicket;
+        var signature = wx3Tool.getSignature(ticket, nonceStr, timestamp);
+        var jsApiList = [
+            'hideOptionMenu',
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'showOptionMenu',
+            'hideMenuItems'];
+        wx3Tool.wxConfig(false, appId, timestamp, nonceStr, signature, jsApiList);
+        wx.ready(function () {
+            wx3Tool.hideMenu();
+        });
+
+    </script>
+</head>
+<body>
+<!--摇一摇页面-->
+<div class="rock-wrap">
+    <audio id="music" src="images/music.mp3" type="audio/mpeg"></audio>
+    <section class="rock center">
+        <div class="phone center"></div>
+    </section>
+    <input id="num" type="text" value="0" style="display:none;"/>
+</div>
+<!--摇一摇后显示-->
+<div class="bless-wrap center" style="display: none;">
+    <div class="bless-content" style="border: none;outline: none"></div>
+</div>
+<script type="text/javascript">
+
+    var ut;
+    var num = parseInt($("#num").val());//用于区分摇了几次
+    $(function () {
+        ut = GetQueryString("ut");
+        //添加页面访问记录
+        addAccess(ut, 'rock');
+        //页面分享
+        wxshare2(ut);
+
+        if (window.DeviceMotionEvent) {
+            var speed = 25;
+            var x = y = z = lastX = lastY = lastZ = 0;
+            window.addEventListener('devicemotion', function () {
+                var acceleration = event.accelerationIncludingGravity;
+                x = acceleration.x;
+                y = acceleration.y;
+
+                if (Math.abs(x - lastX) > speed || Math.abs(y - lastY) > speed) {
+                    if (num == 0) {//第一次摇奖
+                        $(".phone").addClass("round");
+                        $("#music")[0].play();
+                        setTimeout(function () {
+                            $.ajax({
+                                url: http + _data.getBlessing,
+                                data: {
+                                    ut: ut
+                                },
+                                type: "POST",
+                                async: false,
+                                success: function (data) {
+                                    var blessing = JSON.parse(data).blessing;
+                                    var name = JSON.parse(data).name;
+                                    $('.rock-wrap').hide();
+                                    $('.bless-wrap').show();
+                                    $('.bless-content').html(blessing+"<p style='text-align: right'>by"+name+"</p>");
+                                },
+                                error: function () {
+                                    alert("网络异常，请稍后再试");
+                                }
+                            });
+
+                        }, 1000);
+                        num = 1;
+                        $("#num").val(num);
+                    } else {
+
+                    }
+
+                }
+                lastX = x;
+                lastY = y;
+            }, false);
+        }
+    });
+
+
+</script>
+</body>
+</html>

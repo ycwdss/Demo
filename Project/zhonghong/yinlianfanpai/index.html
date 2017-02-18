@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!--开始-->
+<section id="index">
+    <!--loading-->
+    <div class="loading-wrap">
+        <div id="loading">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slogan"></div>
+    <div class="star"></div>
+    <!--能量-->
+    <div class="energy">
+        <img src="images/index-energy.png">
+        <div class="energy-inner">
+            <ul class="clearfix">
+                <li class="energy-gray"></li>
+                <li class="energy-gray"></li>
+                <li class="energy-gray"></li>
+                <li class="energy-gray"></li>
+            </ul>
+        </div>
+    </div>
+    <!--开始闯关-->
+    <div class="start-run"></div>
+    <!--答题换能量-->
+    <a class="faq-energy" href="faq.html"></a>
+    <!--奔走相告-->
+    <div class="share-btn"></div>
+    <!--活动说明-->
+    <div class="rule-btn">活动说明</div>
+    <!--活动说明弹窗-->
+    <div class="rule-popup popup hide">
+        <div class="rule-inner">
+            <img src="images/index-activity.png">
+            <div class="rule-text">
+                <dl class="clearfix">
+                    <dt>活动时间</dt>
+                    <dd>即日起至2016年12月5日</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt>活动内容</dt>
+                    <dd>
+                        <ul>
+                            <li class="clearfix"><em>1、</em><span>【中国银联95516】微信用户点击菜单【惠】-【银联喜翻礼】参与游戏。</span></li>
+                            <li class="clearfix"><em>2、</em><span>点击“开始闯关”进入游戏，在规定时间内翻开全部相同图案的牌子即可过关，游戏共设4关，通关后即可进入抽奖，有机会获得500元购物卡（15张）、100元购物卡（26张）、50元话费（200份）、10元话费（420份）。</span></li>
+                            <li class="clearfix"><em>3、</em><span>每位用户每天有2次游戏机会；点击“<strong>答题换能量</strong>”进入答题，答对即可额外获得1次游戏机会；点击“<strong>奔走相告</strong>”按提示发起求助，另一位用户点击助力后，发起者可额外获得1次游戏机会。</span></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt>活动细则</dt>
+                    <dd>
+                        <ul>
+                            <li class="clearfix"><em>1、</em><span>活动期间，每个微信号仅限中奖一次，中奖后请填写信息，奖品将在活动结束后15个工作日内统一发放（将通过短信发放购物卡至中奖手机，或直接为中奖手机充值话费）。</span></li>
+                            <li class="clearfix"><em>2、</em><span>用户参与活动所形成的流量支出由用户本人负责。</span></li>
+                            <li class="clearfix"><em>3、</em><span>在活动期间，若有用户通过违法违规方式参与本次活动，主办方有权取消该用户参与资格。</span></li>
+                            <li class="clearfix"><em>4、</em><span>因获奖用户个人原因（如信息填写不完整、不准确等）未能领到奖品，主办方不承担任何相应责任。</span></li>
+                            <li class="clearfix"><em>5、</em><span>在活动期间，如发生不可抗力事件或脱离主办方控制情况致使游戏无法正常进行时，活动主办方有权取消、暂停、修改或终止本活动。</span></li>
+                            <li class="clearfix"><em>6、</em><span>如用户对于本活动有任何问题请于2016年12月15日之前提出，如未在上述期限内提出，后续不再进行处理。用户可致电中国银联客服热线95516进行咨询。</span></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="rule-back"></div>
+        </div>
+    </div>
+    <!--分享-->
+    <div class="share-wrap popup hide"><img src="images/index-share.png"></div>
+    <!--能量耗尽-->
+    <div class="energy-out popup hide">
+        <div class="popup-inner">
+            <div class="popup-title energy-out-title ">能量耗尽</div>
+            <div class="popup-content energy-out-content">召唤小伙伴赐予能量，继续闯关</div>
+            <div class="popup-sure energy-out-sure"></div>
+        </div>
+    </div>
+</section>
+<!--游戏-->
+<section id="gamePage">    <!--游戏页-->
+    <div id="game">
+        <div class="level-title">
+            <div class="level-grade">Level <em>1</em></div>
+            <div class="level-bar">
+                <img src="images/index-clock.png">
+                <div class="level-progress"><span class="secs">25</span></div>
+            </div>
+        </div>
+        <div id="Box"></div>
+    </div>
+    <!--闯关失败-->
+    <div class="fail popup hide">
+        <div class="popup-inner">
+            <div class="popup-title fail-title ">闯关失败</div>
+            <div class="popup-content fail-content ">少年，吃点核桃<br>补补脑吧</div>
+            <a class="popup-sure fail-sure " href="index.html"></a>
+        </div>
+    </div>
+    <!--闯关成功 前去抽奖-->
+    <div class="success popup hide">
+        <div class="popup-inner">
+            <div class="popup-title success-title ">恭喜过关！<span></span></div>
+            <div class="popup-content success-content ">你通过了手速和记忆的<br>双重考验</div>
+            <a class="popup-sure success-sure " href="rewards.html"></a>
+        </div>
+    </div>
+    <!--闯过第三关-->
+    <div class="tiaozhan popup hide">
+        <div class="popup-inner">
+
+            <div class="popup-content  tiaozhan-content">还行，连闯3关！<br>
+                不过，前方更有“魔鬼关卡”！<br>
+                挑战成功可获得双倍抽奖机会！<br>
+                失败则失去本次抽奖机会！</div>
+            <a class="popup-sure no-tiaozhan" href="rewards.html"></a>
+            <a class="popup-sure  tiaozhan-sure" href="#"></a>
+        </div>
+    </div>
+</section>
+
+<script>
+    var cs = 3;
+    var cjjh=0;
+    //能量
+    for (var i = 0; i < cs; i++) {
+        $('.energy-inner ul li').eq(i).removeClass('energy-gray').addClass('energy-nomal');
+    }
+    //减次数
+    function jcs() {
+        cs--;
+        MyGame.renderMap();
+        $('#index').hide();
+        $('#gamePage').show();
+    }
+    ;
+    //能量消耗完毕
+    $('.energy-out-sure').click(function () {
+        $('.energy-out ').hide();
+    });
+
+    //奔走相告分享
+    $('.share-btn').click(function () {
+        $('.share-wrap').show();
+        $('.share-wrap img').addClass('popup-scale');
+    });
+    $('.share-wrap').click(function () {
+        $(this).hide();
+    });
+    //活动说明
+    $('.rule-btn').click(function () {
+        $('.rule-popup').addClass('popup-scale').show();
+
+    });
+    $('.rule-back').click(function () {
+        $('.rule-popup').hide();
+    });
+    //loading
+    document.onreadystatechange = loading;
+    function loading() {
+        if (document.readyState == "complete") {
+            $(".loading-wrap").hide();
+            $("#index").show();
+        }
+    }
+    ;
+
+</script>
+<script src="js/game.js"></script>
+
+</body>
+</html>

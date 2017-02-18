@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="faq-title">
+    <div class="title-inner"></div>
+</div>
+<!--答题区域-->
+<div class="faq-area">
+    <div class="faq-questions">
+        1.“中国银联95516”微信交易查询功能可能帮你查询多长时间以内的交易记录？
+    </div>
+    <ul class="faq-list faq0">
+        <li>半年以内的</li>
+        <li>1年以内的</li>
+        <li>2年以内的</li>
+        <li>没有上限，多久都行</li>
+    </ul>
+    <input class="faq-sure" type="submit">
+    <!--答对了-->
+    <div class="faq-popup popup  hide">
+        <div class="popup-inner">
+            <div class="popup-content faq-popup-content ">
+                <p>答对了</p>
+                <p>获得一次游戏机会</p>
+            </div>
+            <a class="popup-sure faq-popup-sure"></a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function () {
+        var questions = [
+                {
+                    "title": " “中国银联95516”微信交易查询过程中会收到几条短信验证码？",
+                    "answer": ["一无所有", "独一无二", "好事成双", "真尼玛多"]
+                },
+                {
+                    "title": "2、“中国银联95516”微信交易查询的正确打开方式是？",
+                    "answer": ["点击菜单栏查-查交易", "问小编呀", "大喊一声菠萝菠萝蜜", "打电话问妈妈"]
+                },
+                {
+                    "title": "3、“中国银联95516”微信交易查询可以查到什么小秘密？",
+                    "answer": ["小编家的地址", "店员的联系方式", "消费的商户", "店铺的推荐菜品"]
+                }
+            ]
+        ;
+
+        function data(num) {
+            $.each(questions, function (index, item) {
+                var data = questions;
+                var tmpl = '';
+                $('.faq-questions').html(data[num].title);
+                for (var i = 0; i < data[num].answer.length; i++) {
+                    tmpl += "<li>"+data[num].answer[i]+"</li>";
+                }
+                $('.faq-list').html(tmpl);
+            });
+        };
+        //答对了
+        function success() {
+            $('.faq-popup').show();
+            $('.popup-inner').addClass('popup-scale').show();
+            $('.faq-popup .faq-popup-content p:first-child').html('答对了');
+            $('.faq-popup .faq-popup-content p:last-child').html('获得一次游戏机会');
+            $('.faq-popup').click(function () {
+                window.location.href = 'index.html'
+            });
+        };
+
+        //答错了
+        function fail(num) {
+            $('.faq-popup').show();
+            $('.popup-inner').addClass('popup-scale').show();
+            $('.faq-popup .faq-popup-content p:first-child').html('答错了');
+            $('.faq-popup .faq-popup-content p:last-child').html('再打一题');
+            $('.faq-popup').click(function () {
+                $(this).hide();
+                data(num);
+            });
+        };
+
+        $('.faq-list').on('click', ' li', function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+        //提交
+        var i = 0;
+        $('.faq-sure').on('click', function () {
+            var $index = $('.active').index();
+            var flag = [1, 0, 2];
+            i++;
+            if ($index == flag[i - 1]) {
+                //答对了
+                success();
+            } else {
+                if (i == 3 && $index !== flag[i - 1]) {
+                    i = 0; //三次都答错了，循环到第一题
+                }
+                //打错了
+                fail(i);
+            }
+        });
+    })
+</script>
+</body>
+</html>

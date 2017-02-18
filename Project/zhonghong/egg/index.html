@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>前海征信</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/meta.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script>
+</head>
+<body>
+<!--首页-->
+<section class="index">
+    <!--新年快乐-->
+    <img class="index-newyear" src="images/newyear.png">
+    <!--鸡蛋-->
+    <img class="index-egg" src="images/eggs.png">
+    <!--会动的小鸡-->
+    <img class="index-egif" src="images/egggif.gif">
+    <div class="index-power">
+        好友助力：
+        <img src="images/index-powerdark.png">
+        <img src="images/index-powerdark.png">
+        <img src="images/index-powerdark.png">
+    </div>
+    <a class="index-btn" href="game.html"></a>
+    <a class="index-score"></a>
+    <a class="index-rule"></a>
+
+    <!--音乐-->
+    <div class="index-music">
+        <audio id="music-sing" preload="auto" loop autoplay src="vedio/music.mp3"></audio>
+    </div>
+</section>
+<!--游戏规则-->
+<section class="rule hide">
+    <div class="rule-title">游戏规则</div>
+    <div class="rule-text">
+        <dl class="clearfix">
+            <dt>互动机制</dt>
+            <dd>
+                <ul>
+                    <li class="clearfix"><em>1、</em><span>所有关注微信公众号［前海征信中心］的用户均可以参加，用户点击菜单栏［好信互动］－［好信贺新春］即可参与游戏。</span></li>
+                    <li class="clearfix"><em>2、</em><span>互动过程中，玩家可通过微信号召好友助力完成游戏，助力好友后玩家可获得额外活动机会。</span>
+                    </li>
+                    <li class="clearfix"><em>3、</em><span>玩家每天有6次抓取机会，通过好友助力，最多可额外获得3次游戏机会。</span>
+                    </li>
+                    <li class="clearfix"><em>4、</em><span>活动奖品为随机奖品，存在不中奖几率。</span>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="clearfix">
+            <dt>活动细则</dt>
+            <dd>
+                <ul>
+                    <li class="clearfix"><em>1、</em><span>活动时间：2017年1月26日－2月2日</span>
+                    </li>
+                    <li class="clearfix"><em>2、</em><span>用户参与活动所形成的流量支出由用户本人承担。</span></li>
+                    <li class="clearfix"><em>3、</em><span>在活动期间，若有用户通过违法违规方式参与本次活动，主办方有权取消该用户参与资格。</span></li>
+                    <li class="clearfix"><em>4、</em><span>因获奖用户个人原因（如信息填写不完整、不准确等）未能领取奖品，主办方不承担相应责任。</span></li>
+                    <li class="clearfix">
+                        <em>5、</em><span>在活动期间，如发生不可抗力事件或超出主办方控制情况使活动无法进行时，活动主办方有权取消、暂停、修改或终于本次活动。</span></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div class="rule-back"></div>
+</section>
+<!--助力分享-->
+<div class="share popup hide">
+    <div class=" popup-content popup-scale share-content ">
+        <div class="share-btn"></div>
+    </div>
+</div>
+<div class="share-text popup hide">
+    <img class="popup-scale" src="images/share-text.png">
+</div>
+<!--9次机会都用完了,明天再来-->
+<div class="over popup hide">
+    <div class=" popup-content popup-scale over-content ">
+        <div class="over-btn"></div>
+    </div>
+</div>
+
+
+<script>
+    $(function () {
+        var ut = GetUT('ut'); //获取ut
+        GetUserInfo(ut); //获取用户信息
+        addAccess(ut, "index");  //添加页面访问记录
+        wxshare2(ut);//普通分享
+
+        console.log('playNum:' + playNum, "helpCount:" + helpCount, "openId:" + openId, "isTel:" + isTel, "qword:" + qword, "hword:" + hword, "zword:" + zword, "xword:" + xword);
+
+        //如果有助力次数，显示助力亮的
+        if (helpCount > 0) {
+            for (var i = 1; i <= playNum; i++) {
+                $(".index-power img").eq(i-1).attr("src", "images/index-powerlight.png");
+            }
+        }
+        $('.index-btn').on('click', function () {
+            if (playNum <= 0) {          //6次游戏机会用完了
+                if (helpCount < 3) {    //还有助力次数
+                    $('.share').show();
+                } else {             //没有助力次数了，明天再来吧
+                    $('.over').show();
+                }
+            } else {                 //还有游戏机会
+                window.location.href = "game.html?ut=" + ut;
+            }
+            return false;
+        });
+        //分享 用完机会弹窗
+        SetPopup();
+        //规则弹框
+        $('.index-rule').on('click', function () {
+            $('.index').hide();
+            $('.rule').show();
+            return false;
+        });
+        $('.rule-back').on('click', function () {
+            $('.index').show();
+            $('.rule').hide();
+        });
+        //查看我的成绩
+        $('.index-score').on('click',function () {
+            window.location.href = "game.html?ut=" + ut+'&score='+true;
+            return false;
+        });
+
+        //音乐
+        var a = document.getElementById('music-sing');
+        $('.index-music').on('touchstart', function () {
+
+            if (a.paused) {
+                a.play();
+                $(this).addClass('index-music').removeClass('index-music-pause');
+            } else {
+                a.pause();
+                $(this).addClass('index-music-pause').removeClass('index-music');
+            }
+        });
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            a.play();
+        }, false);
+    })
+</script>
+</body>
+</html>

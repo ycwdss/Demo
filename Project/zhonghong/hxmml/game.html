@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>好信萌萌乐</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- 游戏开始 -->
+	<section class="box game center">
+		<div class="gameTop center fixed">
+			<span class="gameTime">60</span>
+			<div class="gameNlb fixed">
+				<img src="images/xin0.png" />
+				<img src="images/xin0.png" />
+				<img src="images/xin0.png" />
+				<img src="images/xin0.png" />
+				<img src="images/xin0.png" />
+			</div>
+		</div>
+		<div class="gameBtn center fixed">
+			<a href="javascript:;" class="gameBtn0"><img src="images/gameBtn0.png" /></a>
+			<a href="javascript:;" class="gameBtn1" style="display:none;"><img src="images/gameBtn1.png" /></a>
+			<a href="javascript:;" class="gameBtn2"><img src="images/gameBtn2.png" /></a>
+		</div>
+		<div class="gameMty center fixed">
+			<img src="images/mty0.png" />
+			<img src="images/mty0.png" />
+			<img src="images/mty0.png" />
+			<img src="images/mty0.png" />
+			<img src="images/mty0.png" />
+		</div>
+		<div class="gameBg center">
+			<div class="gameStart center">
+
+			</div>
+		</div>
+		<div class="gameShade center"></div>
+		<div class="gamePoint"></div>
+	</section>
+	<!-- 游戏结束 -->
+
+	<!-- 阴影开始 -->
+	<section class="shade" style="display:block;"></section>
+	<!-- 阴影结束 -->
+
+
+	<!-- 游戏提示开始 -->
+	<section class="gameBefore center" style="display:block;">
+		<div class="fixed icon"><img src="images/gameTips.png" /></div>
+		<div class="tips"><img src="images/gameTipsFont.png" /></div>
+		<a href="javascript:;" class="btn"><img src="images/indexBtn.png" /></a>
+	</section>
+	<!-- 游戏提示结束 -->
+
+	<!-- 游戏完成弹窗开始 -->
+	<section class="gameSuc">
+		<div class="title"><img src="images/winTit1.png" /></div>
+		<div class="font"></div>
+		<div class="winBtn">
+			<a href="javascript:;" class="winBtn1"><img src="images/winBtn1.png" /></a>
+			<a href="javascript:;" class="winBtn2"><img src="images/winBtn2.png" /></a>
+		</div>
+		<p class="tips">您今天还有<span class="nlb">3</span>次机会哦！</p>
+	</section>
+	<!-- 游戏完成弹窗结束 -->
+
+	<!-- 游戏时间结束弹窗开始 -->
+	<section class="gameOver">
+		<div class="font"><img src="images/overFont.png" /></div>
+		<p class="tips">您今天还有<span class="nlb">3</span>次机会哦！</p>
+		<a class="winBtn3" href="javascript:;"><img src="images/winBtn3.png" /></a>
+	</section>
+	<!-- 游戏时间结束弹窗结束 -->
+
+	<!-- 三次机会用完分享开始 -->
+	<section class="share share1 center">
+		<img src="images/share1.png" />
+	</section>
+	<!-- 三次机会用完分享结束 -->
+
+	<!-- 五次机会用完分享开始 -->
+	<section class="share share2 center">
+		<img src="images/share2.png" />
+	</section>
+	<!-- 五次机会用完分享结束 -->
+
+	<!-- 壁纸开始 -->
+	<div class="bizhi">
+		<img src="images/bizhi.jpg" />
+		<p>长按壁纸进行保存，点击返回首页！</p>
+	</div>
+	<!-- 壁纸结束 -->
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript">
+    	var nlb=3;//当前剩余能量须后台传值
+    	var isShare=0;//是否分享0为未分享1为分享
+    	var prize;//奖品，1为手机壳，2为U盘，3为鼠标，4为流量包，5为壁纸
+    	//游戏倒计时
+	    var gt;
+	    
+		$(window).load(function(){
+			clearInterval(gt);//停止计时
+			for(var i=0;i<nlb;i++){
+				$(".gameNlb>img").eq(i).attr("src","images/xin1.png");
+			}
+		});
+		$(".gameBefore>.btn").click(function(){
+			gameChange();
+			
+		});
+		$(".gameBtn2").click(function(){
+			addCol();
+			gameChange();
+		});	
+		
+		//判断是否有游戏机会
+		function gameChange(){
+			$(".shade").hide();
+			$(".gameShade").hide();
+			$(".gameBtn0").show();
+			$(".gameBtn1").hide();
+			clearInterval(gt);//停止计时
+			$(".gameTime").text("60");
+			$(".gameBefore").fadeOut(500);
+			if(nlb>0){
+				$(".shade").fadeOut(500);
+				nlb-=1;//需要传入数据库
+				$(".nlb").text(nlb);
+				for(var i=nlb;i<5;i++){
+					$(".gameNlb>img").eq(i).attr("src","images/xin0.png");
+				}
+				gt=setInterval(function(){
+			      var gameTime=parseInt($(".gameTime").text());
+			      gameTime--;
+			      $(".gameTime").text(gameTime);
+			      if(gameTime<=0){
+			        clearInterval(gt);
+			        $(".shade").fadeIn(500);
+			        $(".gameOver").fadeIn(500);
+			      }
+			    },1000);
+			}else{
+				clearInterval(gt);//停止计时
+				$(".shade").show();
+				if(isShare==0){
+					$(".share1").fadeIn(500);
+				}else{
+					$(".share2").fadeIn(500);
+				}
+			}
+		}
+		
+		
+
+		//游戏通关后抽奖
+		$(".gameBtn1").click(function(){
+    		prize=4//奖品，须后台传值1为手机壳，2为U盘，3为流量包，4为壁纸
+    		$(".shade").fadeIn(500);
+    		$(".gameSuc").fadeIn(500);
+    		$(".gameSuc>.font").append("<img src='images/winFont"+prize+".png' />");
+    		$(".gameBtn1").css("-webkit-animation","none");
+		});
+
+		//领取奖品
+		$(".winBtn1").click(function(){
+			if(prize==4){//如果奖品为壁纸
+				$(".bizhi").fadeIn(500);
+			}else{//如果奖品不是壁纸
+				window.location.href="form.html";
+			}
+		});
+		//通关后继续游戏
+		$(".winBtn2").click(function(){
+			if(nlb>0){//如果抽奖机会大于0
+				$(".shade").fadeOut(500);
+				$(".gameSuc").fadeOut(500);
+				addCol();
+				gameChange();
+			}else{//如果抽奖机会等于0
+				$(".gameSuc").hide();
+				$(".shade").show();
+				if(isShare==0){
+					$(".share1").show();
+				}else{
+					$(".share2").show();
+				}
+			}
+		});
+		//失败后继续游戏
+		$(".winBtn3").click(function(){
+			if(nlb>0){//如果抽奖机会大于0
+				$(".shade").fadeOut(500);
+				$(".gameOver").fadeOut(500);
+				addCol();
+				gameChange();
+			}else{//如果抽奖机会等于0
+				$(".gameOver").hide();
+				$(".shade").show();
+				if(isShare==0){
+					$(".share1").show();
+				}else{
+					$(".share2").show();
+				}
+			}
+		});
+		//点击壁纸返回首页
+		$(".bizhi").click(function(){
+			window.location.href="index.html";
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>前海征信</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/meta.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script>
+</head>
+<body>
+<!--点击抽奖-->
+<section class="tel">
+    <div class="tel-card"></div>
+    <div class="tel-headset">
+        <p>恭喜您集齐【前】、【海】、【征】、【信】四个字，可以输入手机号抽奖啦！</p>
+    </div>
+
+    <a class="play-again tel-reward"></a>
+    <!--还有助力次数-->
+    <div class="share popup hide">
+        <div class=" popup-content popup-scale share-content ">
+            <div class="share-btn"></div>
+        </div>
+    </div>
+    <div class="share-text popup hide">
+        <img class="popup-scale" src="images/share-text.png">
+    </div>
+    <!--9次机会都用完了,明天再来-->
+    <div class="over popup hide">
+        <div class=" popup-content popup-scale over-content ">
+            <div class="over-btn"></div>
+        </div>
+    </div>
+
+</section>
+<script>
+    $(function () {
+        var ut = GetUT('ut'); //获取ut
+        GetUserInfo(ut); //获取用户信息
+        addAccess(ut, "rewards");//添加页面访问记录
+        wxshare2(ut);//普通分享
+        //判断是不是输入了手机号码
+        console.log('playNum:' + playNum, "helpCount:" + helpCount, "openId:" + openId, "isTel:" + isTel, "qword:" + qword, "hword:" + hword, "zword:" + zword, "xword:" + xword);
+
+        //抽到奖
+            $.ajax({
+                url: _data.lottyPrize,
+                data: {
+                    ut: ut
+                },
+                type: "POST",
+                dataType: "json",
+                async: false,
+                success: function (data) {
+                    if (data.code >= 100) {
+                        var flow = data.flow;
+                        console.log("流量" + flow);
+                        if (flow == 0) {
+                            $('.tel-headset p').html('好可惜，大礼仅一步之遥，<br/>赶紧再次前往获取抽奖机会。');
+                        } else {
+                            $('.tel-headset p').html('恭喜获得' + flow + 'M流量礼包!');
+                        }
+                    }
+                },
+                error: function () {
+                    alert("网络异常");
+                }
+            });
+
+
+
+
+        //再去玩
+        $('.play-again').on('click', function () {
+            if (playNum <= 0) {          //6次游戏机会用完了
+                if (helpCount < 3) {    //还有助力次数
+                    $('.share').show();
+                } else {             //没有助力次数了，明天再来吧
+                    $('.over').show();
+                }
+                //分享 用完机会弹窗
+                SetPopup();
+            }
+            else {
+                window.location.href = "game.html?ut=" + ut+'&again='+true;
+            }
+            return false;
+        });
+    })
+</script>
+</body>
+</html>

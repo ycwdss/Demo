@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>前海征信</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/meta.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script>
+    <script src="js/game.js"></script>
+</head>
+<body>
+<!--游戏-->
+<section class="game ">
+    <ul class="game-collect clearfix">
+        <li><img src="images/qian.png"><span>X0</span></li>
+        <li><img src="images/hai.png"><span>X0</span></li>
+        <li><img src="images/zheng.png"><span>X0</span></li>
+        <li><img src="images/xin.png"><span>X0</span></li>
+    </ul>
+
+    <div class="game-wrap">
+        <div class="game-area">
+            <div class="game-target">
+                <div class="target-hd"></div>
+                <div class="target-bd"></div>
+                <div class="target-ft"></div>
+            </div>
+            <div class="game-tpl"></div>
+        </div>
+        <div class="game-time clearfix">
+            <div class="game-left"></div>
+            <div class="game-timer"></div>
+            <div class="game-right"></div>
+        </div>
+        <div class="game-count"></div>
+    </div>
+    <!--音乐-->
+    <div class="index-music">
+        <audio id="music-sing" preload="auto" loop autoplay src="vedio/music.mp3"></audio>
+    </div>
+</section>
+<!--游戏说明-->
+<section class="state popup hide">
+    <div class="popup-content popup-scale state-content  ">
+        <div class="state-text">
+            <dl class="clearfix">
+                <dd>
+                    <ul>
+                        <li class="clearfix"><em>1、</em><span>玩家可以通过手机操控<img src="images/game-left.png"><img
+                                src="images/game-right.png">抓斗移动，点击按钮GO抓斗下降抓取新春礼物。</span></li>
+                        <li class="clearfix"><em>2、</em><span>成功抓取玩偶后，会随机获得含有：【前】程似锦，【海】纳百川、旁【征】博引、言而有【信】的新年符。</span>
+                        </li>
+                        <li class="clearfix"><em>3、</em><span>奖励：集齐【前】【海】【征】【信】4个字的祝福语即可参与抽奖，有机会获得流量礼包，更有有机会获得新春大礼。</span>
+                        </li>
+                        <li class="clearfix"><em>4、</em><span>每个ID只能领取1次流量礼包，每次抽奖会消耗一组【前】【海】【征】【信】，再次集齐可再次获得抽奖机会。</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="state-begin"></div>
+    </div>
+</section>
+<!--弹出抽到的字符-->
+<div class="zi popup hide">
+    <div class=" popup-content popup-scale zi-content ">
+        <div class="zi-wrap">
+            <a class="zi-again"></a>
+            <a class="zi-reward"></a>
+        </div>
+    </div>
+</div>
+<!--还有助力次数-->
+<div class="share popup hide">
+    <div class=" popup-content popup-scale share-content ">
+        <div class="share-btn"></div>
+    </div>
+</div>
+<div class="share-text popup hide">
+    <img class="popup-scale" src="images/share-text.png">
+</div>
+<!--9次机会都用完了,明天再来-->
+<div class="over popup hide">
+    <div class=" popup-content popup-scale over-content ">
+        <div class="over-btn"></div>
+    </div>
+</div>
+<!--查看成绩-->
+<div class="score-popup popup hide">
+    <div class="score-content popup-content popup-scale">
+        <div class="score-btn"></div>
+    </div>
+</div>
+<!--没有集齐继续玩-->
+<div class="notip popup hide">
+    <div class=" popup-content popup-scale notip-content ">
+        <div class="notip-btn"></div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var a = document.getElementById('music-sing');
+        var ut = GetUT('ut'); //获取ut
+        addAccess(ut, "game");   //添加页面访问记录
+        wxshare2(ut);//普通分享
+
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            a.play();
+        }, false);
+        //获取是不是来查看成绩
+        var $score=GetUT('score');
+        console.log($score);
+        if($score){
+            console.log($score);
+            $('.game-collect').css('z-index',999);
+            $('.score-popup').show();
+            $('.index-music').remove();
+        }else {
+            $('.state').show();
+        }
+        //再玩一次的
+        var $again=GetUT('again');
+        console.log($again);
+        if($again){
+            $('.state').hide();
+        }
+        //点击返回
+        $('.score-btn').on('click',function () {
+            window.location.href =_data.authIndex;
+        });
+        //音乐
+
+        $('.index-music').on('touchstart', function () {
+
+            if (a.paused) {
+                a.play();
+                $(this).addClass('index-music').removeClass('index-music-pause');
+            } else {
+                a.pause();
+                $(this).addClass('index-music-pause').removeClass('index-music');
+            }
+        });
+    })
+</script>
+</body>
+</html>

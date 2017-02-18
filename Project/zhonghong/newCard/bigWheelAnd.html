@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>中国银联95516</title>
+    <link rel="stylesheet" type="text/css" href="css/newStyle.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layer.js"></script>
+</head>
+<body>
+<section class="rewards">
+    <!--转盘-->
+    <div class="rewards-wrap">
+        <div class="rewards-zhuanpan">
+            <div class="rewards-arrow"></div>
+        </div>
+        <div class="rewards-shitou"></div>
+    </div>
+<!--按钮-->
+    <div class="rewards-btn">
+        <div class="btn">我的流量码</div>
+        <a class="btn" href="index.html">返回</a>
+    </div>
+
+    <!--流量码-->
+    <div class="you-ma rewards-ma popup hide">
+        <div class="popup-inner popup-scale">
+            <div class="close"></div>
+            <div class="popup-content">
+               <p> 你的流量码是</p>
+                <p>ABCDEF</p>
+                <p>请找和教授</p>
+            </div>
+            <div class="popup-tips">
+                （微信号：doctorand）进行兑换<br>
+                仅限上海移动用户有效
+            </div>
+            <a class="popup-sure" href="http://mp.weixin.qq.com/s/5xwbsEAF0Cute6Q1fypMGQ">去兑换</a>
+        </div>
+    </div>
+    <!--没有流量吗-->
+    <div class="no-ma rewards-ma  popup  hide">
+        <div class="popup-inner popup-scale">
+            <div class="close"></div>
+            <div class="popup-content">
+                您尚未获得流量码
+            </div>
+            <div class="popup-sure">确定</div>
+        </div>
+    </div>
+    <!--中奖-->
+    <div class="rewards-success popup hide">
+        <div class="popup-inner popup-scale">
+            <div class="close"></div>
+            <div class="popup-content">
+                <h1>恭喜你</h1>
+              <p>获得50M上海移动流量</p>
+               <p>兑换码<em>ABCDEFG</em></p>
+                <p>请找和教授</p>
+                <p>  （微信号：doctorand）进行兑换<br>
+                    仅限上海移动用户有效</p>
+            </div>
+            <a class="popup-sure" href="http://mp.weixin.qq.com/s/5xwbsEAF0Cute6Q1fypMGQ">去兑换</a>
+        </div>
+    </div>
+    <!--没有中奖-->
+    <div class="rewards-fail popup hide">
+        <div class="popup-inner popup-scale">
+            <div class="close"></div>
+            <div class="popup-content">
+                <h1>很抱歉</h1>
+                <p>没有中奖呢好尴尬呀</p>
+            </div>
+            <div class="popup-sure">确定</div>
+        </div>
+    </div>
+    <!--抽奖机会用完了-->
+    <div class="rewards-over no-ma popup  hide">
+        <div class="popup-inner popup-scale">
+            <div class="close"></div>
+            <div class="popup-content">
+                今天的抽奖机会已用完<br>
+                明天再来玩吧
+            </div>
+            <div class="popup-sure">确定</div>
+        </div>
+    </div>
+    <!--没有办卡不能抽奖-->
+    <div class="rewards-noCard popup hide">
+        <div class="popup-inner popup-scale">
+            <div class="close"></div>
+            <div class="popup-content">
+                <h1>很抱歉</h1>
+                <h2>没办<em>和教授粉丝卡</em></h2>
+                <p>教授才不带你玩儿</p>
+                <p>来不及解释了，快返回办卡！</p>
+            </div>
+            <div class="popup-sure">确定</div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    $(function () {
+        var cjjh=0;
+        var status = 1;//0未开始1正常2已结束
+        var time = 1;//可抽奖次数
+
+        var prize = 180; //5为未中奖角度设置
+        var prized=0;
+        var num = 3;//0为500元购物卡，1为100元购物卡，2为50元话费，3为10元话费,4,5为未中奖
+        var prize1 = "100M流量";//一等奖名称
+
+        if (status == 0) {
+            layer.open({
+                content: '本次活动还未开始,请耐心等待!'
+                ,shade: false
+                ,style: 'background-color: rgba(0,0,0,.8);font-size:24px; color:#fff; border:none;width:70%;' //自定风格
+                ,time: 3
+            });
+        }else if (status == 2) {
+            layer.open({
+                content: '本次活动已经结束了！'
+                ,shade: false
+                ,style: 'background-color: rgba(0,0,0,.8);font-size:24px; color:#fff; border:none;width:70%;' //自定风格
+                ,time: 3
+            });
+        }else {
+            $(".rewards-arrow").on('click',function () {//抽奖方法
+                if (time > 0) {
+                    num = parseInt(Math.random() * 6);//随机数
+                    switch (num) {
+                        case 0:
+                            prize = 300;
+                            break;
+                        case 1:
+                            prize = 60;
+                            break;
+                        case 2:
+                            prize = 120;
+                            break;
+                        case 3:
+                            prize = 240;
+                            break;
+                        case 4:
+                            prize = 180;
+                            break;
+                        case 5:
+                            prize = 360;
+                            break;
+                    }
+                    prized=prized+2880;
+                    prize = prize + prized;
+                    $(".rewards-arrow").css({
+                        "-webkit-transform": "rotate(" + prize + "deg)",
+                        "-webkit-transition": "-webkit-transform 5s",
+                    });
+                    setTimeout(function () {
+                        //中奖
+                        if (num <= 3) {
+                            $('.rewards-success').show();
+                            $('.rewards-success p:nth-of-type(1)').html(prize1);
+                            $('.rewards-success p:nth-of-type(2) em').html("DSWEE");
+                        }
+                        else {
+                            $('.rewards-fail').show();
+                        }
+                    }, 5500);
+                    time--;
+                    $('.rewards-fail-sure').click(function () {
+                        $('.rewards-fail').hide();
+                        $(".rewards-arrow").css({
+                            "-webkit-transform": "rotate(0deg)",
+                            "-webkit-transition": "-webkit-transform 0s",
+                        });
+
+                    });
+                    prize=0;
+                    prized=0;
+
+                } else {
+                    $('.rewards-over').show();
+                }
+
+            });
+        }
+
+
+
+    });
+    $(function () {
+        $('.rewards-btn .btn:first-child').click(function () {
+            $('.you-ma').show();
+        });
+        $('.popup-inner .close,.popup-sure').click(function () {
+            $(this).parents('.popup').hide();
+        });
+    })
+</script>
+</body>
+</html>

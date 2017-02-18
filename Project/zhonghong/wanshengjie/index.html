@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="bg1 center"></section>
+	<section class="index center">
+		<div class="indexTit center">
+			<div class="tit0 hide center"></div>
+			<div class="tit1"></div>
+			<div class="tit2"><img src="images/tit2.gif" /></div>
+			<div class="tit3"></div>
+			<div class="tit4"></div>
+			<a href="javascript:;" class="tit5"></a>
+		</div>
+		
+		<div class="pumpkinBg center"></div>
+		<div class="sugar">
+			<img src="images/sugar0.png" />
+		</div>
+		<div class="pumpkin0-2"></div>
+		<a href="javascript:;" class="pumpkin"><img src="images/pumpkin.png" /></a>
+		<a href="javascript:;" class="tips hide"></a>
+		<div class="logo center"></div>
+		<div class="sPumpkin sPumpkin1 hide"></div>
+		<div class="sPumpkin sPumpkin2 hide"></div>
+		<div class="sPumpkin sPumpkin3 hide"></div>
+	</section>
+	<section class="shade ycenter hide"></section>
+	<!-- 规则 -->
+	<section class="rule ycenter hide">
+		<div class="ruleBox">
+			<p>活动时间</p>
+			<p class="ts">2016年10月27日至2016年11月3日</p>
+			<p>活动内容</p>
+			<p class="ts">1.所有关注微信公众号【前海征信中心】的用户均可参加活动；用户点击菜单【好信互动】-【好信万圣节】参与活动。</p>
+			<p class="ts">2.点击活动首页的万圣南瓜进行抽奖；每人每天都有3次机会参与抽奖，中奖用户需立即填写中奖信息，错过即视为主动放弃领奖机，不再补充中奖机会。</p>
+			<p class="ts">3.用户参与活动所形成的流量支出由用户本人负责。</p>
+			<p class="ts">4.在活动期间，若有用户通过违法违规方式参与本次活动，主办方有权取消该用户参与资格。</p>
+			<p class="ts">5.因获奖用户个人原因（如信息填写不完整、不准确等）未能领到奖品，主办方不承担任何相应责任。</p>
+			<p class="ts">6.在活动期间，如发生不可抗力事件或脱离主办方控制情况致使游戏无法正常进行时，活动主办方有权取消、暂停、修改或终止本活动。</p>
+		</div>
+		<a href="javascript:;" class="ruleBtn"></a>
+	</section>
+	<!-- 未中奖 -->
+	<section class="win win0 ycenter hide">
+		<p>呀，手气不佳~~<br />换种姿势继续来！</p>
+		<div class="btn fixed">
+			<a href="javascript:;" class="btnIcon btnIcon1"><img src="images/btnIcon1.png" /></a>
+			<a href="javascript:;" class="btnIcon btnIcon2"><img src="images/btnIcon2.png" /></a>
+		</div>
+	</section>
+	<!-- 中奖 -->
+	<section class="win win1 ycenter hide">
+		<p>恭喜获得<br />20M流量礼包一份</p>
+		<a href="javascript:;" class="btn block">去领取</a>
+	</section>
+	<!-- 弹窗 -->
+	<section class="win win2 ycenter hide">
+		<p></p>
+		<a href="javascript:;" class="btn btn1 block">确定</a>
+	</section>
+	<!-- 分享 -->
+	<section class="share hide"></section>
+
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		var time=1;//当前剩余抽奖机会
+		// 抽奖
+		var cNum=true;
+		var st;
+		$(function(){
+			$(".tips").css("background","url(images/font"+time+".png) no-repeat center");
+			$(".tit0").fadeIn(500);
+			setTimeout(function(){
+				$(".tit1").addClass("rotateTit1");
+			},500);
+			setTimeout(function(){
+				$(".tit2").addClass("rotateTit2");
+			},800);
+			setTimeout(function(){
+				$(".tit5").addClass("rotateTit5");
+			},1000);
+			setTimeout(function(){
+				$(".tit3").addClass("rotateTit3");
+			},1300);
+			setTimeout(function(){
+				$(".tit4").addClass("rotateTit4");
+			},1500);
+			setTimeout(function(){
+				$(".pumpkin").addClass("rotatePumpkin");
+				setTimeout(function(){
+					$(".pumpkin").css({"top":"400px","opacity":"1"});
+				},1000);
+				setTimeout(function(){
+					$(".pumpkin>img").attr("src","images/pumpkin2.png");
+				},600);
+				setTimeout(function(){
+					$(".pumpkin>img").attr("src","images/pumpkin3.png");
+				},700);
+				setTimeout(function(){
+					$(".pumpkin>img").attr("src","images/pumpkin4.png");
+				},800);
+				setTimeout(function(){
+					$(".pumpkin>img").attr("src","images/pumpkin1.png");
+				},900);
+				setTimeout(function(){
+					$(".pumpkin>img").attr("src","images/pumpkin.png");
+				},1000);
+				setTimeout(function(){
+					$(".pumpkin>img").attr("src","images/pumpkin1.png");
+				},1100);
+				setTimeout(function(){
+					$(".pumpkin>img").attr("src","images/pumpkin4.png");
+				},1200);
+				setTimeout(function(){
+					$(".pumpkin>img").attr("src","images/pumpkin.png");
+				},1300);
+				setTimeout(function(){
+					$(".pumpkin").addClass("rotate1");
+					var x=0;
+					st=setInterval(function(){
+						setTimeout(function(){
+							$(".pumpkin>img").attr("src","images/pumpkin5.png");
+						},100);
+						setTimeout(function(){
+							$(".pumpkin>img").attr("src","images/pumpkin6.png");
+						},200);
+						setTimeout(function(){
+							$(".pumpkin>img").attr("src","images/pumpkin7.png");
+						},300);
+						setTimeout(function(){
+							$(".pumpkin>img").attr("src","images/pumpkin6.png");
+						},400);
+						setTimeout(function(){
+							$(".pumpkin>img").attr("src","images/pumpkin5.png");
+						},500);
+						setTimeout(function(){
+							$(".pumpkin>img").attr("src","images/pumpkin.png");
+						},600);
+						
+					},2000)
+				},1600);
+
+			},1500);
+			setTimeout(function(){
+				$(".tips").fadeIn(300);
+			},2500);
+			setTimeout(function(){
+				$(".sPumpkin1").fadeIn(300);
+			},2800);
+			setTimeout(function(){
+				$(".sPumpkin2").fadeIn(300);
+			},3000);
+			setTimeout(function(){
+				$(".sPumpkin3").fadeIn(300);
+			},3200);
+			setTimeout(function(){
+				cNum=false;
+			},3500);
+		});
+
+		//游戏规则
+		$(".tit5").on("click",function(){
+			$(".shade").fadeIn(300);
+			$(".rule").fadeIn(300);
+		});
+		$(".ruleBtn").on("click",function(){
+			$(".shade").fadeOut(300);
+			$(".rule").fadeOut(300);
+		});
+
+		
+		$(".pumpkin").on("click",function(){
+			if(cNum==true){
+				return;
+			}else{
+				cNum=true;
+				var x=1;
+				$(".pumpkin").removeClass("rotate1");
+				clearInterval(st);
+				$(".pumpkin>img").attr("src","images/pumpkin1.png");
+				$(".pumpkinBg").css("background-size","100% 100%");
+				setInterval(function(){
+					if(x==1){
+						$(".pumpkinBg").css("background","url(images/pumpkinBg1.png) no-repeat center");
+						x=0;
+					}else{
+						$(".pumpkinBg").css("background","url(images/pumpkinBg.png) no-repeat center");
+						x=1;
+					}
+					
+				},100);
+				$(".pumpkin").addClass("rotate");
+				setTimeout(function(){
+					$(".pumpkin").removeClass("rotate rotatePumpkin").css({"top":"400px","opacity":"1"});
+					$(".pumpkin img").attr("src","images/pumpkin0-1.png");
+				},1000);
+				setTimeout(function(){
+					$(".sugar").show().addClass("rotateSugar");
+					$(".pumpkin0-2").show().addClass("rotatePumpkin0-2");
+					setTimeout(function(){
+						$(".sugar img").css("z-index","100");
+						$(".sugar img").addClass("rotateSugarImg");
+					},500);
+				},1050);
+				setTimeout(function(){
+					cNum=false;
+					$(".pumpkin").removeClass("rotate");
+					$(".shade").fadeIn(300);
+					if(time>0){
+						var prize=parseInt(Math.random()*2);
+						if(prize==0){//未中奖
+							$(".win0").fadeIn(300);
+						}else{//中奖
+							$(".win1").fadeIn(300);
+						}
+						time--;//入库
+					}else{
+						$(".win2 p").html("机会已经用完<br />下次再来吧！");
+						$(".win2").fadeIn(300);
+					}
+				},1700);
+			}
+			
+			
+			
+		});
+		//机会用完点击刷新页面
+		$(".win2 .btn1").on("click",function(){
+			window.location.href="index.html";
+		});
+		//领奖
+		$(".win1 .btn").on("click",function(){
+			window.location.href="form.html";
+		});
+
+		//再玩一次
+		$(".btnIcon1").on("click",function(){
+			window.location.href="index.html";
+		});
+
+		//分享
+		$(".btnIcon2").on("click",function(){
+			$(".win0").fadeOut(300);
+			$(".share").fadeIn(300);
+		});
+
+		//点击阴影
+		$(".shade").on("click",function(){
+			if($(".share").is(":hidden")){
+				return;
+			}else{
+				window.location.href="index.html";
+			}
+		});
+	</script>
+	
+</body>
+</html>

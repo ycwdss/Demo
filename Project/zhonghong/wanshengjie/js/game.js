@@ -1,0 +1,173 @@
+var Top=0;
+var sTop;
+var Top=0;
+var sTop;
+$('.text-div').fadeIn(2000);
+setTimeout(function(){
+$('.text-div').fadeOut(1500);
+setTimeout(function(){
+  $('.zhegai2').fadeOut(1500);
+},1500)
+},3000)
+setTimeout(function(){
+ //$('.list-div').addClass('donghua1');
+ setTimeout(function(){
+ $('.change').show();
+ $('.change-1').show();
+ $('.list-div').css('margin-top','600px')
+ setTimeout(function(){
+ $('.change-2').show();
+ $('.list-div').css('margin-top','950px')
+ },500)
+  setTimeout(function(){
+ $('.change-3').show();
+ $('.pl-bg').show();
+ $('.gdpl').show();
+ $('.list-div').css('margin-top','1260px')
+ },1500)
+ scTop();
+ setTimeout(function(){
+    $('.zhegai').show();
+    $('.fg-1').show();
+    $('.dj-1').show();
+ },4500)
+},2000)
+},5000)
+$('.fg-1').click(function(){//第一次点击
+    $('.zhegai').hide();
+    $('.fg-1').hide();
+    $('.dj-1').hide();
+    $('.zhubajie').show();
+    setTimeout(function(){
+        $('.zhubajie .img1').fadeIn(500).css({top:"730px",left:"500px",width:"60px"});
+    },500);
+    setTimeout(function(){
+        $('.zhubajie .img2').stop();
+        $('.zhubajie .img2').fadeIn(500).css({top:"753px",left:"524px",width:"100px"});
+    },1800);
+ sTop=setTimeout(function(){
+    $('.zhegai').show();
+    $('.fg-4').show();
+    $('.dj-4').show();
+ },3500)
+})
+$('.zhubajie .btn-1').click(function(){//第一次继续查看
+    clearTimeout(sTop);
+    $('.zhegai').hide();
+    $('.fg-4').hide();
+    $('.dj-4').hide();
+    $('.zhubajie').hide();
+    setTimeout(function(){
+    $('.pl-2').show();
+    $('.gdpl').css('top',"880px");
+    $('.list-div').css('margin-top',"1320px");
+     setTimeout(function(){
+    $('.zhegai').show();
+    $('.fg-2').show();
+    $('.dj-2').show();
+ },1500)
+ },1000)
+})
+$('.fg-4').click(function(){//第一次继续查看
+    clearTimeout(sTop);
+    $('.zhegai').hide();
+    $('.fg-4').hide();
+    $('.dj-4').hide();
+    $('.zhubajie').hide();
+    setTimeout(function(){
+    $('.pl-2').show();
+      $('.gdpl').css('top',"880px");
+    $('.list-div').css('margin-top',"1320px");
+     setTimeout(function(){
+    $('.zhegai').show();
+    $('.fg-2').show();
+    $('.dj-2').show();
+ },1500)
+ },1000)
+})
+$('.fg-2').click(function(){//第二次点击
+    $('.zhegai').hide();
+    $('.fg-2').hide();
+    $('.dj-2').hide();
+    $('.erlangs').show();
+    setTimeout(function(){
+        $('.erlangs .img1').fadeIn(500).animate({top:"730px",left:"500px",width:"60px"},500);
+    },500);
+    setTimeout(function(){
+        $('.erlangs .img2').fadeIn(500).animate({top:"753px",left:"524px",width:"100px"},500);
+    },1800);
+ sTop=setTimeout(function(){
+    $('.zhegai').show();
+    $('.fg-5').show();
+    $('.dj-4').show();
+ },3500)
+})
+$('.erlangs .btn-1').click(function(){//第二次继续查看
+    clearTimeout(sTop);
+    $('.zhegai').hide();
+    $('.fg-5').hide();
+    $('.dj-4').hide();
+    $('.erlangs').hide();
+    setTimeout(function(){
+    $('.pl-3').show();
+    $('.gdpl').css('top',"995px");
+    $('.list-div').css('margin-top',"1440px");
+     setTimeout(function(){
+    $('.zhegai').show();
+    $('.fg-3').show();
+    $('.dj-3').show();
+ },1500)
+ },1000)
+})
+$('.fg-5').click(function(){//第二次继续查看
+    clearTimeout(sTop);
+    $('.zhegai').hide();
+    $('.fg-5').hide();
+    $('.dj-4').hide();
+    $('.erlangs').hide();
+    setTimeout(function(){
+    $('.pl-3').show();
+      $('.gdpl').css('top',"995px");
+    $('.list-div').css('margin-top',"1440px");
+     setTimeout(function(){
+    $('.zhegai').show();
+    $('.fg-3').show();
+    $('.dj-3').show();
+ },1500)
+ },1000)
+})
+$('.fg-3').click(function(){//第二次点击
+    $('.zhegai').hide();
+    $('.fg-3').hide();
+    $('.dj-3').hide();
+    $('.wugang').show();
+    setTimeout(function(){
+        $('.wugang .img1').fadeIn(500).animate({top:"730px",left:"500px",width:"60px"},500);
+    },500);
+    setTimeout(function(){
+        $('.wugang .img2').fadeIn(500).animate({top:"753px",left:"524px",width:"100px"},500);
+    },1800);
+ sTop=setTimeout(function(){
+    $('.zhegai').show();
+    $('.fg-6').show();
+    $('.dj-4').show();
+ },3500)
+})
+$('.wugang .btn-1').click(function(){//第三次继续查看
+  window.location.href="jieguo.html";
+})
+$('.fg-6').click(function(){//第三次继续查看
+  window.location.href="jieguo.html";
+})
+function scTop(){
+	if(Top<=350){
+	setTimeout(function(){
+	$(".index").scrollTop(Top);
+ 	Top=Top+5;
+ 	scTop();
+	},3)	
+	}
+	else if(Top>200){
+		return;
+	}
+}

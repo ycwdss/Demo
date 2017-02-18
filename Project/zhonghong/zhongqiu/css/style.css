@@ -1,0 +1,100 @@
+body{
+	margin:0;
+	background-color: #9ee0ee;
+	font-family: "微软雅黑";
+	letter-spacing:0px;
+   color: #000;
+   font-size: 22px;
+}
+ul,li,a,h1,h2,h3,h4,h5,h6,p,input,textarea,span{font-weight: normal; margin: 0;padding: 0;list-style:none;text-decoration: none;box-sizing:content-box;   }
+/*global*/
+.fixed{ 
+   *zoom:1;
+}
+
+.fixed:after{
+   content: ".";
+   height:0;
+   clear:both;
+   overflow: hidden;
+   display: block;
+}
+
+/*共用样式*/
+.center{left: 0;right: 0;margin: auto;position: absolute;}
+.ycenter{left: 0;right: 0;top: 0;bottom: 0; margin: auto;position: fixed;}
+.shade{width: 640px;height: 100%;background: rgba(0,0,0,0.7);display: none;position: fixed;}
+.layer{width: 640px;height: 100%;display: none;position: fixed;}
+.share{display: none; width: 640px;height: 100%;background: url(../images/share.png) no-repeat;background-size: 100% 100%;}
+.bg1{width: 640px;height: 100%;background: url(../images/bg1.jpg) no-repeat bottom;}
+.bg2{width: 640px;height: 920px;background: url(../images/bg2.jpg) no-repeat bottom;}
+.bg3{width: 640px;height: 100%;background: url(../images/bg2.jpg) no-repeat bottom;}
+.bg4{width: 640px;height: 100%;background: url(../images/bg3.jpg) no-repeat bottom;}
+/*index*/
+.index{width: 640px;}
+.indexTop{width: 640px;height: 545px;background: url(../images/indexPic2.png) no-repeat;position: absolute;top: 0;}
+.indexTop .logo{width: 118px;height: 118px;position: absolute;top: 30px;left: 30px;background: url(../images/logo.png) no-repeat;}
+.indexTop .pic{width: 160px;height: 385px;background: url(../images/indexPic1.png) no-repeat center; background-size: 0 0;top: 60px;-webkit-transition: background-size 1.5s;}
+.indexBtn1{width: 231px;height: 70px;display: block;top: 520px;}
+.indexBtn2{width: 204px;height: 49px;display: block;top: 620px;}
+.rule{display: none; width: 420px;height: 640px;padding: 30px 40px;background: url(../images/ruleBg.png) no-repeat;}
+.ruleTit{width: 420px;line-height: 70px;height: 70px; text-align: center;font-size: 40px;color: #000;font-weight: 800;}
+.ruleInfo{width: 420px;height: 480px;overflow: auto;}
+.ruleInfo p{width: 420px;line-height: 30px;margin-bottom: 10px;}
+.ruleInfo .red{color: red;}
+.ruleBtn{width: 240px;height: 120px;display: block;margin: -15px auto 0;}
+
+/*game*/
+.game{width: 640px;}
+.gameTop{width: 600px;height: 69px; padding: 20px;}
+.gameTop .score{text-align: center; font-size: 30px;color: #be0202;float: right;width: 205px;height: 70px;line-height: 70px;background: url(../images/gameTop.png) no-repeat;}
+.gameTop .time{text-align: center; float: left;width: 205px;height: 70px;color: #be0202;;line-height: 70px;font-size: 30px;background: url(../images/gameTop.png) no-repeat;}
+.gameKeg{width: 620px;height: 314px;top: 0;}
+.gameKeg img{width: 150px;height: 215px;position: absolute;left: 240px;top: 680px;}
+.gameCon{display: none;}
+.icon{width: 70px;height: 70px;position: absolute;top: 40px;}
+.gameIcon{top: 500px;width: 100px;height: 100px;left: 430px;position: absolute;opacity: 0;display: block;font-size: 80px;color: #fff;}
+.gameStart{width: 385px;height: 458px;padding: 30px 20px 20px; display: block;background: url(../images/gameWin.png) no-repeat;}
+.gameStartDiv{width: 385px;height: 310px;overflow: auto;}
+.gameStartDiv p{width: 100%;text-align: center;font-size: 26px;margin: 20px 0 0;line-height: 40px;}
+.gameStartDiv p img{width: 40px;height: 40px;margin: 0 20px -10px;}
+.gameStartDiv p .red{color: red;}
+.gameStartDiv p .green{color: green;}
+.gameStartBtn{width: 240px;height: 120px;display: block;margin: 0 auto;}
+.gameEnd{width: 385px;height: 458px;padding: 30px 20px 20px; display: none;background: url(../images/gameWin.png) no-repeat;}
+.gameEndDiv{width: 355px;height: 300px;overflow: auto;margin: 0 auto;}
+.gameEndDiv p{width: 100%;text-align: center;font-size: 26px;margin: 20px 0 0;line-height: 40px;}
+.gameEndBtn{width: 240px;height: 120px;display: block;margin: 0 auto;}
+.gameForm{width: 260px;margin: 50px auto 0;}
+.gameForm .tel{width: 238px;height: 40px;padding: 0 10px; line-height: 40px;font-size: 24px; border: 1px solid #000;margin-bottom: 10px;}
+.gameForm .sub2{width: 260px;height: 40px;}
+.gameForm .code{float: left;width: 90px;padding: 0 5px; line-height: 40px;font-size: 24px; border: 1px solid #000;}
+.gameForm .codeBtn{float: right;width: 148px;height: 40px;line-height: 40px; border: 1px solid #000;background: #f6df8f;text-align: center; border-radius: 20px;color: #000;}
+.gameForm .codeBtn2{background: #aaa;color: #666;display: none;}
+.gameEnd2{height: 368px;padding: 70px 20px;display: none;}
+.gameEnd2 .gameEndDiv{height: 220px;}
+.gameEnd2 .gameEndDiv p{font-size: 30px;}
+
+/*rock*/
+.rock{width: 640px;}
+.rockDiv{width: 640px;top: 200px;}
+.rockTuzi{width: 150px;height: 215px;margin: 0 auto 30px;}
+.rockPic{width: 205px;height: 206px; background: url(../images/rockPic.png) no-repeat;margin: 0 auto;}
+.rockP{width: 100%;text-align: center;margin-top: 20px;font-size: 40px;color: #04285f;}
+
+/*prize*/
+.prize{width: 640px;}
+.prizeWin{width: 340px;height: 437px;padding: 200px 110px 100px;display: none; top: 80px;}
+.prizePic{width: 340px;height: 150px;margin-bottom: 30px;}
+.prizeP{font-size: 26px;line-height: 40px;margin-bottom: 30px;}
+.prizeWin0{background: url(../images/prizeWin0.png) no-repeat;}
+.prizeWin0 .prizeP{text-align: center;}
+.prizeWin1{background: url(../images/prizeWin1.png) no-repeat;}
+.prizeBtn{width: 205px;height: 70px;margin: 0 auto 10px;display: block;}
+.tuzimsg{display: none; width: 170px;height: 170px;background: url(../images/tuzimsg.png);position: absolute;top: 0;left: 300px;}
+
+.share{display: none;width: 640px;height: 160px;top: 20px;background: url(../images/share.png) no-repeat;}
+
+
+
+

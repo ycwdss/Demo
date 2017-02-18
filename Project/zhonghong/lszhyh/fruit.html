@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>绿色账户-吾家有花初长成</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 成就列表开始 -->
+	<section class="fruit center">
+		<ul class="fruitUl fixed center">
+			<li class="fruitSp fruitSp1">
+				<div class="fruitImg1 hide"><img src="images/seed1.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide1.png" /></div>
+			</li>
+			<li class="fruitSp fruitSp2">
+				<div class="fruitImg1 hide"><img src="images/seed2.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide1.png" /></div>
+			</li>
+			<li class="fruitSp fruitSp3">
+				<div class="fruitImg1 hide"><img src="images/seed3.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide1.png" /></div>
+			</li>
+			<li class="fruitSp fruitSp4">
+				<div class="fruitImg1 hide"><img src="images/seed4.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide2.png" /></div>
+			</li>
+			<li class="fruitSp fruitSp5">
+				<div class="fruitImg1 hide"><img src="images/seed5.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide2.png" /></div>
+			</li>
+			<li class="fruitSp fruitSp6">
+				<div class="fruitImg1 hide"><img src="images/seed6.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide2.png" /></div>
+			</li>
+			<li class="fruitSp fruitSp7">
+				<div class="fruitImg1 hide"><img src="images/seed7.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide3.png" /></div>
+			</li>
+			<li class="fruitSp fruitSp8">
+				<div class="fruitImg1 hide"><img src="images/seed8.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide3.png" /></div>
+			</li>
+			<li class="fruitSp fruitSp9">
+				<div class="fruitImg1 hide"><img src="images/seed9.png" /></div>
+				<div class="fruitImg2"><img src="images/seedHide3.png" /></div>
+			</li>
+		</ul>
+		
+	</section>
+	<!-- 成就列表结束 -->
+
+	<!-- 奖品列表开始 -->
+	<section class="fruitPrize center">
+		<h3>兑换码</h3>
+		<ul class="fruitPrizeUl">
+			<li class="fruitPrizeLi">
+				<p class="p1">获得上海电信流量包50M</p>
+				<p class="p2">LADJFA5446452484542</p>
+			</li>
+			<li class="fruitPrizeLi">
+				<p class="p1">获得上海电信流量包50M</p>
+				<p class="p2">LADJFA5446452484542</p>
+			</li>
+			<li class="fruitPrizeLi">
+				<p class="p1">获得上海电信流量包50M</p>
+				<p class="p2">LADJFA5446452484542</p>
+			</li>
+			<li class="fruitPrizeLi">
+				<p class="p1">获得上海电信流量包50M</p>
+				<p class="p2">LADJFA5446452484542</p>
+			</li>
+			<li class="fruitPrizeLi">
+				<p class="p1">获得上海电信流量包50M</p>
+				<p class="p2">LADJFA5446452484542</p>
+			</li>
+		</ul>
+	</section>
+	<!-- 奖品列表结束 -->
+
+	<a class="fruitBtn fruitBtn0 center" href="javascript:;"><img src="images/fruitBtn0.png" /></a>
+	<a class="fruitBtn fruitBtn1 center hide" href="javascript:;"><img src="images/fruitBtn1.png" /></a>
+
+	<!-- 遮盖开始 -->
+	<section class="shade"></section>
+	<!-- 遮盖结束 -->
+
+	<!-- 弹窗开始 -->
+	<section class="prizeWin prizeWin3 yCenter hide">
+		<h3>恭喜获得奖品</h3>
+		<p>格瓦拉电影卷一张</p>
+		<a class="prizeWinBtn prizeWinBtn3" href="javascript:;"><img src="images/formWinBtn.png" /></a>
+	</section>
+	<!-- 弹窗结束 -->
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		var arrFruit=[1,2,3,4,5,6,7,8,9];//已经集齐种子 后台传值
+		var isDJ=0;//是否已经领取电影卷 0为未领取 1为领取
+		$(window).load(function(){
+			var l=arrFruit.length;
+			for(var i=0;i<l;i++){
+				$(".fruitSp"+arrFruit[i]+">.fruitImg1").show();
+				$(".fruitSp"+arrFruit[i]+">.fruitImg2").hide();
+			}
+			if(l==9){
+				$(".fruitBtn0").hide();
+				$(".fruitBtn1").show();
+			}
+		});
+		$(".fruitBtn1").click(function(){
+			if(isDJ==0){
+				//后台获取电影卷信息
+				isDj=1;//入库
+				$(".shade").fadeIn(300);
+				$(".prizeWin3").fadeIn(300);
+			}else{
+				alert("您已获得电影卷，请勿重复领取！");
+			}
+		});
+		$(".prizeWinBtn3").click(function(){
+			window.location.reload();
+		});
+	</script>
+</body>
+</html>

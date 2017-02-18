@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=750,target-densitydpi=375, user-scalable=no">
+	<title>中国银联95516</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/wxshare.js"></script>
+</head>
+<body>
+	<!-- 页面 -->
+	<section class="bg3 center"></section>
+	<section class="game center" id="game">
+    <div class="gameDiv center fixed" id="gameDiv">
+      <div class="gameBox">
+        <img src="images/icon1.png" class="absolute gameIcon gameIcon1" dataClue="0" />
+        <img src="images/icon2.png" class="absolute gameIcon gameIcon2" dataClue="0" />
+        <img src="images/icon3.png" class="absolute gameIcon gameIcon3" dataClue="0" />
+        <img src="images/icon4.png" class="absolute gameIcon gameIcon4" dataClue="0" />
+        <img src="images/icon5.png" class="absolute gameIcon gameIcon5" dataClue="0" />
+        <img src="images/icon6.png" class="absolute gameIcon gameIcon6" dataClue="0" />
+      </div>
+      <div class="gameBox">
+        <img src="images/icon1.png" class="absolute gameIcon gameIcon1" dataClue="0" />
+        <img src="images/icon2.png" class="absolute gameIcon gameIcon2" dataClue="0" />
+        <img src="images/icon3.png" class="absolute gameIcon gameIcon3" dataClue="0" />
+        <img src="images/icon4.png" class="absolute gameIcon gameIcon4" dataClue="0" />
+        <img src="images/icon5.png" class="absolute gameIcon gameIcon5" dataClue="0" />
+        <img src="images/icon6.png" class="absolute gameIcon gameIcon6" dataClue="0" />
+      </div>
+    </div>
+    
+	</section>
+	<!-- 遮盖层 -->
+
+	<section class="shade" style="display:block;"></section>
+  <!-- 游戏准备 -->
+  <section class="gameReady center">
+    <img src="images/ready.png" class="center" />    
+  </section>
+
+  <section class="gameLine center">
+      <img src="images/tips1.png" class="gameTips1 gameTips center" />
+      <img src="images/tips2.png" class="gameTips2 gameTips center" />
+      <img src="images/tips3.png" class="gameTips3 gameTips center" />
+      <a href="javascript:;" class="gameTipsBtn gameTipsBtn1 center"><img src="images/tipsBtn1.png" /></a>
+      <a href="javascript:;" class="gameTipsBtn gameTipsBtn2 center"><img src="images/tipsBtn2.png" /></a>
+      <a href="javascript:;" class="gameTipsBtn gameTipsBtn3 center"><img src="images/tipsBtn3.png" /></a>
+      <div class="gamePaper center">
+        <img src="images/gameSuc1-1.png" class="gamePaperImg gamePaperImg1 absolute" />
+        <img src="images/gameSuc1-2.png" class="gamePaperImg gamePaperImg2 absolute" />
+        <img src="images/gameSuc1-3.png" class="gamePaperImg gamePaperImg3 absolute" />
+        <a href="javascript:;" class="gamePaperBtn absolute"></a>
+        <div class="gamePaperHand absolute"></div>
+      </div>
+      <div class="gameLineBox fixed">
+        <div class="gameLineBox1"></div>
+        <div class="gameLineBox2"></div>
+        <div class="gameLineBox3"></div>
+      </div>
+  </section>
+  <section class="gameLine2 center">
+    <img src="images/gameSuc2.png" class="center" />
+  </section>
+  <p class="gametips" style="position: fixed;top:0;left:0;"></p>
+  <p class="gametipsTTT" style="position: fixed;top:100px;left:0;"></p>
+  <!-- 找齐线索 -->
+  <section class="gameSuc center">
+    <div class="gameSuc1 center"></div>
+    <!-- <div class="gameSuc2 center"></div> -->
+    <img class="qiu qiu1 absolute" src="images/qiu1.png" />
+    <img class="qiu qiu2 absolute" src="images/qiu2.png" />
+    <img class="qiu qiu3 absolute" src="images/qiu3.png" />
+    <div class="qiu qiu4 absolute"></div>
+    <!-- <div class="btn gameSucBtn center">确定</div> -->
+  </section>
+  <!-- 找齐线索 -->
+  <!-- <section class="gameSuc win ycenter">
+    <h4>线索找全啦<br />去看看UP弟和UP妹<br />又说了什么悄悄话....</h4>
+    <a href="javascript:;" class="btn winBtn gameSucBtn">确定</a>
+  </section> -->
+    <script type="text/javascript">
+    	var ut;
+      var clue=0;//已找到线索数
+      var u = navigator.userAgent;
+      var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+      var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        var os=0;//0 为安卓 1为IOS
+        var gameHtml=$(".gameBox").prop("outerHTML");
+        var scrollFlag1=0,scrollFlag2=0,scrollFlag3=0,scrollFlag4=0;
+      $(function(){
+        $(".game").scrollLeft(750);
+        ut=GetQueryString("ut");
+        wxshare(ut);
+        addAccess(ut,"game");
+        if(isAndroid==true){os=0;}
+        if(isiOS==true){os=1;}
+      });
+    	
+      var lastScroll=750;
+      $("#game").scroll(function(){
+          bgLoop();
+      });
+      // 开始游戏
+      $(".gameReady").on("click",function(){
+        $(".shade").fadeOut(300);
+        $(".gameReady").fadeOut(300);
+        gamma();
+      });
+
+      // // 触摸事件
+      // $("#game").on("touchmove",function(){
+      //   $("#game").removeAttr("style");
+      // });
+      // $("#game").on("touchend",function(){
+      //   $("#game").css({"overflow":"hidden"});
+      // });
+      
+      // 线索找全
+      $(".gameSucBtn").on("click",function(){
+        window.location.href="success.html?ut="+ut;
+      });
+
+      setInterval(function(){
+        var gameTipsImg1=$(".gameTips1").attr("src");
+        var gameTipsImg3=$(".gameTips3").attr("src");
+        if(gameTipsImg1=="images/tips1.png"){
+          $(".gameTips1").attr("src","images/tips1-1.png");
+        }else{
+          $(".gameTips1").attr("src","images/tips1.png");
+        }
+        if(gameTipsImg3=="images/tips3.png"){
+          $(".gameTips3").attr("src","images/tips3-1.png");
+        }else{
+          $(".gameTips3").attr("src","images/tips3.png");
+        }
+      },500);
+
+
+      // 点击线索
+      $(".game").on("click",".gameIcon",function(){
+         var dataClue=$(this).attr("dataClue");
+         var iconIndex=$(this).index()+1;
+         if(dataClue==0){
+          $(this).attr("src","images/icon"+iconIndex+"-0.png");
+          $(this).attr("dataClue","1");
+          if(iconIndex<=3){
+            $(".shade").fadeIn(300);
+            $(".gameLine").fadeIn(300);
+            $(".gameTips"+iconIndex).fadeIn(300);
+            $(".gameTipsBtn"+iconIndex).fadeIn(300);
+
+            clue+=1;
+
+
+            if(clue>=3){
+              addLight(ut,clue);
+            }
+          }
+          
+
+         }
+      });
+      // 确认线索
+          $(".gameTipsBtn").on("click",function(){
+            var gameTipsIndex=$(this).index(".gameTipsBtn")+1;
+            $(".gameLineBox"+gameTipsIndex).append("<img class='gameLineBoxImg"+gameTipsIndex+"' src='images/qiu"+gameTipsIndex+".png' />");
+            $(".gameLineBox"+gameTipsIndex).find("img").animate({"opacity":"1"},1000);
+            setTimeout(function(){
+              if(clue>=3){
+                addLight(ut,clue);
+                $(".gameTips"+gameTipsIndex).fadeOut(300);
+                $(".gameTipsBtn"+gameTipsIndex).fadeOut(300);
+                $(".gamePaper").fadeIn(300);
+                setTimeout(function(){
+                  $(".gameLineBoxImg1").css({"bottom":"600px","left":"315px"});
+                  setTimeout(function(){
+                    $(".gameLineBoxImg1").fadeOut(300);
+                    $(".gamePaperImg1").css("opacity","1");
+                  },500);
+                },1000);
+                setTimeout(function(){
+                  $(".gameLineBoxImg2").css({"bottom":"600px","left":"315px"});
+                  setTimeout(function(){
+                    $(".gameLineBoxImg2").fadeOut(300);
+                    $(".gamePaperImg2").css("opacity","1");
+                  },500);
+                },2500);
+                setTimeout(function(){
+                  $(".gameLineBoxImg3").css({"bottom":"600px","left":"315px"});
+                  setTimeout(function(){
+                    $(".gameLineBoxImg3").fadeOut(300);
+                    $(".gamePaperImg3").css("opacity","1");
+                  },500);
+                },4000);
+                setTimeout(function(){
+                  $(".gamePaperHand").show();
+                },5500);
+              }else{
+                 $(".shade").fadeOut(300);
+                $(".gameLine").fadeOut(300);
+                $(".gameTips"+gameTipsIndex).fadeOut(300);
+                $(".gameTipsBtn"+gameTipsIndex).fadeOut(300);
+              }
+             
+            },1300);
+          });
+
+      // 确认线索
+          $(".gamePaperBtn").on("click",function(){
+            $(".gameLine").fadeOut(300);
+            $(".gameLine2").fadeIn(300);
+            setTimeout(function(){
+              window.location.href="success.html?ut="+ut;
+            },2000);
+          });
+
+      // 背景循环
+      function bgLoop(){
+        var scrollLeft=$("#game").scrollLeft();
+          gameHtml=$(".gameBox").prop("outerHTML");
+          // $(".gametips").html("scrollLeft"+scrollLeft);
+            // 背景向左移动
+            if((lastScroll<scrollLeft&&scrollLeft-lastScroll>2000)||(lastScroll>scrollLeft&&lastScroll-scrollLeft<2500)){
+              if(scrollLeft<=2250&&scrollLeft>=0&&scrollFlag1==0)
+              {
+                  $(".gameBox:last").remove();
+                  $(".gameBox").before(gameHtml);
+                  $("#game").scrollLeft(scrollLeft+3000);
+                  scrollFlag1=1;
+              }
+              if(scrollLeft>2250){
+                scrollFlag1=0;
+              }
+              // if(scrollLeft<=2000&&scrollLeft>=1000&&scrollFlag4==0){
+              //   $(".gameBox").eq(1).remove();
+              //   scrollFlag4=1;
+              //   scrollFlag3=0;
+              // }
+            }
+
+            // 背景向右移动
+            if((lastScroll>scrollLeft&&lastScroll-scrollLeft>2000)||(lastScroll<scrollLeft&&scrollLeft-lastScroll<2500)){
+              // if(scrollLeft>=1000&&scrollLeft<=2000&&scrollFlag1==0)
+              // {
+              //     $(".gameBox").after(gameHtml);
+              //     scrollFlag1=1;
+              //     scrollFlag2=0;
+              // }
+              if(scrollLeft>=3000&&scrollFlag2==0){
+                $(".gameBox").eq(0).remove();
+                $(".gameBox").after(gameHtml);
+                $("#game").scrollLeft(scrollLeft-3000);
+                scrollFlag2=1;
+              }
+              if(scrollLeft<3000){
+                scrollFlag2=0;
+              }
+            }
+          lastScroll=scrollLeft;
+      } 
+      // 添加找全线索记录
+      function addLight(ut,id){
+        $.ajax({
+              url: http+_data.addLight,
+              data:{
+                ut:ut,
+                id:id
+              },
+              dataType: 'json', //服务器返回json格式数据
+              type: "POST",
+              async: false,
+              success: function (data) {
+                console.log(data);
+
+              },
+              error: function () {
+                alert("网络异常，请稍后再试");
+              }
+          });
+      }
+      // 陀螺仪
+      function gamma(){
+        try {  
+          var i=0;
+          var arrow=0;  //用于记录上次alpha的值
+          var tmp = 0.3;//误差范围
+          //var tmpY=0;
+          var flag = 10;
+          var arrayTmp = [];
+          window.addEventListener("deviceorientation", orientationHandler, false);  
+          function orientationHandler(event) {  
+              //var alpha = Math.round(event.alpha),
+              var alpha = event.alpha,
+              beta = event.beta,
+              gamma = Math.round(event.gamma*5);//扭转角度
+              // if(os==1){
+              //   alpha+=450;
+              // }
+              
+              var gameLeft=$(".game").scrollLeft();
+              // $(".gametips").html(alpha+"和"+gamma)
+
+                  var mine=Math.abs(alpha-arrow);
+                  //var mineY=Math.abs(beta-tmpY);
+              if(alpha != null){
+                  var toLeft = 0;
+                //if(i>0){
+                  //判断连续行为
+                  if (arrayTmp.length >= 3) {
+                    if (mine > tmp && alpha > arrow && arrayTmp[arrayTmp.length - 1] > 0 && arrayTmp[arrayTmp.length - 2] > 0 && arrayTmp[arrayTmp.length - 3] > 0 && arrayTmp[arrayTmp.length - 4] > 0) {
+                      toLeft = 2;
+                    } else if (mine > tmp && alpha < arrow && arrayTmp[arrayTmp.length - 1] < 0 && arrayTmp[arrayTmp.length - 2] < 0 && arrayTmp[arrayTmp.length - 3] < 0 && arrayTmp[arrayTmp.length - 4] < 0) {
+                      toLeft = 1;
+                    }
+                    // $(".gametipsTTT").html("arrayTmp.length1:" + arrayTmp.length + " flag:" + (arrayTmp[arrayTmp.length - 1] > 0));
+                  } else {
+                    //$(".gametipsTTT").html("arrayTmp.length2:" + arraTmp.length);
+                    //if (alpha > arrow) {
+                    //  toLeft = 2;
+                    //} else if (alpha < arrow) {
+                    //  toLeft = 1;
+                    //}
+                  }
+                  //$(".gametipsTTT").html("arrayTmp.length:" + arrayTmp.length + " toLeft:" + toLeft);
+                  if(toLeft == 1){
+                    gameLeft+=8;
+                    $(".game").scrollLeft(gameLeft);
+                      // gameLeft+=mine;
+                  }else if(toLeft == 2){
+                      // gameLeft-=mine;
+                    gameLeft-=8;
+                    $(".game").scrollLeft(gameLeft);
+                  } else {
+                    console.log("--TODO---");
+                  }
+                  // $(".gametips").html("alpha---"+alpha + " tmp:" + mine + " toLeft:" + toLeft);
+                //}else{
+                  // $(".gametips").html("alpha---"+alpha);
+                //}
+                
+                  
+                  //tmpY=beta;
+                  i++;
+                  if (arrayTmp.length >= flag) {
+                    for (j = 0; j < flag - 1; j ++) {
+                      arrayTmp[j] = arrayTmp[j+1];
+                    }
+                    if (mine > tmp) {
+                      arrayTmp[flag-1] = alpha-arrow;
+                    } else {
+                      //arrayTmp[flag-1] = 0;
+                    }
+                  } else {
+                    if (mine > tmp) {
+                      arrayTmp.push(alpha-arrow);
+                    } else {
+                      //arrayTmp.push(0);
+                    }
+                    //alert(arrayTmp.length);
+                  }
+                  arrow=alpha;
+              }else{
+                  alert("当前手机不支持陀螺仪");
+              }
+          }  
+        }  
+        catch (e) {  
+            $(".gametips").html(e.message)  
+        }  
+      }
+      
+      
+	</script>
+</body>
+</html>

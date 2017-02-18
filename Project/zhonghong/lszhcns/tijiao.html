@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=640,target-densitydpi=320, user-scalable=no">
+	<title>猜年俗赢福袋</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- 抽奖页开始 -->
+	<section class="tijiao center">
+		<div class="tijiaoPic center"><img src="images/tijiaoPic.png" /></div>
+		<div class="tijiaoForm center">
+			<input class="nameTxt" type="text" maxlength="6" />
+			<input class="telTxt" type="text" maxlength="11" />
+		</div>
+		<p class="tijiaoTips center">* 手机号只用于领取奖品，我们将对您的 信息进行保密。</p>
+		<a href="javascript:;" class="tijiaoBtn center"><img src="images/tijiaoBtn.png" /></a>
+	</section>
+	<!-- 抽奖页结束 -->
+
+
+	<!--遮盖开始 -->
+	<section class="zhegai yCenter hide"></section>
+	<!--遮盖结束 -->
+
+	<!--提示开始 -->
+	<section class="tips shareTips center hide"><img src="images/share.png" /></section>
+	<!--提示结束 -->
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+	
+	<script type="text/javascript">
+		var isTel=0;//是否已经填写手机号，0为为填写，1为已经填写
+		$(window).load(function(){
+			if(isTel==1){
+				$(".zhegai").fadeIn(500);
+				$(".shareTips").fadeIn(500);
+			}else{}
+		});
+		
+		$(".tijiaoBtn").bind("click",function(){
+			var name=$(".nameTxt").val();
+			var tel=$(".telTxt").val();
+			var telReg = !!tel.match(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/);
+			if(name==""||tel==""){
+				alert("信息输入不完整，请重新输入")
+			}else if(telReg==false){
+				alert("手机号码输入不正确，请重新输入");
+			}else{
+				$(".zhegai").fadeIn(500);
+				$(".shareTips").fadeIn(500);
+			}
+		});
+	</script>
+</body>
+</html>

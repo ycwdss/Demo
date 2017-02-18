@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>好时</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/simArr.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/layer.js"></script>
+</head>
+<body>
+<!--游戏开始-->
+<section id="game">
+    <div class="game-wrap clearfix">
+        <!--游戏区域-->
+        <div class="game-area fl">
+        </div>
+        <!--操作区域-->
+        <div class="game-operate fl">
+            <div class="logo"><img src="images/logo.png"></div>
+            <div class="operate-btn">
+                <a></a>
+                <a></a>
+                <a></a>
+                <a class="toworks"</a>
+                <a class="tomodule"></a>
+            </div>
+        </div>
+    </div>
+    <!--巧克力选择区域-->
+    <div class="game-select">
+        <ul class="clearfix">
+            <li><img src="images/chocolate0.png"></li>
+            <li><img src="images/chocolate1.png"></li>
+            <li><img src="images/chocolate2.png"></li>
+            <li><img src="images/chocolate3.png"></li>
+            <li><img src="images/chocolate4.png"></li>
+            <li><img src="images/chocolate5.png"></li>
+        </ul>
+    </div>
+    <!--首次进入提示-->
+    <div class="tips popup-rotate hide">
+        <div class="popup-inner popup-scale">
+            <div class="popup-close"></div>
+            <div class="tips-content ">选取喜爱的颜色点击画板进行填充，<br>
+                再次点击可取消选择。<br>
+                即刻开启你的好时KISSES创意之旅吧！
+            </div>
+            <div class="popup-sure">确定</div>
+        </div>
+    </div>
+    <!--未完成提示-->
+    <div class="noover popup-rotate hide">
+        <div class="popup-inner popup-scale">
+            <div class="popup-close"></div>
+            <div class="noover-content ">您的好时KISSES拼图还未完成，<br>
+                画板空白处需全部填充哦！<br>
+                请继续完成您的创意作品！
+            </div>
+            <div class="popup-sure">确定</div>
+        </div>
+    </div>
+    <!--给作品起个名字-->
+    <div class="fillname popup hide">
+        <div class="popup-inner popup-scale">
+            <div class="popup-close"></div>
+            <div class="fillname-content ">
+                <p>请为您的大作起个名字吧！</p>
+                <input type="text" autocomplete="off">
+            </div>
+            <a class="popup-sure">确定</a>
+        </div>
+    </div>
+</section>
+<script src="js/sha1.js"></script>
+<script src="js/wx3Tool.js"></script>
+<script src="js/wxSH.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
