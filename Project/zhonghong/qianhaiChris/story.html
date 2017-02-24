@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>好信圣诞节</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/shareIndex.js"></script>
+    <script src="js/lex.js"></script>
+</head>
+<body>
+<section class="story rotate90">
+    <div class="story-inner ">
+        <div class="story-believe"><img src="images/story-believe.png"></div>
+        <div class="story-text">
+            <p>圣诞节就要到了！期待礼物的孩子辣么多，路上积雪又辣么厚，圣诞老人还能及时送出礼物吗？可不能失信！快来帮圣诞老人清理道路吧！</p>
+            <p>友情提示：你可以先探探路，和靠谱的小伙伴一起清理胜算更大哦！</p>
+        </div>
+        <div class="story-power clearfix">
+            <img class="roadText fl" src="images/story-roadText.png">
+            <div class="power-show fl clearfix">
+                <img src="images/power-gray.png">
+                <img src="images/power-gray.png">
+                <img src="images/power-gray.png">
+            </div>
+            <p><em>*</em> 每得到一位朋友帮助，就会点亮一盏灯哦。</p>
+        </div>
+        <a class="story-believeBtn" href="game.html"></a>
+    </div>
+</section>
+<!--今天超过4次-->
+<div class="game-over popup rotate90 hide">
+    <div class="popup-inner popup-scale ">
+        <p> Whoops 麋鹿很疲惫……今日五次机会已经用完，明日再试吧……孩子还在期盼礼物哦，炫彩蓝牙音箱也在等待它的主人~</p>
+        <div></div>
+    </div>
+</div>
+<script src="js/ajax.js"></script>
+<script>
+    $(function () {
+        setWH('.story');
+        setWH('.game-over');
+        //添加页面访问记录
+        records('story');
+        //页面分享
+        shareIndex();
+    })
+</script>
+</body>
+</html>

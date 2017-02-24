@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>好信圣诞节</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/shareIndex.js"></script>
+</head>
+<body>
+<section class="success">
+    <div class="success-bg"></div>
+    <!--输入手机号码-->
+    <div class="success-inner ">
+        <div class="success-title"><img src="images/success-title.png"></div>
+        <div class="success-dudu"><img src="images/success-dudu.png"></div>
+        <div class="success-input">
+            <div class="input-tel"><span>手机号码:</span><input type="tel"></div>
+            <p>手机号码输入有误，请重新输入！</p>
+            <div class="input-btn"></div>
+        </div>
+    </div>
+    <!--中奖提示-->
+    <div class="success-result hide">
+        <p class="result-title"></p>
+        <img src="images/success-bag.png">
+        <p>圣诞降临，普天同庆。不妨把游戏告诉更多小伙伴，一起来赢取圣诞礼包。</p>
+        <div></div>
+    </div>
+    <!--中奖后分享-->
+    <div class="success-share popup hide">
+        <div class="popup-inner popup-scale">
+            <img src="images/share-du.png">
+        </div>
+    </div>
+    <!--雪花-->
+    <div class="snow-wrap"></div>
+</section>
+<script src="js/type.js"></script>
+<script>
+    //添加页面访问记录
+    records('success');
+    //雪花
+    flowSnow();
+    //分享页面后回到首页
+    shareIndex();
+    //分享
+    $('.success-result div').on('click', function () {
+        $('.success-share').show();
+    });
+    $('.success-share').on('click', function () {
+        $(this).hide();
+    });
+
+
+</script>
+</body>
+</html>

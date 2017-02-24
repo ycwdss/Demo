@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>好信圣诞节</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/shareIndex.js"></script>
+</head>
+<body>
+<section class="game">
+    <!--游戏提示-->
+    <div class="game-state rotate90 ">
+        <div class="state-text">
+            <h1>圣诞老人已经带着礼物出发了</h1>
+            <p>玩家可以通过手机<img src="images/game-btn.png">滑动来操作圣诞老人的麋鹿雪橇前行，在30秒内到达终点，但要注意避让前方雪堆障碍，否则摔倒就惨啦！大雪堆前要停顿3秒，小雪堆前需要停顿1秒才能重新上路。纯真的孩子们还在期待圣诞老人的礼物，且行且珍惜呀~
+            </p>
+        </div>
+        <div class="state-btn"></div>
+    </div>
+    <!--123 跑-->
+    <div class="game-123 hide">
+        <img src="images/time3.png">
+    </div>
+    <!--道路-->
+    <div class="game-road">
+        <!--圣诞老人-->
+        <img id="target" class="target" src="images/game-chs0.png">
+        <!--道路开始-->
+        <div class="game-start"></div>
+        <div class="game-middle"></div>
+        <div class="game-middle"></div>
+        <div class="game-middle"></div>
+        <div class="game-middle"></div>
+        <div class="game-middle"></div>
+        <div class="game-middle"></div>
+        <div class="game-middle"></div>
+        <div class="game-end"></div>
+        <div class="game-last"></div>
+        <!--雪堆-->
+        <div class="game-wrap">
+            <img class="game-snow snow0" src="images/s-snow.png">
+            <img class="game-snow snow1" src="images/s-snow.png">
+            <img class="game-snow snow2 b-snow" src="images/b-snow.png">
+            <img class="game-snow snow3" src="images/s-snow.png">
+            <img class="game-snow snow4 b-snow" src="images/b-snow.png">
+            <img class="game-snow snow5" src="images/s-snow.png">
+            <img class="game-snow snow6" src="images/s-snow.png">
+            <img class="game-snow snow7 b-snow" src="images/b-snow.png">
+            <img class="game-snow snow8" src="images/s-snow.png">
+        </div>
+
+    </div>
+    <!--铲子-->
+    <div class="game-tool ">
+        <div class="tool1 rotate90"><em>30</em></div>
+        <div class="tool2 rotate90"><em></em></div>
+    </div>
+<!--音乐-->
+    <audio id="music-sing" preload="auto" loop autoplay src="vedio/music.mp3"></audio>
+</section>
+<script src="js/lex.js"></script>
+<script src="js/impact.js"></script>
+<script src="js/game.js"></script>
+<script>
+    $(function () {
+        //添加页面访问记录
+        records('game');
+        //分享页面后回到首页
+        shareIndex();
+        //音乐
+        var a = document.getElementById('music-sing');
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            a.play();
+        }, false);
+    })
+</script>
+</body>
+</html>

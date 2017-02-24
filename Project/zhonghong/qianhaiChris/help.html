@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>好信圣诞节</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/shareIndex.js"></script>
+
+</head>
+<body>
+<section class="bg ycenter"></section>
+<section class="help center" style="overflow-x: hidden;height: 1300px;">
+    <div class="helpSub3"><img src="images/help-code.png"/></div>
+    <div class="helpSub1"><img src="images/helpTit.png"/></div>
+    <div class="helpSub2">
+        <a href="javascript:;" class="helpBtn helpBtn1"><img src="images/helpBtn1.png"/></a>
+        <a href="http://actqy.vfengche.cn/qhchristmasflow/authIndex.html" class="helpBtn helpBtn2"><img
+                src="images/helpBtn2.png"/></a>
+    </div>
+
+</section>
+
+<section class="shade"></section>
+<section class="helpWin helpWin1 center">
+    <h3>助力成功</h3>
+    <p>大雪堆在你的努力下已经被铲平，圣诞老人准备再次启程。</p>
+    <p>扫描页面内二维码，关注【前海征信中心】，点击菜单栏【好信互动】-【领取圣诞礼物】，好信侠已经为您准备了圣诞礼物 ，快来领取吧！</p>
+    <a href="javascript:;" class="helpWinBtn helpWinBtn1"><img src="images/helpWinBtn.png"/></a>
+</section>
+<section class="helpWin helpWin2 center">
+    <p>Oh-Oh！<br/>雪堆已经被其他小伙伴铲平了~圣诞老人再次上路咯！<br/>不妨一起加入游戏吧，召集好友为自己助力。</p>
+    <a href="javascript:;" class="helpWinBtn helpWinBtn2"><img src="images/helpWinBtn.png"/></a>
+</section>
+<section class="helpWin helpWin3 center">
+    <p>已经助力过了哦~ <br/>如果能量满格，不妨告诉更多小伙伴参与游戏，帮TA们助力吧~。</p>
+    <a href="javascript:;" class="helpWinBtn helpWinBtn3"><img src="images/helpWinBtn.png"/></a>
+</section>
+<!--雪花-->
+<div class="snow-wrap"></div>
+
+<script src="js/type.js"></script>
+<script>
+    //助力
+    $(function () {
+        var href = window.location.href;
+        var webUrl = "http://qianduan.vfengche.cn/wangzan/qianhai/";
+        var bgUrl = "actqy.vfengche.cn";
+        //同步网页授权
+        var ut1 = href.substring((href.indexOf("ut1=") + 4), href.indexOf("&ut2="));
+        var ut2 = href.substring((href.indexOf("&ut2=") + 5));
+        var helpCount1;
+        $('.helpBtn1').click(function () {
+            //ut1 点击分享的标识 ut2分享人的标识
+            $.ajax({
+                url: "http://" + bgUrl + "/qhchristmasflow/addHelpRecord.html",
+                type: 'post',
+                data: 'ut1=' + ut1 + '&ut2=' + ut2,
+                success: function (data) {
+                    console.log(ut1, ut2);
+                    console.log(data);
+                    helpCount1 = JSON.parse(data).helpCount;
+                    switch (helpCount1) {
+                        case 1:
+                            $(".helpWin1").fadeIn(300);
+                            break;
+                        case 2:
+                            $(".helpWin3").fadeIn(300); //已经助力
+                            break;
+                        case 3:
+                            $(".helpWin2").fadeIn(300);
+                            break;
+                    }
+                },
+                error: function () {
+
+                }
+            })
+        });
+
+        $('.helpWinBtn ').click(function () {
+            $(this).parents('.helpWin ').hide();
+        })
+
+        //添加页面访问记录
+        records('help');
+        //分享页面后回到首页
+        shareIndex();
+        //雪花
+        flowSnow();
+
+    })
+</script>
+
+</body>
+</html>

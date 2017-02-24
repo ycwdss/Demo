@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <title>好信圣诞节</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="js/need/layer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/wx3Tool.js"></script>
+    <script src="js/shareIndex.js"></script>
+<!--    <script src="js/ajax.js"></script>-->
+</head>
+<body>
+<section class="index">
+    <!--进入锁屏提示-->
+    <div class="index-first "></div>
+    <!--游戏首页-->
+    <div class="index-tip"><img src="images/index-tip1.png"></div>
+    <a class="index-game" href="story.html"><img src="images/index-game1.png"></a>
+    <div class="index-rule"><img src="images/index-rule1.png"></div>
+    <!--活动规则-->
+    <div class="rule-state rotate90 hide">
+        <div class="rule-text">
+            <dl class="clearfix">
+                <dt>互动机制</dt>
+                <dd>
+                    <ul>
+                        <li class="clearfix">
+                            <em>1、</em><span>所有关注微信公众号【前海征信中心】的用户均可参加活动；用户点击菜单栏【好信互动】—【好信圣诞节】即可参与游戏互动。</span></li>
+                        <li class="clearfix"><em>2、</em><span>活动过程中，玩家可通过号召微信好友助力完成游戏任务。好友助力成功后，通过扫描助力链接内
+                        的二维码关注微信号【前海征信中心】，点击菜单栏【好信互动】-【领取圣诞礼物】，根据提示领取活动奖励。</span></li>
+                        <li class="clearfix"><em>3、</em><span>活动过程中，玩家共有5次闯关机会，闯关成功输入手机号即可随机获得一个圣诞礼包，手气爆棚的小伙伴更有机会获得JBL Pulse 2炫彩蓝牙音箱一个。</span>
+                        </li>
+                        <li class="clearfix"><em>4、</em><span>在活动有效期内，通关奖励仅限领取一次，多次通关只计一次；好友助力奖励仅限三次，超出次数无奖励。</span>
+                        </li>
+                        <li class="clearfix"><em>5、</em><span>活动奖品为随机奖励，存在无奖励几率，JBL Pulse 2炫彩蓝牙音箱大奖共计1份。</span></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt>活动规则</dt>
+                <dd>
+                    <ul>
+                        <li class="clearfix"><em>1、</em>活动时间：2016年12月23日至2016年12月30日</li>
+                        <li class="clearfix"><em>2、</em>用户参与活动所形成的流量支出由用户本人承担。</li>
+                        <li class="clearfix"><em>3、</em>在活动期间，若有用户通过违法违规方式参与本次活动，主办方有权取消该用户参与资格。</li>
+                        <li class="clearfix"><em>4、</em>因获奖用户个人原因（如信息填写不完整、不准确等）未能领取奖品，主办方不承担任何相应责任。</li>
+                        <li class="clearfix"><em>5、</em>在活动期间，如发生不可抗力事件或超出主办方控制情况使活动无法进行时，活动主办方有权取消、暂停、修改或终止本次活动。</li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="rule-back"></div>
+    </div>
+    <!--音乐-->
+    <div class="index-music">
+        <audio id="music-sing" preload="auto" loop autoplay src="vedio/music.mp3"></audio>
+    </div>
+</section>
+<script src="js/lex.js"></script>
+<script src="js/ajax.js"></script>
+<script>
+    $(function () {
+        var timer = setInterval(function () {
+            $('.index-first').fadeOut();
+        }, 3000);
+        setWH('.rule-state');
+        $('.index-rule').on('click', function () {
+            $('.rule-state').show();
+        });
+        $('.rule-back').on('click', function () {
+            $('.rule-state').hide();
+        })
+        //添加页面访问记录
+        records('index');
+        //页面分享
+        shareIndex();
+        var imgSrc1 = ["images/index-tip1.png", "images/index-tip2.png"];
+        var imgSrc2 = ["images/index-game1.png", "images/index-game2.png"];
+        var imgSrc3 = ["images/index-rule1.png", "images/index-rule2.png"];
+        var i = 0;
+        var timer = setInterval(function () {
+            i++;
+            i %= 2;
+            $('.index-tip img').attr('src', imgSrc1[i]);
+            $('.index-game img').attr('src', imgSrc2[i]);
+            $('.index-rule img').attr('src', imgSrc3[i]);
+        }, 200);
+        //音乐
+        var a = document.getElementById('music-sing');
+        $('.index-music').on('touchstart', function () {
+
+            if (a.paused) {
+                a.play();
+                $(this).addClass('index-music').removeClass('index-music-pause');
+            } else {
+                a.pause();
+                $(this).addClass('index-music-pause').removeClass('index-music');
+            }
+        });
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            a.play();
+        }, false);
+    })
+</script>
+</body>
+</html>
